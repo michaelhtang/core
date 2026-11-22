@@ -1,0 +1,32 @@
+{
+  "agora": {
+    "prompt": "a grand modern school atrium, a calm gathering hall: a glass skylight roof of large panes in a diamond timber grid, floor-to-ceiling glass curtain walls and glass-railed second-floor walkways on both sides, at the centre a tall brushed-silver metal cylindrical column ringed by tall golden glulam timber poles leaning inward, curved wooden benches at its base, warm lanterns, polished concrete floor reflecting the light, open uncluttered floor",
+    "ref": "design/refs/agora.jpg",
+    "strength": 0.55
+  },
+  "archive": {
+    "prompt": "a two-storey school library reimagined as a grand archive: a glass skylight roof between heavy timber trusses, a lush living green wall at the far end, white bookshelves, dark blue glass-walled bridges on both sides on the second floor, warm desk lamps, cozy armchairs, polished floor reflecting the light, calm and uncluttered",
+    "ref": "design/refs/library.jpg",
+    "strength": 0.5
+  },
+  "amphitheatre": {
+    "prompt": "a wide concrete stair seating amphitheatre inside a modern school, rows of orange and red cushions on the steps, a white geometric faceted ceiling with grey triangle panels and linear light strips, a honey-wood handrail on a white wall, a tall glass wall high behind the top row, warm stage lights, calm and uncluttered",
+    "ref": "design/refs/amphitheatre.jpg",
+    "strength": 0.55
+  },
+  "council": {
+    "prompt": "a grand double staircase in a modern school atrium leading up to the council chambers: grey perforated metal stair walls with honey-wood handrails, huge golden glulam timber tree columns and branching beams overhead, a glass skylight roof, a second-floor walkway with glass railings, high clerestory windows, polished concrete floor and wide concrete steps, calm and uncluttered",
+    "ref": "design/refs/grand-stair.jpg",
+    "strength": 0.55
+  },
+  "arena": {
+    "prompt": "a large modern school gymnasium reimagined as a grand arena: a gleaming maple hardwood court with painted game lines, tall honey-wood panelled pillars, royal blue wall padding along one side, basketball hoops on black steel frames, an upper glass-railed viewing walkway on two sides, rows of tall windows, white steel roof trusses, calm and uncluttered",
+    "ref": "design/refs/arena.jpg",
+    "strength": 0.55
+  },
+  "gate": {
+    "prompt": "the entrance of a modern high school reimagined as the gate of a city: dark charcoal metal cladding, a long white blank sign band, a warm wood soffit over a tall glass entrance, glass lobby lit from within, plaza with lanterns and benches, snow on the ground",
+    "ref": "design/refs/entrance.jpg",
+    "strength": 0.5
+  }
+}

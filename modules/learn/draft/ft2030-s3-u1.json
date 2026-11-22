@@ -1,0 +1,1121 @@
+{
+  "id": "ft2030-s3-u1",
+  "title": "Starting early and asset classes",
+  "blurb": "The cost of waiting, the four kinds of assets and a mix that fits a timeline.",
+  "outcome_codes": [
+    "FIN3080 1.1",
+    "FIN3090 3.10"
+  ],
+  "levels": [
+    {
+      "id": "ft2030-s3-u1-l1",
+      "title": "The cost of waiting",
+      "kind": "lesson",
+      "learn": [
+        "Compare two savers who start at different ages.",
+        "Say why the early years are worth the most."
+      ],
+      "cards": [
+        {
+          "text": "Alia and Ravi each save $200.00 a month. Alia saves from age 22 to 32, then stops and never adds again. Ravi starts later, at 32, and saves every month until he is 65. Both earn 7% a year in this example. Who has more at 65?"
+        },
+        {
+          "text": "Count what each puts in. Ravi saves for 33 years and Alia for 10. Ravi puts in $55,200 more, over three times as much. But Alia's first deposit has 43 years until 65, and Ravi's has 33.",
+          "figure": {
+            "kind": "table",
+            "title": "What each puts in",
+            "columns": [
+              "Saver",
+              "Alia",
+              "Ravi"
+            ],
+            "rows": [
+              [
+                "Years saving",
+                "10",
+                "33"
+              ],
+              [
+                "Deposits of $200",
+                "120",
+                "396"
+              ],
+              [
+                "Total put in",
+                "$24,000",
+                "$79,200"
+              ]
+            ]
+          }
+        },
+        {
+          "text": "Interest is added every month, at 7% divided by 12. Each deposit goes in at the end of a month. Every figure is worked out month by month and shown to the nearest dollar. Alia ends $37,600 ahead, the two balances subtracted.",
+          "figure": {
+            "kind": "table",
+            "title": "At 65, at 7% (example)",
+            "columns": [
+              "Saver",
+              "Alia",
+              "Ravi"
+            ],
+            "rows": [
+              [
+                "Put in",
+                "$24,000",
+                "$79,200"
+              ],
+              [
+                "Balance at 65",
+                "$346,413",
+                "$308,813"
+              ],
+              [
+                "Growth",
+                "$322,413",
+                "$229,613"
+              ]
+            ]
+          }
+        },
+        {
+          "text": "Alia stopped at 32 with $34,617. She added nothing after that, and her balance still climbed to $346,413 by 65, about 10 times as much. Her early deposits had the most years to grow, and the line gets steeper as the interest earns interest.",
+          "figure": {
+            "kind": "line",
+            "title": "Alia after she stops saving",
+            "unit": "$",
+            "points": [
+              {
+                "label": "Age 32",
+                "value": 3461700
+              },
+              {
+                "label": "Age 40",
+                "value": 6050400
+              },
+              {
+                "label": "Age 48",
+                "value": 10575100
+              },
+              {
+                "label": "Age 56",
+                "value": 18483500
+              },
+              {
+                "label": "Age 65",
+                "value": 34641300
+              }
+            ]
+          }
+        },
+        {
+          "text": "Now let one saver put in $200.00 every month until 65 and change only the start age. A later start means fewer deposits and less time for each one. The rate matters too: at 5% in this example Ravi finishes ahead, $201,080 to Alia's $161,157.",
+          "figure": {
+            "kind": "table",
+            "title": "Deposits until 65, at 7%",
+            "columns": [
+              "Start age",
+              "Put in",
+              "Balance at 65"
+            ],
+            "rows": [
+              [
+                "22",
+                "$103,200",
+                "$655,226"
+              ],
+              [
+                "27",
+                "$91,200",
+                "$452,099"
+              ],
+              [
+                "32",
+                "$79,200",
+                "$308,813"
+              ],
+              [
+                "37",
+                "$67,200",
+                "$207,738"
+              ],
+              [
+                "42",
+                "$55,200",
+                "$136,439"
+              ]
+            ]
+          }
+        },
+        {
+          "text": "Look at what each five more years of waiting costs. Starting at 27 instead of 22 costs $203,127. Starting at 32 instead of 27 costs $143,286. Each step costs less than the one before, because the first years had the most time left. The total keeps adding up.",
+          "figure": {
+            "kind": "bars",
+            "title": "Cost of five more years of waiting",
+            "unit": "$",
+            "bars": [
+              {
+                "label": "22 to 27",
+                "value": 20312700
+              },
+              {
+                "label": "27 to 32",
+                "value": 14328600
+              },
+              {
+                "label": "32 to 37",
+                "value": 10107500
+              },
+              {
+                "label": "37 to 42",
+                "value": 7129900
+              }
+            ]
+          }
+        }
+      ],
+      "questions": [
+        {
+          "id": "ft2030-s3-u1-l1-q1",
+          "label": "Kai puts in",
+          "prompt": "Kai saves $150.00 a month from age 25 to 65, which is 40 years. How much does he put in, with no growth counted?",
+          "type": "number",
+          "terms": [
+            {
+              "term": "deposit",
+              "meaning": "Money you put into an account or an investment."
+            }
+          ],
+          "hint": "There are 12 deposits in a year. Count the years first.",
+          "unit": "$",
+          "answer": 7200000,
+          "tolerance": 0,
+          "why": "He makes 12 deposits a year for 40 years.",
+          "working": "40 x 12 = 480 deposits. 480 x $150.00 = $72,000.00.",
+          "miss": "Find the number of deposits first, then multiply by $150.00.",
+          "traps": [
+            {
+              "value": 600000,
+              "why": "That counts one deposit a year. He deposits every month, 12 times a year."
+            }
+          ]
+        },
+        {
+          "id": "ft2030-s3-u1-l1-q2",
+          "label": "Extra put in",
+          "prompt": "In the start-age table, the saver who starts at 22 puts in $103,200 and the saver who starts at 37 puts in $67,200. How many more dollars does the early starter put in?",
+          "type": "number",
+          "hint": "Subtract the smaller total from the larger.",
+          "unit": "$",
+          "answer": 3600000,
+          "tolerance": 0,
+          "why": "The difference of the two totals is what the early starter puts in beyond the other.",
+          "working": "$103,200 - $67,200 = $36,000.",
+          "miss": "Take the later starter's total away from the early starter's.",
+          "traps": [
+            {
+              "value": 17040000,
+              "why": "That adds the two totals. The question asks for the difference."
+            }
+          ]
+        },
+        {
+          "id": "ft2030-s3-u1-l1-q3",
+          "label": "Who is ahead",
+          "prompt": "At 7% a year, who has more at 65, Alia or Ravi?",
+          "type": "choice",
+          "terms": [
+            {
+              "term": "balance",
+              "meaning": "What the account or investment holds right now: your deposits plus the growth so far."
+            }
+          ],
+          "hint": "Check the table of balances at 65.",
+          "options": [
+            {
+              "text": "Ravi, because he put in more",
+              "why": "He did put in more, but his deposits had less time to grow."
+            },
+            {
+              "text": "Alia, because her money grew longer",
+              "why": "Yes. Her deposits had more years to grow, so she is ahead."
+            },
+            {
+              "text": "They have the same amount",
+              "why": "The balances are different. Alia is ahead by a clear amount."
+            }
+          ],
+          "answer": 1
+        },
+        {
+          "id": "ft2030-s3-u1-l1-q4",
+          "label": "Ravi's lead",
+          "prompt": "At 5% a year in the example, Ravi finishes ahead of Alia. Use the figures on the start-age card. How many dollars ahead is Ravi?",
+          "type": "number",
+          "hint": "Find the two balances at 5% in the start-age card, then subtract.",
+          "unit": "$",
+          "answer": 3992300,
+          "tolerance": 0,
+          "why": "The lead is the difference of the two balances at 5%.",
+          "working": "$201,080 - $161,157 = $39,923.",
+          "miss": "Take Alia's balance away from Ravi's.",
+          "traps": [
+            {
+              "value": 36223700,
+              "why": "That adds the two balances. The question asks for the difference."
+            }
+          ]
+        },
+        {
+          "id": "ft2030-s3-u1-l1-q5",
+          "label": "Growth at 27",
+          "prompt": "A saver who starts at 27 puts in $91,200 and has $452,099 at 65. How much of that is growth?",
+          "type": "number",
+          "terms": [
+            {
+              "term": "growth",
+              "meaning": "The balance minus what you put in. It is the money the money earned."
+            }
+          ],
+          "hint": "The Growth row in the third card shows how it is found.",
+          "unit": "$",
+          "answer": 36089900,
+          "tolerance": 0,
+          "why": "Growth is the balance at 65 minus the total put in.",
+          "working": "$452,099 - $91,200 = $360,899.",
+          "miss": "Take what the saver put in away from the balance.",
+          "traps": [
+            {
+              "value": 45209900,
+              "why": "That is the whole balance. Growth leaves out what was put in."
+            }
+          ]
+        },
+        {
+          "id": "ft2030-s3-u1-l1-q6",
+          "label": "What Alia had",
+          "prompt": "What did Alia have that Ravi did not?",
+          "type": "choice",
+          "hint": "Compare the first deposits of the two savers.",
+          "options": [
+            {
+              "text": "A higher rate than Ravi",
+              "why": "Both earn the same 7% in the example."
+            },
+            {
+              "text": "More money put in each month",
+              "why": "Both put in $200.00 a month."
+            },
+            {
+              "text": "Ten more years for her first deposits to grow",
+              "why": "Yes. Her first deposits had 43 years to 65, and Ravi's first one had 33."
+            }
+          ],
+          "answer": 2
+        },
+        {
+          "id": "ft2030-s3-u1-l1-q7",
+          "label": "Past $100,000",
+          "prompt": "Alia adds nothing after 32. Tap the first point on the chart where her balance is above $100,000.",
+          "type": "point",
+          "figure": {
+            "kind": "line",
+            "title": "Alia after she stops saving",
+            "unit": "$",
+            "points": [
+              {
+                "label": "Age 32",
+                "value": 3461700
+              },
+              {
+                "label": "Age 40",
+                "value": 6050400
+              },
+              {
+                "label": "Age 48",
+                "value": 10575100
+              },
+              {
+                "label": "Age 56",
+                "value": 18483500
+              },
+              {
+                "label": "Age 65",
+                "value": 34641300
+              }
+            ]
+          },
+          "hint": "Read the value at each age. Find the first one over $100,000.",
+          "answer": 2,
+          "why": "At age 48 she has $105,751. At 40 she has $60,504, which is below $100,000.",
+          "miss": "Check each age from the left. Stop at the first one with a value over $100,000."
+        },
+        {
+          "id": "ft2030-s3-u1-l1-q8",
+          "label": "Ten-year wait",
+          "prompt": "One saver deposits $200.00 a month until 65. Starting at 27 gives $452,099. Starting at 37 gives $207,738. How much does the ten-year wait cost?",
+          "type": "number",
+          "hint": "Subtract the later start from the earlier start.",
+          "unit": "$",
+          "answer": 24436100,
+          "tolerance": 0,
+          "why": "The cost is the difference between the two balances at 65.",
+          "working": "$452,099 - $207,738 = $244,361.",
+          "miss": "Take the later start's balance away from the earlier start's.",
+          "traps": [
+            {
+              "value": 2400000,
+              "why": "That is the ten years of deposits. The cost is the loss in the balance at 65."
+            }
+          ]
+        },
+        {
+          "id": "ft2030-s3-u1-l1-q9",
+          "label": "Costliest wait",
+          "prompt": "Tap the five-year wait that costs the most dollars.",
+          "type": "point",
+          "figure": {
+            "kind": "bars",
+            "title": "Cost of five more years of waiting",
+            "unit": "$",
+            "bars": [
+              {
+                "label": "22 to 27",
+                "value": 20312700
+              },
+              {
+                "label": "27 to 32",
+                "value": 14328600
+              },
+              {
+                "label": "32 to 37",
+                "value": 10107500
+              },
+              {
+                "label": "37 to 42",
+                "value": 7129900
+              }
+            ]
+          },
+          "hint": "Each bar is the cost of one five-year wait. Compare the bars.",
+          "answer": 0,
+          "why": "The 22 to 27 wait costs the most, because those years had the most time left to grow.",
+          "miss": "Read the dollar value of each bar and compare them."
+        },
+        {
+          "id": "ft2030-s3-u1-l1-q10",
+          "label": "At five percent",
+          "prompt": "In the example at 5% a year, Ravi has $201,080 and Alia has $161,157 at 65. What does that show?",
+          "type": "choice",
+          "hint": "Compare the two balances at 5%.",
+          "options": [
+            {
+              "text": "Alia is ahead at every rate",
+              "why": "At 5% Ravi is ahead, so a start at 22 does not always win."
+            },
+            {
+              "text": "The rate can change who is ahead",
+              "why": "Yes. At 7% Alia is ahead and at 5% Ravi is ahead. Rate and time both matter."
+            },
+            {
+              "text": "Start age has no effect on a balance",
+              "why": "It does. In the start-age table every later start ends lower."
+            }
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "id": "ft2030-s3-u1-l2",
+      "title": "Four kinds of assets",
+      "kind": "lesson",
+      "learn": [
+        "Name the four asset classes and what each one does.",
+        "Say what you get and what you risk with each."
+      ],
+      "cards": [
+        {
+          "text": "Many things can hold your money. They behave in a few ways, so they are sorted into four groups called asset classes. An asset is something you own that has value. The class decides what the asset pays you and what can go wrong.",
+          "figure": {
+            "kind": "table",
+            "title": "Four asset classes",
+            "columns": [
+              "Class",
+              "Examples",
+              "Your part"
+            ],
+            "rows": [
+              [
+                "Cash and equivalents",
+                "Savings account, GIC",
+                "You deposit"
+              ],
+              [
+                "Fixed income",
+                "Government or company bond",
+                "You lend"
+              ],
+              [
+                "Equities",
+                "Shares, an index fund",
+                "You own a share"
+              ],
+              [
+                "Real assets, alternatives",
+                "Property, gold, crypto",
+                "You hold a thing"
+              ]
+            ]
+          }
+        },
+        {
+          "text": "Cash and equivalents are money you can reach quickly, like a savings account. A GIC, a loan to a bank for a set term, sits here too: locked until the term ends, it may pay a bit more for that. The danger is slow: at 3% inflation (an example), a $200.00 basket costs $206.00 next year, while your $200.00 stays $200.00."
+        },
+        {
+          "text": "Fixed income is lending to a government or a company, which then owes you. A bond is such a loan. It pays a set amount on set dates. Lend $1,000.00 at 5% and a year's payment is $50.00. You lose if the borrower fails to pay, or if prices rise faster than the payment. If a company fails, lenders are paid before owners."
+        },
+        {
+          "text": "Equities are shares: you own part of a business. Owners are paid last, from what remains. A shop takes in $8,000, pays $5,000 in costs and $500 to its lender, leaving $2,500 for the owners. Sometimes nothing remains. One company is one bet. An index fund holds many companies and spreads it."
+        },
+        {
+          "text": "Real assets and alternatives hold value in a thing: property and gold, and crypto, which fits nowhere else. The test: does the thing pay you? A shop earns a profit, a bond pays interest, a rented house pays rent. A bar of gold or a crypto coin pays nothing, so its value rests on what the next buyer will pay."
+        },
+        {
+          "text": "Side by side, each class has its own job. Cash is there for money you need soon. Fixed income pays a set amount. Equities share in what a business earns. Real assets hold value in a thing. The next level combines them into a mix.",
+          "figure": {
+            "kind": "table",
+            "title": "What each class gives and risks",
+            "columns": [
+              "Class",
+              "You get",
+              "You risk"
+            ],
+            "rows": [
+              [
+                "Cash",
+                "A little interest",
+                "Prices outrunning it"
+              ],
+              [
+                "Fixed income",
+                "A set payment",
+                "Not repaid, or outrun by prices"
+              ],
+              [
+                "Equities",
+                "What remains",
+                "Nothing remains"
+              ],
+              [
+                "Real assets, alternatives",
+                "What buyers pay",
+                "Buyers paying less"
+              ]
+            ]
+          }
+        }
+      ],
+      "questions": [
+        {
+          "id": "ft2030-s3-u1-l2-q1",
+          "label": "Savings account",
+          "prompt": "Dana keeps money in a savings account. Which asset class is that?",
+          "type": "choice",
+          "terms": [
+            {
+              "term": "asset class",
+              "meaning": "A group of things to put money into that behave in a similar way."
+            },
+            {
+              "term": "GIC",
+              "meaning": "A loan to a bank for a set time. The money is locked until the time ends."
+            }
+          ],
+          "hint": "Check the examples on the first card.",
+          "options": [
+            {
+              "text": "Equities",
+              "why": "Equities are pieces of a business. A savings account is not one."
+            },
+            {
+              "text": "Fixed income",
+              "why": "Fixed income is a loan for a payment set in advance, such as a bond."
+            },
+            {
+              "text": "Cash and cash equivalents",
+              "why": "Yes. The money can be reached quickly and stays the same in dollars."
+            },
+            {
+              "text": "Real assets and alternatives",
+              "why": "Those are things such as property and gold, not an account."
+            }
+          ],
+          "answer": 2
+        },
+        {
+          "id": "ft2030-s3-u1-l2-q2",
+          "label": "A bond",
+          "prompt": "Mo buys a bond. He lends money and is owed a payment on a set date. Which class is that?",
+          "type": "choice",
+          "terms": [
+            {
+              "term": "fixed income",
+              "meaning": "Money you lend, for a payment set in advance. A bond is one kind."
+            }
+          ],
+          "hint": "Look at the Your part column on the first card.",
+          "options": [
+            {
+              "text": "Fixed income",
+              "why": "Yes. A loan for a set payment on a set date is fixed income."
+            },
+            {
+              "text": "Equities",
+              "why": "Equities mean owning a piece of a business, not lending to it."
+            },
+            {
+              "text": "Cash and cash equivalents",
+              "why": "Cash is money you can reach quickly. A bond is a loan with a payment schedule."
+            },
+            {
+              "text": "Real assets and alternatives",
+              "why": "A bond is paper that someone owes you, not a thing."
+            }
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ft2030-s3-u1-l2-q3",
+          "label": "Paid last",
+          "prompt": "Which class is paid last, from what remains after costs and lenders?",
+          "type": "choice",
+          "terms": [
+            {
+              "term": "equities",
+              "meaning": "Shares: pieces of a business you own."
+            }
+          ],
+          "hint": "Reread the card on equities.",
+          "options": [
+            {
+              "text": "Fixed income",
+              "why": "Lenders get a set payment and are paid before owners."
+            },
+            {
+              "text": "Cash and cash equivalents",
+              "why": "Cash is just money you hold. It does not wait on a business."
+            },
+            {
+              "text": "Real assets and alternatives",
+              "why": "These depend on what someone else will pay, not on what a business has left."
+            },
+            {
+              "text": "Equities",
+              "why": "Yes. Owners come last and get what remains, which may be nothing."
+            }
+          ],
+          "answer": 3
+        },
+        {
+          "id": "ft2030-s3-u1-l2-q4",
+          "label": "Produces something",
+          "prompt": "Which of these pays money to its owner without being sold?",
+          "type": "choice",
+          "hint": "Reread the card on real assets and alternatives.",
+          "options": [
+            {
+              "text": "A rental house that collects rent",
+              "why": "Yes. The rent is paid to the owner, with no sale needed."
+            },
+            {
+              "text": "A gold bar kept in a safe",
+              "why": "Gold sits there. It pays nothing out, and its value rests on what buyers will pay."
+            },
+            {
+              "text": "A crypto coin held in an account",
+              "why": "It pays nothing out either, and its value rests on what buyers will pay."
+            }
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ft2030-s3-u1-l2-q5",
+          "label": "Bond payment",
+          "prompt": "Ira lends $2,400.00 at 5% interest a year, set in advance. What is his payment for one year?",
+          "type": "number",
+          "hint": "Change 5% to a decimal, then multiply.",
+          "unit": "$",
+          "answer": 12000,
+          "tolerance": 0,
+          "why": "A set rate on the amount lent gives the payment.",
+          "working": "$2,400.00 x 0.05 = $120.00.",
+          "miss": "Write 5% as 0.05 and multiply by the amount lent.",
+          "traps": [
+            {
+              "value": 252000,
+              "why": "That is the amount lent plus the payment. The question asks for the payment only."
+            }
+          ]
+        },
+        {
+          "id": "ft2030-s3-u1-l2-q6",
+          "label": "The same basket",
+          "prompt": "A basket costs $250.00 today. In this example prices rise 4% in a year. What does the same basket cost next year?",
+          "type": "number",
+          "terms": [
+            {
+              "term": "inflation",
+              "meaning": "A rise in prices over time, so the same dollars buy less."
+            }
+          ],
+          "hint": "Find the rise in dollars, then add it.",
+          "unit": "$",
+          "answer": 26000,
+          "tolerance": 0,
+          "why": "Prices rise by the percent, so the new price is the old price plus that rise.",
+          "working": "$250.00 x 0.04 = $10.00. $250.00 + $10.00 = $260.00.",
+          "miss": "Work out 4% of the price, then add it to the price.",
+          "traps": [
+            {
+              "value": 1000,
+              "why": "That is only the rise. The basket costs the old price plus the rise."
+            }
+          ]
+        },
+        {
+          "id": "ft2030-s3-u1-l2-q7",
+          "label": "Left for owners",
+          "prompt": "A bakery takes in $12,000.00. It pays $7,500.00 in costs and $800.00 to its lender. How much is left for the owners?",
+          "type": "number",
+          "terms": [
+            {
+              "term": "equities",
+              "meaning": "Shares: pieces of a business you own."
+            }
+          ],
+          "hint": "Take away everyone who is paid before the owners.",
+          "unit": "$",
+          "answer": 370000,
+          "tolerance": 0,
+          "why": "Owners get what is left after the costs and the lender are paid.",
+          "working": "$12,000.00 - $7,500.00 - $800.00 = $3,700.00.",
+          "miss": "Subtract both payments, not only one.",
+          "traps": [
+            {
+              "value": 450000,
+              "why": "That forgets the lender. The lender is paid before the owners."
+            }
+          ]
+        },
+        {
+          "id": "ft2030-s3-u1-l2-q8",
+          "label": "A company fails",
+          "prompt": "A company fails. Who has the better claim on what it has left?",
+          "type": "choice",
+          "hint": "Reread the card on fixed income.",
+          "options": [
+            {
+              "text": "The owners, because they risk the most",
+              "why": "Owners come last. Risking more does not move them up the line."
+            },
+            {
+              "text": "The lenders, who are paid first",
+              "why": "Yes. If a company fails, lenders are paid before owners."
+            },
+            {
+              "text": "They share it equally",
+              "why": "There is an order. Lenders are paid first."
+            }
+          ],
+          "answer": 1
+        },
+        {
+          "id": "ft2030-s3-u1-l2-q9",
+          "label": "Owners' share",
+          "prompt": "Tap the bar that shows the money left for the owners.",
+          "type": "point",
+          "figure": {
+            "kind": "bars",
+            "title": "A shop's year",
+            "unit": "$",
+            "bars": [
+              {
+                "label": "Money in",
+                "value": 900000
+              },
+              {
+                "label": "Costs",
+                "value": 550000
+              },
+              {
+                "label": "Lender",
+                "value": 70000
+              },
+              {
+                "label": "Left",
+                "value": 280000
+              }
+            ]
+          },
+          "hint": "The costs and the lender come first. Check the bars in order.",
+          "answer": 3,
+          "why": "$9,000.00 - $5,500.00 - $700.00 = $2,800.00, the last bar.",
+          "miss": "Work out what remains after the costs and the lender, then match it to a bar."
+        },
+        {
+          "id": "ft2030-s3-u1-l2-q10",
+          "label": "Long in cash",
+          "prompt": "In level 1, Alia's money sat for 33 years with nothing added. Kept all in cash, which risk would matter most over so long?",
+          "type": "choice",
+          "terms": [
+            {
+              "term": "inflation",
+              "meaning": "A rise in prices over time, so the same dollars buy less."
+            }
+          ],
+          "hint": "Look at the risk listed for cash on the second card.",
+          "options": [
+            {
+              "text": "Prices rising until it buys much less",
+              "why": "Yes. Cash holds its dollars but inflation keeps cutting what they buy."
+            },
+            {
+              "text": "The dollars falling a little each year",
+              "why": "Cash does not fall in dollars. What falls is what the dollars buy."
+            },
+            {
+              "text": "The business running out of money",
+              "why": "That is the equity risk. Cash is not a piece of a business."
+            }
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "ft2030-s3-u1-l3",
+      "title": "A mix for a timeline",
+      "kind": "lesson",
+      "learn": [
+        "Split 100 points across the four classes.",
+        "Say why the time before you need the money shapes the mix."
+      ],
+      "go": {
+        "building": "exchange",
+        "label": "Look at the Exchange"
+      },
+      "cards": [
+        {
+          "text": "A mix is how you split money across the four classes. Use 100 points, and each point is 1% of the money. A mix of 20 points in cash, 30 in fixed income, 45 in equities and 5 in real assets and alternatives adds to 100 and puts 45% in equities."
+        },
+        {
+          "text": "Three made-up people each need money at a different time. Sami needs hers in 10 months. Hana needs hers in 8 years. Lars needs his in 41 years. How long until you need the money is your timeline. It is the first question for a mix.",
+          "figure": {
+            "kind": "table",
+            "title": "Three timelines",
+            "columns": [
+              "Person",
+              "Goal",
+              "Needed in"
+            ],
+            "rows": [
+              [
+                "Sami, 16",
+                "A course fee",
+                "10 months"
+              ],
+              [
+                "Hana, 36",
+                "A home down payment",
+                "8 years"
+              ],
+              [
+                "Lars, 24",
+                "Retirement",
+                "41 years"
+              ]
+            ]
+          }
+        },
+        {
+          "text": "Why does the timeline matter? Equities can fall, and a fall takes time to repair. In the game's Exchange a teacher can stage a market crash that takes 25% off equity funds and 5% off bond funds. Cash stays the same in dollars. Money needed in 10 months cannot wait out a crash.",
+          "figure": {
+            "kind": "table",
+            "title": "$1,000.00 after a crash (game)",
+            "columns": [
+              "Class",
+              "After the crash"
+            ],
+            "rows": [
+              [
+                "Cash",
+                "$1,000.00"
+              ],
+              [
+                "Fixed income (bond fund)",
+                "$950.00"
+              ],
+              [
+                "Equities (equity fund)",
+                "$750.00"
+              ]
+            ]
+          }
+        },
+        {
+          "text": "This gives a rule. The sooner you need the money, the more weight goes to cash and fixed income. The longer you can wait, the more weight equities can carry. Age is not the rule: Sami is 16 but her timeline is shorter than that of a 63-year-old who retires in 2 years."
+        },
+        {
+          "text": "Mixes for one timeline can differ and still be reasonable. A person 2 years from retiring may keep some equities or go nearly all cash. The rule gives the direction, not one answer. A second question is personal: how big a drop can you sit through? That is risk tolerance."
+        },
+        {
+          "text": "The game's Exchange has a fund of every company in town, a bond fund and a balanced fund. The balanced fund holds 60 parts equity fund and 40 parts bond fund, one made-up kind of mix. Look at what each fund holds. Nothing here says what to buy."
+        }
+      ],
+      "questions": [
+        {
+          "id": "ft2030-s3-u1-l3-q1",
+          "label": "What drives it",
+          "prompt": "By the rule in this level, what matters most when you choose a mix?",
+          "type": "choice",
+          "terms": [
+            {
+              "term": "timeline",
+              "meaning": "How long until you need the money back. Also called the time horizon."
+            }
+          ],
+          "hint": "Read the rule on the fourth card.",
+          "options": [
+            {
+              "text": "How old the person is",
+              "why": "Age does not decide it. A 16-year-old can have a shorter timeline than a 63-year-old."
+            },
+            {
+              "text": "How soon the money is needed",
+              "why": "Yes. The timeline shapes the mix more than anything else about the person."
+            },
+            {
+              "text": "How many classes there are",
+              "why": "There are always four. The question is how to weigh them."
+            }
+          ],
+          "answer": 1
+        },
+        {
+          "id": "ft2030-s3-u1-l3-q2",
+          "label": "Shorter timeline",
+          "prompt": "Sami is 16 and needs money in 10 months. Another person is 63 and retires in 2 years. Whose timeline is shorter?",
+          "type": "choice",
+          "terms": [
+            {
+              "term": "timeline",
+              "meaning": "How long until you need the money back. Also called the time horizon."
+            }
+          ],
+          "hint": "Put both times in months.",
+          "options": [
+            {
+              "text": "The 63-year-old's, because she is older",
+              "why": "Age does not set the timeline. Two years is 24 months, more than 10."
+            },
+            {
+              "text": "They are the same length",
+              "why": "10 months and 24 months are not the same."
+            },
+            {
+              "text": "Sami's, at 10 months",
+              "why": "Yes. 10 months is shorter than 2 years, which is 24 months."
+            }
+          ],
+          "answer": 2
+        },
+        {
+          "id": "ft2030-s3-u1-l3-q3",
+          "label": "Points in equities",
+          "prompt": "A mix has 25 points in cash, 35 in fixed income and 5 in real assets and alternatives. The mix adds to 100. What percent is in equities?",
+          "type": "number",
+          "hint": "The four classes add to 100 points. Subtract the three you know.",
+          "unit": "%",
+          "answer": 35,
+          "tolerance": 0,
+          "why": "A mix adds to 100 points, and each point is 1%.",
+          "working": "25 + 35 + 5 = 65. 100 - 65 = 35 points, which is 35%.",
+          "miss": "Add the three known classes, then take that from 100.",
+          "traps": [
+            {
+              "value": 65,
+              "why": "That is the other three classes added. Equities are what remains of the 100."
+            }
+          ]
+        },
+        {
+          "id": "ft2030-s3-u1-l3-q4",
+          "label": "Cash and bonds",
+          "prompt": "Hana's mix is 20 points cash, 35 fixed income, 40 equities and 5 real assets and alternatives. What percent is in cash and fixed income together?",
+          "type": "number",
+          "hint": "Add only the two classes the question names.",
+          "unit": "%",
+          "answer": 55,
+          "tolerance": 0,
+          "why": "Each point is 1%, so add the two classes' points.",
+          "working": "20 + 35 = 55 points, which is 55%.",
+          "miss": "Add the points for cash and fixed income only.",
+          "traps": [
+            {
+              "value": 40,
+              "why": "That is the equities share. The question asks for cash plus fixed income."
+            }
+          ]
+        },
+        {
+          "id": "ft2030-s3-u1-l3-q5",
+          "label": "Mix for Lars",
+          "prompt": "Lars needs the money in 41 years, the longest of the three timelines. Which mix follows the rule for him?",
+          "type": "choice",
+          "hint": "Find Lars on the second card, then read the rule on the fourth card.",
+          "options": [
+            {
+              "text": "60 cash, 30 fixed income, 10 equities, 0 real assets and alternatives",
+              "why": "That weighs cash most, which suits a short timeline, not the longest."
+            },
+            {
+              "text": "40 cash, 40 fixed income, 20 equities, 0 real assets and alternatives",
+              "why": "That still weighs cash and fixed income most. The longest timeline can carry more equities."
+            },
+            {
+              "text": "10 cash, 20 fixed income, 65 equities, 5 real assets and alternatives",
+              "why": "Yes. Equities carry the most weight, which the longest timeline can allow."
+            }
+          ],
+          "answer": 2
+        },
+        {
+          "id": "ft2030-s3-u1-l3-q6",
+          "label": "Mix for Sami",
+          "prompt": "Sami needs the money in 10 months, the shortest of the three timelines. Which mix follows the rule for her?",
+          "type": "choice",
+          "hint": "Find Sami on the second card, then read the rule on the fourth card.",
+          "options": [
+            {
+              "text": "15 cash, 25 fixed income, 55 equities, 5 real assets and alternatives",
+              "why": "Equities carry most of the weight, which suits a long timeline."
+            },
+            {
+              "text": "70 cash, 25 fixed income, 5 equities, 0 real assets and alternatives",
+              "why": "Yes. Cash and fixed income carry almost all of the weight, as a short timeline calls for."
+            },
+            {
+              "text": "30 cash, 20 fixed income, 40 equities, 10 real assets and alternatives",
+              "why": "Equities and alternatives carry half the weight. A short timeline cannot wait out a fall."
+            }
+          ],
+          "answer": 1
+        },
+        {
+          "id": "ft2030-s3-u1-l3-q7",
+          "label": "After a crash",
+          "prompt": "A person holds $4,000.00 in an equity fund and $6,000.00 in a bond fund. A crash takes 25% off equity funds and 5% off bond funds. What are the two funds worth together afterwards?",
+          "type": "number",
+          "hint": "Work out each fund after the crash, then add them.",
+          "unit": "$",
+          "answer": 870000,
+          "tolerance": 0,
+          "why": "Each fund falls by its own percent, and the two results add.",
+          "working": "Equity: $4,000.00 x 0.75 = $3,000.00. Bond: $6,000.00 x 0.95 = $5,700.00. Total $8,700.00.",
+          "miss": "Apply the 25% fall to one fund and the 5% fall to the other.",
+          "traps": [
+            {
+              "value": 750000,
+              "why": "That takes 25% off the whole $10,000.00. The bond fund fell only 5%."
+            }
+          ]
+        },
+        {
+          "id": "ft2030-s3-u1-l3-q8",
+          "label": "Biggest fall",
+          "prompt": "Tap the class that fell the furthest from $1,000.00.",
+          "type": "point",
+          "figure": {
+            "kind": "bars",
+            "title": "$1,000.00 after a crash (game)",
+            "unit": "$",
+            "bars": [
+              {
+                "label": "Cash",
+                "value": 100000
+              },
+              {
+                "label": "Fixed income",
+                "value": 95000
+              },
+              {
+                "label": "Equities",
+                "value": 75000
+              }
+            ]
+          },
+          "hint": "Each bar is what the $1,000.00 is worth after the crash.",
+          "answer": 2,
+          "why": "Equities are down to $750.00, a fall of $250.00. Fixed income lost $50.00 and cash lost nothing.",
+          "miss": "Compare each bar with the $1,000.00 you started with."
+        },
+        {
+          "id": "ft2030-s3-u1-l3-q9",
+          "label": "Same timeline",
+          "prompt": "Two people both need money in 20 years. One would panic at a big drop and the other would not. What differs between them?",
+          "type": "choice",
+          "terms": [
+            {
+              "term": "risk tolerance",
+              "meaning": "How big a drop a person can sit through without panicking. It differs from person to person."
+            }
+          ],
+          "hint": "Reread the card on risk tolerance.",
+          "options": [
+            {
+              "text": "Their timelines",
+              "why": "Both need the money in 20 years, so the timelines are the same."
+            },
+            {
+              "text": "Their risk tolerance",
+              "why": "Yes. How big a drop a person can sit through is personal, and it differs."
+            },
+            {
+              "text": "Their asset classes",
+              "why": "The four classes are the same for everyone."
+            }
+          ],
+          "answer": 1
+        },
+        {
+          "id": "ft2030-s3-u1-l3-q10",
+          "label": "All cash for long",
+          "prompt": "Lars keeps all of his 41-year money in cash. Which risk from level 2 matters most for him?",
+          "type": "choice",
+          "terms": [
+            {
+              "term": "inflation",
+              "meaning": "A rise in prices over time, so the same dollars buy less."
+            }
+          ],
+          "hint": "Look at the risk listed for cash in level 2.",
+          "options": [
+            {
+              "text": "Inflation cutting what the money buys",
+              "why": "Yes. Inflation keeps cutting what the dollars buy, and 41 years gives it a lot of time."
+            },
+            {
+              "text": "The company failing",
+              "why": "Cash is not a company. That risk belongs to equities and bonds."
+            },
+            {
+              "text": "The money being paid out too early",
+              "why": "Cash can be reached at any time. That is not the risk."
+            }
+          ],
+          "answer": 0
+        }
+      ]
+    }
+  ]
+}

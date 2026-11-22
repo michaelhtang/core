@@ -1,0 +1,1086 @@
+{
+  "id": "ft2030-s3-u3",
+  "title": "Lending your money",
+  "blurb": "Savings accounts, GICs, T-bills and bonds, and why bond prices move.",
+  "outcome_codes": [
+    "FIN3080 1.8",
+    "FIN3080 1.9",
+    "FIN3080 1.10",
+    "FIN3080 1.15",
+    "FIN3080 1.16"
+  ],
+  "levels": [
+    {
+      "id": "ft2030-s3-u3-l1",
+      "title": "Four ways to lend",
+      "kind": "lesson",
+      "learn": [
+        "Name the four common ways to lend money.",
+        "Say who you lend to, for how long, and how you are paid."
+      ],
+      "cards": [
+        {
+          "text": "Lending means letting someone else use your money for a while. They promise to pay it back, and they pay you for the loan. Four common ways to lend are a savings account, a GIC, a T-bill and a bond. Each one answers three questions: who, for how long, and how you get paid."
+        },
+        {
+          "text": "The table puts the four side by side. Read across a row to see who you lend to, for how long, and how you are paid. The next cards take them one at a time.",
+          "figure": {
+            "kind": "table",
+            "title": "Four ways to lend",
+            "columns": [
+              "Way",
+              "You lend to",
+              "For how long",
+              "You are paid"
+            ],
+            "rows": [
+              [
+                "Savings account",
+                "A bank",
+                "Any time",
+                "Interest on your balance"
+              ],
+              [
+                "GIC",
+                "A bank",
+                "A set term",
+                "Interest at a set rate"
+              ],
+              [
+                "T-bill",
+                "A government",
+                "A short term",
+                "You pay less, get face value"
+              ],
+              [
+                "Bond",
+                "A government or company",
+                "Years",
+                "A coupon each year, then face value"
+              ]
+            ]
+          }
+        },
+        {
+          "text": "A savings account and a GIC are both loans to a bank. You can take money out of a savings account at any time with no penalty. A GIC runs for a set term and is locked in. In this example, $2,500.00 in a GIC at 3% earns $75.00 in one year."
+        },
+        {
+          "text": "A T-bill is a short loan to a government, such as for 3 months. It pays no interest. You buy it for less than its face value, here $1,000.00, and you get the full face value back at the end. Your gain is the gap. Buy at $985.00 and you gain $15.00."
+        },
+        {
+          "text": "A bond is a loan to a government or a company for a number of years. It pays a coupon, a fixed payment, once a year in these examples. At the end, the maturity, you get the face value back. A $1,000.00 bond with a 4% coupon pays $40.00 a year for its years, then returns the $1,000.00."
+        },
+        {
+          "text": "A bond can be sold to another buyer before it ends. A debenture is a company bond backed only by the company’s promise to pay, with no asset behind it. Level 2 asks how safe each way is. Level 3 asks what a bond sells for."
+        }
+      ],
+      "questions": [
+        {
+          "id": "ft2030-s3-u3-l1-q1",
+          "label": "Cash out any time",
+          "prompt": "Which of the four can you cash out tomorrow with no penalty?",
+          "type": "choice",
+          "terms": [
+            {
+              "term": "GIC",
+              "meaning": "A loan to a bank for a set term, at a set rate. Usually locked in."
+            }
+          ],
+          "hint": "Look at the “For how long” column of the table on the second card.",
+          "options": [
+            {
+              "text": "A GIC",
+              "why": "A GIC runs for a set term and is locked in until the term ends."
+            },
+            {
+              "text": "A savings account",
+              "why": "Yes. Money in a savings account can come out at any time with no penalty."
+            },
+            {
+              "text": "A T-bill",
+              "why": "A T-bill pays its face value at its end date. It is short, but it is not an any-time account."
+            },
+            {
+              "text": "A bond",
+              "why": "A bond runs for years and pays back its face value at the end."
+            }
+          ],
+          "answer": 1
+        },
+        {
+          "id": "ft2030-s3-u3-l1-q2",
+          "label": "How a T-bill pays",
+          "prompt": "How does a T-bill pay you?",
+          "type": "choice",
+          "terms": [
+            {
+              "term": "T-bill",
+              "meaning": "A short loan to a government. It pays no interest: you buy it for less than its face value."
+            },
+            {
+              "term": "face value",
+              "meaning": "The amount a bond or T-bill pays back at the end."
+            }
+          ],
+          "hint": "Think about the card on T-bills. Is there a yearly payment?",
+          "options": [
+            {
+              "text": "A coupon every year until the end",
+              "why": "That is how a bond pays. A T-bill pays no coupon."
+            },
+            {
+              "text": "Interest added to your balance each month",
+              "why": "That is how a savings account works. A T-bill has no balance that grows."
+            },
+            {
+              "text": "You pay less than face value and get the full face value back",
+              "why": "Yes. The gap between what you pay and the face value is your gain."
+            },
+            {
+              "text": "Interest at a set rate on a locked term",
+              "why": "That is a GIC. A T-bill pays no interest at all."
+            }
+          ],
+          "answer": 2
+        },
+        {
+          "id": "ft2030-s3-u3-l1-q3",
+          "label": "GIC interest",
+          "prompt": "Sana puts $4,000.00 in a GIC at 3% for one year. How much interest does she earn?",
+          "type": "number",
+          "terms": [
+            {
+              "term": "GIC",
+              "meaning": "A loan to a bank for a set term, at a set rate. Usually locked in."
+            }
+          ],
+          "traps": [
+            {
+              "value": 412000,
+              "why": "That is the total at the end, the amount plus the interest. The question asks for the interest only."
+            }
+          ],
+          "hint": "Write 3% as 0.03, then multiply by the amount.",
+          "unit": "$",
+          "answer": 12000,
+          "tolerance": 0,
+          "why": "Interest for one year is the amount times the rate.",
+          "working": "3% = 0.03. $4,000.00 x 0.03 = $120.00.",
+          "miss": "Turn the percent into a decimal and multiply by the amount lent."
+        },
+        {
+          "id": "ft2030-s3-u3-l1-q4",
+          "label": "T-bill gain",
+          "prompt": "Leo buys a T-bill for $980.00. At the end it pays its face value of $1,000.00. How much does he gain?",
+          "type": "number",
+          "terms": [
+            {
+              "term": "T-bill",
+              "meaning": "A short loan to a government. It pays no interest: you buy it for less than its face value."
+            },
+            {
+              "term": "face value",
+              "meaning": "The amount a bond or T-bill pays back at the end."
+            }
+          ],
+          "hint": "Subtract what he paid from what he gets back.",
+          "unit": "$",
+          "answer": 2000,
+          "tolerance": 0,
+          "why": "The gain is the face value minus the price paid.",
+          "working": "$1,000.00 - $980.00 = $20.00.",
+          "miss": "A T-bill pays no interest. Find the gap between what Leo pays and what he gets back."
+        },
+        {
+          "id": "ft2030-s3-u3-l1-q5",
+          "label": "Yearly coupon",
+          "prompt": "A bond has a face value of $5,000.00 and a 3% coupon. How much does it pay each year?",
+          "type": "number",
+          "terms": [
+            {
+              "term": "coupon",
+              "meaning": "The fixed payment a bond makes each year."
+            },
+            {
+              "term": "face value",
+              "meaning": "The amount a bond or T-bill pays back at the end."
+            }
+          ],
+          "hint": "The coupon is a percent of the face value.",
+          "unit": "$",
+          "answer": 15000,
+          "tolerance": 0,
+          "why": "The yearly coupon is the face value times the coupon rate.",
+          "working": "3% = 0.03. $5,000.00 x 0.03 = $150.00 a year.",
+          "miss": "Multiply the face value by the coupon rate as a decimal."
+        },
+        {
+          "id": "ft2030-s3-u3-l1-q6",
+          "label": "Find the $60 coupon",
+          "prompt": "Each bar is the face value of a bond with a 3% coupon. Tap the bond that pays $60.00 a year.",
+          "type": "point",
+          "figure": {
+            "kind": "bars",
+            "title": "Face value of four bonds",
+            "unit": "$",
+            "bars": [
+              {
+                "label": "$1,000 face",
+                "value": 100000
+              },
+              {
+                "label": "$2,000 face",
+                "value": 200000
+              },
+              {
+                "label": "$3,000 face",
+                "value": 300000
+              },
+              {
+                "label": "$4,000 face",
+                "value": 400000
+              }
+            ]
+          },
+          "hint": "Find the face value where 3% of it is $60.00.",
+          "terms": [
+            {
+              "term": "coupon",
+              "meaning": "The fixed payment a bond makes each year."
+            }
+          ],
+          "answer": 1,
+          "why": "3% of $2,000.00 is $60.00, the second bar.",
+          "miss": "Take 3% of a bar’s face value and see if it comes to $60.00."
+        },
+        {
+          "id": "ft2030-s3-u3-l1-q7",
+          "label": "Five years of coupons",
+          "prompt": "A bond has a $1,000.00 face value, a 4% coupon and 5 years to run. How much does it pay in coupons over the 5 years? Do not count the face value.",
+          "type": "number",
+          "terms": [
+            {
+              "term": "coupon",
+              "meaning": "The fixed payment a bond makes each year."
+            },
+            {
+              "term": "maturity",
+              "meaning": "The date a bond ends and the face value is paid back."
+            }
+          ],
+          "traps": [
+            {
+              "value": 120000,
+              "why": "That adds the face value. The question asks for the coupons only."
+            }
+          ],
+          "hint": "Find one year’s coupon first, then count the years.",
+          "unit": "$",
+          "answer": 20000,
+          "tolerance": 0,
+          "why": "One coupon is the face value times 4%. There are five of them.",
+          "working": "$1,000.00 x 0.04 = $40.00 a year. $40.00 x 5 = $200.00.",
+          "miss": "First find one year’s coupon, then multiply by 5."
+        },
+        {
+          "id": "ft2030-s3-u3-l1-q8",
+          "label": "What a debenture is",
+          "prompt": "Which description fits a debenture?",
+          "type": "choice",
+          "terms": [
+            {
+              "term": "debenture",
+              "meaning": "A company bond backed only by the company’s promise to pay."
+            }
+          ],
+          "hint": "Look at the last card of this level.",
+          "options": [
+            {
+              "text": "A company bond backed only by its promise to pay",
+              "why": "Yes. No asset sits behind it, only the company’s promise."
+            },
+            {
+              "text": "A government loan that pays no interest",
+              "why": "That describes a T-bill, which pays its gain as the gap between price and face value."
+            },
+            {
+              "text": "A savings account at a bank",
+              "why": "A savings account is a loan to a bank, not a bond from a company."
+            },
+            {
+              "text": "A GIC that can be cashed in early",
+              "why": "A debenture is a kind of bond, not a GIC."
+            }
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ft2030-s3-u3-l1-q9",
+          "label": "Lend to a company",
+          "prompt": "Use the table. Which way to lend can be a loan to a company that is not a bank?",
+          "type": "choice",
+          "figure": {
+            "kind": "table",
+            "title": "Four ways to lend",
+            "columns": [
+              "Way",
+              "You lend to",
+              "For how long",
+              "You are paid"
+            ],
+            "rows": [
+              [
+                "Savings account",
+                "A bank",
+                "Any time",
+                "Interest on your balance"
+              ],
+              [
+                "GIC",
+                "A bank",
+                "A set term",
+                "Interest at a set rate"
+              ],
+              [
+                "T-bill",
+                "A government",
+                "A short term",
+                "You pay less, get face value"
+              ],
+              [
+                "Bond",
+                "A government or company",
+                "Years",
+                "A coupon each year, then face value"
+              ]
+            ]
+          },
+          "hint": "Read the “You lend to” column.",
+          "options": [
+            {
+              "text": "A T-bill",
+              "why": "The table shows a T-bill as a loan to a government."
+            },
+            {
+              "text": "A savings account",
+              "why": "The table shows a savings account as a loan to a bank."
+            },
+            {
+              "text": "A GIC",
+              "why": "The table shows a GIC as a loan to a bank."
+            },
+            {
+              "text": "A bond",
+              "why": "Yes. The table says a bond is a loan to a government or a company."
+            }
+          ],
+          "answer": 3
+        }
+      ]
+    },
+    {
+      "id": "ft2030-s3-u3-l2",
+      "title": "Safe, locked or both",
+      "kind": "lesson",
+      "learn": [
+        "Say why a riskier borrower pays a higher rate.",
+        "Say what deposit insurance and a GIC do and do not cover."
+      ],
+      "go": {
+        "building": "networth",
+        "label": "Open Net Worth"
+      },
+      "cards": [
+        {
+          "text": "Lenders ask for more when a borrower is more likely not to pay back. A government is among the safest to lend to. A new business with no sales history is among the riskiest. The rate is the price of the risk: the riskier the borrower, the higher the rate asked."
+        },
+        {
+          "text": "If a bank fails, deposit insurance helps you get your deposit back, up to a limit. In Canada, CDIC is the deposit insurer for banks. The limit and what is covered can change, so check the insurer’s own website. A credit union has its own insurer, so check that one. A bond is not a deposit."
+        },
+        {
+          "text": "A GIC is guaranteed, but guaranteed does not mean no risk. The guarantee is your principal and the stated rate, in dollars, for the set term. It does not promise that the rate beats rising prices. It does not promise you will not miss a better rate. It does not let you out early."
+        },
+        {
+          "text": "Mina puts $1,000.00 in a 5-year GIC at 4%. It pays $40.00 a year. A year later, new GICs pay 6%, which would be $60.00 a year. Her GIC has no price that can fall, but she cannot leave. She is locked in at 4% while the market pays 6%, which is $20.00 a year less."
+        },
+        {
+          "text": "Cash is money you can spend now. A cash equivalent is a very safe, short-term place that turns into cash fast, such as a savings account or a short T-bill. A five-year GIC is grouped with cash but is slow to get out of: not a true cash equivalent. Safety and how fast you can get out are two different questions."
+        },
+        {
+          "text": "In the Net Worth building you can hold a savings account and buy a GIC for 12, 36 or 60 months, from $100.00. Savings money is there at any time. A GIC is locked: you cannot take it out early. The game starts the savings rate at 2.75% a year. It can change, so read the live rate there."
+        }
+      ],
+      "questions": [
+        {
+          "id": "ft2030-s3-u3-l2-q1",
+          "label": "Highest rate asked",
+          "prompt": "Which borrower would have to offer the highest rate to get a loan?",
+          "type": "choice",
+          "hint": "The rate is the price of the risk. Which borrower is riskiest?",
+          "options": [
+            {
+              "text": "A government with a long record of paying",
+              "why": "A government is among the safest to lend to, so it can borrow at a lower rate."
+            },
+            {
+              "text": "A bank that has paid lenders for years",
+              "why": "A long record of paying back makes a lender ask for less."
+            },
+            {
+              "text": "A new business with no sales history",
+              "why": "Yes. A lender cannot be sure a new business will pay back, so it asks for more."
+            },
+            {
+              "text": "A province with a long record",
+              "why": "Like a federal government, a province with a long record is a safer borrower."
+            }
+          ],
+          "answer": 2
+        },
+        {
+          "id": "ft2030-s3-u3-l2-q2",
+          "label": "Why the rate rises",
+          "prompt": "Why does a lender ask a higher rate from a riskier borrower?",
+          "type": "choice",
+          "hint": "Think about what could go wrong for the lender.",
+          "options": [
+            {
+              "text": "The lender may not be paid back, so it wants more for taking that risk",
+              "why": "Yes. The extra rate is the price of the risk."
+            },
+            {
+              "text": "The loan always lasts longer",
+              "why": "A loan to a risky borrower can be short. The rate depends on the risk of not being paid back."
+            },
+            {
+              "text": "Riskier borrowers always ask for bigger loans",
+              "why": "Size is a separate matter. The rate follows the chance of not being paid back."
+            },
+            {
+              "text": "Lenders set rates at random",
+              "why": "Rates follow the risk of not being paid back. They are not random."
+            }
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ft2030-s3-u3-l2-q3",
+          "label": "What deposit insurance does",
+          "prompt": "What is deposit insurance for?",
+          "type": "choice",
+          "terms": [
+            {
+              "term": "deposit insurance",
+              "meaning": "Protection that gives deposits back, up to a limit, if the institution fails."
+            }
+          ],
+          "hint": "Look at the card on deposit insurance.",
+          "options": [
+            {
+              "text": "It makes your savings grow faster than prices",
+              "why": "Deposit insurance does not change how fast money grows. It covers a failure."
+            },
+            {
+              "text": "It covers a loss when a bond’s price falls",
+              "why": "A bond is not a deposit, and price changes are not a failure of the institution."
+            },
+            {
+              "text": "It raises the rate on your savings account",
+              "why": "It does not change the rate. It protects a deposit if the institution fails."
+            },
+            {
+              "text": "It helps you get a deposit back, up to a limit, if the institution fails",
+              "why": "Yes. It protects a deposit if the bank fails, up to a limit."
+            }
+          ],
+          "answer": 3
+        },
+        {
+          "id": "ft2030-s3-u3-l2-q4",
+          "label": "Whose insurer",
+          "prompt": "A student asks about a deposit at a credit union. What is the honest answer to how it is insured?",
+          "type": "choice",
+          "hint": "The card says where to check for a credit union.",
+          "options": [
+            {
+              "text": "It is always the same as a bank’s, so there is nothing to check",
+              "why": "Not every institution has the same insurer. Check the one that applies to yours."
+            },
+            {
+              "text": "Check the credit union’s own insurer",
+              "why": "Yes. Different institutions have different insurers, so check the one that applies."
+            },
+            {
+              "text": "A deposit at a credit union has no protection at all",
+              "why": "Many have an insurer. The honest answer is to find out which one."
+            },
+            {
+              "text": "It depends on how big the deposit is",
+              "why": "The amount matters to a limit, but the first question is which insurer applies."
+            }
+          ],
+          "answer": 1
+        },
+        {
+          "id": "ft2030-s3-u3-l2-q5",
+          "label": "What a GIC guarantees",
+          "prompt": "What does a GIC guarantee?",
+          "type": "choice",
+          "terms": [
+            {
+              "term": "principal",
+              "meaning": "The amount of money you lend."
+            }
+          ],
+          "hint": "Reread the card that begins “A GIC is guaranteed”.",
+          "options": [
+            {
+              "text": "That its rate beats rising prices",
+              "why": "The guarantee is in dollars. It does not promise the rate beats rising prices."
+            },
+            {
+              "text": "That you can leave early at no cost",
+              "why": "A GIC is locked in. The guarantee does not let you out early."
+            },
+            {
+              "text": "Your principal and the stated rate for the term",
+              "why": "Yes. That is what is guaranteed, in dollars, for the set term."
+            },
+            {
+              "text": "That you will never miss a better rate",
+              "why": "If rates rise after you buy, you are still at your old rate."
+            }
+          ],
+          "answer": 2
+        },
+        {
+          "id": "ft2030-s3-u3-l2-q6",
+          "label": "Locked at 4%",
+          "prompt": "Noor’s $1,500.00 GIC pays 4% a year. New GICs pay 6%. How many more dollars a year would $1,500.00 earn at 6%?",
+          "type": "number",
+          "terms": [
+            {
+              "term": "GIC",
+              "meaning": "A loan to a bank for a set term, at a set rate. Usually locked in."
+            }
+          ],
+          "hint": "Find a year of interest at each rate, then subtract.",
+          "unit": "$",
+          "answer": 3000,
+          "tolerance": 0,
+          "why": "Find a year of interest at each rate. The difference is the cost of being locked in.",
+          "working": "$1,500.00 x 0.06 = $90.00. $1,500.00 x 0.04 = $60.00. $90.00 - $60.00 = $30.00.",
+          "miss": "Work out a year of interest at 6% and at 4%, then find the difference."
+        },
+        {
+          "id": "ft2030-s3-u3-l2-q7",
+          "label": "Mina’s yearly interest",
+          "prompt": "Each bar is a year of interest on $1,000.00 at a different rate. Tap the bar for Mina’s locked GIC.",
+          "type": "point",
+          "figure": {
+            "kind": "bars",
+            "title": "A year of interest on $1,000.00",
+            "unit": "$",
+            "bars": [
+              {
+                "label": "2%",
+                "value": 2000
+              },
+              {
+                "label": "4%",
+                "value": 4000
+              },
+              {
+                "label": "6%",
+                "value": 6000
+              },
+              {
+                "label": "8%",
+                "value": 8000
+              }
+            ]
+          },
+          "hint": "Which rate is Mina’s GIC stuck at?",
+          "terms": [
+            {
+              "term": "GIC",
+              "meaning": "A loan to a bank for a set term, at a set rate. Usually locked in."
+            }
+          ],
+          "answer": 1,
+          "why": "Mina’s GIC pays 4%, which is $40.00 a year: the second bar.",
+          "miss": "Mina’s rate is on the card about her GIC. Find the bar with that rate."
+        },
+        {
+          "id": "ft2030-s3-u3-l2-q8",
+          "label": "Five years apart",
+          "prompt": "Count the same dollars each year (simple interest). How many more dollars would $2,000.00 earn over 5 years at 6% than at 4%?",
+          "type": "number",
+          "terms": [
+            {
+              "term": "simple interest",
+              "meaning": "Interest worked out on the starting amount only, so it is the same dollars each year."
+            }
+          ],
+          "traps": [
+            {
+              "value": 4000,
+              "why": "That is the difference for one year. The question asks about 5 years."
+            }
+          ],
+          "hint": "Find the yearly difference first, then count the years.",
+          "unit": "$",
+          "answer": 20000,
+          "tolerance": 0,
+          "why": "The yearly difference is multiplied by the number of years.",
+          "working": "$2,000.00 x 0.06 = $120.00. $2,000.00 x 0.04 = $80.00. The difference is $40.00 a year. $40.00 x 5 = $200.00.",
+          "miss": "Find the yearly difference first, then multiply by the 5 years."
+        },
+        {
+          "id": "ft2030-s3-u3-l2-q9",
+          "label": "A cash equivalent",
+          "prompt": "Which is the best example of a cash equivalent?",
+          "type": "choice",
+          "terms": [
+            {
+              "term": "cash equivalent",
+              "meaning": "A very safe, short-term place that turns into cash fast."
+            }
+          ],
+          "hint": "A cash equivalent is very safe, short-term and quick to turn into cash.",
+          "options": [
+            {
+              "text": "A savings account",
+              "why": "Yes. It is safe, and the money can come out at any time."
+            },
+            {
+              "text": "A GIC locked for five years",
+              "why": "It is safe, but it is locked for five years, so it is not quick to turn into cash."
+            },
+            {
+              "text": "A 10-year bond",
+              "why": "A bond with ten years to run is long, and its price can move."
+            },
+            {
+              "text": "A loan to a new business",
+              "why": "A loan to a new business is risky, and you cannot easily turn it into cash."
+            }
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ft2030-s3-u3-l2-q10",
+          "label": "Prices rise faster",
+          "prompt": "In this example a GIC pays 2% a year and prices rise 3% a year. After one year, which is true?",
+          "type": "choice",
+          "hint": "Compare the two percents. Which is bigger?",
+          "options": [
+            {
+              "text": "You have more dollars and they buy more",
+              "why": "Prices rose 3%, more than the 2% the GIC paid, so the dollars buy a little less."
+            },
+            {
+              "text": "You have more dollars, but they buy slightly less",
+              "why": "Yes. The GIC paid dollars, but prices rose faster than the 2%."
+            },
+            {
+              "text": "You have fewer dollars than you started with",
+              "why": "The GIC guarantees your principal and pays interest, so the dollars grow."
+            },
+            {
+              "text": "The guarantee covers the rise in prices",
+              "why": "The guarantee covers principal and the rate. It does not cover a rise in prices."
+            }
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "id": "ft2030-s3-u3-l3",
+      "title": "Why bond prices move",
+      "kind": "lesson",
+      "learn": [
+        "Say which way a bond’s price moves when rates change.",
+        "Work out a one-year bond price and read the five-year example."
+      ],
+      "cards": [
+        {
+          "text": "A bond does not have to be held to the end. Its owner can sell it to another buyer. What a buyer will pay depends on what new bonds pay today, the market yield. Ayo owns a 5-year bond with a $1,000.00 face value and a 4% coupon: $40.00 a year."
+        },
+        {
+          "text": "Rates rise to 6%. A new $1,000.00 bond now pays $60.00 a year. No one pays $1,000.00 for Ayo’s $40.00 a year when $60.00 is on offer. So the price of his bond falls below face value, a discount. If rates fall, the price rises above face value, a premium."
+        },
+        {
+          "text": "A price is what the payments are worth today. A payment is worth less today than when it arrives, because you could earn the market yield while you wait. Divide it by 1.06 for each year, at 6%. Coupons here come once a year. A 1-year bond pays $1,040.00: $1,040.00 / 1.06 = $981.13."
+        },
+        {
+          "text": "For the 5-year bond, divide each coupon by 1.06 for as many years as it waits, and do the same for the $1,000.00 at the end. Add up what they are worth today. The class example gives $915.75. That is $84.25 below face value.",
+          "figure": {
+            "kind": "table",
+            "title": "The 5-year bond at a 6% market yield",
+            "columns": [
+              "Part",
+              "Worth today"
+            ],
+            "rows": [
+              [
+                "Five coupons of $40.00",
+                "$168.49"
+              ],
+              [
+                "The $1,000.00 at the end",
+                "$747.26"
+              ],
+              [
+                "Price today",
+                "$915.75"
+              ]
+            ]
+          }
+        },
+        {
+          "text": "A longer bond swings more. A 10-year bond with the same 4% coupon has a price of $852.80 at a 6% market yield, against $915.75 for the 5-year one. More years of the low coupon means a bigger fall. A longer bond is riskier if you must sell it.",
+          "figure": {
+            "kind": "bars",
+            "title": "Price at a 6% market yield",
+            "unit": "$",
+            "bars": [
+              {
+                "label": "Face value",
+                "value": 100000
+              },
+              {
+                "label": "5-year bond",
+                "value": 91575
+              },
+              {
+                "label": "10-year bond",
+                "value": 85280
+              }
+            ]
+          }
+        },
+        {
+          "text": "If Ayo holds the bond to the end, he gets all five coupons and the face value back, whatever the price did. The fall hurts only if he has to sell early. A GIC has no price that falls, but it cannot be sold, so it is locked in at its rate. A bond shows its price every day."
+        }
+      ],
+      "questions": [
+        {
+          "id": "ft2030-s3-u3-l3-q1",
+          "label": "Rates rise",
+          "prompt": "Rates rise from 4% to 6%. What happens to the price of a bond with a 4% coupon?",
+          "type": "choice",
+          "terms": [
+            {
+              "term": "market yield",
+              "meaning": "The rate new bonds like it pay today."
+            }
+          ],
+          "hint": "Would a buyer pay full price for a worse deal?",
+          "options": [
+            {
+              "text": "It rises above its face value",
+              "why": "That happens when rates fall, not when they rise."
+            },
+            {
+              "text": "It falls below its face value",
+              "why": "Yes. New bonds pay more, so the old 4% bond is worth less."
+            },
+            {
+              "text": "It stays at its face value",
+              "why": "The coupon stays the same, but the price follows what new bonds pay."
+            },
+            {
+              "text": "It falls only if the coupon is cut",
+              "why": "The coupon is fixed when the bond is made. The price moves with what new bonds pay."
+            }
+          ],
+          "answer": 1
+        },
+        {
+          "id": "ft2030-s3-u3-l3-q2",
+          "label": "Why it falls",
+          "prompt": "Why does the price of Ayo’s 4% bond fall when new bonds pay 6%?",
+          "type": "choice",
+          "hint": "Reread the second card.",
+          "options": [
+            {
+              "text": "The government that issued it gets weaker",
+              "why": "The rate move is enough. The borrower does not need to change."
+            },
+            {
+              "text": "The coupon payments get smaller",
+              "why": "A coupon is fixed when the bond is made. It does not shrink."
+            },
+            {
+              "text": "Buyers stop wanting older bonds",
+              "why": "Buyers still want them, at a price that makes up for the lower coupon."
+            },
+            {
+              "text": "Buyers can get a better deal elsewhere, so they pay less for his",
+              "why": "Yes. Nobody pays full price for a worse deal."
+            }
+          ],
+          "answer": 3
+        },
+        {
+          "id": "ft2030-s3-u3-l3-q3",
+          "label": "One year at 6%",
+          "prompt": "A 1-year bond has a face value of $1,000.00 and a 3% coupon, paid once a year. At a 6% market yield, what is its price? Round to the nearest cent.",
+          "type": "number",
+          "terms": [
+            {
+              "term": "coupon",
+              "meaning": "The fixed payment a bond makes each year."
+            },
+            {
+              "term": "market yield",
+              "meaning": "The rate new bonds like it pay today."
+            }
+          ],
+          "traps": [
+            {
+              "value": 103000,
+              "why": "That is the payment in a year, not what it is worth today. Divide it by 1.06."
+            }
+          ],
+          "hint": "Add the coupon to the face value, then divide by 1.06.",
+          "unit": "$",
+          "answer": 97170,
+          "tolerance": 0,
+          "why": "It pays once, at the end of the year. Its price is that payment divided by 1.06.",
+          "working": "$1,000.00 + $30.00 = $1,030.00. $1,030.00 / 1.06 = $971.70.",
+          "miss": "First add the one coupon to the face value. Then divide by 1.06."
+        },
+        {
+          "id": "ft2030-s3-u3-l3-q4",
+          "label": "Below face value",
+          "prompt": "The 10-year bond’s price is $852.80 at a 6% market yield. Its face value is $1,000.00. How many dollars below face value is the price?",
+          "type": "number",
+          "figure": {
+            "kind": "bars",
+            "title": "Price at a 6% market yield",
+            "unit": "$",
+            "bars": [
+              {
+                "label": "Face value",
+                "value": 100000
+              },
+              {
+                "label": "5-year bond",
+                "value": 91575
+              },
+              {
+                "label": "10-year bond",
+                "value": 85280
+              }
+            ]
+          },
+          "terms": [
+            {
+              "term": "face value",
+              "meaning": "The amount a bond or T-bill pays back at the end."
+            }
+          ],
+          "hint": "Subtract the price from the face value.",
+          "unit": "$",
+          "answer": 14720,
+          "tolerance": 0,
+          "why": "The fall is the face value minus the price.",
+          "working": "$1,000.00 - $852.80 = $147.20.",
+          "miss": "Take the price away from the face value."
+        },
+        {
+          "id": "ft2030-s3-u3-l3-q5",
+          "label": "Premium or discount",
+          "prompt": "Rates fall to 2%. In the class example, Ayo’s 4% bond is then priced at $1,094.27. What is that?",
+          "type": "choice",
+          "terms": [
+            {
+              "term": "premium",
+              "meaning": "A price above face value."
+            },
+            {
+              "term": "discount",
+              "meaning": "A price below face value."
+            }
+          ],
+          "hint": "Compare the price with the face value of $1,000.00.",
+          "options": [
+            {
+              "text": "A premium, because the price is above face value",
+              "why": "Yes. A 4% coupon is a good deal when new bonds pay 2%."
+            },
+            {
+              "text": "A discount, because the price is above face value",
+              "why": "Above face value is a premium. A discount is below."
+            },
+            {
+              "text": "A discount, because rates fell",
+              "why": "Falling rates raise the price, which makes a premium."
+            },
+            {
+              "text": "Neither, the price equals face value",
+              "why": "The price equals face value only when the market yield equals the coupon rate."
+            }
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ft2030-s3-u3-l3-q6",
+          "label": "Which falls most",
+          "prompt": "Each bar is a price at a 6% market yield. Tap the bond whose price has fallen the furthest below its face value.",
+          "type": "point",
+          "figure": {
+            "kind": "bars",
+            "title": "Price at a 6% market yield",
+            "unit": "$",
+            "bars": [
+              {
+                "label": "Face value",
+                "value": 100000
+              },
+              {
+                "label": "5-year bond",
+                "value": 91575
+              },
+              {
+                "label": "10-year bond",
+                "value": 85280
+              }
+            ]
+          },
+          "hint": "Find the lowest bar of the two bonds, not the face value.",
+          "terms": [
+            {
+              "term": "face value",
+              "meaning": "The amount a bond or T-bill pays back at the end."
+            }
+          ],
+          "answer": 2,
+          "why": "The 10-year bond is at $852.80, the furthest below $1,000.00.",
+          "miss": "The face value is a bar too. Look at the two bonds and find the lower price."
+        },
+        {
+          "id": "ft2030-s3-u3-l3-q7",
+          "label": "One year at 2%",
+          "prompt": "A 1-year bond has a face value of $1,000.00 and a 4% coupon, paid once a year. At a 2% market yield, what is its price? Round to the nearest cent.",
+          "type": "number",
+          "terms": [
+            {
+              "term": "market yield",
+              "meaning": "The rate new bonds like it pay today."
+            }
+          ],
+          "traps": [
+            {
+              "value": 104000,
+              "why": "That is the payment in a year. Divide it by 1.02 to find what it is worth today."
+            }
+          ],
+          "hint": "Add the coupon to the face value, then divide by 1.02.",
+          "unit": "$",
+          "answer": 101961,
+          "tolerance": 0,
+          "why": "Its one payment is divided by 1.02 this time. The price lands above face value.",
+          "working": "$1,040.00 / 1.02 = $1,019.61.",
+          "miss": "Add the coupon to the face value, then divide by 1 plus the market yield."
+        },
+        {
+          "id": "ft2030-s3-u3-l3-q8",
+          "label": "Held to the end",
+          "prompt": "Ayo holds his 5-year 4% bond to the end. What does he receive in all?",
+          "type": "choice",
+          "terms": [
+            {
+              "term": "maturity",
+              "meaning": "The date a bond ends and the face value is paid back."
+            }
+          ],
+          "hint": "Count the coupons, then add the face value.",
+          "options": [
+            {
+              "text": "Only the $915.75 price from the bad day",
+              "why": "That was the price on one day. A bond held to the end pays what it promised."
+            },
+            {
+              "text": "Only the $1,000.00 face value, with no coupons",
+              "why": "A bond pays its coupons each year as well as the face value."
+            },
+            {
+              "text": "Five coupons of $40.00 and the $1,000.00 face value",
+              "why": "Yes. The price swing does not change what the bond pays if it is held to the end."
+            },
+            {
+              "text": "Five coupons of $60.00 and the face value",
+              "why": "His coupon is fixed at $40.00. The $60.00 is what new bonds pay."
+            }
+          ],
+          "answer": 2
+        },
+        {
+          "id": "ft2030-s3-u3-l3-q9",
+          "label": "All he receives",
+          "prompt": "Ayo holds his 5-year bond to the end. It pays $40.00 a year, then returns the $1,000.00 face value. How many dollars does he receive in total?",
+          "type": "number",
+          "terms": [
+            {
+              "term": "coupon",
+              "meaning": "The fixed payment a bond makes each year."
+            },
+            {
+              "term": "face value",
+              "meaning": "The amount a bond or T-bill pays back at the end."
+            }
+          ],
+          "traps": [
+            {
+              "value": 20000,
+              "why": "That is the coupons only. The face value comes back too."
+            }
+          ],
+          "hint": "Five coupons, then add the face value.",
+          "unit": "$",
+          "answer": 120000,
+          "tolerance": 0,
+          "why": "Five coupons plus the face value.",
+          "working": "$40.00 x 5 = $200.00. $200.00 + $1,000.00 = $1,200.00.",
+          "miss": "Multiply the coupon by 5, then add the face value."
+        },
+        {
+          "id": "ft2030-s3-u3-l3-q10",
+          "label": "GIC or bond",
+          "prompt": "After you buy a 5-year 4% GIC, rates rise to 6%. Which is true?",
+          "type": "choice",
+          "terms": [
+            {
+              "term": "GIC",
+              "meaning": "A loan to a bank for a set term, at a set rate. Usually locked in."
+            }
+          ],
+          "hint": "Remember the last card: a GIC has no price and cannot be sold.",
+          "options": [
+            {
+              "text": "The GIC has no price to fall, but you are locked in at 4%",
+              "why": "Yes. The cost is the better rate you cannot use."
+            },
+            {
+              "text": "Its price falls to $915.75 like a bond’s",
+              "why": "A GIC has no price that moves. That is a bond’s story."
+            },
+            {
+              "text": "You can sell it to a buyer at face value",
+              "why": "A GIC usually cannot be sold. It is locked until the end of the term."
+            },
+            {
+              "text": "The bank raises your rate to 6%",
+              "why": "A GIC pays its stated rate for the whole term."
+            }
+          ],
+          "answer": 0
+        }
+      ]
+    }
+  ]
+}

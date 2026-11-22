@@ -1,0 +1,30 @@
+/* Town Walk panel. Sits inside the global .glass.panel; phone first. The canvas is 160x120 and is only ever scaled by a whole number (walk-x1..x4). */
+.walk-card { display: grid; gap: 10px; padding: 14px; border: 1px solid var(--row-line); border-radius: var(--radius); background: rgba(180, 215, 255, 0.07); }
+.walk-hud { display: flex; align-items: center; gap: 16px; }
+.walk-hud b { color: var(--accent); }
+.walk-leave { margin-left: auto; min-width: 5.5em; min-height: 44px; }
+.walk-stage { display: flex; justify-content: center; margin-inline: -16px; }   /* may use most of the panel's side padding: a phone fits x2 (324 px), not x1 */
+.walk-canvas { display: block; box-sizing: content-box; width: 160px; height: 120px; image-rendering: pixelated; image-rendering: crisp-edges; border: 2px solid var(--glass-border); border-radius: 4px; background: #5aa44c; touch-action: none; -webkit-user-select: none; user-select: none; }
+.walk-x1 { width: 160px; height: 120px; }
+.walk-x2 { width: 320px; height: 240px; }
+.walk-x3 { width: 480px; height: 360px; }
+.walk-x4 { width: 640px; height: 480px; }
+.walk-fact { min-height: 4.2em; padding: 10px 12px; border: 1px solid var(--row-line); border-radius: var(--radius); }
+.walk-pads { display: grid; grid-template-columns: repeat(3, 64px); grid-template-rows: repeat(2, 56px); gap: 8px; justify-content: center; touch-action: none; }
+.walk-pad { min-width: 0; min-height: 56px; padding: 0; font-size: 1.5rem; touch-action: none; -webkit-user-select: none; user-select: none; -webkit-touch-callout: none; }
+.walk-u { grid-column: 2; grid-row: 1; }
+.walk-l { grid-column: 1; grid-row: 2; }
+.walk-d { grid-column: 2; grid-row: 2; }
+.walk-r { grid-column: 3; grid-row: 2; }
+.walk-pad.walk-down { transform: translateY(3px); filter: brightness(1.2); }
+.walk-score { margin: 0; font: 400 3rem/1 var(--font-display); color: var(--accent); }
+.walk-learned { padding: 10px 12px; border: 1px solid var(--row-line); border-radius: var(--radius); }
+.walk-learned p { margin: 4px 0 0; }
+.walk-actions { display: flex; flex-wrap: wrap; gap: 10px; }
+.walk-actions button { min-width: 8em; }
+/* presence: "N classmates here" and the three emote buttons (48 px or more to tap) */
+.walk-social { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+.walk-here { color: var(--ink-muted); font-size: 0.9rem; }
+.walk-emotes { display: flex; gap: 8px; }
+.walk-emote { display: inline-flex; align-items: center; justify-content: center; gap: 6px; min-width: 56px; min-height: 48px; padding: 0 10px; touch-action: manipulation; }
+.walk-emoji { width: 30px; height: 30px; image-rendering: pixelated; image-rendering: crisp-edges; }

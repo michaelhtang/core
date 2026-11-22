@@ -1,0 +1,1545 @@
+{
+  "id": "ft2030-s3-u5",
+  "title": "Diversification and the mix",
+  "blurb": "Two kinds of risk, spreading out, and what a crash does to a mix.",
+  "outcome_codes": [
+    "FIN3080 1.21",
+    "FIN3080 1.22",
+    "FIN3080 1.23",
+    "FIN3090 3.3"
+  ],
+  "levels": [
+    {
+      "id": "ft2030-s3-u5-l1",
+      "title": "Two kinds of risk",
+      "kind": "lesson",
+      "learn": [
+        "Say what happens to a mix when one company fails and when a whole market falls.",
+        "Tell which kind of risk owning more companies fixes."
+      ],
+      "cards": [
+        {
+          "text": "Maya has $10,000 and puts the same amount into each company she owns. Suppose one company goes bankrupt and what she put in it is lost. Each company gets $10,000 divided by the number of companies. The numbers are made up for this example.",
+          "figure": {
+            "kind": "table",
+            "title": "One company fails: loss on $10,000",
+            "columns": [
+              "Companies",
+              "In each",
+              "Loss if one fails"
+            ],
+            "rows": [
+              [
+                "1",
+                "$10,000",
+                "$10,000"
+              ],
+              [
+                "5",
+                "$2,000",
+                "$2,000"
+              ],
+              [
+                "10",
+                "$1,000",
+                "$1,000"
+              ],
+              [
+                "20",
+                "$500",
+                "$500"
+              ],
+              [
+                "50",
+                "$200",
+                "$200"
+              ]
+            ]
+          }
+        },
+        {
+          "text": "That is company risk: the chance that one company does badly or fails, whatever the rest of the market does. A bankruptcy, a recall or a fire can cause it. Owning more companies shrinks it, because each one becomes a smaller slice of your money."
+        },
+        {
+          "text": "A different event. The whole Canadian market falls 20% and every other market stays flat. Dev owns 50 Canadian companies, $200 in each, $10,000 in all. All 50 fall together, so he loses 20% of $10,000, which is $2,000. Owning 50 companies did not help him."
+        },
+        {
+          "text": "That is market risk: the chance that a whole market falls and takes its companies down together. What lowers it is spreading across places that do not fall together. The same $10,000 is below with less of it in Canada. The loss is the share in Canada times 20%.",
+          "figure": {
+            "kind": "bars",
+            "title": "Loss if Canada falls 20%",
+            "unit": "$",
+            "bars": [
+              {
+                "label": "100% in Canada",
+                "value": 200000
+              },
+              {
+                "label": "60% in Canada",
+                "value": 120000
+              },
+              {
+                "label": "30% in Canada",
+                "value": 60000
+              },
+              {
+                "label": "0% in Canada",
+                "value": 0
+              }
+            ]
+          }
+        },
+        {
+          "text": "Spreading out has limits. If every market falls at once, no place stays flat and a mix still loses. It also does not raise what you can expect to earn. It narrows the range of results you might land in: fewer very bad years and fewer very good ones."
+        },
+        {
+          "text": "So there are two jobs. More companies shrink company risk. More places, and more kinds of companies, shrink market risk. A mix of 200 companies that are all in one country has done the first job and very little of the second."
+        }
+      ],
+      "questions": [
+        {
+          "id": "ft2030-s3-u5-l1-q1",
+          "type": "choice",
+          "label": "Which risk shrinks",
+          "prompt": "Maya owns equal amounts of 5 companies and buys 15 more, so she owns 20. Which risk does this mostly shrink?",
+          "terms": [
+            {
+              "term": "company risk",
+              "meaning": "The chance that one company does badly or fails, whatever the rest of the market does."
+            },
+            {
+              "term": "market risk",
+              "meaning": "The chance that a whole market falls and takes its companies down together."
+            }
+          ],
+          "hint": "Look at the card about company risk.",
+          "options": [
+            {
+              "text": "The risk that a whole market falls",
+              "why": "All 20 companies could still be in one market, and a market falls as one. More companies does not fix that."
+            },
+            {
+              "text": "The risk that one company fails",
+              "why": "Yes. With more companies, each one is a smaller slice, so one failing costs less. This is company risk."
+            },
+            {
+              "text": "Both risks, completely",
+              "why": "Only company risk shrinks. Market risk stays unless the money sits in different places."
+            }
+          ],
+          "answer": 1
+        },
+        {
+          "id": "ft2030-s3-u5-l1-q2",
+          "type": "number",
+          "label": "One company fails",
+          "prompt": "Sam puts $4,500 in equal parts into 15 companies. One goes bankrupt and its part is lost. How much does Sam lose?",
+          "terms": [
+            {
+              "term": "company risk",
+              "meaning": "The chance that one company does badly or fails, whatever the rest of the market does."
+            }
+          ],
+          "hint": "Divide the money by the number of companies.",
+          "unit": "$",
+          "answer": 30000,
+          "tolerance": 0,
+          "why": "Right. Each company held $4,500 / 15 = $300.00, and that part is lost.",
+          "working": "$4,500 / 15 = $300.00 in each company, so one failing loses $300.00.",
+          "traps": [
+            {
+              "value": 450000,
+              "why": "That is all of Sam's money. Only one of the 15 parts is lost."
+            }
+          ],
+          "miss": "Find how much sits in one company: split the money evenly over the companies."
+        },
+        {
+          "id": "ft2030-s3-u5-l1-q3",
+          "type": "point",
+          "label": "Pick the loss",
+          "prompt": "Tap the bar for the mix that loses $600 when Canada falls 20%.",
+          "figure": {
+            "kind": "bars",
+            "title": "Loss if Canada falls 20%",
+            "unit": "$",
+            "bars": [
+              {
+                "label": "100% in Canada",
+                "value": 200000
+              },
+              {
+                "label": "60% in Canada",
+                "value": 120000
+              },
+              {
+                "label": "30% in Canada",
+                "value": 60000
+              },
+              {
+                "label": "0% in Canada",
+                "value": 0
+              }
+            ]
+          },
+          "hint": "Read the dollar value on each bar.",
+          "answer": 2,
+          "why": "Yes. 30% of $10,000 is $3,000 in Canada, and 20% of $3,000 is $600.00.",
+          "miss": "That bar shows a different loss. Compare each bar's dollars with $600."
+        },
+        {
+          "id": "ft2030-s3-u5-l1-q4",
+          "type": "number",
+          "label": "All Canadian loss",
+          "prompt": "Zoe has $8,000 in 40 Canadian companies, equal amounts. Canada falls 20% and every other market stays flat. How much does Zoe lose?",
+          "terms": [
+            {
+              "term": "market risk",
+              "meaning": "The chance that a whole market falls and takes its companies down together."
+            }
+          ],
+          "hint": "All of her money is in the market that fell.",
+          "unit": "$",
+          "answer": 160000,
+          "tolerance": 0,
+          "why": "Right. All 40 companies are in Canada, so the whole $8,000 falls 20%.",
+          "working": "$8,000 x 20% = $1,600.00.",
+          "traps": [
+            {
+              "value": 20000,
+              "why": "That is $8,000 / 40, one company's part. All 40 are in Canada and all fall."
+            }
+          ],
+          "miss": "Every company is in the market that fell. Take 20% of all her money."
+        },
+        {
+          "id": "ft2030-s3-u5-l1-q5",
+          "type": "choice",
+          "label": "What would help",
+          "prompt": "Zoe owns 40 Canadian companies. Which change would lower her loss when Canada falls?",
+          "hint": "Which risk is this: company or market?",
+          "options": [
+            {
+              "text": "Buy 40 more Canadian companies",
+              "why": "More companies in the same market all fall together, so the loss is the same."
+            },
+            {
+              "text": "Replace them with other Canadian ones",
+              "why": "Different Canadian companies are still in the Canadian market."
+            },
+            {
+              "text": "Put part of the money in other countries' markets",
+              "why": "Yes. A fall in Canada only touches the part of the money that is in Canada."
+            }
+          ],
+          "answer": 2
+        },
+        {
+          "id": "ft2030-s3-u5-l1-q6",
+          "type": "choice",
+          "label": "Name the risk",
+          "prompt": "Which of these is company risk?",
+          "terms": [
+            {
+              "term": "company risk",
+              "meaning": "The chance that one company does badly or fails, whatever the rest of the market does."
+            },
+            {
+              "term": "market risk",
+              "meaning": "The chance that a whole market falls and takes its companies down together."
+            }
+          ],
+          "hint": "Read the two cards that define company risk and market risk.",
+          "options": [
+            {
+              "text": "A recall hits one food company",
+              "why": "Yes. It is about one company, so owning many companies shrinks it."
+            },
+            {
+              "text": "Every Canadian company falls on one day",
+              "why": "That is the whole market falling together, which is market risk."
+            },
+            {
+              "text": "A recession lowers sales across the country",
+              "why": "A recession touches most companies at once. That is market risk."
+            }
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ft2030-s3-u5-l1-q7",
+          "type": "number",
+          "label": "Part in Canada",
+          "prompt": "Ines puts 40% of her $10,000 in Canadian companies and the rest in other markets. Canada falls 20% and the others stay flat. How much does she lose?",
+          "hint": "Find the dollars in Canada first.",
+          "unit": "$",
+          "answer": 80000,
+          "tolerance": 0,
+          "why": "Right. Only the part in Canada falls.",
+          "working": "$10,000 x 40% = $4,000 in Canada. $4,000 x 20% = $800.00.",
+          "traps": [
+            {
+              "value": 200000,
+              "why": "That is the loss if all $10,000 were in Canada. Ines has only 40% there."
+            }
+          ],
+          "miss": "Take 40% of the money first. Then take 20% of that part."
+        },
+        {
+          "id": "ft2030-s3-u5-l1-q8",
+          "type": "choice",
+          "label": "What spreading does",
+          "prompt": "What does spreading out do to the range of results a mix can land in?",
+          "hint": "Read the card about the limits of spreading out.",
+          "options": [
+            {
+              "text": "It raises the average return for sure",
+              "why": "Spreading out does not raise what you can expect to earn. It narrows the range."
+            },
+            {
+              "text": "It narrows the range of results",
+              "why": "Yes. Fewer very bad results and fewer very good ones."
+            },
+            {
+              "text": "It removes any chance of a loss",
+              "why": "If every market falls together, a spread-out mix still loses."
+            }
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "id": "ft2030-s3-u5-l2",
+      "title": "Four ways to spread",
+      "kind": "lesson",
+      "learn": [
+        "Describe a company by its size, style, sector and country.",
+        "Read a mix to see where it is spread and where it is bunched."
+      ],
+      "cards": [
+        {
+          "text": "A mix can be spread out in four ways: by size, by style, by sector and by geography. A mix can be spread in one way and bunched in another. This level goes through the four, then reads a small mix."
+        },
+        {
+          "text": "Size is how big a company is: large or small. Style is how the market prices it. A growth company sells at a high price because buyers expect fast growth. A value company sells at a low price compared with what it earns. Nobody knows in advance which does better, so a mix may hold both."
+        },
+        {
+          "text": "A sector is a group of companies that do similar business. Four groups: interest sensitive (banks and others whose business moves with interest rates), consumer (sells to everyday shoppers), industrial (builds and moves things) and resources (oil, mines, forests)."
+        },
+        {
+          "text": "Geography is where a company is based and does business: Canada, the United States, other countries (international) and emerging markets, which are countries whose markets are younger and growing fast. Companies in one country tend to rise and fall together."
+        },
+        {
+          "text": "Here is a made-up mix of five companies with $2,000 in each. Read it one way at a time: by sector, by size and by country.",
+          "figure": {
+            "kind": "table",
+            "title": "Five made-up companies, $2,000 in each",
+            "columns": [
+              "Company",
+              "Sector",
+              "Size",
+              "Country"
+            ],
+            "rows": [
+              [
+                "Pinewood Foods",
+                "Consumer",
+                "Large",
+                "Canada"
+              ],
+              [
+                "Eastfield Rail",
+                "Industrial",
+                "Large",
+                "Canada"
+              ],
+              [
+                "Tillbrook Bank",
+                "Interest sensitive",
+                "Large",
+                "Canada"
+              ],
+              [
+                "Ridge Oil",
+                "Resources",
+                "Large",
+                "Canada"
+              ],
+              [
+                "Bright Threads",
+                "Consumer",
+                "Small",
+                "U.S."
+              ]
+            ]
+          }
+        },
+        {
+          "text": "Read by country: four of the five are in Canada, so the mix is bunched there. Read by size: four large and one small. Companies in the same sector also tend to fall together, so two bank shares count as two companies but move almost like one."
+        }
+      ],
+      "questions": [
+        {
+          "id": "ft2030-s3-u5-l2-q1",
+          "type": "choice",
+          "label": "Pick the sector",
+          "prompt": "A bank's business moves with interest rates. Which sector group fits a bank?",
+          "hint": "Read the card that lists the four sector groups.",
+          "options": [
+            {
+              "text": "Consumer",
+              "why": "Consumer companies sell to everyday shoppers, such as food and clothing."
+            },
+            {
+              "text": "Resources",
+              "why": "Resources are companies that dig or grow raw materials, such as oil, mines and forests."
+            },
+            {
+              "text": "Interest sensitive",
+              "why": "Yes. Banks lend and borrow, so interest rates move their business."
+            }
+          ],
+          "answer": 2
+        },
+        {
+          "id": "ft2030-s3-u5-l2-q2",
+          "type": "choice",
+          "label": "Growth or value",
+          "prompt": "A company sells at a low price compared with what it earns. Which style is it?",
+          "hint": "Style is about how the market prices the company.",
+          "options": [
+            {
+              "text": "Value",
+              "why": "Yes. A value company sells at a low price compared with what it earns."
+            },
+            {
+              "text": "Growth",
+              "why": "A growth company sells at a high price because buyers expect fast growth."
+            },
+            {
+              "text": "Large",
+              "why": "Large is a size, not a style."
+            }
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ft2030-s3-u5-l2-q3",
+          "type": "choice",
+          "label": "Which way",
+          "prompt": "A mix holds large and small companies in equal amounts. In which way is it spread?",
+          "hint": "Read the card that lists the four ways to spread.",
+          "options": [
+            {
+              "text": "By sector",
+              "why": "Sector is the kind of business, such as banks or oil. The prompt says nothing about that."
+            },
+            {
+              "text": "By size",
+              "why": "Yes. Size means large and small companies."
+            },
+            {
+              "text": "By country",
+              "why": "Country is where a company is based. The prompt says nothing about that."
+            }
+          ],
+          "answer": 1
+        },
+        {
+          "id": "ft2030-s3-u5-l2-q4",
+          "type": "number",
+          "label": "Share in Canada",
+          "prompt": "In the five-company mix, what percent of the money is in Canada?",
+          "hint": "Count the Canadian companies, then use the share of the money.",
+          "unit": "%",
+          "answer": 80,
+          "tolerance": 0,
+          "why": "Right. Four of five companies hold $2,000 each, so $8,000 of $10,000.",
+          "working": "4 x $2,000 = $8,000. $8,000 / $10,000 = 80%.",
+          "traps": [
+            {
+              "value": 20,
+              "why": "That is the share in the U.S., one company out of five."
+            }
+          ],
+          "miss": "Each company holds the same amount, so count how many of the five are Canadian."
+        },
+        {
+          "id": "ft2030-s3-u5-l2-q5",
+          "type": "number",
+          "label": "Share in consumer",
+          "prompt": "In the same mix, what percent of the money is in the consumer sector?",
+          "terms": [
+            {
+              "term": "sector",
+              "meaning": "A group of companies that do similar business."
+            }
+          ],
+          "hint": "Count the consumer companies in the table. Each holds the same amount.",
+          "unit": "%",
+          "answer": 40,
+          "tolerance": 0,
+          "why": "Right. Two of five companies, $4,000 of $10,000.",
+          "working": "2 x $2,000 = $4,000. $4,000 / $10,000 = 40%.",
+          "traps": [
+            {
+              "value": 20,
+              "why": "That is one company's share. Two companies are consumer."
+            }
+          ],
+          "miss": "Count the consumer companies in the table, then divide by five."
+        },
+        {
+          "id": "ft2030-s3-u5-l2-q6",
+          "type": "point",
+          "label": "Largest sector",
+          "prompt": "Tap the sector that holds the largest share of the money.",
+          "figure": {
+            "kind": "bars",
+            "title": "Share of the money by sector",
+            "unit": "%",
+            "bars": [
+              {
+                "label": "Interest sensitive",
+                "value": 20
+              },
+              {
+                "label": "Consumer",
+                "value": 40
+              },
+              {
+                "label": "Industrial",
+                "value": 20
+              },
+              {
+                "label": "Resources",
+                "value": 20
+              }
+            ]
+          },
+          "hint": "Each bar shows one sector's share of the money.",
+          "answer": 1,
+          "why": "Yes. Consumer holds 40%. Each other sector holds 20%.",
+          "miss": "Read the percent on each bar and compare them."
+        },
+        {
+          "id": "ft2030-s3-u5-l2-q7",
+          "type": "number",
+          "label": "Canada falls 20%",
+          "prompt": "Canada falls 20% and the U.S. stays flat. How much does the five-company mix lose?",
+          "hint": "Find the dollars in Canada first.",
+          "unit": "$",
+          "answer": 160000,
+          "tolerance": 0,
+          "why": "Right. Only the $8,000 in Canada falls.",
+          "working": "$8,000 x 20% = $1,600.00.",
+          "traps": [
+            {
+              "value": 200000,
+              "why": "That treats all $10,000 as Canadian. One company is in the U.S. and stays flat."
+            }
+          ],
+          "miss": "Take the dollars in Canada, then 20% of that."
+        },
+        {
+          "id": "ft2030-s3-u5-l2-q8",
+          "type": "choice",
+          "label": "What is true",
+          "prompt": "Which statement about the five-company mix is true?",
+          "hint": "Check each row of the table.",
+          "options": [
+            {
+              "text": "It holds only large companies",
+              "why": "One company, Bright Threads, is small."
+            },
+            {
+              "text": "Most of its money is outside Canada",
+              "why": "Four of five companies, 80% of the money, are in Canada."
+            },
+            {
+              "text": "No company is outside Canada and the U.S.",
+              "why": "Yes. Four are in Canada and one is in the U.S."
+            }
+          ],
+          "answer": 2
+        },
+        {
+          "id": "ft2030-s3-u5-l2-q9",
+          "type": "choice",
+          "label": "Two banks",
+          "prompt": "Why do two banks not spread a mix the way a bank and an oil company do?",
+          "hint": "Think about companies that do similar business.",
+          "options": [
+            {
+              "text": "Companies in one sector tend to fall together",
+              "why": "Yes. Two banks share the same business and tend to rise and fall together."
+            },
+            {
+              "text": "Banks are always smaller than other companies",
+              "why": "Size is a different way to spread. It has nothing to do with falling together."
+            },
+            {
+              "text": "Banks pay no interest",
+              "why": "Interest is not the point. The point is that companies in a sector move together."
+            }
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "ft2030-s3-u5-l3",
+      "title": "What a fund holds",
+      "kind": "lesson",
+      "learn": [
+        "Read the three facts that show what a fund holds.",
+        "Work out the share of a mix of funds that sits in one country."
+      ],
+      "cards": [
+        {
+          "text": "A fund is one purchase that holds many companies at once. Each company it holds is a holding. Three facts on its page say most: how many holdings it has, its largest sector and that sector's weight, and what share of its money sits in each country. A weight is a share of the money, as a percent."
+        },
+        {
+          "text": "Here are three made-up funds. Read the three facts off each row. No real fund is described.",
+          "figure": {
+            "kind": "table",
+            "title": "Three made-up funds",
+            "columns": [
+              "Fund",
+              "Holdings",
+              "Largest sector",
+              "In Canada"
+            ],
+            "rows": [
+              [
+                "Fund R",
+                "200",
+                "Interest sensitive, 34%",
+                "97%"
+              ],
+              [
+                "Fund S",
+                "1,500",
+                "Consumer, 18%",
+                "3%"
+              ],
+              [
+                "Fund T",
+                "40",
+                "Industrial, 25%",
+                "60%"
+              ]
+            ]
+          }
+        },
+        {
+          "text": "Fund R has 200 holdings, so one company failing barely shows. But 97% of its money is in Canada. If Canada falls 20% and other markets stay flat, Fund R falls about 97% x 20%, which is 19.4%. Many holdings fix company risk. They do not fix market risk."
+        },
+        {
+          "text": "Is a fund of 200 Canadian companies diversified? Partly: it is spread across companies, not across countries. Funds can also be bunched in the same way. Two funds that are both mostly banks look like two holdings but move almost like one, because banks tend to fall together."
+        },
+        {
+          "text": "You can mix funds. The share of a mix in Canada is each fund's Canada share times its weight in your money, added up. Put 50% in Fund R and 50% in Fund S: 50% x 97% + 50% x 3% = 48.5% + 1.5% = 50%. Half of the money is in Canada."
+        },
+        {
+          "text": "Real funds show these numbers on their own pages, usually with a date. Write down the page and the date next to each number you copy, because what a fund holds can change. The numbers on these cards are made up."
+        }
+      ],
+      "questions": [
+        {
+          "id": "ft2030-s3-u5-l3-q1",
+          "type": "number",
+          "label": "Fund R loss",
+          "prompt": "Kai puts $5,000 in Fund R, which is 97% Canadian. Canada falls 20% and every other market stays flat. How much does Kai lose?",
+          "hint": "Find the dollars in Canada, then take 20%.",
+          "unit": "$",
+          "answer": 97000,
+          "tolerance": 0,
+          "why": "Right. $4,850 of Kai's money is in Canada and falls 20%.",
+          "working": "$5,000 x 97% = $4,850 in Canada. $4,850 x 20% = $970.00.",
+          "traps": [
+            {
+              "value": 100000,
+              "why": "That takes 20% of all $5,000. Only 97% of Fund R is in Canada."
+            }
+          ],
+          "miss": "Take 97% of the $5,000 first. Then take 20% of that part."
+        },
+        {
+          "id": "ft2030-s3-u5-l3-q2",
+          "type": "choice",
+          "label": "Which fact",
+          "prompt": "Which fact tells you whether a fund is spread across countries?",
+          "hint": "Which fact is about countries?",
+          "options": [
+            {
+              "text": "How many holdings it has",
+              "why": "Holdings count companies. They could all be in one country."
+            },
+            {
+              "text": "The share of its money in each country",
+              "why": "Yes. That share shows how much of the money rides on one country."
+            },
+            {
+              "text": "The weight of its largest sector",
+              "why": "That shows how bunched the sectors are, not the countries."
+            }
+          ],
+          "answer": 1
+        },
+        {
+          "id": "ft2030-s3-u5-l3-q3",
+          "type": "choice",
+          "label": "200 holdings",
+          "prompt": "A student says Fund R cannot lose much in a bad year for Canada because it holds 200 companies. What does that miss?",
+          "hint": "Look at Fund R's Canada share in the table.",
+          "options": [
+            {
+              "text": "200 is too few companies for a fund",
+              "why": "The count is not the problem. Where the companies are is the problem."
+            },
+            {
+              "text": "A fund of 200 companies is safe whatever happens",
+              "why": "That is the mistake. A fund can still fall when its market falls."
+            },
+            {
+              "text": "97% of its money sits in one country that could fall",
+              "why": "Yes. The companies are many, but they share one market."
+            }
+          ],
+          "answer": 2
+        },
+        {
+          "id": "ft2030-s3-u5-l3-q4",
+          "type": "point",
+          "label": "Least Canada",
+          "prompt": "Tap the fund that loses the least when Canada falls 20% and other markets stay flat.",
+          "figure": {
+            "kind": "bars",
+            "title": "Share of each fund in Canada",
+            "unit": "%",
+            "bars": [
+              {
+                "label": "Fund R",
+                "value": 97
+              },
+              {
+                "label": "Fund S",
+                "value": 3
+              },
+              {
+                "label": "Fund T",
+                "value": 60
+              }
+            ]
+          },
+          "hint": "The smaller the share in Canada, the smaller the loss.",
+          "answer": 1,
+          "why": "Yes. Fund S has only 3% in Canada, so it loses the least.",
+          "miss": "Think about which fund has the least of its money in Canada, then match it to a bar."
+        },
+        {
+          "id": "ft2030-s3-u5-l3-q5",
+          "type": "number",
+          "label": "Blend 20 and 80",
+          "prompt": "Mia puts 20% of her money in Fund R and 80% in Fund S. What percent of her money is in Canada? Round to one decimal place.",
+          "terms": [
+            {
+              "term": "weight",
+              "meaning": "A holding's share of the money in a mix or a fund, as a percent."
+            }
+          ],
+          "hint": "Multiply each fund's weight by its Canada share, then add.",
+          "unit": "%",
+          "answer": 21.8,
+          "tolerance": 0.05,
+          "why": "Right. Each fund's Canada share counts in proportion to its weight.",
+          "working": "20% x 97% = 19.4%. 80% x 3% = 2.4%. 19.4% + 2.4% = 21.8%.",
+          "traps": [
+            {
+              "value": 50,
+              "why": "That is the middle of 97% and 3%. The weights are 20% and 80%, so they do not count equally."
+            }
+          ],
+          "miss": "Do the two products first: weight times Canada share for each fund. Then add them."
+        },
+        {
+          "id": "ft2030-s3-u5-l3-q6",
+          "type": "number",
+          "label": "Sector in dollars",
+          "prompt": "Ravi puts $8,000 in Fund T. Its largest sector is industrial, at a weight of 25%. How much of Ravi's money is in that sector?",
+          "terms": [
+            {
+              "term": "weight",
+              "meaning": "A holding's share of the money in a mix or a fund, as a percent."
+            }
+          ],
+          "hint": "A weight is a share of the money.",
+          "unit": "$",
+          "answer": 200000,
+          "tolerance": 0,
+          "why": "Right. 25% of $8,000.",
+          "working": "$8,000 x 25% = $2,000.00.",
+          "traps": [
+            {
+              "value": 20000,
+              "why": "That is $8,000 / 40 holdings. The question asks about the sector's weight, not one holding."
+            }
+          ],
+          "miss": "Take the weight, as a percent, of the money in the fund."
+        },
+        {
+          "id": "ft2030-s3-u5-l3-q7",
+          "type": "choice",
+          "label": "Same sector",
+          "prompt": "Two funds are each mostly banks. Does owning both spread out the risk of banks falling?",
+          "hint": "Think about companies that do similar business.",
+          "options": [
+            {
+              "text": "No, banks tend to fall together, so both would fall",
+              "why": "Yes. Two funds in the same sector move almost as one."
+            },
+            {
+              "text": "Yes, because two funds is always two baskets",
+              "why": "Two funds are only spread if they hold different things that do not fall together."
+            },
+            {
+              "text": "Yes, because each fund holds many companies",
+              "why": "Many companies in one sector still tend to fall together."
+            }
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ft2030-s3-u5-l3-q8",
+          "type": "choice",
+          "label": "More holdings",
+          "prompt": "Canada falls 20% and other markets stay flat. Fund S has 1,500 holdings and 3% in Canada. Fund R has 200 holdings and 97% in Canada. Which is true?",
+          "hint": "Compare the In Canada column.",
+          "options": [
+            {
+              "text": "Fund R falls less because it holds fewer companies",
+              "why": "Fewer holdings do not protect a fund. Its money is almost all in Canada."
+            },
+            {
+              "text": "Fund S falls less, though both hold many companies",
+              "why": "Yes. What matters here is the share in Canada, not the number of holdings."
+            },
+            {
+              "text": "They fall the same because both hold many companies",
+              "why": "The share in Canada differs a lot, so the loss differs."
+            }
+          ],
+          "answer": 1
+        },
+        {
+          "id": "ft2030-s3-u5-l3-q9",
+          "type": "choice",
+          "label": "Below half",
+          "prompt": "Which blend of Fund R and Fund S puts less than half of the money in Canada?",
+          "hint": "Work each blend out, as on the card about mixing funds.",
+          "options": [
+            {
+              "text": "50% in Fund R and 50% in Fund S",
+              "why": "That gives exactly half, 50%, which is not below half."
+            },
+            {
+              "text": "60% in Fund R and 40% in Fund S",
+              "why": "That gives 58.2% + 1.2% = 59.4%, more than half."
+            },
+            {
+              "text": "30% in Fund R and 70% in Fund S",
+              "why": "Yes. 30% x 97% + 70% x 3% = 29.1% + 2.1% = 31.2%."
+            },
+            {
+              "text": "90% in Fund R and 10% in Fund S",
+              "why": "That gives 87.3% + 0.3% = 87.6%, far more than half."
+            }
+          ],
+          "answer": 2
+        }
+      ]
+    },
+    {
+      "id": "ft2030-s3-u5-l4",
+      "title": "A blended return",
+      "kind": "lesson",
+      "learn": [
+        "Work out the return of a mix from its parts and their weights.",
+        "Say what a REIT is and how its return is made."
+      ],
+      "cards": [
+        {
+          "text": "A mix has parts that earn different returns. Its blended return is worked out from each part and how much money is in it. It is not the middle of the returns. Picture a see-saw: the balance point sits closer to the end that holds more money."
+        },
+        {
+          "text": "Here is the class example, with made-up rates. The $10,000 earns $640 + $60 = $700 in a year, which is 7%. The stocks part holds most of the money, so the whole earns 7%, close to the stocks rate of 8%. The middle of 8% and 3% would be 5.5%, which is wrong.",
+          "figure": {
+            "kind": "table",
+            "title": "Stocks and cash, rates made up",
+            "columns": [
+              "Part",
+              "Money",
+              "Return",
+              "Earns"
+            ],
+            "rows": [
+              [
+                "Stocks",
+                "$8,000",
+                "8%",
+                "$640"
+              ],
+              [
+                "Cash",
+                "$2,000",
+                "3%",
+                "$60"
+              ],
+              [
+                "Whole mix",
+                "$10,000",
+                "7%",
+                "$700"
+              ]
+            ]
+          }
+        },
+        {
+          "text": "A shortcut gives the same answer, and it is the step you used to blend funds: weight times value, added up. Multiply each part's weight by its return and add. For 80% stocks at 8% and 20% cash at 3%: 80% x 8% + 20% x 3% = 6.4% + 0.6% = 7.0%. The weights add up to 100%. A mix never earns more than its best part."
+        },
+        {
+          "text": "Real estate can be a part of a mix. A REIT, a real estate investment trust, owns buildings that earn rent, such as apartments, warehouses and offices. You buy units like shares. It pays most of its rent out to its owners as distributions, often every month."
+        },
+        {
+          "text": "A REIT's return is its yield plus the change in the price of its units. The yield is the yearly payout as a percent of the price. The price can fall, so the payout is not the whole return. Here is a three-part mix with made-up rates.",
+          "figure": {
+            "kind": "table",
+            "title": "A three-part mix, rates made up",
+            "columns": [
+              "Part",
+              "Weight",
+              "Return"
+            ],
+            "rows": [
+              [
+                "Stocks",
+                "50%",
+                "8%"
+              ],
+              [
+                "Bonds",
+                "30%",
+                "4%"
+              ],
+              [
+                "Real estate (REIT)",
+                "20%",
+                "6%"
+              ]
+            ]
+          }
+        },
+        {
+          "text": "For that mix: 50% x 8% + 30% x 4% + 20% x 6% = 4.0% + 1.2% + 1.2% = 6.4%. Check that the weights add up to 100% before you start. Moving money toward the part with the higher return raises the blend. The next level shows what that can cost."
+        }
+      ],
+      "questions": [
+        {
+          "id": "ft2030-s3-u5-l4-q1",
+          "type": "choice",
+          "label": "Not the middle",
+          "prompt": "A mix is 80% stocks at 8% and 20% cash at 3%. A student says its return is 5.5%, the middle of the two. What did the student miss?",
+          "terms": [
+            {
+              "term": "blended return",
+              "meaning": "The return of a whole mix, worked out from the return of each part and how much money is in it."
+            }
+          ],
+          "hint": "Which part holds more of the money?",
+          "options": [
+            {
+              "text": "The 80% in stocks counts for more than the 20% in cash",
+              "why": "Yes. The blend leans toward the part that holds more of the money."
+            },
+            {
+              "text": "Cash does not count in a blended return",
+              "why": "Cash counts, in proportion to its weight."
+            },
+            {
+              "text": "Returns must be added, not averaged",
+              "why": "Adding 8% and 3% would give 11%, more than the best part earns."
+            }
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ft2030-s3-u5-l4-q2",
+          "type": "number",
+          "label": "Stock earnings",
+          "prompt": "Lena splits $10,000: $6,000 in stocks earning 8% and $4,000 in cash earning 3%. How much do the stocks earn in a year?",
+          "hint": "Return is a percent of the money in that part.",
+          "unit": "$",
+          "answer": 48000,
+          "tolerance": 0,
+          "why": "Right. 8% of $6,000.",
+          "working": "$6,000 x 8% = $480.00.",
+          "traps": [
+            {
+              "value": 80000,
+              "why": "That is 8% of all $10,000. The stocks hold only $6,000."
+            }
+          ],
+          "miss": "Take 8% of the money in the stocks part only."
+        },
+        {
+          "id": "ft2030-s3-u5-l4-q3",
+          "type": "number",
+          "label": "Funds again",
+          "prompt": "Fund R is 97% in Canada and Fund S is 3%. Mia puts $6,000 in Fund R and $4,000 in Fund S. What percent of her money is in Canada? Round to one decimal place.",
+          "terms": [
+            {
+              "term": "weight",
+              "meaning": "A holding's share of the money in a mix or a fund, as a percent."
+            }
+          ],
+          "hint": "It is the same step as a blended return: weight times value, added up. Find the weights first.",
+          "unit": "%",
+          "answer": 59.4,
+          "tolerance": 0.05,
+          "why": "Right. 60% x 97% + 40% x 3% = 58.2% + 1.2%.",
+          "working": "Weights: $6,000 / $10,000 = 60% and 40%. 60% x 97% = 58.2%. 40% x 3% = 1.2%. Total 59.4%.",
+          "traps": [
+            {
+              "value": 50,
+              "why": "That is the middle of 97% and 3%. The weights are 60% and 40%."
+            }
+          ],
+          "miss": "Turn each amount into a weight first. Then weight times Canada share for each fund, added."
+        },
+        {
+          "id": "ft2030-s3-u5-l4-q4",
+          "type": "number",
+          "label": "Whole return",
+          "prompt": "Omar has $7,000 in stocks earning 8% and $3,000 in cash earning 3%. What is the return on his whole $10,000, as a percent?",
+          "terms": [
+            {
+              "term": "blended return",
+              "meaning": "The return of a whole mix, worked out from the return of each part and how much money is in it."
+            }
+          ],
+          "hint": "Find what each part earns, add them, then divide by all the money.",
+          "unit": "%",
+          "answer": 6.5,
+          "tolerance": 0,
+          "why": "Right. $650 earned on $10,000.",
+          "working": "$560 + $90 = $650. $650 / $10,000 = 6.5%.",
+          "traps": [
+            {
+              "value": 5.5,
+              "why": "That is the middle of 8% and 3%. The parts do not hold equal money."
+            }
+          ],
+          "miss": "Find the dollars each part earns first. Add them, then divide by the whole $10,000."
+        },
+        {
+          "id": "ft2030-s3-u5-l4-q5",
+          "type": "number",
+          "label": "The 80 20 mix",
+          "prompt": "A mix is 80% stocks at 8% and 20% bonds at 4%. What is its blended return? Round to one decimal place.",
+          "terms": [
+            {
+              "term": "blended return",
+              "meaning": "The return of a whole mix, worked out from the return of each part and how much money is in it."
+            }
+          ],
+          "hint": "Weight times return for each part, then add.",
+          "unit": "%",
+          "answer": 7.2,
+          "tolerance": 0.05,
+          "why": "Right. 6.4% + 0.8% = 7.2%.",
+          "working": "80% x 8% = 6.4%. 20% x 4% = 0.8%. 6.4% + 0.8% = 7.2%.",
+          "traps": [
+            {
+              "value": 6,
+              "why": "That is the middle of 8% and 4%. The weights are 80% and 20%."
+            }
+          ],
+          "miss": "Do 80% of 8% and 20% of 4%, then add the two."
+        },
+        {
+          "id": "ft2030-s3-u5-l4-q6",
+          "type": "point",
+          "label": "Pick the mix",
+          "prompt": "Stocks earn 8% and cash earns 3%. Tap the mix that earns 7% a year.",
+          "figure": {
+            "kind": "bars",
+            "title": "Blended return by share in stocks",
+            "unit": "%",
+            "bars": [
+              {
+                "label": "0% in stocks",
+                "value": 3
+              },
+              {
+                "label": "50% in stocks",
+                "value": 5.5
+              },
+              {
+                "label": "80% in stocks",
+                "value": 7
+              },
+              {
+                "label": "100% in stocks",
+                "value": 8
+              }
+            ]
+          },
+          "hint": "Read the percent on each bar.",
+          "answer": 2,
+          "why": "Yes. 80% x 8% + 20% x 3% = 6.4% + 0.6% = 7.0%.",
+          "miss": "Read the percent on each bar and find the one that is 7."
+        },
+        {
+          "id": "ft2030-s3-u5-l4-q7",
+          "type": "number",
+          "label": "Three parts",
+          "prompt": "A mix is 40% stocks at 8%, 30% bonds at 4% and 30% in a REIT at 6%. What is its blended return?",
+          "terms": [
+            {
+              "term": "blended return",
+              "meaning": "The return of a whole mix, worked out from the return of each part and how much money is in it."
+            },
+            {
+              "term": "REIT",
+              "meaning": "A real estate investment trust. It owns buildings that earn rent and pays most of the rent out to its owners."
+            }
+          ],
+          "hint": "Weight times return for each of the three parts.",
+          "unit": "%",
+          "answer": 6.2,
+          "tolerance": 0.05,
+          "why": "Right. 3.2% + 1.2% + 1.8% = 6.2%.",
+          "working": "40% x 8% = 3.2%. 30% x 4% = 1.2%. 30% x 6% = 1.8%. Total 6.2%.",
+          "miss": "Do three products, weight times return, then add them."
+        },
+        {
+          "id": "ft2030-s3-u5-l4-q8",
+          "type": "choice",
+          "label": "What a REIT owns",
+          "prompt": "In this unit, what does a REIT own?",
+          "terms": [
+            {
+              "term": "REIT",
+              "meaning": "A real estate investment trust. It owns buildings that earn rent and pays most of the rent out to its owners."
+            }
+          ],
+          "hint": "Read the card that defines a REIT.",
+          "options": [
+            {
+              "text": "A basket of government bonds",
+              "why": "Bonds are loans. A REIT owns buildings."
+            },
+            {
+              "text": "Buildings that earn rent",
+              "why": "Yes. Apartments, warehouses and offices are examples. The rent is paid out to its owners."
+            },
+            {
+              "text": "Shares of one company",
+              "why": "That is a stock. A REIT owns buildings that earn rent."
+            }
+          ],
+          "answer": 1
+        },
+        {
+          "id": "ft2030-s3-u5-l4-q9",
+          "type": "number",
+          "label": "REIT return",
+          "prompt": "A REIT paid a yield of 5% over a year and the price of its units fell 3%. Using yield plus price change, what was its return?",
+          "terms": [
+            {
+              "term": "REIT",
+              "meaning": "A real estate investment trust. It owns buildings that earn rent and pays most of the rent out to its owners."
+            }
+          ],
+          "hint": "Add the yield and the price change. The price change here is a fall.",
+          "unit": "%",
+          "answer": 2,
+          "tolerance": 0,
+          "why": "Right. The payout of 5% was cut by a price fall of 3%.",
+          "working": "5% + (-3%) = 2%.",
+          "traps": [
+            {
+              "value": 5,
+              "why": "That is the yield alone. The price fell, so it lowers the return."
+            }
+          ],
+          "miss": "The return is the yield plus the price change. A fall in price is a negative change."
+        },
+        {
+          "id": "ft2030-s3-u5-l4-q10",
+          "type": "choice",
+          "label": "Weights check",
+          "prompt": "A student writes a mix as 50% stocks, 30% bonds and 30% real estate. What is wrong?",
+          "terms": [
+            {
+              "term": "weight",
+              "meaning": "A holding's share of the money in a mix or a fund, as a percent."
+            }
+          ],
+          "hint": "Add the three weights.",
+          "options": [
+            {
+              "text": "Real estate cannot be part of a mix",
+              "why": "It can. The card shows a mix with a REIT."
+            },
+            {
+              "text": "Bonds must always be the largest part",
+              "why": "No rule says that. Only the total matters."
+            },
+            {
+              "text": "The weights add up to 110%, not 100%",
+              "why": "Yes. The parts of a mix must add up to 100% of the money."
+            }
+          ],
+          "answer": 2
+        }
+      ]
+    },
+    {
+      "id": "ft2030-s3-u5-l5",
+      "title": "A crash hits the mix",
+      "kind": "lesson",
+      "learn": [
+        "Work out how much a mix falls in a crash from its share in stocks.",
+        "Say what a mix with less in stocks gives up and keeps."
+      ],
+      "cards": [
+        {
+          "text": "Two investors each have $100,000. Investor A holds 80% in stocks and 20% in the steady part (GICs and bonds). Investor C holds 30% in stocks and 70% in the steady part. A bad year comes. Does each lose the same share of their money?"
+        },
+        {
+          "text": "Here is a made-up crash, for this example only: stocks fall 30% and the steady part holds its value. Real crashes are different every time. The table shows each investor after the crash.",
+          "figure": {
+            "kind": "table",
+            "title": "After a made-up crash: stocks fall 30%",
+            "columns": [
+              "Investor",
+              "Stocks after",
+              "Steady after",
+              "Fell by"
+            ],
+            "rows": [
+              [
+                "A (80% stocks)",
+                "$56,000",
+                "$20,000",
+                "24%"
+              ],
+              [
+                "C (30% stocks)",
+                "$21,000",
+                "$70,000",
+                "9%"
+              ]
+            ]
+          }
+        },
+        {
+          "text": "Here is the rule. When the steady part holds, the whole mix falls by its share in stocks times the crash size. For A: 80% x 30% = 24%, so $100,000 falls to $76,000. For C: 30% x 30% = 9%, so $100,000 falls to $91,000."
+        },
+        {
+          "text": "The same crash does not cost every mix the same. A mix with half its money in stocks falls 15% here. One with more in stocks falls more, and one with less falls less. Look at how the whole mix falls for each share in stocks.",
+          "figure": {
+            "kind": "bars",
+            "title": "How much the whole mix falls (stocks fall 30%)",
+            "unit": "%",
+            "bars": [
+              {
+                "label": "100% in stocks",
+                "value": 30
+              },
+              {
+                "label": "80% in stocks",
+                "value": 24
+              },
+              {
+                "label": "50% in stocks",
+                "value": 15
+              },
+              {
+                "label": "30% in stocks",
+                "value": 9
+              },
+              {
+                "label": "0% in stocks",
+                "value": 0
+              }
+            ]
+          }
+        },
+        {
+          "text": "Two cautions. The 30% is made up. And the steady part is not always steady: bond funds can fall too, for example when interest rates rise. Then a real mix can lose more than this rule says. The rule shows how a mix's weights matter. It is not a forecast."
+        },
+        {
+          "text": "The game's Exchange has a fund, DAA Balanced 60/40, that holds 60% in its index fund and 40% in its bond fund. An index fund holds every company on a list, such as every company in town. In the same made-up crash the index part falls 30% and the bond part holds. These are not the game's own crash numbers."
+        }
+      ],
+      "questions": [
+        {
+          "id": "ft2030-s3-u5-l5-q1",
+          "type": "choice",
+          "label": "Who loses more",
+          "prompt": "A and C each have $100,000 and the same made-up crash hits stocks. A has 80% in stocks and C has 30%. Who loses more of their money?",
+          "terms": [
+            {
+              "term": "steady part",
+              "meaning": "The part of a mix held in GICs and bonds."
+            },
+            {
+              "term": "GIC",
+              "meaning": "A loan to a bank for a set time."
+            }
+          ],
+          "hint": "Which investor has more in the part that falls?",
+          "options": [
+            {
+              "text": "Investor A",
+              "why": "Yes. A has more of the money in the part that fell."
+            },
+            {
+              "text": "Investor C",
+              "why": "C has less in stocks, so less of C's money falls."
+            },
+            {
+              "text": "Both lose the same",
+              "why": "They have the same amount, but not the same mix. A loss follows the share in stocks."
+            }
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ft2030-s3-u5-l5-q2",
+          "type": "number",
+          "label": "B after crash",
+          "prompt": "Investor B has $100,000: $60,000 in stocks and $40,000 in the steady part. After the made-up crash, how much is B's whole $100,000 worth?",
+          "terms": [
+            {
+              "term": "steady part",
+              "meaning": "The part of a mix held in GICs and bonds."
+            }
+          ],
+          "hint": "Stocks fall 30%. The steady part holds.",
+          "unit": "$",
+          "answer": 8200000,
+          "tolerance": 0,
+          "why": "Right. $42,000 + $40,000.",
+          "working": "Stocks: $60,000 x (1 - 30%) = $42,000. Steady: $40,000. Total $82,000.",
+          "traps": [
+            {
+              "value": 4200000,
+              "why": "That is only the stocks part. Add the $40,000 that did not fall."
+            }
+          ],
+          "miss": "Work out the stocks part after the fall, then add the steady part."
+        },
+        {
+          "id": "ft2030-s3-u5-l5-q3",
+          "type": "number",
+          "label": "D falls by",
+          "prompt": "By what percent does Investor D's whole mix fall? D has 20% in stocks. Stocks fall 30%.",
+          "hint": "Share in stocks times crash size.",
+          "unit": "%",
+          "answer": 6,
+          "tolerance": 0.05,
+          "why": "Right. 20% x 30%.",
+          "working": "20% x 30% = 6%.",
+          "traps": [
+            {
+              "value": 30,
+              "why": "That is the crash size for stocks. Only 20% of D's money is in stocks."
+            }
+          ],
+          "miss": "Multiply the share in stocks by the size of the crash."
+        },
+        {
+          "id": "ft2030-s3-u5-l5-q4",
+          "type": "number",
+          "label": "Half in stocks",
+          "prompt": "A mix of $240,000 has half its money in stocks. Stocks fall 30% and the steady part holds. How many dollars does the mix lose?",
+          "hint": "Only the stocks part falls.",
+          "unit": "$",
+          "answer": 3600000,
+          "tolerance": 0,
+          "why": "Right. $120,000 of stocks fell 30%.",
+          "working": "$120,000 x 30% = $36,000.00.",
+          "traps": [
+            {
+              "value": 7200000,
+              "why": "That takes 30% of all $240,000. Only half is in stocks."
+            }
+          ],
+          "miss": "Take half the money first. Then take 30% of that."
+        },
+        {
+          "id": "ft2030-s3-u5-l5-q5",
+          "type": "point",
+          "label": "Find C",
+          "prompt": "Investor C has 30% in stocks. Tap the bar for how much C's mix falls.",
+          "figure": {
+            "kind": "bars",
+            "title": "How much the whole mix falls (stocks fall 30%)",
+            "unit": "%",
+            "bars": [
+              {
+                "label": "100% in stocks",
+                "value": 30
+              },
+              {
+                "label": "80% in stocks",
+                "value": 24
+              },
+              {
+                "label": "50% in stocks",
+                "value": 15
+              },
+              {
+                "label": "30% in stocks",
+                "value": 9
+              },
+              {
+                "label": "0% in stocks",
+                "value": 0
+              }
+            ]
+          },
+          "hint": "Match the share in stocks under each bar.",
+          "answer": 3,
+          "why": "Yes. 30% in stocks falls 9%.",
+          "miss": "Match C's share in stocks to the labels under the bars."
+        },
+        {
+          "id": "ft2030-s3-u5-l5-q6",
+          "type": "number",
+          "label": "The game's fund",
+          "prompt": "The game's DAA Balanced 60/40 holds 60% in its index fund and 40% in its bond fund. In the made-up crash the index part falls 30% and the bond part holds. By what percent does the fund fall?",
+          "terms": [
+            {
+              "term": "index fund",
+              "meaning": "A fund that holds every company on a list, so one purchase covers them all."
+            }
+          ],
+          "hint": "Only the index fund part falls. Use its weight.",
+          "unit": "%",
+          "answer": 18,
+          "tolerance": 0.05,
+          "why": "Right. 60% x 30% = 18%.",
+          "working": "60% x 30% = 18%. The bond part does not fall in this example.",
+          "traps": [
+            {
+              "value": 30,
+              "why": "That is how far the index part falls. Only 60% of the fund is in it."
+            }
+          ],
+          "miss": "Multiply the index fund's weight by the size of the fall."
+        },
+        {
+          "id": "ft2030-s3-u5-l5-q7",
+          "type": "choice",
+          "label": "Why C lost less",
+          "prompt": "In the made-up crash, why did Investor C lose less than Investor A?",
+          "hint": "Compare each investor's share in stocks.",
+          "options": [
+            {
+              "text": "C picked stocks that fell less",
+              "why": "The stocks fell 30% for both investors."
+            },
+            {
+              "text": "Only 30% of C's money was in the part that fell",
+              "why": "Yes. C had less of the money in stocks."
+            },
+            {
+              "text": "C's steady part gained value in the crash",
+              "why": "In this example the steady part held its value. It did not gain."
+            }
+          ],
+          "answer": 1
+        },
+        {
+          "id": "ft2030-s3-u5-l5-q8",
+          "type": "number",
+          "label": "C's blended return",
+          "prompt": "In an ordinary year, in this example, stocks earn 8% and the steady part earns 3%. What is Investor C's blended return? C has 30% in stocks. Round to one decimal place.",
+          "terms": [
+            {
+              "term": "blended return",
+              "meaning": "The return of a whole mix, worked out from the return of each part and how much money is in it."
+            }
+          ],
+          "hint": "Weight times return for each part, then add.",
+          "unit": "%",
+          "answer": 4.5,
+          "tolerance": 0.05,
+          "why": "Right. 2.4% + 2.1% = 4.5%.",
+          "working": "30% x 8% = 2.4%. 70% x 3% = 2.1%. 2.4% + 2.1% = 4.5%.",
+          "traps": [
+            {
+              "value": 5.5,
+              "why": "That is the middle of 8% and 3%. C's weights are 30% and 70%."
+            }
+          ],
+          "miss": "Do 30% of 8% and 70% of 3%, then add."
+        },
+        {
+          "id": "ft2030-s3-u5-l5-q9",
+          "type": "choice",
+          "label": "Ordinary year",
+          "prompt": "Investor A earns a blended return of 7.0% in an ordinary year, in this example. C lost less in the crash. In an ordinary year (stocks 8%, steady part 3%), how does C compare with A?",
+          "hint": "Work out each investor's blended return.",
+          "options": [
+            {
+              "text": "C earns a higher blended return than A",
+              "why": "C holds less in stocks, the part with the higher rate, so C earns less in an ordinary year."
+            },
+            {
+              "text": "C earns the same blended return as A",
+              "why": "The two mixes have different weights, so their blended returns differ."
+            },
+            {
+              "text": "C earns a lower blended return than A",
+              "why": "Yes. C's 4.5% is lower than A's 7.0%. A smaller loss in a crash came with a lower return."
+            }
+          ],
+          "answer": 2
+        },
+        {
+          "id": "ft2030-s3-u5-l5-q10",
+          "type": "choice",
+          "label": "Real bonds",
+          "prompt": "The card says bond funds can fall when interest rates rise. What does that mean for Investor A's made-up 24% fall?",
+          "hint": "Which part did the rule say would hold?",
+          "options": [
+            {
+              "text": "A real mix like A could lose more than 24%",
+              "why": "Yes. If the steady part falls too, the whole mix falls more than the rule says."
+            },
+            {
+              "text": "A real mix like A could never lose more than 24%",
+              "why": "The rule assumed the steady part holds. If it falls, the loss is bigger."
+            },
+            {
+              "text": "The steady part would gain, so A loses less",
+              "why": "A rise in interest rates tends to lower bond fund prices, not raise them."
+            }
+          ],
+          "answer": 0
+        }
+      ],
+      "go": {
+        "building": "exchange",
+        "label": "Open the Exchange"
+      }
+    }
+  ]
+}

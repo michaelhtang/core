@@ -1,0 +1,1481 @@
+{
+  "id": "ft2030-s1-u5",
+  "title": "A return by hand",
+  "blurb": "From slips to total income, taxable income, tax and a refund.",
+  "outcome_codes": [
+    "FIN2060 2.3"
+  ],
+  "levels": [
+    {
+      "id": "ft2030-s1-u5-l1",
+      "title": "From slips to taxable income",
+      "kind": "lesson",
+      "learn": [
+        "Add up Priya's slips to get total income.",
+        "Take off her deductions to reach net income and taxable income."
+      ],
+      "cards": [
+        {
+          "text": "In this unit you work out Priya's whole tax return by hand, one step at a time, from the slips you have already read. The steps run in order: total income, deductions, taxable income, tax, and then a refund or a balance owing.",
+          "image": {
+            "src": "ft2030-s1-u5/l1c1.webp",
+            "alt": "A desk with a blank form and a row of blank slips"
+          }
+        },
+        {
+          "text": "This return is for the 2025 tax year, the same year the tax program your class uses files in December.",
+          "image": {
+            "src": "ft2030-s1-u5/l1c2.webp",
+            "alt": "A desk lamp over an empty open notebook and a grey folder"
+          }
+        },
+        {
+          "text": "Step 1 is total income, line 15000: all the income on your slips, added up. Priya's income slips are her T4 and her T5. Her T5 interest goes into total income too. Her RRSP receipt is not income, so it stays out of this step.",
+          "figure": {
+            "kind": "table",
+            "title": "Priya's income so far",
+            "columns": [
+              "Step",
+              "Amount"
+            ],
+            "rows": [
+              [
+                "T4 box 14 (line 10100)",
+                "$27,500"
+              ],
+              [
+                "T5 box 13",
+                "$63.50"
+              ],
+              [
+                "Total income (line 15000)",
+                "?"
+              ]
+            ]
+          }
+        },
+        {
+          "text": "Deductions come off total income. Priya's first is her RRSP contribution of $1,200, on line 20800. A deduction is an amount you may subtract before tax is worked out. Apart from the two on these cards, she has no deductions in this unit.",
+          "image": {
+            "src": "ft2030-s1-u5/l1c4.webp",
+            "alt": "A wooden savings box beside a pencil"
+          }
+        },
+        {
+          "text": "Her second deduction is line 22215. In plain words, it is a deduction for part of the CPP you paid. Box 16 of her T4 shows $1,428 of CPP. $1,188 of it earns a credit, which you use in level 2. The rest is the deduction.",
+          "image": {
+            "src": "ft2030-s1-u5/l1c5.webp",
+            "alt": "A jar and two stacks of gold discs on a shelf"
+          }
+        },
+        {
+          "text": "Total income minus the deductions is net income, line 23600. Priya has no other deductions, so her taxable income, line 26000, is the same amount. Tax is worked out on taxable income.",
+          "figure": {
+            "kind": "table",
+            "title": "From total income to taxable income",
+            "columns": [
+              "Step",
+              "Amount"
+            ],
+            "rows": [
+              [
+                "Total income (line 15000)",
+                "$27,563.50"
+              ],
+              [
+                "RRSP deduction (line 20800)",
+                "$1,200"
+              ],
+              [
+                "CPP deduction (line 22215)",
+                "?"
+              ],
+              [
+                "Net income (line 23600)",
+                "?"
+              ],
+              [
+                "Taxable income (line 26000)",
+                "?"
+              ]
+            ]
+          }
+        }
+      ],
+      "questions": [
+        {
+          "id": "ft2030-s1-u5-l1-q1",
+          "label": "Total income line",
+          "prompt": "On the T1, which line is total income?",
+          "type": "choice",
+          "terms": [
+            {
+              "term": "total income",
+              "meaning": "All the income on your slips, added up."
+            }
+          ],
+          "hint": "Look at the card about step 1.",
+          "options": [
+            {
+              "text": "Line 10100",
+              "why": "Line 10100 is employment income, which is only one part of total income."
+            },
+            {
+              "text": "Line 15000",
+              "why": "Yes. Line 15000 is total income, the income on the slips added up."
+            },
+            {
+              "text": "Line 23600",
+              "why": "Line 23600 is net income, which comes after the deductions."
+            },
+            {
+              "text": "Line 26000",
+              "why": "Line 26000 is taxable income, the last step before tax."
+            }
+          ],
+          "answer": 1
+        },
+        {
+          "id": "ft2030-s1-u5-l1-q2",
+          "label": "Total income",
+          "prompt": "Priya's T4 box 14 is $27,500 and her T5 box 13 is $63.50. What is her total income, line 15000?",
+          "type": "number",
+          "figure": {
+            "kind": "table",
+            "title": "Priya's income so far",
+            "columns": [
+              "Step",
+              "Amount"
+            ],
+            "rows": [
+              [
+                "T4 box 14 (line 10100)",
+                "$27,500"
+              ],
+              [
+                "T5 box 13",
+                "$63.50"
+              ],
+              [
+                "Total income (line 15000)",
+                "?"
+              ]
+            ]
+          },
+          "terms": [
+            {
+              "term": "total income",
+              "meaning": "All the income on your slips, added up."
+            }
+          ],
+          "hint": "Add the income from both slips. Leave out the RRSP receipt.",
+          "unit": "$",
+          "answer": 2756350,
+          "tolerance": 1,
+          "why": "Yes. Total income is the T4 and the T5 added up: $27,563.50.",
+          "working": "$27,500 + $63.50 = $27,563.50.",
+          "traps": [
+            {
+              "value": 2750000,
+              "why": "That is the T4 alone. Her T5 interest is income too."
+            },
+            {
+              "value": 2876350,
+              "why": "The RRSP receipt is not income, so it is not added."
+            }
+          ],
+          "miss": "Add every slip that shows income. Which papers show income, and which does not?"
+        },
+        {
+          "id": "ft2030-s1-u5-l1-q3",
+          "label": "Not income",
+          "prompt": "Which of Priya's papers is not added into her total income?",
+          "type": "choice",
+          "terms": [
+            {
+              "term": "total income",
+              "meaning": "All the income on your slips, added up."
+            }
+          ],
+          "hint": "Total income is made of income only.",
+          "options": [
+            {
+              "text": "Her T4",
+              "why": "The T4 shows her pay, which is income."
+            },
+            {
+              "text": "Her T5",
+              "why": "The T5 shows her bank interest, which is income."
+            },
+            {
+              "text": "Her RRSP receipt",
+              "why": "Yes. The receipt backs up a deduction. It is not income."
+            }
+          ],
+          "answer": 2
+        },
+        {
+          "id": "ft2030-s1-u5-l1-q4",
+          "label": "CPP deduction line",
+          "prompt": "Which line is the deduction for part of the CPP you paid?",
+          "type": "choice",
+          "terms": [
+            {
+              "term": "deduction",
+              "meaning": "An amount you may subtract from your income before tax is worked out, such as an RRSP contribution."
+            }
+          ],
+          "hint": "The card about her second deduction gives the line.",
+          "options": [
+            {
+              "text": "Line 22215",
+              "why": "Yes. Line 22215 is the deduction for CPP enhanced contributions on employment income."
+            },
+            {
+              "text": "Line 20800",
+              "why": "Line 20800 is the RRSP deduction."
+            },
+            {
+              "text": "Line 30800",
+              "why": "Line 30800 is a credit for base CPP contributions, not a deduction."
+            },
+            {
+              "text": "Line 31200",
+              "why": "Line 31200 is a credit for EI premiums."
+            }
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ft2030-s1-u5-l1-q5",
+          "label": "CPP deduction",
+          "prompt": "Priya's T4 box 16 shows $1,428 of CPP. $1,188 of it earns a credit. The rest is the line 22215 deduction. How much is it?",
+          "type": "number",
+          "terms": [
+            {
+              "term": "deduction",
+              "meaning": "An amount you may subtract from your income before tax is worked out, such as an RRSP contribution."
+            }
+          ],
+          "hint": "Take the part that earns a credit away from the CPP in box 16.",
+          "unit": "$",
+          "answer": 24000,
+          "tolerance": 1,
+          "why": "Yes. The rest of the CPP is $240, the line 22215 deduction.",
+          "working": "$1,428 - $1,188 = $240.",
+          "traps": [
+            {
+              "value": 118800,
+              "why": "That is the part that earns a credit. The deduction is the rest."
+            },
+            {
+              "value": 142800,
+              "why": "That is all of box 16. Only part of it is the deduction."
+            }
+          ],
+          "miss": "The CPP in box 16 splits in two parts. One part is given. Which part is left?"
+        },
+        {
+          "id": "ft2030-s1-u5-l1-q6",
+          "label": "Total deductions",
+          "prompt": "Priya's RRSP deduction is $1,200 and her CPP deduction is $240. What do her two deductions come to?",
+          "type": "number",
+          "terms": [
+            {
+              "term": "deduction",
+              "meaning": "An amount you may subtract from your income before tax is worked out, such as an RRSP contribution."
+            }
+          ],
+          "hint": "Add the two deductions.",
+          "unit": "$",
+          "answer": 144000,
+          "tolerance": 1,
+          "why": "Yes. Her deductions come to $1,440.",
+          "working": "$1,200 + $240 = $1,440.",
+          "traps": [
+            {
+              "value": 120000,
+              "why": "That is the RRSP deduction alone. Add the CPP deduction too."
+            }
+          ],
+          "miss": "Add both deductions, not just one."
+        },
+        {
+          "id": "ft2030-s1-u5-l1-q7",
+          "label": "Net income",
+          "prompt": "Priya's total income is $27,563.50. Her deductions come to $1,440. What is her net income, line 23600?",
+          "type": "number",
+          "figure": {
+            "kind": "table",
+            "title": "From total income to taxable income",
+            "columns": [
+              "Step",
+              "Amount"
+            ],
+            "rows": [
+              [
+                "Total income (line 15000)",
+                "$27,563.50"
+              ],
+              [
+                "RRSP deduction (line 20800)",
+                "$1,200"
+              ],
+              [
+                "CPP deduction (line 22215)",
+                "?"
+              ],
+              [
+                "Net income (line 23600)",
+                "?"
+              ],
+              [
+                "Taxable income (line 26000)",
+                "?"
+              ]
+            ]
+          },
+          "hint": "Net income is total income minus the deductions.",
+          "unit": "$",
+          "answer": 2612350,
+          "tolerance": 1,
+          "why": "Yes. Net income is $26,123.50.",
+          "working": "$27,563.50 - $1,440 = $26,123.50.",
+          "traps": [
+            {
+              "value": 2636350,
+              "why": "That takes off the RRSP only. Take off the CPP deduction too."
+            },
+            {
+              "value": 2900350,
+              "why": "Deductions are subtracted, not added."
+            }
+          ],
+          "miss": "Do you subtract the deductions or add them?"
+        },
+        {
+          "id": "ft2030-s1-u5-l1-q8",
+          "label": "Net and taxable",
+          "prompt": "Priya has no other deductions. How does her taxable income, line 26000, compare with her net income, line 23600?",
+          "type": "choice",
+          "terms": [
+            {
+              "term": "taxable income",
+              "meaning": "Your total income minus your deductions. Tax is worked out on this amount."
+            }
+          ],
+          "hint": "The last card says what happens when there are no other deductions.",
+          "options": [
+            {
+              "text": "Taxable income is smaller",
+              "why": "It would be smaller only if she had another deduction. She has none."
+            },
+            {
+              "text": "They are the same amount",
+              "why": "Yes. With no other deductions, nothing more comes off, so taxable income equals net income."
+            },
+            {
+              "text": "Taxable income is larger",
+              "why": "Deductions only lower income. Taxable income cannot be above net income."
+            }
+          ],
+          "answer": 1
+        },
+        {
+          "id": "ft2030-s1-u5-l1-q9",
+          "label": "Taxable income",
+          "prompt": "Priya's T4 box 14 is $27,500, her T5 box 13 is $63.50, her RRSP deduction is $1,200 and her CPP deduction is $240. What is her taxable income, line 26000?",
+          "type": "number",
+          "terms": [
+            {
+              "term": "taxable income",
+              "meaning": "Your total income minus your deductions. Tax is worked out on this amount."
+            }
+          ],
+          "hint": "Work down the steps: total income, then take off both deductions.",
+          "unit": "$",
+          "answer": 2612350,
+          "tolerance": 1,
+          "why": "Yes. Taxable income is $26,123.50, the amount her tax is worked out on.",
+          "working": "$27,500 + $63.50 = $27,563.50. $27,563.50 - $1,200 - $240 = $26,123.50.",
+          "traps": [
+            {
+              "value": 2756350,
+              "why": "That is total income, before any deduction."
+            },
+            {
+              "value": 2636350,
+              "why": "That leaves out the CPP deduction."
+            }
+          ],
+          "miss": "Start with total income. Then subtract each deduction."
+        }
+      ]
+    },
+    {
+      "id": "ft2030-s1-u5-l2",
+      "title": "Federal tax",
+      "kind": "lesson",
+      "learn": [
+        "Work out federal tax on taxable income from the first band.",
+        "Work out each credit and net federal tax."
+      ],
+      "cards": [
+        {
+          "text": "Tax is worked out on taxable income, which for Priya is $26,123.50. The federal tax table has bands. A band is a slice of income taxed at one rate. Her first band taxes income up to $57,375 at 14.5%, and all her taxable income fits in it.",
+          "image": {
+            "src": "ft2030-s1-u5/l2c1.webp",
+            "alt": "A ruler across a row of wooden blocks on a desk"
+          }
+        },
+        {
+          "text": "So her federal tax on taxable income is taxable income x 14.5%. Round the answer to the nearest cent. This is the tax before credits. Next come the credits, which lower it.",
+          "image": {
+            "src": "ft2030-s1-u5/l2c2.webp",
+            "alt": "A brass calculator with a blank screen beside gold discs"
+          }
+        },
+        {
+          "text": "A non-refundable tax credit lowers the tax you owe, but cannot take it below $0. Each credit here is an amount x the lowest federal rate, 14.5%. Round each credit to the nearest cent.",
+          "image": {
+            "src": "ft2030-s1-u5/l2c3.webp",
+            "alt": "A stack of gold discs with a few lifted onto a blank tag"
+          }
+        },
+        {
+          "text": "Priya's four credit amounts. The base CPP amount is the part of box 16 that earns a credit. The EI amount is box 18. Her pay is above the Canada employment amount, so she gets all of it.",
+          "figure": {
+            "kind": "table",
+            "title": "Priya's federal credit amounts",
+            "columns": [
+              "Credit",
+              "Amount",
+              "Line"
+            ],
+            "rows": [
+              [
+                "Basic personal amount",
+                "$16,129",
+                "30000"
+              ],
+              [
+                "Base CPP contributions",
+                "$1,188",
+                "30800"
+              ],
+              [
+                "EI premiums",
+                "$451",
+                "31200"
+              ],
+              [
+                "Canada employment amount",
+                "$1,471",
+                "31260"
+              ]
+            ]
+          }
+        },
+        {
+          "text": "Add the four credits. Then take the total away from the federal tax on taxable income. What is left is net federal tax, line 42000. If the credits were bigger than the tax, the answer would stop at $0.",
+          "figure": {
+            "kind": "table",
+            "title": "Net federal tax",
+            "columns": [
+              "Step",
+              "Amount"
+            ],
+            "rows": [
+              [
+                "Taxable income (line 26000)",
+                "$26,123.50"
+              ],
+              [
+                "Federal tax (14.5% x taxable income)",
+                "?"
+              ],
+              [
+                "Minus the four credits",
+                "?"
+              ],
+              [
+                "Net federal tax (line 42000)",
+                "?"
+              ]
+            ]
+          }
+        }
+      ],
+      "questions": [
+        {
+          "id": "ft2030-s1-u5-l2-q1",
+          "label": "Federal tax",
+          "prompt": "Priya's taxable income is $26,123.50, all in the first band at 14.5%. What is her federal tax on taxable income? Round to the nearest cent.",
+          "type": "number",
+          "terms": [
+            {
+              "term": "taxable income",
+              "meaning": "Your total income minus your deductions. Tax is worked out on this amount."
+            }
+          ],
+          "hint": "Multiply taxable income by the band rate.",
+          "unit": "$",
+          "answer": 378791,
+          "tolerance": 1,
+          "why": "Yes. Her federal tax before credits is $3,787.91.",
+          "working": "14.5% x $26,123.50 = $3,787.9075, which is $3,787.91 to the nearest cent.",
+          "traps": [
+            {
+              "value": 2612350,
+              "why": "That is taxable income itself. The tax is only part of it."
+            }
+          ],
+          "miss": "Change 14.5% to a decimal, then multiply it by taxable income."
+        },
+        {
+          "id": "ft2030-s1-u5-l2-q2",
+          "label": "What a credit does",
+          "prompt": "What does a non-refundable tax credit do?",
+          "type": "choice",
+          "terms": [
+            {
+              "term": "non-refundable tax credit",
+              "meaning": "An amount that lowers the tax you owe, but cannot take it below $0. The basic personal amount is one."
+            }
+          ],
+          "hint": "Look at the card about credits.",
+          "options": [
+            {
+              "text": "It lowers the tax you owe, but not below $0",
+              "why": "Yes. A non-refundable credit lowers tax, and it cannot take the tax below $0."
+            },
+            {
+              "text": "It is added to your income",
+              "why": "A credit comes off the tax. It is not added to income."
+            },
+            {
+              "text": "It pays you money even when you owe no tax",
+              "why": "That describes a refundable amount. A non-refundable credit stops at $0."
+            },
+            {
+              "text": "It is taken off your income before tax",
+              "why": "That is a deduction. A credit comes off the tax after it is worked out."
+            }
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ft2030-s1-u5-l2-q3",
+          "label": "Basic personal credit",
+          "prompt": "Priya's basic personal amount is $16,129. The credit is that amount x 14.5%. How much is it? Round to the nearest cent.",
+          "type": "number",
+          "figure": {
+            "kind": "table",
+            "title": "Priya's federal credit amounts",
+            "columns": [
+              "Credit",
+              "Amount",
+              "Line"
+            ],
+            "rows": [
+              [
+                "Basic personal amount",
+                "$16,129",
+                "30000"
+              ],
+              [
+                "Base CPP contributions",
+                "$1,188",
+                "30800"
+              ],
+              [
+                "EI premiums",
+                "$451",
+                "31200"
+              ],
+              [
+                "Canada employment amount",
+                "$1,471",
+                "31260"
+              ]
+            ]
+          },
+          "terms": [
+            {
+              "term": "non-refundable tax credit",
+              "meaning": "An amount that lowers the tax you owe, but cannot take it below $0. The basic personal amount is one."
+            }
+          ],
+          "hint": "Credit = amount x the lowest federal rate.",
+          "unit": "$",
+          "answer": 233871,
+          "tolerance": 1,
+          "why": "Yes. The credit is $2,338.71.",
+          "working": "$16,129 x 14.5% = $2,338.705, which is $2,338.71.",
+          "traps": [
+            {
+              "value": 1612900,
+              "why": "That is the amount, not the credit. Multiply it by the rate."
+            }
+          ],
+          "miss": "The credit is a part of the amount. Which rate do you take?"
+        },
+        {
+          "id": "ft2030-s1-u5-l2-q4",
+          "label": "Base CPP credit",
+          "prompt": "The base CPP part of Priya's box 16 is $1,188. What is its credit at 14.5%? Round to the nearest cent.",
+          "type": "number",
+          "figure": {
+            "kind": "table",
+            "title": "Priya's federal credit amounts",
+            "columns": [
+              "Credit",
+              "Amount",
+              "Line"
+            ],
+            "rows": [
+              [
+                "Basic personal amount",
+                "$16,129",
+                "30000"
+              ],
+              [
+                "Base CPP contributions",
+                "$1,188",
+                "30800"
+              ],
+              [
+                "EI premiums",
+                "$451",
+                "31200"
+              ],
+              [
+                "Canada employment amount",
+                "$1,471",
+                "31260"
+              ]
+            ]
+          },
+          "hint": "Use the base CPP amount in the table, not all of box 16.",
+          "unit": "$",
+          "answer": 17226,
+          "tolerance": 1,
+          "why": "Yes. The base CPP credit is $172.26.",
+          "working": "$1,188 x 14.5% = $172.26.",
+          "traps": [
+            {
+              "value": 20706,
+              "why": "That uses all of box 16. Only the base part earns the credit."
+            }
+          ],
+          "miss": "Which amount earns the credit: all of box 16 or only part of it?"
+        },
+        {
+          "id": "ft2030-s1-u5-l2-q5",
+          "label": "EI credit",
+          "prompt": "Priya's EI premiums, box 18, are $451. What is the EI credit at 14.5%? Round to the nearest cent.",
+          "type": "number",
+          "figure": {
+            "kind": "table",
+            "title": "Priya's federal credit amounts",
+            "columns": [
+              "Credit",
+              "Amount",
+              "Line"
+            ],
+            "rows": [
+              [
+                "Basic personal amount",
+                "$16,129",
+                "30000"
+              ],
+              [
+                "Base CPP contributions",
+                "$1,188",
+                "30800"
+              ],
+              [
+                "EI premiums",
+                "$451",
+                "31200"
+              ],
+              [
+                "Canada employment amount",
+                "$1,471",
+                "31260"
+              ]
+            ]
+          },
+          "hint": "Same rule as the other credits: amount x rate.",
+          "unit": "$",
+          "answer": 6540,
+          "tolerance": 1,
+          "why": "Yes. The EI credit is $65.40.",
+          "working": "$451 x 14.5% = $65.395, which is $65.40.",
+          "miss": "Multiply the EI amount by the same rate as the other credits."
+        },
+        {
+          "id": "ft2030-s1-u5-l2-q6",
+          "label": "Employment credit",
+          "prompt": "Priya's Canada employment amount is $1,471. What is its credit at 14.5%? Round to the nearest cent.",
+          "type": "number",
+          "figure": {
+            "kind": "table",
+            "title": "Priya's federal credit amounts",
+            "columns": [
+              "Credit",
+              "Amount",
+              "Line"
+            ],
+            "rows": [
+              [
+                "Basic personal amount",
+                "$16,129",
+                "30000"
+              ],
+              [
+                "Base CPP contributions",
+                "$1,188",
+                "30800"
+              ],
+              [
+                "EI premiums",
+                "$451",
+                "31200"
+              ],
+              [
+                "Canada employment amount",
+                "$1,471",
+                "31260"
+              ]
+            ]
+          },
+          "hint": "Amount x rate, rounded to the cent.",
+          "unit": "$",
+          "answer": 21330,
+          "tolerance": 1,
+          "why": "Yes. The Canada employment credit is $213.30.",
+          "working": "$1,471 x 14.5% = $213.295, which is $213.30.",
+          "miss": "Check you used 14.5% and the amount in the table."
+        },
+        {
+          "id": "ft2030-s1-u5-l2-q7",
+          "label": "EI credit line",
+          "prompt": "Which line is the credit for EI premiums?",
+          "type": "choice",
+          "figure": {
+            "kind": "table",
+            "title": "Priya's federal credit amounts",
+            "columns": [
+              "Credit",
+              "Amount",
+              "Line"
+            ],
+            "rows": [
+              [
+                "Basic personal amount",
+                "$16,129",
+                "30000"
+              ],
+              [
+                "Base CPP contributions",
+                "$1,188",
+                "30800"
+              ],
+              [
+                "EI premiums",
+                "$451",
+                "31200"
+              ],
+              [
+                "Canada employment amount",
+                "$1,471",
+                "31260"
+              ]
+            ]
+          },
+          "hint": "Look at the credit table for the row with EI.",
+          "options": [
+            {
+              "text": "Line 30000",
+              "why": "Line 30000 is the basic personal amount."
+            },
+            {
+              "text": "Line 30800",
+              "why": "Line 30800 is base CPP contributions."
+            },
+            {
+              "text": "Line 31200",
+              "why": "Yes. Line 31200 is employment insurance premiums through employment."
+            },
+            {
+              "text": "Line 31260",
+              "why": "Line 31260 is the Canada employment amount."
+            }
+          ],
+          "answer": 2
+        },
+        {
+          "id": "ft2030-s1-u5-l2-q8",
+          "label": "Total federal credits",
+          "prompt": "Priya's four federal credits are $2,338.71, $172.26, $65.40 and $213.30. What do they add up to?",
+          "type": "number",
+          "terms": [
+            {
+              "term": "non-refundable tax credit",
+              "meaning": "An amount that lowers the tax you owe, but cannot take it below $0. The basic personal amount is one."
+            }
+          ],
+          "hint": "Add all four.",
+          "unit": "$",
+          "answer": 278967,
+          "tolerance": 1,
+          "why": "Yes. The four credits come to $2,789.67.",
+          "working": "$2,338.71 + $172.26 + $65.40 + $213.30 = $2,789.67.",
+          "traps": [
+            {
+              "value": 45096,
+              "why": "That leaves out the basic personal credit. Add all four."
+            }
+          ],
+          "miss": "There are four credits. Did you add every one?"
+        },
+        {
+          "id": "ft2030-s1-u5-l2-q9",
+          "label": "Net federal tax",
+          "prompt": "Priya's federal tax on taxable income is $3,787.91. Her credits come to $2,789.67. What is her net federal tax, line 42000?",
+          "type": "number",
+          "figure": {
+            "kind": "table",
+            "title": "Net federal tax",
+            "columns": [
+              "Step",
+              "Amount"
+            ],
+            "rows": [
+              [
+                "Taxable income (line 26000)",
+                "$26,123.50"
+              ],
+              [
+                "Federal tax (14.5% x taxable income)",
+                "?"
+              ],
+              [
+                "Minus the four credits",
+                "?"
+              ],
+              [
+                "Net federal tax (line 42000)",
+                "?"
+              ]
+            ]
+          },
+          "terms": [
+            {
+              "term": "non-refundable tax credit",
+              "meaning": "An amount that lowers the tax you owe, but cannot take it below $0. The basic personal amount is one."
+            }
+          ],
+          "hint": "Take the credits away from the tax.",
+          "unit": "$",
+          "answer": 99824,
+          "tolerance": 1,
+          "why": "Yes. Net federal tax is $998.24.",
+          "working": "$3,787.91 - $2,789.67 = $998.24.",
+          "traps": [
+            {
+              "value": 378791,
+              "why": "That is the tax before credits. Take the credits off."
+            },
+            {
+              "value": 657758,
+              "why": "Credits lower the tax. Subtract them."
+            }
+          ],
+          "miss": "Credits lower the tax. Which operation does that call for?"
+        },
+        {
+          "id": "ft2030-s1-u5-l2-q10",
+          "label": "Net federal line",
+          "prompt": "Which line is net federal tax?",
+          "type": "choice",
+          "hint": "It is the line after the credits.",
+          "options": [
+            {
+              "text": "Line 26000",
+              "why": "Line 26000 is taxable income, not a tax."
+            },
+            {
+              "text": "Line 43700",
+              "why": "Line 43700 is the total income tax deducted, which is already withheld."
+            },
+            {
+              "text": "Line 48400",
+              "why": "Line 48400 is the refund, the last step."
+            },
+            {
+              "text": "Line 42000",
+              "why": "Yes. Line 42000 is net federal tax."
+            }
+          ],
+          "answer": 3
+        }
+      ]
+    },
+    {
+      "id": "ft2030-s1-u5-l3",
+      "title": "Alberta tax and the bottom line",
+      "kind": "lesson",
+      "learn": [
+        "Work out Alberta tax, total tax and the refund.",
+        "Say what the RRSP deduction did to her return."
+      ],
+      "cards": [
+        {
+          "text": "Alberta has its own tax, worked out on the same taxable income. Priya's first Alberta band taxes income up to $60,000 at 8%, and all of her taxable income fits in it. Alberta tax on taxable income is taxable income x 8%, to the nearest cent.",
+          "image": {
+            "src": "ft2030-s1-u5/l3c1.webp",
+            "alt": "A small wooden prairie map with a flag, a ruler and a pencil"
+          }
+        },
+        {
+          "text": "Alberta credits work like the federal ones, but each is an amount x the lowest Alberta rate, 8%. Priya has three. Round each credit to the nearest cent, add them, and take the total off the Alberta tax.",
+          "figure": {
+            "kind": "table",
+            "title": "Priya's Alberta credit amounts",
+            "columns": [
+              "Credit",
+              "Amount"
+            ],
+            "rows": [
+              [
+                "Basic personal amount",
+                "$22,323"
+              ],
+              [
+                "Base CPP contributions",
+                "$1,188"
+              ],
+              [
+                "EI premiums",
+                "$451"
+              ]
+            ]
+          }
+        },
+        {
+          "text": "Total tax is net federal tax plus Alberta tax after credits. The tax withheld is T4 box 22, which goes on line 43700. A refund, line 48400, is the tax withheld minus the total tax, when that is above $0.",
+          "image": {
+            "src": "ft2030-s1-u5/l3c3.webp",
+            "alt": "A balance scale with gold discs against a blank slip"
+          }
+        },
+        {
+          "text": "If the total tax is more than the tax withheld, the difference is a balance owing instead, line 48500. A refund and a balance owing are two answers to the same subtraction, one on each side of $0.",
+          "image": {
+            "src": "ft2030-s1-u5/l3c4.webp",
+            "alt": "A tilted balance scale with a blank slip on the low side"
+          }
+        },
+        {
+          "text": "Here is the whole chain for Priya, from her slips to her refund. Each row comes from the row or rows above it.",
+          "figure": {
+            "kind": "table",
+            "title": "Priya's whole return",
+            "columns": [
+              "Step",
+              "Amount"
+            ],
+            "rows": [
+              [
+                "Total income (15000)",
+                "$27,563.50"
+              ],
+              [
+                "RRSP deduction (20800)",
+                "$1,200"
+              ],
+              [
+                "CPP deduction (22215)",
+                "$240"
+              ],
+              [
+                "Net income (23600)",
+                "$26,123.50"
+              ],
+              [
+                "Taxable income (26000)",
+                "$26,123.50"
+              ],
+              [
+                "Net federal tax (42000)",
+                "$998.24"
+              ],
+              [
+                "Alberta tax after credits",
+                "$172.92"
+              ],
+              [
+                "Total tax",
+                "$1,171.16"
+              ],
+              [
+                "Tax withheld, T4 box 22 (43700)",
+                "$1,420"
+              ],
+              [
+                "Refund (48400)",
+                "$248.84"
+              ]
+            ]
+          }
+        },
+        {
+          "text": "What did the RRSP do? Work the return again with no RRSP deduction. Her taxable income is $1,200 higher. In her first band each extra dollar is taxed at 14.5% federal plus 8% Alberta. Her credits and the tax withheld do not change.",
+          "figure": {
+            "kind": "table",
+            "title": "With and without the RRSP",
+            "columns": [
+              "Step",
+              "With RRSP",
+              "Without"
+            ],
+            "rows": [
+              [
+                "Taxable income",
+                "$26,123.50",
+                "$27,323.50"
+              ],
+              [
+                "Total tax",
+                "$1,171.16",
+                "?"
+              ],
+              [
+                "Tax withheld",
+                "$1,420",
+                "$1,420"
+              ],
+              [
+                "Refund or owing",
+                "$248.84 refund",
+                "?"
+              ]
+            ]
+          }
+        }
+      ],
+      "questions": [
+        {
+          "id": "ft2030-s1-u5-l3-q1",
+          "label": "Alberta tax",
+          "prompt": "Priya's taxable income is $26,123.50, all in the first Alberta band at 8%. What is her Alberta tax on taxable income? Round to the nearest cent.",
+          "type": "number",
+          "terms": [
+            {
+              "term": "taxable income",
+              "meaning": "Your total income minus your deductions. Tax is worked out on this amount."
+            }
+          ],
+          "hint": "Multiply taxable income by the Alberta band rate.",
+          "unit": "$",
+          "answer": 208988,
+          "tolerance": 1,
+          "why": "Yes. Her Alberta tax before credits is $2,089.88.",
+          "working": "8% x $26,123.50 = $2,089.88.",
+          "traps": [
+            {
+              "value": 378791,
+              "why": "That uses the federal rate, 14.5%. Alberta's rate is 8%."
+            }
+          ],
+          "miss": "Which rate does the card give for Alberta?"
+        },
+        {
+          "id": "ft2030-s1-u5-l3-q2",
+          "label": "Alberta basic credit",
+          "prompt": "Priya's Alberta basic personal amount is $22,323. What is the credit at 8%? Round to the nearest cent.",
+          "type": "number",
+          "figure": {
+            "kind": "table",
+            "title": "Priya's Alberta credit amounts",
+            "columns": [
+              "Credit",
+              "Amount"
+            ],
+            "rows": [
+              [
+                "Basic personal amount",
+                "$22,323"
+              ],
+              [
+                "Base CPP contributions",
+                "$1,188"
+              ],
+              [
+                "EI premiums",
+                "$451"
+              ]
+            ]
+          },
+          "hint": "Credit = amount x the lowest Alberta rate.",
+          "unit": "$",
+          "answer": 178584,
+          "tolerance": 1,
+          "why": "Yes. The credit is $1,785.84.",
+          "working": "$22,323 x 8% = $1,785.84.",
+          "traps": [
+            {
+              "value": 323684,
+              "why": "That uses the federal rate. Alberta credits use the Alberta rate."
+            }
+          ],
+          "miss": "Use the lowest Alberta rate, not the federal one."
+        },
+        {
+          "id": "ft2030-s1-u5-l3-q3",
+          "label": "Alberta credits total",
+          "prompt": "Priya's three Alberta credits are $1,785.84, $95.04 and $36.08. What do they add up to?",
+          "type": "number",
+          "terms": [
+            {
+              "term": "non-refundable tax credit",
+              "meaning": "An amount that lowers the tax you owe, but cannot take it below $0. The basic personal amount is one."
+            }
+          ],
+          "hint": "Add all three.",
+          "unit": "$",
+          "answer": 191696,
+          "tolerance": 1,
+          "why": "Yes. Her Alberta credits come to $1,916.96.",
+          "working": "$1,785.84 + $95.04 + $36.08 = $1,916.96.",
+          "miss": "Add every credit in the list."
+        },
+        {
+          "id": "ft2030-s1-u5-l3-q4",
+          "label": "Alberta tax owed",
+          "prompt": "Priya's Alberta tax on taxable income is $2,089.88. Her Alberta credits come to $1,916.96. What is her Alberta tax after credits?",
+          "type": "number",
+          "hint": "Take the credits away from the Alberta tax.",
+          "unit": "$",
+          "answer": 17292,
+          "tolerance": 1,
+          "why": "Yes. Alberta tax after credits is $172.92.",
+          "working": "$2,089.88 - $1,916.96 = $172.92.",
+          "traps": [
+            {
+              "value": 208988,
+              "why": "That is the Alberta tax before credits. Take the credits off."
+            }
+          ],
+          "miss": "Credits lower the tax. Which operation does that call for?"
+        },
+        {
+          "id": "ft2030-s1-u5-l3-q5",
+          "label": "Total tax",
+          "prompt": "Priya's net federal tax is $998.24 and her Alberta tax after credits is $172.92. What is her total tax?",
+          "type": "number",
+          "figure": {
+            "kind": "table",
+            "title": "Priya's whole return",
+            "columns": [
+              "Step",
+              "Amount"
+            ],
+            "rows": [
+              [
+                "Total income (15000)",
+                "$27,563.50"
+              ],
+              [
+                "RRSP deduction (20800)",
+                "$1,200"
+              ],
+              [
+                "CPP deduction (22215)",
+                "$240"
+              ],
+              [
+                "Net income (23600)",
+                "$26,123.50"
+              ],
+              [
+                "Taxable income (26000)",
+                "$26,123.50"
+              ],
+              [
+                "Net federal tax (42000)",
+                "$998.24"
+              ],
+              [
+                "Alberta tax after credits",
+                "$172.92"
+              ],
+              [
+                "Total tax",
+                "$1,171.16"
+              ],
+              [
+                "Tax withheld, T4 box 22 (43700)",
+                "$1,420"
+              ],
+              [
+                "Refund (48400)",
+                "$248.84"
+              ]
+            ]
+          },
+          "hint": "Add the federal tax and the Alberta tax.",
+          "unit": "$",
+          "answer": 117116,
+          "tolerance": 1,
+          "why": "Yes. Her total tax is $1,171.16.",
+          "working": "$998.24 + $172.92 = $1,171.16.",
+          "traps": [
+            {
+              "value": 99824,
+              "why": "That is the federal tax alone. Alberta tax is part of her total tax."
+            }
+          ],
+          "miss": "Her tax has two parts. Did you use both?"
+        },
+        {
+          "id": "ft2030-s1-u5-l3-q6",
+          "label": "Tax withheld box",
+          "prompt": "Which T4 box holds the income tax Priya already paid through her pay, and on which line does it go?",
+          "type": "choice",
+          "terms": [
+            {
+              "term": "tax withheld",
+              "meaning": "Income tax your employer took off each paycheque and sent to the government for you."
+            }
+          ],
+          "hint": "The T4 box that holds tax is the one named Income tax deducted.",
+          "options": [
+            {
+              "text": "Box 22, line 43700",
+              "why": "Yes. Box 22 is the income tax deducted, and it goes on line 43700."
+            },
+            {
+              "text": "Box 14, line 10100",
+              "why": "Box 14 is employment income, which goes on line 10100."
+            },
+            {
+              "text": "Box 16, line 30800",
+              "why": "Box 16 is the CPP from her pay, which feeds lines 30800 and 22215."
+            },
+            {
+              "text": "Box 18, line 31200",
+              "why": "Box 18 is the EI premiums, which go on line 31200."
+            }
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ft2030-s1-u5-l3-q7",
+          "label": "Refund amount",
+          "prompt": "Priya's total tax is $1,171.16. Her employer withheld $1,420, shown in T4 box 22. How much is her refund, line 48400?",
+          "type": "number",
+          "figure": {
+            "kind": "table",
+            "title": "Priya's whole return",
+            "columns": [
+              "Step",
+              "Amount"
+            ],
+            "rows": [
+              [
+                "Total income (15000)",
+                "$27,563.50"
+              ],
+              [
+                "RRSP deduction (20800)",
+                "$1,200"
+              ],
+              [
+                "CPP deduction (22215)",
+                "$240"
+              ],
+              [
+                "Net income (23600)",
+                "$26,123.50"
+              ],
+              [
+                "Taxable income (26000)",
+                "$26,123.50"
+              ],
+              [
+                "Net federal tax (42000)",
+                "$998.24"
+              ],
+              [
+                "Alberta tax after credits",
+                "$172.92"
+              ],
+              [
+                "Total tax",
+                "$1,171.16"
+              ],
+              [
+                "Tax withheld, T4 box 22 (43700)",
+                "$1,420"
+              ],
+              [
+                "Refund (48400)",
+                "$248.84"
+              ]
+            ]
+          },
+          "terms": [
+            {
+              "term": "refund",
+              "meaning": "Money the government pays back to you when the tax withheld is more than the tax you owe."
+            },
+            {
+              "term": "tax withheld",
+              "meaning": "Income tax your employer took off each paycheque and sent to the government for you."
+            }
+          ],
+          "hint": "Subtract the total tax from the tax withheld.",
+          "unit": "$",
+          "answer": 24884,
+          "tolerance": 1,
+          "why": "Yes. She paid $1,420 through her pay but owed $1,171.16, so her refund is $248.84.",
+          "working": "$1,420 - $1,171.16 = $248.84.",
+          "traps": [
+            {
+              "value": 142000,
+              "why": "That is all the tax withheld. Her refund is only what is left after her tax."
+            }
+          ],
+          "miss": "Compare what was withheld with the tax she owes. Which is bigger, and by how much?"
+        },
+        {
+          "id": "ft2030-s1-u5-l3-q8",
+          "label": "Refund or owing",
+          "prompt": "Priya's total tax is $1,171.16 and her tax withheld is $1,420. Does her return show a refund or a balance owing?",
+          "type": "choice",
+          "terms": [
+            {
+              "term": "refund",
+              "meaning": "Money the government pays back to you when the tax withheld is more than the tax you owe."
+            },
+            {
+              "term": "balance owing",
+              "meaning": "Money you must pay when the tax you owe is more than the tax withheld."
+            }
+          ],
+          "hint": "Which amount is bigger?",
+          "options": [
+            {
+              "text": "A refund",
+              "why": "Yes. More was withheld than her total tax, so the government pays the difference back."
+            },
+            {
+              "text": "A balance owing",
+              "why": "A balance owing happens when the total tax is more than the tax withheld. Here it is less."
+            },
+            {
+              "text": "Neither, the two are equal",
+              "why": "The two amounts are not equal, so there is a difference."
+            }
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ft2030-s1-u5-l3-q9",
+          "label": "RRSP effect on tax",
+          "prompt": "With no RRSP deduction, Priya's taxable income would be $27,323.50 and her total tax would be $1,441.16. By how much did the RRSP deduction lower her total tax?",
+          "type": "number",
+          "figure": {
+            "kind": "table",
+            "title": "With and without the RRSP",
+            "columns": [
+              "Step",
+              "With RRSP",
+              "Without"
+            ],
+            "rows": [
+              [
+                "Taxable income",
+                "$26,123.50",
+                "$27,323.50"
+              ],
+              [
+                "Total tax",
+                "$1,171.16",
+                "?"
+              ],
+              [
+                "Tax withheld",
+                "$1,420",
+                "$1,420"
+              ],
+              [
+                "Refund or owing",
+                "$248.84 refund",
+                "?"
+              ]
+            ]
+          },
+          "terms": [
+            {
+              "term": "deduction",
+              "meaning": "An amount you may subtract from your income before tax is worked out, such as an RRSP contribution."
+            }
+          ],
+          "hint": "Subtract the total tax with the RRSP from the total tax without it.",
+          "unit": "$",
+          "answer": 27000,
+          "tolerance": 1,
+          "why": "Yes. The deduction lowered her total tax by $270, which is 22.5% of $1,200.",
+          "working": "$1,441.16 - $1,171.16 = $270. Check: 14.5% + 8% = 22.5%, and 22.5% x $1,200 = $270.",
+          "traps": [
+            {
+              "value": 120000,
+              "why": "That is the RRSP deduction itself. It lowered the tax by only part of that amount."
+            }
+          ],
+          "miss": "A deduction lowers taxable income, not the tax directly. Compare the two total taxes."
+        },
+        {
+          "id": "ft2030-s1-u5-l3-q10",
+          "label": "Without the RRSP",
+          "prompt": "Priya's tax withheld is $1,420. With no RRSP deduction her total tax would be $1,441.16. What would her return show?",
+          "type": "choice",
+          "terms": [
+            {
+              "term": "balance owing",
+              "meaning": "Money you must pay when the tax you owe is more than the tax withheld."
+            }
+          ],
+          "hint": "Compare total tax with tax withheld again.",
+          "options": [
+            {
+              "text": "A refund of $248.84",
+              "why": "That is her refund with the RRSP deduction. Without it her tax is higher."
+            },
+            {
+              "text": "A refund of $21.16",
+              "why": "Her tax would be more than what was withheld, so she would owe, not get a refund."
+            },
+            {
+              "text": "A balance owing of $270",
+              "why": "That is how much the RRSP lowered her tax, not what she would owe."
+            },
+            {
+              "text": "A balance owing of $21.16",
+              "why": "Yes. $1,441.16 - $1,420 = $21.16 more tax than was withheld."
+            }
+          ],
+          "answer": 3
+        }
+      ]
+    }
+  ],
+  "image": {
+    "src": "ft2030-s1-u5/banner.webp",
+    "alt": "A lit office window at dusk over a desk with a blank form and gold discs"
+  }
+}

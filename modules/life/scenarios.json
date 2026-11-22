@@ -1,0 +1,45 @@
+[
+  {
+    "id": "stable",
+    "name": "Stable",
+    "blurb": "No shocks. Prices, rates and markets follow their normal course. Choosing this clears every shock that has not happened yet.",
+    "events": []
+  },
+  {
+    "id": "2008",
+    "name": "2008: the financial crisis",
+    "blurb": "A credit scare, a market crash, falling home prices, and the Bank of DAA cutting its rate to nearly zero, then a recovery.",
+    "events": [
+      { "offset": 3, "kind": "correction", "args": {}, "headline": "Credit markets wobble: stocks fall about 10%" },
+      { "offset": 6, "kind": "crash", "args": {}, "headline": "Market crash: stocks and funds fall sharply" },
+      { "offset": 7, "kind": "housing", "args": { "pct": -15 }, "headline": "Home prices in town fall 15%" },
+      { "offset": 8, "kind": "rate", "args": { "rate_bp": 100 }, "headline": "The Bank of DAA cuts its rate to 1.00%" },
+      { "offset": 9, "kind": "rate", "args": { "rate_bp": 50 }, "headline": "The Bank of DAA cuts again, to 0.50%" },
+      { "offset": 14, "kind": "rally", "args": {}, "headline": "Markets recover: stocks rally" }
+    ]
+  },
+  {
+    "id": "1981-alberta",
+    "name": "1981 Alberta: the oil bust",
+    "blurb": "A sharp rate rise to the most the game allows (10%, well under the real 18%), a fall in home prices, a hard year for families, and rates easing.",
+    "events": [
+      { "offset": 2, "kind": "rate", "args": { "rate_bp": 1000 }, "headline": "Rate shock: the Bank of DAA raises its rate to 10%" },
+      { "offset": 3, "kind": "housing", "args": { "pct": -15 }, "headline": "The oil bust hits: home prices in town fall 15%" },
+      { "offset": 6, "kind": "insurance", "args": { "event": "car-repair" }, "headline": "Hard times: car repair bills hit the whole town" },
+      { "offset": 18, "kind": "rate", "args": { "rate_bp": 700 }, "headline": "Rates ease: the Bank of DAA cuts its rate to 7%" }
+    ]
+  },
+  {
+    "id": "2022-inflation",
+    "name": "2022: the inflation spike",
+    "blurb": "Prices jump 8% a year, the Bank of DAA raises its rate step by step, then inflation cools and home prices ease.",
+    "events": [
+      { "offset": 1, "kind": "inflation", "args": { "inflation_bp": 800 }, "headline": "Prices jump: inflation runs at 8% a year" },
+      { "offset": 4, "kind": "rate", "args": { "rate_bp": 300 }, "headline": "The Bank of DAA raises its rate to 3%" },
+      { "offset": 6, "kind": "rate", "args": { "rate_bp": 500 }, "headline": "The Bank of DAA raises its rate to 5%" },
+      { "offset": 10, "kind": "rate", "args": { "rate_bp": 600 }, "headline": "The Bank of DAA raises its rate to 6%" },
+      { "offset": 13, "kind": "inflation", "args": { "inflation_bp": 300 }, "headline": "Inflation cools to 3% a year" },
+      { "offset": 16, "kind": "housing", "args": { "pct": -10 }, "headline": "Home prices in town cool: down 10%" }
+    ]
+  }
+]

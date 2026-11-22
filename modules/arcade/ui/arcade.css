@@ -1,0 +1,114 @@
+/* Arcade panel. Sits inside the global .glass.panel; phone first. The canvas is 160x120 and is only ever scaled by a whole number (arc-x1..x4). */
+.arc-card { display: grid; gap: 10px; padding: 14px; border: 1px solid var(--row-line); border-radius: var(--radius); background: rgba(180, 215, 255, 0.07); }
+.arc-stage { display: flex; justify-content: center; margin-inline: -16px; }   /* may use most of the panel's side padding: a phone fits x2 (324 px), not x1 */
+.arc-canvas { display: block; box-sizing: content-box; width: 160px; height: 120px; image-rendering: pixelated; image-rendering: crisp-edges; border: 2px solid var(--glass-border); border-radius: 4px; background: #0b1330; touch-action: none; -webkit-user-select: none; user-select: none; }
+.arc-x1 { width: 160px; height: 120px; }
+.arc-x2 { width: 320px; height: 240px; }
+.arc-x3 { width: 480px; height: 360px; }
+.arc-x4 { width: 640px; height: 480px; }
+.arc-pads { display: grid; grid-template-columns: 1fr 1.4fr 1fr; gap: 10px; touch-action: none; }
+.arc-pads4 { grid-template-columns: repeat(3, minmax(0, 1fr)) minmax(0, 1.4fr); gap: 8px; }
+.arc-pads4 .arc-pad { font-size: 0.9rem; padding-inline: 4px; }
+.arc-pad { min-height: 64px; font-size: 1.1rem; touch-action: none; -webkit-user-select: none; user-select: none; -webkit-touch-callout: none; }
+.arc-pad.arc-down { transform: translateY(3px); filter: brightness(1.2); }
+.arc-score { margin: 0; font: 400 3rem/1 var(--font-display); color: var(--accent); }
+.arc-actions { display: flex; flex-wrap: wrap; gap: 10px; }
+.arc-actions button { min-width: 8em; }
+.arc-board { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+.arc-board li { display: flex; align-items: center; gap: 10px; padding: 8px 12px; border: 1px solid var(--row-line); border-radius: var(--radius); }
+.arc-board li.arc-mine { border-color: var(--accent); background: rgba(245, 196, 81, 0.12); }
+.arc-rank { flex: none; width: 1.6em; font-weight: 800; color: var(--ink-muted); }
+.arc-name { flex: 1 1 auto; min-width: 0; overflow-wrap: anywhere; }
+.arc-split { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+.arc-split li { display: grid; grid-template-columns: 8.5em 1fr 3em; align-items: center; gap: 8px; }
+.arc-split b { text-align: right; }
+.arc-split progress { width: 100%; height: 14px; accent-color: var(--accent); }
+.arc-key { padding-left: 14px; position: relative; font-size: 0.9rem; }
+.arc-key::before { content: ""; position: absolute; left: 0; top: 50%; width: 9px; height: 9px; margin-top: -4px; border-radius: 2px; background: #5ee08a; }
+.arc-k1::before { background: #5aa0ff; }
+.arc-k2::before { background: #f5c451; }
+.arc-k3::before { background: #d46bff; }
+.arc-lesson { margin: 0; padding: 10px 12px; border-left: 4px solid var(--accent); background: rgba(245, 184, 61, 0.1); }
+/* Bill Dash: the play area with its legend. A wide panel puts the legend in a column beside the game; a phone gets it under the buttons.
+   660 px and the 234 + 16 px column match LEGEND_AT and LEGEND_W in arcade.js. The how-to on the game's card does the same with its steps. */
+.arc-wrap, .arc-how { container-type: inline-size; }
+.arc-play, .arc-main, .arc-how-body, .arc-how-steps { display: grid; gap: 14px; align-content: start; }
+@container (min-width: 660px) {
+  .arc-with-legend, .arc-how-body { grid-template-columns: minmax(0, 1fr) 234px; column-gap: 16px; align-items: start; }
+  .arc-with-legend .arc-stage { margin-inline: 0; }
+}
+.arc-quit { justify-self: start; }
+.arc-legend { display: grid; gap: 5px; align-content: start; padding: 12px; border: 1px solid var(--row-line); border-radius: var(--radius); background: rgba(180, 215, 255, 0.07); font-size: 0.86rem; line-height: 1.3; }
+.arc-legend .label { margin-top: 6px; }
+.arc-legend .label:first-child { margin-top: 0; }
+.arc-legend p { margin: 0; }
+.arc-leg { list-style: none; margin: 0; padding: 0; display: grid; gap: 5px; }
+.arc-leg li { display: flex; align-items: center; gap: 8px; }
+.arc-pic { flex: none; width: 28px; height: 28px; image-rendering: pixelated; image-rendering: crisp-edges; border-radius: 3px; }
+.arc-word { flex: none; min-width: 3.6em; padding: 2px 4px; border-radius: 3px; background: #0b1330; font: 700 0.8rem/1.3 ui-monospace, monospace; text-align: center; }
+.arc-w-pts { color: #5ee08a; }
+.arc-w-cash { color: #f5c451; }
+.arc-w-bad { color: #ff5a4a; }
+.arc-w-sale { color: #ff3da6; }
+.arc-how summary { cursor: pointer; font-weight: 700; }
+.arc-how[open] summary { margin-bottom: 10px; }
+.arc-how p { margin: 0; }
+.arc-steps { margin: 0; padding-left: 1.4em; display: grid; gap: 6px; }
+.arc-tip { padding: 8px 12px; border-left: 4px solid var(--accent); background: rgba(245, 184, 61, 0.1); }
+/* The Arcade grid: one tile per game. Looks like the linked games' .gm-tile (modules/games/ui/games.css) but is ours, so it works when that module is off. */
+.arc-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 12px; }
+.arc-tile { display: grid; grid-template-rows: auto 1fr; padding: 0; text-align: left; font: inherit; text-transform: none; letter-spacing: normal; font-weight: 400; box-shadow: none; min-height: 0; color: var(--ink); border: 1px solid var(--field-border); border-radius: 8px; overflow: hidden; background: var(--surface, transparent); cursor: pointer; }
+.arc-tile:hover, .arc-tile:focus-visible { border-color: var(--ice); }
+.arc-tile:focus-visible { outline: 2px solid var(--ice); outline-offset: 2px; }
+.arc-tile img { display: block; width: 100%; height: auto; aspect-ratio: 8 / 5; object-fit: cover; image-rendering: pixelated; image-rendering: crisp-edges; }
+.arc-tile-text { padding: 8px 10px 10px; display: grid; gap: 4px; align-content: start; justify-items: start; }
+.arc-tile b { font-size: 1rem; }
+.arc-back { justify-self: start; }
+/* FinWord: the board is --n tiles wide (4 to 9) and never wider than the panel, so nine letters fit a 375 px phone. */
+.arc-wl-board { --n: 5; display: grid; gap: 6px; justify-content: center; }
+.arc-wl-row { display: grid; grid-template-columns: repeat(var(--n), minmax(0, 1fr)); gap: 6px; width: min(100%, calc(var(--n) * 54px)); justify-self: center; }
+.arc-wl-tile { display: grid; place-items: center; aspect-ratio: 1; border: 2px solid var(--field-border); border-radius: 6px; font: 700 clamp(1rem, 6vw, 1.5rem) var(--font-pixel, monospace); color: var(--ink); text-transform: uppercase; }
+.arc-wl-typed { border-color: var(--ink-muted); }
+.arc-wl-tile.arc-wl-hit, .arc-wl-key.arc-wl-hit { background: var(--ok); border-color: var(--ok); color: #0b1330; }
+.arc-wl-tile.arc-wl-near, .arc-wl-key.arc-wl-near { background: var(--accent); border-color: var(--accent); color: #0b1330; }
+.arc-wl-tile.arc-wl-miss, .arc-wl-key.arc-wl-miss { background: #2a3550; border-color: #2a3550; color: var(--ink-muted); }
+.arc-wl-status { margin: 0; text-align: center; }
+.arc-wl-keys { display: grid; gap: 6px; }
+.arc-wl-keyrow { display: flex; justify-content: center; gap: 4px; }
+button.arc-wl-key, button.arc-wl-key:hover:not(:disabled) { background: #26325a; color: var(--ink); border: 1px solid var(--field-border); border-radius: 6px; box-shadow: none; font-family: inherit; font-weight: 700; }
+button.arc-wl-key.arc-wl-hit, button.arc-wl-key.arc-wl-hit:hover:not(:disabled) { background: var(--ok); border-color: var(--ok); color: #0b1330; }
+button.arc-wl-key.arc-wl-near, button.arc-wl-key.arc-wl-near:hover:not(:disabled) { background: var(--accent); border-color: var(--accent); color: #0b1330; }
+button.arc-wl-key.arc-wl-miss, button.arc-wl-key.arc-wl-miss:hover:not(:disabled) { background: #121a33; border-color: #121a33; color: var(--ink-muted); }
+.arc-wl-key { flex: 1 1 0; min-width: 0; max-width: 44px; min-height: 44px; padding: 0; font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0; }
+.arc-wl-key.arc-wl-wide { flex: 1.6 1 0; max-width: 64px; font-size: 0.75rem; }
+.arc-wl-stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; text-align: center; }
+.arc-wl-stats div { display: grid; gap: 2px; }
+.arc-wl-stats b { font-size: 1.4rem; }
+.arc-wl-dist { list-style: none; margin: 0; padding: 0; display: grid; gap: 4px; }
+.arc-wl-dist li { display: grid; grid-template-columns: 1.2em 1fr 2em; align-items: center; gap: 8px; }
+.arc-wl-dist progress { width: 100%; height: 12px; accent-color: var(--accent); }
+/* Debt Snake: the canvas is drawn at 4x and shown at any size (it glides, so it is not pixelated); the mode picker; the d-pad for phones. */
+.arc-canvas.arc-smooth { width: 336px; height: 368px; image-rendering: auto; background: #0b0f17; }
+.arc-pic-smooth { image-rendering: auto; width: 32px; height: 32px; }
+.arc-modes { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 8px; }
+button.arc-mode, button.arc-mode:hover:not(:disabled) { display: flex; align-items: center; gap: 10px; text-align: left; padding: 8px 10px; min-height: 52px; font: inherit; text-transform: none; letter-spacing: normal; font-weight: 400; color: var(--ink); background: rgba(180, 215, 255, 0.05); border: 1px solid var(--row-line); border-radius: var(--radius); box-shadow: none; }
+button.arc-mode.arc-on { border-color: var(--accent); background: rgba(245, 196, 81, 0.14); }
+button.arc-mode:focus-visible, .arc-seg button:focus-visible { outline: 2px solid var(--ice); outline-offset: 2px; }
+.arc-mode .arc-pic, .arc-glyph { flex: none; }
+.arc-glyph { display: grid; place-items: center; width: 32px; height: 32px; border-radius: 3px; background: #131a28; font: 700 1.3rem var(--font-pixel, monospace); color: var(--accent); }
+.arc-mode-text { display: grid; gap: 2px; min-width: 0; flex: 1 1 auto; }
+.arc-mode-text .small { color: var(--ink-muted); line-height: 1.25; }
+.arc-opts { display: flex; flex-wrap: wrap; gap: 10px 18px; }
+.arc-opt { border: 0; margin: 0; padding: 0; display: grid; gap: 4px; min-width: 0; }
+.arc-opt legend { padding: 0; }
+.arc-seg { display: flex; gap: 4px; }
+.arc-seg button { min-height: 40px; padding: 4px 12px; font-size: 0.9rem; text-transform: none; letter-spacing: normal; background: transparent; color: var(--ink); border: 1px solid var(--field-border); box-shadow: none; }
+.arc-seg button.arc-on { background: var(--accent); color: #0b1330; border-color: var(--accent); }
+.arc-pick { margin: 0; font-weight: 700; }
+.arc-dpad { display: none; grid-template-columns: repeat(3, 76px); grid-template-rows: repeat(2, 64px); gap: 8px; justify-content: center; touch-action: none; }
+.arc-dpad .arc-pad { min-height: 0; padding: 0; }
+.arc-dpad .arc-u { grid-column: 2; grid-row: 1; }
+.arc-dpad .arc-l { grid-column: 1; grid-row: 2; }
+.arc-dpad .arc-d { grid-column: 2; grid-row: 2; }
+.arc-dpad .arc-r { grid-column: 3; grid-row: 2; }
+@media (max-width: 720px), (pointer: coarse) { .arc-dpad { display: grid; } }

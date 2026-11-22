@@ -1,0 +1,1035 @@
+{
+  "id": "ft2030-s2-u1",
+  "title": "The business idea",
+  "blurb": "A concept in four parts, a feasibility check and a survey that tells you something.",
+  "outcome_codes": [],
+  "levels": [
+    {
+      "id": "ft2030-s2-u1-l1",
+      "title": "The concept in four parts",
+      "kind": "lesson",
+      "learn": [
+        "Name the four parts of a business concept.",
+        "Tell a strong concept statement from a weak one."
+      ],
+      "cards": [
+        {
+          "text": "A business concept is a short, clear description of a business idea. It answers four questions. What is the product or service? Who is the customer? What is the benefit? How does the customer get it?"
+        },
+        {
+          "text": "The product or service is what you sell. The customer is who buys it. The person who uses it is not always the person who pays. A club selling art kits to Grade 4 students has two people to think about: the child who uses the kit and the parent who pays."
+        },
+        {
+          "text": "A feature describes the product. A benefit is what the product does about the customer's problem. Customers buy benefits. Here are three features and benefits for hot chocolate sold at a winter market.",
+          "figure": {
+            "kind": "table",
+            "title": "Features and benefits",
+            "columns": [
+              "Feature",
+              "Benefit"
+            ],
+            "rows": [
+              [
+                "Served hot",
+                "Warms you up while you wait"
+              ],
+              [
+                "Lidded cup",
+                "Does not spill in your bag"
+              ],
+              [
+                "Pack of two",
+                "Share one with a friend"
+              ]
+            ]
+          }
+        },
+        {
+          "text": "Distribution is how the product gets to the customer: where and when. A cart by the main doors at 3:15 reaches students who are waiting for the bus. A table in a quiet hallway at 9:00 reaches far fewer of them."
+        },
+        {
+          "text": "Bus Stop Cocoa sells hot chocolate in lidded cups to students waiting for the bus, so they warm up before the ride home. A cart by the main doors serves them from 3:15 to 3:45. The table pulls the statement apart.",
+          "figure": {
+            "kind": "table",
+            "title": "Bus Stop Cocoa, pulled apart",
+            "columns": [
+              "Question",
+              "Answer"
+            ],
+            "rows": [
+              [
+                "Product",
+                "Hot chocolate"
+              ],
+              [
+                "Customer",
+                "Students waiting for the bus"
+              ],
+              [
+                "Benefit",
+                "Warm before the ride home"
+              ],
+              [
+                "Distribution",
+                "A cart by the main doors, 3:15 to 3:45"
+              ]
+            ]
+          }
+        },
+        {
+          "text": "A weak statement: \"We are selling cups. They come in red and blue. They will be on sale.\" It lists features. It names no customer, no benefit and no way to reach anyone. A good statement is two to four sentences with no bullet points, and it sounds clear read out loud."
+        }
+      ],
+      "questions": [
+        {
+          "id": "ft2030-s2-u1-l1-q1",
+          "type": "choice",
+          "label": "Four questions",
+          "prompt": "Which list gives the four questions a business concept answers?",
+          "hint": "Think of who, what, why it matters and how it gets there.",
+          "terms": [
+            {
+              "term": "business concept",
+              "meaning": "A short, clear description of a business idea that answers four questions."
+            }
+          ],
+          "options": [
+            {
+              "text": "Product, price, place, promotion",
+              "why": "Those are the 4 Ps of the marketing mix, a different tool. A concept asks about the customer and the benefit."
+            },
+            {
+              "text": "Product or service, customer, benefit, distribution",
+              "why": "A concept answers all four of these, and it says them in a short statement."
+            },
+            {
+              "text": "Cost, price, profit, break-even",
+              "why": "Those are money words. A concept describes the idea before it counts the money."
+            }
+          ],
+          "answer": 1
+        },
+        {
+          "id": "ft2030-s2-u1-l1-q2",
+          "type": "choice",
+          "label": "Spot the benefit",
+          "prompt": "Priya sells study notes to Grade 9 students. Which line is a benefit rather than a feature?",
+          "hint": "A benefit is about what the customer gets done.",
+          "terms": [
+            {
+              "term": "feature",
+              "meaning": "Something true about the product itself, such as its size, colour or what it is made of."
+            },
+            {
+              "term": "benefit",
+              "meaning": "What the product does about the customer's problem."
+            }
+          ],
+          "options": [
+            {
+              "text": "You can review a unit in ten minutes the night before",
+              "why": "It is about the customer's problem: little time before a test."
+            },
+            {
+              "text": "The notes are typed in two colours",
+              "why": "Colours are a feature. They describe the notes, not what the student gets done."
+            },
+            {
+              "text": "Each set of notes is four pages long",
+              "why": "Length is a feature. It describes the product, not the customer's problem."
+            }
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ft2030-s2-u1-l1-q3",
+          "type": "choice",
+          "label": "Who pays",
+          "prompt": "A club sells a reading-buddy hour to kindergarten children. Parents book it and pay. Which sentence describes the two people correctly?",
+          "hint": "Ask who uses it and who pays.",
+          "options": [
+            {
+              "text": "The parent uses it and the child pays",
+              "why": "It is the other way round. A kindergarten child is not the one who pays."
+            },
+            {
+              "text": "Only the child matters, because only the child uses it",
+              "why": "The one who pays also decides. A club that ignores the parent loses the sale."
+            },
+            {
+              "text": "The child uses it and the parent pays",
+              "why": "The child gets the hour. The parent decides to pay, so the club must win the parent too."
+            }
+          ],
+          "answer": 2
+        },
+        {
+          "id": "ft2030-s2-u1-l1-q4",
+          "type": "choice",
+          "label": "Distribution phrase",
+          "prompt": "Which phrase answers \"How does the customer get it?\" for a hot lunch cart?",
+          "hint": "Look for where and when.",
+          "options": [
+            {
+              "text": "Soft rolls made with real butter",
+              "why": "That is a feature. It says what the product is made of."
+            },
+            {
+              "text": "A cart by the gym doors from 12:00 to 12:20",
+              "why": "It says where and when the customer gets the product."
+            },
+            {
+              "text": "Students who stay at school for lunch",
+              "why": "That names the customer, not how the customer gets the product."
+            }
+          ],
+          "answer": 1
+        },
+        {
+          "id": "ft2030-s2-u1-l1-q5",
+          "type": "choice",
+          "label": "Missing part",
+          "prompt": "Lantern Notes sells study guides to Grade 9 students, so they can review a unit in ten minutes before a test. Which of the four parts is missing?",
+          "hint": "Check each of the four questions against the sentence.",
+          "options": [
+            {
+              "text": "What is sold (the product)",
+              "why": "It is there: study guides."
+            },
+            {
+              "text": "Who buys it (the customer)",
+              "why": "It is there: Grade 9 students."
+            },
+            {
+              "text": "What the customer gains (the benefit)",
+              "why": "It is there: a unit reviewed in ten minutes before a test."
+            },
+            {
+              "text": "How the customer gets it (distribution)",
+              "why": "The sentence never says where or when students get the guides."
+            }
+          ],
+          "answer": 3
+        },
+        {
+          "id": "ft2030-s2-u1-l1-q6",
+          "type": "choice",
+          "label": "Strongest statement",
+          "prompt": "Which concept statement is the strongest?",
+          "hint": "Look for a customer, a benefit and a way to reach them.",
+          "options": [
+            {
+              "text": "Felt Friends sells bookmarks to Grade 7 students needing a small gift, at a library table at lunch.",
+              "why": "It names the product, the customer, the benefit and where they get it."
+            },
+            {
+              "text": "We sell bookmarks. They are made of felt. They come in six shapes.",
+              "why": "Three features and nothing else. No customer, no benefit and no way to reach anyone."
+            },
+            {
+              "text": "Felt Friends will sell many different things to many different people.",
+              "why": "Too wide. It names no customer, no benefit and no way to reach them."
+            }
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ft2030-s2-u1-l1-q7",
+          "type": "choice",
+          "label": "Name the customer",
+          "prompt": "Pocket Planner sells week-planner pages to Grade 10 students who forget deadlines, so nothing sneaks up on them. Pages are sold in the hallway on Monday mornings. Who is the customer?",
+          "hint": "Find who the pages are for.",
+          "options": [
+            {
+              "text": "Nobody in particular",
+              "why": "The statement does name a group of students."
+            },
+            {
+              "text": "Students in the hallway on Mondays",
+              "why": "That is where and when they are reached (distribution), not who the customer is."
+            },
+            {
+              "text": "Grade 10 students who forget deadlines",
+              "why": "That is who the statement says will buy and use the pages."
+            }
+          ],
+          "answer": 2
+        },
+        {
+          "id": "ft2030-s2-u1-l1-q8",
+          "type": "choice",
+          "label": "Feature to benefit",
+          "prompt": "The feature is \"Our lamps are solar-powered.\" Which line turns it into a benefit?",
+          "hint": "A benefit says what the customer gains.",
+          "terms": [
+            {
+              "term": "feature",
+              "meaning": "Something true about the product itself, such as its size, colour or what it is made of."
+            },
+            {
+              "term": "benefit",
+              "meaning": "What the product does about the customer's problem."
+            }
+          ],
+          "options": [
+            {
+              "text": "Our lamps are very well made",
+              "why": "That is a general claim. It names no gain for the customer."
+            },
+            {
+              "text": "The lights stay on at camp with no batteries to buy",
+              "why": "It says what the customer gains from the feature."
+            },
+            {
+              "text": "Our lamps come in three colours",
+              "why": "That is another feature. It describes the product only."
+            }
+          ],
+          "answer": 1
+        },
+        {
+          "id": "ft2030-s2-u1-l1-q9",
+          "type": "choice",
+          "label": "Statement format",
+          "prompt": "Which format is right for a concept statement?",
+          "hint": "It should sound clear when read out loud.",
+          "options": [
+            {
+              "text": "Two to four sentences that read well out loud",
+              "why": "That is the format. After one listen, a classmate should name the customer and the benefit."
+            },
+            {
+              "text": "A bullet list of every feature",
+              "why": "A list of features is what a weak statement looks like."
+            },
+            {
+              "text": "One long page with all the detail",
+              "why": "Too long to say out loud. A concept is short and clear."
+            }
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "ft2030-s2-u1-l2",
+      "title": "Feasibility and the competition",
+      "kind": "lesson",
+      "learn": [
+        "Check whether an idea has a market you can reach.",
+        "Read a competitive matrix and name why you win."
+      ],
+      "cards": [
+        {
+          "text": "Feasibility asks whether an idea can work, and it needs evidence. It has three questions. Is there a market? Can you reach it? Why would people pick you over the others?"
+        },
+        {
+          "text": "A market is not the whole school. It is the people in the right place, at the right time, with the right need and money. Oakfield School has 800 students. 70% stay for lunch. Half of those buy anything. A quarter of those would buy a hot drink.",
+          "figure": {
+            "kind": "table",
+            "title": "Oakfield School at lunch",
+            "columns": [
+              "Step",
+              "Students"
+            ],
+            "rows": [
+              [
+                "In the school",
+                "800"
+              ],
+              [
+                "Stay at school for lunch",
+                "560"
+              ],
+              [
+                "Buy anything at lunch",
+                "280"
+              ],
+              [
+                "Would buy a hot drink",
+                "70"
+              ]
+            ]
+          }
+        },
+        {
+          "text": "The honest market must be bigger than the break-even point: the number of items a business must sell for its sales to cover all of its costs. The next unit works it out. If a stand needs 90 sales and its honest market is 70 students, the plan is short of buyers."
+        },
+        {
+          "text": "Where and when you sell changes who you reach: the lunch line, between classes, after school or at an event. Each has different customers, a different amount of time to buy and different money in their pockets. Sell where your customer already is."
+        },
+        {
+          "text": "A direct competitor sells the same thing to the same customer. An indirect competitor wins the same dollar another way. Doing nothing is a competitor too, because many students just buy nothing. You win for one honest reason: cheaper, closer, better or different."
+        },
+        {
+          "text": "A competitive matrix lists competitors side by side with a strength and a weakness for each. Here is the one for Bus Stop Cocoa, which charges $2.00. A team then writes one reason to win for each row, including the row for doing nothing.",
+          "figure": {
+            "kind": "table",
+            "title": "Bus Stop Cocoa matrix",
+            "columns": [
+              "Competitor",
+              "Price",
+              "Strength",
+              "Weakness"
+            ],
+            "rows": [
+              [
+                "Hot drink club (direct)",
+                "$2.00",
+                "Tastes good",
+                "Open one day a week"
+              ],
+              [
+                "Vending machine (indirect)",
+                "$2.50",
+                "Always there",
+                "Drinks are lukewarm"
+              ],
+              [
+                "Corner shop (indirect)",
+                "$3.25",
+                "Big choice",
+                "Ten minutes away"
+              ],
+              [
+                "Buy nothing",
+                "$0.00",
+                "Costs nothing",
+                "No hot drink at 3:15"
+              ]
+            ]
+          }
+        }
+      ],
+      "questions": [
+        {
+          "id": "ft2030-s2-u1-l2-q1",
+          "type": "choice",
+          "label": "Reach question",
+          "prompt": "Which feasibility question is about where and when you sell?",
+          "hint": "There are three questions: market, reach, win.",
+          "options": [
+            {
+              "text": "Is there a market?",
+              "why": "That asks whether enough customers exist, not where you meet them."
+            },
+            {
+              "text": "Why would people pick you?",
+              "why": "That asks why you beat the others, not where you sell."
+            },
+            {
+              "text": "Can you reach them?",
+              "why": "Reach is about getting in front of the customer at the right place and time."
+            }
+          ],
+          "answer": 2
+        },
+        {
+          "id": "ft2030-s2-u1-l2-q2",
+          "type": "choice",
+          "label": "Closest market",
+          "prompt": "Bus Stop Cocoa's customer is students waiting for the bus. Which group is closest to its honest market?",
+          "hint": "The market is the right people, at the right time, with money.",
+          "terms": [
+            {
+              "term": "market",
+              "meaning": "The people who are in the right place, at the right time, with the right need and money."
+            }
+          ],
+          "options": [
+            {
+              "text": "Students at the bus stop who would buy a hot drink",
+              "why": "It is the right people in the right place who want it."
+            },
+            {
+              "text": "Every student in the school",
+              "why": "Most of them are not at the stop at that time or would not buy."
+            },
+            {
+              "text": "Everyone who has ever bought a drink",
+              "why": "That ignores the place, the time and the hot drink."
+            }
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ft2030-s2-u1-l2-q3",
+          "type": "number",
+          "label": "Share who buy",
+          "prompt": "Ravi's school has 600 students. Half stay at school for lunch. Of those, 40% buy a snack. What percent of all 600 students buy a snack at lunch?",
+          "hint": "Find the number who stay first, then the number of those who buy.",
+          "tolerance": 0,
+          "unit": "%",
+          "answer": 20,
+          "why": "Each step keeps a share of the step before. Of all students, 20% buy a snack at lunch.",
+          "working": "600 x 50% = 300 stay. 300 x 40% = 120 buy. 120 / 600 = 20%.",
+          "miss": "Take 40% of the students who stay, not of the whole school, then compare with the whole school.",
+          "traps": [
+            {
+              "value": 90,
+              "why": "That adds 50% and 40%. Each step takes a share of the step before."
+            },
+            {
+              "value": 40,
+              "why": "That is only the share of those who stayed. Compare the buyers with all the students."
+            }
+          ]
+        },
+        {
+          "id": "ft2030-s2-u1-l2-q4",
+          "type": "number",
+          "label": "Share for hot food",
+          "prompt": "Tia's school has 500 students. 60% stay at school for lunch. Of those, 1 in 5 would buy hot food. What percent of all 500 students is that?",
+          "hint": "Take 1 in 5 of the students who stay, then compare with all of them.",
+          "tolerance": 0,
+          "unit": "%",
+          "answer": 12,
+          "why": "The buyers are 1 in 5 of the students who stay, which is 12% of the whole school.",
+          "working": "500 x 60% = 300 stay. 1 in 5 of 300 is 60. 60 / 500 = 12%.",
+          "miss": "Work out how many stay, take 1 in 5 of that number, then compare with all the students.",
+          "traps": [
+            {
+              "value": 80,
+              "why": "That adds 60% and 20%. The 20% applies to the students who stay, not to everyone."
+            },
+            {
+              "value": 20,
+              "why": "That is the share of those who stay. Compare with all the students at the school."
+            }
+          ]
+        },
+        {
+          "id": "ft2030-s2-u1-l2-q5",
+          "type": "choice",
+          "label": "Market and break-even",
+          "prompt": "A stand must sell 120 cups to break even. Its honest market is 90 students, each buying at most one cup. What does that show?",
+          "hint": "Compare the number the stand needs with the number who could buy.",
+          "terms": [
+            {
+              "term": "break-even point",
+              "meaning": "The number of items a business must sell for its sales to cover all of its costs."
+            }
+          ],
+          "options": [
+            {
+              "text": "The plan works, because 90 is a big number",
+              "why": "Size on its own does not decide it. The market must be bigger than the break-even."
+            },
+            {
+              "text": "The market is smaller than the break-even, so the plan must change",
+              "why": "It needs 120 buyers and only 90 exist, so the plan is short of buyers."
+            },
+            {
+              "text": "The market will grow once students hear about it",
+              "why": "That is a guess. The honest market is the number you can show."
+            }
+          ],
+          "answer": 1
+        },
+        {
+          "id": "ft2030-s2-u1-l2-q6",
+          "type": "choice",
+          "label": "Direct competitor",
+          "prompt": "Which is a direct competitor of a hot chocolate stand at a school winter market?",
+          "hint": "Same thing, same customer.",
+          "terms": [
+            {
+              "term": "direct competitor",
+              "meaning": "A business that sells the same thing to the same customer."
+            }
+          ],
+          "options": [
+            {
+              "text": "A vending machine with cold drinks",
+              "why": "It wins the same dollar a different way, so it is an indirect competitor."
+            },
+            {
+              "text": "Another club's hot chocolate table",
+              "why": "It sells the same thing to the same customers."
+            },
+            {
+              "text": "A student who brings water from home",
+              "why": "That student buys nothing, so this is doing nothing."
+            }
+          ],
+          "answer": 1
+        },
+        {
+          "id": "ft2030-s2-u1-l2-q7",
+          "type": "choice",
+          "label": "Doing nothing",
+          "prompt": "At 3:15 most students buy nothing at all. Which competitor is that?",
+          "hint": "Nothing is being sold by this competitor.",
+          "options": [
+            {
+              "text": "Doing nothing",
+              "why": "Not buying is a competitor too, and it never appears on a list."
+            },
+            {
+              "text": "A direct competitor",
+              "why": "A direct competitor sells the same thing. These students buy nothing."
+            },
+            {
+              "text": "An indirect competitor",
+              "why": "An indirect competitor sells something else for the same dollar. Here nothing is sold."
+            }
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ft2030-s2-u1-l2-q8",
+          "type": "choice",
+          "label": "Reason to win",
+          "prompt": "Bus Stop Cocoa's cart is at the main doors. The corner shop is ten minutes away. Which reason to win does the distance show?",
+          "hint": "Think about where they already are.",
+          "options": [
+            {
+              "text": "Cheaper",
+              "why": "Price is a different reason. The distance is about location."
+            },
+            {
+              "text": "Different",
+              "why": "Different means nobody else offers it. The corner shop sells drinks too."
+            },
+            {
+              "text": "Closer",
+              "why": "The cart is where the students already are."
+            }
+          ],
+          "answer": 2
+        },
+        {
+          "id": "ft2030-s2-u1-l2-q9",
+          "type": "choice",
+          "label": "A real reason",
+          "prompt": "Which \"why we win\" is a real reason with a reason attached?",
+          "hint": "Pick one of the four reasons and say why.",
+          "options": [
+            {
+              "text": "Ours is good and everyone likes it",
+              "why": "That is not one of the four honest reasons, and it gives no evidence."
+            },
+            {
+              "text": "Closer: our cart is at the door they leave by",
+              "why": "It names one of the four reasons and gives evidence for it."
+            },
+            {
+              "text": "We worked very hard on it all week",
+              "why": "Effort is not a reason a customer picks you."
+            }
+          ],
+          "answer": 1
+        },
+        {
+          "id": "ft2030-s2-u1-l2-q10",
+          "type": "point",
+          "label": "Cheaper than $2.50",
+          "prompt": "A new juice stand will charge $2.50. Tap the competitor that already charges less than that.",
+          "hint": "Read the price on each bar.",
+          "figure": {
+            "kind": "bars",
+            "title": "Price of one bottle of juice",
+            "unit": "$",
+            "bars": [
+              {
+                "label": "Vending machine",
+                "value": 275
+              },
+              {
+                "label": "Cafeteria",
+                "value": 350
+              },
+              {
+                "label": "Corner shop",
+                "value": 225
+              },
+              {
+                "label": "Gym kiosk",
+                "value": 300
+              }
+            ]
+          },
+          "answer": 2,
+          "why": "The corner shop charges $2.25, below $2.50.",
+          "miss": "Compare each bar with $2.50. Only one is lower."
+        }
+      ]
+    },
+    {
+      "id": "ft2030-s2-u1-l3",
+      "title": "A survey that tells you something",
+      "kind": "lesson",
+      "learn": [
+        "Write survey questions that get evidence.",
+        "Read survey results as shares."
+      ],
+      "cards": [
+        {
+          "text": "A survey asks many people a few short questions. Opinions are cheap and polite. Evidence is what a person did, with a number. A survey that gathers opinions mostly tells you people are being nice.",
+          "figure": {
+            "kind": "table",
+            "title": "Opinion or evidence",
+            "columns": [
+              "Opinion",
+              "Evidence"
+            ],
+            "rows": [
+              [
+                "That is cool",
+                "I bought two last week"
+              ],
+              [
+                "I would use that",
+                "I take the bus four days a week"
+              ],
+              [
+                "Nice idea",
+                "I paid $4 for one at a market"
+              ]
+            ]
+          }
+        },
+        {
+          "text": "Rule 1: ask about the past, not the future. People are poor at predicting what they will do and good at saying what they did. Ask about last week, not next month.",
+          "figure": {
+            "kind": "table",
+            "title": "Ask about the past",
+            "columns": [
+              "Weak",
+              "Better"
+            ],
+            "rows": [
+              [
+                "Would you buy a hot drink after school?",
+                "When did you last buy a hot drink at school?"
+              ]
+            ]
+          }
+        },
+        {
+          "text": "Rule 2: do not lead. A leading question hints at the answer the asker wants: \"Don't you think the vending machine is too dear?\" Ask \"What do you usually spend at the vending machine?\" Offer real choices, so people pick instead of agreeing."
+        },
+        {
+          "text": "Rule 3: one thing per question. \"Would you buy a cheap, warm, healthy snack?\" asks three things. A \"no\" does not say which one. Rule 4: keep it quick. About five questions, mostly multiple choice, and at most one open box."
+        },
+        {
+          "text": "A short survey needs five answers: do they buy at all, how much do they spend, would they pick you over real alternatives, what price, and what would stop them. For price, offer a choice of prices with a \"would not buy\" option, because people say they would pay more than they do."
+        },
+        {
+          "text": "Bus Stop Cocoa asked 40 classmates \"When did you last buy a hot drink at school?\" A share is a count divided by the total. 18 of 40 is 45%. These 40 know the team and share a class, so ask a few people outside the class too.",
+          "figure": {
+            "kind": "table",
+            "title": "Last hot drink at school",
+            "columns": [
+              "Answer",
+              "Students"
+            ],
+            "rows": [
+              [
+                "This week",
+                "18"
+              ],
+              [
+                "Earlier this term",
+                "10"
+              ],
+              [
+                "Not this term",
+                "12"
+              ]
+            ]
+          }
+        }
+      ],
+      "questions": [
+        {
+          "id": "ft2030-s2-u1-l3-q1",
+          "type": "choice",
+          "label": "Evidence or opinion",
+          "prompt": "Which answer is evidence rather than opinion?",
+          "hint": "Evidence is something a person did.",
+          "terms": [
+            {
+              "term": "survey",
+              "meaning": "A short set of questions asked to many people, to learn what they do and want."
+            }
+          ],
+          "options": [
+            {
+              "text": "I bought a hot drink twice last week",
+              "why": "It says what the person did, with a number."
+            },
+            {
+              "text": "That sounds like a great idea",
+              "why": "That is an opinion. It says nothing about what the person did."
+            },
+            {
+              "text": "I would probably buy one",
+              "why": "That is a guess about the future, not something that happened."
+            }
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ft2030-s2-u1-l3-q2",
+          "type": "choice",
+          "label": "Ask the past",
+          "prompt": "Which question asks about the past?",
+          "hint": "Look for a time that has already happened.",
+          "options": [
+            {
+              "text": "How many gifts did you buy last month?",
+              "why": "It asks what the person did, which they can answer from memory."
+            },
+            {
+              "text": "Would you buy a bracelet from us?",
+              "why": "That asks about the future. It gets a polite guess."
+            },
+            {
+              "text": "Will you buy gifts next month?",
+              "why": "That also asks about the future, and people predict badly."
+            }
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ft2030-s2-u1-l3-q3",
+          "type": "choice",
+          "label": "Leading question",
+          "prompt": "Which question is a leading question?",
+          "hint": "Which one hints at the answer wanted?",
+          "terms": [
+            {
+              "term": "leading question",
+              "meaning": "A question that hints at the answer the asker wants."
+            }
+          ],
+          "options": [
+            {
+              "text": "What snack did you buy most last week?",
+              "why": "It asks what happened and hints at no answer."
+            },
+            {
+              "text": "Which of these snacks did you buy most last week?",
+              "why": "It gives real choices and does not push an answer."
+            },
+            {
+              "text": "Don't you agree our cookies are the best snack at school?",
+              "why": "It pushes the student toward yes."
+            }
+          ],
+          "answer": 2
+        },
+        {
+          "id": "ft2030-s2-u1-l3-q4",
+          "type": "choice",
+          "label": "Two at once",
+          "prompt": "Which question asks two things at once?",
+          "hint": "A \"no\" should always tell you what to change.",
+          "options": [
+            {
+              "text": "How much did you pay for your last hot drink?",
+              "why": "That asks one thing."
+            },
+            {
+              "text": "Is our drink warm and cheap?",
+              "why": "A \"no\" does not say whether the drink was not warm or not cheap."
+            },
+            {
+              "text": "When did you last buy a hot drink?",
+              "why": "That asks one thing."
+            }
+          ],
+          "answer": 1
+        },
+        {
+          "id": "ft2030-s2-u1-l3-q5",
+          "type": "choice",
+          "label": "Real alternatives",
+          "prompt": "One survey question asks students to pick between Bus Stop Cocoa and alternatives. Which set of options is best?",
+          "hint": "Use the competitors from a matrix.",
+          "options": [
+            {
+              "text": "Bus Stop Cocoa, the vending machine, the corner shop",
+              "why": "These are real alternatives a student could pick instead."
+            },
+            {
+              "text": "Bus Stop Cocoa and two choices nobody would pick",
+              "why": "Obviously worse options flatter you and prove nothing."
+            },
+            {
+              "text": "Bus Stop Cocoa only, yes or no",
+              "why": "With no alternatives, agreeing costs the student nothing."
+            }
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ft2030-s2-u1-l3-q6",
+          "type": "choice",
+          "label": "Price question",
+          "prompt": "Which price question can show how many students would not buy at any of the prices?",
+          "hint": "Look for a way to say no to all the prices.",
+          "options": [
+            {
+              "text": "How much would you pay?",
+              "why": "Everyone names a price and people say they would pay more than they do."
+            },
+            {
+              "text": "Would you pay $3 for this?",
+              "why": "A yes or no on one price tells you nothing about the other prices."
+            },
+            {
+              "text": "Which price would you pick: $2, $3, $4 or would not buy?",
+              "why": "It forces a choice between prices and allows \"would not buy\"."
+            }
+          ],
+          "answer": 2
+        },
+        {
+          "id": "ft2030-s2-u1-l3-q7",
+          "type": "number",
+          "label": "Would not buy",
+          "prompt": "Dev's team asked 50 students to pick a price. The table shows the answers. What percent chose \"Would not buy\"?",
+          "hint": "Divide that count by the total number of students asked.",
+          "tolerance": 0,
+          "unit": "%",
+          "answer": 28,
+          "figure": {
+            "kind": "table",
+            "title": "Price pick, 50 students",
+            "columns": [
+              "Pick",
+              "Students"
+            ],
+            "rows": [
+              [
+                "$2",
+                "21"
+              ],
+              [
+                "$3",
+                "11"
+              ],
+              [
+                "$4",
+                "4"
+              ],
+              [
+                "Would not buy",
+                "14"
+              ]
+            ]
+          },
+          "why": "14 of 50 chose \"Would not buy\", which is 28%.",
+          "working": "14 / 50 = 28%.",
+          "miss": "Divide by the total of all four rows, not by one row.",
+          "traps": [
+            {
+              "value": 14,
+              "why": "That is the count. A share is the count divided by the total asked."
+            },
+            {
+              "value": 72,
+              "why": "That is the share who picked a price. The question asks about \"Would not buy\"."
+            }
+          ]
+        },
+        {
+          "id": "ft2030-s2-u1-l3-q8",
+          "type": "number",
+          "label": "Picked $3 or $4",
+          "prompt": "Using the same table, what percent of the students picked $3 or $4?",
+          "hint": "Add the two counts first.",
+          "tolerance": 0,
+          "unit": "%",
+          "answer": 30,
+          "figure": {
+            "kind": "table",
+            "title": "Price pick, 50 students",
+            "columns": [
+              "Pick",
+              "Students"
+            ],
+            "rows": [
+              [
+                "$2",
+                "21"
+              ],
+              [
+                "$3",
+                "11"
+              ],
+              [
+                "$4",
+                "4"
+              ],
+              [
+                "Would not buy",
+                "14"
+              ]
+            ]
+          },
+          "why": "15 of 50 picked $3 or $4, which is 30%.",
+          "working": "11 + 4 = 15. 15 / 50 = 30%.",
+          "miss": "Add the counts for the two prices, then divide by all students asked.",
+          "traps": [
+            {
+              "value": 15,
+              "why": "That is the count. A share is the count divided by the total asked."
+            },
+            {
+              "value": 70,
+              "why": "That is everyone who did not pick $3 or $4."
+            }
+          ]
+        },
+        {
+          "id": "ft2030-s2-u1-l3-q9",
+          "type": "number",
+          "label": "Outside answers",
+          "prompt": "Mei's team got 28 answers from classmates and 7 from people outside the class. What percent of all the answers came from outside the class?",
+          "hint": "Add the answers first to get the total.",
+          "tolerance": 0,
+          "unit": "%",
+          "answer": 20,
+          "why": "7 of 35 answers came from outside, which is 20%.",
+          "working": "28 + 7 = 35. 7 / 35 = 20%.",
+          "miss": "The total is every answer, from the class and from outside it.",
+          "traps": [
+            {
+              "value": 25,
+              "why": "That divides by the 28 classmates. The total must include all answers."
+            },
+            {
+              "value": 7,
+              "why": "That is the count. A share is the count divided by the total."
+            }
+          ]
+        },
+        {
+          "id": "ft2030-s2-u1-l3-q10",
+          "type": "choice",
+          "label": "Reading friends",
+          "prompt": "A team asked 30 friends in its own class \"Would you buy this? Yes or no\" and 27 said yes. What is the right way to read that?",
+          "hint": "Think about who answered and what kind of answer it is.",
+          "options": [
+            {
+              "text": "Opinion from friends in one class; it does not show the market",
+              "why": "The answers are guesses from friends, not what buyers did."
+            },
+            {
+              "text": "Strong evidence that most students will buy",
+              "why": "A guess from friends is not evidence about the whole market."
+            },
+            {
+              "text": "Proof that the price is right",
+              "why": "The question did not ask about price at all."
+            }
+          ],
+          "answer": 0
+        }
+      ]
+    }
+  ]
+}

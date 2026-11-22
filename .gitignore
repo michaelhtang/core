@@ -1,0 +1,10 @@
+node_modules/
+data/
+*.db
+*.db-wal
+*.db-shm
+.worktrees/
+design/refs/
+replica/screens/
+design/art/*.png
+design/art/sheet/

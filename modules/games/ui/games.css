@@ -1,0 +1,8 @@
+/* Game tiles (modules/games): a small picture of each game's start screen, its name and one line, in a grid. The whole tile is the link. */
+.gm-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 12px; }
+.gm-tile { display: grid; grid-template-rows: auto 1fr; color: var(--ink); text-decoration: none; border: 1px solid var(--field-border); border-radius: 8px; overflow: hidden; background: var(--surface, transparent); }
+.gm-tile:hover, .gm-tile:focus-visible { border-color: var(--ice); }
+.gm-tile img { display: block; width: 100%; height: auto; aspect-ratio: 8 / 5; object-fit: cover; }
+.gm-tile .gm-text { padding: 8px 10px 10px; display: grid; gap: 4px; align-content: start; }
+.gm-tile b { font-size: 1rem; }
+.gm-tile .gm-open { font-size: var(--text-small); color: var(--ink-muted); }

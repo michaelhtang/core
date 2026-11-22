@@ -1,0 +1,1576 @@
+{
+  "id": "ft2030-s3-u6",
+  "title": "Growth, inflation and real return",
+  "blurb": "The Rule of 72, growing prices and what your money really earns.",
+  "outcome_codes": [
+    "FIN3080 2.1.7",
+    "FIN3090 3.2",
+    "FIN3090 3.4"
+  ],
+  "levels": [
+    {
+      "id": "ft2030-s3-u6-l1",
+      "title": "The Rule of 72 and where it is rough",
+      "kind": "lesson",
+      "learn": [
+        "Use the Rule of 72 forwards and backwards.",
+        "Say where the rule is close to the exact time and where it is rough."
+      ],
+      "cards": [
+        {
+          "text": "The Rule of 72 estimates how long money takes to double: years = 72 divided by the yearly rate. At 6% that is 72 / 6 = 12 years. It also runs backwards. Money that doubled in 6 years grew at about 72 / 6 = 12% a year. The rule is for one lump of money with nothing added or taken out."
+        },
+        {
+          "text": "One guess is 100 / 6, about 17 years, as if every year added 6% of the first $10,000. But year two’s interest is on a bigger balance, so the wait is shorter. Here is $10,000 at 6%, multiplied by 1.06 each year, to the nearest dollar. It passes $20,000 in year 12.",
+          "figure": {
+            "kind": "table",
+            "title": "$10,000 at 6% a year",
+            "columns": [
+              "Year",
+              "Balance"
+            ],
+            "rows": [
+              [
+                "10",
+                "$17,908"
+              ],
+              [
+                "11",
+                "$18,983"
+              ],
+              [
+                "12",
+                "$20,122"
+              ]
+            ]
+          }
+        },
+        {
+          "text": "The exact doubling time at 6% is a little under 12 years: about 11.9. A calculator or spreadsheet finds it. The rule says 12, a very close estimate. Here are both at six example rates, in years.",
+          "figure": {
+            "kind": "table",
+            "title": "Years to double",
+            "columns": [
+              "Rate",
+              "Rule of 72",
+              "Exact"
+            ],
+            "rows": [
+              [
+                "1%",
+                "72",
+                "69.7"
+              ],
+              [
+                "3%",
+                "24",
+                "23.4"
+              ],
+              [
+                "6%",
+                "12",
+                "11.9"
+              ],
+              [
+                "9%",
+                "8",
+                "8.0"
+              ],
+              [
+                "12%",
+                "6",
+                "6.1"
+              ],
+              [
+                "24%",
+                "3",
+                "3.2"
+              ]
+            ]
+          }
+        },
+        {
+          "text": "Read the gap. At 6%, 9% and 12% the rule is within about 0.1 of a year. At 1% it says 72 years, but the exact time is 69.7, about 2 years too long. At 24% it says 3 years and the exact time is 3.2, a little too short. At very low or very high rates, treat the rule as rougher."
+        },
+        {
+          "text": "Interest is not always added once a year. Say 6% a year is added monthly: 0.5% each month, 144 months in 12 years. $10,000 grows to 10,000 x 1.005^144 = $20,508, a bit more than $20,000. Doubling takes about 11.6 years, not 12. The rule is still a good first check."
+        }
+      ],
+      "questions": [
+        {
+          "id": "ft2030-s3-u6-l1-q1",
+          "label": "The 17-year guess",
+          "prompt": "Sol says $10,000 at 6% doubles in about 17 years, because 6% of $10,000 is $600 and 17 x $600 is about $10,000. What does he leave out?",
+          "type": "choice",
+          "terms": [
+            {
+              "term": "doubling time",
+              "meaning": "How long money takes to become twice as large."
+            }
+          ],
+          "hint": "Look at what year two’s interest is figured on.",
+          "options": [
+            {
+              "text": "Later interest is earned on a bigger balance",
+              "why": "Yes. Interest earns interest, so the balance doubles in a little under 12 years."
+            },
+            {
+              "text": "The rate is not a yearly rate",
+              "why": "The 6% is a yearly rate. The guess goes wrong in how the years are added up."
+            },
+            {
+              "text": "Nothing, 17 years is the exact answer",
+              "why": "The table shows $10,000 passes $20,000 in year 12, well before year 17."
+            }
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ft2030-s3-u6-l1-q2",
+          "label": "Rule at 2%",
+          "prompt": "By the Rule of 72, about how many years until money doubles at 2% a year?",
+          "type": "choice",
+          "terms": [
+            {
+              "term": "Rule of 72",
+              "meaning": "A quick estimate: years to double is about 72 divided by the yearly rate in percent."
+            }
+          ],
+          "hint": "Divide 72 by the rate as a plain number.",
+          "options": [
+            {
+              "text": "About 18 years",
+              "why": "That is 72 / 4. The rate here is 2%."
+            },
+            {
+              "text": "About 36 years",
+              "why": "Yes. 72 / 2 = 36."
+            },
+            {
+              "text": "About 50 years",
+              "why": "That is 100 / 2. The rule uses 72."
+            },
+            {
+              "text": "About 144 years",
+              "why": "That is 72 x 2. The rule divides."
+            }
+          ],
+          "answer": 1
+        },
+        {
+          "id": "ft2030-s3-u6-l1-q3",
+          "label": "Rate from years",
+          "prompt": "A made-up fund doubled its money in about 4 years. By the Rule of 72, about what yearly rate is that?",
+          "type": "number",
+          "terms": [
+            {
+              "term": "Rule of 72",
+              "meaning": "A quick estimate: years to double is about 72 divided by the yearly rate in percent."
+            }
+          ],
+          "hint": "Divide 72 by the years it took.",
+          "unit": "%",
+          "answer": 18,
+          "tolerance": 0,
+          "why": "The rule runs backwards: rate is about 72 divided by the years.",
+          "working": "72 / 4 = 18%.",
+          "miss": "Use 72 divided by the number of years, not the other way around.",
+          "traps": [
+            {
+              "value": 288,
+              "why": "That is 72 x 4. The rule divides 72 by the years."
+            },
+            {
+              "value": 25,
+              "why": "That is 100 / 4. The rule uses 72."
+            }
+          ]
+        },
+        {
+          "id": "ft2030-s3-u6-l1-q4",
+          "label": "Furthest off",
+          "prompt": "Look at the table. Which rate has the biggest gap, in years, between the Rule of 72 and the exact time?",
+          "type": "choice",
+          "terms": [
+            {
+              "term": "Rule of 72",
+              "meaning": "A quick estimate: years to double is about 72 divided by the yearly rate in percent."
+            }
+          ],
+          "hint": "Subtract the exact time from the rule’s answer for each rate.",
+          "options": [
+            {
+              "text": "4%",
+              "why": "The rule says 18 and the exact time is 17.7. That gap is smaller than the biggest one."
+            },
+            {
+              "text": "2%",
+              "why": "The rule says 36 years and the exact time is 35.0. That gap is the largest in the table."
+            },
+            {
+              "text": "8%",
+              "why": "The rule says 9 and the exact time is 9.0. That gap is smaller than the biggest one."
+            },
+            {
+              "text": "18%",
+              "why": "The rule says 4 and the exact time is 4.2. That gap is smaller than the biggest one."
+            }
+          ],
+          "answer": 1,
+          "figure": {
+            "kind": "table",
+            "title": "Rule of 72 and the exact time",
+            "columns": [
+              "Rate",
+              "Rule of 72",
+              "Exact"
+            ],
+            "rows": [
+              [
+                "2%",
+                "36",
+                "35.0"
+              ],
+              [
+                "4%",
+                "18",
+                "17.7"
+              ],
+              [
+                "8%",
+                "9",
+                "9.0"
+              ],
+              [
+                "18%",
+                "4",
+                "4.2"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "ft2030-s3-u6-l1-q5",
+          "label": "Furthest short",
+          "prompt": "Each bar shows $10,000 after the number of years the Rule of 72 gives. Tap the rate where the money is furthest below $20,000.",
+          "type": "point",
+          "figure": {
+            "kind": "bars",
+            "title": "$10,000 after the rule’s years",
+            "unit": "$",
+            "bars": [
+              {
+                "label": "3% for 24 yr",
+                "value": 2032800
+              },
+              {
+                "label": "6% for 12 yr",
+                "value": 2012200
+              },
+              {
+                "label": "9% for 8 yr",
+                "value": 1992600
+              },
+              {
+                "label": "12% for 6 yr",
+                "value": 1973800
+              }
+            ]
+          },
+          "hint": "Compare each bar with $20,000.00.",
+          "answer": 3,
+          "why": "At 12% the bar is $19,738, about $262 short of $20,000. The rule is close, not exact.",
+          "miss": "Find the bar that is lowest compared with $20,000.00."
+        },
+        {
+          "id": "ft2030-s3-u6-l1-q6",
+          "label": "Twelve percent, six years",
+          "prompt": "Sam puts $5,000 at 12% a year. The Rule of 72 says it doubles in 6 years. Multiply by 1.12 six times. How much is it after 6 years, to the nearest dollar?",
+          "type": "number",
+          "terms": [
+            {
+              "term": "Rule of 72",
+              "meaning": "A quick estimate: years to double is about 72 divided by the yearly rate in percent."
+            }
+          ],
+          "hint": "Multiply by 1.12 once for each year.",
+          "unit": "$",
+          "answer": 986900,
+          "tolerance": 50,
+          "why": "Each year multiplies the balance by 1.12. After six years it is just under double.",
+          "working": "$5,000 x 1.12^6 = $9,869.11, about $9,869.",
+          "miss": "Multiply the balance by 1.12, six times in a row.",
+          "traps": [
+            {
+              "value": 860000,
+              "why": "That adds 12% of $5,000 each year. Interest is on the growing balance, so each year adds more."
+            },
+            {
+              "value": 1000000,
+              "why": "That is exactly double. At 12% the rule is an estimate and the balance is a little under double."
+            }
+          ]
+        },
+        {
+          "id": "ft2030-s3-u6-l1-q7",
+          "label": "Rule at 24%",
+          "prompt": "At 24% the rule says 3 years and the exact time is 3.2 years. What does that show?",
+          "type": "choice",
+          "terms": [
+            {
+              "term": "Rule of 72",
+              "meaning": "A quick estimate: years to double is about 72 divided by the yearly rate in percent."
+            }
+          ],
+          "hint": "Compare 3 with the exact time.",
+          "options": [
+            {
+              "text": "At a high rate the rule is a little too long",
+              "why": "The rule gives 3, which is less than 3.2, so it is too short."
+            },
+            {
+              "text": "The rule is exact at every rate",
+              "why": "The table shows gaps at 1% and 24%. The rule is an estimate."
+            },
+            {
+              "text": "At a high rate the rule is a little too short",
+              "why": "Yes. 3 is below 3.2, so the rule underestimates the wait here."
+            }
+          ],
+          "answer": 2
+        },
+        {
+          "id": "ft2030-s3-u6-l1-q8",
+          "label": "Paid monthly",
+          "prompt": "A made-up account pays 6% a year, added monthly at 0.5% a month. $4,000 stays in for 15 years (180 months). How much is it, to the nearest dollar?",
+          "type": "number",
+          "hint": "Use 1.005 for a month and 180 for the number of months.",
+          "unit": "$",
+          "answer": 981600,
+          "tolerance": 50,
+          "why": "Multiply by 1.005 for each month. Monthly interest starts earning sooner than yearly interest.",
+          "working": "$4,000 x 1.005^180 = $9,816.37, about $9,816.",
+          "miss": "The monthly rate is 6% divided by 12, and there are 180 months.",
+          "traps": [
+            {
+              "value": 958600,
+              "why": "That adds interest once a year at 6%. Adding it monthly gives a little more."
+            },
+            {
+              "value": 760000,
+              "why": "That adds 0.5% of $4,000 each month with no growth on growth."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ft2030-s3-u6-l2",
+      "title": "Growing with regular deposits",
+      "kind": "lesson",
+      "learn": [
+        "Follow a balance month by month when deposits go in.",
+        "Use the shortcut and see what a bigger deposit, rate or time does."
+      ],
+      "cards": [
+        {
+          "text": "Most people add money every month. Each month the balance grows by that month’s interest, then the deposit goes in at the end of the month. At 6% a year the monthly rate is 6% divided by 12, which is 0.5%, so the balance is multiplied by 1.005. Here are the first three months of $100 deposits.",
+          "figure": {
+            "kind": "table",
+            "title": "$100 a month at 0.5% a month",
+            "columns": [
+              "Month",
+              "Interest",
+              "Deposit",
+              "Balance"
+            ],
+            "rows": [
+              [
+                "1",
+                "$0.00",
+                "$100.00",
+                "$100.00"
+              ],
+              [
+                "2",
+                "$0.50",
+                "$100.00",
+                "$200.50"
+              ],
+              [
+                "3",
+                "$1.00",
+                "$100.00",
+                "$301.50"
+              ]
+            ]
+          }
+        },
+        {
+          "text": "Do this 120 times and you have ten years of $100 deposits. You put in $12,000 and the balance is $16,388. The rest, $4,388, is interest. The longer it runs, the bigger the interest share. A spreadsheet’s future value function adds up the chain for you.",
+          "figure": {
+            "kind": "table",
+            "title": "$100 a month at 6%",
+            "columns": [
+              "Years",
+              "Put in",
+              "Balance",
+              "Interest"
+            ],
+            "rows": [
+              [
+                "10",
+                "$12,000",
+                "$16,388",
+                "$4,388"
+              ],
+              [
+                "20",
+                "$24,000",
+                "$46,204",
+                "$22,204"
+              ],
+              [
+                "30",
+                "$36,000",
+                "$100,452",
+                "$64,452"
+              ],
+              [
+                "40",
+                "$48,000",
+                "$199,149",
+                "$151,149"
+              ]
+            ]
+          }
+        },
+        {
+          "text": "A shortcut saves 120 steps. Balance = deposit x (1.005^n - 1) / 0.005, where n is the number of months and 0.005 is the monthly rate. Two slips to avoid: typing 6% where 0.5% a month belongs, and typing 10 for n when ten years is 120 months. Rates here are examples."
+        },
+        {
+          "text": "A lump sum and monthly deposits can be added together. Start with $10,000 and add $100 a month for 12 years at 6%. The lump grows alone, the deposits grow alone, and the two add up. The Rule of 72 describes only the lump: it knows nothing about the money you add later.",
+          "figure": {
+            "kind": "table",
+            "title": "12 years at 6%",
+            "columns": [
+              "Part",
+              "Balance"
+            ],
+            "rows": [
+              [
+                "$10,000 lump",
+                "$20,508"
+              ],
+              [
+                "$100 a month",
+                "$21,015"
+              ],
+              [
+                "Together",
+                "$41,523"
+              ]
+            ]
+          }
+        },
+        {
+          "text": "What helps most: a bigger deposit, a higher rate or more years? Here are three plans for 20 years of saving. A higher deposit and a higher rate both help. So does time, because it lets interest earn interest for longer. These rates are examples, not forecasts.",
+          "figure": {
+            "kind": "table",
+            "title": "After 20 years",
+            "columns": [
+              "Plan",
+              "Balance"
+            ],
+            "rows": [
+              [
+                "$100 a month at 6%",
+                "$46,204"
+              ],
+              [
+                "$125 a month at 6%",
+                "$57,755"
+              ],
+              [
+                "$100 a month at 8%",
+                "$58,902"
+              ]
+            ]
+          }
+        }
+      ],
+      "questions": [
+        {
+          "id": "ft2030-s3-u6-l2-q1",
+          "label": "Three months in",
+          "prompt": "Mel deposits $50 at the end of each month. The account adds 0.5% interest each month. What is the balance at the end of month 3, to the cent?",
+          "type": "number",
+          "hint": "Work one month at a time. The deposit goes in after the interest.",
+          "unit": "$",
+          "answer": 15075,
+          "tolerance": 1,
+          "why": "Each month: grow the balance by 0.5%, then add the $50 deposit.",
+          "working": "Month 1: $50.00. Month 2: $50.00 x 1.005 + $50.00 = $100.25. Month 3: $100.25 x 1.005 + $50.00 = $150.75.",
+          "miss": "Grow last month’s balance by 0.5% first, then add $50.",
+          "traps": [
+            {
+              "value": 15000,
+              "why": "That is only the three deposits. The interest on the earlier balance is missing."
+            }
+          ]
+        },
+        {
+          "id": "ft2030-s3-u6-l2-q2",
+          "label": "Monthly rate",
+          "prompt": "An account pays 9% a year, added monthly. What is the rate for one month?",
+          "type": "choice",
+          "hint": "Divide the yearly rate by the number of months in a year.",
+          "options": [
+            {
+              "text": "9%",
+              "why": "That is the yearly rate. A month gets one twelfth of it."
+            },
+            {
+              "text": "0.75%",
+              "why": "Yes. 9% / 12 = 0.75%."
+            },
+            {
+              "text": "0.09%",
+              "why": "That divides by 100 twice. Change 9% to 0.09 only when you multiply."
+            },
+            {
+              "text": "1.08%",
+              "why": "That is 9% x 12. The yearly rate is divided by 12."
+            }
+          ],
+          "answer": 1
+        },
+        {
+          "id": "ft2030-s3-u6-l2-q3",
+          "label": "Total put in",
+          "prompt": "Lee deposits $250 a month for 20 years. How much does Lee put in, not counting any interest?",
+          "type": "number",
+          "hint": "First count the deposits.",
+          "unit": "$",
+          "answer": 6000000,
+          "tolerance": 0,
+          "why": "20 years is 240 deposits of $250.",
+          "working": "20 x 12 = 240 deposits. 240 x $250 = $60,000.",
+          "miss": "Count the months in 20 years, then multiply by the deposit.",
+          "traps": [
+            {
+              "value": 500000,
+              "why": "That is $250 for 20 deposits. There is a deposit every month, not every year."
+            }
+          ]
+        },
+        {
+          "id": "ft2030-s3-u6-l2-q4",
+          "label": "Interest share",
+          "prompt": "Pat deposits $200 a month for 10 years at 6%. The balance is $32,776. How much of it is interest, to the nearest dollar?",
+          "type": "number",
+          "hint": "Find what Pat put in first.",
+          "unit": "$",
+          "answer": 877600,
+          "tolerance": 0,
+          "why": "The balance minus what Pat put in is the interest.",
+          "working": "120 x $200 = $24,000 put in. $32,776 - $24,000 = $8,776.",
+          "miss": "Work out the deposits first. Interest is what is left of the balance.",
+          "traps": [
+            {
+              "value": 3277600,
+              "why": "That is the whole balance. Interest is only the part above the deposits."
+            }
+          ]
+        },
+        {
+          "id": "ft2030-s3-u6-l2-q5",
+          "label": "Which numbers",
+          "prompt": "Dee wants the balance after 5 years of monthly deposits at 6% a year. Which rate and number of months go in the shortcut?",
+          "type": "choice",
+          "hint": "Change both numbers to a monthly basis.",
+          "options": [
+            {
+              "text": "6% a month and 60 months",
+              "why": "The monthly rate is 6% divided by 12, not 6%."
+            },
+            {
+              "text": "0.5% a month and 60 months",
+              "why": "Yes. 6% / 12 = 0.5% a month and 5 x 12 = 60 months."
+            },
+            {
+              "text": "0.5% a month and 5 months",
+              "why": "Five is the number of years. The shortcut counts months."
+            },
+            {
+              "text": "6% a month and 5 months",
+              "why": "This uses the yearly rate and the years. Both need changing."
+            }
+          ],
+          "answer": 1
+        },
+        {
+          "id": "ft2030-s3-u6-l2-q6",
+          "label": "Use the shortcut",
+          "prompt": "Rin deposits $75 a month for 15 years at 6%, added monthly at 0.5%. Use the shortcut. What is the balance, to the nearest dollar?",
+          "type": "number",
+          "hint": "Fifteen years is 180 months. The monthly rate is 0.005.",
+          "unit": "$",
+          "answer": 2181100,
+          "tolerance": 50,
+          "why": "Balance = deposit x (1.005^n - 1) / 0.005 with n = 180 months.",
+          "working": "$75 x (1.005^180 - 1) / 0.005 = $21,811.40, about $21,811.",
+          "miss": "Check n is 180 and the monthly rate is 0.005.",
+          "traps": [
+            {
+              "value": 1350000,
+              "why": "That is only what Rin puts in. The interest is missing."
+            }
+          ]
+        },
+        {
+          "id": "ft2030-s3-u6-l2-q7",
+          "label": "Biggest balance",
+          "prompt": "Cy compares three ways to save for 30 years. Tap the plan with the biggest balance.",
+          "type": "point",
+          "figure": {
+            "kind": "bars",
+            "title": "Balance after 30 years",
+            "unit": "$",
+            "bars": [
+              {
+                "label": "$100 a month, 6%",
+                "value": 10045200
+              },
+              {
+                "label": "$120 a month, 6%",
+                "value": 12054200
+              },
+              {
+                "label": "$100 a month, 8%",
+                "value": 14903600
+              }
+            ]
+          },
+          "hint": "Read the dollar value of each bar.",
+          "answer": 2,
+          "why": "Earning 8% gives $149,036, more than the other two. Over 30 years the higher rate lifts the whole balance.",
+          "miss": "Compare the three dollar values."
+        },
+        {
+          "id": "ft2030-s3-u6-l2-q8",
+          "label": "Rule with deposits",
+          "prompt": "Tia says $10,000 at 6% with $100 added every month takes about 12 years to reach $20,000, by the Rule of 72. What is wrong with that?",
+          "type": "choice",
+          "terms": [
+            {
+              "term": "Rule of 72",
+              "meaning": "A quick estimate: years to double is about 72 divided by the yearly rate in percent."
+            }
+          ],
+          "hint": "Think about what the rule assumes about added money.",
+          "options": [
+            {
+              "text": "The rule is for a lump, and deposits get there sooner",
+              "why": "Yes. The rule ignores money added later. With deposits the balance reaches $20,000 sooner."
+            },
+            {
+              "text": "Deposits make it take longer",
+              "why": "Money added makes the balance bigger, so it reaches $20,000 sooner."
+            },
+            {
+              "text": "The rule only works above 12%",
+              "why": "The rule works over a wide range of rates. The problem is the deposits."
+            }
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ft2030-s3-u6-l2-q9",
+          "label": "Lump and deposits",
+          "prompt": "Ana starts with $5,000 and adds $100 a month for 15 years at 6%, added monthly at 0.5%. What is the balance, to the nearest dollar?",
+          "type": "number",
+          "hint": "Find the lump’s growth and the deposits’ growth, then add.",
+          "unit": "$",
+          "answer": 4135200,
+          "tolerance": 50,
+          "why": "Grow the lump and the deposits separately, then add them.",
+          "working": "$5,000 x 1.005^180 = $12,270. $100 a month for 180 months = $29,082. Together about $41,352.",
+          "miss": "Two parts: the $5,000 grows alone, the deposits grow alone.",
+          "traps": [
+            {
+              "value": 1227000,
+              "why": "That is the lump alone. The deposits are missing."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ft2030-s3-u6-l3",
+      "title": "Inflation grows your costs",
+      "kind": "lesson",
+      "learn": [
+        "Grow a bill to a later year at an example inflation rate.",
+        "Compare costs and income in the same year’s dollars."
+      ],
+      "cards": [
+        {
+          "text": "Inflation is a rise in prices over time, so the same bills cost more. Costs grow the way money does: each year you multiply by 1 plus the rate. Take Mia’s bills, $3,000 a month today. If prices rise 2% a year (an example rate), next year they are $3,000 x 1.02 = $3,060.00."
+        },
+        {
+          "text": "Over 33 years you multiply by 1.02 thirty-three times. That is 1.02^33, about 1.92. Mia’s $3,000 of bills becomes $5,766.69 a month. A common slip is to add 2% thirty-three times, which is 66%, and get $4,980.00. That misses that each rise is on prices that already rose."
+        },
+        {
+          "text": "One point of inflation changes the answer a lot. Here is the same $3,000 a month after 33 years at three example rates. A small difference in rate, repeated for many years, becomes a large difference in dollars.",
+          "figure": {
+            "kind": "table",
+            "title": "$3,000 of bills after 33 years",
+            "columns": [
+              "Inflation",
+              "Times",
+              "Bills a month"
+            ],
+            "rows": [
+              [
+                "1%",
+                "x 1.39",
+                "$4,166.07"
+              ],
+              [
+                "2%",
+                "x 1.92",
+                "$5,766.69"
+              ],
+              [
+                "3%",
+                "x 2.65",
+                "$7,957.01"
+              ]
+            ]
+          }
+        },
+        {
+          "text": "The Rule of 72 works on prices too: divide 72 by the inflation rate. At 2%, prices double in about 72 / 2 = 36 years. The Bank of Canada aims to keep inflation near 2%, the midpoint of a range from 1% to 3%. That is its target."
+        },
+        {
+          "text": "Costs and income must be compared in the same year’s dollars. Mia expects $4,500 a month in 33 years. That is more than $3,000, so it looks safe. But her bills will be $5,766.69 by then, which is $1,266.69 more than her income."
+        }
+      ],
+      "questions": [
+        {
+          "id": "ft2030-s3-u6-l3-q1",
+          "label": "Rule for prices",
+          "prompt": "Prices rise 4% a year (an example). By the Rule of 72, about how long until prices double?",
+          "type": "choice",
+          "terms": [
+            {
+              "term": "Rule of 72",
+              "meaning": "A quick estimate: years to double is about 72 divided by the yearly rate in percent."
+            },
+            {
+              "term": "inflation",
+              "meaning": "A rise in prices over time, so the same dollars buy less."
+            }
+          ],
+          "hint": "Divide 72 by the inflation rate.",
+          "options": [
+            {
+              "text": "About 36 years",
+              "why": "That is 72 / 2. This question has 4%."
+            },
+            {
+              "text": "About 24 years",
+              "why": "That is 72 / 3. The rate is 4%."
+            },
+            {
+              "text": "About 18 years",
+              "why": "Yes. 72 / 4 = 18."
+            },
+            {
+              "text": "About 4 years",
+              "why": "That is the rate, not the years. Divide 72 by it."
+            }
+          ],
+          "answer": 2
+        },
+        {
+          "id": "ft2030-s3-u6-l3-q2",
+          "label": "Ten years of bills",
+          "prompt": "Kai pays $2,000 a month in bills. Prices rise 3% a year (an example). What will the same bills cost a month in 10 years, to the cent?",
+          "type": "number",
+          "terms": [
+            {
+              "term": "inflation",
+              "meaning": "A rise in prices over time, so the same dollars buy less."
+            }
+          ],
+          "hint": "Use 1.03, ten times.",
+          "unit": "$",
+          "answer": 268783,
+          "tolerance": 1,
+          "why": "Multiply by 1.03 for each of the 10 years.",
+          "working": "$2,000 x 1.03^10 = $2687.83.",
+          "miss": "Multiply by 1.03 for each year, not 0.03.",
+          "traps": [
+            {
+              "value": 260000,
+              "why": "That adds 3% of $2,000 ten times. Each rise is on prices that already rose, so the answer is higher."
+            }
+          ]
+        },
+        {
+          "id": "ft2030-s3-u6-l3-q3",
+          "label": "Twenty years",
+          "prompt": "Prices rise 2% a year. By what number do you multiply prices to get them 20 years from now?",
+          "type": "choice",
+          "terms": [
+            {
+              "term": "inflation",
+              "meaning": "A rise in prices over time, so the same dollars buy less."
+            }
+          ],
+          "hint": "Multiply by 1.02, once for each year.",
+          "options": [
+            {
+              "text": "About 1.40",
+              "why": "That is 1 + 20 x 0.02, adding 2% twenty times. Each rise is on a bigger price."
+            },
+            {
+              "text": "About 1.49",
+              "why": "Yes. 1.02 multiplied 20 times is about 1.49."
+            },
+            {
+              "text": "About 2.00",
+              "why": "Prices double in about 36 years at 2%, not in 20."
+            },
+            {
+              "text": "About 1.02",
+              "why": "That is one year. Twenty years means twenty multiplications."
+            }
+          ],
+          "answer": 1
+        },
+        {
+          "id": "ft2030-s3-u6-l3-q4",
+          "label": "Twenty-five years",
+          "prompt": "Noor pays $2,400 a month in bills. Prices rise 3% a year (an example). What will the same bills cost a month in 25 years, to the cent?",
+          "type": "number",
+          "hint": "The factor is 1.03 and the number of years is 25.",
+          "unit": "$",
+          "answer": 502507,
+          "tolerance": 1,
+          "why": "Multiply by 1.03 for each of the 25 years.",
+          "working": "$2,400 x 1.03^25 = $5025.07.",
+          "miss": "Check you multiply by 1.03 and use 25 as the power.",
+          "traps": [
+            {
+              "value": 420000,
+              "why": "That adds 3% twenty-five times, which is 75%. The rises stack on each other."
+            }
+          ]
+        },
+        {
+          "id": "ft2030-s3-u6-l3-q5",
+          "label": "Total rise",
+          "prompt": "Prices rise 4% a year (an example). By what percent are they higher after 5 years? Round to one decimal place.",
+          "type": "number",
+          "terms": [
+            {
+              "term": "inflation",
+              "meaning": "A rise in prices over time, so the same dollars buy less."
+            }
+          ],
+          "hint": "Find the factor first, then change it to a percent.",
+          "unit": "%",
+          "answer": 21.7,
+          "tolerance": 0.05,
+          "why": "Multiply by 1.04 five times, then take away the starting 1.",
+          "working": "1.04^5 = 1.2167. 1.2167 - 1 = 0.2167, which is 21.7%.",
+          "miss": "The total is the factor minus 1, written as a percent.",
+          "traps": [
+            {
+              "value": 20,
+              "why": "That adds 4% five times. Each rise is on a bigger price, so the total is a little more."
+            }
+          ]
+        },
+        {
+          "id": "ft2030-s3-u6-l3-q6",
+          "label": "Rae’s bills",
+          "prompt": "Rae’s bills are $3,200 a month today. Prices rise 2% a year (an example). What will they be in 30 years, to the cent?",
+          "type": "number",
+          "hint": "Use 1.02 and 30 years.",
+          "unit": "$",
+          "answer": 579636,
+          "tolerance": 1,
+          "why": "Multiply by 1.02 thirty times.",
+          "working": "$3,200 x 1.02^30 = $5796.36.",
+          "miss": "Multiply by 1.02 once for each of the 30 years.",
+          "traps": [
+            {
+              "value": 512000,
+              "why": "That adds 2% thirty times, which is 60%. The rises stack on each other."
+            }
+          ]
+        },
+        {
+          "id": "ft2030-s3-u6-l3-q7",
+          "label": "Does it cover",
+          "prompt": "Rae expects $5,500 a month in 30 years. Her bills will be $5,796.36 then. Does her income cover her bills?",
+          "type": "choice",
+          "hint": "Compare the two amounts in the same year’s dollars.",
+          "options": [
+            {
+              "text": "No, her bills will be higher",
+              "why": "Yes, that is right. $5,796.36 is more than $5,500."
+            },
+            {
+              "text": "Yes, $5,500 is more than $3,200",
+              "why": "That compares income in 30 years with bills today. Compare both in the same year’s dollars."
+            },
+            {
+              "text": "Yes, her bills will be about $5,120",
+              "why": "That adds 2% thirty times and gets 60%. The rises stack, so the bills are higher than that."
+            }
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ft2030-s3-u6-l3-q8",
+          "label": "Past $1,800",
+          "prompt": "The bars show $1,000 of bills after 20 years at four example rates. Tap the lowest rate that takes it past $1,800.",
+          "type": "point",
+          "figure": {
+            "kind": "bars",
+            "title": "$1,000 of bills after 20 years",
+            "unit": "$",
+            "bars": [
+              {
+                "label": "1% a year",
+                "value": 122019
+              },
+              {
+                "label": "2% a year",
+                "value": 148595
+              },
+              {
+                "label": "3% a year",
+                "value": 180611
+              },
+              {
+                "label": "4% a year",
+                "value": 219112
+              }
+            ]
+          },
+          "hint": "Read each bar from the lowest rate up.",
+          "answer": 2,
+          "why": "At 3% the bills reach $1,806.11, past $1,800. At 2% they reach $1,485.95, which is not enough.",
+          "miss": "Check the bars from the lowest rate and stop at the first one over $1,800.00."
+        },
+        {
+          "id": "ft2030-s3-u6-l3-q9",
+          "label": "Bank target",
+          "prompt": "The Bank of Canada aims to keep yearly inflation near which rate?",
+          "type": "choice",
+          "hint": "Look at the card on the Rule of 72 for prices.",
+          "options": [
+            {
+              "text": "0%",
+              "why": "The Bank aims for prices that rise slowly, not for no rise at all."
+            },
+            {
+              "text": "5%",
+              "why": "That is faster than the Bank aims for."
+            },
+            {
+              "text": "10%",
+              "why": "That is far above the target."
+            },
+            {
+              "text": "2%",
+              "why": "Yes. Its target is 2%, the midpoint of a 1% to 3% range."
+            }
+          ],
+          "answer": 3
+        }
+      ]
+    },
+    {
+      "id": "ft2030-s3-u6-l4",
+      "title": "Real return",
+      "kind": "lesson",
+      "learn": [
+        "Work out a real return and say what a statement really buys.",
+        "Use the Rule of 72 on the real return."
+      ],
+      "cards": [
+        {
+          "text": "A statement counts dollars. That is the nominal amount. Real means what the money buys after prices rise. Take $200,000 in a GIC at 3% for 10 years, with prices rising 3% a year (a class example). The statement grows to $268,783. Prices grew just as much, so it still buys only $200,000 of today’s goods."
+        },
+        {
+          "text": "Real return = (1 + rate) / (1 + inflation) - 1. At a 3% rate and 3% inflation that is 1.03 / 1.03 - 1 = 0, so you run in place. Dollars on the statement divided by (1 + inflation) for each year gives what they buy today. Here is the same GIC at three inflation rates.",
+          "figure": {
+            "kind": "table",
+            "title": "A 3% GIC for 10 years",
+            "columns": [
+              "Inflation",
+              "Real return",
+              "Buys today"
+            ],
+            "rows": [
+              [
+                "2%",
+                "1.0%",
+                "$220,496"
+              ],
+              [
+                "3%",
+                "0.0%",
+                "$200,000"
+              ],
+              [
+                "5%",
+                "-1.9%",
+                "$165,010"
+              ]
+            ]
+          }
+        },
+        {
+          "text": "A shortcut is rate minus inflation: 3% - 5% = -2%, near the exact -1.9%. It drifts at bigger rates: at 8% and 5% it says 3.0%, but the exact answer is 2.9%. The game shows both numbers: the Bank of DAA lists a savings rate and the inflation rate. The game starts at 2.75% and 2.1%, and the teacher can change them."
+        },
+        {
+          "text": "The Rule of 72 can run on the real return. A 6% fund with 2% inflation has a real return of about 4%, so what it buys doubles in about 72 / 4 = 18 years. The dollars double sooner, in about 12 years, but each dollar buys less by then. Doubled dollars are not doubled buying power."
+        }
+      ],
+      "questions": [
+        {
+          "id": "ft2030-s3-u6-l4-q1",
+          "label": "What it buys",
+          "prompt": "Ines’s statement shows more dollars each year. Which measure says whether those dollars buy more?",
+          "type": "choice",
+          "terms": [
+            {
+              "term": "nominal",
+              "meaning": "The dollar amount shown on a statement, before prices are taken into account."
+            },
+            {
+              "term": "real return",
+              "meaning": "How fast what your money can buy grows, after prices rise."
+            }
+          ],
+          "hint": "Which measure takes prices into account?",
+          "options": [
+            {
+              "text": "Real return",
+              "why": "Yes. Real return counts what the money buys after prices rise."
+            },
+            {
+              "text": "Nominal return",
+              "why": "Nominal counts dollars on the statement. Prices can rise as fast as the dollars."
+            },
+            {
+              "text": "The balance on the statement",
+              "why": "A bigger balance can still buy less if prices rose more."
+            }
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ft2030-s3-u6-l4-q2",
+          "label": "Shortcut result",
+          "prompt": "A GIC pays 3.5% and prices rise 3% (an example). What does the shortcut say happens to buying power in a year?",
+          "type": "choice",
+          "terms": [
+            {
+              "term": "real return",
+              "meaning": "How fast what your money can buy grows, after prices rise."
+            }
+          ],
+          "hint": "Take inflation away from the rate.",
+          "options": [
+            {
+              "text": "It falls by about 0.5%",
+              "why": "The rate is higher than inflation, so buying power grows."
+            },
+            {
+              "text": "It grows by about 3.5%",
+              "why": "That is the dollar growth. Take away inflation to get buying power."
+            },
+            {
+              "text": "It stays the same",
+              "why": "It would only stay the same if the rate equalled inflation."
+            },
+            {
+              "text": "It grows by about 0.5%",
+              "why": "Yes. 3.5% - 3% = 0.5%."
+            }
+          ],
+          "answer": 3
+        },
+        {
+          "id": "ft2030-s3-u6-l4-q3",
+          "label": "Which one falls",
+          "prompt": "Look at the table. Which GIC is the only one whose buying power falls over a year?",
+          "type": "choice",
+          "terms": [
+            {
+              "term": "real return",
+              "meaning": "How fast what your money can buy grows, after prices rise."
+            }
+          ],
+          "hint": "Compare each rate with the inflation next to it.",
+          "options": [
+            {
+              "text": "GIC A",
+              "why": "Yes. Its 2% is below the 3% inflation, so it buys less."
+            },
+            {
+              "text": "GIC B",
+              "why": "Its 4% is above the 3% inflation, so it buys more."
+            },
+            {
+              "text": "GIC C",
+              "why": "Its 3% equals the inflation, so it buys the same. It runs in place."
+            }
+          ],
+          "answer": 0,
+          "figure": {
+            "kind": "table",
+            "title": "Three GICs",
+            "columns": [
+              "GIC",
+              "Rate",
+              "Inflation"
+            ],
+            "rows": [
+              [
+                "A",
+                "2%",
+                "3%"
+              ],
+              [
+                "B",
+                "4%",
+                "3%"
+              ],
+              [
+                "C",
+                "3%",
+                "3%"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "ft2030-s3-u6-l4-q4",
+          "label": "Real return",
+          "prompt": "A GIC pays 6% and prices rise 3.5% (an example). Use the formula. What is the real return, to one decimal place?",
+          "type": "number",
+          "terms": [
+            {
+              "term": "real return",
+              "meaning": "How fast what your money can buy grows, after prices rise."
+            }
+          ],
+          "hint": "Divide one plus the rate by one plus inflation.",
+          "unit": "%",
+          "answer": 2.4,
+          "tolerance": 0.05,
+          "why": "Real return = (1 + rate) / (1 + inflation) - 1.",
+          "working": "1.06 / 1.035 = 1.0242. 1.0242 - 1 = 0.0242, which is 2.4%.",
+          "miss": "Divide 1.06 by 1.035, then take away 1.",
+          "traps": [
+            {
+              "value": 2.5,
+              "why": "That is rate minus inflation, the shortcut. The exact formula divides, and gives a little less."
+            }
+          ]
+        },
+        {
+          "id": "ft2030-s3-u6-l4-q5",
+          "label": "Buying power falls",
+          "prompt": "A GIC pays 2% and prices rise 6% (an example). By what percent does what the money buys fall in a year? Round to one decimal place.",
+          "type": "number",
+          "terms": [
+            {
+              "term": "real return",
+              "meaning": "How fast what your money can buy grows, after prices rise."
+            }
+          ],
+          "hint": "Use the real return formula. It comes out below zero; type the size of the fall.",
+          "unit": "%",
+          "answer": 3.8,
+          "tolerance": 0.05,
+          "why": "A negative real return means buying power falls. Ignore the minus sign for the size of the fall.",
+          "working": "1.02 / 1.06 = 0.9623. 0.9623 - 1 = -0.0377, a fall of 3.8%.",
+          "miss": "Divide 1.02 by 1.06, then take away 1. Give the size of the fall.",
+          "traps": [
+            {
+              "value": 4,
+              "why": "That is the shortcut, 6% - 2%. The exact formula divides, and gives a smaller fall."
+            }
+          ]
+        },
+        {
+          "id": "ft2030-s3-u6-l4-q6",
+          "label": "Doubling buying power",
+          "prompt": "A fund earns 9% and prices rise 3% (an example). Use a real return of about 6%. About how many years until what the money buys doubles?",
+          "type": "choice",
+          "terms": [
+            {
+              "term": "Rule of 72",
+              "meaning": "A quick estimate: years to double is about 72 divided by the yearly rate in percent."
+            },
+            {
+              "term": "real return",
+              "meaning": "How fast what your money can buy grows, after prices rise."
+            }
+          ],
+          "hint": "Run the Rule of 72 on the real return.",
+          "options": [
+            {
+              "text": "About 8 years",
+              "why": "That is 72 / 9, when the dollars double. Buying power uses the real return."
+            },
+            {
+              "text": "About 12 years",
+              "why": "Yes. 72 / 6 = 12."
+            },
+            {
+              "text": "About 24 years",
+              "why": "That is 72 / 3, the years for prices to double."
+            },
+            {
+              "text": "About 6 years",
+              "why": "That is the real return, not the years. Divide 72 by it."
+            }
+          ],
+          "answer": 1
+        },
+        {
+          "id": "ft2030-s3-u6-l4-q7",
+          "label": "On the statement",
+          "prompt": "Oren puts $50,000 in a GIC at 4% a year for 10 years. How much does the statement show, to the nearest dollar?",
+          "type": "number",
+          "terms": [
+            {
+              "term": "nominal",
+              "meaning": "The dollar amount shown on a statement, before prices are taken into account."
+            }
+          ],
+          "hint": "Multiply by 1.04, ten times.",
+          "unit": "$",
+          "answer": 7401200,
+          "tolerance": 50,
+          "why": "Multiply by 1.04 for each of the 10 years.",
+          "working": "$50,000 x 1.04^10 = $74,012.21, about $74,012.",
+          "miss": "Use 1.04 as the yearly factor and 10 as the power.",
+          "traps": [
+            {
+              "value": 7000000,
+              "why": "That adds 4% of $50,000 ten times. The balance grows on itself, so it is a little higher."
+            }
+          ]
+        },
+        {
+          "id": "ft2030-s3-u6-l4-q8",
+          "label": "In today’s money",
+          "prompt": "Oren’s statement shows $74,012.21 after 10 years. Prices rose 3% a year over that time. What does that statement buy in today’s money, to the nearest dollar?",
+          "type": "number",
+          "terms": [
+            {
+              "term": "real return",
+              "meaning": "How fast what your money can buy grows, after prices rise."
+            }
+          ],
+          "hint": "Divide by 1.03, ten times.",
+          "unit": "$",
+          "answer": 5507200,
+          "tolerance": 50,
+          "why": "Divide the statement amount by (1 + inflation) once for each year.",
+          "working": "1.03^10 = 1.3439. $74,012.21 / 1.3439 = $55,072.04, about $55,072.",
+          "miss": "Divide by 1.03 for each year. Do not multiply.",
+          "traps": [
+            {
+              "value": 5180855,
+              "why": "That takes 30% off, as if 3% a year just subtracted. Prices compound, so divide by 1.03 each year."
+            }
+          ]
+        }
+      ],
+      "go": {
+        "building": "bank-of-daa",
+        "label": "See the live rates"
+      }
+    },
+    {
+      "id": "ft2030-s3-u6-l5",
+      "title": "Percent change and short stretches",
+      "kind": "lesson",
+      "learn": [
+        "Find a percent change and a new price from one.",
+        "Say why a short stretch is only a sample."
+      ],
+      "cards": [
+        {
+          "text": "Percent change says how far a price moved as a share of where it started: (latest - start) / start x 100. A price goes from $50.00 to $56.00. The change is $6.00, and $6.00 / $50.00 = 0.12, which is 12%. A fall is the same sum with a minus sign. Divide by the start, not the latest."
+        },
+        {
+          "text": "You can run it the other way. A $60.00 price that rises 10% gains $6.00 and becomes $66.00. One that falls 10% loses $6.00 and becomes $54.00. A rise of 10% and then a fall of 10% does not get you back: $66.00 x 0.90 = $59.40, because the fall is 10% of a bigger price."
+        },
+        {
+          "text": "A percent change covers whatever stretch you measure. A price that goes from $1,000.00 to $1,300.00 over 4 years has changed 30% in total. That is not 30% a year. Always say how long the stretch was before you compare two changes."
+        },
+        {
+          "text": "A short stretch is a sample, not a verdict. Here is a made-up price that starts at $50.00. After week 2 it is up 8% from the start. After week 4 it is down 5% from the start. After week 6 it is up 4% from the start. Stop on a different week and you tell a different story.",
+          "figure": {
+            "kind": "table",
+            "title": "A made-up price",
+            "columns": [
+              "Week",
+              "Price",
+              "Change from start"
+            ],
+            "rows": [
+              [
+                "0",
+                "$50.00",
+                "start"
+              ],
+              [
+                "2",
+                "$54.00",
+                "+8.0%"
+              ],
+              [
+                "4",
+                "$47.50",
+                "-5.0%"
+              ],
+              [
+                "6",
+                "$52.00",
+                "+4.0%"
+              ]
+            ]
+          }
+        }
+      ],
+      "questions": [
+        {
+          "id": "ft2030-s3-u6-l5-q1",
+          "label": "What to divide by",
+          "prompt": "Percent change divides the change in price by which price?",
+          "type": "choice",
+          "terms": [
+            {
+              "term": "percent change",
+              "meaning": "How far a price moved, as a share of where it started."
+            }
+          ],
+          "hint": "Look at the formula on the first card.",
+          "options": [
+            {
+              "text": "The starting price",
+              "why": "Yes. The change is a share of where the price started."
+            },
+            {
+              "text": "The latest price",
+              "why": "That is a common slip. It makes a rise look smaller than it was."
+            },
+            {
+              "text": "The average of the two",
+              "why": "The formula divides by the start, not an average."
+            }
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ft2030-s3-u6-l5-q2",
+          "label": "A rise in percent",
+          "prompt": "A made-up price goes from $80.00 to $92.00. What is the percent change?",
+          "type": "number",
+          "terms": [
+            {
+              "term": "percent change",
+              "meaning": "How far a price moved, as a share of where it started."
+            }
+          ],
+          "hint": "Find the rise in dollars first.",
+          "unit": "%",
+          "answer": 15,
+          "tolerance": 0,
+          "why": "Divide the rise by the starting price.",
+          "working": "($92.00 - $80.00) / $80.00 = 0.15, which is 15%.",
+          "miss": "Divide the $12.00 rise by the starting price.",
+          "traps": [
+            {
+              "value": 13,
+              "why": "That divides $12.00 by $92.00, the latest price. Divide by the start, $80.00."
+            }
+          ]
+        },
+        {
+          "id": "ft2030-s3-u6-l5-q3",
+          "label": "A fall in percent",
+          "prompt": "Look at the table. By what percent had the price fallen by week 4?",
+          "type": "number",
+          "terms": [
+            {
+              "term": "percent change",
+              "meaning": "How far a price moved, as a share of where it started."
+            }
+          ],
+          "figure": {
+            "kind": "table",
+            "title": "A made-up price",
+            "columns": [
+              "Week",
+              "Price"
+            ],
+            "rows": [
+              [
+                "0",
+                "$40.00"
+              ],
+              [
+                "2",
+                "$44.00"
+              ],
+              [
+                "4",
+                "$32.00"
+              ],
+              [
+                "6",
+                "$42.00"
+              ]
+            ]
+          },
+          "hint": "Find the change in dollars, then divide by the starting price.",
+          "unit": "%",
+          "answer": 20,
+          "tolerance": 0,
+          "why": "Percent change is (latest - start) / start x 100. Here the price fell.",
+          "working": "($32.00 - $40.00) / $40.00 = -0.20, a fall of 20%.",
+          "miss": "Divide the change by the price at week 0, not the price at week 4.",
+          "traps": [
+            {
+              "value": 25,
+              "why": "That divides $8.00 by $32.00, the latest price. Divide by the start, $40.00."
+            }
+          ]
+        },
+        {
+          "id": "ft2030-s3-u6-l5-q4",
+          "label": "New price",
+          "prompt": "A made-up price of $200.00 rises 15%. What is the new price?",
+          "type": "number",
+          "terms": [
+            {
+              "term": "percent change",
+              "meaning": "How far a price moved, as a share of where it started."
+            }
+          ],
+          "hint": "Find 15% of the starting price first.",
+          "unit": "$",
+          "answer": 23000,
+          "tolerance": 0,
+          "why": "The rise is 15% of the start. Add it to the start.",
+          "working": "$200.00 x 0.15 = $30.00. $200.00 + $30.00 = $230.00.",
+          "miss": "Work out the rise in dollars, then add it to $200.00.",
+          "traps": [
+            {
+              "value": 3000,
+              "why": "That is only the rise. The new price is the start plus the rise."
+            }
+          ]
+        },
+        {
+          "id": "ft2030-s3-u6-l5-q5",
+          "label": "Up then down",
+          "prompt": "A made-up price of $100.00 rises 10%, then falls 10%. What is the price at the end?",
+          "type": "number",
+          "terms": [
+            {
+              "term": "percent change",
+              "meaning": "How far a price moved, as a share of where it started."
+            }
+          ],
+          "hint": "Do the rise first, then take 10% of the new price.",
+          "unit": "$",
+          "answer": 9900,
+          "tolerance": 0,
+          "why": "The fall is 10% of the higher price, so it is bigger than the rise.",
+          "working": "$100.00 x 1.10 = $110.00. $110.00 x 0.90 = $99.00.",
+          "miss": "The fall is 10% of $110.00, not of $100.00.",
+          "traps": [
+            {
+              "value": 10000,
+              "why": "That assumes the fall cancels the rise. The fall is 10% of a bigger price."
+            }
+          ]
+        },
+        {
+          "id": "ft2030-s3-u6-l5-q6",
+          "label": "Total or yearly",
+          "prompt": "A made-up price goes from $2,000.00 to $2,300.00 over 3 years, a change of 15%. What does the 15% describe?",
+          "type": "choice",
+          "terms": [
+            {
+              "term": "percent change",
+              "meaning": "How far a price moved, as a share of where it started."
+            }
+          ],
+          "hint": "Think about the stretch that was measured.",
+          "options": [
+            {
+              "text": "The change in each year",
+              "why": "That would be 15% a year, which is far more than the total shows."
+            },
+            {
+              "text": "The total change over the 3 years",
+              "why": "Yes. A percent change covers the whole stretch measured."
+            },
+            {
+              "text": "The change in the first year only",
+              "why": "The change was measured from the start to the end, not for one year."
+            }
+          ],
+          "answer": 1
+        },
+        {
+          "id": "ft2030-s3-u6-l5-q7",
+          "label": "Six weeks",
+          "prompt": "A made-up price is up 12% after six weeks. Which statement does that support?",
+          "type": "choice",
+          "terms": [
+            {
+              "term": "sample",
+              "meaning": "A small slice of something bigger, such as six weeks out of many years."
+            }
+          ],
+          "hint": "Think about what one short stretch can show.",
+          "options": [
+            {
+              "text": "The price will keep rising",
+              "why": "Six weeks does not show where a price goes next."
+            },
+            {
+              "text": "The price is safe from falling",
+              "why": "The table showed a price down in week 4 and up in week 6. One stretch does not rule out a fall."
+            },
+            {
+              "text": "Six weeks is a small sample of how the price behaves",
+              "why": "Yes. A short stretch can change sign if you stop on a different week."
+            }
+          ],
+          "answer": 2
+        }
+      ]
+    }
+  ]
+}

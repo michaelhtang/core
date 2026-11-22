@@ -1,0 +1,1426 @@
+{
+  "id": "ft2030-s3-u7",
+  "title": "Investing with values",
+  "blurb": "Three ways to invest by your values, and who a choice affects.",
+  "outcome_codes": [
+    "FIN3090 3.5",
+    "FIN3080 1.18"
+  ],
+  "levels": [
+    {
+      "id": "ft2030-s3-u7-l1",
+      "title": "Three ways to invest by values",
+      "kind": "lesson",
+      "learn": [
+        "Tell the three ways to invest by your values apart.",
+        "Say what a screen is, and what each way keeps or leaves out."
+      ],
+      "cards": [
+        {
+          "text": "Ethical investing means choosing investments by your values as well as by what they might earn. An investor does this with a screen: a rule plus facts about each company. The rule says what to look for. The facts tell you which companies pass."
+        },
+        {
+          "text": "The first way is to exclude. You leave out companies that do something you will not own. The rule could be “no animal testing”. A fund that says “we own no weapons makers” is excluding. Every company that passes the rule stays in."
+        },
+        {
+          "text": "The second way is best in class. You keep every kind of business, but in each kind you own only the companies with the best scores. The rule is about ranking. It compares a company only with others of its own kind."
+        },
+        {
+          "text": "The third way is to own and vote. You keep the company and use what an owner has: a vote at its annual meeting. You are trying to change the company from inside, not to leave it. A shareholder is an owner of shares."
+        },
+        {
+          "text": "Side by side, the three ways all start from the investor’s values. They differ in what the investor does about a company.",
+          "figure": {
+            "kind": "table",
+            "title": "Three ways to invest by values",
+            "columns": [
+              "Way",
+              "What you do",
+              "A rule could be"
+            ],
+            "rows": [
+              [
+                "Exclude",
+                "Leave out what you will not own",
+                "“No animal testing”"
+              ],
+              [
+                "Best in class",
+                "Keep the top scorers in each kind",
+                "“Top score in each kind”"
+              ],
+              [
+                "Own and vote",
+                "Stay an owner and vote",
+                "“Keep it, vote at the meeting”"
+              ]
+            ]
+          }
+        },
+        {
+          "text": "Rina has $12,000. She puts $1,500 in each of these eight made-up companies. Her rule is “no animal testing”. Two companies fail it, so six stay. The scores are made up too.",
+          "figure": {
+            "kind": "table",
+            "title": "Rina’s eight companies",
+            "columns": [
+              "Company",
+              "Kind of business",
+              "Tests on animals",
+              "Score (of 100)"
+            ],
+            "rows": [
+              [
+                "Glimmer Lane Cosmetics",
+                "Beauty",
+                "Yes",
+                "41"
+              ],
+              [
+                "Fernhill Soap Works",
+                "Beauty",
+                "No",
+                "78"
+              ],
+              [
+                "Northcote Pharmacy Labs",
+                "Health",
+                "Yes",
+                "60"
+              ],
+              [
+                "Willow Clinic Supplies",
+                "Health",
+                "No",
+                "64"
+              ],
+              [
+                "Alder Stitch Apparel",
+                "Clothing",
+                "No",
+                "48"
+              ],
+              [
+                "Birchmoor Outfitters",
+                "Clothing",
+                "No",
+                "66"
+              ],
+              [
+                "Riverbend Printing",
+                "Paper",
+                "No",
+                "72"
+              ],
+              [
+                "Cedarline Paper",
+                "Paper",
+                "No",
+                "52"
+              ]
+            ]
+          }
+        }
+      ],
+      "questions": [
+        {
+          "label": "Rule on testing",
+          "prompt": "A fund’s rule says: “We own no company that tests its products on animals.” Which way to invest by values is this?",
+          "type": "choice",
+          "terms": [
+            {
+              "term": "screen",
+              "meaning": "A rule plus facts about each company, used to decide which companies an investor will own."
+            }
+          ],
+          "hint": "Look at the second card: what does the investor do with a company that breaks the rule?",
+          "id": "ft2030-s3-u7-l1-q1",
+          "options": [
+            {
+              "text": "Best in class",
+              "why": "Best in class ranks companies by score within a kind. This rule is about one activity, not a ranking."
+            },
+            {
+              "text": "Exclude",
+              "why": "The rule leaves out companies that do something the investor will not own. Companies that pass stay in."
+            },
+            {
+              "text": "Own and vote",
+              "why": "Own and vote keeps the company. This rule leaves out the companies that test."
+            }
+          ],
+          "answer": 1
+        },
+        {
+          "label": "Top of each kind",
+          "prompt": "A fund keeps every kind of business, but holds only the top-scoring company in each kind. Which way is this?",
+          "type": "choice",
+          "hint": "The third card describes keeping every kind and ranking within it.",
+          "id": "ft2030-s3-u7-l1-q2",
+          "options": [
+            {
+              "text": "Exclude",
+              "why": "Exclude drops companies that break a rule about what they do. This fund drops lower scorers."
+            },
+            {
+              "text": "Best in class",
+              "why": "It ranks companies within each kind and keeps the best scorer. Every kind stays in the fund."
+            },
+            {
+              "text": "Own and vote",
+              "why": "Own and vote is about using a shareholder’s vote, not about ranking scores."
+            }
+          ],
+          "answer": 1
+        },
+        {
+          "label": "Stay and vote",
+          "prompt": "Elena owns shares in a company. She keeps them and votes at its annual meeting for a change in how it works. Which way is this?",
+          "type": "choice",
+          "terms": [
+            {
+              "term": "shareholder",
+              "meaning": "An owner of shares in a company."
+            },
+            {
+              "term": "annual meeting",
+              "meaning": "The yearly meeting where a company’s shareholders vote."
+            }
+          ],
+          "hint": "Think about what she does with the shares she holds.",
+          "id": "ft2030-s3-u7-l1-q3",
+          "options": [
+            {
+              "text": "Exclude",
+              "why": "Excluding means selling or never buying. Elena keeps her shares."
+            },
+            {
+              "text": "Own and vote",
+              "why": "She stays an owner and uses her vote to push for change."
+            },
+            {
+              "text": "Best in class",
+              "why": "Nothing here ranks companies by score. Elena uses her vote."
+            }
+          ],
+          "answer": 1
+        },
+        {
+          "label": "What a screen is",
+          "prompt": "What is a screen, as the cards use the word?",
+          "type": "choice",
+          "hint": "The first card defines it in its second sentence.",
+          "id": "ft2030-s3-u7-l1-q4",
+          "options": [
+            {
+              "text": "A list of companies approved by an official body",
+              "why": "The cards describe no official list. A screen is built from an investor’s own rule."
+            },
+            {
+              "text": "A fund’s yearly fee",
+              "why": "A fee is what a fund charges. A screen is how an investor chooses companies."
+            },
+            {
+              "text": "A rule plus facts about each company",
+              "why": "Yes. The rule says what to look for, and the facts show which companies pass."
+            },
+            {
+              "text": "A vote at a company’s annual meeting",
+              "why": "A vote belongs to owning shares. A screen is a rule plus facts."
+            }
+          ],
+          "answer": 2
+        },
+        {
+          "label": "Over the limit",
+          "prompt": "A fund excludes any company that sends more than 25% of its waste to landfill. Tap the one company in this chart that the rule leaves out.",
+          "type": "point",
+          "figure": {
+            "kind": "bars",
+            "title": "Waste sent to landfill",
+            "unit": "%",
+            "bars": [
+              {
+                "label": "Fernhill Soap",
+                "value": 12
+              },
+              {
+                "label": "Birchmoor Outfitters",
+                "value": 20
+              },
+              {
+                "label": "Alder Stitch",
+                "value": 40
+              },
+              {
+                "label": "Willow Clinic",
+                "value": 14
+              }
+            ]
+          },
+          "terms": [
+            {
+              "term": "landfill waste",
+              "meaning": "Waste that is buried instead of reused or recycled."
+            }
+          ],
+          "hint": "Compare each bar with 25%. Only one bar is over it.",
+          "answer": 2,
+          "why": "Alder Stitch Apparel sends 40% of its waste to landfill, which is over 25%. The other three are at or under it.",
+          "miss": "The rule leaves out companies over 25%. Read each bar against that number.",
+          "id": "ft2030-s3-u7-l1-q5"
+        },
+        {
+          "label": "Share left out",
+          "prompt": "Joel has eight companies. His rule leaves out 2 of them. What percent of his companies does the rule leave out?",
+          "type": "number",
+          "hint": "Divide the number left out by the number he started with.",
+          "unit": "%",
+          "answer": 25,
+          "tolerance": 0,
+          "why": "The share left out is the number left out divided by the number he began with.",
+          "working": "2 / 8 = 0.25 = 25%.",
+          "traps": [
+            {
+              "value": 75,
+              "why": "That is the share that stays in. The question asks about the companies left out."
+            }
+          ],
+          "miss": "Divide 2 by 8, then turn the result into a percent.",
+          "id": "ft2030-s3-u7-l1-q6"
+        },
+        {
+          "label": "Same money, fewer",
+          "prompt": "Ola puts $18,000 equally into 6 companies. A rule removes one, and she spreads the same $18,000 equally over the 5 left. How much goes into each?",
+          "type": "number",
+          "hint": "The total stays the same. Only the number of companies changes.",
+          "unit": "$",
+          "answer": 360000,
+          "tolerance": 0,
+          "why": "The same money is shared by fewer companies, so each one holds more.",
+          "working": "$18,000 / 5 = $3,600.00.",
+          "traps": [
+            {
+              "value": 300000,
+              "why": "That is the amount in each company before the rule removed one ($3,000)."
+            }
+          ],
+          "miss": "Divide the total by the number of companies that are left, not the number she started with.",
+          "id": "ft2030-s3-u7-l1-q7"
+        },
+        {
+          "label": "Who is left out",
+          "prompt": "Use the table. Which of these companies does the rule “no animal testing” leave out?",
+          "type": "choice",
+          "figure": {
+            "kind": "table",
+            "title": "Rina’s eight companies",
+            "columns": [
+              "Company",
+              "Kind of business",
+              "Tests on animals",
+              "Score (of 100)"
+            ],
+            "rows": [
+              [
+                "Glimmer Lane Cosmetics",
+                "Beauty",
+                "Yes",
+                "41"
+              ],
+              [
+                "Fernhill Soap Works",
+                "Beauty",
+                "No",
+                "78"
+              ],
+              [
+                "Northcote Pharmacy Labs",
+                "Health",
+                "Yes",
+                "60"
+              ],
+              [
+                "Willow Clinic Supplies",
+                "Health",
+                "No",
+                "64"
+              ],
+              [
+                "Alder Stitch Apparel",
+                "Clothing",
+                "No",
+                "48"
+              ],
+              [
+                "Birchmoor Outfitters",
+                "Clothing",
+                "No",
+                "66"
+              ],
+              [
+                "Riverbend Printing",
+                "Paper",
+                "No",
+                "72"
+              ],
+              [
+                "Cedarline Paper",
+                "Paper",
+                "No",
+                "52"
+              ]
+            ]
+          },
+          "hint": "Find the column called “Tests on animals”.",
+          "id": "ft2030-s3-u7-l1-q8",
+          "options": [
+            {
+              "text": "Fernhill Soap Works",
+              "why": "It has the highest score, but this rule is about testing, not scores. Its row says No."
+            },
+            {
+              "text": "Glimmer Lane Cosmetics",
+              "why": "It is the only one of these three with Yes in the “Tests on animals” column."
+            },
+            {
+              "text": "Riverbend Printing",
+              "why": "It does not test on animals. Its row says No."
+            }
+          ],
+          "answer": 1
+        },
+        {
+          "label": "How they decide",
+          "prompt": "Both exclude and best in class can leave companies out. How do they decide which ones go?",
+          "type": "choice",
+          "hint": "Compare the second and third cards: one uses a rule about what a company does, one ranks.",
+          "id": "ft2030-s3-u7-l1-q9",
+          "options": [
+            {
+              "text": "Exclude applies a rule; best in class ranks scores",
+              "why": "Exclude uses a rule about what a company does. Best in class ranks within each kind."
+            },
+            {
+              "text": "Exclude ranks scores; best in class applies a rule",
+              "why": "That swaps them. Ranking within a kind is best in class."
+            },
+            {
+              "text": "Exclude uses a vote; best in class uses a price",
+              "why": "Neither way uses a vote or the share price. A vote belongs to own and vote."
+            },
+            {
+              "text": "Both choose by a vote at the annual meeting",
+              "why": "Only own and vote uses the annual meeting vote. The other two use a rule or a score."
+            }
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "ft2030-s3-u7-l2",
+      "title": "Whose values, and who a choice touches",
+      "kind": "lesson",
+      "learn": [
+        "Say whose values set a screen, and why two investors can choose different ones.",
+        "Name who a share touches, and who gets the money when you buy one."
+      ],
+      "cards": [
+        {
+          "text": "Whose values set the screen? The investor’s. If an adviser helps, the values are the client’s. There is no one official list of ethical companies that every investor follows. Two people can read the same facts and still pick different rules, because they care about different things."
+        },
+        {
+          "text": "Rina and Joel each have $12,000 and the same eight companies. Rina’s rule is “no animal testing”. Joel’s rule is “no more than 15% of waste sent to landfill”. Each splits the money equally over the companies that pass. Same facts, different rules, different lists."
+        },
+        {
+          "text": "These are the facts both rules use. Rina’s rule leaves out every company marked Yes. Joel’s leaves out every company above 15%. Reading the table is counting, and counting can be checked.",
+          "figure": {
+            "kind": "table",
+            "title": "Facts a screen can use",
+            "columns": [
+              "Company",
+              "Tests on animals",
+              "Waste to landfill"
+            ],
+            "rows": [
+              [
+                "Glimmer Lane Cosmetics",
+                "Yes",
+                "22%"
+              ],
+              [
+                "Fernhill Soap Works",
+                "No",
+                "12%"
+              ],
+              [
+                "Northcote Pharmacy Labs",
+                "Yes",
+                "13%"
+              ],
+              [
+                "Willow Clinic Supplies",
+                "No",
+                "14%"
+              ],
+              [
+                "Alder Stitch Apparel",
+                "No",
+                "40%"
+              ],
+              [
+                "Birchmoor Outfitters",
+                "No",
+                "20%"
+              ],
+              [
+                "Riverbend Printing",
+                "No",
+                "6%"
+              ],
+              [
+                "Cedarline Paper",
+                "No",
+                "28%"
+              ]
+            ]
+          }
+        },
+        {
+          "text": "Facts and values are different questions. “How many companies does this rule leave out?” is a fact: you count them. “Which rule should an investor use?” depends on what the investor values. A table can answer the first. It cannot settle the second."
+        },
+        {
+          "text": "A share touches people. An owner shares in how the company earns, can vote at its annual meeting, and helps set its price. If many investors will not buy a share, its price can fall, and selling new shares to raise money can get harder."
+        },
+        {
+          "text": "Who gets your money when you buy a share? Not the company. An exchange matches you with an investor who is selling, and that investor is paid. The company got its money once, when it first sold the share. It is like buying a used bike from its owner: the shop gets nothing."
+        }
+      ],
+      "questions": [
+        {
+          "label": "Whose values",
+          "prompt": "Who sets the values that a screen follows?",
+          "type": "choice",
+          "hint": "Look at the first card.",
+          "id": "ft2030-s3-u7-l2-q1",
+          "options": [
+            {
+              "text": "A national list of ethical companies",
+              "why": "The cards describe no official list. Each investor builds a screen."
+            },
+            {
+              "text": "The company being screened",
+              "why": "A company does not set the rule that decides whether it is owned."
+            },
+            {
+              "text": "The exchange where shares trade",
+              "why": "An exchange matches buyers and sellers. It does not set an investor’s values."
+            },
+            {
+              "text": "The investor, or the client if an adviser helps",
+              "why": "A screen is the investor’s own rule, built from what the investor cares about."
+            }
+          ],
+          "answer": 3
+        },
+        {
+          "label": "Same facts, two lists",
+          "prompt": "Rina and Joel read the same table and end with different lists of companies. What explains it?",
+          "type": "choice",
+          "hint": "Compare the rules on the second card.",
+          "id": "ft2030-s3-u7-l2-q2",
+          "options": [
+            {
+              "text": "One of them miscounted the companies",
+              "why": "Both lists follow from their own rules, so there is no mistake to find."
+            },
+            {
+              "text": "The facts about the companies changed between visits",
+              "why": "Both read the same table, so the facts were the same."
+            },
+            {
+              "text": "They chose different rules, which come from different values",
+              "why": "Same facts, different rules, different results. Neither list is a counting mistake."
+            },
+            {
+              "text": "Only one of the two rules is a real screen",
+              "why": "Both rules are a rule plus facts, so both are screens."
+            }
+          ],
+          "answer": 2
+        },
+        {
+          "label": "Fact or value",
+          "prompt": "Which of these questions is about facts, not values?",
+          "type": "choice",
+          "hint": "A fact can be counted or looked up in the table.",
+          "id": "ft2030-s3-u7-l2-q3",
+          "options": [
+            {
+              "text": "Which rule should every investor use?",
+              "why": "That depends on what each investor values. The table cannot settle it."
+            },
+            {
+              "text": "How many of the eight companies does Joel’s rule leave out?",
+              "why": "You can answer it by counting rows in the table. That is a fact."
+            },
+            {
+              "text": "What should an investor care about most?",
+              "why": "That is a question of values, not something to count."
+            }
+          ],
+          "answer": 1
+        },
+        {
+          "label": "Joel against Rina",
+          "prompt": "Rina’s rule leaves some companies, and Joel’s leaves fewer. Each splits $12,000 equally over the companies that pass their own rule. How many more dollars does each of Joel’s companies hold than each of Rina’s?",
+          "type": "number",
+          "figure": {
+            "kind": "table",
+            "title": "Facts a screen can use",
+            "columns": [
+              "Company",
+              "Tests on animals",
+              "Waste to landfill"
+            ],
+            "rows": [
+              [
+                "Glimmer Lane Cosmetics",
+                "Yes",
+                "22%"
+              ],
+              [
+                "Fernhill Soap Works",
+                "No",
+                "12%"
+              ],
+              [
+                "Northcote Pharmacy Labs",
+                "Yes",
+                "13%"
+              ],
+              [
+                "Willow Clinic Supplies",
+                "No",
+                "14%"
+              ],
+              [
+                "Alder Stitch Apparel",
+                "No",
+                "40%"
+              ],
+              [
+                "Birchmoor Outfitters",
+                "No",
+                "20%"
+              ],
+              [
+                "Riverbend Printing",
+                "No",
+                "6%"
+              ],
+              [
+                "Cedarline Paper",
+                "No",
+                "28%"
+              ]
+            ]
+          },
+          "hint": "Count the companies that pass each rule. Divide the total by each count, then subtract.",
+          "unit": "$",
+          "answer": 100000,
+          "tolerance": 0,
+          "why": "Joel’s rule leaves fewer companies, so each one holds more of the same money.",
+          "working": "Rina: 6 left, $12,000 / 6 = $2,000.00. Joel: 4 left, $12,000 / 4 = $3,000.00. $3,000.00 - $2,000.00 = $1,000.00.",
+          "traps": [
+            {
+              "value": 300000,
+              "why": "That is the amount in each of Joel’s companies. The question asks how much more it is than Rina’s."
+            }
+          ],
+          "miss": "Work out the amount in each company for Rina, then for Joel. Then find the gap.",
+          "id": "ft2030-s3-u7-l2-q4"
+        },
+        {
+          "label": "Prices and buyers",
+          "prompt": "Many investors decide not to buy a company’s shares. According to the cards, what can happen?",
+          "type": "choice",
+          "hint": "Read the fifth card.",
+          "id": "ft2030-s3-u7-l2-q5",
+          "options": [
+            {
+              "text": "Its price can fall, and raising money by selling new shares can get harder",
+              "why": "The cards say the price can fall and raising new money can get harder."
+            },
+            {
+              "text": "Its price must rise, because fewer shares are sold",
+              "why": "Fewer buyers does not make a price rise. The cards say it can fall."
+            },
+            {
+              "text": "The company has to pay back what it first raised",
+              "why": "Nothing on the cards says that. Later buyers and sellers deal with each other."
+            },
+            {
+              "text": "Nothing can change, since buyers pay other investors",
+              "why": "The sale is between investors, but the price can still move."
+            }
+          ],
+          "answer": 0
+        },
+        {
+          "label": "Who gets the $35",
+          "prompt": "Mia buys one share on an exchange for $35. Who gets most of her $35?",
+          "type": "choice",
+          "hint": "Read the last card: who is selling?",
+          "id": "ft2030-s3-u7-l2-q6",
+          "options": [
+            {
+              "text": "The company that first issued the share",
+              "why": "The company was paid once, when it first sold the share. Later sales are between investors."
+            },
+            {
+              "text": "The exchange itself",
+              "why": "An exchange only matches buyers with sellers. The seller is paid."
+            },
+            {
+              "text": "Every other shareholder of the company",
+              "why": "Only the investor who sold her this share is paid."
+            },
+            {
+              "text": "The investor who sold the share",
+              "why": "On an exchange you buy from another investor, so that investor is paid."
+            }
+          ],
+          "answer": 3
+        },
+        {
+          "label": "Selling a share",
+          "prompt": "Rina sells all her shares in one company to another investor on an exchange. What does that sale do to the company’s own money?",
+          "type": "choice",
+          "hint": "Ask who pays Rina.",
+          "id": "ft2030-s3-u7-l2-q7",
+          "options": [
+            {
+              "text": "The company loses what Rina is paid",
+              "why": "The company never receives or pays this money. It passes between two investors."
+            },
+            {
+              "text": "The company pays Rina back for her shares",
+              "why": "A company does not buy shares back in this sale. A buyer pays her."
+            },
+            {
+              "text": "Nothing: the buyer pays Rina, not the company",
+              "why": "The company is not part of the sale. It got its money when it first sold the shares."
+            },
+            {
+              "text": "The company receives Rina’s payment",
+              "why": "The buyer pays Rina. The company receives nothing from this sale."
+            }
+          ],
+          "answer": 2
+        },
+        {
+          "label": "Only an owner",
+          "prompt": "Which of these can only a current owner of shares do?",
+          "type": "choice",
+          "terms": [
+            {
+              "term": "annual meeting",
+              "meaning": "The yearly meeting where a company’s shareholders vote."
+            }
+          ],
+          "hint": "Think about the third way to invest by values.",
+          "id": "ft2030-s3-u7-l2-q8",
+          "options": [
+            {
+              "text": "Decide to leave the company out of a list",
+              "why": "Anyone can leave a company out. Exclude needs no shares."
+            },
+            {
+              "text": "Vote at the company’s annual meeting",
+              "why": "Voting is a shareholder’s right. It is what the own and vote way uses."
+            },
+            {
+              "text": "Look up the company’s score",
+              "why": "A score is a fact anyone can look up."
+            },
+            {
+              "text": "Say which rule another investor should use",
+              "why": "Anyone can say that. It is not a right of ownership."
+            }
+          ],
+          "answer": 1
+        },
+        {
+          "label": "Name the way",
+          "prompt": "Dana will not hold any company that tests on animals, so she sells every such share she owns. Which way to invest by values is this?",
+          "type": "choice",
+          "hint": "It is one of the three ways from level 1.",
+          "id": "ft2030-s3-u7-l2-q9",
+          "options": [
+            {
+              "text": "Own and vote",
+              "why": "She is selling, not staying as an owner to vote."
+            },
+            {
+              "text": "Exclude",
+              "why": "She leaves out companies that do something she will not own."
+            },
+            {
+              "text": "Best in class",
+              "why": "She is not ranking scores. She applies a rule about one activity."
+            }
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "id": "ft2030-s3-u7-l3",
+      "title": "What a screen costs",
+      "kind": "lesson",
+      "learn": [
+        "Show how a narrower screen changes the money in each company and the kinds of business left.",
+        "Say what a screen cannot see, and how to check what a fund really holds."
+      ],
+      "cards": [
+        {
+          "text": "Rina’s eight companies again, now with the facts a landfill limit and a best-in-class rule use. Glimmer Lane Cosmetics and Northcote Pharmacy Labs are the two that test on animals. Scores are out of 100 and made up.",
+          "figure": {
+            "kind": "table",
+            "title": "Rina’s eight companies, more facts",
+            "columns": [
+              "Company",
+              "Kind",
+              "Waste to landfill",
+              "Score"
+            ],
+            "rows": [
+              [
+                "Glimmer Lane Cosmetics",
+                "Beauty",
+                "22%",
+                "41"
+              ],
+              [
+                "Fernhill Soap Works",
+                "Beauty",
+                "12%",
+                "78"
+              ],
+              [
+                "Northcote Pharmacy Labs",
+                "Health",
+                "13%",
+                "60"
+              ],
+              [
+                "Willow Clinic Supplies",
+                "Health",
+                "14%",
+                "64"
+              ],
+              [
+                "Alder Stitch Apparel",
+                "Clothing",
+                "40%",
+                "48"
+              ],
+              [
+                "Birchmoor Outfitters",
+                "Clothing",
+                "20%",
+                "66"
+              ],
+              [
+                "Riverbend Printing",
+                "Paper",
+                "6%",
+                "72"
+              ],
+              [
+                "Cedarline Paper",
+                "Paper",
+                "28%",
+                "52"
+              ]
+            ]
+          }
+        },
+        {
+          "text": "A screen has a cost: fewer companies. A 25% landfill limit leaves out Alder Stitch Apparel (40%) and Cedarline Paper (28%). Six are left. Rina’s $12,000 now goes equally into six: $12,000 / 6 = $2,000 in each, up from $1,500."
+        },
+        {
+          "text": "A screen can also take out a whole kind of business. Under a 15% landfill limit, both clothing companies are over the limit (40% and 20%). Rina would own no clothing company at all."
+        },
+        {
+          "text": "Best in class keeps the top score in each kind: Fernhill Soap Works, Willow Clinic Supplies, Birchmoor Outfitters and Riverbend Printing. The top scorer in a kind is only the best of its own group, not a company with nothing a rule would worry about."
+        },
+        {
+          "text": "A screen only sees the facts it is given. “No animal testing” keeps Fernhill Soap Works, which does no testing itself but buys its main ingredient from a lab that does. A 15% limit keeps Riverbend Printing, whose share of waste is small but whose total is large. The data did not measure those things."
+        },
+        {
+          "text": "A fund that applies a values screen is often called an ethical fund. A fund’s name states its aim. Its list of exclusions and its holdings show what it does. In the Exchange, every fund and stock has a short note. None of those notes mentions a values screen."
+        }
+      ],
+      "questions": [
+        {
+          "label": "Two rules, split",
+          "prompt": "Rina uses both rules: no animal testing and a landfill limit of 25%. Her $12,000 is split equally over the companies that stay. How much goes into each?",
+          "type": "number",
+          "figure": {
+            "kind": "table",
+            "title": "Rina’s eight companies, more facts",
+            "columns": [
+              "Company",
+              "Kind",
+              "Waste to landfill",
+              "Score"
+            ],
+            "rows": [
+              [
+                "Glimmer Lane Cosmetics",
+                "Beauty",
+                "22%",
+                "41"
+              ],
+              [
+                "Fernhill Soap Works",
+                "Beauty",
+                "12%",
+                "78"
+              ],
+              [
+                "Northcote Pharmacy Labs",
+                "Health",
+                "13%",
+                "60"
+              ],
+              [
+                "Willow Clinic Supplies",
+                "Health",
+                "14%",
+                "64"
+              ],
+              [
+                "Alder Stitch Apparel",
+                "Clothing",
+                "40%",
+                "48"
+              ],
+              [
+                "Birchmoor Outfitters",
+                "Clothing",
+                "20%",
+                "66"
+              ],
+              [
+                "Riverbend Printing",
+                "Paper",
+                "6%",
+                "72"
+              ],
+              [
+                "Cedarline Paper",
+                "Paper",
+                "28%",
+                "52"
+              ]
+            ]
+          },
+          "terms": [
+            {
+              "term": "landfill waste",
+              "meaning": "Waste that is buried instead of reused or recycled."
+            }
+          ],
+          "hint": "List the companies that pass both rules, then divide the total by how many there are.",
+          "unit": "$",
+          "answer": 300000,
+          "tolerance": 0,
+          "why": "The money is shared equally over the companies left after both rules.",
+          "working": "Out: Glimmer Lane Cosmetics, Northcote Pharmacy Labs, Alder Stitch Apparel, Cedarline Paper. 4 left. $12,000 / 4 = $3,000.00.",
+          "traps": [
+            {
+              "value": 200000,
+              "why": "That counts only the 25% limit. The testing rule also removes two companies."
+            }
+          ],
+          "miss": "Count the companies that pass both rules first. Then divide the total by that count.",
+          "id": "ft2030-s3-u7-l3-q1"
+        },
+        {
+          "label": "A stricter limit",
+          "prompt": "Rina now uses no animal testing and a landfill limit of 15%. Her $12,000 is split equally over the companies that stay. How much goes into each?",
+          "type": "number",
+          "figure": {
+            "kind": "table",
+            "title": "Rina’s eight companies, more facts",
+            "columns": [
+              "Company",
+              "Kind",
+              "Waste to landfill",
+              "Score"
+            ],
+            "rows": [
+              [
+                "Glimmer Lane Cosmetics",
+                "Beauty",
+                "22%",
+                "41"
+              ],
+              [
+                "Fernhill Soap Works",
+                "Beauty",
+                "12%",
+                "78"
+              ],
+              [
+                "Northcote Pharmacy Labs",
+                "Health",
+                "13%",
+                "60"
+              ],
+              [
+                "Willow Clinic Supplies",
+                "Health",
+                "14%",
+                "64"
+              ],
+              [
+                "Alder Stitch Apparel",
+                "Clothing",
+                "40%",
+                "48"
+              ],
+              [
+                "Birchmoor Outfitters",
+                "Clothing",
+                "20%",
+                "66"
+              ],
+              [
+                "Riverbend Printing",
+                "Paper",
+                "6%",
+                "72"
+              ],
+              [
+                "Cedarline Paper",
+                "Paper",
+                "28%",
+                "52"
+              ]
+            ]
+          },
+          "hint": "Any company over 15% is out, and any company that tests is out.",
+          "unit": "$",
+          "answer": 400000,
+          "tolerance": 0,
+          "why": "A stricter limit leaves fewer companies, so each one holds more.",
+          "working": "3 companies pass both rules: Fernhill Soap Works, Willow Clinic Supplies, Riverbend Printing. $12,000 / 3 = $4,000.00.",
+          "traps": [
+            {
+              "value": 300000,
+              "why": "That is the answer for a 25% limit. At 15% one more company is out."
+            }
+          ],
+          "miss": "Cross out every company that tests or is over 15%. Count what is left, then divide.",
+          "id": "ft2030-s3-u7-l3-q2"
+        },
+        {
+          "label": "Money left out",
+          "prompt": "Under a landfill limit of 15% alone, what percent of Rina’s original $12,000 had been in the companies that are now left out?",
+          "type": "number",
+          "figure": {
+            "kind": "table",
+            "title": "Rina’s eight companies, more facts",
+            "columns": [
+              "Company",
+              "Kind",
+              "Waste to landfill",
+              "Score"
+            ],
+            "rows": [
+              [
+                "Glimmer Lane Cosmetics",
+                "Beauty",
+                "22%",
+                "41"
+              ],
+              [
+                "Fernhill Soap Works",
+                "Beauty",
+                "12%",
+                "78"
+              ],
+              [
+                "Northcote Pharmacy Labs",
+                "Health",
+                "13%",
+                "60"
+              ],
+              [
+                "Willow Clinic Supplies",
+                "Health",
+                "14%",
+                "64"
+              ],
+              [
+                "Alder Stitch Apparel",
+                "Clothing",
+                "40%",
+                "48"
+              ],
+              [
+                "Birchmoor Outfitters",
+                "Clothing",
+                "20%",
+                "66"
+              ],
+              [
+                "Riverbend Printing",
+                "Paper",
+                "6%",
+                "72"
+              ],
+              [
+                "Cedarline Paper",
+                "Paper",
+                "28%",
+                "52"
+              ]
+            ]
+          },
+          "hint": "She started with the same amount in each of the eight companies.",
+          "unit": "%",
+          "answer": 50,
+          "tolerance": 0,
+          "why": "Each company held an equal share. The share left out is the fraction of companies left out.",
+          "working": "4 of 8 companies are out. 4 x $1,500 = $6,000. $6,000 / $12,000 = 50%.",
+          "miss": "Each company held the same amount at the start. Find what fraction of the companies is out.",
+          "id": "ft2030-s3-u7-l3-q3"
+        },
+        {
+          "label": "Kinds of business left",
+          "prompt": "Rina uses no animal testing and a 15% landfill limit. How many of the four kinds of business still have a company in her list?",
+          "type": "choice",
+          "figure": {
+            "kind": "table",
+            "title": "Rina’s eight companies, more facts",
+            "columns": [
+              "Company",
+              "Kind",
+              "Waste to landfill",
+              "Score"
+            ],
+            "rows": [
+              [
+                "Glimmer Lane Cosmetics",
+                "Beauty",
+                "22%",
+                "41"
+              ],
+              [
+                "Fernhill Soap Works",
+                "Beauty",
+                "12%",
+                "78"
+              ],
+              [
+                "Northcote Pharmacy Labs",
+                "Health",
+                "13%",
+                "60"
+              ],
+              [
+                "Willow Clinic Supplies",
+                "Health",
+                "14%",
+                "64"
+              ],
+              [
+                "Alder Stitch Apparel",
+                "Clothing",
+                "40%",
+                "48"
+              ],
+              [
+                "Birchmoor Outfitters",
+                "Clothing",
+                "20%",
+                "66"
+              ],
+              [
+                "Riverbend Printing",
+                "Paper",
+                "6%",
+                "72"
+              ],
+              [
+                "Cedarline Paper",
+                "Paper",
+                "28%",
+                "52"
+              ]
+            ]
+          },
+          "hint": "Cross out the companies that break a rule, then see which kinds still have one.",
+          "id": "ft2030-s3-u7-l3-q4",
+          "options": [
+            {
+              "text": "4",
+              "why": "Both clothing companies are over 15%, so Clothing is gone."
+            },
+            {
+              "text": "2",
+              "why": "Beauty, Health and Paper each keep a company, so three kinds remain."
+            },
+            {
+              "text": "1",
+              "why": "More than one kind still has a company."
+            },
+            {
+              "text": "3",
+              "why": "Beauty (Fernhill), Health (Willow) and Paper (Riverbend) remain. Clothing is gone."
+            }
+          ],
+          "answer": 3
+        },
+        {
+          "label": "Most in each",
+          "prompt": "Each bar is a screen. Tap the screen that puts the most money in each company it leaves.",
+          "type": "point",
+          "figure": {
+            "kind": "bars",
+            "title": "Money in each company left",
+            "unit": "$",
+            "bars": [
+              {
+                "label": "25% limit",
+                "value": 200000
+              },
+              {
+                "label": "No testing + 25%",
+                "value": 300000
+              },
+              {
+                "label": "15% limit",
+                "value": 300000
+              },
+              {
+                "label": "No testing + 15%",
+                "value": 400000
+              }
+            ]
+          },
+          "hint": "The fewer companies are left, the more money each one holds.",
+          "answer": 3,
+          "why": "No testing + 15% leaves three companies, so each holds the most.",
+          "miss": "The same money is shared by whatever is left. Which screen leaves the fewest companies?",
+          "id": "ft2030-s3-u7-l3-q5"
+        },
+        {
+          "label": "Two ways, kinds kept",
+          "prompt": "Best in class (top score in each kind) and an exclusion screen (no animal testing, 15% limit): how many kinds of business does each keep?",
+          "type": "choice",
+          "figure": {
+            "kind": "table",
+            "title": "Rina’s eight companies, more facts",
+            "columns": [
+              "Company",
+              "Kind",
+              "Waste to landfill",
+              "Score"
+            ],
+            "rows": [
+              [
+                "Glimmer Lane Cosmetics",
+                "Beauty",
+                "22%",
+                "41"
+              ],
+              [
+                "Fernhill Soap Works",
+                "Beauty",
+                "12%",
+                "78"
+              ],
+              [
+                "Northcote Pharmacy Labs",
+                "Health",
+                "13%",
+                "60"
+              ],
+              [
+                "Willow Clinic Supplies",
+                "Health",
+                "14%",
+                "64"
+              ],
+              [
+                "Alder Stitch Apparel",
+                "Clothing",
+                "40%",
+                "48"
+              ],
+              [
+                "Birchmoor Outfitters",
+                "Clothing",
+                "20%",
+                "66"
+              ],
+              [
+                "Riverbend Printing",
+                "Paper",
+                "6%",
+                "72"
+              ],
+              [
+                "Cedarline Paper",
+                "Paper",
+                "28%",
+                "52"
+              ]
+            ]
+          },
+          "hint": "Use the table: list the kinds in each list of companies.",
+          "id": "ft2030-s3-u7-l3-q6",
+          "options": [
+            {
+              "text": "Both keep 4 kinds of business",
+              "why": "The exclusion screen leaves no clothing company, so it keeps only 3."
+            },
+            {
+              "text": "Best in class keeps 3; exclusion keeps 4",
+              "why": "That swaps them. Best in class keeps one from every kind."
+            },
+            {
+              "text": "Best in class keeps 4; exclusion keeps 3",
+              "why": "Best in class keeps one company from every kind. The exclusion screen loses Clothing."
+            },
+            {
+              "text": "Both keep 3 kinds of business",
+              "why": "Best in class keeps the top scorer in every kind, so it keeps all 4."
+            }
+          ],
+          "answer": 2
+        },
+        {
+          "label": "The soap maker stays",
+          "prompt": "Rina’s rule is “no animal testing”. Why does Fernhill Soap Works stay in?",
+          "type": "choice",
+          "hint": "Look at the fifth card.",
+          "id": "ft2030-s3-u7-l3-q7",
+          "options": [
+            {
+              "text": "Its score is higher than the other companies’",
+              "why": "The rule does not use scores. It uses whether a company tests."
+            },
+            {
+              "text": "The rule counts its own testing, not its supplier’s",
+              "why": "The facts the rule uses say who tests. A supplier’s testing is not measured."
+            },
+            {
+              "text": "The rule only applies to companies in Health",
+              "why": "The rule applies to every company in the list."
+            },
+            {
+              "text": "Soap makers cannot be excluded",
+              "why": "Any company can be excluded. This rule just does not measure suppliers."
+            }
+          ],
+          "answer": 1
+        },
+        {
+          "label": "What the limit misses",
+          "prompt": "Riverbend Printing passes a 15% landfill limit. What does that limit not see?",
+          "type": "choice",
+          "hint": "The limit counts a share of waste.",
+          "id": "ft2030-s3-u7-l3-q8",
+          "options": [
+            {
+              "text": "The total amount of waste it sends to landfill",
+              "why": "A small share can still be a large amount if the company makes a lot of waste."
+            },
+            {
+              "text": "That it tests products on animals",
+              "why": "The table shows it does not test, and the limit does not use testing."
+            },
+            {
+              "text": "That its score is low",
+              "why": "Its score is high, and the limit does not use scores."
+            },
+            {
+              "text": "That it is in the Paper kind",
+              "why": "The kind is in the table. The limit just does not use it."
+            }
+          ],
+          "answer": 0
+        },
+        {
+          "label": "Label or holdings",
+          "prompt": "A fund’s name says it is “responsible”. What shows what its screen actually does?",
+          "type": "choice",
+          "hint": "Read the last card.",
+          "id": "ft2030-s3-u7-l3-q9",
+          "options": [
+            {
+              "text": "The word “responsible” in its name",
+              "why": "A name is only a label. It does not list what the fund leaves out."
+            },
+            {
+              "text": "How fast its price rises",
+              "why": "A price tells you nothing about what the screen leaves out."
+            },
+            {
+              "text": "The fund’s yearly fee",
+              "why": "A fee is a cost. It does not show what the fund holds or leaves out."
+            },
+            {
+              "text": "Its list of exclusions and what it holds",
+              "why": "A name states an aim. The exclusions and holdings show what the screen does."
+            }
+          ],
+          "answer": 3
+        },
+        {
+          "label": "One bet weighs more",
+          "prompt": "A screen takes Rina from eight companies to four. What follows for her money?",
+          "type": "choice",
+          "terms": [
+            {
+              "term": "diversification",
+              "meaning": "Spreading your money over many companies and over different kinds of business, so one going bad hurts less."
+            }
+          ],
+          "hint": "Think about how diversification works: one company is one bet.",
+          "id": "ft2030-s3-u7-l3-q10",
+          "options": [
+            {
+              "text": "Her money is spread more widely than before",
+              "why": "Four companies spread the money less widely than eight."
+            },
+            {
+              "text": "Risk is gone because the companies were chosen with care",
+              "why": "A screen chooses by values and facts. Fewer companies still means each one weighs more."
+            },
+            {
+              "text": "Each company holds more, so one company’s bad news matters more",
+              "why": "The same money sits in fewer companies, so it is spread less widely."
+            },
+            {
+              "text": "Each company now holds less money",
+              "why": "The same total is shared by fewer companies, so each holds more."
+            }
+          ],
+          "answer": 2
+        }
+      ],
+      "go": {
+        "building": "exchange",
+        "label": "Open the Exchange"
+      }
+    }
+  ]
+}

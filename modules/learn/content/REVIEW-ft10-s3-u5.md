@@ -1,0 +1,29 @@
+# Facts Mr. Tang must confirm: Loans, payment and total cost (`ft10-s3-u5`)
+
+Unit 5 of Credit & Borrowing in `fintech10.json`, written from the first part of your Lesson 24 outline (slides 3 to 6: the receipt, try it, the answer, two clocks). The ISP work block is not used. Every table and answer is recomputed by `test/learn-content-ft10-s3-u5.test.js`. Please confirm or correct each item.
+
+## Figures from your outline
+
+1. **The class loan: $20,000 at 8% a year, over 3, 5 or 7 years (36, 60 or 84 monthly payments).** Source: Lesson 24 outline, slide 3 (line 78) and slide 4 (line 93). Your Sources section (line 211) calls it your own calculation and an example rate, not a quote; level 3 cards 1 to 3 and ft10-s3-u5-l3-q1 to -q8 say "a loan" and never "a quote". Slide 4 also has a $0 down payment; the lesson has no down payment.
+2. **Payment and interest for each term.** Your slide 5 (line 107): $627 and $2,562; $406 and $4,332; $312 and $6,185. I computed the loan month by month (interest each month is the balance x 8% / 12, rounded to the cent; the payment is rounded to the cent; the last payment clears the balance). Mine are $626.73 and $2,562.15; $405.53 and $4,331.62; $311.72 and $6,184.96. Rounded to the dollar they equal your slide in all six figures, so level 3 card 2 shows the payment to the cent and the totals to the dollar. The lesson also shows total paid (payment x payments, rounded): $22,562, $24,332, $26,185. Those totals are not on your slide.
+3. **"About half the payment, more than twice the interest."** Level 3 card 3 follows your Say on slide 5 (line 110). The 7-year payment is $311.72 against $626.73 (49.7%); the 7-year interest is $6,185 against $2,562 (2.4 times).
+4. **Two clocks.** Level 3 card 5 and ft10-s3-u5-l3-q9: "interest starts on day 1" for the car loan and, for the Alberta student loan, "no interest while the borrower studies full-time and for 12 months after". Source: slide 6 (lines 120 and 121) and its note (line 127), which gives the Alberta Student Aid policy manual (line 213) for students who stopped studying on or after Dec 1, 2022. The lesson says "the class example of an Alberta student loan", says nothing about federal loans or the Dec 1, 2022 date, and does not mention repayment plans, bursaries or forgiveness (your flag 3 cuts them). Please confirm the 12 months and the date rule still stand.
+5. **Outcome codes `FIN1010 3.3` and `2.3`.** From the Objectives line of the outline (line 7: 3.3 problems with using credit, 2.3 effects of interest rates on decisions). I left out 5.1.3 (use numbers), which is a skill rather than content, and the ISP codes. Your line for 3.5.4 is not in this outline.
+
+## Where the game and your slide give different numbers
+
+6. **The game has no ordinary loan.** A student cannot take a car loan, a student loan or a line of credit; the game has only the emergency loan (taught in the quick cash unit) and the mortgage (the next unit). So the unit has no game level and no `go` button. `modules/rates/constants.js` lists a line-of-credit rate, but nothing in the modules lets a student borrow on it.
+7. **`modules/housing/mortgage.js` is not used for the arithmetic.** Its `payment` compounds semi-annually (the Canadian mortgage rule: monthly rate (1 + r/2)^(1/6) - 1), so it does not compute an ordinary loan whose monthly interest is balance x rate / 12. The lesson, like your slide, uses the plain r / 12. The next unit (mortgages) will show the difference; this unit does not mention it.
+
+## Written without a number, or my own wording
+
+8. **No "good debt and bad debt".** The plan line for this day does not exist in the plan file I could search (`claude_Fintech 10 Semester 1 2026-27 Plan.md` has no match for debt, car loan or payday), and the outline has no settled content for it, so it is left out. Car loans appear only as the class loan. Payday lending is not taught here.
+9. **Paying extra** (level 4 card 3, ft10-s3-u5-l4-q4 to -q6) is not in your outline. It is my wording: "in this example the extra goes straight to principal". The example (Sol's $12,000 at 9% for 48 months, $50.00 extra a month ends in 40 months) is made up and computed. The lesson says nothing about fees for paying early or about lenders that apply extra payments differently. Please say if you want that added.
+10. **The first payments are the most interest, not "mostly interest".** On the class loan, interest is 33% of the first payment (21% on 3 years, 43% on 7 years). Level 2 card 5 says the first payments carry the most interest and the last carry the least, and does not say "mostly". On very long loans the first payments are mostly interest; the mortgage unit can show that with its own numbers.
+11. **Rounding rule for these loans.** Total paid is taught as payment x number of payments, rounded to the nearest dollar, because the last payment is a few cents different (level 1 card 4, level 2 card 3). Questions ask for the nearest dollar and accept $1 either side.
+12. **The levers table and the three aims** (level 4 cards 1, 2 and 4) use made-up loans (Sol's $12,000 at 9%; Tess and Ravi's aims). They are arithmetic, not facts. Level 4 card 2's "only the term trades one for the other" holds for the loans in the tables, where the term is the only thing that changes.
+13. **Made-up people:** Noor, Sam, Kai, Dev, Zoe, Sol, Tess, Ravi. Their amounts are examples.
+
+## Added after the independent review (2026-11-10)
+
+14. Correction to item 2: the totals in the level 3 table are the sum of every payment in the schedule, including a last payment that differs by a few cents. For the 7-year loan that is $26,184.96 ($26,185), where $311.72 x 84 is $26,184.48. The card now says so. The same applies to the "shorter term" row in level 4 ($1,737 of interest from the schedule; $381.60 x 36 less the principal is $1,737.60).

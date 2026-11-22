@@ -1,0 +1,11 @@
+/* Venture Row: the demand chart and the card grid. */
+.vr-chart { width: 100%; max-width: 360px; height: auto; }
+.vr-chart text { font-size: 10px; fill: currentColor; }
+.vr-axis { stroke: currentColor; opacity: .5; }
+.vr-curve { stroke: currentColor; stroke-width: 2; }
+.vr-you { stroke: #e8a33c; fill: #e8a33c; }
+.vr-best { stroke: #4caf7d; fill: #4caf7d; stroke-dasharray: 3 3; }
+.vr-cap { stroke: #d9534f; fill: #d9534f; stroke-dasharray: 2 4; }
+.vr-tabs { display: flex; gap: .5rem; flex-wrap: wrap; }
+.vr-grid { display: grid; gap: .75rem; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); }
+.vr-shop { stroke: #8a8fd8; fill: #8a8fd8; stroke-dasharray: 1 3; }

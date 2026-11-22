@@ -1,0 +1,1275 @@
+{
+  "id": "ft2030-s1-u2",
+  "title": "The CRA and you",
+  "blurb": "Who collects tax, your SIN, how the system began and where the money goes.",
+  "outcome_codes": [
+    "FIN2060 1.2",
+    "FIN2060 1.3",
+    "FIN2060 1.4",
+    "FIN2060 1.5"
+  ],
+  "levels": [
+    {
+      "id": "ft2030-s1-u2-l1",
+      "title": "What the CRA does",
+      "kind": "lesson",
+      "learn": [
+        "Say what the CRA collects, and for whom.",
+        "Name the money it pays out as benefits and credits."
+      ],
+      "cards": [
+        {
+          "text": "The Canada Revenue Agency, or CRA, runs tax laws for the federal government and for most provinces and territories. A tax law is a rule about who pays tax and how much.",
+          "image": {
+            "src": "ft2030-s1-u2/l1c1.webp",
+            "alt": "A stone office building with a blank flag and a desk of blank forms"
+          }
+        },
+        {
+          "text": "In Alberta, the CRA collects personal income tax together with federal income tax. So an Alberta taxpayer deals with the CRA for both.",
+          "image": {
+            "src": "ft2030-s1-u2/l1c2.webp",
+            "alt": "A blank province map with gold discs and a magnifying glass"
+          }
+        },
+        {
+          "text": "Canada's system relies on each person filing their own return every year. A return is the form that reports your income and works out your tax.",
+          "image": {
+            "src": "ft2030-s1-u2/l1c3.webp",
+            "alt": "A desk with a blank form, a pen, gold discs and a mug of tea"
+          }
+        },
+        {
+          "text": "The CRA also pays money out. It runs benefit and incentive programs through the tax system. A benefit is a payment to people who qualify.",
+          "image": {
+            "src": "ft2030-s1-u2/l1c4.webp",
+            "alt": "A mailbox with gold discs spilling onto snow and a blank envelope"
+          }
+        },
+        {
+          "text": "One benefit is the Canada Groceries and Essentials Benefit, once called the GST/HST credit. It is paid every three months to eligible people.",
+          "figure": {
+            "kind": "table",
+            "title": "Money in and money out",
+            "columns": [
+              "Direction",
+              "Example"
+            ],
+            "rows": [
+              [
+                "In to the CRA",
+                "Federal and Alberta income tax"
+              ],
+              [
+                "Out from the CRA",
+                "Canada Groceries and Essentials Benefit"
+              ]
+            ]
+          }
+        },
+        {
+          "text": "To continue to receive benefit and credit payments, people must update their information with the CRA each year. They do this by filing their income tax and benefit return.",
+          "image": {
+            "src": "ft2030-s1-u2/l1c6.webp",
+            "alt": "A balance scale with a gold disc on each tray and a blank document"
+          }
+        }
+      ],
+      "questions": [
+        {
+          "id": "ft2030-s1-u2-l1-q1",
+          "label": "Who runs tax laws",
+          "prompt": "Which agency runs tax laws for the federal government and for most provinces and territories?",
+          "type": "choice",
+          "terms": [
+            {
+              "term": "tax law",
+              "meaning": "A rule about who pays tax and how much."
+            }
+          ],
+          "hint": "The first card names it.",
+          "options": [
+            {
+              "text": "Your employer",
+              "why": "An employer is not the agency the card names. The CRA runs the tax laws."
+            },
+            {
+              "text": "The CRA",
+              "why": "The Canada Revenue Agency runs these tax laws."
+            },
+            {
+              "text": "Your bank",
+              "why": "A bank is not the agency the card names. The CRA runs the tax laws."
+            },
+            {
+              "text": "The Government of Alberta alone",
+              "why": "The CRA also collects Alberta's personal income tax, and it runs tax laws for most provinces."
+            }
+          ],
+          "answer": 1
+        },
+        {
+          "id": "ft2030-s1-u2-l1-q2",
+          "label": "Alberta income tax",
+          "prompt": "Priya lives in Alberta. Who collects her personal income tax?",
+          "type": "choice",
+          "hint": "Look at the second card.",
+          "options": [
+            {
+              "text": "The CRA, together with federal tax",
+              "why": "In Alberta the CRA collects personal income tax at the same time as federal income tax."
+            },
+            {
+              "text": "Only a separate Alberta office",
+              "why": "In Alberta the CRA collects it, along with the federal tax."
+            },
+            {
+              "text": "Her employer, who keeps it",
+              "why": "The CRA collects it. An employer does not keep income tax."
+            },
+            {
+              "text": "The City of Edmonton",
+              "why": "A city does not collect personal income tax. The CRA does, in Alberta."
+            }
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ft2030-s1-u2-l1-q3",
+          "label": "Who does the taxes",
+          "prompt": "In Canada's system, who does a person's taxes each year?",
+          "type": "choice",
+          "terms": [
+            {
+              "term": "return",
+              "meaning": "The form that reports your income and works out your tax."
+            }
+          ],
+          "hint": "Think about who files the return.",
+          "options": [
+            {
+              "text": "The CRA does them and mails the result",
+              "why": "The system relies on each person filing their own return."
+            },
+            {
+              "text": "The person's employer files it for them",
+              "why": "Each person does their own taxes. An employer does not file your return for you."
+            },
+            {
+              "text": "Nobody, unless the CRA asks",
+              "why": "A return is filed every year, whether or not the CRA asks."
+            },
+            {
+              "text": "Each person files their own return",
+              "why": "Yes. Each person files their own return every year."
+            }
+          ],
+          "answer": 3
+        },
+        {
+          "id": "ft2030-s1-u2-l1-q4",
+          "label": "Four payments",
+          "prompt": "Mira gets a made-up benefit of $180.00 every three months. How much does she get in one year?",
+          "type": "number",
+          "terms": [
+            {
+              "term": "benefit",
+              "meaning": "A payment to people who qualify for it."
+            }
+          ],
+          "hint": "How many three-month periods are in a year?",
+          "unit": "$",
+          "answer": 72000,
+          "tolerance": 0,
+          "why": "Three months is a quarter of a year, so there are four payments a year.",
+          "working": "12 months / 3 months = 4 payments. 4 x $180.00 = $720.00.",
+          "traps": [
+            {
+              "value": 18000,
+              "why": "That is one payment. There are four in a year."
+            },
+            {
+              "value": 54000,
+              "why": "That is three payments. Divide 12 months by 3 to count them."
+            }
+          ],
+          "miss": "Count how many three-month periods fit into 12 months. Then multiply."
+        },
+        {
+          "id": "ft2030-s1-u2-l1-q5",
+          "label": "Money out",
+          "prompt": "Look at the table. Which row shows money the CRA pays out to people?",
+          "type": "choice",
+          "figure": {
+            "kind": "table",
+            "title": "Money in and money out",
+            "columns": [
+              "Direction",
+              "Example"
+            ],
+            "rows": [
+              [
+                "In to the CRA",
+                "Federal and Alberta income tax"
+              ],
+              [
+                "Out from the CRA",
+                "Canada Groceries and Essentials Benefit"
+              ]
+            ]
+          },
+          "hint": "Which direction is a benefit?",
+          "options": [
+            {
+              "text": "The In row",
+              "why": "The In row is tax collected. A benefit goes the other way."
+            },
+            {
+              "text": "The Out row",
+              "why": "A benefit is paid out from the CRA to eligible people."
+            },
+            {
+              "text": "Neither row",
+              "why": "The Out row is a benefit the CRA pays."
+            }
+          ],
+          "answer": 1
+        },
+        {
+          "id": "ft2030-s1-u2-l1-q6",
+          "label": "Old name",
+          "prompt": "The Canada Groceries and Essentials Benefit used to have another name. What was it?",
+          "type": "choice",
+          "hint": "The fifth card says.",
+          "options": [
+            {
+              "text": "The Alberta tax refund",
+              "why": "It was called the GST/HST credit, not a refund."
+            },
+            {
+              "text": "The GST/HST credit",
+              "why": "Yes. It was once called the GST/HST credit."
+            },
+            {
+              "text": "The Employment Insurance benefit",
+              "why": "That is a different program. This one was the GST/HST credit."
+            },
+            {
+              "text": "The child benefit",
+              "why": "That is a different program. This one was the GST/HST credit."
+            }
+          ],
+          "answer": 1
+        },
+        {
+          "id": "ft2030-s1-u2-l1-q7",
+          "label": "Keep the payments",
+          "prompt": "Sam wants to keep getting benefit and credit payments. What must he do each year?",
+          "type": "choice",
+          "hint": "Look at the last card.",
+          "options": [
+            {
+              "text": "Pay a fee to renew his payments",
+              "why": "The card names filing a return, not a fee."
+            },
+            {
+              "text": "Wait for the CRA to file for him",
+              "why": "Each person files their own return every year."
+            },
+            {
+              "text": "File his income tax and benefit return",
+              "why": "Yes. Filing each year updates your information with the CRA so the payments can continue."
+            },
+            {
+              "text": "Nothing, because payments never change",
+              "why": "To continue to receive payments, people must update their information with the CRA each year."
+            }
+          ],
+          "answer": 2
+        },
+        {
+          "id": "ft2030-s1-u2-l1-q8",
+          "label": "CRA and money",
+          "prompt": "Which sentence about the CRA is true?",
+          "type": "choice",
+          "hint": "The CRA moves money in two directions.",
+          "options": [
+            {
+              "text": "It only collects money and never pays any out",
+              "why": "It also runs benefit programs, such as the Canada Groceries and Essentials Benefit."
+            },
+            {
+              "text": "It collects taxes and runs benefit programs through the tax system",
+              "why": "Yes. It collects tax and also runs benefit and incentive programs through the tax system."
+            },
+            {
+              "text": "It pays benefits to everyone with no conditions",
+              "why": "Payments such as the Canada Groceries and Essentials Benefit go to eligible people."
+            }
+          ],
+          "answer": 1
+        },
+        {
+          "id": "ft2030-s1-u2-l1-q9",
+          "label": "What a return is",
+          "prompt": "What is a return?",
+          "type": "choice",
+          "terms": [
+            {
+              "term": "return",
+              "meaning": "The form that reports your income and works out your tax."
+            }
+          ],
+          "hint": "The third card defines it.",
+          "options": [
+            {
+              "text": "A payment the CRA sends you",
+              "why": "That is a benefit. A return is a form."
+            },
+            {
+              "text": "The rate of tax you pay",
+              "why": "A return works out your tax. It is not the rate."
+            },
+            {
+              "text": "The form that reports your income and works out your tax",
+              "why": "Yes. You file one every year."
+            },
+            {
+              "text": "A letter that asks for your SIN",
+              "why": "A return is the form you file. It is not a letter."
+            }
+          ],
+          "answer": 2
+        }
+      ]
+    },
+    {
+      "id": "ft2030-s1-u2-l2",
+      "title": "Your SIN",
+      "kind": "lesson",
+      "learn": [
+        "Say what a SIN is and how to apply for one.",
+        "Say who may ask for it and why you guard it."
+      ],
+      "cards": [
+        {
+          "text": "A Social Insurance Number, or SIN, is a nine-digit number you need to work in Canada and to use government programs and benefits. Service Canada issues it.",
+          "image": {
+            "src": "ft2030-s1-u2/l2c1.webp",
+            "alt": "A blank card beside a closed passport cover and a pen on a desk"
+          }
+        },
+        {
+          "text": "You can apply for a SIN online, by mail, or in person. There is no fee. Anyone 12 years or older can apply for their own SIN.",
+          "image": {
+            "src": "ft2030-s1-u2/l2c2.webp",
+            "alt": "A laptop, a sealed envelope and a small counter with a blank sign"
+          }
+        },
+        {
+          "text": "To apply, you give the documents the application asks for. One is a birth certificate issued by a vital statistics agency. The list also includes a passport, a provincial or territorial ID card or driver's licence, and other Canadian government ID.",
+          "figure": {
+            "kind": "table",
+            "title": "Papers for a SIN application",
+            "columns": [
+              "Paper",
+              "Example"
+            ],
+            "rows": [
+              [
+                "Listed document",
+                "Birth certificate"
+              ],
+              [
+                "Listed document",
+                "Passport"
+              ],
+              [
+                "Listed document",
+                "Driver's licence or provincial ID card"
+              ],
+              [
+                "Listed document",
+                "Other Canadian government ID"
+              ]
+            ]
+          }
+        },
+        {
+          "text": "Employers need your SIN to report your income for tax and social benefits. Financial institutions need your SIN to report income like interest and dividends. Only provide your SIN when the law requires it.",
+          "image": {
+            "src": "ft2030-s1-u2/l2c4.webp",
+            "alt": "A blank clipboard and pay slips with a small bank counter behind"
+          }
+        },
+        {
+          "text": "Your confirmation of SIN letter and your SIN card are not identity documents. Do not show them to prove who you are.",
+          "image": {
+            "src": "ft2030-s1-u2/l2c5.webp",
+            "alt": "A blank card in a sleeve beside a passport and a licence card"
+          }
+        },
+        {
+          "text": "Guard your SIN. It is private, and it is illegal for anyone else to use it. Protecting it protects you from fraud and identity theft. Identity theft is when someone uses your details to pretend to be you.",
+          "image": {
+            "src": "ft2030-s1-u2/l2c6.webp",
+            "alt": "A brass padlock on a wooden box with a key on a hook"
+          }
+        }
+      ],
+      "questions": [
+        {
+          "id": "ft2030-s1-u2-l2-q1",
+          "label": "Who may ask",
+          "prompt": "Which of these is allowed to ask Dana for her SIN?",
+          "type": "choice",
+          "terms": [
+            {
+              "term": "SIN",
+              "meaning": "Social Insurance Number: a nine-digit number you need to work in Canada and to use government programs."
+            }
+          ],
+          "hint": "Think about who the card says you must give it to.",
+          "options": [
+            {
+              "text": "A caller who says she has won a prize",
+              "why": "Only give a SIN when the law requires it. A prize caller is not one of those."
+            },
+            {
+              "text": "Her employer, when she starts work",
+              "why": "Yes. Employers need your SIN to report your income for tax and social benefits."
+            },
+            {
+              "text": "A friend who wants to \"hold it safe\"",
+              "why": "Nobody needs to hold it for her. Give it only where the law requires."
+            },
+            {
+              "text": "A website that wants it to enter a contest",
+              "why": "No law requires it for a contest. Give it only where the law requires."
+            }
+          ],
+          "answer": 1
+        },
+        {
+          "id": "ft2030-s1-u2-l2-q2",
+          "label": "Who issues it",
+          "prompt": "Which agency issues a SIN?",
+          "type": "choice",
+          "hint": "The first card names it.",
+          "options": [
+            {
+              "text": "Service Canada",
+              "why": "Yes. Service Canada issues the SIN."
+            },
+            {
+              "text": "The CRA",
+              "why": "The SIN is issued by Service Canada."
+            },
+            {
+              "text": "Your bank",
+              "why": "A financial institution asks for your SIN to report interest. It does not issue it."
+            },
+            {
+              "text": "Your employer",
+              "why": "An employer asks for your SIN. It does not issue it."
+            }
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ft2030-s1-u2-l2-q3",
+          "label": "Old enough",
+          "prompt": "Noor is 13 and has never had a SIN. Can she apply for her own?",
+          "type": "choice",
+          "hint": "Look for an age in the second card.",
+          "options": [
+            {
+              "text": "No, only an adult can apply",
+              "why": "The card says anyone 12 years or older can apply for their own SIN."
+            },
+            {
+              "text": "No, only an employer can apply",
+              "why": "A person 12 or older applies for their own SIN."
+            },
+            {
+              "text": "No, she must wait until she has a job",
+              "why": "The card sets an age of 12, not a job."
+            },
+            {
+              "text": "Yes, because she is 12 or older",
+              "why": "Yes. Anyone 12 years or older can apply for their own SIN."
+            }
+          ],
+          "answer": 3
+        },
+        {
+          "id": "ft2030-s1-u2-l2-q4",
+          "label": "How to apply",
+          "prompt": "Which of these is a way to apply for a SIN?",
+          "type": "choice",
+          "hint": "The second card lists three ways.",
+          "options": [
+            {
+              "text": "By sending a text message",
+              "why": "The three ways are online, by mail, or in person."
+            },
+            {
+              "text": "Only at a bank",
+              "why": "You can apply online, by mail, or in person."
+            },
+            {
+              "text": "By mail",
+              "why": "Yes. You can apply online, by mail, or in person."
+            },
+            {
+              "text": "Only through an employer",
+              "why": "You apply yourself, online, by mail, or in person."
+            }
+          ],
+          "answer": 2
+        },
+        {
+          "id": "ft2030-s1-u2-l2-q5",
+          "label": "Papers listed",
+          "prompt": "Which of these is a document listed for a SIN application?",
+          "type": "choice",
+          "figure": {
+            "kind": "table",
+            "title": "Papers for a SIN application",
+            "columns": [
+              "Paper",
+              "Example"
+            ],
+            "rows": [
+              [
+                "Listed document",
+                "Birth certificate"
+              ],
+              [
+                "Listed document",
+                "Passport"
+              ],
+              [
+                "Listed document",
+                "Driver's licence or provincial ID card"
+              ],
+              [
+                "Listed document",
+                "Other Canadian government ID"
+              ]
+            ]
+          },
+          "hint": "Check the table.",
+          "options": [
+            {
+              "text": "A library card",
+              "why": "A library card is not on the list."
+            },
+            {
+              "text": "A passport",
+              "why": "Yes. A passport is on the list."
+            },
+            {
+              "text": "A gym membership card",
+              "why": "A gym card is not on the list."
+            },
+            {
+              "text": "A school timetable",
+              "why": "A timetable is not on the list."
+            }
+          ],
+          "answer": 1
+        },
+        {
+          "id": "ft2030-s1-u2-l2-q6",
+          "label": "The rule",
+          "prompt": "Luca is asked for his SIN. Which rule helps him decide whether to give it?",
+          "type": "choice",
+          "hint": "Only give it when...",
+          "options": [
+            {
+              "text": "Give it only when the law requires it",
+              "why": "Yes. That is the rule."
+            },
+            {
+              "text": "Give it to anyone who asks politely",
+              "why": "Politeness is not a reason. The law requiring it is."
+            },
+            {
+              "text": "Give it to any business that asks",
+              "why": "Only give it when the law requires it."
+            },
+            {
+              "text": "Never give it to anyone",
+              "why": "Employers need your SIN to report your income, and financial institutions need it to report interest and dividends."
+            }
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ft2030-s1-u2-l2-q7",
+          "label": "A bank asks",
+          "prompt": "Mira opens a savings account that earns interest. Why does the financial institution ask for her SIN?",
+          "type": "choice",
+          "hint": "Look at the fourth card.",
+          "options": [
+            {
+              "text": "To use as her photo ID",
+              "why": "A SIN letter or card is not an identity document."
+            },
+            {
+              "text": "To pay her a benefit",
+              "why": "The card says financial institutions need your SIN to report income like interest."
+            },
+            {
+              "text": "To prove she is old enough to bank",
+              "why": "The card says financial institutions ask so they can report income like interest."
+            },
+            {
+              "text": "So it can report the interest she earns",
+              "why": "Yes. Financial institutions need your SIN to report income like interest and dividends."
+            }
+          ],
+          "answer": 3
+        },
+        {
+          "id": "ft2030-s1-u2-l2-q8",
+          "label": "Not an ID",
+          "prompt": "Priya shows her SIN letter at a gym to prove who she is. What is wrong?",
+          "type": "choice",
+          "hint": "Think about what the letter is, and what it is not.",
+          "options": [
+            {
+              "text": "Nothing, a SIN letter proves who you are",
+              "why": "The card says a SIN letter is not an identity document."
+            },
+            {
+              "text": "A SIN letter is not an identity document",
+              "why": "Yes. The confirmation of SIN letter and the SIN card are not identity documents."
+            },
+            {
+              "text": "She should have said the number out loud",
+              "why": "Her SIN should stay private, and a SIN letter is not an identity document."
+            }
+          ],
+          "answer": 1
+        },
+        {
+          "id": "ft2030-s1-u2-l2-q9",
+          "label": "Why guard it",
+          "prompt": "Why do you guard your SIN?",
+          "type": "choice",
+          "terms": [
+            {
+              "term": "identity theft",
+              "meaning": "Someone uses your details to pretend to be you."
+            }
+          ],
+          "hint": "The last card gives the risk.",
+          "options": [
+            {
+              "text": "It costs a fee each time it is used",
+              "why": "It costs nothing to apply. The risk is fraud and identity theft."
+            },
+            {
+              "text": "Misuse of it can mean fraud and identity theft",
+              "why": "Yes. It is private, and it is illegal for anyone else to use it."
+            },
+            {
+              "text": "It stops working once it is shown to someone",
+              "why": "The cards say nothing like that. The risk is that someone could misuse it."
+            }
+          ],
+          "answer": 1
+        },
+        {
+          "id": "ft2030-s1-u2-l2-q10",
+          "label": "Using a SIN",
+          "prompt": "Dana's cousin wants to use her SIN to fill in a form of his own. Is that allowed?",
+          "type": "choice",
+          "terms": [
+            {
+              "term": "SIN",
+              "meaning": "Social Insurance Number: a nine-digit number you need to work in Canada and to use government programs."
+            }
+          ],
+          "hint": "The last card says who may use it.",
+          "options": [
+            {
+              "text": "Yes, family may use each other's SINs",
+              "why": "The card says it is illegal for anyone else to use your SIN."
+            },
+            {
+              "text": "No, it is illegal for anyone else to use it",
+              "why": "Yes. A SIN is private, and it is illegal for anyone else to use it."
+            },
+            {
+              "text": "Yes, if Dana says it is fine",
+              "why": "The card says it is illegal for anyone else to use it."
+            }
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "id": "ft2030-s1-u2-l3",
+      "title": "How it began, where it goes",
+      "kind": "lesson",
+      "learn": [
+        "Say when federal income tax began and why.",
+        "Read the main sources and uses of federal money."
+      ],
+      "cards": [
+        {
+          "text": "Canada's federal income tax began in 1917, under the Income War Tax Act. An income tax is a tax on the money people earn.",
+          "image": {
+            "src": "ft2030-s1-u2/l3c1.webp",
+            "alt": "An old desk with a blank ledger, inkwell and quill"
+          }
+        },
+        {
+          "text": "It began as a temporary measure to pay for the war. Today each person still files a return every year.",
+          "image": {
+            "src": "ft2030-s1-u2/l3c2.webp",
+            "alt": "A sand timer on blank sheets beside a row of gold discs"
+          }
+        },
+        {
+          "text": "Each year the government reports what it took in and spent. In 2025-26, personal income tax brought in more than the GST. Amounts are in millions of dollars.",
+          "figure": {
+            "kind": "table",
+            "title": "Federal revenue, 2025-26",
+            "columns": [
+              "Source",
+              "Amount"
+            ],
+            "rows": [
+              [
+                "Personal income tax",
+                "$247,735 million"
+              ],
+              [
+                "GST",
+                "$51,810 million"
+              ],
+              [
+                "Total revenues",
+                "$526,412 million"
+              ]
+            ]
+          }
+        },
+        {
+          "text": "In 2025-26 the federal government spent $565.7 billion. These eight lines add up to $547.8 billion, which is less than the total, so some spending is not listed.",
+          "figure": {
+            "kind": "table",
+            "title": "Federal spending, 2025-26",
+            "columns": [
+              "Category",
+              "Amount"
+            ],
+            "rows": [
+              [
+                "Other direct program expenses",
+                "$131,041 million"
+              ],
+              [
+                "Other transfer payments",
+                "$110,686 million"
+              ],
+              [
+                "Old Age Security",
+                "$82,741 million"
+              ],
+              [
+                "Federal transfer support for health and social programs",
+                "$72,078 million"
+              ],
+              [
+                "Fiscal arrangements",
+                "$38,763 million"
+              ],
+              [
+                "Public debt charges",
+                "$53,541 million"
+              ],
+              [
+                "Children's benefits",
+                "$30,100 million"
+              ],
+              [
+                "Employment Insurance",
+                "$28,830 million"
+              ],
+              [
+                "Total expenses",
+                "$565,728 million"
+              ]
+            ]
+          }
+        },
+        {
+          "text": "Each bar shows one category as a share of all $565.7 billion spent. Other direct program expenses is the biggest line, at 23.2 percent.",
+          "figure": {
+            "kind": "bars",
+            "title": "Share of all federal spending, 2025-26",
+            "unit": "%",
+            "bars": [
+              {
+                "label": "Other direct",
+                "value": 23.2
+              },
+              {
+                "label": "Other transfers",
+                "value": 19.6
+              },
+              {
+                "label": "Old Age Security",
+                "value": 14.6
+              },
+              {
+                "label": "Health and social",
+                "value": 12.7
+              },
+              {
+                "label": "Public debt charges",
+                "value": 9.5
+              }
+            ]
+          }
+        },
+        {
+          "text": "The government spent $565.7 billion and took in $526.4 billion. That is $39.3 billion more spent than collected. These are federal numbers for one year, 2025-26.",
+          "image": {
+            "src": "ft2030-s1-u2/l3c6.webp",
+            "alt": "A balance scale tipped toward a tall stack of gold discs"
+          }
+        }
+      ],
+      "questions": [
+        {
+          "id": "ft2030-s1-u2-l3-q1",
+          "label": "When it began",
+          "prompt": "In which year did Canada's federal income tax begin?",
+          "type": "choice",
+          "hint": "The first card gives the year.",
+          "options": [
+            {
+              "text": "1927",
+              "why": "It began ten years earlier, in 1917."
+            },
+            {
+              "text": "1957",
+              "why": "It began long before that, in 1917."
+            },
+            {
+              "text": "1987",
+              "why": "It began long before that, in 1917."
+            },
+            {
+              "text": "1917",
+              "why": "Yes. It began in 1917 under the Income War Tax Act."
+            }
+          ],
+          "answer": 3
+        },
+        {
+          "id": "ft2030-s1-u2-l3-q2",
+          "label": "Why it began",
+          "prompt": "Why was federal income tax first introduced?",
+          "type": "choice",
+          "hint": "The second card says why.",
+          "options": [
+            {
+              "text": "To pay for Old Age Security",
+              "why": "Old Age Security is a spending line today. The tax began to pay for the war."
+            },
+            {
+              "text": "To collect the GST",
+              "why": "The GST is a different tax. Income tax began to pay for the war."
+            },
+            {
+              "text": "As a temporary measure to pay for the war",
+              "why": "Yes. It was meant to be temporary."
+            },
+            {
+              "text": "To issue Social Insurance Numbers",
+              "why": "SINs are issued by Service Canada. Income tax began to pay for the war."
+            }
+          ],
+          "answer": 2
+        },
+        {
+          "id": "ft2030-s1-u2-l3-q3",
+          "label": "The first act",
+          "prompt": "What was the name of the law under which Canada's federal income tax began?",
+          "type": "choice",
+          "hint": "The first card names it.",
+          "options": [
+            {
+              "text": "The Income War Tax Act",
+              "why": "Yes. The tax began in 1917 under the Income War Tax Act."
+            },
+            {
+              "text": "The Wartime Savings Act",
+              "why": "The first card names the Income War Tax Act."
+            },
+            {
+              "text": "The National Revenue Act",
+              "why": "The first card names the Income War Tax Act."
+            },
+            {
+              "text": "The Social Insurance Act",
+              "why": "SINs come from Service Canada. The tax began under the Income War Tax Act."
+            }
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ft2030-s1-u2-l3-q4",
+          "label": "Who collects",
+          "prompt": "Personal income tax brought in billions for the federal government. In Alberta, which agency collects it from a worker?",
+          "type": "choice",
+          "hint": "Think back to the CRA level.",
+          "options": [
+            {
+              "text": "The CRA",
+              "why": "Yes. In Alberta the CRA collects personal income tax with federal income tax."
+            },
+            {
+              "text": "Service Canada",
+              "why": "Service Canada issues the SIN. The CRA collects the tax."
+            },
+            {
+              "text": "The worker's employer",
+              "why": "An employer does not keep income tax. The CRA collects it."
+            },
+            {
+              "text": "The City of Edmonton",
+              "why": "A city does not collect it. The CRA does."
+            }
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ft2030-s1-u2-l3-q5",
+          "label": "Income tax share",
+          "prompt": "Personal income tax brought in $247,735 million of $526,412 million in total revenues. What percent of total revenues is that? Round to the nearest whole percent.",
+          "type": "number",
+          "figure": {
+            "kind": "table",
+            "title": "Federal revenue, 2025-26",
+            "columns": [
+              "Source",
+              "Amount"
+            ],
+            "rows": [
+              [
+                "Personal income tax",
+                "$247,735 million"
+              ],
+              [
+                "GST",
+                "$51,810 million"
+              ],
+              [
+                "Total revenues",
+                "$526,412 million"
+              ]
+            ]
+          },
+          "hint": "Divide the part by the total, then multiply by 100.",
+          "unit": "%",
+          "answer": 47,
+          "tolerance": 0,
+          "why": "Part divided by whole, times 100, gives the share.",
+          "working": "247735 / 526412 = 0.4706. Times 100 is about 47.1%, so 47%.",
+          "traps": [
+            {
+              "value": 10,
+              "why": "That is the GST share of revenue, not income tax."
+            }
+          ],
+          "miss": "Divide personal income tax by total revenues, then multiply by 100 and round."
+        },
+        {
+          "id": "ft2030-s1-u2-l3-q6",
+          "label": "Old Age Security share",
+          "prompt": "Old Age Security cost $82,741 million of $565,728 million in total expenses. What percent of total expenses is that? Round to the nearest whole percent.",
+          "type": "number",
+          "figure": {
+            "kind": "table",
+            "title": "Federal spending, 2025-26",
+            "columns": [
+              "Category",
+              "Amount"
+            ],
+            "rows": [
+              [
+                "Other direct program expenses",
+                "$131,041 million"
+              ],
+              [
+                "Other transfer payments",
+                "$110,686 million"
+              ],
+              [
+                "Old Age Security",
+                "$82,741 million"
+              ],
+              [
+                "Federal transfer support for health and social programs",
+                "$72,078 million"
+              ],
+              [
+                "Fiscal arrangements",
+                "$38,763 million"
+              ],
+              [
+                "Public debt charges",
+                "$53,541 million"
+              ],
+              [
+                "Children's benefits",
+                "$30,100 million"
+              ],
+              [
+                "Employment Insurance",
+                "$28,830 million"
+              ],
+              [
+                "Total expenses",
+                "$565,728 million"
+              ]
+            ]
+          },
+          "hint": "Part over the total, times 100.",
+          "unit": "%",
+          "answer": 15,
+          "tolerance": 0,
+          "why": "Part divided by whole, times 100, gives the share.",
+          "working": "82741 / 565728 = 0.1463. Times 100 is about 14.6%, so 15%.",
+          "traps": [
+            {
+              "value": 16,
+              "why": "That divides by total revenues. Spending is compared with total expenses."
+            }
+          ],
+          "miss": "Use total expenses as the whole, not total revenues."
+        },
+        {
+          "id": "ft2030-s1-u2-l3-q7",
+          "label": "Public debt bar",
+          "prompt": "Tap the bar for public debt charges.",
+          "type": "point",
+          "figure": {
+            "kind": "bars",
+            "title": "Share of all federal spending, 2025-26",
+            "unit": "%",
+            "bars": [
+              {
+                "label": "Other direct",
+                "value": 23.2
+              },
+              {
+                "label": "Other transfers",
+                "value": 19.6
+              },
+              {
+                "label": "Old Age Security",
+                "value": 14.6
+              },
+              {
+                "label": "Health and social",
+                "value": 12.7
+              },
+              {
+                "label": "Public debt charges",
+                "value": 9.5
+              }
+            ]
+          },
+          "hint": "Find the label \"Public debt charges\".",
+          "answer": 4,
+          "why": "Public debt charges were 9.5 percent of spending.",
+          "miss": "That bar is a different category. Read the labels under the bars."
+        },
+        {
+          "id": "ft2030-s1-u2-l3-q8",
+          "label": "Biggest line",
+          "prompt": "Which of these eight lines was the biggest in 2025-26?",
+          "type": "choice",
+          "figure": {
+            "kind": "table",
+            "title": "Federal spending, 2025-26",
+            "columns": [
+              "Category",
+              "Amount"
+            ],
+            "rows": [
+              [
+                "Other direct program expenses",
+                "$131,041 million"
+              ],
+              [
+                "Other transfer payments",
+                "$110,686 million"
+              ],
+              [
+                "Old Age Security",
+                "$82,741 million"
+              ],
+              [
+                "Federal transfer support for health and social programs",
+                "$72,078 million"
+              ],
+              [
+                "Fiscal arrangements",
+                "$38,763 million"
+              ],
+              [
+                "Public debt charges",
+                "$53,541 million"
+              ],
+              [
+                "Children's benefits",
+                "$30,100 million"
+              ],
+              [
+                "Employment Insurance",
+                "$28,830 million"
+              ],
+              [
+                "Total expenses",
+                "$565,728 million"
+              ]
+            ]
+          },
+          "hint": "Compare the amounts in the table.",
+          "options": [
+            {
+              "text": "Old Age Security program",
+              "why": "It was $82,741 million. That is less than Other direct program expenses."
+            },
+            {
+              "text": "Public debt charges",
+              "why": "It was $53,541 million, well below the biggest line."
+            },
+            {
+              "text": "Federal transfer support for health and social programs",
+              "why": "It was $72,078 million, less than the biggest line."
+            },
+            {
+              "text": "Other direct program expenses",
+              "why": "Yes. It was $131,041 million."
+            }
+          ],
+          "answer": 3
+        },
+        {
+          "id": "ft2030-s1-u2-l3-q9",
+          "label": "Transfer support",
+          "prompt": "Which line is federal transfer support for health and social programs?",
+          "type": "choice",
+          "figure": {
+            "kind": "table",
+            "title": "Federal spending, 2025-26",
+            "columns": [
+              "Category",
+              "Amount"
+            ],
+            "rows": [
+              [
+                "Other direct program expenses",
+                "$131,041 million"
+              ],
+              [
+                "Other transfer payments",
+                "$110,686 million"
+              ],
+              [
+                "Old Age Security",
+                "$82,741 million"
+              ],
+              [
+                "Federal transfer support for health and social programs",
+                "$72,078 million"
+              ],
+              [
+                "Fiscal arrangements",
+                "$38,763 million"
+              ],
+              [
+                "Public debt charges",
+                "$53,541 million"
+              ],
+              [
+                "Children's benefits",
+                "$30,100 million"
+              ],
+              [
+                "Employment Insurance",
+                "$28,830 million"
+              ],
+              [
+                "Total expenses",
+                "$565,728 million"
+              ]
+            ]
+          },
+          "hint": "Look for the word \"transfer\".",
+          "options": [
+            {
+              "text": "Employment Insurance",
+              "why": "That is support for people who lose work, not transfer support for health."
+            },
+            {
+              "text": "Children's benefits",
+              "why": "That is money for children, not transfer support for health and social programs."
+            },
+            {
+              "text": "Federal transfer support for health and social programs",
+              "why": "Yes. It was $72,078 million in 2025-26."
+            },
+            {
+              "text": "Public debt charges",
+              "why": "That is the cost of borrowing, not transfer support for health."
+            }
+          ],
+          "answer": 2
+        },
+        {
+          "id": "ft2030-s1-u2-l3-q10",
+          "label": "Spent minus taken",
+          "prompt": "In 2025-26, how much more did the federal government spend than it took in?",
+          "type": "choice",
+          "hint": "Subtract total revenues from total expenses.",
+          "options": [
+            {
+              "text": "$526.4 billion",
+              "why": "That is total revenues, not the difference."
+            },
+            {
+              "text": "$39.3 billion",
+              "why": "Yes. $565.7 billion - $526.4 billion = $39.3 billion."
+            },
+            {
+              "text": "$565.7 billion",
+              "why": "That is total expenses, not the difference."
+            },
+            {
+              "text": "$1092.1 billion",
+              "why": "That adds the two. The difference subtracts them."
+            }
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ],
+  "image": {
+    "src": "ft2030-s1-u2/banner.webp",
+    "alt": "A winter street at dusk with an office, a bank and a library in a row"
+  }
+}

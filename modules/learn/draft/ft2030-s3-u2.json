@@ -1,0 +1,1419 @@
+{
+  "id": "ft2030-s3-u2",
+  "title": "Risk and the market cycle",
+  "blurb": "Risk tolerance, gains and losses in percent, bull and bear markets, and advice.",
+  "outcome_codes": [
+    "FIN3080 1.2",
+    "FIN3080 1.3",
+    "FIN3080 1.4"
+  ],
+  "levels": [
+    {
+      "id": "ft2030-s3-u2-l1",
+      "title": "Risk and risk tolerance",
+      "kind": "lesson",
+      "learn": [
+        "Say what risk tolerance is and what shapes it.",
+        "Turn a fall in value into dollars and into a percent."
+      ],
+      "cards": [
+        {
+          "text": "Risk is how far a result can land from what you hoped for, and how little warning you get. It is not only how much you lost. A choice can be risky even in a year when nothing goes wrong. More chance of loss and bigger swings mean more risk."
+        },
+        {
+          "text": "Risk tolerance is how big a fall in value a person can live with, without being forced to sell or choosing to sell in a panic. It belongs to the person, not to the investment. Two people can hold the same thing and have different tolerances."
+        },
+        {
+          "text": "Time is the first thing that shapes it. Lena needs $3,000.00 for school in 8 months. Omar is saving for something 25 years away. A fall hurts Lena more: she has little time to wait before she must spend the money. Omar can leave his alone for years."
+        },
+        {
+          "text": "Need is the second. Money for rent or a bill due soon must be there on the day. Spare money, with no date it must be spent, can sit through a fall. The same fall matters more for a dollar that has a job to do soon."
+        },
+        {
+          "text": "How you react is the third. A fall in value is a loss on paper until you sell. Someone who sells in a panic turns it into a real loss. A person who knows they would panic has a lower tolerance, whatever the numbers say. That is honest, not weak."
+        },
+        {
+          "text": "Here are the three side by side. Each one leans toward more room for risk or less. They describe a person. They do not decide anything for them.",
+          "figure": {
+            "kind": "table",
+            "title": "Three things that shape risk tolerance",
+            "columns": [
+              "Factor",
+              "More room",
+              "Less room"
+            ],
+            "rows": [
+              [
+                "Time",
+                "Money not needed for years",
+                "Money needed soon"
+              ],
+              [
+                "Need",
+                "Spare money",
+                "Money for bills"
+              ],
+              [
+                "Reaction",
+                "Stays calm in a fall",
+                "Would sell in a panic"
+              ]
+            ]
+          }
+        }
+      ],
+      "questions": [
+        {
+          "id": "ft2030-s3-u2-l1-q1",
+          "label": "What it is",
+          "prompt": "What is risk tolerance?",
+          "type": "choice",
+          "hint": "Look at the second card.",
+          "options": [
+            {
+              "text": "How big a fall in value a person can live with",
+              "why": "Yes. It is about the person: the fall they can live with."
+            },
+            {
+              "text": "How much a fund earned last year",
+              "why": "That is a return. Tolerance is about falls a person can live with."
+            },
+            {
+              "text": "Whether a company will fail",
+              "why": "That is a risk of one company. Tolerance belongs to the person."
+            }
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ft2030-s3-u2-l1-q2",
+          "label": "Time alone",
+          "prompt": "Ines needs her money in 6 months. Kai will not need his for 30 years. Looking at time alone, whose room for a fall is smaller?",
+          "type": "choice",
+          "hint": "The third card is about time.",
+          "options": [
+            {
+              "text": "Ines, who has less time before she must spend it",
+              "why": "Yes. With less time, a fall leaves her less room."
+            },
+            {
+              "text": "Kai, because 30 years is a long time to be exposed",
+              "why": "A long time is room, not a limit. Kai has more time before he must spend the money."
+            },
+            {
+              "text": "Both the same, since they hold the same amount",
+              "why": "The amount is the same, but the time is not. Time is what this question is about."
+            }
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ft2030-s3-u2-l1-q3",
+          "label": "Need for money",
+          "prompt": "Which money can best sit through a fall in value?",
+          "type": "choice",
+          "hint": "Which money has no date it must be spent?",
+          "options": [
+            {
+              "text": "Rent due at the end of this month",
+              "why": "Rent must be paid on the day, so a fall would hurt."
+            },
+            {
+              "text": "Spare savings with no date to spend them",
+              "why": "Yes. Money with no job to do soon can wait through a fall."
+            },
+            {
+              "text": "Tuition due in two months",
+              "why": "Tuition has a date soon, so a fall would hurt."
+            }
+          ],
+          "answer": 1
+        },
+        {
+          "id": "ft2030-s3-u2-l1-q4",
+          "label": "Paper loss",
+          "prompt": "A fund that Sam owns falls 20%. He does not sell. What is the fall at this point?",
+          "type": "choice",
+          "hint": "The fifth card says when a fall becomes real.",
+          "options": [
+            {
+              "text": "A real loss, the same as if he had sold",
+              "why": "Selling is what makes it real. Until then it is a loss on paper."
+            },
+            {
+              "text": "No change at all, since he still owns it",
+              "why": "The value did fall. It is a loss on paper."
+            },
+            {
+              "text": "A loss on paper, not yet a real loss",
+              "why": "Yes. It becomes a real loss only if he sells at the lower price."
+            }
+          ],
+          "answer": 2
+        },
+        {
+          "id": "ft2030-s3-u2-l1-q5",
+          "label": "Same fund",
+          "prompt": "Two people hold the same fund. One sells in a panic when it falls. The other holds. What is different about them?",
+          "type": "choice",
+          "hint": "The fund did not change. Who did?",
+          "options": [
+            {
+              "text": "Their risk tolerance",
+              "why": "Yes. The fund is the same, so the difference is in the people."
+            },
+            {
+              "text": "The risk of the fund",
+              "why": "It is the same fund, so it has the same risk."
+            },
+            {
+              "text": "The return the fund earned that year",
+              "why": "The fund earned the same return for both of them."
+            }
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ft2030-s3-u2-l1-q6",
+          "label": "Fall in dollars",
+          "prompt": "A made-up fund holds $2,500.00. It falls 12%. By how many dollars did it fall?",
+          "type": "number",
+          "hint": "Take the percent of the amount held.",
+          "unit": "$",
+          "answer": 30000,
+          "tolerance": 1,
+          "why": "Yes. 12% of $2,500.00 is $300.00.",
+          "working": "$2,500.00 x 0.12 = $300.00.",
+          "traps": [
+            {
+              "value": 220000,
+              "why": "That is what is left after the fall. The question asks how much it fell."
+            }
+          ],
+          "miss": "Change the percent to a decimal, then multiply by the amount the fund holds."
+        },
+        {
+          "id": "ft2030-s3-u2-l1-q7",
+          "label": "Fall in percent",
+          "prompt": "Mila's fund was worth $1,800.00 and is now worth $1,656.00. By what percent did it fall?",
+          "type": "number",
+          "hint": "Find the dollars lost first, then divide by the starting value.",
+          "unit": "%",
+          "answer": 8,
+          "tolerance": 0.005,
+          "why": "Yes. It fell $144.00, and $144.00 / $1,800.00 is 8%.",
+          "working": "$1,800.00 - $1,656.00 = $144.00. $144.00 / $1,800.00 = 0.08 = 8%.",
+          "traps": [
+            {
+              "value": 144,
+              "why": "That is the fall in dollars. A percent needs a division by the starting value."
+            }
+          ],
+          "miss": "A percent fall is the dollars lost divided by the starting value, not the value now."
+        },
+        {
+          "id": "ft2030-s3-u2-l1-q8",
+          "label": "His limit in percent",
+          "prompt": "Jonas has $5,000.00 invested. He can live with a fall of at most $750.00. What is the biggest percent fall he can live with?",
+          "type": "number",
+          "hint": "Divide the dollars he can lose by the amount invested.",
+          "unit": "%",
+          "answer": 15,
+          "tolerance": 0.005,
+          "why": "Yes. $750.00 / $5,000.00 is 0.15, which is 15%.",
+          "working": "$750.00 / $5,000.00 = 0.15 = 15%.",
+          "traps": [
+            {
+              "value": 750,
+              "why": "That is the dollars. The question asks for a percent of the amount invested."
+            }
+          ],
+          "miss": "A limit in percent is the dollars he can lose divided by the amount he has invested."
+        },
+        {
+          "id": "ft2030-s3-u2-l1-q9",
+          "label": "Past a limit",
+          "prompt": "Each bar shows $1,000.00 after one bad year for a made-up choice. A person's limit is a fall of 20%. Tap the bar that goes past the limit.",
+          "type": "point",
+          "figure": {
+            "kind": "bars",
+            "title": "After one bad year, from $1,000.00",
+            "unit": "$",
+            "bars": [
+              {
+                "label": "Choice X",
+                "value": 98000
+              },
+              {
+                "label": "Choice Y",
+                "value": 86000
+              },
+              {
+                "label": "Choice Z",
+                "value": 64000
+              }
+            ]
+          },
+          "hint": "Work out each bar's fall from $1,000.00.",
+          "answer": 2,
+          "why": "Yes. Choice Z fell 36%, past a 20% limit. X fell 2% and Y fell 14%.",
+          "miss": "A bar goes past the limit when it is more than 20% below $1,000.00. Check each one."
+        }
+      ]
+    },
+    {
+      "id": "ft2030-s3-u2-l2",
+      "title": "Percent of the current value",
+      "kind": "lesson",
+      "learn": [
+        "Work out a gain or a loss as a percent of the value right now.",
+        "Say why a fall followed by a rise does not get you back."
+      ],
+      "cards": [
+        {
+          "text": "A percent change is a percent of the value at that moment, not of the starting value. Take $100.00. A fall of 20% takes off $20.00 and leaves $80.00. A rise of 10% is then 10% of $80.00, which is $8.00. The value is $88.00, not $90.00."
+        },
+        {
+          "text": "Here is the same case in steps. The 10% rise is measured on a smaller value than the 20% fall was, so it adds fewer dollars than the fall took off.",
+          "figure": {
+            "kind": "table",
+            "title": "A fall, then a rise",
+            "columns": [
+              "Step",
+              "Move",
+              "Value"
+            ],
+            "rows": [
+              [
+                "Start",
+                "none",
+                "$100.00"
+              ],
+              [
+                "After the fall",
+                "-20%",
+                "$80.00"
+              ],
+              [
+                "After the rise",
+                "+10%",
+                "$88.00"
+              ]
+            ]
+          }
+        },
+        {
+          "text": "Equal percents do not cancel. A fall of 25% from $100.00 leaves $75.00. A rise of 25% is measured on $75.00, so it adds $18.75 and gives $93.75. That is still below the start."
+        },
+        {
+          "text": "To get back, the rise must be bigger than the fall, because it is measured on what is left. The rise needed is the dollars lost divided by the dollars left. After a fall of 50%, $100.00 has become $50.00. Getting back takes $50.00 on $50.00, a rise of 100%."
+        },
+        {
+          "text": "Here is the rise that undoes each fall, from a start of $100.00. Rises are rounded to one decimal place. The bigger the fall, the more the rise has to be.",
+          "figure": {
+            "kind": "table",
+            "title": "The rise that gets you back",
+            "columns": [
+              "Fall",
+              "Left of $100.00",
+              "Rise needed"
+            ],
+            "rows": [
+              [
+                "10%",
+                "$90.00",
+                "11.1%"
+              ],
+              [
+                "20%",
+                "$80.00",
+                "25%"
+              ],
+              [
+                "50%",
+                "$50.00",
+                "100%"
+              ],
+              [
+                "75%",
+                "$25.00",
+                "300%"
+              ]
+            ]
+          }
+        },
+        {
+          "text": "Moves stack, one on top of the other. Two falls of 10% do not make a fall of 20%. $100.00 falls to $90.00. The second 10% is of $90.00, which is $9.00, so it leaves $81.00. Do one move at a time."
+        }
+      ],
+      "questions": [
+        {
+          "id": "ft2030-s3-u2-l2-q1",
+          "label": "Measured on what",
+          "prompt": "A value rises 10% after a fall. What is that 10% measured on?",
+          "type": "choice",
+          "hint": "The first card says what a percent is of.",
+          "options": [
+            {
+              "text": "The value at the very start",
+              "why": "The start is not the value when the rise happens. The rise is measured on the value just before it."
+            },
+            {
+              "text": "The size of the fall in dollars",
+              "why": "The fall in dollars is an amount, not the value the rise is measured on."
+            },
+            {
+              "text": "The value just before the rise",
+              "why": "Yes. A percent change is a percent of the value right then."
+            }
+          ],
+          "answer": 2
+        },
+        {
+          "id": "ft2030-s3-u2-l2-q2",
+          "label": "Fall, then rise",
+          "prompt": "$200.00 falls 30%, then rises 10%. What is it worth after both moves, in dollars?",
+          "type": "number",
+          "hint": "Do the fall first. Then take 10% of the new value, not of $200.00.",
+          "unit": "$",
+          "answer": 15400,
+          "tolerance": 1,
+          "why": "Yes. $140.00 after the fall, then 10% of that is $14.00, so $154.00.",
+          "working": "$200.00 x 0.70 = $140.00. $140.00 x 1.10 = $154.00.",
+          "traps": [
+            {
+              "value": 16000,
+              "why": "That takes 30% off and puts 10% on, both from $200.00. The rise is measured on the lower value."
+            },
+            {
+              "value": 14000,
+              "why": "That stops after the fall. The rise comes next."
+            }
+          ],
+          "miss": "Find the value after the fall. The rise is a percent of that new value."
+        },
+        {
+          "id": "ft2030-s3-u2-l2-q3",
+          "label": "Two falls",
+          "prompt": "$400.00 falls 10%, and then falls 10% again. What is it worth after both falls, in dollars?",
+          "type": "number",
+          "hint": "The second fall is 10% of the value after the first.",
+          "unit": "$",
+          "answer": 32400,
+          "tolerance": 1,
+          "why": "Yes. $360.00 after the first fall, then 10% of that is $36.00, leaving $324.00.",
+          "working": "$400.00 x 0.90 = $360.00. $360.00 x 0.90 = $324.00.",
+          "traps": [
+            {
+              "value": 32000,
+              "why": "That takes 20% off the start. The second 10% is of the smaller value."
+            }
+          ],
+          "miss": "Take the first fall. Then take 10% off what is left, not off $400.00."
+        },
+        {
+          "id": "ft2030-s3-u2-l2-q4",
+          "label": "Rise to get back",
+          "prompt": "A made-up fund falls 40%. What percent rise gets it back to where it started? Round to one decimal place.",
+          "type": "number",
+          "hint": "Rise needed = dollars lost divided by dollars left, on a $100.00 start.",
+          "unit": "%",
+          "answer": 66.7,
+          "tolerance": 0.05,
+          "why": "Yes. $100.00 falls to $60.00. Getting back takes $40.00 on $60.00, which is 66.7%.",
+          "working": "$100.00 x 0.60 = $60.00. $40.00 / $60.00 = 0.6667 = 66.7%.",
+          "traps": [
+            {
+              "value": 40,
+              "why": "A rise of 40% is measured on the smaller value, so it adds less than the fall took off."
+            }
+          ],
+          "miss": "Start with $100.00. Find what is left, then divide the dollars lost by what is left."
+        },
+        {
+          "id": "ft2030-s3-u2-l2-q5",
+          "label": "A bigger fall",
+          "prompt": "A made-up fund falls 60%. What percent rise gets it back to where it started?",
+          "type": "number",
+          "hint": "Use a $100.00 start. What is left after the fall?",
+          "unit": "%",
+          "answer": 150,
+          "tolerance": 0.05,
+          "why": "Yes. $100.00 falls to $40.00. Getting back takes $60.00 on $40.00, which is 150%.",
+          "working": "$100.00 x 0.40 = $40.00. $60.00 / $40.00 = 1.5 = 150%.",
+          "traps": [
+            {
+              "value": 60,
+              "why": "A rise of 60% on $40.00 adds only $24.00. The rise must be measured on what is left."
+            }
+          ],
+          "miss": "Divide the dollars lost by the dollars left, not by the start."
+        },
+        {
+          "id": "ft2030-s3-u2-l2-q6",
+          "label": "Why more",
+          "prompt": "Why does a fall of 60% need a rise of more than 60% to get back?",
+          "type": "choice",
+          "hint": "Think about what the rise is a percent of.",
+          "options": [
+            {
+              "text": "The rise is measured on a smaller amount",
+              "why": "Yes. After the fall less is left, so each percent adds fewer dollars."
+            },
+            {
+              "text": "Rises are always counted twice",
+              "why": "Nothing is counted twice. The rise is measured on what is left."
+            },
+            {
+              "text": "A fee is added back each time",
+              "why": "Fees are not part of this. The rise is measured on a smaller value."
+            }
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ft2030-s3-u2-l2-q7",
+          "label": "Stacked falls",
+          "prompt": "Rosa would sell if her value fell 29% from her start. It falls 20%, then falls 10% more. Has the total fall reached her limit?",
+          "type": "choice",
+          "hint": "Do the two falls one at a time on $100.00.",
+          "options": [
+            {
+              "text": "Yes: 20% and 10% make 30%, past 29%",
+              "why": "Falls do not add. The second 10% is of the value after the first fall, so it takes off less."
+            },
+            {
+              "text": "No: the total fall is 28%, below 29%",
+              "why": "Yes. The value is 72% of the start, a fall of 28%. The second 10% is of a smaller value."
+            },
+            {
+              "text": "No: only the second fall of 10% counts",
+              "why": "Both falls count. Together they leave 72% of the start."
+            }
+          ],
+          "answer": 1
+        },
+        {
+          "id": "ft2030-s3-u2-l2-q8",
+          "label": "Farthest below",
+          "prompt": "These bars show a made-up fund after each of three moves. Tap the bar where the value is farthest below the start.",
+          "type": "point",
+          "figure": {
+            "kind": "bars",
+            "title": "A made-up fund, in dollars",
+            "unit": "$",
+            "bars": [
+              {
+                "label": "Start",
+                "value": 100000
+              },
+              {
+                "label": "After +10%",
+                "value": 110000
+              },
+              {
+                "label": "After -30%",
+                "value": 77000
+              },
+              {
+                "label": "After +20%",
+                "value": 92400
+              }
+            ]
+          },
+          "hint": "Compare each bar with the Start bar.",
+          "answer": 2,
+          "why": "Yes. After the 30% fall the value is $770.00, the lowest of the four bars.",
+          "miss": "Compare each bar's value with the Start bar."
+        },
+        {
+          "id": "ft2030-s3-u2-l2-q9",
+          "label": "Below the start",
+          "prompt": "Look at the bars: the fund began at $1,000.00 and the last bar is $924.00. How many percent below the start is the last bar? Round to one decimal place.",
+          "type": "number",
+          "figure": {
+            "kind": "bars",
+            "title": "A made-up fund, in dollars",
+            "unit": "$",
+            "bars": [
+              {
+                "label": "Start",
+                "value": 100000
+              },
+              {
+                "label": "After +10%",
+                "value": 110000
+              },
+              {
+                "label": "After -30%",
+                "value": 77000
+              },
+              {
+                "label": "After +20%",
+                "value": 92400
+              }
+            ]
+          },
+          "hint": "Find the dollars below the start, then divide by the start.",
+          "unit": "%",
+          "answer": 7.6,
+          "tolerance": 0.05,
+          "why": "Yes. The last bar is $76.00 below $1,000.00, which is 7.6%.",
+          "working": "$1,000.00 - $924.00 = $76.00. $76.00 / $1,000.00 = 0.076 = 7.6%.",
+          "miss": "Compare the last bar with the first. Divide the difference by the starting value."
+        }
+      ]
+    },
+    {
+      "id": "ft2030-s3-u2-l3",
+      "title": "The business cycle, bull and bear",
+      "kind": "lesson",
+      "learn": [
+        "Name the four phases of the business cycle.",
+        "Tell a correction from a bear market by the fall from the peak."
+      ],
+      "cards": [
+        {
+          "text": "The economy moves in a cycle: it grows, stops, shrinks and starts again. Economists name four phases, in order. After a trough comes another expansion.",
+          "figure": {
+            "kind": "table",
+            "title": "The four phases",
+            "columns": [
+              "Phase",
+              "What the economy is doing"
+            ],
+            "rows": [
+              [
+                "Expansion",
+                "Growing: more jobs, more spending"
+              ],
+              [
+                "Peak",
+                "The top, where growth stops and turns"
+              ],
+              [
+                "Contraction",
+                "Shrinking: fewer jobs, less spending"
+              ],
+              [
+                "Trough",
+                "The bottom, where it turns up"
+              ]
+            ]
+          }
+        },
+        {
+          "text": "A phase is told by which way things are moving, not by how high a number is. The same high number can belong to different phases, depending on whether it is still climbing or about to turn. The cycle repeats, but the length of each phase is not fixed."
+        },
+        {
+          "text": "Nobody rings a bell at the top or the bottom. A peak or a trough is only clear afterwards. Two words are used for markets. A bull market is one where prices are rising and people feel confident. A bear market is one where prices are falling and confidence has gone."
+        },
+        {
+          "text": "How far must prices fall to count as a bear market? The press uses a habit, not a law. Nobody enforces it. The fall is measured from the peak, not from the price you paid.",
+          "figure": {
+            "kind": "table",
+            "title": "Fall from the peak, and what the press calls it",
+            "columns": [
+              "Fall from the peak",
+              "What it is called"
+            ],
+            "rows": [
+              [
+                "Around 5%",
+                "A pullback"
+              ],
+              [
+                "10% or more, under 20%",
+                "A correction"
+              ],
+              [
+                "20% or more",
+                "A bear market"
+              ]
+            ]
+          }
+        },
+        {
+          "text": "To find the fall from the peak, divide the drop by the peak: (peak - now) / peak. Say a made-up fund peaked at $50.00 and now sits at $42.00. The drop is $8.00, and $8.00 / $50.00 is 16%. That is a correction."
+        },
+        {
+          "text": "Bull and bear describe the market as a whole, not your own holdings. A market can fall less than 10% while one company in it falls 40%. Someone who bought near the bottom can be up while the market is still called a bear market. The label counts from the peak."
+        }
+      ],
+      "questions": [
+        {
+          "id": "ft2030-s3-u2-l3-q1",
+          "label": "Find the trough",
+          "prompt": "This line shows a made-up measure of how much the economy is producing, as a percent of its starting level. Tap the point that is the trough.",
+          "type": "point",
+          "figure": {
+            "kind": "line",
+            "title": "Activity, as % of its start",
+            "unit": "%",
+            "points": [
+              {
+                "label": "Month 1",
+                "value": 100
+              },
+              {
+                "label": "Month 2",
+                "value": 104
+              },
+              {
+                "label": "Month 3",
+                "value": 108
+              },
+              {
+                "label": "Month 4",
+                "value": 110
+              },
+              {
+                "label": "Month 5",
+                "value": 106
+              },
+              {
+                "label": "Month 6",
+                "value": 101
+              },
+              {
+                "label": "Month 7",
+                "value": 98
+              },
+              {
+                "label": "Month 8",
+                "value": 102
+              }
+            ]
+          },
+          "hint": "Look at the first card's table for what a trough is.",
+          "answer": 6,
+          "why": "Yes. The trough is the lowest point, before the line turns up. Here it is Month 7.",
+          "miss": "Check the first card's table for what a trough is."
+        },
+        {
+          "id": "ft2030-s3-u2-l3-q2",
+          "label": "Which phase",
+          "prompt": "Jobs are being added, spending is rising and profits are growing. Which phase fits best?",
+          "type": "choice",
+          "hint": "Look at the table on the first card.",
+          "options": [
+            {
+              "text": "Expansion",
+              "why": "Yes. Growth, with more jobs and spending, is an expansion."
+            },
+            {
+              "text": "Contraction",
+              "why": "A contraction is when the economy shrinks, with fewer jobs and less spending."
+            },
+            {
+              "text": "Trough",
+              "why": "A trough is the bottom, where it turns up. Here things are already growing."
+            }
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ft2030-s3-u2-l3-q3",
+          "label": "Level or direction",
+          "prompt": "Which tells you more about the phase: how high a number is, or which way it is moving?",
+          "type": "choice",
+          "hint": "The second card says what a phase is told by.",
+          "options": [
+            {
+              "text": "How high the number is",
+              "why": "A high number can sit in different phases. The direction tells you more."
+            },
+            {
+              "text": "Which way it is moving",
+              "why": "Yes. The same high number can sit in different phases, depending on its direction."
+            },
+            {
+              "text": "Neither tells you anything",
+              "why": "Direction matters. It helps tell the phases apart."
+            }
+          ],
+          "answer": 1
+        },
+        {
+          "id": "ft2030-s3-u2-l3-q4",
+          "label": "Bull market",
+          "prompt": "Prices have been rising for months and people feel confident. Which word fits?",
+          "type": "choice",
+          "hint": "Third card: which market has rising prices?",
+          "options": [
+            {
+              "text": "A bear market",
+              "why": "A bear market is falling prices with confidence gone."
+            },
+            {
+              "text": "A correction",
+              "why": "A correction is a fall, and here prices are rising."
+            },
+            {
+              "text": "A bull market",
+              "why": "Yes. Rising prices and confidence are a bull market."
+            }
+          ],
+          "answer": 2
+        },
+        {
+          "id": "ft2030-s3-u2-l3-q5",
+          "label": "Fall from the peak",
+          "prompt": "A made-up fund peaked at $80.00 and now sits at $68.00. How many percent below its peak is it?",
+          "type": "number",
+          "hint": "Divide the drop by the peak.",
+          "unit": "%",
+          "answer": 15,
+          "tolerance": 0.05,
+          "why": "Yes. The drop is $12.00, and $12.00 / $80.00 is 0.15, which is 15%.",
+          "working": "$80.00 - $68.00 = $12.00. $12.00 / $80.00 = 0.15 = 15%.",
+          "traps": [
+            {
+              "value": 12,
+              "why": "That is the drop in dollars. A percent needs a division by the peak."
+            }
+          ],
+          "miss": "The fall from the peak is the drop divided by the peak, not by the price now."
+        },
+        {
+          "id": "ft2030-s3-u2-l3-q6",
+          "label": "What it is called",
+          "prompt": "A made-up fund is 24% below its peak. What does the press call a fall of that size?",
+          "type": "choice",
+          "hint": "Check the table of falls on the fourth card.",
+          "options": [
+            {
+              "text": "A correction",
+              "why": "A correction is 10% or more but under 20%. This fall is bigger."
+            },
+            {
+              "text": "A bear market",
+              "why": "Yes. A fall of 20% or more from the peak is called a bear market."
+            },
+            {
+              "text": "A pullback",
+              "why": "A pullback is around 5%. This fall is much bigger."
+            }
+          ],
+          "answer": 1
+        },
+        {
+          "id": "ft2030-s3-u2-l3-q7",
+          "label": "Where it starts",
+          "prompt": "A made-up fund peaked at $150.00. What price is exactly 20% below its peak, where a bear market begins?",
+          "type": "number",
+          "hint": "Take 20% off the peak, not off any other price.",
+          "unit": "$",
+          "answer": 12000,
+          "tolerance": 1,
+          "why": "Yes. 20% of $150.00 is $30.00, so the price is $120.00.",
+          "working": "$150.00 x 0.80 = $120.00.",
+          "traps": [
+            {
+              "value": 3000,
+              "why": "That is the size of the drop. The question asks for the price."
+            }
+          ],
+          "miss": "Find 80% of the peak. That is what is left after a 20% fall."
+        },
+        {
+          "id": "ft2030-s3-u2-l3-q8",
+          "label": "How firm",
+          "prompt": "How firm are the 10% and 20% lines for a correction and a bear market?",
+          "type": "choice",
+          "hint": "The fourth card says how they are used.",
+          "options": [
+            {
+              "text": "The market's habit, not a law",
+              "why": "Yes. The press uses them, but nobody enforces them."
+            },
+            {
+              "text": "Rules that the government enforces",
+              "why": "No one enforces them. They are a habit."
+            },
+            {
+              "text": "Set by each company for itself",
+              "why": "No company sets them. They are the market's habit."
+            }
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ft2030-s3-u2-l3-q9",
+          "label": "Market and holdings",
+          "prompt": "The market has fallen only 6% from its peak. One company in it has fallen 40%. Which statement is true?",
+          "type": "choice",
+          "hint": "The last card says what bull and bear describe.",
+          "options": [
+            {
+              "text": "The market must be in a bear market, since one company fell 40%",
+              "why": "One company does not decide the market. The fall of the whole market is what counts."
+            },
+            {
+              "text": "The market has not reached a correction, yet that company's owners lost a lot",
+              "why": "Yes. The words describe the whole market. Owners of one company can lose far more."
+            },
+            {
+              "text": "The owners of that company lost nothing, since the market held up",
+              "why": "The owners lost 40% of their holding. The market's fall does not change that."
+            }
+          ],
+          "answer": 1
+        },
+        {
+          "id": "ft2030-s3-u2-l3-q10",
+          "label": "Back to the peak",
+          "prompt": "A made-up fund peaked at $200.00 and has fallen 25%. What percent rise from there gets it back to the peak? Round to one decimal place.",
+          "type": "number",
+          "hint": "Dollars lost divided by dollars left, as in level 2.",
+          "unit": "%",
+          "answer": 33.3,
+          "tolerance": 0.05,
+          "why": "Yes. $200.00 falls to $150.00. Getting back takes $50.00 on $150.00, which is 33.3%.",
+          "working": "$200.00 x 0.75 = $150.00. $50.00 / $150.00 = 0.3333 = 33.3%.",
+          "traps": [
+            {
+              "value": 25,
+              "why": "A rise of 25% on $150.00 adds only $37.50. The rise is measured on what is left."
+            }
+          ],
+          "miss": "Divide the dollars lost by the dollars left, as in the last level."
+        }
+      ]
+    },
+    {
+      "id": "ft2030-s3-u2-l4",
+      "title": "Who pays the adviser",
+      "kind": "lesson",
+      "learn": [
+        "Say who pays six kinds of investment adviser.",
+        "Ask what happens to an adviser's income if you lose money."
+      ],
+      "cards": [
+        {
+          "text": "If nobody can tell what phase the economy is in, plenty of people will tell you what to do. Before you weigh any advice, ask who pays the person giving it. That can be answered. \"Do I trust them?\" is only a feeling."
+        },
+        {
+          "text": "Here are six sources of advice and who pays each one. They are described by how they are paid. No real person or firm is meant.",
+          "figure": {
+            "kind": "table",
+            "title": "Six sources, and who pays them",
+            "columns": [
+              "Source",
+              "Who pays them"
+            ],
+            "rows": [
+              [
+                "Adviser at a bank",
+                "The bank, by salary and sales targets"
+              ],
+              [
+                "Fee-only planner",
+                "You, a flat or hourly fee"
+              ],
+              [
+                "Discount brokerage app",
+                "You, small fees on each trade"
+              ],
+              [
+                "Finance influencer",
+                "Advertisers, paid links, the platform"
+              ],
+              [
+                "A company's own news release",
+                "The company itself"
+              ],
+              [
+                "A friend with a tip",
+                "No one"
+              ]
+            ]
+          }
+        },
+        {
+          "text": "A bank adviser is paid by the bank, so what the adviser offers may be the bank's own products. A fee-only planner is paid by the client, a flat fee or by the hour, and no product pays the planner. Neither is simply good or bad. Each one's pay points somewhere."
+        },
+        {
+          "text": "A discount brokerage app gives you tools to trade, not advice. An influencer earns from advertisers, from affiliate links (links that pay the sender when you sign up or buy) and from the platform. A company's news release is written by the company, to make it look good."
+        },
+        {
+          "text": "A friend with a tip is paid by no one, which also means no one is accountable if it goes wrong. That does not make the tip better or worse. The same test works on every source: what happens to this person's income if I lose money?"
+        },
+        {
+          "text": "That test replaces \"is this person honest?\", which you cannot see. It also keeps things fair: bank advisers have sales targets too, so this is not \"banks good, influencers bad\". On a website, a number you can check against its source is worth more than a conclusion you are asked to accept."
+        }
+      ],
+      "questions": [
+        {
+          "id": "ft2030-s3-u2-l4-q1",
+          "label": "Fee-only planner",
+          "prompt": "Who pays a fee-only planner?",
+          "type": "choice",
+          "hint": "The table has a row for this source.",
+          "options": [
+            {
+              "text": "The client, as a flat fee or by the hour",
+              "why": "Yes. The client pays, and no product pays the planner."
+            },
+            {
+              "text": "The bank that employs the planner",
+              "why": "A fee-only planner is not paid by a bank. The client pays."
+            },
+            {
+              "text": "The company whose products the planner sells",
+              "why": "A fee-only planner takes no pay from products. The client pays."
+            }
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ft2030-s3-u2-l4-q2",
+          "label": "Match the payer",
+          "prompt": "Which pairing of a source and who pays it is correct?",
+          "type": "choice",
+          "hint": "The table has a row for each source.",
+          "options": [
+            {
+              "text": "A fee-only planner, paid by the bank",
+              "why": "A fee-only planner is paid by the client. A bank adviser is the one paid by the bank."
+            },
+            {
+              "text": "A bank adviser, paid by the client by the hour",
+              "why": "A bank adviser is paid by the bank, through salary and sales targets. The client pays a fee-only planner."
+            },
+            {
+              "text": "A finance influencer, paid by advertisers and paid links",
+              "why": "Yes. Advertisers, affiliate links and the platform pay influencers."
+            }
+          ],
+          "answer": 2
+        },
+        {
+          "id": "ft2030-s3-u2-l4-q3",
+          "label": "News release",
+          "prompt": "A company publishes a news release about its own results. Why read it with care?",
+          "type": "choice",
+          "hint": "Who writes it, and why?",
+          "options": [
+            {
+              "text": "The company wrote it to make itself look good",
+              "why": "Yes. The company writes it, so it shows the good side."
+            },
+            {
+              "text": "A neutral outsider wrote it",
+              "why": "The company writes it itself, so it is not an outsider's report."
+            },
+            {
+              "text": "It was written to help the reader choose",
+              "why": "It is written to make the company look good, not to help you choose."
+            }
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ft2030-s3-u2-l4-q4",
+          "label": "Brokerage app",
+          "prompt": "What does a discount brokerage app give you?",
+          "type": "choice",
+          "hint": "Fourth card.",
+          "options": [
+            {
+              "text": "A plan written for you",
+              "why": "A plan is advice. The app gives tools, not advice."
+            },
+            {
+              "text": "Tools to trade, not advice",
+              "why": "Yes. You pay small fees on trades, and the app gives tools, not advice."
+            },
+            {
+              "text": "Advice from a fee-only planner",
+              "why": "A fee-only planner is a different source. The app gives tools to trade, not advice."
+            }
+          ],
+          "answer": 1
+        },
+        {
+          "id": "ft2030-s3-u2-l4-q5",
+          "label": "The test question",
+          "prompt": "Which question works on any source of advice?",
+          "type": "choice",
+          "hint": "The fifth card gives it.",
+          "options": [
+            {
+              "text": "Is this person honest?",
+              "why": "You cannot see honesty. Pay is something you can ask about."
+            },
+            {
+              "text": "How many people follow them?",
+              "why": "Followers show reach, not whose income depends on what you do."
+            },
+            {
+              "text": "What happens to their income if I lose money?",
+              "why": "Yes. It can be answered, and it shows where their pay points."
+            }
+          ],
+          "answer": 2
+        },
+        {
+          "id": "ft2030-s3-u2-l4-q6",
+          "label": "Banks and pay",
+          "prompt": "Which statement is true, going by this level?",
+          "type": "choice",
+          "hint": "The last card says what the test is not.",
+          "options": [
+            {
+              "text": "A bank adviser has sales targets too, so the test applies there as well",
+              "why": "Yes. Every source has pay that points somewhere, the bank's as well."
+            },
+            {
+              "text": "Bank advisers give advice that is free of pay pressures",
+              "why": "A bank adviser has sales targets, so pay points somewhere."
+            },
+            {
+              "text": "Any source paid by the client is always right",
+              "why": "Being paid by the client points the pay toward the client. It does not make the advice always right."
+            }
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ft2030-s3-u2-l4-q7",
+          "label": "Number or claim",
+          "prompt": "Which is the better thing to rely on from a website?",
+          "type": "choice",
+          "hint": "The last card ends on this.",
+          "options": [
+            {
+              "text": "A confident conclusion with no source",
+              "why": "A conclusion with no source asks you to accept it."
+            },
+            {
+              "text": "A number you can check against its source",
+              "why": "Yes. You can verify a number. A conclusion asks you to accept it."
+            },
+            {
+              "text": "A page that many people read",
+              "why": "Many readers do not make a claim true."
+            }
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "id": "ft2030-s3-u2-l5",
+      "title": "Reading a chart",
+      "kind": "lesson",
+      "learn": [
+        "Read a trend, support and resistance on a price chart.",
+        "Say why a pattern on a chart is not proof of what comes next."
+      ],
+      "go": {
+        "building": "exchange",
+        "label": "See the price lines"
+      },
+      "cards": [
+        {
+          "text": "A price chart is a line of past prices, oldest on the left. Traders have three words for what they see. A trend is the way the line is mostly heading: up, down or sideways."
+        },
+        {
+          "text": "Support is a price the line keeps bouncing up from, as if there were a floor. Resistance is a price the line keeps failing to climb past, as if there were a ceiling. Both are drawn afterwards, by looking at where the line turned before."
+        },
+        {
+          "text": "A made-up price starts at $40.00. Each day a coin is flipped: heads, up 5%; tails, down 5%. Each day's 5% is of that day's starting price. Prices are rounded to the cent. Seven flips drew this line. It looks like an uptrend, yet nothing but a coin made it.",
+          "figure": {
+            "kind": "line",
+            "title": "A price set by seven coin flips",
+            "unit": "$",
+            "points": [
+              {
+                "label": "Start",
+                "value": 4000
+              },
+              {
+                "label": "Day 1",
+                "value": 4200
+              },
+              {
+                "label": "Day 2",
+                "value": 4410
+              },
+              {
+                "label": "Day 3",
+                "value": 4190
+              },
+              {
+                "label": "Day 4",
+                "value": 4400
+              },
+              {
+                "label": "Day 5",
+                "value": 4620
+              },
+              {
+                "label": "Day 6",
+                "value": 4851
+              },
+              {
+                "label": "Day 7",
+                "value": 4608
+              }
+            ]
+          }
+        },
+        {
+          "text": "A coin has no memory, so after any run of heads the next flip is still even. Random moves can still draw lines that look like trends or clean bounces. A seller who is paid when you act has a reason to show only the best-looking few."
+        },
+        {
+          "text": "Charts are not useless. Real prices are not coin flips, and traders use charts to describe what has happened and to plan when they would get out. What the coin-flip line shows is narrower: seeing a pattern is not the same as knowing what comes next."
+        },
+        {
+          "text": "The Exchange puts a 12-month line on each card of its funds and town companies, with no numbers on the line itself. You can name its trend there. Read the price and the percent change on the card as well. The line describes the past. It does not say what the next month will do."
+        }
+      ],
+      "questions": [
+        {
+          "id": "ft2030-s3-u2-l5-q1",
+          "label": "A trend",
+          "prompt": "What is a trend on a price chart?",
+          "type": "choice",
+          "hint": "The first card defines it.",
+          "options": [
+            {
+              "text": "The way the line is mostly heading",
+              "why": "Yes. A trend is the main direction: up, down or sideways."
+            },
+            {
+              "text": "A price the line keeps bouncing up from",
+              "why": "That is support, not a trend."
+            },
+            {
+              "text": "A price the line cannot climb past",
+              "why": "That is resistance, not a trend."
+            }
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ft2030-s3-u2-l5-q2",
+          "label": "A floor price",
+          "prompt": "A made-up price keeps dipping to $20.00 and bouncing back up. What is $20.00 called?",
+          "type": "choice",
+          "hint": "The line is bouncing up from this price.",
+          "options": [
+            {
+              "text": "Resistance",
+              "why": "Resistance is a ceiling the line fails to climb past. Here the line bounces up from the price."
+            },
+            {
+              "text": "Support",
+              "why": "Yes. A price the line keeps bouncing up from is support."
+            },
+            {
+              "text": "A trend",
+              "why": "A trend is the line's main direction, not a single price."
+            }
+          ],
+          "answer": 1
+        },
+        {
+          "id": "ft2030-s3-u2-l5-q3",
+          "label": "A ceiling price",
+          "prompt": "A made-up price keeps climbing to $55.00 and turning back down. What is $55.00 called?",
+          "type": "choice",
+          "hint": "The line turns back down from this price.",
+          "options": [
+            {
+              "text": "Support",
+              "why": "Support is a floor. Here the price turns back down from $55.00, so it is a ceiling."
+            },
+            {
+              "text": "A pullback",
+              "why": "A pullback is a fall of around 5% from the peak. It is not a name for a price the line turns from."
+            },
+            {
+              "text": "Resistance",
+              "why": "Yes. A price the line keeps failing to climb past is resistance."
+            }
+          ],
+          "answer": 2
+        },
+        {
+          "id": "ft2030-s3-u2-l5-q4",
+          "label": "The next flip",
+          "prompt": "A coin-flip price has gone up five days in a row. What is the chance that the next flip is heads?",
+          "type": "choice",
+          "hint": "The fourth card says what a coin has.",
+          "options": [
+            {
+              "text": "Higher, since it is on a run",
+              "why": "A run does not change the coin. The next flip is still even."
+            },
+            {
+              "text": "Still even: the coin has no memory",
+              "why": "Yes. Each flip is 50-50, whatever came before."
+            },
+            {
+              "text": "Lower, since tails is due",
+              "why": "The coin does not owe tails. The next flip is still even."
+            }
+          ],
+          "answer": 1
+        },
+        {
+          "id": "ft2030-s3-u2-l5-q5",
+          "label": "Best-looking few",
+          "prompt": "A seller shows you a chart that looks like a perfect trend, picked from many random ones. What does it show?",
+          "type": "choice",
+          "hint": "Think about how the chart was chosen.",
+          "options": [
+            {
+              "text": "How some random charts happen to look",
+              "why": "Yes. Random moves can look like a clean trend by luck."
+            },
+            {
+              "text": "That a pattern predicts the next move",
+              "why": "They were chosen for how they look. That does not show a pattern predicts."
+            },
+            {
+              "text": "That coin flips follow a plan",
+              "why": "A coin has no plan. A chosen chart shows luck."
+            }
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ft2030-s3-u2-l5-q6",
+          "label": "Up, then down",
+          "prompt": "A made-up price is $100.00. One day it rises 10%. The next day it falls 10%. What is it worth after both days, in dollars?",
+          "type": "number",
+          "hint": "The second move is a percent of the price after the first.",
+          "unit": "$",
+          "answer": 9900,
+          "tolerance": 1,
+          "why": "Yes. $110.00 after the rise, then 10% of that is $11.00, so $99.00.",
+          "working": "$100.00 x 1.10 = $110.00. $110.00 x 0.90 = $99.00.",
+          "traps": [
+            {
+              "value": 10000,
+              "why": "The two moves do not cancel. The fall is measured on the higher price."
+            }
+          ],
+          "miss": "Do the rise first. Then take 10% off the new price."
+        },
+        {
+          "id": "ft2030-s3-u2-l5-q7",
+          "label": "Two tails",
+          "prompt": "A made-up price is $50.00. A coin sends it down 20% on two days in a row. What is it worth after both days, in dollars?",
+          "type": "number",
+          "hint": "The second 20% is of the price after the first fall.",
+          "unit": "$",
+          "answer": 3200,
+          "tolerance": 1,
+          "why": "Yes. $40.00 after the first day, then 20% of that is $8.00, leaving $32.00.",
+          "working": "$50.00 x 0.80 = $40.00. $40.00 x 0.80 = $32.00.",
+          "traps": [
+            {
+              "value": 3000,
+              "why": "That takes 40% off the start. The second 20% is of the lower price."
+            }
+          ],
+          "miss": "Take the first 20% off. Then take 20% off what is left."
+        },
+        {
+          "id": "ft2030-s3-u2-l5-q8",
+          "label": "First fall",
+          "prompt": "This made-up price was set by coin flips from a start of $50.00, up or down 4% a day. Tap the first point that is lower than the point before it.",
+          "type": "point",
+          "figure": {
+            "kind": "line",
+            "title": "A price set by seven coin flips",
+            "unit": "$",
+            "points": [
+              {
+                "label": "Start",
+                "value": 5000
+              },
+              {
+                "label": "Day 1",
+                "value": 5200
+              },
+              {
+                "label": "Day 2",
+                "value": 5408
+              },
+              {
+                "label": "Day 3",
+                "value": 5624
+              },
+              {
+                "label": "Day 4",
+                "value": 5399
+              },
+              {
+                "label": "Day 5",
+                "value": 5183
+              },
+              {
+                "label": "Day 6",
+                "value": 5390
+              },
+              {
+                "label": "Day 7",
+                "value": 5606
+              }
+            ]
+          },
+          "hint": "Read the line from the left.",
+          "answer": 4,
+          "why": "Yes. The price rose for three days and first fell on Day 4.",
+          "miss": "Compare each day with the day before it."
+        },
+        {
+          "id": "ft2030-s3-u2-l5-q9",
+          "label": "Charts, not useless",
+          "prompt": "Which statement is true, going by this level?",
+          "type": "choice",
+          "hint": "The fifth card says what the coin-flip line shows.",
+          "options": [
+            {
+              "text": "Seeing a pattern is not the same as knowing what comes next",
+              "why": "Yes. Patterns show up even in coin flips."
+            },
+            {
+              "text": "Charts are useless and should be ignored",
+              "why": "Charts can describe what happened. They do not say what comes next."
+            },
+            {
+              "text": "Real prices are coin flips",
+              "why": "Real prices are not coin flips. The coin-flip chart only shows that patterns can appear in noise."
+            }
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ft2030-s3-u2-l5-q10",
+          "label": "Who shows it",
+          "prompt": "Which person has a money reason to show you only the best-looking chart?",
+          "type": "choice",
+          "hint": "The fourth card says who has the reason.",
+          "options": [
+            {
+              "text": "Someone who draws charts as a hobby and sells nothing",
+              "why": "Someone who sells nothing has no money reason. The card points to a seller paid when you act."
+            },
+            {
+              "text": "A seller who is paid when you act",
+              "why": "Yes. A seller paid when you act has a reason to show only the best-looking few."
+            },
+            {
+              "text": "A reader looking at a free chart",
+              "why": "A reader is not paid when you act. The card points to a seller."
+            }
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ]
+}

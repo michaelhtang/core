@@ -1,0 +1,17 @@
+/* The Today card on the home screen. Sits inside the global .glass.panel; phone first (one column, full-width rows). */
+.td-meta { display: flex; flex-wrap: wrap; gap: 8px; }
+.td-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+.td-row { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; padding: 10px 12px; border: 1px solid var(--row-line); border-radius: var(--radius); background: rgba(180, 215, 255, 0.07); }
+.td-row > .td-what { flex: 1 1 180px; min-width: 0; overflow-wrap: anywhere; }
+.td-row.td-done { opacity: 0.75; }
+.td-row button { min-height: 40px; padding: 0 14px; font-size: 0.9rem; }
+.td-mark { flex: none; width: 1.4em; text-align: center; font-weight: 800; }
+.td-digest { width: 100%; border-collapse: collapse; }
+.td-digest td { padding: 3px 0; border: 0; }
+.td-digest td:last-child { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.td-quest { display: grid; gap: 10px; padding: 12px; border: 1px dashed var(--glass-border); border-radius: var(--radius); }
+.td-quest textarea { width: 100%; min-height: 5.5em; padding: 10px 14px; font: 600 1rem var(--font-body); color: var(--ink); background: var(--field-bg); border: 1px solid var(--field-border); border-radius: var(--radius); resize: vertical; }
+/* Teacher panel */
+.td-file { width: 100%; min-height: 10em; padding: 10px 14px; font: 500 0.9rem var(--font-mono); color: var(--ink); background: var(--field-bg); border: 1px solid var(--field-border); border-radius: var(--radius); resize: vertical; }
+.td-cap { max-width: 8em; }
+td.td-wrap { white-space: normal; overflow-wrap: anywhere; min-width: 12em; }

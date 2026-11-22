@@ -1,0 +1,1108 @@
+{
+  "id": "ft2030-s1-u1",
+  "title": "Kinds of taxes",
+  "blurb": "What taxes are for, sales tax, income tax and capital gains.",
+  "outcome_codes": [
+    "FIN2060 1.1"
+  ],
+  "levels": [
+    {
+      "id": "ft2030-s1-u1-l1",
+      "title": "What taxes are",
+      "kind": "lesson",
+      "learn": [
+        "Name the main kinds of tax in Canada.",
+        "Say what each one is charged on."
+      ],
+      "cards": [
+        {
+          "text": "Taxes are payments you must make to a government. They are not a choice. Three levels of government collect taxes: federal, provincial or territorial, and municipal (your city or town).",
+          "image": {
+            "src": "ft2030-s1-u1/l1c1.webp",
+            "alt": "A wooden box with a slot beside gold discs and a blank paper form"
+          }
+        },
+        {
+          "text": "There are several kinds of tax. Each one is charged on something different. The table shows six of them.",
+          "figure": {
+            "kind": "table",
+            "title": "Kinds of tax",
+            "columns": [
+              "Tax",
+              "What it is charged on"
+            ],
+            "rows": [
+              [
+                "Income tax",
+                "Income of people and businesses"
+              ],
+              [
+                "GST",
+                "Most goods and services you buy"
+              ],
+              [
+                "PST",
+                "A tax some provinces charge"
+              ],
+              [
+                "HST",
+                "GST and PST combined"
+              ],
+              [
+                "Property tax",
+                "Land and buildings"
+              ],
+              [
+                "Excise tax",
+                "Some goods, such as fuel-inefficient vehicles"
+              ]
+            ]
+          }
+        },
+        {
+          "text": "Property taxes are calculated by municipal (local) governments. They are based on the value of land and buildings. Individuals and businesses pay income tax on their income.",
+          "image": {
+            "src": "ft2030-s1-u1/l1c3.webp",
+            "alt": "A small model house and lawn with a measuring tape and a blank paper tag"
+          }
+        },
+        {
+          "text": "Excise taxes are imposed on fuel-inefficient vehicles, including station wagons, vans and sport utility vehicles, and on gasoline, diesel fuel, aviation gasoline and aviation fuel. Excise duties are charged on spirits, wine, beer, tobacco, cannabis and vaping products.",
+          "image": {
+            "src": "ft2030-s1-u1/l1c4.webp",
+            "alt": "A fuel can, a bottle and a barrel on a shelf, each with a blank label and a gold disc"
+          }
+        },
+        {
+          "text": "Some taxes come off your pay. CPP and EI contributions come off an employee's pay. CPP is a retirement pension you could receive at 60 or older after at least one valid contribution. EI pays benefits to people who lose their jobs through no fault of their own.",
+          "image": {
+            "src": "ft2030-s1-u1/l1c5.webp",
+            "alt": "A blank pay slip with two gold discs moving toward two plain jars"
+          }
+        },
+        {
+          "text": "Taxes help pay for education and schools, health care and hospitals, and roads and bridges. The next level looks at the GST, the HST and the PST.",
+          "image": {
+            "src": "ft2030-s1-u1/l1c6.webp",
+            "alt": "A model school, hospital and bridge on a table with a gold disc beside each"
+          }
+        }
+      ],
+      "questions": [
+        {
+          "id": "ft2030-s1-u1-l1-q1",
+          "label": "What a tax is",
+          "prompt": "Which sentence describes a tax?",
+          "type": "choice",
+          "terms": [
+            {
+              "term": "tax",
+              "meaning": "A payment you must make to a government."
+            }
+          ],
+          "hint": "Look at the first card.",
+          "options": [
+            {
+              "text": "A payment you must make to a government",
+              "why": "Yes. Taxes are mandatory payments to a government."
+            },
+            {
+              "text": "A gift you give a government",
+              "why": "A gift is a choice. A tax is not a choice."
+            },
+            {
+              "text": "A fee for a service you ask for",
+              "why": "Some fees work that way, but a tax is a payment you must make, whether or not you ask for a service."
+            },
+            {
+              "text": "A price a store sets for goods",
+              "why": "A store sets prices. A tax is set by a government."
+            }
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ft2030-s1-u1-l1-q2",
+          "label": "Land and buildings",
+          "prompt": "Look at the table. Which tax is charged on land and buildings?",
+          "type": "choice",
+          "figure": {
+            "kind": "table",
+            "title": "Kinds of tax",
+            "columns": [
+              "Tax",
+              "What it is charged on"
+            ],
+            "rows": [
+              [
+                "Income tax",
+                "Income of people and businesses"
+              ],
+              [
+                "GST",
+                "Most goods and services you buy"
+              ],
+              [
+                "PST",
+                "A tax some provinces charge"
+              ],
+              [
+                "HST",
+                "GST and PST combined"
+              ],
+              [
+                "Property tax",
+                "Land and buildings"
+              ],
+              [
+                "Excise tax",
+                "Some goods, such as fuel-inefficient vehicles"
+              ]
+            ]
+          },
+          "hint": "Find the row about land.",
+          "options": [
+            {
+              "text": "Income tax",
+              "why": "Income tax is paid on the income of people and businesses."
+            },
+            {
+              "text": "Excise tax",
+              "why": "Excise taxes are charged on some goods, such as fuel-inefficient vehicles and gasoline."
+            },
+            {
+              "text": "Property tax",
+              "why": "Right. Property taxes are based on the value of land and buildings."
+            },
+            {
+              "text": "HST",
+              "why": "The HST combines the GST with a provincial tax."
+            }
+          ],
+          "answer": 2
+        },
+        {
+          "id": "ft2030-s1-u1-l1-q3",
+          "label": "Who charges it",
+          "prompt": "Which level of government calculates property taxes?",
+          "type": "choice",
+          "terms": [
+            {
+              "term": "municipal",
+              "meaning": "The level of government of a city or town."
+            }
+          ],
+          "hint": "The card says \"municipal (local)\".",
+          "options": [
+            {
+              "text": "Federal",
+              "why": "The GST is a federal tax. Property taxes are calculated by municipal (local) governments."
+            },
+            {
+              "text": "Municipal",
+              "why": "Yes. Municipal means local governments, such as a city or town."
+            },
+            {
+              "text": "Provincial",
+              "why": "Some provinces charge a PST, but property taxes are calculated by municipal governments."
+            }
+          ],
+          "answer": 1
+        },
+        {
+          "id": "ft2030-s1-u1-l1-q4",
+          "label": "Federal sales tax",
+          "prompt": "Which tax is a federal tax you pay on most goods and services you buy in Canada?",
+          "type": "choice",
+          "terms": [
+            {
+              "term": "GST",
+              "meaning": "A federal tax you pay on most goods and services you buy in Canada."
+            }
+          ],
+          "hint": "Federal means the government of Canada.",
+          "options": [
+            {
+              "text": "Property tax",
+              "why": "Property taxes are calculated by municipal governments from land and buildings."
+            },
+            {
+              "text": "CPP",
+              "why": "CPP contributions come off an employee's pay. CPP is not a tax on purchases."
+            },
+            {
+              "text": "Income tax",
+              "why": "Income tax is paid on income, not on a purchase."
+            },
+            {
+              "text": "The GST",
+              "why": "Yes. The GST is a federal tax on most goods and services."
+            }
+          ],
+          "answer": 3
+        },
+        {
+          "id": "ft2030-s1-u1-l1-q5",
+          "label": "Tax on fuel",
+          "prompt": "Mina fills a car with gasoline. A tax applies to that fuel. What kind of tax is it?",
+          "type": "choice",
+          "hint": "Gasoline and diesel fuel are on the list of goods with a certain tax.",
+          "options": [
+            {
+              "text": "An excise tax",
+              "why": "Yes. Gasoline and diesel fuel are on the list of goods that carry excise tax."
+            },
+            {
+              "text": "A property tax",
+              "why": "Property tax is based on land and buildings."
+            },
+            {
+              "text": "An income tax",
+              "why": "Income tax is paid on income."
+            },
+            {
+              "text": "An EI contribution",
+              "why": "EI contributions come off pay. They are not charged on fuel."
+            }
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ft2030-s1-u1-l1-q6",
+          "label": "Lose your job",
+          "prompt": "Which program pays benefits to a person who loses a job through no fault of their own?",
+          "type": "choice",
+          "terms": [
+            {
+              "term": "EI",
+              "meaning": "Employment Insurance. It pays benefits to people who lose their jobs through no fault of their own."
+            }
+          ],
+          "hint": "One of the two programs that come off pay.",
+          "options": [
+            {
+              "text": "CPP",
+              "why": "CPP is a retirement pension. It is not paid to people who lose a job."
+            },
+            {
+              "text": "EI",
+              "why": "Yes. EI pays benefits to people who lose their jobs through no fault of their own."
+            },
+            {
+              "text": "The GST",
+              "why": "The GST is a tax on purchases. It does not pay benefits."
+            },
+            {
+              "text": "Property tax",
+              "why": "Property taxes are calculated by municipal governments from land and buildings."
+            }
+          ],
+          "answer": 1
+        },
+        {
+          "id": "ft2030-s1-u1-l1-q7",
+          "label": "Worked out yearly",
+          "prompt": "Individuals and businesses pay one tax on their income. Which tax is it?",
+          "type": "choice",
+          "hint": "The table has a row about income.",
+          "options": [
+            {
+              "text": "The GST",
+              "why": "You pay the GST when you buy something. You do not work it out on a yearly return."
+            },
+            {
+              "text": "Property tax",
+              "why": "Property taxes are calculated by municipal governments from land and buildings."
+            },
+            {
+              "text": "Income tax",
+              "why": "Yes. Individuals and businesses pay income tax on their income."
+            },
+            {
+              "text": "Excise tax",
+              "why": "Excise tax is charged on some goods. It is not a tax on income."
+            }
+          ],
+          "answer": 2
+        },
+        {
+          "id": "ft2030-s1-u1-l1-q8",
+          "label": "What taxes pay for",
+          "prompt": "Which of these is something taxes help pay for?",
+          "type": "choice",
+          "hint": "Check the last card.",
+          "options": [
+            {
+              "text": "A shop's own stock",
+              "why": "A shop buys its stock with its own money. It is not something taxes pay for."
+            },
+            {
+              "text": "A person's phone plan",
+              "why": "A phone plan is a private cost. Taxes help pay for things people share."
+            },
+            {
+              "text": "A neighbour's holiday",
+              "why": "A holiday is a private cost. It is not something taxes pay for."
+            },
+            {
+              "text": "Hospitals",
+              "why": "Yes. Taxes help pay for education and schools, health care and hospitals, and roads and bridges."
+            }
+          ],
+          "answer": 3
+        }
+      ]
+    },
+    {
+      "id": "ft2030-s1-u1-l2",
+      "title": "Sales tax in Canada",
+      "kind": "lesson",
+      "learn": [
+        "Tell the GST, the HST and a PST apart.",
+        "Work out sales tax on a purchase."
+      ],
+      "cards": [
+        {
+          "text": "The GST is a federal tax you pay on most goods and services you buy in Canada. The rate is 5%. The CRA rates table shows Alberta with a GST of 5% and a provincial rate of 0%.",
+          "image": {
+            "src": "ft2030-s1-u1/l2c1.webp",
+            "alt": "A shop counter with a wrapped parcel with a blank tag beside a stack of gold discs"
+          }
+        },
+        {
+          "text": "In some provinces the GST and the provincial tax are combined into one tax, the HST. Nova Scotia's HST rate decreased to 14% on April 1, 2025. The table shows the rates the CRA lists.",
+          "figure": {
+            "kind": "table",
+            "title": "HST provinces",
+            "columns": [
+              "Province",
+              "HST rate"
+            ],
+            "rows": [
+              [
+                "New Brunswick",
+                "15%"
+              ],
+              [
+                "Newfoundland and Labrador",
+                "15%"
+              ],
+              [
+                "Nova Scotia",
+                "14%"
+              ],
+              [
+                "Ontario",
+                "13%"
+              ],
+              [
+                "Prince Edward Island",
+                "15%"
+              ]
+            ]
+          }
+        },
+        {
+          "text": "Other provinces charge a provincial sales tax (PST) as well as the GST. A PST is a tax some provinces charge. The table shows the GST and provincial rate for each province.",
+          "figure": {
+            "kind": "table",
+            "title": "GST and provincial tax",
+            "columns": [
+              "Province",
+              "GST",
+              "Provincial tax"
+            ],
+            "rows": [
+              [
+                "Alberta",
+                "5%",
+                "0%"
+              ],
+              [
+                "British Columbia",
+                "5%",
+                "7%"
+              ],
+              [
+                "Manitoba",
+                "5%",
+                "7%"
+              ],
+              [
+                "Quebec",
+                "5%",
+                "9.975%"
+              ],
+              [
+                "Saskatchewan",
+                "5%",
+                "6%"
+              ]
+            ]
+          }
+        },
+        {
+          "text": "Sales tax is the price times the rate. Say Dev buys headphones for $60.00 in Alberta. The GST is $60.00 x 5% = $3.00. Dev pays $63.00 in all.",
+          "image": {
+            "src": "ft2030-s1-u1/l2c4.webp",
+            "alt": "Headphones on a counter beside a stack of gold discs with one set apart"
+          }
+        },
+        {
+          "text": "The same price can carry different tax. A jacket costs $80.00 before tax. With the 5% GST in Alberta, the tax is $4.00. With the 13% HST in Ontario, it is $10.40. The difference is $6.40.",
+          "image": {
+            "src": "ft2030-s1-u1/l2c5.webp",
+            "alt": "Two matching jackets with a tall and a short stack of gold discs under them"
+          }
+        }
+      ],
+      "questions": [
+        {
+          "id": "ft2030-s1-u1-l2-q1",
+          "label": "Who charges GST",
+          "prompt": "The GST is charged by which level of government?",
+          "type": "choice",
+          "hint": "Level 1 named three levels.",
+          "options": [
+            {
+              "text": "A city or town",
+              "why": "A city or town charges property tax. The GST is federal."
+            },
+            {
+              "text": "The federal government",
+              "why": "Yes. The GST is a federal tax."
+            },
+            {
+              "text": "A province",
+              "why": "Some provinces charge a PST. The GST is federal."
+            }
+          ],
+          "answer": 1
+        },
+        {
+          "id": "ft2030-s1-u1-l2-q2",
+          "label": "Alberta sales tax",
+          "prompt": "A student buys a book in Alberta. Use the rates table. Which rates apply?",
+          "type": "choice",
+          "terms": [
+            {
+              "term": "PST",
+              "meaning": "Provincial sales tax: a tax some provinces charge."
+            }
+          ],
+          "hint": "Look at the Alberta row of the table.",
+          "options": [
+            {
+              "text": "GST 5% and provincial 7%",
+              "why": "The Alberta row shows a provincial rate of 0%, not 7%."
+            },
+            {
+              "text": "An HST of 13%",
+              "why": "A 13% HST is Ontario's rate. The Alberta row shows a GST and a 0% provincial rate."
+            },
+            {
+              "text": "No tax at all",
+              "why": "The Alberta row shows a GST of 5%."
+            },
+            {
+              "text": "GST 5% and provincial 0%",
+              "why": "Yes. The Alberta row shows a GST of 5% and a provincial rate of 0%."
+            }
+          ],
+          "answer": 3
+        },
+        {
+          "id": "ft2030-s1-u1-l2-q3",
+          "label": "GST on headphones",
+          "prompt": "Dev buys headphones for $60.00 in Alberta. The GST rate is 5%. How much GST is charged?",
+          "type": "number",
+          "terms": [
+            {
+              "term": "GST",
+              "meaning": "A federal tax you pay on most goods and services you buy in Canada."
+            }
+          ],
+          "traps": [
+            {
+              "value": 30000,
+              "why": "That multiplies by 5 instead of 5%. A percent is out of 100."
+            }
+          ],
+          "hint": "Price times the rate.",
+          "unit": "$",
+          "answer": 300,
+          "tolerance": 0,
+          "why": "Sales tax is the price times the rate.",
+          "working": "$60.00 x 5% = $3.00.",
+          "miss": "Change 5% to a decimal, then multiply it by the price."
+        },
+        {
+          "id": "ft2030-s1-u1-l2-q4",
+          "label": "An HST province",
+          "prompt": "Look at the table. Which of these provinces charges an HST?",
+          "type": "choice",
+          "figure": {
+            "kind": "table",
+            "title": "HST provinces",
+            "columns": [
+              "Province",
+              "HST rate"
+            ],
+            "rows": [
+              [
+                "New Brunswick",
+                "15%"
+              ],
+              [
+                "Newfoundland and Labrador",
+                "15%"
+              ],
+              [
+                "Nova Scotia",
+                "14%"
+              ],
+              [
+                "Ontario",
+                "13%"
+              ],
+              [
+                "Prince Edward Island",
+                "15%"
+              ]
+            ]
+          },
+          "terms": [
+            {
+              "term": "HST",
+              "meaning": "A tax some provinces charge. They combine the GST with the PST to form the HST."
+            }
+          ],
+          "hint": "Look for a province in the table.",
+          "options": [
+            {
+              "text": "Alberta",
+              "why": "Alberta is not in the HST table. Its row shows a GST and a 0% provincial rate."
+            },
+            {
+              "text": "Ontario",
+              "why": "Yes. Ontario charges a 13% HST."
+            },
+            {
+              "text": "British Columbia",
+              "why": "British Columbia has a PST as well as the GST. It is not in the HST table."
+            },
+            {
+              "text": "Saskatchewan",
+              "why": "Saskatchewan has a PST as well as the GST. It is not in the HST table."
+            }
+          ],
+          "answer": 1
+        },
+        {
+          "id": "ft2030-s1-u1-l2-q5",
+          "label": "Two taxes together",
+          "prompt": "In British Columbia the table shows a 5% GST and a 7% PST. What are the two taxes together, as a percent of the price?",
+          "type": "number",
+          "figure": {
+            "kind": "table",
+            "title": "GST and provincial tax",
+            "columns": [
+              "Province",
+              "GST",
+              "Provincial tax"
+            ],
+            "rows": [
+              [
+                "Alberta",
+                "5%",
+                "0%"
+              ],
+              [
+                "British Columbia",
+                "5%",
+                "7%"
+              ],
+              [
+                "Manitoba",
+                "5%",
+                "7%"
+              ],
+              [
+                "Quebec",
+                "5%",
+                "9.975%"
+              ],
+              [
+                "Saskatchewan",
+                "5%",
+                "6%"
+              ]
+            ]
+          },
+          "hint": "Add the two rates.",
+          "unit": "%",
+          "answer": 12,
+          "tolerance": 0,
+          "why": "A purchase carries both taxes, so the two rates add.",
+          "working": "5% + 7% = 12%.",
+          "miss": "A purchase carries both taxes. What do you do with two rates that both apply?"
+        },
+        {
+          "id": "ft2030-s1-u1-l2-q6",
+          "label": "HST on a jacket",
+          "prompt": "Mina buys a jacket for $80.00 in Ontario. The HST rate is 13%. How much HST is charged?",
+          "type": "number",
+          "figure": {
+            "kind": "table",
+            "title": "HST provinces",
+            "columns": [
+              "Province",
+              "HST rate"
+            ],
+            "rows": [
+              [
+                "New Brunswick",
+                "15%"
+              ],
+              [
+                "Newfoundland and Labrador",
+                "15%"
+              ],
+              [
+                "Nova Scotia",
+                "14%"
+              ],
+              [
+                "Ontario",
+                "13%"
+              ],
+              [
+                "Prince Edward Island",
+                "15%"
+              ]
+            ]
+          },
+          "traps": [
+            {
+              "value": 400,
+              "why": "That is the tax at the 5% GST rate. Ontario charges the 13% HST."
+            }
+          ],
+          "hint": "Price times the HST rate.",
+          "unit": "$",
+          "answer": 1040,
+          "tolerance": 0,
+          "why": "Sales tax is the price times the rate.",
+          "working": "$80.00 x 13% = $10.40.",
+          "miss": "Use the HST rate from the table, not the GST rate."
+        },
+        {
+          "id": "ft2030-s1-u1-l2-q7",
+          "label": "Alberta and Ontario",
+          "prompt": "The same $80.00 jacket is bought in Alberta (GST 5%) and in Ontario (HST 13%). How much more tax is charged in Ontario?",
+          "type": "number",
+          "traps": [
+            {
+              "value": 1040,
+              "why": "That is the whole Ontario tax. The question asks how much more than Alberta."
+            }
+          ],
+          "hint": "Work out the tax in each place first.",
+          "unit": "$",
+          "answer": 640,
+          "tolerance": 0,
+          "why": "Find the tax in each place, then subtract.",
+          "working": "Ontario: $10.40. Alberta: $4.00. $10.40 - $4.00 = $6.40.",
+          "miss": "Compare the two taxes, not the two total prices."
+        },
+        {
+          "id": "ft2030-s1-u1-l2-q8",
+          "label": "Tax on $100.00",
+          "prompt": "Tap the bar that shows the tax on a $100.00 purchase in Nova Scotia.",
+          "type": "point",
+          "figure": {
+            "kind": "bars",
+            "title": "Tax on a $100.00 purchase",
+            "unit": "$",
+            "bars": [
+              {
+                "label": "Alberta",
+                "value": 500
+              },
+              {
+                "label": "Ontario",
+                "value": 1300
+              },
+              {
+                "label": "Nova Scotia",
+                "value": 1400
+              },
+              {
+                "label": "New Brunswick",
+                "value": 1500
+              }
+            ]
+          },
+          "hint": "Use the Nova Scotia rate from the table.",
+          "answer": 2,
+          "why": "14% of $100.00 is $14.00.",
+          "miss": "That bar is for a different province. Check the Nova Scotia rate in the table."
+        },
+        {
+          "id": "ft2030-s1-u1-l2-q9",
+          "label": "Saskatchewan extra tax",
+          "prompt": "Zoe buys a $200.00 bicycle in Saskatchewan (GST 5%, PST 6%) and Noor buys the same bicycle in Alberta (GST 5%, provincial 0%). How much more tax does Zoe pay?",
+          "type": "number",
+          "traps": [
+            {
+              "value": 2200,
+              "why": "That is Zoe's whole tax, GST and PST together. Noor also pays the 5% GST."
+            }
+          ],
+          "hint": "Find the PST in dollars.",
+          "unit": "$",
+          "answer": 1200,
+          "tolerance": 0,
+          "why": "Both pay the GST. Zoe also pays the PST, which is the extra.",
+          "working": "PST: $200.00 x 6% = $12.00. The GST is the same in both places.",
+          "miss": "Both buyers pay the same GST. What is left over?"
+        }
+      ]
+    },
+    {
+      "id": "ft2030-s1-u1-l3",
+      "title": "Income tax and capital gains",
+      "kind": "lesson",
+      "learn": [
+        "Say what a capital gain is.",
+        "Work out the taxable part of a gain."
+      ],
+      "cards": [
+        {
+          "text": "Individuals and businesses pay taxes on their income. In Canada each person does their own taxes every year. A later unit shows how to fill in a return by hand.",
+          "image": {
+            "src": "ft2030-s1-u1/l3c1.webp",
+            "alt": "A desk with blank sheets, a pencil and a ruler"
+          }
+        },
+        {
+          "text": "You usually have a capital gain or loss when you sell capital property. It is a gain when you sell for more than the total of its adjusted cost base (ACB) and the outlays and expenses incurred to sell it. In our examples nothing was spent to sell, so the gain is the sale price minus the ACB, what was paid.",
+          "image": {
+            "src": "ft2030-s1-u1/l3c2.webp",
+            "alt": "An open wooden chest of blank certificates beside a large stack of gold discs"
+          }
+        },
+        {
+          "text": "Only part of a capital gain is taxed. The inclusion rate is the fraction of a gain that counts as income and gets taxed. For 2025 the CRA says the rate is 50%, so half of a gain is taxable.",
+          "image": {
+            "src": "ft2030-s1-u1/l3c3.webp",
+            "alt": "A pie cut in half with a gold disc on one half and a ruler across the plate"
+          }
+        },
+        {
+          "text": "A change was proposed: raise the rate from one-half to two-thirds on gains over $250,000 a year for individuals. Budget 2025 documents describe the proposed increase as cancelled. Check the year before you use a rate.",
+          "image": {
+            "src": "ft2030-s1-u1/l3c4.webp",
+            "alt": "A blank signpost at a fork with two arrow boards, one struck through with a bar"
+          }
+        },
+        {
+          "text": "Example. Ana sells shares for $1,200.00. She paid $800.00. Her gain is $400.00. At 50%, $200.00 of it is taxable.",
+          "figure": {
+            "kind": "table",
+            "title": "Ana sells shares",
+            "columns": [
+              "Step",
+              "Amount"
+            ],
+            "rows": [
+              [
+                "Sold for",
+                "$1,200.00"
+              ],
+              [
+                "Paid",
+                "$800.00"
+              ],
+              [
+                "Gain",
+                "$400.00"
+              ],
+              [
+                "Taxable part (50%)",
+                "$200.00"
+              ]
+            ]
+          }
+        },
+        {
+          "text": "When a person dies, they are considered to have sold all their property just before death. The exception is property transferred to a spouse or common-law partner, or a specific exception that applies.",
+          "image": {
+            "src": "ft2030-s1-u1/l3c6.webp",
+            "alt": "An open door at the end of a hallway with a blank paper and a closed chest on a table"
+          }
+        }
+      ],
+      "questions": [
+        {
+          "id": "ft2030-s1-u1-l3-q1",
+          "label": "Yearly return",
+          "prompt": "Which tax do individuals and businesses pay on their income?",
+          "type": "choice",
+          "hint": "Look for the word income.",
+          "options": [
+            {
+              "text": "The GST",
+              "why": "The GST is paid when you buy something."
+            },
+            {
+              "text": "Income tax",
+              "why": "Yes. Individuals and businesses pay income tax on their income."
+            },
+            {
+              "text": "Property tax",
+              "why": "Property taxes are calculated by municipal governments from land and buildings."
+            },
+            {
+              "text": "A capital gain",
+              "why": "A capital gain is a profit from a sale. It is reported on the return, but it is not a tax."
+            }
+          ],
+          "answer": 1
+        },
+        {
+          "id": "ft2030-s1-u1-l3-q2",
+          "label": "Which sale",
+          "prompt": "In our examples the ACB is what was paid and nothing was spent to sell. Which sale gives a capital gain?",
+          "type": "choice",
+          "terms": [
+            {
+              "term": "capital gain",
+              "meaning": "A sale for more than the total of its ACB and the outlays and expenses incurred to sell. In our examples: the sale price minus what was paid."
+            }
+          ],
+          "hint": "Compare what each person got with what they paid.",
+          "options": [
+            {
+              "text": "Shares sold for $500.00 that cost $650.00",
+              "why": "The sale price is lower than the cost. That is a loss, not a gain."
+            },
+            {
+              "text": "Shares sold for $750.00 that cost $750.00",
+              "why": "The sale price equals the cost, so there is no gain."
+            },
+            {
+              "text": "Shares sold for $900.00 that cost $600.00",
+              "why": "Yes. The sale price is higher than the cost, so there is a gain."
+            },
+            {
+              "text": "Shares bought for $600.00 and kept",
+              "why": "A gain happens when you sell. Buying and keeping does not create one."
+            }
+          ],
+          "answer": 2
+        },
+        {
+          "id": "ft2030-s1-u1-l3-q3",
+          "label": "Find the gain",
+          "prompt": "Kai sells shares for $1,800.00. He paid $1,250.00. What is his capital gain?",
+          "type": "number",
+          "terms": [
+            {
+              "term": "capital gain",
+              "meaning": "A sale for more than the total of its ACB and the outlays and expenses incurred to sell. In our examples: the sale price minus what was paid."
+            }
+          ],
+          "traps": [
+            {
+              "value": 305000,
+              "why": "That adds the two amounts. A gain is the difference between them."
+            }
+          ],
+          "hint": "Sale price minus what was paid.",
+          "unit": "$",
+          "answer": 55000,
+          "tolerance": 0,
+          "why": "A gain is the sale price minus what was paid (in our examples the ACB is what was paid and nothing was spent to sell).",
+          "working": "$1,800.00 - $1,250.00 = $550.00.",
+          "miss": "Subtract what he paid from what he got."
+        },
+        {
+          "id": "ft2030-s1-u1-l3-q4",
+          "label": "The inclusion rate",
+          "prompt": "For 2025, what inclusion rate does the CRA say applies to a capital gain?",
+          "type": "number",
+          "terms": [
+            {
+              "term": "inclusion rate",
+              "meaning": "The fraction of a capital gain that counts as income and gets taxed."
+            }
+          ],
+          "hint": "The card says half of a gain is taxable.",
+          "unit": "%",
+          "answer": 50,
+          "tolerance": 0,
+          "why": "For 2025 the CRA says the inclusion rate is 50%, so half of a gain is taxable.",
+          "working": "Half of a gain is 50%.",
+          "miss": "Half of a gain is taxable. What percent is half?"
+        },
+        {
+          "id": "ft2030-s1-u1-l3-q5",
+          "label": "Taxable part",
+          "prompt": "Nia has a capital gain of $550.00. Use the 2025 inclusion rate. How much of the gain is taxable?",
+          "type": "number",
+          "terms": [
+            {
+              "term": "inclusion rate",
+              "meaning": "The fraction of a capital gain that counts as income and gets taxed."
+            }
+          ],
+          "traps": [
+            {
+              "value": 55000,
+              "why": "That is the whole gain. Only the part set by the inclusion rate is taxable."
+            }
+          ],
+          "hint": "Take half of the gain.",
+          "unit": "$",
+          "answer": 27500,
+          "tolerance": 0,
+          "why": "The taxable part is the gain times the inclusion rate.",
+          "working": "$550.00 x 50% = $275.00.",
+          "miss": "The inclusion rate says what fraction of the gain is taxed."
+        },
+        {
+          "id": "ft2030-s1-u1-l3-q6",
+          "label": "Two steps",
+          "prompt": "Ravi sells shares for $2,400.00. He paid $1,500.00. Use the 2025 inclusion rate. How much of his gain is taxable?",
+          "type": "number",
+          "traps": [
+            {
+              "value": 90000,
+              "why": "That is the gain. Only half of it is taxable at the 2025 rate."
+            },
+            {
+              "value": 120000,
+              "why": "That is half of the sale price. The inclusion rate applies to the gain, not the sale price."
+            }
+          ],
+          "hint": "Find the gain first.",
+          "unit": "$",
+          "answer": 45000,
+          "tolerance": 0,
+          "why": "First find the gain, then take the inclusion rate of it.",
+          "working": "Gain: $2,400.00 - $1,500.00 = $900.00. Taxable: $900.00 x 50% = $450.00.",
+          "miss": "Do two steps: the gain first, then the taxable part."
+        },
+        {
+          "id": "ft2030-s1-u1-l3-q7",
+          "label": "Inclusion rate",
+          "prompt": "What does the inclusion rate tell you?",
+          "type": "choice",
+          "hint": "Look at the third card.",
+          "options": [
+            {
+              "text": "The fraction of a gain that is taxed",
+              "why": "Yes. It is the fraction of a capital gain that counts as income and gets taxed."
+            },
+            {
+              "text": "The share of a sale you keep",
+              "why": "You keep the whole sale price. The rate sets how much of the gain is taxed."
+            },
+            {
+              "text": "The cost of selling shares",
+              "why": "Selling costs are a separate matter. The rate is a fraction of the gain."
+            },
+            {
+              "text": "The age you can sell at",
+              "why": "The rate has nothing to do with age."
+            }
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ft2030-s1-u1-l3-q8",
+          "label": "Pick the bar",
+          "prompt": "Tap the bar that shows the taxable part of Ana's gain.",
+          "type": "point",
+          "figure": {
+            "kind": "bars",
+            "title": "Ana sells shares",
+            "unit": "$",
+            "bars": [
+              {
+                "label": "Sold for",
+                "value": 120000
+              },
+              {
+                "label": "Paid",
+                "value": 80000
+              },
+              {
+                "label": "Gain",
+                "value": 40000
+              },
+              {
+                "label": "Taxable",
+                "value": 20000
+              }
+            ]
+          },
+          "hint": "Start from the gain, then take 50% of it.",
+          "answer": 3,
+          "why": "The gain is $400.00, and 50% of it is $200.00.",
+          "miss": "That bar shows a different amount. Find the gain, then take the inclusion rate of it."
+        },
+        {
+          "id": "ft2030-s1-u1-l3-q9",
+          "label": "At death",
+          "prompt": "A person dies owning shares. Unless an exception applies, how are the shares treated just before death?",
+          "type": "choice",
+          "hint": "Look at the last card.",
+          "options": [
+            {
+              "text": "As if they had been given away free",
+              "why": "The rules treat the property as sold, not given away."
+            },
+            {
+              "text": "As if they had been sold",
+              "why": "Yes. A person is considered to have sold all their property just before death."
+            },
+            {
+              "text": "As if their value fell to zero",
+              "why": "The rules treat the property as sold, not as worthless."
+            },
+            {
+              "text": "As if nothing had changed",
+              "why": "The rules treat the property as sold just before death."
+            }
+          ],
+          "answer": 1
+        },
+        {
+          "id": "ft2030-s1-u1-l3-q10",
+          "label": "GST in Alberta",
+          "prompt": "Eli buys a coat for $120.00 in Alberta. The GST rate is 5%. How much GST is charged?",
+          "type": "number",
+          "terms": [
+            {
+              "term": "GST",
+              "meaning": "A federal tax you pay on most goods and services you buy in Canada."
+            }
+          ],
+          "hint": "Price times the GST rate.",
+          "unit": "$",
+          "answer": 600,
+          "tolerance": 0,
+          "why": "Sales tax is the price times the rate.",
+          "working": "$120.00 x 5% = $6.00.",
+          "miss": "Use the GST rate from level 2."
+        }
+      ]
+    }
+  ],
+  "image": {
+    "src": "ft2030-s1-u1/banner.webp",
+    "alt": "A winter street at dusk with a town hall, a shop and a school in a row"
+  }
+}

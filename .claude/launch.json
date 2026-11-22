@@ -1,0 +1,7 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    { "name": "vdaa", "runtimeExecutable": "node", "runtimeArgs": ["server.js"], "port": 3020 },
+    { "name": "vdaa-demo", "runtimeExecutable": "env", "runtimeArgs": ["VDAA_DEV=1", "PORT=3039", "DATA_DIR=data/demo", "node", "server.js"], "port": 3039 }
+  ]
+}

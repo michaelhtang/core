@@ -1,0 +1,171 @@
+/* Layout and components. Colours, fonts, radii and blur all come from theme.css custom properties. */
+*, *::before, *::after { box-sizing: border-box; }
+[hidden] { display: none !important; }
+h1, h2, h3, p { margin: 0; }
+a { color: var(--ice); }
+
+.page { position: relative; z-index: 2; max-width: 980px; margin: 0 auto; padding: 72px 16px 96px; display: grid; gap: 20px; }
+@media screen and (max-width: 560px) { .page { padding-top: 124px; } }   /* on a phone the pill bar (theme.css .pills) wraps to two rows; keep the header clear of it */
+.stack { display: grid; gap: 20px; }
+.panel { padding: 20px; display: grid; gap: 14px; }
+.panel h2 { font-family: var(--font-display); font-weight: 700; font-size: 1.5rem; letter-spacing: 0.03em; text-transform: uppercase; line-height: 1.1; }
+.muted { color: var(--ink-muted); }
+.small { font-size: var(--text-small); }
+.row { display: flex; gap: 12px; flex-wrap: wrap; align-items: end; }
+.grow { flex: 1 1 200px; }
+.spread { display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; }
+
+.foot { position: relative; z-index: 2; text-align: center; padding: 0 16px 24px; color: var(--ink); text-shadow: var(--text-shadow); font-size: var(--text-small); }
+
+/* forms */
+label { display: grid; gap: 6px; font-weight: 800; font-size: var(--text-small); color: var(--ink-muted); }
+input, select {
+  min-height: var(--tap); padding: 0 14px; font: 600 1rem var(--font-body); color: var(--ink);
+  background: var(--field-bg); border: 1px solid var(--field-border); border-radius: var(--radius); width: 100%;
+}
+select option { color: #000; }
+input::placeholder { color: var(--ink-muted); opacity: 0.8; }
+/* The main action: coral, navy ink, two cut corners (drawn by the background, so the focus ring is never clipped). */
+button, .btn {
+  min-height: var(--tap); padding: 0 22px; font: 700 0.9375rem var(--font-display); letter-spacing: 0.08em; text-transform: uppercase; cursor: pointer;
+  color: var(--btn-ink); background: var(--btn-bg); border: 1px solid var(--btn-border); border-radius: var(--radius-pill);
+  box-shadow: var(--btn-shadow);
+}
+a.btn { display: inline-flex; align-items: center; text-decoration: none; }   /* a link drawn as a button (Class Games) */
+button:where(:not(:disabled)):hover { background: var(--btn-bg-hover); }
+button:active { transform: translateY(2px); box-shadow: none; }
+button.ghost { background: transparent; color: var(--ink); border-color: var(--field-border); box-shadow: none; }
+button.ghost:hover { background: transparent; border-color: var(--ice); }
+button.danger { background: transparent; border-color: var(--bad); color: var(--bad); box-shadow: none; }
+button.danger:hover { background: transparent; }
+button:disabled { opacity: 0.5; cursor: not-allowed; }
+/* tabs and two-way choices: quiet until chosen; the chosen one is the plain coral button. :where() keeps these as weak as the
+   plain `button` rule, so any class on a button (a pill, a lesson option) still wins. */
+button:where([aria-pressed='false'], [aria-selected='false']) { background: transparent; color: var(--ink); border-color: var(--field-border); }
+button:where([aria-pressed='false'], [aria-selected='false']):hover { background: transparent; border-color: var(--ice); }
+input[type='checkbox'] { width: 22px; min-height: 22px; accent-color: var(--accent); }
+label.check { display: flex; align-items: center; gap: 10px; color: var(--ink); }
+.error { color: var(--bad); font-weight: 800; }
+.ok { color: var(--ok); font-weight: 800; }
+form { display: grid; gap: 14px; }
+
+/* status strip */
+.status { display: flex; gap: 10px; flex-wrap: wrap; }
+.chip { padding: 5px 12px; background: var(--navy); border: 1px solid var(--glass-border); border-radius: var(--radius-pill); font: 600 0.8125rem var(--font-pixel); letter-spacing: 0.08em; text-transform: uppercase; }
+
+/* Header label and "Back to town" sit on the photo, not on a glass panel: a dark pill keeps them readable on bright day art. */
+.page > header > .label, a.back {
+  padding: 6px 14px; min-height: 32px; background: var(--pill-bg); border: 1px solid var(--glass-border); border-radius: var(--radius-pill);
+}
+a.back { display: inline-flex; align-items: center; min-height: 44px; color: var(--ink); font: 600 0.875rem var(--font-pixel); letter-spacing: 0.08em; text-transform: uppercase; text-decoration: none; }
+a.back:hover { border-color: var(--ice); }
+
+/* balance */
+.balance { padding: 22px 24px; display: grid; gap: 4px; }
+
+/* town: one tile per building. On a wide screen the tiles become a rail down the left of the home screen. */
+.doors { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; }
+.door {
+  display: flex; flex-direction: column; align-items: flex-start; justify-content: flex-end; gap: 8px; min-height: 104px; padding: 14px;
+  color: var(--ink); font: 600 0.9375rem var(--font-pixel); letter-spacing: 0.08em; text-transform: uppercase; text-align: left;
+  background: var(--glass-bg); border: 0; border-left: 3px solid var(--ice); border-radius: 0; box-shadow: none;
+  transition: background-color 0.15s ease, border-color 0.15s ease;
+}
+.door:hover:not(:disabled) { background: var(--royal); border-left-color: var(--coral); }
+.door:active { transform: none; }
+.door:disabled { opacity: 0.72; cursor: not-allowed; }
+.door .icon { color: var(--ice); }
+.door .icon svg { width: 30px; height: 30px; }
+.door .soon { font: 600 0.6875rem var(--font-pixel); text-transform: uppercase; letter-spacing: 0.1em; color: var(--label); }
+@media screen and (min-width: 1100px) {
+  .page:has(.doors) { max-width: 1240px; }
+  /* The rail spans many rows so it can stand beside however many cards there are. The rows it does not need are empty, so the
+     row gap is zero here (a gap would add blank space for each empty row) and the cards carry their own spacing. */
+  .stack:has(> .doors) { grid-template-columns: 232px minmax(0, 1fr); column-gap: 20px; row-gap: 0; align-items: start; }
+  .stack:has(> .doors) > * { grid-column: 2; margin-bottom: 20px; }
+  .stack:has(> .doors) > .doors { grid-column: 1; grid-row: 1 / span 40; margin-bottom: 0; display: flex; flex-direction: column; gap: 2px; background: var(--navy); padding: 10px 0; }
+  .stack:has(> .doors) > .doors .door { flex-direction: row; align-items: center; justify-content: flex-start; gap: 12px; min-height: 46px; padding: 0 18px; background: transparent; border-left-color: transparent; }
+  .stack:has(> .doors) > .doors .door:hover:not(:disabled) { background: var(--panel); border-left-color: var(--coral); }
+  .stack:has(> .doors) > .doors .door .icon svg { width: 22px; height: 22px; }
+}
+/* The wide home screen fills the window, so the corner mascot would sit over its panels: it shows only when there is room beside them
+   (the wolf is also in the Learning Road card). */
+@media screen and (min-width: 1100px) and (max-width: 1679px) { body:has(.stack > .doors) .mascot { display: none; } }
+
+/* icons */
+.icon { display: inline-flex; }
+.icon svg { width: 1em; height: 1em; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+
+/* tables */
+.table-wrap { overflow-x: auto; }
+table { border-collapse: collapse; width: 100%; }
+th, td { text-align: left; padding: 10px 8px; border-bottom: 1px solid var(--row-line); }
+th { white-space: nowrap; }
+th { font: 600 0.75rem var(--font-pixel); text-transform: uppercase; letter-spacing: 0.12em; color: var(--label); }
+td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
+/* Words wrap, so a wide table (a row of controls, a long name) still fits its panel; amounts and buttons never break. */
+td.num, th.num, td button { white-space: nowrap; }
+@media (max-width: 720px) { th, td button { white-space: normal; } th.num { white-space: nowrap; } }   /* on a phone a button's words may wrap too, as before */
+/* Controls inside a table row are compact: a select has a set width, not the whole cell, and a button is a small one. */
+td select { width: 11rem; min-height: 40px; }   /* a set width: with `auto` the browser sizes the column by the longest option, which is what pushed the last column off */
+td button { min-height: 40px; padding: 0 12px; font-size: 0.8125rem; letter-spacing: 0.06em; }
+.plus { color: var(--ok); }
+.minus { color: var(--bad); }
+
+/* teacher console */
+.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; }
+.stat { padding: 12px 14px; border: 1px solid var(--row-line); border-radius: var(--radius); }
+.stat b { display: block; font-family: var(--font-display); font-weight: 700; font-size: 1.6rem; color: var(--accent); }
+.badge { display: inline-block; padding: 4px 14px; border-radius: var(--radius-pill); font-weight: 800; border: 1px solid currentColor; }
+.class-card { border: 1px solid var(--row-line); border-radius: var(--radius); padding: 14px; display: grid; gap: 12px; }
+
+/* Teacher console menu (public/teach.js menuNav): one select on a narrow screen, a rail down the left on a wide one. Every view is a
+   direct child of .page; the ones not chosen are [hidden]. The rail is laid out like the student town rail above. */
+.menu { padding: 12px; }
+.menu-rail { display: none; }
+.todo { margin: 0; padding-left: 1.2em; display: grid; gap: 8px; }
+@media screen and (min-width: 1100px) {
+  .page:has(> .menu) { max-width: 1280px; grid-template-columns: 232px minmax(0, 1fr); column-gap: 20px; row-gap: 0; align-items: start; }
+  .page:has(> .menu) > * { grid-column: 2; margin-bottom: 20px; }
+  .page:has(> .menu) > header { grid-column: 1 / -1; }
+  .page:has(> .menu) > .menu { grid-column: 1; grid-row: 2 / span 40; margin-bottom: 0; padding: 10px 0; background: var(--navy); position: sticky; top: 12px; max-height: calc(100vh - 24px); overflow-y: auto; }
+  .menu-pick { display: none; }
+  .menu-rail { display: grid; gap: 2px; }
+}
+@media screen and (min-width: 1100px) and (max-width: 1679px) { body:has(.page > .menu) .mascot { display: none; } }   /* as on the wide student home: no room beside the panels */
+.menu-rail a, .menu-rail summary {
+  display: flex; align-items: center; justify-content: space-between; gap: 8px; min-height: 40px; padding: 0 18px; cursor: pointer;
+  color: var(--ink); font: 600 0.875rem var(--font-pixel); letter-spacing: 0.06em; text-transform: uppercase; text-decoration: none; border-left: 3px solid transparent;
+}
+.menu-rail a:hover, .menu-rail summary:hover { background: var(--panel); border-left-color: var(--ice); }
+.menu-rail a[aria-current] { background: var(--panel); border-left-color: var(--coral); }
+.menu-rail details a { padding-left: 32px; }
+.menu-rail .chip { padding: 1px 8px; }
+.menu-head { padding: 14px 18px 4px; font: 600 0.6875rem var(--font-pixel); letter-spacing: 0.14em; text-transform: uppercase; color: var(--label); }
+
+/* PIN cards: shown on screen as a preview, printed 8 per page */
+.sheet { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 14px; }
+.card { background: var(--print-paper); color: var(--print-ink); border: 1px dashed var(--print-line); border-radius: 8px; padding: 14px 16px; display: grid; align-content: center; gap: 4px; break-inside: avoid; }
+.card .brand { font-weight: 800; letter-spacing: 0.08em; }
+.card .who { font-family: var(--font-mono); font-size: 1.25rem; font-weight: 700; overflow-wrap: anywhere; }
+.card .pin { font-family: var(--font-mono); font-size: 2rem; font-weight: 700; letter-spacing: 0.25em; }
+.card .where { font-size: 0.8rem; }
+
+@media print {
+  @page { size: letter; margin: 0.4in; }
+  body { background: var(--print-paper); color: var(--print-ink); }
+  .scene, .pills, .mascot, .foot, header, .page > :not(#cards), #cards .noprint { display: none !important; }
+  .page { padding: 0; max-width: none; }
+  #cards { background: none; border: 0; box-shadow: none; padding: 0; }
+  #cards[hidden] { display: grid !important; }   /* the cards print from whichever console view is open */
+  .sheet { height: 9.9in; grid-template-rows: repeat(4, 1fr); gap: 0.15in; margin: 0; break-after: page; }
+  .sheet:last-child { break-after: auto; }
+}
+
+/* Teacher preview ("View as student", lib/preview.js): the bar on every student view, and the start buttons. */
+.preview-bar { position: sticky; top: 0; z-index: 30; display: flex; flex-wrap: wrap; align-items: center; gap: 10px 12px; padding: 10px 14px; margin-bottom: 14px;
+  background: var(--gold); color: var(--navy); font-weight: 600; border-radius: 8px; }
+.preview-bar span { flex: 1 1 18rem; }
+.preview-bar button { min-height: 2.25rem; }
+.preview-bar button.ghost { color: var(--navy); border-color: var(--navy); }
+.preview-picks { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin: 10px 0; }

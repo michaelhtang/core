@@ -1,0 +1,16 @@
+{
+  "name": "vdaa",
+  "version": "0.1.0",
+  "private": true,
+  "description": "vDAA: a persistent virtual economy for a high-school FinTech course",
+  "type": "module",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test \"test/*.test.js\"",
+    "sim": "node scripts/sim.mjs",
+    "life-pace": "node scripts/life-pace.mjs"
+  }
+}

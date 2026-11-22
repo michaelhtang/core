@@ -1,0 +1,1541 @@
+{
+  "id": "ft2030-s1-u3",
+  "title": "Slips and the T1",
+  "blurb": "Read a T4, a T4A and a T5, and the parts of a tax return.",
+  "outcome_codes": [
+    "FIN2060 2.1",
+    "FIN2060 2.2"
+  ],
+  "levels": [
+    {
+      "id": "ft2030-s1-u3-l1",
+      "title": "Reading a T4",
+      "kind": "lesson",
+      "learn": [
+        "Say what a T4 shows and what its main boxes mean.",
+        "Check the CPP and EI on a T4 against the 2025 rates."
+      ],
+      "cards": [
+        {
+          "text": "At the end of the year your employer gives you a T4. It shows what you earned and what was taken off your pay: CPP, EI and income tax. The amounts are for the whole year, not one paycheque.",
+          "image": {
+            "src": "ft2030-s1-u3/l1c1.webp",
+            "alt": "A blank slip in an envelope beside a tied stack of blank pay slips"
+          }
+        },
+        {
+          "text": "Priya is a line cook at Maple Street Grill. She worked all twelve months of 2025. Here is her T4. The amounts are made up for 2025. Each line is a numbered box.",
+          "figure": {
+            "kind": "table",
+            "title": "Priya's T4 for 2025",
+            "columns": [
+              "Box",
+              "What it shows",
+              "Amount"
+            ],
+            "rows": [
+              [
+                "14",
+                "Employment income",
+                "$27,500"
+              ],
+              [
+                "16",
+                "Employee's CPP/QPP contributions",
+                "$1,428"
+              ],
+              [
+                "16A",
+                "Employees' second CPP/QPP contributions",
+                "$0"
+              ],
+              [
+                "18",
+                "Employee's EI premiums",
+                "$451"
+              ],
+              [
+                "22",
+                "Income tax deducted",
+                "$1,420"
+              ],
+              [
+                "24",
+                "EI insurable earnings",
+                "$27,500"
+              ],
+              [
+                "26",
+                "CPP/QPP pensionable earnings",
+                "$27,500"
+              ]
+            ]
+          }
+        },
+        {
+          "text": "Boxes 24 and 26 hold the pay used to work out EI and CPP. For Priya they equal box 14. Box 16A is the second, additional CPP, called CPP2. Priya's box 16A is $0.",
+          "image": {
+            "src": "ft2030-s1-u3/l1c3.webp",
+            "alt": "Two blank slips tied to one tall stack of gold discs"
+          }
+        },
+        {
+          "text": "CPP in box 16: for 2025 the rate is 5.95% of pay above a yearly exemption of $3,500. Priya worked the full year, so her CPP is 5.95% of ($27,500 - $3,500) = 5.95% of $24,000 = $1,428.",
+          "image": {
+            "src": "ft2030-s1-u3/l1c4.webp",
+            "alt": "Two labelled jars and a ruler beside a tall stack of gold discs"
+          }
+        },
+        {
+          "text": "EI in box 18: for 2025 the rate is 1.64% of insurable earnings (box 24), up to $65,700. For Priya, 1.64% of $27,500 = $451.",
+          "image": {
+            "src": "ft2030-s1-u3/l1c5.webp",
+            "alt": "A calendar of twelve squares with an equal stack of gold discs in each"
+          }
+        },
+        {
+          "text": "Box 22 is the income tax the employer took off during the year. Priya's $1,420 is a made-up amount. Your own pay stub in the game shows the same kinds of deductions: gross pay, CPP, EI and income tax. Open the Job Centre and find them.",
+          "image": {
+            "src": "ft2030-s1-u3/l1c6.webp",
+            "alt": "A counter with a blank pay stub under a magnifying glass beside gold discs"
+          }
+        }
+      ],
+      "questions": [
+        {
+          "id": "ft2030-s1-u3-l1-q1",
+          "label": "What a T4 shows",
+          "prompt": "What does a T4 show?",
+          "type": "choice",
+          "terms": [
+            {
+              "term": "T4",
+              "meaning": "The slip an employer gives you for the year: what you earned and what was taken off your pay (CPP, EI and income tax)."
+            }
+          ],
+          "hint": "Look at the first card.",
+          "options": [
+            {
+              "text": "Interest your savings earned",
+              "why": "That is a T5, a slip from a bank. A T4 is the slip for pay from an employer."
+            },
+            {
+              "text": "What you earned and what came off your pay",
+              "why": "Yes. A T4 shows the year's pay and the CPP, EI and income tax taken off it."
+            },
+            {
+              "text": "Money the government owes you",
+              "why": "A refund comes from the tax return, not from a T4."
+            },
+            {
+              "text": "Income that is not pay",
+              "why": "That is a T4A. A T4 is for pay from an employer."
+            }
+          ],
+          "answer": 1
+        },
+        {
+          "id": "ft2030-s1-u3-l1-q2",
+          "label": "Employment income box",
+          "prompt": "Look at Priya's T4. Which box shows her employment income?",
+          "type": "choice",
+          "figure": {
+            "kind": "table",
+            "title": "Priya's T4 for 2025",
+            "columns": [
+              "Box",
+              "What it shows",
+              "Amount"
+            ],
+            "rows": [
+              [
+                "14",
+                "Employment income",
+                "$27,500"
+              ],
+              [
+                "16",
+                "Employee's CPP/QPP contributions",
+                "$1,428"
+              ],
+              [
+                "16A",
+                "Employees' second CPP/QPP contributions",
+                "$0"
+              ],
+              [
+                "18",
+                "Employee's EI premiums",
+                "$451"
+              ],
+              [
+                "22",
+                "Income tax deducted",
+                "$1,420"
+              ],
+              [
+                "24",
+                "EI insurable earnings",
+                "$27,500"
+              ],
+              [
+                "26",
+                "CPP/QPP pensionable earnings",
+                "$27,500"
+              ]
+            ]
+          },
+          "hint": "Find the row named Employment income.",
+          "options": [
+            {
+              "text": "Box 14",
+              "why": "Yes. Box 14 is employment income."
+            },
+            {
+              "text": "Box 16",
+              "why": "Box 16 is the CPP taken from her pay."
+            },
+            {
+              "text": "Box 18",
+              "why": "Box 18 is the EI premiums."
+            },
+            {
+              "text": "Box 22",
+              "why": "Box 22 is the income tax deducted."
+            }
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ft2030-s1-u3-l1-q3",
+          "label": "EI from the rate",
+          "prompt": "Priya's insurable earnings (box 24) are $27,500. The 2025 EI rate is 1.64% of insurable earnings. How much goes in box 18?",
+          "type": "number",
+          "unit": "$",
+          "answer": 45100,
+          "tolerance": 1,
+          "traps": [
+            {
+              "value": 142800,
+              "why": "That is the CPP in box 16. Box 18 is EI."
+            }
+          ],
+          "hint": "Work out 1.64% of $27,500.",
+          "why": "Right. Box 18 is 1.64% of the insurable earnings in box 24.",
+          "working": "$27,500 x 1.64% = $451.",
+          "miss": "1.64% means 1.64 out of every 100 dollars. Try $27,500 x 0.0164.",
+          "terms": [
+            {
+              "term": "EI",
+              "meaning": "Employment Insurance. Premiums come off an employee’s pay."
+            }
+          ]
+        },
+        {
+          "id": "ft2030-s1-u3-l1-q4",
+          "label": "Read box 16",
+          "prompt": "Look at Priya's T4. How much is in box 16, her CPP?",
+          "type": "number",
+          "unit": "$",
+          "answer": 142800,
+          "tolerance": 1,
+          "figure": {
+            "kind": "table",
+            "title": "Priya's T4 for 2025",
+            "columns": [
+              "Box",
+              "What it shows",
+              "Amount"
+            ],
+            "rows": [
+              [
+                "14",
+                "Employment income",
+                "$27,500"
+              ],
+              [
+                "16",
+                "Employee's CPP/QPP contributions",
+                "$1,428"
+              ],
+              [
+                "16A",
+                "Employees' second CPP/QPP contributions",
+                "$0"
+              ],
+              [
+                "18",
+                "Employee's EI premiums",
+                "$451"
+              ],
+              [
+                "22",
+                "Income tax deducted",
+                "$1,420"
+              ],
+              [
+                "24",
+                "EI insurable earnings",
+                "$27,500"
+              ],
+              [
+                "26",
+                "CPP/QPP pensionable earnings",
+                "$27,500"
+              ]
+            ]
+          },
+          "traps": [
+            {
+              "value": 45100,
+              "why": "That is box 18, the EI. Box 16 is CPP."
+            }
+          ],
+          "hint": "Find box 16 in the first column.",
+          "why": "Yes. Box 16 shows $1,428 of CPP.",
+          "working": "Read the row for box 16: $1,428.",
+          "miss": "Check that you read the row for box 16 and not the row next to it."
+        },
+        {
+          "id": "ft2030-s1-u3-l1-q5",
+          "label": "CPP box",
+          "prompt": "Which box shows the CPP an employee paid from their pay?",
+          "type": "choice",
+          "figure": {
+            "kind": "table",
+            "title": "Priya's T4 for 2025",
+            "columns": [
+              "Box",
+              "What it shows",
+              "Amount"
+            ],
+            "rows": [
+              [
+                "14",
+                "Employment income",
+                "$27,500"
+              ],
+              [
+                "16",
+                "Employee's CPP/QPP contributions",
+                "$1,428"
+              ],
+              [
+                "16A",
+                "Employees' second CPP/QPP contributions",
+                "$0"
+              ],
+              [
+                "18",
+                "Employee's EI premiums",
+                "$451"
+              ],
+              [
+                "22",
+                "Income tax deducted",
+                "$1,420"
+              ],
+              [
+                "24",
+                "EI insurable earnings",
+                "$27,500"
+              ],
+              [
+                "26",
+                "CPP/QPP pensionable earnings",
+                "$27,500"
+              ]
+            ]
+          },
+          "terms": [
+            {
+              "term": "CPP",
+              "meaning": "The Canada Pension Plan. Contributions come off an employee's pay."
+            }
+          ],
+          "hint": "The box name begins with Employee's CPP.",
+          "options": [
+            {
+              "text": "Box 18",
+              "why": "Box 18 is the EI premiums."
+            },
+            {
+              "text": "Box 24",
+              "why": "Box 24 is the pay used to work out EI premiums."
+            },
+            {
+              "text": "Box 16",
+              "why": "Yes. Box 16 is the employee's CPP contributions."
+            },
+            {
+              "text": "Box 26",
+              "why": "Box 26 is the pay used to work out CPP, not the CPP itself."
+            }
+          ],
+          "answer": 2
+        },
+        {
+          "id": "ft2030-s1-u3-l1-q6",
+          "label": "Taken off her pay",
+          "prompt": "Look at Priya's T4. Add boxes 16, 18 and 22. How much came off her pay in CPP, EI and income tax?",
+          "type": "number",
+          "unit": "$",
+          "answer": 329900,
+          "tolerance": 1,
+          "traps": [
+            {
+              "value": 187900,
+              "why": "That leaves out box 22, the income tax. Add all three boxes."
+            }
+          ],
+          "hint": "Add the amounts in boxes 16, 18 and 22.",
+          "why": "Yes. CPP, EI and income tax together are what came off her pay.",
+          "working": "$1,428 + $451 + $1,420 = $3,299.",
+          "miss": "Add three boxes: 16, 18 and 22.",
+          "figure": {
+            "kind": "table",
+            "title": "Priya's T4 for 2025",
+            "columns": [
+              "Box",
+              "What it shows",
+              "Amount"
+            ],
+            "rows": [
+              [
+                "14",
+                "Employment income",
+                "$27,500"
+              ],
+              [
+                "16",
+                "Employee's CPP/QPP contributions",
+                "$1,428"
+              ],
+              [
+                "16A",
+                "Employees' second CPP/QPP contributions",
+                "$0"
+              ],
+              [
+                "18",
+                "Employee's EI premiums",
+                "$451"
+              ],
+              [
+                "22",
+                "Income tax deducted",
+                "$1,420"
+              ],
+              [
+                "24",
+                "EI insurable earnings",
+                "$27,500"
+              ],
+              [
+                "26",
+                "CPP/QPP pensionable earnings",
+                "$27,500"
+              ]
+            ]
+          },
+          "terms": [
+            {
+              "term": "tax withheld",
+              "meaning": "Income tax your employer took off each paycheque and sent to the government for you."
+            }
+          ]
+        },
+        {
+          "id": "ft2030-s1-u3-l1-q7",
+          "label": "Box 26 matches",
+          "prompt": "For Priya, box 26 is the same amount as which other box?",
+          "type": "choice",
+          "figure": {
+            "kind": "table",
+            "title": "Priya's T4 for 2025",
+            "columns": [
+              "Box",
+              "What it shows",
+              "Amount"
+            ],
+            "rows": [
+              [
+                "14",
+                "Employment income",
+                "$27,500"
+              ],
+              [
+                "16",
+                "Employee's CPP/QPP contributions",
+                "$1,428"
+              ],
+              [
+                "16A",
+                "Employees' second CPP/QPP contributions",
+                "$0"
+              ],
+              [
+                "18",
+                "Employee's EI premiums",
+                "$451"
+              ],
+              [
+                "22",
+                "Income tax deducted",
+                "$1,420"
+              ],
+              [
+                "24",
+                "EI insurable earnings",
+                "$27,500"
+              ],
+              [
+                "26",
+                "CPP/QPP pensionable earnings",
+                "$27,500"
+              ]
+            ]
+          },
+          "hint": "The card says boxes 24 and 26 equal one other box.",
+          "options": [
+            {
+              "text": "Box 16",
+              "why": "Box 16 is the CPP taken off, much smaller than the pay."
+            },
+            {
+              "text": "Box 18",
+              "why": "Box 18 is the EI premiums, much smaller than the pay."
+            },
+            {
+              "text": "Box 22",
+              "why": "Box 22 is the income tax deducted, much smaller than the pay."
+            },
+            {
+              "text": "Box 14",
+              "why": "Yes. For Priya, boxes 24 and 26 equal box 14."
+            }
+          ],
+          "answer": 3
+        },
+        {
+          "id": "ft2030-s1-u3-l1-q8",
+          "label": "EI for five months",
+          "prompt": "Marcus worked five months. His insurable earnings (box 24) are $8,600. EI is 1.64% of insurable earnings. What goes in his box 18?",
+          "type": "number",
+          "unit": "$",
+          "answer": 14104,
+          "tolerance": 1,
+          "traps": [
+            {
+              "value": 45100,
+              "why": "That is Priya's box 18, not Marcus's."
+            }
+          ],
+          "hint": "Work out 1.64% of $8,600.",
+          "why": "Yes. His box 18 is 1.64% of his box 24.",
+          "working": "$8,600 x 1.64% = $141.04.",
+          "miss": "Use his $8,600, not Priya’s pay."
+        },
+        {
+          "id": "ft2030-s1-u3-l1-q9",
+          "label": "Tax already taken",
+          "prompt": "Which box shows the income tax Priya's employer already took off her pay?",
+          "type": "choice",
+          "figure": {
+            "kind": "table",
+            "title": "Priya's T4 for 2025",
+            "columns": [
+              "Box",
+              "What it shows",
+              "Amount"
+            ],
+            "rows": [
+              [
+                "14",
+                "Employment income",
+                "$27,500"
+              ],
+              [
+                "16",
+                "Employee's CPP/QPP contributions",
+                "$1,428"
+              ],
+              [
+                "16A",
+                "Employees' second CPP/QPP contributions",
+                "$0"
+              ],
+              [
+                "18",
+                "Employee's EI premiums",
+                "$451"
+              ],
+              [
+                "22",
+                "Income tax deducted",
+                "$1,420"
+              ],
+              [
+                "24",
+                "EI insurable earnings",
+                "$27,500"
+              ],
+              [
+                "26",
+                "CPP/QPP pensionable earnings",
+                "$27,500"
+              ]
+            ]
+          },
+          "hint": "The box name says Income tax deducted.",
+          "options": [
+            {
+              "text": "Box 14",
+              "why": "Box 14 is the pay before anything came off."
+            },
+            {
+              "text": "Box 22",
+              "why": "Yes. Box 22 is the income tax deducted."
+            },
+            {
+              "text": "Box 16",
+              "why": "Box 16 is CPP, which is not income tax."
+            },
+            {
+              "text": "Box 18",
+              "why": "Box 18 is EI premiums, which are not income tax."
+            }
+          ],
+          "answer": 1
+        }
+      ],
+      "go": {
+        "building": "job",
+        "label": "Open the Job Centre"
+      }
+    },
+    {
+      "id": "ft2030-s1-u3-l2",
+      "title": "Other slips: T4A and T5",
+      "kind": "lesson",
+      "learn": [
+        "Tell a T4, a T4A and a T5 apart.",
+        "Read the box on a T5 and the amounts on slips."
+      ],
+      "cards": [
+        {
+          "text": "A T4 is for pay. Other income comes on other slips. A T4A is a slip for other kinds of income that are not pay from an employer. A T5 is a slip from a bank for the interest your savings earned.",
+          "image": {
+            "src": "ft2030-s1-u3/l2c1.webp",
+            "alt": "Three blank coloured slips fanned out beside a piggy bank and a work apron"
+          }
+        },
+        {
+          "text": "The three slips side by side. Each one reports a different kind of income.",
+          "figure": {
+            "kind": "table",
+            "title": "Three slips",
+            "columns": [
+              "Slip",
+              "What it shows"
+            ],
+            "rows": [
+              [
+                "T4",
+                "Pay from an employer, and what came off it"
+              ],
+              [
+                "T4A",
+                "Other income, not pay from an employer"
+              ],
+              [
+                "T5",
+                "Interest from a bank"
+              ]
+            ]
+          }
+        },
+        {
+          "text": "Priya also has a T5. Box 13 on a T5 is interest from Canadian sources. Her savings earned $63.50 this year. The amount is made up.",
+          "figure": {
+            "kind": "table",
+            "title": "Priya's T5 for the year",
+            "columns": [
+              "Box",
+              "What it shows",
+              "Amount"
+            ],
+            "rows": [
+              [
+                "13",
+                "Interest from Canadian sources",
+                "$63.50"
+              ]
+            ]
+          }
+        },
+        {
+          "text": "Marcus worked at a coffee shop for five months, so he has a T4. He also has a T4A slip for other income: $300. The amount is made up. On his T4A, box 028 is Other income.",
+          "image": {
+            "src": "ft2030-s1-u3/l2c4.webp",
+            "alt": "A coffee cup on a cafe counter with a blank slip tucked under it"
+          }
+        },
+        {
+          "text": "Each kind of income has its own boxes. On a T4A, box 105 is for scholarships, fellowships, bursaries, and artists' project grants. It goes on line 13010 of the return.",
+          "image": {
+            "src": "ft2030-s1-u3/l2c5.webp",
+            "alt": "A blank certificate and a scroll on a desk beside an empty notebook"
+          }
+        },
+        {
+          "text": "Amara changed jobs in July. Two employers means two T4s, one from each. She also has a T5 from her bank. Here are her slips.",
+          "figure": {
+            "kind": "table",
+            "title": "Amara's slips for the year",
+            "columns": [
+              "Slip",
+              "From",
+              "Amount"
+            ],
+            "rows": [
+              [
+                "T4 box 14",
+                "Prairie Threads",
+                "$13,500"
+              ],
+              [
+                "T4 box 14",
+                "Beacon Business Services",
+                "$21,000"
+              ],
+              [
+                "T5 box 13",
+                "Her bank",
+                "$1,200"
+              ]
+            ]
+          }
+        }
+      ],
+      "questions": [
+        {
+          "id": "ft2030-s1-u3-l2-q1",
+          "label": "Interest slip",
+          "prompt": "Which slip shows the interest a bank paid on savings?",
+          "type": "choice",
+          "figure": {
+            "kind": "table",
+            "title": "Three slips",
+            "columns": [
+              "Slip",
+              "What it shows"
+            ],
+            "rows": [
+              [
+                "T4",
+                "Pay from an employer, and what came off it"
+              ],
+              [
+                "T4A",
+                "Other income, not pay from an employer"
+              ],
+              [
+                "T5",
+                "Interest from a bank"
+              ]
+            ]
+          },
+          "terms": [
+            {
+              "term": "T5",
+              "meaning": "A slip from a bank for the interest your savings earned."
+            }
+          ],
+          "hint": "Look at the three slips card.",
+          "options": [
+            {
+              "text": "A T4",
+              "why": "A T4 shows pay from an employer."
+            },
+            {
+              "text": "A T4A",
+              "why": "A T4A is for other income that is not pay from an employer, not for bank interest."
+            },
+            {
+              "text": "A T5",
+              "why": "Yes. A T5 is the slip from a bank for interest."
+            }
+          ],
+          "answer": 2
+        },
+        {
+          "id": "ft2030-s1-u3-l2-q2",
+          "label": "T5 interest box",
+          "prompt": "On a T5, which box shows interest from Canadian sources?",
+          "type": "choice",
+          "figure": {
+            "kind": "table",
+            "title": "Priya's T5 for the year",
+            "columns": [
+              "Box",
+              "What it shows",
+              "Amount"
+            ],
+            "rows": [
+              [
+                "13",
+                "Interest from Canadian sources",
+                "$63.50"
+              ]
+            ]
+          },
+          "hint": "Look at the T5 table.",
+          "options": [
+            {
+              "text": "Box 14",
+              "why": "Box 14 is employment income on a T4."
+            },
+            {
+              "text": "Box 13",
+              "why": "Yes. T5 box 13 is interest from Canadian sources."
+            },
+            {
+              "text": "Box 22",
+              "why": "Box 22 is the income tax deducted on a T4."
+            },
+            {
+              "text": "Box 105",
+              "why": "Box 105 is on a T4A, for scholarships and similar awards."
+            }
+          ],
+          "answer": 1
+        },
+        {
+          "id": "ft2030-s1-u3-l2-q3",
+          "label": "Read the T5",
+          "prompt": "Look at Priya's T5. How much interest does box 13 show?",
+          "type": "number",
+          "unit": "$",
+          "answer": 6350,
+          "tolerance": 1,
+          "figure": {
+            "kind": "table",
+            "title": "Priya's T5 for the year",
+            "columns": [
+              "Box",
+              "What it shows",
+              "Amount"
+            ],
+            "rows": [
+              [
+                "13",
+                "Interest from Canadian sources",
+                "$63.50"
+              ]
+            ]
+          },
+          "hint": "Read the Amount column.",
+          "why": "Yes. Box 13 shows $63.50.",
+          "working": "Read box 13: $63.50.",
+          "miss": "Find the row for box 13 and read the Amount column."
+        },
+        {
+          "id": "ft2030-s1-u3-l2-q4",
+          "label": "Other income slip",
+          "prompt": "Marcus has $300 of other income that is not pay from an employer. Which slip shows it?",
+          "type": "choice",
+          "terms": [
+            {
+              "term": "T4A",
+              "meaning": "A slip for other kinds of income that are not pay from an employer."
+            }
+          ],
+          "hint": "Think about income that is not pay.",
+          "options": [
+            {
+              "text": "A T4A",
+              "why": "Yes. A T4A is for other kinds of income that are not pay from an employer."
+            },
+            {
+              "text": "A T4",
+              "why": "A T4 is for pay from an employer."
+            },
+            {
+              "text": "A T5",
+              "why": "A T5 is for bank interest."
+            }
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ft2030-s1-u3-l2-q5",
+          "label": "Two employers",
+          "prompt": "Amara worked for two employers in the year. How many T4s does she get?",
+          "type": "choice",
+          "hint": "Each employer gives its own slip.",
+          "options": [
+            {
+              "text": "One, from the last employer",
+              "why": "The first employer also gives her a T4 for the months she worked there."
+            },
+            {
+              "text": "Two, one from each employer",
+              "why": "Yes. Each employer gives its own T4."
+            },
+            {
+              "text": "One for each month she worked",
+              "why": "A T4 covers the whole year with one employer, not one month."
+            }
+          ],
+          "answer": 1
+        },
+        {
+          "id": "ft2030-s1-u3-l2-q6",
+          "label": "Two T4s added",
+          "prompt": "Look at Amara's two T4s. Add box 14 of both. What is the total?",
+          "type": "number",
+          "unit": "$",
+          "answer": 3450000,
+          "tolerance": 1,
+          "figure": {
+            "kind": "table",
+            "title": "Amara's slips for the year",
+            "columns": [
+              "Slip",
+              "From",
+              "Amount"
+            ],
+            "rows": [
+              [
+                "T4 box 14",
+                "Prairie Threads",
+                "$13,500"
+              ],
+              [
+                "T4 box 14",
+                "Beacon Business Services",
+                "$21,000"
+              ],
+              [
+                "T5 box 13",
+                "Her bank",
+                "$1,200"
+              ]
+            ]
+          },
+          "traps": [
+            {
+              "value": 3570000,
+              "why": "That also adds the T5 interest. The question asks for box 14 of both T4s only."
+            }
+          ],
+          "hint": "Use the two T4 rows only, not the T5.",
+          "why": "Yes. Her employment income is the box 14 of both T4s added.",
+          "working": "$13,500 + $21,000 = $34,500.",
+          "miss": "Add the two T4 amounts. The T5 is interest, not box 14."
+        },
+        {
+          "id": "ft2030-s1-u3-l2-q7",
+          "label": "Scholarship box",
+          "prompt": "On a T4A, which box is for scholarships, fellowships, bursaries and artists' project grants?",
+          "type": "choice",
+          "hint": "Look at the card about box 105.",
+          "options": [
+            {
+              "text": "Box 13",
+              "why": "Box 13 is interest on a T5."
+            },
+            {
+              "text": "Box 14",
+              "why": "Box 14 is employment income on a T4."
+            },
+            {
+              "text": "Box 22",
+              "why": "Box 22 is income tax deducted on a T4."
+            },
+            {
+              "text": "Box 105",
+              "why": "Yes. T4A box 105 is for scholarships, fellowships, bursaries and artists' project grants."
+            }
+          ],
+          "answer": 3
+        },
+        {
+          "id": "ft2030-s1-u3-l2-q8",
+          "label": "Marcus's two slips",
+          "prompt": "Marcus's T4 shows $8,600 in box 14. His T4A shows $300 of other income. What do the two slips add up to?",
+          "type": "number",
+          "unit": "$",
+          "answer": 890000,
+          "tolerance": 1,
+          "hint": "Add the two amounts.",
+          "why": "Yes. The income on his two slips adds up to this amount.",
+          "working": "$8,600 + $300 = $8,900.",
+          "miss": "Add the T4 amount and the T4A amount."
+        },
+        {
+          "id": "ft2030-s1-u3-l2-q9",
+          "label": "Slip and box",
+          "prompt": "Amara's bank interest is on which slip and in which box?",
+          "type": "choice",
+          "hint": "Interest from a bank is on a T5.",
+          "options": [
+            {
+              "text": "A T4, box 14",
+              "why": "A T4 box 14 is employment income, not interest."
+            },
+            {
+              "text": "A T4A, box 105",
+              "why": "T4A box 105 is for scholarships and similar awards."
+            },
+            {
+              "text": "A T5, box 13",
+              "why": "Yes. Interest from Canadian sources is T5 box 13."
+            },
+            {
+              "text": "A T4, box 22",
+              "why": "T4 box 22 is income tax deducted."
+            }
+          ],
+          "answer": 2
+        }
+      ]
+    },
+    {
+      "id": "ft2030-s1-u3-l3",
+      "title": "The T1 and what you need to file",
+      "kind": "lesson",
+      "learn": [
+        "Name the main lines of a T1 in order.",
+        "List what a person gathers to file, and add up total income."
+      ],
+      "cards": [
+        {
+          "text": "The T1 is the income tax return a person files each year. It is a form of numbered lines. The slips tell you what to write: T4 box 14 goes on line 10100. These line numbers are from the 2025 return.",
+          "image": {
+            "src": "ft2030-s1-u3/l3c1.webp",
+            "alt": "An open blank form with empty boxes beside a tray of blank slips"
+          }
+        },
+        {
+          "text": "The first lines of the return, in order. Income comes first, then deductions, then net income and taxable income.",
+          "figure": {
+            "kind": "table",
+            "title": "Income and deductions",
+            "columns": [
+              "Line",
+              "What it is"
+            ],
+            "rows": [
+              [
+                "10100",
+                "Employment income"
+              ],
+              [
+                "12100",
+                "Interest and other investment income"
+              ],
+              [
+                "15000",
+                "Total income"
+              ],
+              [
+                "20800",
+                "RRSP deduction"
+              ],
+              [
+                "23600",
+                "Net income"
+              ],
+              [
+                "26000",
+                "Taxable income"
+              ]
+            ]
+          }
+        },
+        {
+          "text": "Total income is all the income on your slips, added up. A deduction is subtracted from it, such as an RRSP contribution. Taxable income is what is left after the deductions. Tax is worked out on taxable income.",
+          "image": {
+            "src": "ft2030-s1-u3/l3c3.webp",
+            "alt": "A short ladder with a gold disc on each step and a ruler beside it"
+          }
+        },
+        {
+          "text": "Then come the credits, which lower your tax, then your net federal tax. T4 box 22 goes on line 43700. The last line is a refund or a balance owing. The lines in order:",
+          "figure": {
+            "kind": "table",
+            "title": "Credits, tax and result",
+            "columns": [
+              "Line",
+              "What it is"
+            ],
+            "rows": [
+              [
+                "30000",
+                "Basic personal amount"
+              ],
+              [
+                "30800",
+                "Base CPP or QPP contributions through employment income"
+              ],
+              [
+                "31200",
+                "Employment insurance premiums through employment"
+              ],
+              [
+                "31260",
+                "Canada employment amount"
+              ],
+              [
+                "42000",
+                "Net federal tax"
+              ],
+              [
+                "43700",
+                "Total income tax deducted"
+              ],
+              [
+                "48400",
+                "Refund"
+              ],
+              [
+                "48500",
+                "Balance owing"
+              ]
+            ]
+          }
+        },
+        {
+          "text": "Start by gathering your documents to report income and claim deductions. Your information slips show the income paid to you and the deductions withheld from it. With a paper return, include one copy of each information slip.",
+          "image": {
+            "src": "ft2030-s1-u3/l3c5.webp",
+            "alt": "A desk with an open folder of blank slips and receipts, a clipboard and an envelope"
+          }
+        },
+        {
+          "text": "Priya's pile has three documents. The T4 and the T5 are income. The RRSP receipt backs up a deduction on line 20800, so it is not income. Total income is the income on the slips added up.",
+          "figure": {
+            "kind": "table",
+            "title": "Priya's pile of documents",
+            "columns": [
+              "Document",
+              "Amount"
+            ],
+            "rows": [
+              [
+                "T4, box 14",
+                "$27,500"
+              ],
+              [
+                "T5, box 13",
+                "$63.50"
+              ],
+              [
+                "RRSP receipt",
+                "$1,200"
+              ]
+            ]
+          }
+        }
+      ],
+      "questions": [
+        {
+          "id": "ft2030-s1-u3-l3-q1",
+          "label": "Total income line",
+          "prompt": "On the T1, which line is total income?",
+          "type": "choice",
+          "figure": {
+            "kind": "table",
+            "title": "Income and deductions",
+            "columns": [
+              "Line",
+              "What it is"
+            ],
+            "rows": [
+              [
+                "10100",
+                "Employment income"
+              ],
+              [
+                "12100",
+                "Interest and other investment income"
+              ],
+              [
+                "15000",
+                "Total income"
+              ],
+              [
+                "20800",
+                "RRSP deduction"
+              ],
+              [
+                "23600",
+                "Net income"
+              ],
+              [
+                "26000",
+                "Taxable income"
+              ]
+            ]
+          },
+          "hint": "Look at the first table.",
+          "options": [
+            {
+              "text": "Line 10100",
+              "why": "Line 10100 is employment income, one part of total income."
+            },
+            {
+              "text": "Line 15000",
+              "why": "Yes. Line 15000 is total income."
+            },
+            {
+              "text": "Line 23600",
+              "why": "Line 23600 is net income, after deductions."
+            },
+            {
+              "text": "Line 26000",
+              "why": "Line 26000 is taxable income, after deductions."
+            }
+          ],
+          "answer": 1
+        },
+        {
+          "id": "ft2030-s1-u3-l3-q2",
+          "label": "RRSP line",
+          "prompt": "Which line is the RRSP deduction?",
+          "type": "choice",
+          "hint": "The line name says RRSP.",
+          "options": [
+            {
+              "text": "Line 15000",
+              "why": "Line 15000 is total income, before deductions."
+            },
+            {
+              "text": "Line 26000",
+              "why": "Line 26000 is taxable income."
+            },
+            {
+              "text": "Line 43700",
+              "why": "Line 43700 is the total income tax deducted."
+            },
+            {
+              "text": "Line 20800",
+              "why": "Yes. Line 20800 is the RRSP deduction."
+            }
+          ],
+          "answer": 3
+        },
+        {
+          "id": "ft2030-s1-u3-l3-q3",
+          "label": "Tax deducted line",
+          "prompt": "T4 box 22 is income tax already deducted from pay. Which line of the T1 is total income tax deducted?",
+          "type": "choice",
+          "figure": {
+            "kind": "table",
+            "title": "Credits, tax and result",
+            "columns": [
+              "Line",
+              "What it is"
+            ],
+            "rows": [
+              [
+                "30000",
+                "Basic personal amount"
+              ],
+              [
+                "30800",
+                "Base CPP or QPP contributions through employment income"
+              ],
+              [
+                "31200",
+                "Employment insurance premiums through employment"
+              ],
+              [
+                "31260",
+                "Canada employment amount"
+              ],
+              [
+                "42000",
+                "Net federal tax"
+              ],
+              [
+                "43700",
+                "Total income tax deducted"
+              ],
+              [
+                "48400",
+                "Refund"
+              ],
+              [
+                "48500",
+                "Balance owing"
+              ]
+            ]
+          },
+          "hint": "Look at the second table.",
+          "options": [
+            {
+              "text": "Line 43700",
+              "why": "Yes. Line 43700 is the total income tax deducted."
+            },
+            {
+              "text": "Line 42000",
+              "why": "Line 42000 is net federal tax, the tax you owe."
+            },
+            {
+              "text": "Line 48400",
+              "why": "Line 48400 is the refund."
+            },
+            {
+              "text": "Line 48500",
+              "why": "Line 48500 is the balance owing."
+            }
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ft2030-s1-u3-l3-q4",
+          "label": "Refund line",
+          "prompt": "Which line of the T1 is the refund?",
+          "type": "choice",
+          "figure": {
+            "kind": "table",
+            "title": "Credits, tax and result",
+            "columns": [
+              "Line",
+              "What it is"
+            ],
+            "rows": [
+              [
+                "30000",
+                "Basic personal amount"
+              ],
+              [
+                "30800",
+                "Base CPP or QPP contributions through employment income"
+              ],
+              [
+                "31200",
+                "Employment insurance premiums through employment"
+              ],
+              [
+                "31260",
+                "Canada employment amount"
+              ],
+              [
+                "42000",
+                "Net federal tax"
+              ],
+              [
+                "43700",
+                "Total income tax deducted"
+              ],
+              [
+                "48400",
+                "Refund"
+              ],
+              [
+                "48500",
+                "Balance owing"
+              ]
+            ]
+          },
+          "terms": [
+            {
+              "term": "refund",
+              "meaning": "Money the government pays back to you when the tax withheld is more than the tax you owe."
+            }
+          ],
+          "hint": "The refund and the balance owing are the last two lines.",
+          "options": [
+            {
+              "text": "Line 48500",
+              "why": "Line 48500 is the balance owing, the opposite result."
+            },
+            {
+              "text": "Line 42000",
+              "why": "Line 42000 is net federal tax."
+            },
+            {
+              "text": "Line 48400",
+              "why": "Yes. Line 48400 is the refund."
+            },
+            {
+              "text": "Line 43700",
+              "why": "Line 43700 is the total income tax deducted."
+            }
+          ],
+          "answer": 2
+        },
+        {
+          "id": "ft2030-s1-u3-l3-q5",
+          "label": "Where box 14 goes",
+          "prompt": "On which line of the T1 does a T4's box 14 go?",
+          "type": "choice",
+          "hint": "Box 14 is employment income.",
+          "options": [
+            {
+              "text": "Line 12100",
+              "why": "Line 12100 is interest and other investment income."
+            },
+            {
+              "text": "Line 10100",
+              "why": "Yes. T4 box 14, employment income, goes on line 10100."
+            },
+            {
+              "text": "Line 15000",
+              "why": "Line 15000 is total income, the sum of all the income lines."
+            },
+            {
+              "text": "Line 43700",
+              "why": "Line 43700 is the tax already deducted, from box 22."
+            }
+          ],
+          "answer": 1
+        },
+        {
+          "id": "ft2030-s1-u3-l3-q6",
+          "label": "Priya's total income",
+          "prompt": "Look at Priya's pile. What is her total income, the income on her slips added up?",
+          "type": "number",
+          "unit": "$",
+          "answer": 2756350,
+          "tolerance": 1,
+          "figure": {
+            "kind": "table",
+            "title": "Priya's pile of documents",
+            "columns": [
+              "Document",
+              "Amount"
+            ],
+            "rows": [
+              [
+                "T4, box 14",
+                "$27,500"
+              ],
+              [
+                "T5, box 13",
+                "$63.50"
+              ],
+              [
+                "RRSP receipt",
+                "$1,200"
+              ]
+            ]
+          },
+          "terms": [
+            {
+              "term": "total income",
+              "meaning": "All the income on your slips, added up."
+            }
+          ],
+          "traps": [
+            {
+              "value": 2876350,
+              "why": "That adds the RRSP receipt. The receipt backs up a deduction, so it is not income."
+            }
+          ],
+          "hint": "Add only the two income slips. The receipt is not income.",
+          "why": "Yes. Total income is the T4 and the T5 added up. The RRSP receipt is for a deduction.",
+          "working": "$27,500 + $63.50 = $27,563.50.",
+          "miss": "The RRSP receipt is not income. Add the other two."
+        },
+        {
+          "id": "ft2030-s1-u3-l3-q7",
+          "label": "Amara's total income",
+          "prompt": "Look at Amara's income slips. What is her total income?",
+          "type": "number",
+          "unit": "$",
+          "answer": 3570000,
+          "tolerance": 1,
+          "figure": {
+            "kind": "table",
+            "title": "Amara's income slips",
+            "columns": [
+              "Slip",
+              "Amount"
+            ],
+            "rows": [
+              [
+                "T4 box 14, Prairie Threads",
+                "$13,500"
+              ],
+              [
+                "T4 box 14, Beacon Business Services",
+                "$21,000"
+              ],
+              [
+                "T5 box 13",
+                "$1,200"
+              ]
+            ]
+          },
+          "traps": [
+            {
+              "value": 3450000,
+              "why": "That leaves out the T5 interest. Interest is income too."
+            }
+          ],
+          "hint": "Add all three slips.",
+          "why": "Yes. All three slips are income: the two T4s and the T5.",
+          "working": "$13,500 + $21,000 + $1,200 = $35,700.",
+          "miss": "There are three slips. Did you add all of them?"
+        },
+        {
+          "id": "ft2030-s1-u3-l3-q8",
+          "label": "Paper return",
+          "prompt": "Mei files a paper return. What does she include with it?",
+          "type": "choice",
+          "hint": "Look at the card on gathering documents.",
+          "options": [
+            {
+              "text": "One copy of each information slip",
+              "why": "Yes. With a paper return you include one copy of each information slip."
+            },
+            {
+              "text": "Only the slip with the biggest amount",
+              "why": "Every information slip goes with a paper return, not just the biggest."
+            },
+            {
+              "text": "Only her T4, never a T5",
+              "why": "Every information slip goes with it, a T5 as well as a T4."
+            }
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ft2030-s1-u3-l3-q9",
+          "label": "RRSP receipt use",
+          "prompt": "What is Priya's RRSP receipt used for?",
+          "type": "choice",
+          "hint": "Think about line 20800.",
+          "options": [
+            {
+              "text": "To add to her total income",
+              "why": "A deduction lowers income. The receipt is not income."
+            },
+            {
+              "text": "To show the tax already deducted",
+              "why": "That is the T4, box 22."
+            },
+            {
+              "text": "To show interest from her bank",
+              "why": "That is the T5."
+            },
+            {
+              "text": "To back up her RRSP deduction",
+              "why": "Yes. The receipt backs up a deduction, which is subtracted from income."
+            }
+          ],
+          "answer": 3
+        }
+      ]
+    }
+  ],
+  "image": {
+    "src": "ft2030-s1-u3/banner.webp",
+    "alt": "A winter street at dusk with an office, a bank and a school and a stack of blank slips"
+  }
+}

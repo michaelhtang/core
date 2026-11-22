@@ -1,0 +1,659 @@
+{
+  "id": "ft2030-s1-u4",
+  "title": "Rights and responsibilities",
+  "blurb": "What you can expect from the CRA, and what it expects from you.",
+  "outcome_codes": [
+    "FIN2060 1.6"
+  ],
+  "levels": [
+    {
+      "id": "ft2030-s1-u4-l1",
+      "title": "Your rights",
+      "kind": "lesson",
+      "learn": [
+        "Say how many rights the Taxpayer Bill of Rights lists.",
+        "Match a made-up situation to the one right that fits it."
+      ],
+      "cards": [
+        {
+          "text": "The Canada Revenue Agency (CRA) has a Taxpayer Bill of Rights. It lists 16 rights that describe how you are entitled to be treated when you deal with the CRA. You do not need to memorise them. Here are the ideas behind a few.",
+          "image": {
+            "src": "ft2030-s1-u4/l1c1.webp",
+            "alt": "An open blank booklet with a ribbon on a desk"
+          }
+        },
+        {
+          "text": "Some rights are about money. You have the right to \"receive entitlements and pay no more and no less than required by law\". An entitlement is something the law says you are owed, such as a refund. You also have the right to \"relief from penalties and interest because of extraordinary circumstances\".",
+          "image": {
+            "src": "ft2030-s1-u4/l1c2.webp",
+            "alt": "A balance scale with gold discs and a blank sheet"
+          }
+        },
+        {
+          "text": "Some rights are about information. You have the right to \"service in both official languages\", which means English or French. You have the right to \"privacy and confidentiality\". And you have the right to \"complete, accurate, clear, and timely information\".",
+          "image": {
+            "src": "ft2030-s1-u4/l1c3.webp",
+            "alt": "A blank envelope with a padlock beside folders"
+          }
+        },
+        {
+          "text": "Some rights are about disagreeing. You have the right to \"a formal review and a subsequent appeal\", and to \"be represented by a person of your choice\". You can \"lodge a service complaint and request a formal review without fear of reprisal\". Reprisal means being punished for it.",
+          "image": {
+            "src": "ft2030-s1-u4/l1c4.webp",
+            "alt": "Two empty chairs across a desk with a blank sheet"
+          }
+        },
+        {
+          "text": "Some rights are about fair treatment. You have the right to \"be treated professionally, courteously, and fairly\" and to \"have the law applied consistently\". Unless the law says otherwise, you have the right \"not to pay income tax amounts in dispute before an impartial review\". Impartial means fair.",
+          "image": {
+            "src": "ft2030-s1-u4/l1c5.webp",
+            "alt": "A wooden bench with a blank clipboard in a hallway"
+          }
+        }
+      ],
+      "questions": [
+        {
+          "id": "ft2030-s1-u4-l1-q1",
+          "label": "How many rights",
+          "prompt": "How many rights does the CRA Taxpayer Bill of Rights list?",
+          "type": "choice",
+          "hint": "The first card gives the number.",
+          "options": [
+            {
+              "text": "10",
+              "why": "That is fewer than the card says. It lists 16."
+            },
+            {
+              "text": "20",
+              "why": "That is more than the card says. It lists 16."
+            },
+            {
+              "text": "16",
+              "why": "The first card says the Taxpayer Bill of Rights lists 16 rights."
+            },
+            {
+              "text": "8",
+              "why": "That is half the number. The card says 16."
+            }
+          ],
+          "answer": 2,
+          "miss": "Read the first card again for the number."
+        },
+        {
+          "id": "ft2030-s1-u4-l1-q2",
+          "label": "A language choice",
+          "prompt": "Sam asks the CRA to deal with him in French, not English. Which right covers this?",
+          "type": "choice",
+          "hint": "Look at the card about information.",
+          "options": [
+            {
+              "text": "service in both official languages",
+              "why": "A right to service in both official languages covers dealing with the CRA in English or French."
+            },
+            {
+              "text": "have the law applied consistently",
+              "why": "That right is about the law being applied the same way for everyone, not about language."
+            },
+            {
+              "text": "a formal review and a subsequent appeal",
+              "why": "That right is about disagreeing with a decision, not about language."
+            },
+            {
+              "text": "be represented by a person of your choice",
+              "why": "That right is about having someone speak for you, not about language."
+            }
+          ],
+          "answer": 0,
+          "miss": "Which right names a language?"
+        },
+        {
+          "id": "ft2030-s1-u4-l1-q3",
+          "label": "Disagreeing with a decision",
+          "prompt": "Noor disagrees with a decision on her return and wants it looked at again. Which right covers this?",
+          "type": "choice",
+          "hint": "Look at the card about disagreeing.",
+          "options": [
+            {
+              "text": "service in both official languages",
+              "why": "That right is about English or French, not about a decision."
+            },
+            {
+              "text": "privacy and confidentiality",
+              "why": "That right is about keeping your information private, not about a decision."
+            },
+            {
+              "text": "be treated professionally, courteously, and fairly",
+              "why": "That right is about how you are treated, not about asking for a decision to be looked at again."
+            },
+            {
+              "text": "a formal review and a subsequent appeal",
+              "why": "If you do not agree with a decision, you have the right to a formal review and then an appeal."
+            }
+          ],
+          "answer": 3,
+          "miss": "Which right is about a decision you do not agree with?"
+        },
+        {
+          "id": "ft2030-s1-u4-l1-q4",
+          "label": "Private information",
+          "prompt": "Lena wants the CRA to keep her financial details private. Which right covers this?",
+          "type": "choice",
+          "hint": "Look at the card about information.",
+          "options": [
+            {
+              "text": "service in both official languages",
+              "why": "That right is about English or French, not about privacy."
+            },
+            {
+              "text": "privacy and confidentiality",
+              "why": "You have the right to privacy and confidentiality, so the CRA keeps your information private."
+            },
+            {
+              "text": "be represented by a person of your choice",
+              "why": "That right is about having someone speak for you, not about privacy."
+            },
+            {
+              "text": "have the law applied consistently",
+              "why": "That right is about the law being applied the same way for everyone, not about privacy."
+            }
+          ],
+          "answer": 1,
+          "miss": "Which right names privacy?"
+        },
+        {
+          "id": "ft2030-s1-u4-l1-q5",
+          "label": "Penalty relief",
+          "prompt": "Omar missed a deadline because of extraordinary circumstances. He asks the CRA to cancel the penalty and interest. Which right covers this?",
+          "type": "choice",
+          "hint": "Look at the card about money.",
+          "options": [
+            {
+              "text": "receive entitlements and pay no more and no less than required by law",
+              "why": "That right is about getting what you are owed and paying what the law requires, not about relief from a penalty."
+            },
+            {
+              "text": "complete, accurate, clear, and timely information",
+              "why": "That right is about the information the CRA gives you, not about a penalty."
+            },
+            {
+              "text": "relief from penalties and interest because of extraordinary circumstances",
+              "why": "This is the right to relief from penalties and interest because of extraordinary circumstances."
+            },
+            {
+              "text": "be represented by a person of your choice",
+              "why": "That right is about having someone speak for you, not about a penalty."
+            }
+          ],
+          "answer": 2,
+          "miss": "Which right names penalties and interest?"
+        },
+        {
+          "id": "ft2030-s1-u4-l1-q6",
+          "label": "A person of choice",
+          "prompt": "Ana would like her cousin to speak with the CRA for her. Which right covers this?",
+          "type": "choice",
+          "hint": "Look at the card about disagreeing.",
+          "options": [
+            {
+              "text": "privacy and confidentiality",
+              "why": "That right is about keeping your information private, not about who speaks for you."
+            },
+            {
+              "text": "be represented by a person of your choice",
+              "why": "You have the right to be represented by a person of your choice."
+            },
+            {
+              "text": "service in both official languages",
+              "why": "That right is about English or French, not about who speaks for you."
+            },
+            {
+              "text": "have the law applied consistently",
+              "why": "That right is about the law being applied the same way for everyone, not about who speaks for you."
+            }
+          ],
+          "answer": 1,
+          "miss": "Which right is about who speaks for you?"
+        },
+        {
+          "id": "ft2030-s1-u4-l1-q7",
+          "label": "Fear of punishment",
+          "prompt": "Jo wants to make a service complaint, but she worries she will be punished for it. Which right covers this?",
+          "type": "choice",
+          "hint": "Look for the word reprisal.",
+          "options": [
+            {
+              "text": "lodge a service complaint and request a formal review without fear of reprisal",
+              "why": "You can lodge a service complaint and request a formal review without fear of reprisal, which means being punished for it."
+            },
+            {
+              "text": "service in both official languages",
+              "why": "That right is about English or French, not about fear of punishment."
+            },
+            {
+              "text": "have the law applied consistently",
+              "why": "That right is about the law being applied the same way for everyone, not about fear of punishment."
+            },
+            {
+              "text": "be treated professionally, courteously, and fairly",
+              "why": "That right is about how the CRA treats you in general, not about fear of punishment for a complaint."
+            }
+          ],
+          "answer": 0,
+          "miss": "Which right is about being punished for speaking up?"
+        },
+        {
+          "id": "ft2030-s1-u4-l1-q8",
+          "label": "Disputed tax",
+          "prompt": "Wen disputes an income tax amount, and a review is still to come. Unless the law says otherwise, which right says he does not have to pay that amount before the review?",
+          "type": "choice",
+          "terms": [
+            {
+              "term": "in dispute",
+              "meaning": "Not agreed. The taxpayer and the CRA see the amount differently."
+            }
+          ],
+          "hint": "Look at the card about fair treatment.",
+          "options": [
+            {
+              "text": "have the law applied consistently",
+              "why": "That right is about the law being applied the same way for everyone, not about paying a disputed amount."
+            },
+            {
+              "text": "privacy and confidentiality",
+              "why": "That right is about keeping your information private, not about paying a disputed amount."
+            },
+            {
+              "text": "service in both official languages",
+              "why": "That right is about English or French, not about paying a disputed amount."
+            },
+            {
+              "text": "not to pay income tax amounts in dispute before an impartial review",
+              "why": "This right says you do not have to pay income tax amounts in dispute before an impartial review, unless the law says otherwise."
+            }
+          ],
+          "answer": 3,
+          "miss": "Which right names an amount in dispute?"
+        },
+        {
+          "id": "ft2030-s1-u4-l1-q9",
+          "label": "The same rule",
+          "prompt": "Dev finds out the CRA applied a rule to his neighbour differently from how it applied it to him. Which right covers this?",
+          "type": "choice",
+          "hint": "Look at the card about fair treatment.",
+          "options": [
+            {
+              "text": "privacy and confidentiality",
+              "why": "That right is about keeping your information private, not about how a rule is applied."
+            },
+            {
+              "text": "service in both official languages",
+              "why": "That right is about English or French, not about how a rule is applied."
+            },
+            {
+              "text": "have the law applied consistently",
+              "why": "You have the right to have the law applied consistently, the same way for everyone."
+            },
+            {
+              "text": "be represented by a person of your choice",
+              "why": "That right is about having someone speak for you, not about how a rule is applied."
+            }
+          ],
+          "answer": 2,
+          "miss": "Which right is about the law being applied the same way each time?"
+        }
+      ]
+    },
+    {
+      "id": "ft2030-s1-u4-l2",
+      "title": "Your responsibilities",
+      "kind": "lesson",
+      "learn": [
+        "Name what the CRA expects you to do, and when.",
+        "Use the dates and the late balance rule on made-up people."
+      ],
+      "cards": [
+        {
+          "text": "Rights come with responsibilities. A responsibility is something you are expected to do. Here are five, and the next cards take them in turn: doing your taxes by the deadline, giving accurate and complete information, paying your balance owing, correcting your taxes, updating your personal information.",
+          "image": {
+            "src": "ft2030-s1-u4/l2c1.webp",
+            "alt": "Three plain books with a brass key on a desk"
+          }
+        },
+        {
+          "text": "Most people must file by April 30 of the year after the tax year, so for the 2025 return that is April 30, 2026. If you or your spouse or common-law partner is self-employed, the filing deadline is June 15. Here are the dates for the 2025 return.",
+          "figure": {
+            "kind": "table",
+            "title": "Dates for the 2025 return",
+            "columns": [
+              "What",
+              "Date"
+            ],
+            "rows": [
+              [
+                "File (most people)",
+                "April 30, 2026"
+              ],
+              [
+                "File (self-employed)",
+                "June 15, 2026"
+              ],
+              [
+                "Pay tax owing",
+                "April 30, 2026"
+              ]
+            ]
+          }
+        },
+        {
+          "text": "Giving accurate and complete information means giving the CRA what it needs to process your return correctly. Your slips show the income you were paid and the tax and other amounts taken off. Gather your slips, such as T4s, and your receipts.",
+          "image": {
+            "src": "ft2030-s1-u4/l2c3.webp",
+            "alt": "A stack of blank slips and receipts with a clip"
+          }
+        },
+        {
+          "text": "A balance owing is the tax you still owe when you do your taxes. It is also due on April 30. If you do not pay it by then, the CRA starts charging compound daily interest as of May 1. Compound means interest is charged on the interest already added.",
+          "image": {
+            "src": "ft2030-s1-u4/l2c4.webp",
+            "alt": "A blank calendar page beside a jar of gold discs"
+          }
+        },
+        {
+          "text": "If you make a mistake on your return, or leave out details about your income, you have the chance to correct it. If your personal information changes, like your address, you should update it with the CRA.",
+          "image": {
+            "src": "ft2030-s1-u4/l2c5.webp",
+            "alt": "A blank form with a pencil and eraser by a mailbox"
+          }
+        }
+      ],
+      "questions": [
+        {
+          "id": "ft2030-s1-u4-l2-q1",
+          "label": "Filing deadline",
+          "prompt": "Hana is not self-employed, and neither is her spouse. By what date did her 2025 return have to be filed?",
+          "type": "choice",
+          "hint": "Look at the table.",
+          "options": [
+            {
+              "text": "June 15, 2026",
+              "why": "That is the filing deadline when you or your spouse or common-law partner is self-employed."
+            },
+            {
+              "text": "April 30, 2026",
+              "why": "Most people had to file by April 30 of the year after the tax year, so April 30, 2026 for the 2025 return."
+            },
+            {
+              "text": "May 1, 2026",
+              "why": "May 1 is when interest starts on a late balance. It is not the filing deadline."
+            },
+            {
+              "text": "December 31, 2025",
+              "why": "That is the end of the tax year. The deadline came later."
+            }
+          ],
+          "answer": 1,
+          "miss": "Which row of the table fits someone who is not self-employed?"
+        },
+        {
+          "id": "ft2030-s1-u4-l2-q2",
+          "label": "Self-employed deadline",
+          "prompt": "Rae's common-law partner is self-employed. By what date did Rae's 2025 return have to be filed?",
+          "type": "choice",
+          "hint": "The card says \"you or your spouse or common-law partner\".",
+          "options": [
+            {
+              "text": "April 30, 2026",
+              "why": "That is the deadline for most people. Rae's partner is self-employed, so the later date applies."
+            },
+            {
+              "text": "May 1, 2026",
+              "why": "That is when interest starts on a late balance, not a filing deadline."
+            },
+            {
+              "text": "July 15, 2026",
+              "why": "The table has no such date. The self-employed date is June 15, 2026."
+            },
+            {
+              "text": "June 15, 2026",
+              "why": "If you or your spouse or common-law partner is self-employed, the 2025 return was due June 15, 2026."
+            }
+          ],
+          "answer": 3,
+          "miss": "Read who the later date is for."
+        },
+        {
+          "id": "ft2030-s1-u4-l2-q3",
+          "label": "Days before deadline",
+          "prompt": "Kim files her 2025 return on April 12, 2026, and she is not self-employed. How many days before the filing deadline is that?",
+          "type": "choice",
+          "hint": "Count the days from her date to April 30.",
+          "options": [
+            {
+              "text": "18 days",
+              "why": "April has 30 days, and 30 - 12 = 18 days from April 12 to April 30."
+            },
+            {
+              "text": "19 days",
+              "why": "That counts April 12 itself as well. The days between are 30 - 12."
+            },
+            {
+              "text": "30 days",
+              "why": "That is the number of days in April, not the days left after April 12."
+            },
+            {
+              "text": "42 days",
+              "why": "That adds 30 and 12. Subtract instead."
+            }
+          ],
+          "answer": 0,
+          "miss": "Subtract her day of the month from 30."
+        },
+        {
+          "id": "ft2030-s1-u4-l2-q4",
+          "label": "Days late paying",
+          "prompt": "Jo pays her balance owing on May 6, 2026. How many days after the payment due date of April 30, 2026 is that?",
+          "type": "choice",
+          "hint": "Count the days from April 30 to May 6.",
+          "options": [
+            {
+              "text": "5 days",
+              "why": "That misses a day. Count May 1 through May 6."
+            },
+            {
+              "text": "7 days",
+              "why": "That is one too many. May 6 is 6 days after April 30."
+            },
+            {
+              "text": "6 days",
+              "why": "April 30 to May 6 is 6 days: May 1, 2, 3, 4, 5 and 6."
+            },
+            {
+              "text": "36 days",
+              "why": "That adds the 30 days of April. Count only from April 30."
+            }
+          ],
+          "answer": 2,
+          "miss": "Count each day after April 30 up to and including May 6."
+        },
+        {
+          "id": "ft2030-s1-u4-l2-q5",
+          "label": "When interest starts",
+          "prompt": "Leo did not pay his balance owing by the due date. As of what date does the CRA start charging him interest?",
+          "type": "choice",
+          "terms": [
+            {
+              "term": "balance owing",
+              "meaning": "The tax you still owe when you do your taxes."
+            }
+          ],
+          "hint": "Look at the card about a balance owing.",
+          "options": [
+            {
+              "text": "April 30",
+              "why": "April 30 is the due date. The interest starts after it, as of May 1."
+            },
+            {
+              "text": "May 1",
+              "why": "The CRA starts charging compound daily interest on an unpaid balance as of May 1."
+            },
+            {
+              "text": "June 15",
+              "why": "June 15 is the self-employed filing deadline, not when interest starts."
+            },
+            {
+              "text": "April 15",
+              "why": "The table has no April 15 date. Interest starts as of May 1."
+            }
+          ],
+          "answer": 1,
+          "miss": "It is the day after the due date."
+        },
+        {
+          "id": "ft2030-s1-u4-l2-q6",
+          "label": "Compound interest",
+          "prompt": "On a late balance the CRA charges compound daily interest. What does compound mean here?",
+          "type": "choice",
+          "terms": [
+            {
+              "term": "compound",
+              "meaning": "Interest is charged on the interest already added."
+            }
+          ],
+          "hint": "Look for the word compound on the card.",
+          "options": [
+            {
+              "text": "Interest is charged on the interest already added",
+              "why": "Compound means interest is charged on the interest already added."
+            },
+            {
+              "text": "The same amount of interest is added each day",
+              "why": "That is not compound. With compound interest the amount charged can grow."
+            },
+            {
+              "text": "Interest is charged only once, on May 1",
+              "why": "The interest is daily, not once."
+            },
+            {
+              "text": "Interest is charged only on the original tax",
+              "why": "Compound means later charges also cover the interest already added."
+            }
+          ],
+          "answer": 0,
+          "miss": "Think about what the interest is charged on."
+        },
+        {
+          "id": "ft2030-s1-u4-l2-q7",
+          "label": "A forgotten slip",
+          "prompt": "Mia already filed. Then she finds a T5 slip showing interest that she left off. Which responsibility helps her fix it?",
+          "type": "choice",
+          "hint": "Look at the card about mistakes.",
+          "options": [
+            {
+              "text": "Updating your personal information",
+              "why": "That one is about changes such as an address, not a mistake on a return."
+            },
+            {
+              "text": "Doing your taxes by the deadline",
+              "why": "The deadline matters, but her problem is a slip left off, not lateness."
+            },
+            {
+              "text": "Correcting your taxes",
+              "why": "If you make a mistake or leave out details about your income, you have the chance to correct your return."
+            },
+            {
+              "text": "Paying your balance owing",
+              "why": "That one is about paying what is owing, not about fixing a return."
+            }
+          ],
+          "answer": 2,
+          "miss": "Which responsibility is about a mistake or something left out?"
+        },
+        {
+          "id": "ft2030-s1-u4-l2-q8",
+          "label": "A new address",
+          "prompt": "Aiden moves and gets a new address. Which responsibility does that touch?",
+          "type": "choice",
+          "hint": "Look at the last card.",
+          "options": [
+            {
+              "text": "Correcting your taxes",
+              "why": "That one is about a mistake or something left out of a return."
+            },
+            {
+              "text": "Giving accurate and complete information",
+              "why": "That one is about the information on your tax return, not a change of address."
+            },
+            {
+              "text": "Paying your balance owing",
+              "why": "That one is about paying what you owe, not about an address."
+            },
+            {
+              "text": "Updating your personal information",
+              "why": "If your personal information changes, like your address, you should update it with the CRA."
+            }
+          ],
+          "answer": 3,
+          "miss": "The last card names an address."
+        },
+        {
+          "id": "ft2030-s1-u4-l2-q9",
+          "label": "All the information",
+          "prompt": "Sana gives the CRA her slips and everything it needs to process her return correctly. Which responsibility is she meeting?",
+          "type": "choice",
+          "hint": "Look at the third card.",
+          "options": [
+            {
+              "text": "Giving accurate and complete information",
+              "why": "You must give the CRA the necessary information to process your return correctly."
+            },
+            {
+              "text": "Doing your taxes by the deadline",
+              "why": "That one is about the date, not about the information given."
+            },
+            {
+              "text": "Paying your balance owing",
+              "why": "That one is about paying a balance owing."
+            },
+            {
+              "text": "Correcting your taxes",
+              "why": "That one is about fixing a mistake after filing."
+            }
+          ],
+          "answer": 0,
+          "miss": "Which responsibility names information?"
+        },
+        {
+          "id": "ft2030-s1-u4-l2-q10",
+          "label": "Right or responsibility",
+          "prompt": "Which one of these is a responsibility of the taxpayer, not a right?",
+          "type": "choice",
+          "hint": "A right is how the CRA must treat you. A responsibility is something you do.",
+          "options": [
+            {
+              "text": "Privacy and confidentiality",
+              "why": "That is a right: the CRA must keep your information private."
+            },
+            {
+              "text": "Service in both official languages",
+              "why": "That is a right: you can deal with the CRA in English or French."
+            },
+            {
+              "text": "A formal review and a subsequent appeal",
+              "why": "That is a right: you can ask for a formal review and then appeal."
+            },
+            {
+              "text": "Paying your balance owing",
+              "why": "Paying your balance owing is something you do. The other three are rights."
+            }
+          ],
+          "answer": 3,
+          "miss": "Which one is something you do?"
+        }
+      ]
+    }
+  ],
+  "image": {
+    "src": "ft2030-s1-u4/banner.webp",
+    "alt": "A winter street at dusk with an office and a library"
+  }
+}

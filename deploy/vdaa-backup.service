@@ -1,0 +1,18 @@
+# Nightly WAL-safe backup (scripts/backup.mjs: VACUUM INTO, newest 14 kept, mode 0600). Triggered by vdaa-backup.timer.
+# Restore steps: scripts/restore.md.
+[Unit]
+Description=vDAA database backup
+After=vdaa.service
+
+[Service]
+Type=oneshot
+User=vdaa
+Group=vdaa
+UMask=0077
+Environment=BACKUP_KEEP=14
+ExecStart=/usr/bin/node /srv/vdaa/app/scripts/backup.mjs /srv/vdaa/data/vdaa.db /srv/vdaa/data/backups
+NoNewPrivileges=true
+ProtectSystem=strict
+ProtectHome=true
+PrivateTmp=true
+ReadWritePaths=/srv/vdaa/data

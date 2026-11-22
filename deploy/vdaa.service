@@ -1,0 +1,43 @@
+# vDAA application service. Installed to /etc/systemd/system/vdaa.service by deploy-vdaa.sh (same layout as stax.service).
+#   code  /srv/vdaa/app   (root-owned, read-only to the service)
+#   data  /srv/vdaa/data  (owned by user vdaa, mode 700; vdaa.db + backups/)
+#   env   /etc/vdaa.env   (root-owned, mode 0600; VDAA_SETUP_TOKEN=... and nothing else; never in this file, never in git)
+# Do NOT set VDAA_DEV here: it re-opens first-run setup without a token and rebuilds static files on every request.
+[Unit]
+Description=vDAA virtual economy
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+User=vdaa
+Group=vdaa
+WorkingDirectory=/srv/vdaa/app
+Environment=NODE_ENV=production
+Environment=PORT=3020
+Environment=DATA_DIR=/srv/vdaa/data
+Environment=PUBLIC_ORIGIN=https://vdaa.michaelhtang.com
+Environment=TRUSTED_PROXIES=127.0.0.1,::1
+EnvironmentFile=/etc/vdaa.env
+ExecStart=/usr/bin/node server.js
+Restart=on-failure
+RestartSec=3
+# SIGTERM closes the HTTP server and the database cleanly; give it a moment before systemd kills it.
+TimeoutStopSec=15
+MemoryMax=200M
+
+# The database must not be world-readable (it holds password hashes): files are created 0600, directories 0700.
+UMask=0077
+# Hardening that node:sqlite and V8 tolerate (no MemoryDenyWriteExecute: V8's JIT needs writable+executable pages).
+NoNewPrivileges=true
+ProtectSystem=strict
+ProtectHome=true
+PrivateTmp=true
+ReadWritePaths=/srv/vdaa/data
+ProtectKernelTunables=true
+ProtectKernelModules=true
+ProtectControlGroups=true
+RestrictSUIDSGID=true
+LockPersonality=true
+
+[Install]
+WantedBy=multi-user.target

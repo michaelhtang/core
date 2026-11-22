@@ -1,0 +1,66 @@
+/* Amphitheatre (leaderboards). Only theme.css tokens, so it follows the theme; fits a 375 px phone; rows are grids, not tables. */
+.lb { display: grid; gap: 16px; }
+.lb-tabs, .lb-scope { display: flex; gap: 8px; flex-wrap: wrap; }
+.lb-tabs button, .lb-scope button { min-height: 44px; padding: 0 16px; font-size: 0.95rem; }
+
+.lb-card { padding: 14px 16px; border: 1px solid var(--glass-border); border-radius: var(--radius); background: var(--glass-bg); display: grid; gap: 8px; }
+.lb-card.news { border-color: var(--accent); box-shadow: 0 0 22px var(--accent-glow); }
+.lb-card h3 { margin: 0; font-family: var(--font-display); font-weight: 400; font-size: 1.25rem; letter-spacing: 0.02em; }
+.lb-note { color: var(--ink-muted); font-size: var(--text-small); margin: 0; }
+
+.lb-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+.lb-row { display: grid; grid-template-columns: 3rem minmax(0, 1fr) 3.4rem minmax(4.2rem, auto); align-items: center; gap: 8px; padding: 8px 10px; min-height: 52px; border: 1px solid var(--row-line); border-radius: var(--radius); background: var(--glass-bg); }
+.lb-row.mine { border-color: var(--accent); background: rgba(245, 196, 81, 0.12); }
+.lb-rank { font-family: var(--font-display); font-size: 1.15rem; color: var(--accent); }
+.lb-who { display: grid; gap: 2px; min-width: 0; justify-items: start; }
+.lb-who b { overflow-wrap: break-word; line-height: 1.2; }
+.lb-val { text-align: right; font-weight: 800; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.lb-delta { font-weight: 800; font-size: var(--text-small); text-align: center; white-space: nowrap; color: var(--ink-muted); }
+.lb-delta.up { color: var(--ok); }
+.lb-delta.down { color: var(--bad); }
+@media (max-width: 420px) {   /* phones: the change sits under the rank, so a long pseudonym keeps the middle column */
+  .lb-row { grid-template-columns: 2.9rem minmax(0, 1fr) auto; grid-template-areas: 'rank who val' 'delta who val'; gap: 0 6px; padding: 8px 6px; }
+  .lb-row > .lb-rank { grid-area: rank; font-size: 1rem; line-height: 1.1; } .lb-row > .lb-delta { grid-area: delta; } .lb-row > .lb-who { grid-area: who; } .lb-row > .lb-val { grid-area: val; font-size: 0.95rem; }
+}
+
+.lb-tier { display: inline-block; padding: 1px 10px; border-radius: var(--radius-pill); border: 1px solid currentColor; font-size: 0.75rem; font-weight: 800; letter-spacing: 0.04em; white-space: nowrap; }
+.lb-tier.t0 { color: var(--ink-muted); }
+.lb-tier.t1 { color: var(--ice); }
+.lb-tier.t2 { color: var(--aurora); }
+.lb-tier.t3 { color: var(--accent); }
+.lb-tier.t4 { color: var(--ember); border-width: 2px; }
+
+.lb-parts { display: grid; gap: 10px; }
+.lb-part { display: grid; grid-template-columns: minmax(7rem, 9rem) 1fr 2.6rem; align-items: center; gap: 10px; font-weight: 700; }
+.lb-bar { height: 12px; border-radius: var(--radius-pill); background: var(--field-bg); border: 1px solid var(--field-border); overflow: hidden; }
+.lb-bar > span { display: block; height: 100%; background: var(--lime); }
+.lb-part.weak .lb-bar > span { background: var(--ember); }
+.lb-part b { text-align: right; font-variant-numeric: tabular-nums; }
+@media (max-width: 420px) { .lb-part { grid-template-columns: 6.2rem 1fr 2.4rem; gap: 8px; } }
+
+/* Life Review: the allocation at an age as one stacked bar (the numbers are also in the text under it) */
+.lb-alloc { display: grid; grid-template-columns: 4rem 1fr; gap: 4px 10px; align-items: center; font-weight: 700; }
+.lb-alloc > small { grid-column: 2; font-weight: 400; }
+.lb-stack { display: flex; height: 12px; border-radius: var(--radius-pill); background: var(--field-bg); border: 1px solid var(--field-border); overflow: hidden; }
+.lb-stack > span { display: block; height: 100%; }
+.lb-stack > .equities { background: var(--aurora); }
+.lb-stack > .bonds { background: var(--ice); }
+.lb-stack > .cash { background: var(--gold); }
+.lb-stack > .other { background: var(--ink-muted); }
+
+.lb-health { font-family: var(--font-display); font-size: 2.6rem; line-height: 1; color: var(--accent); }
+.lb-class { display: grid; grid-template-columns: 2.6rem minmax(0, 1fr) auto auto; gap: 8px; align-items: center; padding: 8px 10px; border: 1px solid var(--row-line); border-radius: var(--radius); background: var(--glass-bg); }
+.lb-class.mine { border-color: var(--accent); background: rgba(245, 196, 81, 0.12); }
+.lb-class small { display: block; color: var(--ink-muted); }
+
+.lb-awards { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px; }
+.lb-award { padding: 12px 14px; border: 1px solid var(--row-line); border-radius: var(--radius); background: var(--glass-bg); display: grid; gap: 2px; }
+.lb-award b { color: var(--accent); }
+.lb-facts { display: flex; gap: 20px; flex-wrap: wrap; }
+.lb-facts > div { display: grid; gap: 2px; justify-items: start; }
+
+/* teacher console: a whole class in one table-like list */
+.lb-wide { overflow-x: auto; }
+.lb-wide .lb-row { grid-template-columns: 3rem minmax(9rem, 1fr) 7.5rem 3.4rem 5.5rem 7rem; grid-template-areas: none; gap: 8px; min-width: 560px; }
+.lb-wide .lb-row > * { grid-area: auto !important; }
+.lb-flags { margin: 0; padding-left: 1.2em; display: grid; gap: 4px; }

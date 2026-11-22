@@ -1,0 +1,1535 @@
+{
+  "id": "ft2030-s1-u6",
+  "title": "Filing and practice returns",
+  "blurb": "Ways to file, then two practice returns on your own.",
+  "outcome_codes": [
+    "FIN2060 2.3",
+    "FIN2060 2.5"
+  ],
+  "levels": [
+    {
+      "id": "ft2030-s1-u6-l1",
+      "title": "Ways to file a return",
+      "kind": "lesson",
+      "learn": [
+        "Name the ways to file a return and say what NETFILE is.",
+        "Tell the filing deadline from the payment deadline."
+      ],
+      "cards": [
+        {
+          "text": "You can file your own return, or have someone else file it. Your own: tax software, SimpleFile or a paper tax return. Someone else: a professional tax preparer or a volunteer at a free tax clinic.",
+          "figure": {
+            "kind": "table",
+            "title": "Ways to file a return",
+            "columns": [
+              "Way",
+              "Who files"
+            ],
+            "rows": [
+              [
+                "Tax software",
+                "You"
+              ],
+              [
+                "SimpleFile (by invitation)",
+                "You"
+              ],
+              [
+                "A paper tax return",
+                "You"
+              ],
+              [
+                "A professional tax preparer",
+                "Someone else"
+              ],
+              [
+                "A free tax clinic volunteer",
+                "Someone else"
+              ]
+            ]
+          }
+        },
+        {
+          "text": "Tax software that the CRA has certified helps you work out your tax and send your return electronically. NETFILE is the CRA service that carries your return from that software to the CRA over the internet. Software first, then NETFILE.",
+          "image": {
+            "src": "ft2030-s1-u6/l1c2.webp",
+            "alt": "An open laptop with a blank screen beside a stack of blank forms"
+          }
+        },
+        {
+          "text": "For the 2025 return, NETFILE is open from February 23, 2026 until January 29, 2027. With a paper return, you include one copy of each information slip. SimpleFile is for people the CRA invites. It is one of the ways you file your own return, and it files the return for you automatically, for free.",
+          "image": {
+            "src": "ft2030-s1-u6/l1c3.webp",
+            "alt": "A blank form with a blank slip clipped to it and an envelope"
+          }
+        },
+        {
+          "text": "A tax preparer, such as an accountant, prepares your return and sends it to the CRA for a fee, using a service called EFILE. A free tax clinic is run by volunteers. They complete returns for people with a modest income and a simple tax situation.",
+          "image": {
+            "src": "ft2030-s1-u6/l1c4.webp",
+            "alt": "Two desks with blank forms and pencils and an empty chair at each"
+          }
+        },
+        {
+          "text": "Filing and paying each have a deadline. Most people file by April 30 of the year after the tax year, so for the 2025 return that is April 30, 2026. Here are the dates for the 2025 return.",
+          "figure": {
+            "kind": "table",
+            "title": "Deadlines for the 2025 return",
+            "columns": [
+              "Date",
+              "What it is"
+            ],
+            "rows": [
+              [
+                "April 30, 2026",
+                "Deadline to file (most people)"
+              ],
+              [
+                "June 15, 2026",
+                "Deadline to file if you or your partner is self-employed"
+              ],
+              [
+                "April 30, 2026",
+                "Deadline to pay your taxes"
+              ]
+            ]
+          }
+        },
+        {
+          "text": "Students, even with little income, should file every year to get the benefit and credit payments they qualify for. A tax discounter is something else: a business that pays you cash now for a refund still to come, then collects the refund itself. It pays you less than the refund.",
+          "image": {
+            "src": "ft2030-s1-u6/l1c6.webp",
+            "alt": "A small jar with one gold disc in front of a larger jar of gold discs"
+          }
+        }
+      ],
+      "questions": [
+        {
+          "id": "ft2030-s1-u6-l1-q1",
+          "label": "What NETFILE is",
+          "prompt": "What is NETFILE?",
+          "type": "choice",
+          "hint": "Look at the second card.",
+          "terms": [
+            {
+              "term": "NETFILE",
+              "meaning": "NETFILE is the CRA service that carries your return from certified tax software to the CRA over the internet."
+            }
+          ],
+          "options": [
+            {
+              "text": "The CRA service that sends your return from certified software",
+              "why": "Yes. NETFILE carries a return you completed in certified tax software to the CRA over the internet."
+            },
+            {
+              "text": "The service tax preparers use for their clients",
+              "why": "That is EFILE. Preparers send their clients' returns to the CRA with it."
+            },
+            {
+              "text": "A free way to file for people the CRA invites",
+              "why": "That is SimpleFile. NETFILE is for returns completed in certified software."
+            },
+            {
+              "text": "A paper return sent with one copy of each slip",
+              "why": "A paper return is filed on paper. NETFILE sends a return electronically."
+            }
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ft2030-s1-u6-l1-q2",
+          "label": "Someone else files",
+          "prompt": "Which of these is a way to have someone else file your return?",
+          "type": "choice",
+          "hint": "Check the table on the first card for who files.",
+          "figure": {
+            "kind": "table",
+            "title": "Ways to file a return",
+            "columns": [
+              "Way",
+              "Who files"
+            ],
+            "rows": [
+              [
+                "Tax software",
+                "You"
+              ],
+              [
+                "SimpleFile (by invitation)",
+                "You"
+              ],
+              [
+                "A paper tax return",
+                "You"
+              ],
+              [
+                "A professional tax preparer",
+                "Someone else"
+              ],
+              [
+                "A free tax clinic volunteer",
+                "Someone else"
+              ]
+            ]
+          },
+          "options": [
+            {
+              "text": "Tax software",
+              "why": "With tax software you file your own return."
+            },
+            {
+              "text": "SimpleFile",
+              "why": "SimpleFile is for people the CRA invites. It is one of the ways you file your own return."
+            },
+            {
+              "text": "A volunteer at a free tax clinic",
+              "why": "Yes. A professional tax preparer and a clinic volunteer are the two ways on the first card where someone else files."
+            },
+            {
+              "text": "A paper tax return",
+              "why": "A paper return is one you file yourself."
+            }
+          ],
+          "answer": 2
+        },
+        {
+          "id": "ft2030-s1-u6-l1-q3",
+          "label": "Free tax clinic",
+          "prompt": "Teo has a modest income and a simple tax situation. Where do volunteers complete returns for people like him?",
+          "type": "choice",
+          "hint": "Look at the fourth card.",
+          "options": [
+            {
+              "text": "At a professional tax preparer",
+              "why": "A preparer files your return for a fee. A clinic uses volunteers."
+            },
+            {
+              "text": "Through NETFILE",
+              "why": "NETFILE is a service that sends a return from software. It is not a place with volunteers."
+            },
+            {
+              "text": "Through SimpleFile",
+              "why": "SimpleFile files by invitation. It does not use volunteers."
+            },
+            {
+              "text": "At a free tax clinic",
+              "why": "Yes. Free tax clinics are run by volunteers for people with a modest income and a simple tax situation."
+            }
+          ],
+          "answer": 3
+        },
+        {
+          "id": "ft2030-s1-u6-l1-q4",
+          "label": "Preparer service",
+          "prompt": "Rosa pays a tax preparer to file her return. Which service does the preparer use to send it?",
+          "type": "choice",
+          "hint": "Look at the fourth card.",
+          "options": [
+            {
+              "text": "NETFILE",
+              "why": "NETFILE carries a return completed in certified software. A preparer uses EFILE."
+            },
+            {
+              "text": "EFILE",
+              "why": "Yes. Tax preparers send their clients' returns to the CRA with EFILE."
+            },
+            {
+              "text": "SimpleFile",
+              "why": "SimpleFile is for people the CRA invites. A preparer uses EFILE."
+            }
+          ],
+          "answer": 1
+        },
+        {
+          "id": "ft2030-s1-u6-l1-q5",
+          "label": "Paper return slips",
+          "prompt": "Noor files a paper return. She has one T4 and one T5. What does she include with it?",
+          "type": "choice",
+          "hint": "Look at the third card.",
+          "options": [
+            {
+              "text": "Only her T4, because it is her pay",
+              "why": "You include a copy of each slip, so the T5 goes in too."
+            },
+            {
+              "text": "Only the slip with the biggest amount",
+              "why": "The rule is one copy of each slip, not one slip."
+            },
+            {
+              "text": "One copy of her T4 and one copy of her T5",
+              "why": "Yes. With a paper return you include one copy of each information slip."
+            },
+            {
+              "text": "No slips, because the CRA has them",
+              "why": "With a paper return you include one copy of each slip yourself."
+            }
+          ],
+          "answer": 2
+        },
+        {
+          "id": "ft2030-s1-u6-l1-q6",
+          "label": "Filing deadline",
+          "prompt": "Zoe works for an employer and is not self-employed. What was the deadline for most people to file the 2025 return?",
+          "type": "choice",
+          "hint": "Find the deadline to file in the table.",
+          "figure": {
+            "kind": "table",
+            "title": "Deadlines for the 2025 return",
+            "columns": [
+              "Date",
+              "What it is"
+            ],
+            "rows": [
+              [
+                "April 30, 2026",
+                "Deadline to file (most people)"
+              ],
+              [
+                "June 15, 2026",
+                "Deadline to file if you or your partner is self-employed"
+              ],
+              [
+                "April 30, 2026",
+                "Deadline to pay your taxes"
+              ]
+            ]
+          },
+          "options": [
+            {
+              "text": "June 15, 2026",
+              "why": "That is the filing deadline when you or your partner is self-employed."
+            },
+            {
+              "text": "April 30, 2026",
+              "why": "Yes. Most people had to file by April 30 of the year after the tax year, so April 30, 2026 for the 2025 return."
+            },
+            {
+              "text": "January 29, 2027",
+              "why": "That is the day NETFILE closed, not the filing deadline."
+            },
+            {
+              "text": "February 23, 2026",
+              "why": "That is the day NETFILE opened, not the filing deadline."
+            }
+          ],
+          "answer": 1
+        },
+        {
+          "id": "ft2030-s1-u6-l1-q7",
+          "label": "Self-employed deadline",
+          "prompt": "Ibrahim is self-employed. What was his deadline to file the 2025 return?",
+          "type": "choice",
+          "hint": "Look at the second row of the table.",
+          "figure": {
+            "kind": "table",
+            "title": "Deadlines for the 2025 return",
+            "columns": [
+              "Date",
+              "What it is"
+            ],
+            "rows": [
+              [
+                "April 30, 2026",
+                "Deadline to file (most people)"
+              ],
+              [
+                "June 15, 2026",
+                "Deadline to file if you or your partner is self-employed"
+              ],
+              [
+                "April 30, 2026",
+                "Deadline to pay your taxes"
+              ]
+            ]
+          },
+          "options": [
+            {
+              "text": "April 30, 2026",
+              "why": "That is the deadline for most people, not for someone self-employed."
+            },
+            {
+              "text": "February 23, 2026",
+              "why": "That is the day NETFILE opened."
+            },
+            {
+              "text": "January 29, 2027",
+              "why": "That is the day NETFILE closed."
+            },
+            {
+              "text": "June 15, 2026",
+              "why": "Yes. When you or your partner is self-employed, the filing deadline for the 2025 return was this date."
+            }
+          ],
+          "answer": 3
+        },
+        {
+          "id": "ft2030-s1-u6-l1-q8",
+          "label": "Payment deadline",
+          "prompt": "Dev owes tax on his 2025 return. What was the deadline to pay it?",
+          "type": "choice",
+          "hint": "Find the row about paying in the table.",
+          "figure": {
+            "kind": "table",
+            "title": "Deadlines for the 2025 return",
+            "columns": [
+              "Date",
+              "What it is"
+            ],
+            "rows": [
+              [
+                "April 30, 2026",
+                "Deadline to file (most people)"
+              ],
+              [
+                "June 15, 2026",
+                "Deadline to file if you or your partner is self-employed"
+              ],
+              [
+                "April 30, 2026",
+                "Deadline to pay your taxes"
+              ]
+            ]
+          },
+          "options": [
+            {
+              "text": "April 30, 2026",
+              "why": "Yes. The deadline to pay tax owing for 2025 was this date."
+            },
+            {
+              "text": "June 15, 2026",
+              "why": "That is a deadline to file, for self-employed people."
+            },
+            {
+              "text": "January 29, 2027",
+              "why": "That is when NETFILE closed. It is not a payment deadline."
+            },
+            {
+              "text": "February 23, 2026",
+              "why": "That is when NETFILE opened. It is not a payment deadline."
+            }
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ft2030-s1-u6-l1-q9",
+          "label": "Why students file",
+          "prompt": "Ana is a student with little income. According to the card, why should she still file every year?",
+          "type": "choice",
+          "hint": "Look at the last card.",
+          "options": [
+            {
+              "text": "Because every student owes tax",
+              "why": "The card does not say that. Many students owe nothing."
+            },
+            {
+              "text": "To get the benefit and credit payments she qualifies for",
+              "why": "Yes. Students, even with little income, should file every year for the payments they are eligible for."
+            },
+            {
+              "text": "Because NETFILE only opens for students",
+              "why": "NETFILE is open to anyone filing with certified software."
+            },
+            {
+              "text": "Because the tax deadline is later for students",
+              "why": "The card gives no later deadline for students."
+            }
+          ],
+          "answer": 1
+        },
+        {
+          "id": "ft2030-s1-u6-l1-q10",
+          "label": "Discounter cost",
+          "prompt": "A tax discounter pays Jonas $200.00 now for his $240.00 refund, then collects the whole refund. How much more than it paid does the business get?",
+          "type": "number",
+          "unit": "$",
+          "answer": 4000,
+          "tolerance": 1,
+          "hint": "Subtract what Jonas is paid from the refund.",
+          "miss": "Take the refund and subtract the cash Jonas received.",
+          "why": "The business collects $240.00 and paid $200.00, so it gets $40.00 more.",
+          "working": "$240.00 - $200.00 = $40.00.",
+          "traps": [
+            {
+              "value": 20000,
+              "why": "That is only what the business paid. The question asks for the difference."
+            }
+          ],
+          "terms": [
+            {
+              "term": "tax discounter",
+              "meaning": "A business that pays you cash now for a refund still to come, then collects the refund itself."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ft2030-s1-u6-l2",
+      "title": "Practice return: Marcus",
+      "kind": "lesson",
+      "learn": [
+        "Work a whole return on your own, one step at a time.",
+        "Say why a return with $0 tax still gets filed."
+      ],
+      "cards": [
+        {
+          "text": "This return is for the 2025 tax year, the same year the tax program your class uses files in December.",
+          "image": {
+            "src": "ft2030-s1-u6/l2c1.webp",
+            "alt": "A calendar page with empty squares, a pencil, a notebook and a blank card"
+          }
+        },
+        {
+          "text": "Marcus is a student who worked at a coffee shop for five months. He has a T4 and a T4A for other income, in box 028. His T4A has no tax taken off. The amounts are made up. Here are his slips.",
+          "figure": {
+            "kind": "table",
+            "title": "Marcus's slips",
+            "columns": [
+              "Slip",
+              "What it shows",
+              "Amount"
+            ],
+            "rows": [
+              [
+                "T4 box 14",
+                "Employment income",
+                "$8,600"
+              ],
+              [
+                "T4 box 16",
+                "Employee's CPP/QPP contributions",
+                "$424.93"
+              ],
+              [
+                "T4 box 18",
+                "Employee's EI premiums",
+                "$141.04"
+              ],
+              [
+                "T4 box 22",
+                "Income tax deducted",
+                "$85"
+              ],
+              [
+                "T4A box 028",
+                "Other income",
+                "$300"
+              ]
+            ]
+          }
+        },
+        {
+          "text": "You work the return in this order. Marcus has no RRSP, so that step is $0. After taxable income come net federal tax, Alberta tax after credits, total tax, tax withheld, and then the refund or balance owing.",
+          "figure": {
+            "kind": "table",
+            "title": "The steps and their lines",
+            "columns": [
+              "Step",
+              "Line"
+            ],
+            "rows": [
+              [
+                "Total income",
+                "15000"
+              ],
+              [
+                "RRSP deduction",
+                "20800"
+              ],
+              [
+                "CPP deduction",
+                "22215"
+              ],
+              [
+                "Net income",
+                "23600"
+              ],
+              [
+                "Taxable income",
+                "26000"
+              ],
+              [
+                "Net federal tax",
+                "42000"
+              ],
+              [
+                "Alberta tax after credits",
+                "no line"
+              ],
+              [
+                "Total tax",
+                "no line"
+              ],
+              [
+                "Tax withheld, T4 box 22",
+                "43700"
+              ],
+              [
+                "Refund",
+                "48400"
+              ],
+              [
+                "Balance owing",
+                "48500"
+              ]
+            ]
+          }
+        },
+        {
+          "text": "His CPP deduction is $71.42. The first federal bracket is 14.5% up to $57,375. Alberta's is 8% up to $60,000. A credit lowers tax but cannot take it below $0. His Alberta credits total $1,825.40.",
+          "figure": {
+            "kind": "table",
+            "title": "Marcus's federal credits",
+            "columns": [
+              "Line",
+              "Credit",
+              "Amount"
+            ],
+            "rows": [
+              [
+                "30000",
+                "Basic personal amount",
+                "$2,338.71"
+              ],
+              [
+                "30800",
+                "Base CPP contributions",
+                "$51.26"
+              ],
+              [
+                "31200",
+                "EI premiums",
+                "$20.45"
+              ],
+              [
+                "31260",
+                "Canada employment amount",
+                "$213.30"
+              ]
+            ]
+          }
+        },
+        {
+          "text": "The employer took income tax off Marcus's pay. If his tax is less than what was withheld, the difference comes back as a refund, and his return is where it shows. The CRA says to do your taxes every year to get the benefit and credit payments you are eligible for.",
+          "image": {
+            "src": "ft2030-s1-u6/l2c5.webp",
+            "alt": "An open envelope with gold discs on it and a folded blank form"
+          }
+        }
+      ],
+      "questions": [
+        {
+          "id": "ft2030-s1-u6-l2-q1",
+          "label": "Total income",
+          "prompt": "What is Marcus's total income? Use all the income on his slips.",
+          "type": "number",
+          "unit": "$",
+          "answer": 890000,
+          "tolerance": 1,
+          "figure": {
+            "kind": "table",
+            "title": "Marcus's slips",
+            "columns": [
+              "Slip",
+              "What it shows",
+              "Amount"
+            ],
+            "rows": [
+              [
+                "T4 box 14",
+                "Employment income",
+                "$8,600"
+              ],
+              [
+                "T4 box 16",
+                "Employee's CPP/QPP contributions",
+                "$424.93"
+              ],
+              [
+                "T4 box 18",
+                "Employee's EI premiums",
+                "$141.04"
+              ],
+              [
+                "T4 box 22",
+                "Income tax deducted",
+                "$85"
+              ],
+              [
+                "T4A box 028",
+                "Other income",
+                "$300"
+              ]
+            ]
+          },
+          "terms": [
+            {
+              "term": "total income",
+              "meaning": "All the income on your slips, added up."
+            }
+          ],
+          "hint": "Add the income slips. Tax withheld is not income.",
+          "miss": "There are two income amounts: the T4 box 14 amount and the T4A.",
+          "why": "His total income is the T4 pay plus the T4A: $8,600 + $300 = $8,900.",
+          "working": "$8,600 + $300 = $8,900.",
+          "traps": [
+            {
+              "value": 860000,
+              "why": "That leaves out the T4A. Other income is income too."
+            },
+            {
+              "value": 898500,
+              "why": "That adds the tax withheld. Tax withheld is not income."
+            }
+          ]
+        },
+        {
+          "id": "ft2030-s1-u6-l2-q2",
+          "label": "Taxable income",
+          "prompt": "Marcus has no RRSP. His CPP deduction, line 22215, is $71.42. What is his taxable income?",
+          "type": "number",
+          "unit": "$",
+          "answer": 882858,
+          "tolerance": 1,
+          "terms": [
+            {
+              "term": "taxable income",
+              "meaning": "Your total income minus your deductions. Tax is worked out on this amount."
+            }
+          ],
+          "hint": "Subtract the deduction from his total income.",
+          "miss": "Start from total income, then subtract the deduction.",
+          "why": "Taxable income is total income minus deductions.",
+          "working": "$8,900 - $71.42 = $8,828.58.",
+          "traps": [
+            {
+              "value": 890000,
+              "why": "That is his total income. Subtract the deduction first."
+            }
+          ]
+        },
+        {
+          "id": "ft2030-s1-u6-l2-q3",
+          "label": "Federal bracket tax",
+          "prompt": "All of Marcus's taxable income is in the first federal bracket. What is his federal tax before credits? Round to the nearest cent.",
+          "type": "number",
+          "unit": "$",
+          "answer": 128014,
+          "tolerance": 1,
+          "hint": "Take the first federal rate from the card, times his taxable income.",
+          "miss": "Multiply taxable income by the first federal rate on the fourth card.",
+          "why": "The first federal rate is 14.5%, and all his taxable income is taxed at it.",
+          "working": "14.5% x $8,828.58 = $1,280.1441, which is $1,280.14.",
+          "traps": [
+            {
+              "value": 70629,
+              "why": "That uses the Alberta rate of 8%. Federal tax uses the federal rate."
+            }
+          ]
+        },
+        {
+          "id": "ft2030-s1-u6-l2-q4",
+          "label": "Federal credits",
+          "prompt": "Add up Marcus's four federal credits. What is the total?",
+          "type": "number",
+          "unit": "$",
+          "answer": 262372,
+          "tolerance": 1,
+          "figure": {
+            "kind": "table",
+            "title": "Marcus's federal credits",
+            "columns": [
+              "Line",
+              "Credit",
+              "Amount"
+            ],
+            "rows": [
+              [
+                "30000",
+                "Basic personal amount",
+                "$2,338.71"
+              ],
+              [
+                "30800",
+                "Base CPP contributions",
+                "$51.26"
+              ],
+              [
+                "31200",
+                "EI premiums",
+                "$20.45"
+              ],
+              [
+                "31260",
+                "Canada employment amount",
+                "$213.30"
+              ]
+            ]
+          },
+          "terms": [
+            {
+              "term": "non-refundable tax credit",
+              "meaning": "An amount that lowers the tax you owe, but cannot take it below $0. The basic personal amount is one."
+            }
+          ],
+          "hint": "Add all four rows of the table.",
+          "miss": "There are four credits. Did you add every row?",
+          "why": "The four credits add to one amount that is taken off his federal tax.",
+          "working": "$2,338.71 + $51.26 + $20.45 + $213.30 = $2,623.72.",
+          "traps": [
+            {
+              "value": 233871,
+              "why": "That is only the basic personal amount. Add the other three credits too."
+            }
+          ]
+        },
+        {
+          "id": "ft2030-s1-u6-l2-q5",
+          "label": "Marcus total tax",
+          "prompt": "Marcus's federal credits ($2,623.72) are more than his federal tax before credits ($1,280.14). His Alberta credits ($1,825.40) are more than his Alberta tax before credits ($706.29). What is his total tax?",
+          "type": "choice",
+          "hint": "Remember what a credit cannot do.",
+          "terms": [
+            {
+              "term": "non-refundable tax credit",
+              "meaning": "An amount that lowers the tax you owe, but cannot take it below $0. The basic personal amount is one."
+            }
+          ],
+          "options": [
+            {
+              "text": "$0",
+              "why": "Yes. Credits cannot take tax below $0, so his federal tax is $0, his Alberta tax is $0 and his total tax is $0."
+            },
+            {
+              "text": "$1,986.43",
+              "why": "That adds the two taxes before credits. Credits lower the tax first."
+            },
+            {
+              "text": "$706.29",
+              "why": "That is his Alberta tax before credits. His Alberta credits are larger."
+            },
+            {
+              "text": "-$1,343.58",
+              "why": "A credit cannot take tax below $0, so a negative tax is not possible."
+            }
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ft2030-s1-u6-l2-q6",
+          "label": "Tax withheld",
+          "prompt": "How much income tax was withheld from Marcus's pay for the year?",
+          "type": "number",
+          "unit": "$",
+          "answer": 8500,
+          "tolerance": 1,
+          "figure": {
+            "kind": "table",
+            "title": "Marcus's slips",
+            "columns": [
+              "Slip",
+              "What it shows",
+              "Amount"
+            ],
+            "rows": [
+              [
+                "T4 box 14",
+                "Employment income",
+                "$8,600"
+              ],
+              [
+                "T4 box 16",
+                "Employee's CPP/QPP contributions",
+                "$424.93"
+              ],
+              [
+                "T4 box 18",
+                "Employee's EI premiums",
+                "$141.04"
+              ],
+              [
+                "T4 box 22",
+                "Income tax deducted",
+                "$85"
+              ],
+              [
+                "T4A box 028",
+                "Other income",
+                "$300"
+              ]
+            ]
+          },
+          "terms": [
+            {
+              "term": "tax withheld",
+              "meaning": "Income tax your employer took off each paycheque and sent to the government for you."
+            }
+          ],
+          "hint": "Find the T4 box for income tax deducted.",
+          "miss": "Income tax deducted is a different T4 box from the pay and the CPP.",
+          "why": "Tax withheld is T4 box 22, line 43700. His T4A has no tax taken off.",
+          "working": "T4 box 22: $85.",
+          "traps": [
+            {
+              "value": 42493,
+              "why": "That is the CPP taken from his pay, not the income tax."
+            }
+          ]
+        },
+        {
+          "id": "ft2030-s1-u6-l2-q7",
+          "label": "Refund or owing",
+          "prompt": "Marcus's total tax is $0 and some tax was withheld from his pay. What does his return end with?",
+          "type": "choice",
+          "hint": "Compare the tax withheld with the total tax.",
+          "terms": [
+            {
+              "term": "refund",
+              "meaning": "Money the government pays back to you when the tax withheld is more than the tax you owe."
+            },
+            {
+              "term": "balance owing",
+              "meaning": "Money you must pay when the tax you owe is more than the tax withheld."
+            }
+          ],
+          "options": [
+            {
+              "text": "A refund",
+              "why": "Yes. The tax withheld is more than the tax he owes, so the difference is a refund."
+            },
+            {
+              "text": "A balance owing",
+              "why": "A balance owing is when the tax you owe is more than the tax withheld."
+            },
+            {
+              "text": "Neither, because his tax is $0",
+              "why": "His tax is $0, but tax was withheld. The withheld amount comes back as a refund."
+            }
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ft2030-s1-u6-l2-q8",
+          "label": "Refund amount",
+          "prompt": "How much is Marcus's refund? Write it as a positive amount.",
+          "type": "number",
+          "unit": "$",
+          "answer": 8500,
+          "tolerance": 1,
+          "terms": [
+            {
+              "term": "refund",
+              "meaning": "Money the government pays back to you when the tax withheld is more than the tax you owe."
+            }
+          ],
+          "hint": "Subtract his total tax from the tax withheld.",
+          "miss": "Refund is tax withheld minus total tax.",
+          "why": "His total tax is $0, so all the tax withheld comes back.",
+          "working": "$85 - $0 = $85."
+        },
+        {
+          "id": "ft2030-s1-u6-l2-q9",
+          "label": "Why file",
+          "prompt": "Marcus's tax comes to $0. What does filing his return get him?",
+          "type": "choice",
+          "hint": "Think about what was taken off his pay.",
+          "options": [
+            {
+              "text": "Nothing, because $0 tax means nothing comes back",
+              "why": "Tax was withheld from his pay, so something does come back."
+            },
+            {
+              "text": "A balance owing, because filing adds tax",
+              "why": "Filing does not add tax. His tax is worked out from his income."
+            },
+            {
+              "text": "A refund of the tax taken off his pay",
+              "why": "Yes. His return shows his tax is less than what was withheld, and the difference is paid back to him."
+            },
+            {
+              "text": "A bigger T4 with more boxes",
+              "why": "His T4 comes from his employer and does not change when he files."
+            }
+          ],
+          "answer": 2
+        },
+        {
+          "id": "ft2030-s1-u6-l2-q10",
+          "label": "Refund line",
+          "prompt": "Which line of Marcus's T1 shows his refund?",
+          "type": "choice",
+          "hint": "Check the table of steps and lines.",
+          "figure": {
+            "kind": "table",
+            "title": "The steps and their lines",
+            "columns": [
+              "Step",
+              "Line"
+            ],
+            "rows": [
+              [
+                "Total income",
+                "15000"
+              ],
+              [
+                "RRSP deduction",
+                "20800"
+              ],
+              [
+                "CPP deduction",
+                "22215"
+              ],
+              [
+                "Net income",
+                "23600"
+              ],
+              [
+                "Taxable income",
+                "26000"
+              ],
+              [
+                "Net federal tax",
+                "42000"
+              ],
+              [
+                "Alberta tax after credits",
+                "no line"
+              ],
+              [
+                "Total tax",
+                "no line"
+              ],
+              [
+                "Tax withheld, T4 box 22",
+                "43700"
+              ],
+              [
+                "Refund",
+                "48400"
+              ],
+              [
+                "Balance owing",
+                "48500"
+              ]
+            ]
+          },
+          "options": [
+            {
+              "text": "Line 48500",
+              "why": "Line 48500 is a balance owing."
+            },
+            {
+              "text": "Line 48400",
+              "why": "Yes. Line 48400 is the refund."
+            },
+            {
+              "text": "Line 43700",
+              "why": "Line 43700 is the tax withheld, from T4 box 22."
+            },
+            {
+              "text": "Line 42000",
+              "why": "Line 42000 is net federal tax."
+            }
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "id": "ft2030-s1-u6-l3",
+      "title": "Practice return: Amara",
+      "kind": "lesson",
+      "learn": [
+        "Work a harder return: two T4s and a T5.",
+        "Explain why a person with two jobs can owe tax."
+      ],
+      "cards": [
+        {
+          "text": "Amara changed jobs in July, so she has two T4s. She also has a T5 from her bank. She has no RRSP, so that step is $0. Her one return puts all of this together. The amounts are made up.",
+          "figure": {
+            "kind": "table",
+            "title": "Amara's slips",
+            "columns": [
+              "Slip",
+              "From",
+              "Amount"
+            ],
+            "rows": [
+              [
+                "T4 box 14",
+                "Prairie Threads",
+                "$13,500"
+              ],
+              [
+                "T4 box 14",
+                "Beacon Business Services",
+                "$21,000"
+              ],
+              [
+                "T5 box 13",
+                "Her bank",
+                "$1,200"
+              ],
+              [
+                "T4 box 22",
+                "Prairie Threads",
+                "$1,100"
+              ],
+              [
+                "T4 box 22",
+                "Beacon Business Services",
+                "$1,850"
+              ]
+            ]
+          }
+        },
+        {
+          "text": "Follow the same steps as before. Her CPP deduction, line 22215, is $310. All her taxable income is in the first brackets: 14.5% federal and 8% Alberta. Round each tax to the nearest cent.",
+          "image": {
+            "src": "ft2030-s1-u6/l3c2.webp",
+            "alt": "Three wooden blocks of rising height with a ruler, a pencil and a notepad"
+          }
+        },
+        {
+          "text": "Here are the credits her return uses. A credit lowers tax but cannot take it below $0. Alberta's credits here are the basic personal amount, CPP and EI.",
+          "figure": {
+            "kind": "table",
+            "title": "Amara's credits",
+            "columns": [
+              "Credit",
+              "Federal",
+              "Alberta"
+            ],
+            "rows": [
+              [
+                "Basic personal amount",
+                "$2,338.71",
+                "$1,785.84"
+              ],
+              [
+                "Base CPP contributions",
+                "$222.50",
+                "$122.76"
+              ],
+              [
+                "EI premiums",
+                "$82.04",
+                "$45.26"
+              ],
+              [
+                "Canada employment amount",
+                "$213.30",
+                "none"
+              ]
+            ]
+          }
+        },
+        {
+          "text": "Each employer figured her tax as if its job were her only job. Each used a full set of basic claims, such as the basic personal amount. Her return counts all her income together and uses the basic personal amount once.",
+          "image": {
+            "src": "ft2030-s1-u6/l3c4.webp",
+            "alt": "Two small labelled jars with gold discs and a larger empty jar between them"
+          }
+        },
+        {
+          "text": "When the tax withheld is less than the total tax, the difference is a balance owing, on line 48500. A refund is line 48400. For the 2025 return, the deadline to pay tax owing was April 30, 2026.",
+          "image": {
+            "src": "ft2030-s1-u6/l3c5.webp",
+            "alt": "A blank form with a stack of gold discs on it"
+          }
+        }
+      ],
+      "questions": [
+        {
+          "id": "ft2030-s1-u6-l3-q1",
+          "label": "Total income",
+          "prompt": "What is Amara's total income?",
+          "type": "number",
+          "unit": "$",
+          "answer": 3570000,
+          "tolerance": 1,
+          "figure": {
+            "kind": "table",
+            "title": "Amara's slips",
+            "columns": [
+              "Slip",
+              "From",
+              "Amount"
+            ],
+            "rows": [
+              [
+                "T4 box 14",
+                "Prairie Threads",
+                "$13,500"
+              ],
+              [
+                "T4 box 14",
+                "Beacon Business Services",
+                "$21,000"
+              ],
+              [
+                "T5 box 13",
+                "Her bank",
+                "$1,200"
+              ],
+              [
+                "T4 box 22",
+                "Prairie Threads",
+                "$1,100"
+              ],
+              [
+                "T4 box 22",
+                "Beacon Business Services",
+                "$1,850"
+              ]
+            ]
+          },
+          "terms": [
+            {
+              "term": "total income",
+              "meaning": "All the income on your slips, added up."
+            }
+          ],
+          "hint": "Add the income slips: both T4 box 14 amounts and the T5.",
+          "miss": "There are three income amounts. Tax withheld is not income.",
+          "why": "Add both T4 pay amounts and her bank interest.",
+          "working": "$13,500 + $21,000 + $1,200 = $35,700.",
+          "traps": [
+            {
+              "value": 3450000,
+              "why": "That leaves out the T5 interest. Interest is income too."
+            }
+          ]
+        },
+        {
+          "id": "ft2030-s1-u6-l3-q2",
+          "label": "Taxable income",
+          "prompt": "Amara has no RRSP. Her CPP deduction is $310. What is her taxable income?",
+          "type": "number",
+          "unit": "$",
+          "answer": 3539000,
+          "tolerance": 1,
+          "terms": [
+            {
+              "term": "taxable income",
+              "meaning": "Your total income minus your deductions. Tax is worked out on this amount."
+            }
+          ],
+          "hint": "Subtract the deduction from total income.",
+          "miss": "Start from her total income.",
+          "why": "Taxable income is total income minus deductions.",
+          "working": "$35,700 - $310 = $35,390.",
+          "traps": [
+            {
+              "value": 3570000,
+              "why": "That is her total income. Subtract the deduction first."
+            }
+          ]
+        },
+        {
+          "id": "ft2030-s1-u6-l3-q3",
+          "label": "Federal tax",
+          "prompt": "Work out 14.5% of her taxable income, round to the nearest cent, and subtract her four federal credits. What is her net federal tax?",
+          "type": "number",
+          "unit": "$",
+          "answer": 227500,
+          "tolerance": 1,
+          "figure": {
+            "kind": "table",
+            "title": "Amara's credits",
+            "columns": [
+              "Credit",
+              "Federal",
+              "Alberta"
+            ],
+            "rows": [
+              [
+                "Basic personal amount",
+                "$2,338.71",
+                "$1,785.84"
+              ],
+              [
+                "Base CPP contributions",
+                "$222.50",
+                "$122.76"
+              ],
+              [
+                "EI premiums",
+                "$82.04",
+                "$45.26"
+              ],
+              [
+                "Canada employment amount",
+                "$213.30",
+                "none"
+              ]
+            ]
+          },
+          "terms": [
+            {
+              "term": "non-refundable tax credit",
+              "meaning": "An amount that lowers the tax you owe, but cannot take it below $0. The basic personal amount is one."
+            }
+          ],
+          "hint": "First multiply taxable income by the federal rate, then subtract every federal credit.",
+          "miss": "Two steps: the tax on her taxable income, then the credits taken off.",
+          "why": "Her federal bracket tax is more than her federal credits, so some federal tax is left.",
+          "working": "14.5% x $35,390 = $5,131.55. Credits: $2,856.55. $5,131.55 - $2,856.55 = $2,275.",
+          "traps": [
+            {
+              "value": 513155,
+              "why": "That is the tax before credits. Subtract her four federal credits."
+            },
+            {
+              "value": 248830,
+              "why": "That leaves out the Canada employment amount. Subtract all four credits."
+            }
+          ]
+        },
+        {
+          "id": "ft2030-s1-u6-l3-q4",
+          "label": "Alberta tax",
+          "prompt": "Work out 8% of her taxable income, round to the nearest cent, and subtract her three Alberta credits. What is her Alberta tax after credits?",
+          "type": "number",
+          "unit": "$",
+          "answer": 87734,
+          "tolerance": 1,
+          "figure": {
+            "kind": "table",
+            "title": "Amara's credits",
+            "columns": [
+              "Credit",
+              "Federal",
+              "Alberta"
+            ],
+            "rows": [
+              [
+                "Basic personal amount",
+                "$2,338.71",
+                "$1,785.84"
+              ],
+              [
+                "Base CPP contributions",
+                "$222.50",
+                "$122.76"
+              ],
+              [
+                "EI premiums",
+                "$82.04",
+                "$45.26"
+              ],
+              [
+                "Canada employment amount",
+                "$213.30",
+                "none"
+              ]
+            ]
+          },
+          "hint": "Same two steps as the federal tax, with Alberta's rate and Alberta's credits.",
+          "miss": "Use the Alberta column of the table, and the Alberta rate.",
+          "why": "Her Alberta bracket tax is more than her Alberta credits, so some Alberta tax is left.",
+          "working": "8% x $35,390 = $2,831.20. Credits: $1,953.86. $2,831.20 - $1,953.86 = $877.34.",
+          "traps": [
+            {
+              "value": 283120,
+              "why": "That is the tax before credits. Subtract her three Alberta credits."
+            }
+          ]
+        },
+        {
+          "id": "ft2030-s1-u6-l3-q5",
+          "label": "Total tax",
+          "prompt": "Amara's net federal tax is $2,275 and her Alberta tax after credits is $877.34. What is her total tax?",
+          "type": "number",
+          "unit": "$",
+          "answer": 315234,
+          "tolerance": 1,
+          "hint": "Add the two taxes.",
+          "miss": "Total tax is federal and Alberta together.",
+          "why": "Total tax is the federal tax plus the Alberta tax.",
+          "working": "$2,275 + $877.34 = $3,152.34.",
+          "traps": [
+            {
+              "value": 227500,
+              "why": "That is only the federal tax. Add the Alberta tax."
+            }
+          ]
+        },
+        {
+          "id": "ft2030-s1-u6-l3-q6",
+          "label": "Total withheld",
+          "prompt": "How much income tax did her two employers withhold in all?",
+          "type": "number",
+          "unit": "$",
+          "answer": 295000,
+          "tolerance": 1,
+          "figure": {
+            "kind": "table",
+            "title": "Amara's slips",
+            "columns": [
+              "Slip",
+              "From",
+              "Amount"
+            ],
+            "rows": [
+              [
+                "T4 box 14",
+                "Prairie Threads",
+                "$13,500"
+              ],
+              [
+                "T4 box 14",
+                "Beacon Business Services",
+                "$21,000"
+              ],
+              [
+                "T5 box 13",
+                "Her bank",
+                "$1,200"
+              ],
+              [
+                "T4 box 22",
+                "Prairie Threads",
+                "$1,100"
+              ],
+              [
+                "T4 box 22",
+                "Beacon Business Services",
+                "$1,850"
+              ]
+            ]
+          },
+          "terms": [
+            {
+              "term": "tax withheld",
+              "meaning": "Income tax your employer took off each paycheque and sent to the government for you."
+            }
+          ],
+          "hint": "Use the T4 box 22 rows. There is one for each job.",
+          "miss": "Each T4 has its own box 22.",
+          "why": "Add the income tax deducted on both T4s.",
+          "working": "$1,100 + $1,850 = $2,950.",
+          "traps": [
+            {
+              "value": 185000,
+              "why": "That is only the second job. Add the first job too."
+            }
+          ]
+        },
+        {
+          "id": "ft2030-s1-u6-l3-q7",
+          "label": "Refund or owing",
+          "prompt": "Amara's total tax is more than the tax withheld. What does her return end with?",
+          "type": "choice",
+          "hint": "Compare the total tax with the tax withheld.",
+          "terms": [
+            {
+              "term": "refund",
+              "meaning": "Money the government pays back to you when the tax withheld is more than the tax you owe."
+            },
+            {
+              "term": "balance owing",
+              "meaning": "Money you must pay when the tax you owe is more than the tax withheld."
+            }
+          ],
+          "options": [
+            {
+              "text": "A balance owing, on line 48500",
+              "why": "Yes. The tax she owes is more than what was withheld, so she has a balance owing."
+            },
+            {
+              "text": "A refund, on line 48400",
+              "why": "A refund is when the tax withheld is more than the tax owed. Hers is the other way round."
+            },
+            {
+              "text": "Neither, because tax was withheld",
+              "why": "Tax was withheld, but not enough to cover her tax."
+            }
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ft2030-s1-u6-l3-q8",
+          "label": "Balance owing",
+          "prompt": "How much is Amara's balance owing? Write it as a positive amount.",
+          "type": "number",
+          "unit": "$",
+          "answer": 20234,
+          "tolerance": 1,
+          "terms": [
+            {
+              "term": "balance owing",
+              "meaning": "Money you must pay when the tax you owe is more than the tax withheld."
+            }
+          ],
+          "hint": "Subtract the tax withheld from her total tax.",
+          "miss": "Balance owing is total tax minus tax withheld.",
+          "why": "She owes the part of her tax that was not withheld.",
+          "working": "$3,152.34 - $2,950 = $202.34.",
+          "traps": [
+            {
+              "value": 315234,
+              "why": "That is her whole tax. Part of it was already withheld."
+            }
+          ]
+        },
+        {
+          "id": "ft2030-s1-u6-l3-q9",
+          "label": "Why she owes",
+          "prompt": "Why did Amara end up with a balance owing?",
+          "type": "choice",
+          "hint": "Look at the fourth card.",
+          "options": [
+            {
+              "text": "Her bank withheld tax on her interest",
+              "why": "Her slips show no tax withheld by the bank."
+            },
+            {
+              "text": "Each employer withheld as if its job were her only job",
+              "why": "Yes. Each withheld as if it were her only job, so together they withheld too little for her whole year."
+            },
+            {
+              "text": "Alberta charges more tax on a second job",
+              "why": "All her income is taxed at the same 8% Alberta rate here."
+            },
+            {
+              "text": "Her T4s were added up wrong",
+              "why": "Her T4s are right. The cause is how each employer withheld."
+            }
+          ],
+          "answer": 1
+        },
+        {
+          "id": "ft2030-s1-u6-l3-q10",
+          "label": "Payment deadline",
+          "prompt": "Amara owes tax on a 2025 return. What was the deadline to pay it?",
+          "type": "choice",
+          "hint": "Look at the last card.",
+          "options": [
+            {
+              "text": "June 15, 2026",
+              "why": "That is a filing deadline for people who are self-employed."
+            },
+            {
+              "text": "January 29, 2027",
+              "why": "That is when NETFILE closed. It is not a payment deadline."
+            },
+            {
+              "text": "February 23, 2026",
+              "why": "That is when NETFILE opened. It is not a payment deadline."
+            },
+            {
+              "text": "April 30, 2026",
+              "why": "Yes. The deadline to pay tax owing for 2025 was this date."
+            }
+          ],
+          "answer": 3
+        }
+      ]
+    }
+  ],
+  "image": {
+    "src": "ft2030-s1-u6/banner.webp",
+    "alt": "A desk with blank forms, a closed laptop, a pencil and a calendar"
+  }
+}

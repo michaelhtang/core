@@ -1,0 +1,1336 @@
+{
+  "id": "ft2030-s3-u4",
+  "title": "Funds and fees",
+  "blurb": "Stocks, mutual funds and ETFs, and what a yearly fee does over time.",
+  "outcome_codes": [
+    "FIN3080 1.17",
+    "FIN3080 1.18",
+    "FIN3080 4.4"
+  ],
+  "levels": [
+    {
+      "id": "ft2030-s3-u4-l1",
+      "title": "Three ways to own",
+      "kind": "lesson",
+      "learn": [
+        "Tell a stock, a mutual fund and an ETF apart.",
+        "Say what a fund holds and who chooses it."
+      ],
+      "cards": [
+        {
+          "text": "You can own a piece of the market in three ways. You can buy one company's stock. You can buy a mutual fund. Or you can buy an ETF. A stock is a share of one company. This level shows how the three differ."
+        },
+        {
+          "text": "A fund is a basket. One purchase holds many companies at once. Omar puts $1,200 into a fund that holds 60 companies in equal parts. In this simple picture, $20.00 of his money goes to each company."
+        },
+        {
+          "text": "A mutual fund and an ETF both hold a basket. The difference is how they trade. A mutual fund has one price a day. An ETF trades like a stock: its price changes all day while the market is open. A stock also changes all day."
+        },
+        {
+          "text": "Someone decides what goes in a fund: a manager who picks, or a rule. An index is a list, such as the 60 biggest companies in a country. An index fund follows the list and makes no picks, so it usually costs less."
+        },
+        {
+          "text": "Here are the three side by side. A fund charges a yearly fee, and the next levels show what it does to your money. A stock has no fund fee.",
+          "figure": {
+            "kind": "table",
+            "title": "Three ways to own",
+            "columns": [
+              "Feature",
+              "Stock",
+              "Mutual fund",
+              "ETF"
+            ],
+            "rows": [
+              [
+                "Owns",
+                "One company",
+                "Many",
+                "Many"
+              ],
+              [
+                "Price",
+                "Moves all day",
+                "One a day",
+                "Moves all day"
+              ],
+              [
+                "Who chooses",
+                "You",
+                "Manager or rule",
+                "Manager or rule"
+              ],
+              [
+                "Yearly fee",
+                "No fund fee",
+                "Yes",
+                "Yes"
+              ]
+            ]
+          }
+        },
+        {
+          "text": "In the game's Exchange, prices move once a world month. Its funds have a ticker and a buy price and a sell price, like a stock, so they work like ETFs. Look at them on the Exchange."
+        }
+      ],
+      "questions": [
+        {
+          "id": "ft2030-s3-u4-l1-q1",
+          "label": "What a stock is",
+          "prompt": "What is a stock?",
+          "type": "choice",
+          "hint": "It is the first idea on the first card.",
+          "options": [
+            {
+              "text": "A share of one company",
+              "why": "Yes. One stock is a slice of one company."
+            },
+            {
+              "text": "A basket that holds many companies",
+              "why": "That is a fund. A stock is a share of one company."
+            },
+            {
+              "text": "A loan you make to a company",
+              "why": "A loan is a bond. A stock is a share of ownership."
+            },
+            {
+              "text": "A yearly fee a fund charges",
+              "why": "That is the MER of a fund. A stock is a share of one company."
+            }
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ft2030-s3-u4-l1-q2",
+          "label": "A fund basket",
+          "prompt": "Which sentence describes a fund?",
+          "type": "choice",
+          "terms": [
+            {
+              "term": "fund",
+              "meaning": "One purchase that holds many companies or loans at once."
+            }
+          ],
+          "hint": "Think of a basket.",
+          "options": [
+            {
+              "text": "One purchase that holds a share of many companies",
+              "why": "Yes. A fund is a basket: one purchase, many companies."
+            },
+            {
+              "text": "A share of one company only",
+              "why": "That is a stock. A fund holds many."
+            },
+            {
+              "text": "A bill the fund company sends each year",
+              "why": "A fund's fee comes out of its return. It is not a bill."
+            },
+            {
+              "text": "A way to pay for goods",
+              "why": "A fund is a way to own, not a way to pay."
+            }
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ft2030-s3-u4-l1-q3",
+          "label": "One price a day",
+          "prompt": "Look at the table. Which way to own has one price a day?",
+          "type": "choice",
+          "figure": {
+            "kind": "table",
+            "title": "Three ways to own",
+            "columns": [
+              "Feature",
+              "Stock",
+              "Mutual fund",
+              "ETF"
+            ],
+            "rows": [
+              [
+                "Owns",
+                "One company",
+                "Many",
+                "Many"
+              ],
+              [
+                "Price",
+                "Moves all day",
+                "One a day",
+                "Moves all day"
+              ],
+              [
+                "Who chooses",
+                "You",
+                "Manager or rule",
+                "Manager or rule"
+              ],
+              [
+                "Yearly fee",
+                "No fund fee",
+                "Yes",
+                "Yes"
+              ]
+            ]
+          },
+          "hint": "Find the Price row.",
+          "options": [
+            {
+              "text": "A stock",
+              "why": "A stock's price moves all day."
+            },
+            {
+              "text": "A mutual fund",
+              "why": "Yes. A mutual fund has one price a day."
+            },
+            {
+              "text": "An ETF",
+              "why": "An ETF trades like a stock, so its price changes all day."
+            }
+          ],
+          "answer": 1
+        },
+        {
+          "id": "ft2030-s3-u4-l1-q4",
+          "label": "What an ETF is",
+          "prompt": "What is the one-line difference between an ETF and a mutual fund?",
+          "type": "choice",
+          "hint": "It is about how each one trades.",
+          "options": [
+            {
+              "text": "An ETF trades like a stock; a mutual fund has one price a day",
+              "why": "Yes. That is the difference the cards give."
+            },
+            {
+              "text": "An ETF holds one company and a mutual fund holds many",
+              "why": "Both hold many companies. An ETF is not one stock."
+            },
+            {
+              "text": "An ETF has no fee and a mutual fund has one",
+              "why": "Both charge a yearly fee."
+            },
+            {
+              "text": "An ETF is a loan and a mutual fund is ownership",
+              "why": "Both are funds. Neither is one loan."
+            }
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ft2030-s3-u4-l1-q5",
+          "label": "Who chooses",
+          "prompt": "An index fund follows a list of the 60 biggest companies in a country. Who or what chooses what is inside?",
+          "type": "choice",
+          "hint": "The card says an index fund picks nothing.",
+          "options": [
+            {
+              "text": "A manager who picks stocks each day",
+              "why": "An index fund does not pick. It follows a list."
+            },
+            {
+              "text": "The student who buys it",
+              "why": "You choose the fund. The list chooses what is inside it."
+            },
+            {
+              "text": "The list it follows",
+              "why": "Yes. An index fund follows a list and picks nothing."
+            }
+          ],
+          "answer": 2
+        },
+        {
+          "id": "ft2030-s3-u4-l1-q6",
+          "label": "Equal parts",
+          "prompt": "Mei puts $2,400 into a fund that holds 80 companies in equal parts. In this simple picture, how many dollars go to each company?",
+          "type": "number",
+          "hint": "Split the money by the number of companies.",
+          "unit": "$",
+          "answer": 3000,
+          "tolerance": 1,
+          "why": "Yes. $2,400 / 80 = $30.00 for each company.",
+          "working": "$2,400 / 80 companies = $30.00 each.",
+          "miss": "The money is shared equally. Which operation shares an amount among a number of parts?"
+        },
+        {
+          "id": "ft2030-s3-u4-l1-q7",
+          "label": "One falls",
+          "prompt": "A fund holds 50 companies in equal parts. One of them falls 30% and the rest do not move. By what percent does the fund fall?",
+          "type": "number",
+          "hint": "The company is one part of 50. Take 30% of that part.",
+          "unit": "%",
+          "answer": 0.6,
+          "tolerance": 0.01,
+          "why": "Yes. One company is 1/50 of the fund, and 30% of 1/50 is 0.6% of the fund.",
+          "working": "30% x (1 / 50) = 0.30 x 0.02 = 0.006, which is 0.6%.",
+          "traps": [
+            {
+              "value": 30,
+              "why": "That is how far the one company fell. The fund only holds a small part of it."
+            }
+          ],
+          "miss": "The fund spreads its money over 50 companies. How big a part of the fund is one of them?"
+        },
+        {
+          "id": "ft2030-s3-u4-l1-q8",
+          "label": "One stock, one fund",
+          "prompt": "Dev puts $600 into one company's stock. Ana puts $600 into a fund of 50 companies in equal parts. That same company falls 30%. How many dollars more does Dev lose than Ana, to the cent?",
+          "type": "number",
+          "hint": "Find each loss. Ana holds one fiftieth of her $600 in that company.",
+          "unit": "$",
+          "answer": 17640,
+          "tolerance": 1,
+          "why": "Yes. Dev loses $180.00. Ana has $12.00 in that company and loses $3.60. The difference is $176.40.",
+          "working": "Dev: $600 x 30% = $180.00. Ana: $600 / 50 = $12.00; $12.00 x 30% = $3.60. $180.00 - $3.60 = $176.40.",
+          "traps": [
+            {
+              "value": 18000,
+              "why": "That is only Dev's loss. Subtract what Ana loses."
+            }
+          ],
+          "miss": "Work out each person's loss first. How much of Ana's $600 is in the company that fell?"
+        },
+        {
+          "id": "ft2030-s3-u4-l1-q9",
+          "label": "Which is a stock",
+          "prompt": "Which of these tickers is one company's stock, not a fund?",
+          "type": "choice",
+          "hint": "Three of these are funds with names that start with DAA.",
+          "options": [
+            {
+              "text": "DAAB",
+              "why": "DAAB is a fund of bonds."
+            },
+            {
+              "text": "DAAG",
+              "why": "DAAG is a fund. It mixes two other funds."
+            },
+            {
+              "text": "CORN",
+              "why": "Yes. CORN is Corner Mart, one company of the town."
+            },
+            {
+              "text": "DAAX",
+              "why": "DAAX is a fund that holds every company in town."
+            }
+          ],
+          "answer": 2
+        }
+      ]
+    },
+    {
+      "id": "ft2030-s3-u4-l2",
+      "title": "Kinds of funds",
+      "kind": "lesson",
+      "learn": [
+        "Name five common kinds of fund by what they hold.",
+        "Match the Exchange's funds to their kinds."
+      ],
+      "cards": [
+        {
+          "text": "Funds differ in what is in the basket. Five common kinds are money market, bond, index, actively managed and balanced. To tell them apart, ask one question: what does the fund hold?"
+        },
+        {
+          "text": "Here are the five kinds and what each holds. A bond is a loan to a government or a company. A treasury bill is a short loan to a government. A stock fund can follow a list or have a manager pick.",
+          "figure": {
+            "kind": "table",
+            "title": "Five kinds of fund",
+            "columns": [
+              "Kind",
+              "What it holds"
+            ],
+            "rows": [
+              [
+                "Money market",
+                "Short-term loans, such as treasury bills"
+              ],
+              [
+                "Bond",
+                "Government and company bonds"
+              ],
+              [
+                "Index",
+                "The companies on a list, in the list's weights"
+              ],
+              [
+                "Actively managed",
+                "Stocks a manager picks to try to beat the market"
+              ],
+              [
+                "Balanced",
+                "A mix of stocks and bonds, such as 60% and 40%"
+              ]
+            ]
+          }
+        },
+        {
+          "text": "A money market fund holds treasury bills and other short-term loans, and it aims to keep your money steady. It counts as a cash equivalent. A bond fund holds government and company bonds. Both hold loans, not shares of companies."
+        },
+        {
+          "text": "An index fund holds the companies on a list in the same weights as the list, and picks nothing. An actively managed fund has a manager who chooses, say, 30 stocks the manager expects to beat the market. Such funds usually charge more."
+        },
+        {
+          "text": "A balanced fund holds stocks and bonds in a set mix, such as 60% stocks and 40% bonds. When stocks rise, the stock part grows past 60%. Rebalancing moves money back to the set mix. A balanced fund does this for you."
+        },
+        {
+          "text": "The Exchange has three funds. DAAX holds every company in town. DAAB holds bonds. DAAG is 60% DAAX and 40% DAAB, rebalanced every month, so it is a balanced fund. It has no money market fund."
+        }
+      ],
+      "questions": [
+        {
+          "id": "ft2030-s3-u4-l2-q1",
+          "label": "Short-term loans",
+          "prompt": "A fund holds treasury bills and other short-term loans, and aims to keep your money steady. Which kind is it?",
+          "type": "choice",
+          "hint": "Check the table on the second card.",
+          "options": [
+            {
+              "text": "Index fund",
+              "why": "An index fund holds companies on a list. This fund holds short-term loans."
+            },
+            {
+              "text": "Money market fund",
+              "why": "Yes. Short-term loans and a steady aim describe a money market fund."
+            },
+            {
+              "text": "Balanced fund",
+              "why": "A balanced fund mixes stocks and bonds."
+            },
+            {
+              "text": "Actively managed fund",
+              "why": "An actively managed fund holds stocks a manager picks."
+            }
+          ],
+          "answer": 1
+        },
+        {
+          "id": "ft2030-s3-u4-l2-q2",
+          "label": "Which holds bonds",
+          "prompt": "A fund holds government and company bonds. Which kind is it?",
+          "type": "choice",
+          "hint": "The name of the fund says what it holds.",
+          "options": [
+            {
+              "text": "Bond fund",
+              "why": "Yes. A bond fund holds bonds, which are loans."
+            },
+            {
+              "text": "Index fund",
+              "why": "An index fund holds the companies on a list."
+            },
+            {
+              "text": "Balanced fund",
+              "why": "A balanced fund holds stocks as well as bonds."
+            },
+            {
+              "text": "Money market fund",
+              "why": "A money market fund holds short-term loans, not bonds."
+            }
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ft2030-s3-u4-l2-q3",
+          "label": "A list of companies",
+          "prompt": "Look at the table. Which kind of fund holds the companies on a list, in the same weights as the list?",
+          "type": "choice",
+          "figure": {
+            "kind": "table",
+            "title": "Five kinds of fund",
+            "columns": [
+              "Kind",
+              "What it holds"
+            ],
+            "rows": [
+              [
+                "Money market",
+                "Short-term loans, such as treasury bills"
+              ],
+              [
+                "Bond",
+                "Government and company bonds"
+              ],
+              [
+                "Index",
+                "The companies on a list, in the list's weights"
+              ],
+              [
+                "Actively managed",
+                "Stocks a manager picks to try to beat the market"
+              ],
+              [
+                "Balanced",
+                "A mix of stocks and bonds, such as 60% and 40%"
+              ]
+            ]
+          },
+          "hint": "The card says it picks nothing.",
+          "options": [
+            {
+              "text": "Bond",
+              "why": "A bond fund holds bonds."
+            },
+            {
+              "text": "Balanced",
+              "why": "A balanced fund mixes stocks and bonds."
+            },
+            {
+              "text": "Actively managed",
+              "why": "A manager picks the stocks in an actively managed fund."
+            },
+            {
+              "text": "Index",
+              "why": "Yes. An index fund follows a list and picks nothing."
+            }
+          ],
+          "answer": 3
+        },
+        {
+          "id": "ft2030-s3-u4-l2-q4",
+          "label": "A manager picks",
+          "prompt": "A manager picks 30 stocks that the manager expects to beat the market. Which kind of fund is it?",
+          "type": "choice",
+          "hint": "Who is choosing?",
+          "options": [
+            {
+              "text": "Actively managed fund",
+              "why": "Yes. The manager actively chooses the stocks."
+            },
+            {
+              "text": "Index fund",
+              "why": "An index fund follows a list. It does not pick."
+            },
+            {
+              "text": "Money market fund",
+              "why": "A money market fund holds short-term loans."
+            }
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ft2030-s3-u4-l2-q5",
+          "label": "Stocks and bonds",
+          "prompt": "A fund holds 60% stocks and 40% bonds and is rebalanced for you. Which kind is it?",
+          "type": "choice",
+          "hint": "Two kinds of holdings in a set mix.",
+          "options": [
+            {
+              "text": "Bond fund",
+              "why": "A bond fund holds only bonds."
+            },
+            {
+              "text": "Index fund",
+              "why": "An index fund follows a list of companies."
+            },
+            {
+              "text": "Balanced fund",
+              "why": "Yes. A balanced fund holds a set mix of stocks and bonds."
+            }
+          ],
+          "answer": 2
+        },
+        {
+          "id": "ft2030-s3-u4-l2-q6",
+          "label": "The balanced fund",
+          "prompt": "Which of the Exchange's funds is the balanced fund?",
+          "type": "choice",
+          "hint": "It is 60/40 in its name.",
+          "options": [
+            {
+              "text": "DAAX",
+              "why": "DAAX holds every company in town. It holds no bonds."
+            },
+            {
+              "text": "DAAG",
+              "why": "Yes. DAAG is 60% DAAX and 40% DAAB."
+            },
+            {
+              "text": "DAAB",
+              "why": "DAAB holds bonds only."
+            }
+          ],
+          "answer": 1
+        },
+        {
+          "id": "ft2030-s3-u4-l2-q7",
+          "label": "Which costs more",
+          "prompt": "Which kind of fund would you expect to charge the higher yearly fee?",
+          "type": "choice",
+          "hint": "Which one has someone doing the picking?",
+          "options": [
+            {
+              "text": "An index fund, because it follows a list",
+              "why": "An index fund picks nothing, so it is usually cheap."
+            },
+            {
+              "text": "They always charge the same",
+              "why": "Funds charge different fees. A fund that picks usually charges more."
+            },
+            {
+              "text": "An actively managed fund, because a manager picks",
+              "why": "Yes. Choosing stocks costs something, so these funds usually charge more."
+            }
+          ],
+          "answer": 2
+        },
+        {
+          "id": "ft2030-s3-u4-l2-q8",
+          "label": "A balanced split",
+          "prompt": "A balanced fund holds 60% stocks and 40% bonds. Kai holds $5,000 in it. How many dollars of his $5,000 are in stocks?",
+          "type": "number",
+          "hint": "Take 60% of the $5,000.",
+          "unit": "$",
+          "answer": 300000,
+          "tolerance": 1,
+          "why": "Yes. 60% of $5,000 is $3,000.00 in stocks. The other $2,000.00 is in bonds.",
+          "working": "$5,000 x 0.60 = $3,000.00.",
+          "traps": [
+            {
+              "value": 200000,
+              "why": "That is the bond part, 40%. The question asks for stocks."
+            }
+          ],
+          "miss": "The stock part is 60% of the money. How do you find a percent of an amount?"
+        },
+        {
+          "id": "ft2030-s3-u4-l2-q9",
+          "label": "Back to 60/40",
+          "prompt": "A balanced 60/40 fund held $10,000: $6,000 in stocks and $4,000 in bonds. Stocks rose 10% and bonds did not move. It now holds $6,600 in stocks and $4,000 in bonds, $10,600 in all. To return to 60/40, how many dollars move from stocks to bonds?",
+          "type": "number",
+          "hint": "Find 60% of the new total. Then see how much the stocks are above it.",
+          "unit": "$",
+          "answer": 24000,
+          "tolerance": 1,
+          "why": "Yes. 60% of $10,600 is $6,360. Stocks hold $6,600, so $240 moves to bonds.",
+          "working": "$10,600 x 0.60 = $6,360 in stocks. $6,600 - $6,360 = $240.00.",
+          "traps": [
+            {
+              "value": 60000,
+              "why": "That is how much the stocks rose. The mix is set from the new total."
+            }
+          ],
+          "miss": "The target is 60% of the new total. How far above that target are the stocks now?"
+        },
+        {
+          "id": "ft2030-s3-u4-l2-q10",
+          "label": "Equal parts again",
+          "prompt": "An index fund holds 40 companies in equal parts. Noor puts $1,600 into it. In this simple picture, how many dollars go to each company?",
+          "type": "number",
+          "hint": "Split the money by the number of companies.",
+          "unit": "$",
+          "answer": 4000,
+          "tolerance": 1,
+          "why": "Yes. $1,600 / 40 = $40.00 for each company.",
+          "working": "$1,600 / 40 = $40.00.",
+          "miss": "The money is shared equally among the companies. Which operation shares an amount?"
+        }
+      ],
+      "go": {
+        "building": "exchange",
+        "label": "Open the Exchange"
+      }
+    },
+    {
+      "id": "ft2030-s3-u4-l3",
+      "title": "The yearly fee",
+      "kind": "lesson",
+      "learn": [
+        "Say what a fund's MER is and how it is paid.",
+        "Work out the fee in dollars and the return you keep."
+      ],
+      "cards": [
+        {
+          "text": "A fund charges a yearly fee called the MER, the management expense ratio. It is a percent of what you hold in the fund. It is taken out of the fund's return before you see the return, so no bill ever arrives."
+        },
+        {
+          "text": "Say you hold $10,000 in Fund C, which charges 2.25% a year. The fee for the year is 2.25% of $10,000, which is $225.00. You do not write a cheque. Your fund simply earns less."
+        },
+        {
+          "text": "So you can count the fee as coming off the return. Say the market earns 6% in a year and Fund C charges 2.25%. You keep 6% - 2.25% = 3.75%. Real funds take the fee a little at a time, so this is a close, simple way to count it."
+        },
+        {
+          "text": "Funds A, B and C are made-up funds for this unit. Here is what each one lets you keep when the market earns 6% in a year. The bigger the fee, the less you keep.",
+          "figure": {
+            "kind": "table",
+            "title": "The market earns 6% a year",
+            "columns": [
+              "Fund",
+              "Yearly fee",
+              "You keep"
+            ],
+            "rows": [
+              [
+                "No fee",
+                "0%",
+                "6.00%"
+              ],
+              [
+                "Fund A",
+                "0.25%",
+                "5.75%"
+              ],
+              [
+                "Fund B",
+                "1.00%",
+                "5.00%"
+              ],
+              [
+                "Fund C",
+                "2.25%",
+                "3.75%"
+              ]
+            ]
+          }
+        },
+        {
+          "text": "A fund's own page lists its MER. Use the fund company's page, not a news article, since articles quote old numbers. A past return only shows how one period went, and it does not promise the next. You cannot know a future return, but you can read what a fund charges."
+        },
+        {
+          "text": "The Exchange puts a Fund fee (MER) line on each fund's card. The game starts with 0.06% a year for DAAX, 0.10% for DAAB and 0.20% for DAAG. The fee comes off the price a little each month."
+        }
+      ],
+      "questions": [
+        {
+          "id": "ft2030-s3-u4-l3-q1",
+          "label": "What the MER is",
+          "prompt": "What is a fund's MER?",
+          "type": "choice",
+          "terms": [
+            {
+              "term": "MER",
+              "meaning": "Management expense ratio: a fund's yearly fee as a percent of what you hold in it."
+            }
+          ],
+          "hint": "The first card gives it in one line.",
+          "options": [
+            {
+              "text": "The fund's best return in one year",
+              "why": "The MER is a fee, not a return."
+            },
+            {
+              "text": "A one-time charge for buying the fund",
+              "why": "The MER is charged every year, not once."
+            },
+            {
+              "text": "Its yearly fee as a percent of what you hold in it",
+              "why": "Yes. That is what MER means."
+            },
+            {
+              "text": "The dollars the manager earns",
+              "why": "The MER is a percent of what you hold, not the manager's pay."
+            }
+          ],
+          "answer": 2
+        },
+        {
+          "id": "ft2030-s3-u4-l3-q2",
+          "label": "How it is paid",
+          "prompt": "How do you pay a fund's MER?",
+          "type": "choice",
+          "hint": "The first card says what you never get.",
+          "options": [
+            {
+              "text": "A bill comes each year",
+              "why": "You never get a bill. The fee comes out of the return."
+            },
+            {
+              "text": "It comes out of the fund's return, so there is no bill",
+              "why": "Yes. You see a smaller return, not a bill."
+            },
+            {
+              "text": "You pay it on the day you buy",
+              "why": "It is not a one-time payment. It is charged each year."
+            }
+          ],
+          "answer": 1
+        },
+        {
+          "id": "ft2030-s3-u4-l3-q3",
+          "label": "The fee in dollars",
+          "prompt": "A made-up fund charges 1.75% a year. How many dollars is the fee for one year on $4,000?",
+          "type": "number",
+          "terms": [
+            {
+              "term": "MER",
+              "meaning": "Management expense ratio: a fund's yearly fee as a percent of what you hold in it."
+            }
+          ],
+          "hint": "Take 1.75% of $4,000.",
+          "unit": "$",
+          "answer": 7000,
+          "tolerance": 1,
+          "why": "Yes. 1.75% of $4,000 is $70.00.",
+          "working": "$4,000 x 0.0175 = $70.00.",
+          "traps": [
+            {
+              "value": 700,
+              "why": "That is 0.175%. 1.75% means 1.75 out of every 100."
+            }
+          ],
+          "miss": "The fee is a percent of what you hold. Change the percent to a decimal first."
+        },
+        {
+          "id": "ft2030-s3-u4-l3-q4",
+          "label": "Two funds compared",
+          "prompt": "An index fund charges 0.10% a year and an actively managed fund charges 1.50% a year, both made up. How many more dollars a year does the managed fund charge on $10,000?",
+          "type": "number",
+          "hint": "Find the difference between the two percents, then take that percent of $10,000.",
+          "unit": "$",
+          "answer": 14000,
+          "tolerance": 1,
+          "why": "Yes. The managed fund charges $150.00 and the index fund $10.00, so $140.00 more.",
+          "working": "1.50% - 0.10% = 1.40%. $10,000 x 0.0140 = $140.00.",
+          "traps": [
+            {
+              "value": 15000,
+              "why": "That is the managed fund's fee alone. Subtract the index fund's fee."
+            }
+          ],
+          "miss": "Compare the two fees. What is the gap between them, in percent, and then in dollars?"
+        },
+        {
+          "id": "ft2030-s3-u4-l3-q5",
+          "label": "What you keep",
+          "prompt": "The market earns 8% in a year. A made-up fund charges 0.50% a year. What yearly return do you keep, as a percent?",
+          "type": "number",
+          "hint": "Take the fee off the market return.",
+          "unit": "%",
+          "answer": 7.5,
+          "tolerance": 0.005,
+          "why": "Yes. 8% - 0.50% = 7.5%.",
+          "working": "8.00% - 0.50% = 7.50%.",
+          "traps": [
+            {
+              "value": 8.5,
+              "why": "A fee reduces your return. It does not add to it."
+            }
+          ],
+          "miss": "The fee comes off the return. Which operation takes one percent from another?"
+        },
+        {
+          "id": "ft2030-s3-u4-l3-q6",
+          "label": "A smaller market",
+          "prompt": "The market earns 5% in a year. Fund B charges 1.00% a year. What yearly return do you keep, as a percent?",
+          "type": "number",
+          "hint": "Take the fee off the market return.",
+          "unit": "%",
+          "answer": 4,
+          "tolerance": 0.005,
+          "why": "Yes. 5% - 1.00% = 4%.",
+          "working": "5.00% - 1.00% = 4.00%.",
+          "miss": "Take the fund's fee away from what the market earned."
+        },
+        {
+          "id": "ft2030-s3-u4-l3-q7",
+          "label": "Keeps the least",
+          "prompt": "Tap the bar for the fund that keeps the least of the 6%.",
+          "type": "point",
+          "figure": {
+            "kind": "bars",
+            "title": "What you keep of 6%",
+            "unit": "%",
+            "bars": [
+              {
+                "label": "No fee",
+                "value": 6
+              },
+              {
+                "label": "Fund A",
+                "value": 5.75
+              },
+              {
+                "label": "Fund B",
+                "value": 5
+              },
+              {
+                "label": "Fund C",
+                "value": 3.75
+              }
+            ]
+          },
+          "hint": "A bigger fee leaves a shorter bar.",
+          "answer": 3,
+          "why": "Yes. Fund C keeps 3.75%, the least of the four.",
+          "miss": "The fee comes off the 6%. Which fund charges the most?"
+        },
+        {
+          "id": "ft2030-s3-u4-l3-q8",
+          "label": "Where to look",
+          "prompt": "Where should you look for a fund's MER?",
+          "type": "choice",
+          "hint": "Think about which page is kept up to date.",
+          "options": [
+            {
+              "text": "In a news article about the fund",
+              "why": "Articles quote old numbers. Use the fund company's own page."
+            },
+            {
+              "text": "On the fund company's own page for that fund",
+              "why": "Yes. The fund's own page lists its MER."
+            },
+            {
+              "text": "In its best return of the year",
+              "why": "A return is not a fee."
+            }
+          ],
+          "answer": 1
+        },
+        {
+          "id": "ft2030-s3-u4-l3-q9",
+          "label": "Known in advance",
+          "prompt": "Which one can you know before you buy a fund?",
+          "type": "choice",
+          "hint": "The last line of the fifth card.",
+          "options": [
+            {
+              "text": "Its return over the next five years",
+              "why": "Nobody knows a future return."
+            },
+            {
+              "text": "Whether it will beat the market",
+              "why": "That cannot be known in advance."
+            },
+            {
+              "text": "What it charges each year",
+              "why": "Yes. The fee is the one thing you can read before you buy."
+            },
+            {
+              "text": "Its best year in the next ten years",
+              "why": "That year has not happened yet, so nobody can know it."
+            }
+          ],
+          "answer": 2
+        },
+        {
+          "id": "ft2030-s3-u4-l3-q10",
+          "label": "Fee in the game",
+          "prompt": "In the Exchange, DAAG's fee starts at 0.20% a year. How many dollars is that a year on $10,000?",
+          "type": "number",
+          "hint": "Take the percent of $10,000. The card gives the percent.",
+          "unit": "$",
+          "answer": 2000,
+          "tolerance": 1,
+          "why": "Yes. 0.20% of $10,000 is $20.00 a year.",
+          "working": "$10,000 x 0.0020 = $20.00.",
+          "miss": "Change the percent to a decimal, then multiply by the amount held."
+        }
+      ]
+    },
+    {
+      "id": "ft2030-s3-u4-l4",
+      "title": "What a fee takes over time",
+      "kind": "lesson",
+      "learn": [
+        "Work out how a fee grows into a big gap, year by year.",
+        "See how a fee slows doubling."
+      ],
+      "cards": [
+        {
+          "text": "The class example: $10,000 is invested once and left for 30 years. The market earns 6% a year. Fund C charges 2.25%, so it keeps 3.75%, and each year the balance is multiplied by 1.0375. Year 1: $10,375.00. Year 2: $10,764.06."
+        },
+        {
+          "text": "Each year, the money grows on last year's balance. Here are both balances every five years, rounded to the dollar. Both grow, but Fund C grows slower, and the gap widens.",
+          "figure": {
+            "kind": "table",
+            "title": "$10,000 over 30 years",
+            "columns": [
+              "Year",
+              "No fee",
+              "Fund C"
+            ],
+            "rows": [
+              [
+                "Year 0",
+                "$10,000",
+                "$10,000"
+              ],
+              [
+                "Year 5",
+                "$13,382",
+                "$12,021"
+              ],
+              [
+                "Year 10",
+                "$17,908",
+                "$14,450"
+              ],
+              [
+                "Year 15",
+                "$23,966",
+                "$17,371"
+              ],
+              [
+                "Year 20",
+                "$32,071",
+                "$20,882"
+              ],
+              [
+                "Year 25",
+                "$42,919",
+                "$25,102"
+              ],
+              [
+                "Year 30",
+                "$57,435",
+                "$30,175"
+              ]
+            ]
+          }
+        },
+        {
+          "text": "Funds A and B charge 0.25% and 1.00%. At year 30, no fee gives $57,435, Fund A $53,507, Fund B $43,219 and Fund C $30,175. Fund C ends $27,260 below no fee, which is 47.5% less.",
+          "figure": {
+            "kind": "bars",
+            "title": "Money at year 30",
+            "unit": "$",
+            "bars": [
+              {
+                "label": "No fee",
+                "value": 5743500
+              },
+              {
+                "label": "Fund A",
+                "value": 5350700
+              },
+              {
+                "label": "Fund B",
+                "value": 4321900
+              },
+              {
+                "label": "Fund C",
+                "value": 3017500
+              }
+            ]
+          }
+        },
+        {
+          "text": "The longer you hold, the more a fee takes. After 10 years, Fund C has $14,450 against $17,908 with no fee: 19.3% less. After 30 years it is 47.5% less. The fee is paid every year, and the money it takes stops growing too."
+        },
+        {
+          "text": "The fee does not shrink when returns do. If the market earns only 3%, Fund C still charges 2.25% and you keep 0.75%. The fee takes 75% of that year's return, not 37.5%. Over 30 years $10,000 ends at $12,513, against $24,273 with no fee."
+        },
+        {
+          "text": "A fee also slows doubling. The Rule of 72 estimates it: divide 72 by the yearly percent to get the years. At 6% that is 72 / 6 = 12 years. A 2% fee leaves 4%, and 72 / 4 = 18 years. The fee takes a third of the return but adds six years of waiting."
+        }
+      ],
+      "questions": [
+        {
+          "id": "ft2030-s3-u4-l4-q1",
+          "label": "One year of growth",
+          "prompt": "Fund B keeps 5.00% a year. $8,000 grows for one year. What is the balance, to the cent?",
+          "type": "number",
+          "hint": "Multiply by 1 plus the rate you keep, 1.05.",
+          "unit": "$",
+          "answer": 840000,
+          "tolerance": 1,
+          "why": "Yes. $8,000 x 1.05 = $8,400.00.",
+          "working": "$8,000 x 1.05 = $8,400.00.",
+          "miss": "Add one year of growth to the starting money. What do you multiply by for 5%?"
+        },
+        {
+          "id": "ft2030-s3-u4-l4-q2",
+          "label": "Year two",
+          "prompt": "At the end of year 1, a $10,000 start in Fund B has grown to $10,500.00. Fund B keeps 5.00% again. What is the balance at the end of year 2, to the cent?",
+          "type": "number",
+          "hint": "Grow last year's balance, not the first $10,000.",
+          "unit": "$",
+          "answer": 1102500,
+          "tolerance": 1,
+          "why": "Yes. $10,500.00 x 1.05 = $11,025.00.",
+          "working": "$10,500.00 x 1.05 = $11,025.00.",
+          "traps": [
+            {
+              "value": 1100000,
+              "why": "That adds $500 twice to the first $10,000. Year 2 grows on the year-1 balance."
+            }
+          ],
+          "miss": "Year 2 grows on the balance you have at the end of year 1. Which balance is that?"
+        },
+        {
+          "id": "ft2030-s3-u4-l4-q3",
+          "label": "The smallest bar",
+          "prompt": "Tap the bar for the fund that ends with the least money at year 30.",
+          "type": "point",
+          "figure": {
+            "kind": "bars",
+            "title": "Money at year 30",
+            "unit": "$",
+            "bars": [
+              {
+                "label": "No fee",
+                "value": 5743500
+              },
+              {
+                "label": "Fund A",
+                "value": 5350700
+              },
+              {
+                "label": "Fund B",
+                "value": 4321900
+              },
+              {
+                "label": "Fund C",
+                "value": 3017500
+              }
+            ]
+          },
+          "hint": "The biggest fee leaves the shortest bar.",
+          "answer": 3,
+          "why": "Yes. Fund C ends with $30,175, the least.",
+          "miss": "Which of the three funds charges the most?"
+        },
+        {
+          "id": "ft2030-s3-u4-l4-q4",
+          "label": "A against C",
+          "prompt": "Use the bars. How many dollars more does Fund A end with than Fund C at year 30?",
+          "type": "number",
+          "figure": {
+            "kind": "bars",
+            "title": "Money at year 30",
+            "unit": "$",
+            "bars": [
+              {
+                "label": "No fee",
+                "value": 5743500
+              },
+              {
+                "label": "Fund A",
+                "value": 5350700
+              },
+              {
+                "label": "Fund B",
+                "value": 4321900
+              },
+              {
+                "label": "Fund C",
+                "value": 3017500
+              }
+            ]
+          },
+          "hint": "Subtract the two bars.",
+          "unit": "$",
+          "answer": 2333200,
+          "tolerance": 1,
+          "why": "Yes. $53,507 - $30,175 = $23,332.",
+          "working": "$53,507 - $30,175 = $23,332.",
+          "miss": "Find the two bars. What operation gives how much more one is than the other?"
+        },
+        {
+          "id": "ft2030-s3-u4-l4-q5",
+          "label": "The share lost",
+          "prompt": "Use the bars. By what percent is Fund B's final money below the no-fee amount of $57,435? Round to one decimal place.",
+          "type": "number",
+          "figure": {
+            "kind": "bars",
+            "title": "Money at year 30",
+            "unit": "$",
+            "bars": [
+              {
+                "label": "No fee",
+                "value": 5743500
+              },
+              {
+                "label": "Fund A",
+                "value": 5350700
+              },
+              {
+                "label": "Fund B",
+                "value": 4321900
+              },
+              {
+                "label": "Fund C",
+                "value": 3017500
+              }
+            ]
+          },
+          "hint": "Divide the difference by the no-fee amount.",
+          "unit": "%",
+          "answer": 24.8,
+          "tolerance": 0.05,
+          "why": "Yes. ($57,435 - $43,219) / $57,435 is about 24.8%.",
+          "working": "$57,435 - $43,219 = $14,216. $14,216 / $57,435 = 0.2475, which is 24.8%.",
+          "traps": [
+            {
+              "value": 75.2,
+              "why": "That is the share Fund B ends with. The question asks for the share it is below."
+            }
+          ],
+          "miss": "First find the difference between the two amounts. Then compare it with the no-fee amount."
+        },
+        {
+          "id": "ft2030-s3-u4-l4-q6",
+          "label": "After ten years",
+          "prompt": "Use the table. After 20 years, by what percent is Fund C's money below the no-fee money? Round to one decimal place.",
+          "type": "number",
+          "figure": {
+            "kind": "table",
+            "title": "$10,000 over 30 years",
+            "columns": [
+              "Year",
+              "No fee",
+              "Fund C"
+            ],
+            "rows": [
+              [
+                "Year 0",
+                "$10,000",
+                "$10,000"
+              ],
+              [
+                "Year 5",
+                "$13,382",
+                "$12,021"
+              ],
+              [
+                "Year 10",
+                "$17,908",
+                "$14,450"
+              ],
+              [
+                "Year 15",
+                "$23,966",
+                "$17,371"
+              ],
+              [
+                "Year 20",
+                "$32,071",
+                "$20,882"
+              ],
+              [
+                "Year 25",
+                "$42,919",
+                "$25,102"
+              ],
+              [
+                "Year 30",
+                "$57,435",
+                "$30,175"
+              ]
+            ]
+          },
+          "hint": "Find the Year 20 row. Divide the difference by the no-fee amount.",
+          "unit": "%",
+          "answer": 34.9,
+          "tolerance": 0.05,
+          "why": "Yes. ($32,071 - $20,882) / $32,071 is about 34.9%.",
+          "working": "$32,071 - $20,882 = $11,189. $11,189 / $32,071 = 34.9%.",
+          "miss": "Find the difference, then divide it by the no-fee amount."
+        },
+        {
+          "id": "ft2030-s3-u4-l4-q7",
+          "label": "Time and fees",
+          "prompt": "After 10 years Fund C ended 19.3% below the no-fee money, and after 30 years 47.5% below. What does this show?",
+          "type": "choice",
+          "hint": "Compare the two shares.",
+          "options": [
+            {
+              "text": "The fee rate rises every year",
+              "why": "The rate stays at 2.25%. What grows is the money it costs."
+            },
+            {
+              "text": "The longer you hold, the bigger the share the fee takes",
+              "why": "Yes. The cost compounds, just like the return does."
+            },
+            {
+              "text": "Fees only matter after 30 years",
+              "why": "The fee already took a share after 10 years."
+            }
+          ],
+          "answer": 1
+        },
+        {
+          "id": "ft2030-s3-u4-l4-q8",
+          "label": "A small return",
+          "prompt": "The market earns 5% in a year and Fund C charges 2.25%. What percent of that year's 5% return does the fee take?",
+          "type": "number",
+          "hint": "Divide the fee by the market return.",
+          "unit": "%",
+          "answer": 45,
+          "tolerance": 0.05,
+          "why": "Yes. 2.25 / 5 = 0.45, which is 45% of the return.",
+          "working": "2.25% / 5% = 0.45 = 45%.",
+          "traps": [
+            {
+              "value": 37.5,
+              "why": "That is the share of a 6% return. This year the market earned 5%."
+            }
+          ],
+          "miss": "Compare the fee with the return of that year. Which one goes on the bottom of the fraction?"
+        },
+        {
+          "id": "ft2030-s3-u4-l4-q9",
+          "label": "Years to double",
+          "prompt": "The market earns 6% and a fund charges a 2% fee, so you keep 4%. By the Rule of 72, about how many years until the money doubles?",
+          "type": "choice",
+          "hint": "Divide 72 by the rate you keep.",
+          "options": [
+            {
+              "text": "About 12 years",
+              "why": "That is the answer for 6% with no fee. The fee leaves 4%."
+            },
+            {
+              "text": "About 18 years",
+              "why": "Yes. 72 / 4 = 18 years."
+            },
+            {
+              "text": "About 24 years",
+              "why": "That is 72 / 3. You keep 4%, not 3%."
+            },
+            {
+              "text": "About 36 years",
+              "why": "That is 72 / 2, the fee alone. Use the rate you keep."
+            }
+          ],
+          "answer": 1
+        },
+        {
+          "id": "ft2030-s3-u4-l4-q10",
+          "label": "First past $20,000",
+          "prompt": "Tap the first point where Fund C's balance is above $20,000.",
+          "type": "point",
+          "figure": {
+            "kind": "line",
+            "title": "Fund C, every five years",
+            "unit": "$",
+            "points": [
+              {
+                "label": "Year 0",
+                "value": 1000000
+              },
+              {
+                "label": "Year 5",
+                "value": 1202100
+              },
+              {
+                "label": "Year 10",
+                "value": 1445000
+              },
+              {
+                "label": "Year 15",
+                "value": 1737100
+              },
+              {
+                "label": "Year 20",
+                "value": 2088200
+              },
+              {
+                "label": "Year 25",
+                "value": 2510200
+              },
+              {
+                "label": "Year 30",
+                "value": 3017500
+              }
+            ]
+          },
+          "hint": "Read the points from the left. Find the first one above $20,000.",
+          "answer": 4,
+          "why": "Yes. At year 20 the balance is $20,882.",
+          "miss": "Start at the left. Which is the first point whose balance has gone past $20,000?"
+        }
+      ],
+      "go": {
+        "building": "exchange",
+        "label": "See the fund fees"
+      }
+    }
+  ]
+}

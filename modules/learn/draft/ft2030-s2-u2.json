@@ -1,0 +1,1012 @@
+{
+  "id": "ft2030-s2-u2",
+  "title": "Costs and break-even",
+  "blurb": "Fixed and variable costs, contribution margin and how many you must sell.",
+  "outcome_codes": [
+    "ENT2020 3.2",
+    "ENT2020 3.3"
+  ],
+  "levels": [
+    {
+      "id": "ft2030-s2-u2-l1",
+      "title": "Fixed and variable costs",
+      "kind": "lesson",
+      "learn": [
+        "Sort a cost as fixed or variable.",
+        "Work out the unit cost and the total cost."
+      ],
+      "cards": [
+        {
+          "text": "Every business has costs. Some stay the same however much you sell. Some grow with every item you sell. Telling them apart is the first step to knowing whether a plan can work."
+        },
+        {
+          "text": "A fixed cost stays the same however many items are sold. You pay it if you sell 0 or 500. A variable cost grows with each item sold. You only pay it when you make or sell one more."
+        },
+        {
+          "text": "Mei sells bracelets at a weekend craft fair. The table sorts her costs. The three fixed costs add to $80.00. The variable costs are per bracelet.",
+          "figure": {
+            "kind": "table",
+            "title": "Mei's bracelet costs",
+            "columns": [
+              "Cost",
+              "Kind",
+              "Amount"
+            ],
+            "rows": [
+              [
+                "Table rental",
+                "Fixed",
+                "$40.00"
+              ],
+              [
+                "Banner",
+                "Fixed",
+                "$25.00"
+              ],
+              [
+                "Display stand",
+                "Fixed",
+                "$15.00"
+              ],
+              [
+                "Beads",
+                "Variable",
+                "$0.90 each"
+              ],
+              [
+                "String",
+                "Variable",
+                "$0.30 each"
+              ],
+              [
+                "Gift bag",
+                "Variable",
+                "$0.20 each"
+              ]
+            ]
+          }
+        },
+        {
+          "text": "The unit cost is the variable cost of one item. Mei adds beads, string and a bag: $0.90 + $0.30 + $0.20 = $1.40. The price must be higher than the unit cost, or a sale puts nothing toward the fixed costs."
+        },
+        {
+          "text": "Some costs hide in the wrong column. Packaging is variable: each item needs its own. A card fee charged on every sale is variable too. A banner or poster is printed once, so it is fixed."
+        },
+        {
+          "text": "Total cost = fixed costs + unit cost x items sold. Mei pays $80.00 even if she sells none.",
+          "figure": {
+            "kind": "table",
+            "title": "Mei's total cost",
+            "columns": [
+              "Bracelets",
+              "Variable",
+              "Total cost"
+            ],
+            "rows": [
+              [
+                "0",
+                "$0.00",
+                "$80.00"
+              ],
+              [
+                "20",
+                "$28.00",
+                "$108.00"
+              ],
+              [
+                "40",
+                "$56.00",
+                "$136.00"
+              ]
+            ]
+          }
+        }
+      ],
+      "questions": [
+        {
+          "id": "ft2030-s2-u2-l1-q1",
+          "label": "A fixed cost",
+          "prompt": "Which of these is a fixed cost for Mei?",
+          "type": "choice",
+          "terms": [
+            {
+              "term": "fixed cost",
+              "meaning": "A cost that stays the same however many items are sold."
+            }
+          ],
+          "hint": "Which cost is paid once, however many bracelets she sells?",
+          "options": [
+            {
+              "text": "The beads, $0.90 a bracelet",
+              "why": "Beads are used up in every bracelet, so this cost grows with each sale."
+            },
+            {
+              "text": "The banner, $25.00",
+              "why": "The banner is paid once. It is the same if she sells 0 or 40 bracelets."
+            },
+            {
+              "text": "The gift bag, $0.20 a bracelet",
+              "why": "Each bracelet needs its own bag, so this grows with each sale."
+            }
+          ],
+          "answer": 1
+        },
+        {
+          "id": "ft2030-s2-u2-l1-q2",
+          "label": "A variable cost",
+          "prompt": "Which of these is a variable cost for Mei?",
+          "type": "choice",
+          "terms": [
+            {
+              "term": "variable cost",
+              "meaning": "A cost that grows with each item sold."
+            }
+          ],
+          "hint": "Which cost is paid again for each bracelet?",
+          "options": [
+            {
+              "text": "The string for each bracelet",
+              "why": "Each bracelet uses its own string, so the cost grows with each sale."
+            },
+            {
+              "text": "The table rental",
+              "why": "The table is paid for once, whatever she sells."
+            },
+            {
+              "text": "The display stand",
+              "why": "The stand is bought once and used for every sale."
+            },
+            {
+              "text": "The banner",
+              "why": "The banner is printed once, whatever she sells."
+            }
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ft2030-s2-u2-l1-q3",
+          "label": "Ravi fixed costs",
+          "prompt": "Ravi sells candles at a market. He has three fixed costs: the table rental, the banner and the stand. What are his fixed costs altogether?",
+          "type": "number",
+          "figure": {
+            "kind": "table",
+            "title": "Ravi's fixed costs",
+            "columns": [
+              "Cost",
+              "Amount"
+            ],
+            "rows": [
+              [
+                "Table rental",
+                "$35.00"
+              ],
+              [
+                "Banner",
+                "$20.00"
+              ],
+              [
+                "Stand",
+                "$12.00"
+              ]
+            ]
+          },
+          "hint": "Add the three amounts in the table.",
+          "unit": "$",
+          "answer": 6700,
+          "tolerance": 0,
+          "why": "Her fixed costs are the three amounts added together.",
+          "working": "$35.00 + $20.00 + $12.00 = $67.00.",
+          "miss": "Add only the fixed costs."
+        },
+        {
+          "id": "ft2030-s2-u2-l1-q4",
+          "label": "Candle unit cost",
+          "prompt": "A candle needs wax at $0.85, a wick at $0.15 and a jar at $0.60. What is the unit cost of one candle?",
+          "type": "number",
+          "terms": [
+            {
+              "term": "unit cost",
+              "meaning": "The variable cost of one item: what it costs to make and sell one."
+            }
+          ],
+          "hint": "Add the three per-candle costs in the question.",
+          "unit": "$",
+          "answer": 160,
+          "tolerance": 0,
+          "why": "The unit cost is the variable cost of one bracelet.",
+          "working": "$0.85 + $0.15 + $0.60 = $1.60.",
+          "miss": "Add only the costs paid for each candle."
+        },
+        {
+          "id": "ft2030-s2-u2-l1-q5",
+          "label": "A card fee",
+          "prompt": "A card reader charges Mei a fee of $0.15 on every sale. Is the fee fixed or variable?",
+          "type": "choice",
+          "terms": [
+            {
+              "term": "variable cost",
+              "meaning": "A cost that grows with each item sold."
+            }
+          ],
+          "hint": "Does the fee happen once, or with each sale?",
+          "options": [
+            {
+              "text": "Fixed, because it is small",
+              "why": "Size does not decide it. A cost that grows with each sale is variable."
+            },
+            {
+              "text": "Fixed, because the reader is bought once",
+              "why": "The reader may be bought once, but this fee is charged again on every sale."
+            },
+            {
+              "text": "Variable, because it is paid on every sale",
+              "why": "It grows with each item sold, so it is a variable cost."
+            }
+          ],
+          "answer": 2
+        },
+        {
+          "id": "ft2030-s2-u2-l1-q6",
+          "label": "Cost of 30",
+          "prompt": "Mei makes and sells 30 bracelets. What is her total cost? Total cost = fixed costs + unit cost x items sold.",
+          "type": "number",
+          "traps": [
+            {
+              "value": 4200,
+              "why": "That is only the variable cost. Add the fixed costs too."
+            },
+            {
+              "value": 8140,
+              "why": "That counts one bracelet, not 30."
+            }
+          ],
+          "hint": "First work out the variable cost of all 30 bracelets.",
+          "unit": "$",
+          "answer": 12200,
+          "tolerance": 0,
+          "why": "Total cost is the fixed costs plus the variable cost of all 30.",
+          "working": "30 x $1.40 = $42.00. $80.00 + $42.00 = $122.00.",
+          "miss": "Do not forget the fixed costs. Add them to the variable cost of all 30."
+        },
+        {
+          "id": "ft2030-s2-u2-l1-q7",
+          "label": "Selling none",
+          "prompt": "Mei sells no bracelets at all. What does she still pay?",
+          "type": "choice",
+          "terms": [
+            {
+              "term": "fixed cost",
+              "meaning": "A cost that stays the same however many items are sold."
+            }
+          ],
+          "hint": "Which costs do not depend on sales?",
+          "options": [
+            {
+              "text": "$0.00, because she sold nothing",
+              "why": "Fixed costs are paid whether or not anything sells."
+            },
+            {
+              "text": "$1.40, the cost of one bracelet",
+              "why": "That is one bracelet's variable cost. With no bracelets made it is not paid."
+            },
+            {
+              "text": "$136.00, the cost of 40 bracelets",
+              "why": "That includes variable costs for 40 bracelets, but none were made."
+            },
+            {
+              "text": "$80.00, her fixed costs",
+              "why": "Fixed costs are paid even when nothing sells."
+            }
+          ],
+          "answer": 3
+        },
+        {
+          "id": "ft2030-s2-u2-l1-q8",
+          "label": "Cost of 20",
+          "prompt": "Tap the bar that shows Mei's total cost for 20 bracelets.",
+          "type": "point",
+          "figure": {
+            "kind": "bars",
+            "title": "Mei's total cost",
+            "unit": "$",
+            "bars": [
+              {
+                "label": "0 sold",
+                "value": 8000
+              },
+              {
+                "label": "10 sold",
+                "value": 9400
+              },
+              {
+                "label": "20 sold",
+                "value": 10800
+              },
+              {
+                "label": "30 sold",
+                "value": 12200
+              },
+              {
+                "label": "40 sold",
+                "value": 13600
+              }
+            ]
+          },
+          "hint": "Each bracelet adds the unit cost to the fixed costs.",
+          "answer": 2,
+          "why": "At 20 bracelets: $80.00 + 20 x $1.40 = $108.00.",
+          "miss": "Work out the total cost for 20 bracelets, then find that bar."
+        },
+        {
+          "id": "ft2030-s2-u2-l1-q9",
+          "label": "A price check",
+          "prompt": "Tariq sells cookies for $1.20 each. Ingredients and the box cost him $1.40 a cookie. What is wrong?",
+          "type": "choice",
+          "terms": [
+            {
+              "term": "unit cost",
+              "meaning": "The variable cost of one item: what it costs to make and sell one."
+            }
+          ],
+          "hint": "Compare the price with the unit cost.",
+          "options": [
+            {
+              "text": "The price is below the unit cost, so every sale loses money",
+              "why": "He loses $0.20 on each cookie, before any fixed costs."
+            },
+            {
+              "text": "The fixed costs are too high",
+              "why": "The problem shows before fixed costs: each cookie costs more than it sells for."
+            },
+            {
+              "text": "Nothing, because he still has sales",
+              "why": "Each sale brings in less than the cookie cost him to make."
+            },
+            {
+              "text": "The unit cost should be zero",
+              "why": "Every cookie needs ingredients and a box, so the unit cost is not zero."
+            }
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "ft2030-s2-u2-l2",
+      "title": "Contribution margin and break-even",
+      "kind": "lesson",
+      "learn": [
+        "Work out the contribution margin of one sale.",
+        "Find how many items cover the fixed costs."
+      ],
+      "cards": [
+        {
+          "text": "Jo sells iced tea at a school fair for $3.00 a cup. Each cup costs $1.10 in the cup, tea and ice. Jo's fixed costs add to $95.00.",
+          "figure": {
+            "kind": "table",
+            "title": "Jo's iced tea costs",
+            "columns": [
+              "Cost",
+              "Kind",
+              "Amount"
+            ],
+            "rows": [
+              [
+                "Stall fee",
+                "Fixed",
+                "$60.00"
+              ],
+              [
+                "Sign",
+                "Fixed",
+                "$20.00"
+              ],
+              [
+                "Drink dispenser",
+                "Fixed",
+                "$15.00"
+              ],
+              [
+                "Cup, tea and ice",
+                "Variable",
+                "$1.10 a cup"
+              ]
+            ]
+          }
+        },
+        {
+          "text": "The contribution margin is the price minus the variable cost of one item. $3.00 - $1.10 = $1.90. Each cup sold puts $1.90 toward the fixed costs. It is not profit yet. Profit starts after the fixed costs are paid."
+        },
+        {
+          "text": "The break-even point is the number of items a business must sell for its sales to cover all of its costs. Divide the fixed costs by the contribution margin. $95.00 / $1.90 = 50 cups."
+        },
+        {
+          "text": "Check it. At 50 cups Jo is even. One cup fewer and Jo is short by $1.90. One cup more and Jo makes $1.90. Break-even is the line, not a target to aim at.",
+          "figure": {
+            "kind": "table",
+            "title": "Sales and all costs",
+            "columns": [
+              "Cups",
+              "Sales",
+              "All costs",
+              "Result"
+            ],
+            "rows": [
+              [
+                "49",
+                "$147.00",
+                "$148.90",
+                "$1.90 short"
+              ],
+              [
+                "50",
+                "$150.00",
+                "$150.00",
+                "Even"
+              ],
+              [
+                "51",
+                "$153.00",
+                "$151.10",
+                "$1.90 profit"
+              ]
+            ]
+          }
+        },
+        {
+          "text": "A stall cannot sell part of a cup. If the answer has a decimal, round up. Say the fixed costs are $95.00 and the margin is $2.00: 47.5 so 48 cups. At 47 cups the stall is still short."
+        },
+        {
+          "text": "Check the margin first. If the price only equals the unit cost, the margin is $0.00. No number of sales can cover the fixed costs. If the price is lower, each sale makes the hole deeper."
+        }
+      ],
+      "questions": [
+        {
+          "id": "ft2030-s2-u2-l2-q1",
+          "label": "Jo's margin",
+          "prompt": "At the winter fair Jo sells a hot chocolate for $3.50. Each cup costs $1.30 to make. What is the contribution margin?",
+          "type": "number",
+          "terms": [
+            {
+              "term": "contribution margin",
+              "meaning": "The price minus the variable cost of one item. What each sale puts toward the fixed costs."
+            }
+          ],
+          "hint": "Take the variable cost away from the price.",
+          "unit": "$",
+          "answer": 220,
+          "tolerance": 0,
+          "why": "The margin is what each sale leaves toward the fixed costs.",
+          "working": "$3.50 - $1.30 = $2.20.",
+          "miss": "Price minus the cost of one cup."
+        },
+        {
+          "id": "ft2030-s2-u2-l2-q2",
+          "label": "Jo's fixed costs",
+          "prompt": "At the winter fair Jo's fixed costs are the stall fee ($55.00), the sign ($18.00) and a kettle ($12.00). What do they come to?",
+          "type": "number",
+          "terms": [
+            {
+              "term": "fixed cost",
+              "meaning": "A cost that stays the same however many items are sold."
+            }
+          ],
+          "hint": "Add the three fixed costs.",
+          "unit": "$",
+          "answer": 8500,
+          "tolerance": 0,
+          "why": "The fixed costs are added together.",
+          "working": "$55.00 + $18.00 + $12.00 = $85.00.",
+          "miss": "Add all three amounts. Leave out the cost of a cup."
+        },
+        {
+          "id": "ft2030-s2-u2-l2-q3",
+          "label": "Break-even cups",
+          "prompt": "Jo's fixed costs are $95.00 and each cup leaves $1.90. How many cups must Jo sell to break even?",
+          "type": "choice",
+          "terms": [
+            {
+              "term": "break-even point",
+              "meaning": "The number of items a business must sell for its sales to cover all of its costs."
+            }
+          ],
+          "hint": "Divide the fixed costs by what each cup leaves.",
+          "options": [
+            {
+              "text": "32 cups",
+              "why": "That divides by the price of $3.00. Divide by what each cup leaves."
+            },
+            {
+              "text": "50 cups",
+              "why": "$95.00 / $1.90 = 50 cups."
+            },
+            {
+              "text": "87 cups",
+              "why": "That divides by the cost of a cup. Divide by the margin."
+            },
+            {
+              "text": "95 cups",
+              "why": "That uses the dollars of fixed costs as a count of cups."
+            }
+          ],
+          "answer": 1
+        },
+        {
+          "id": "ft2030-s2-u2-l2-q4",
+          "label": "What the margin is",
+          "prompt": "What is the $1.90 that each cup leaves?",
+          "type": "choice",
+          "terms": [
+            {
+              "term": "contribution margin",
+              "meaning": "The price minus the variable cost of one item. What each sale puts toward the fixed costs."
+            }
+          ],
+          "hint": "Compare what one cup leaves with what Jo still owes in fixed costs.",
+          "options": [
+            {
+              "text": "Jo's profit on each cup",
+              "why": "Profit starts only after the fixed costs are covered."
+            },
+            {
+              "text": "The unit cost of a cup",
+              "why": "The unit cost is $1.10. The margin is what is left of the price."
+            },
+            {
+              "text": "Money toward the fixed costs, before any profit",
+              "why": "Each sale pays off some of the fixed costs. Profit starts after they are paid."
+            },
+            {
+              "text": "Jo's fixed costs per cup",
+              "why": "The fixed costs are one total. They do not grow with each cup."
+            }
+          ],
+          "answer": 2
+        },
+        {
+          "id": "ft2030-s2-u2-l2-q5",
+          "label": "Profit at 54",
+          "prompt": "Jo sells 54 cups. How much profit does Jo make after paying all costs?",
+          "type": "number",
+          "hint": "Jo is even at 50 cups. What do the cups past 50 add?",
+          "unit": "$",
+          "answer": 760,
+          "tolerance": 0,
+          "why": "Each cup past break-even adds the margin as profit.",
+          "working": "54 x $1.90 = $102.60. $102.60 - $95.00 = $7.60.",
+          "miss": "Take the fixed costs away from the margin earned on all the cups."
+        },
+        {
+          "id": "ft2030-s2-u2-l2-q6",
+          "label": "Short at 45",
+          "prompt": "Jo sells only 45 cups. By how much is Jo short of covering all costs?",
+          "type": "number",
+          "hint": "Find the margin earned on 45 cups, then compare it with the fixed costs.",
+          "unit": "$",
+          "answer": 950,
+          "tolerance": 0,
+          "why": "Jo earns the margin on 45 cups, which is less than the fixed costs.",
+          "working": "45 x $1.90 = $85.50. $95.00 - $85.50 = $9.50.",
+          "miss": "Compare the margin earned with the fixed costs, not with the sales."
+        },
+        {
+          "id": "ft2030-s2-u2-l2-q7",
+          "label": "Ana's bookmarks",
+          "prompt": "Ana sells bookmarks for $4.00. Each costs $1.50 to make. Her fixed costs are $100.00. How many bookmarks does she need to break even?",
+          "type": "choice",
+          "terms": [
+            {
+              "term": "break-even point",
+              "meaning": "The number of items a business must sell for its sales to cover all of its costs."
+            }
+          ],
+          "hint": "Find her margin first. Then divide.",
+          "options": [
+            {
+              "text": "40 bookmarks",
+              "why": "The margin is $4.00 - $1.50 = $2.50. $100.00 / $2.50 = 40."
+            },
+            {
+              "text": "25 bookmarks",
+              "why": "That divides by the price. Divide by the margin."
+            },
+            {
+              "text": "67 bookmarks",
+              "why": "That divides by the unit cost. Divide by the margin."
+            },
+            {
+              "text": "100 bookmarks",
+              "why": "That uses the dollars of fixed costs as a count of bookmarks."
+            }
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ft2030-s2-u2-l2-q8",
+          "label": "Rounding up",
+          "prompt": "A stall's fixed costs are $95.00 and its margin is $2.00. How many items must it sell to cover the fixed costs?",
+          "type": "choice",
+          "terms": [
+            {
+              "term": "break-even point",
+              "meaning": "The number of items a business must sell for its sales to cover all of its costs."
+            }
+          ],
+          "hint": "Divide, then think about whether part of an item can be sold.",
+          "options": [
+            {
+              "text": "47 items",
+              "why": "47 items earn $94.00, still less than $95.00."
+            },
+            {
+              "text": "95 items",
+              "why": "That uses the dollars of fixed costs as a count of items."
+            },
+            {
+              "text": "2 items",
+              "why": "That is the margin in dollars, not a count of items."
+            },
+            {
+              "text": "48 items",
+              "why": "47.5 rounds up, because 47 items leave it short."
+            }
+          ],
+          "answer": 3
+        },
+        {
+          "id": "ft2030-s2-u2-l2-q9",
+          "label": "Sales at break-even",
+          "prompt": "At break-even Ana has sold 40 bookmarks at $4.00. How much money has come in from sales?",
+          "type": "number",
+          "traps": [
+            {
+              "value": 10000,
+              "why": "That is only the fixed costs. The sales also cover the cost of the bookmarks."
+            }
+          ],
+          "hint": "Sales are items sold times the price.",
+          "unit": "$",
+          "answer": 16000,
+          "tolerance": 0,
+          "why": "Sales are the items sold times the price.",
+          "working": "40 x $4.00 = $160.00.",
+          "miss": "Use the price a bookmark sells for."
+        },
+        {
+          "id": "ft2030-s2-u2-l2-q10",
+          "label": "No margin",
+          "prompt": "Noor sells pins for $2.00. Each pin costs $2.00 to make. Her fixed costs are $50.00. How many pins does she need to break even?",
+          "type": "choice",
+          "terms": [
+            {
+              "term": "contribution margin",
+              "meaning": "The price minus the variable cost of one item. What each sale puts toward the fixed costs."
+            }
+          ],
+          "hint": "What is her margin on each pin?",
+          "options": [
+            {
+              "text": "25 pins",
+              "why": "That divides by the price. The margin is $0.00, not $2.00."
+            },
+            {
+              "text": "50 pins",
+              "why": "That uses the dollars of fixed costs as a count of pins."
+            },
+            {
+              "text": "No number of pins works",
+              "why": "The margin is $0.00, so every sale adds nothing toward the fixed costs."
+            },
+            {
+              "text": "0 pins",
+              "why": "With no sales she still owes the fixed costs."
+            }
+          ],
+          "answer": 2
+        }
+      ]
+    },
+    {
+      "id": "ft2030-s2-u2-l3",
+      "title": "Per day, and what changes",
+      "kind": "lesson",
+      "learn": [
+        "Turn break-even into a number to sell each day.",
+        "Say what a new price or cost does to it."
+      ],
+      "cards": [
+        {
+          "text": "Break-even in items is only half the answer. Divide it by the selling days: items ÷ days = items a day. The fair runs 5 days. Jo needs 50 cups, so 50 ÷ 5 = 10 cups a day."
+        },
+        {
+          "text": "Then ask if that is real. A baker's fixed costs are $360.00 and each loaf leaves $0.90, so 400 loaves. Over 10 days that is 40 a day. If about 50 people pass each day, 40 of 50 is 80%. Four in five must buy."
+        },
+        {
+          "text": "A lower price cuts the margin, so you need more sales. Jo drops the price by $0.50: the margin is $1.40, and $95.00 / $1.40 = 67.9, so 68 cups. Look at how fast it climbs.",
+          "figure": {
+            "kind": "table",
+            "title": "Jo's break-even at each price",
+            "columns": [
+              "Price",
+              "Margin",
+              "Cups"
+            ],
+            "rows": [
+              [
+                "$3.00",
+                "$1.90",
+                "50"
+              ],
+              [
+                "$2.50",
+                "$1.40",
+                "68"
+              ],
+              [
+                "$2.00",
+                "$0.90",
+                "106"
+              ],
+              [
+                "$1.50",
+                "$0.40",
+                "238"
+              ]
+            ]
+          }
+        },
+        {
+          "text": "Costs that go up do the same. If a cup costs $1.40 instead of $1.10, the margin is $1.60 and 59.4 rounds up to 60 cups. If the fixed costs rise to $110.00, $110.00 / $1.90 = 57.9, so 58 cups."
+        },
+        {
+          "text": "Test more than one result. Jo plans to sell 80 cups, so check half of that and half as much again. A plan that works only if everything goes right is a weak plan.",
+          "figure": {
+            "kind": "table",
+            "title": "Jo's three results",
+            "columns": [
+              "Case",
+              "Cups",
+              "Result"
+            ],
+            "rows": [
+              [
+                "Half the plan",
+                "40",
+                "$19.00 short"
+              ],
+              [
+                "The plan",
+                "80",
+                "$57.00 profit"
+              ],
+              [
+                "Half as much again",
+                "120",
+                "$133.00 profit"
+              ]
+            ]
+          }
+        },
+        {
+          "text": "Items you make and do not sell are a cost you have already paid. Jo makes 80 cups and sells 60. The 20 left cost 20 x $1.10 = $22.00. Ways to cut it: a discount on the last day, or smaller batches that are made again when stock runs out."
+        }
+      ],
+      "questions": [
+        {
+          "id": "ft2030-s2-u2-l3-q1",
+          "label": "Cups a day",
+          "prompt": "Jo must sell 50 cups to break even. The fair runs 5 days. How many cups a day is that?",
+          "type": "choice",
+          "hint": "Divide the break-even cups by the number of days.",
+          "options": [
+            {
+              "text": "250 cups a day",
+              "why": "That multiplies by the days. Divide the break-even cups by them."
+            },
+            {
+              "text": "10 cups a day",
+              "why": "50 ÷ 5 = 10."
+            },
+            {
+              "text": "45 cups a day",
+              "why": "That subtracts the days. Divide the cups by the days."
+            },
+            {
+              "text": "50 cups a day",
+              "why": "That is the whole break-even over all days, not one day."
+            }
+          ],
+          "answer": 1
+        },
+        {
+          "id": "ft2030-s2-u2-l3-q2",
+          "label": "Loaves a day",
+          "prompt": "The baker needs 400 loaves to break even over 10 selling days. How many loaves must sell each day?",
+          "type": "choice",
+          "hint": "Divide the loaves by the days.",
+          "options": [
+            {
+              "text": "40 loaves a day",
+              "why": "400 ÷ 10 = 40."
+            },
+            {
+              "text": "4000 loaves a day",
+              "why": "That multiplies by the days. Divide instead."
+            },
+            {
+              "text": "80 loaves a day",
+              "why": "That divides by 5 days. The stall has 10 selling days."
+            },
+            {
+              "text": "400 loaves a day",
+              "why": "That is the total for all days, not one day."
+            }
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ft2030-s2-u2-l3-q3",
+          "label": "Share who buy",
+          "prompt": "At another stall about 50 people pass each day and the owner must sell 30 items a day, one to each buyer. What percent of the people who pass must buy?",
+          "type": "number",
+          "hint": "Divide the sales a day by the people who pass, then write it as a percent.",
+          "unit": "%",
+          "answer": 60,
+          "tolerance": 0,
+          "why": "The sales a day are the share of the people passing who must buy.",
+          "working": "30 / 50 = 0.6 = 60%.",
+          "miss": "Divide sales a day by the people who pass, then multiply by 100."
+        },
+        {
+          "id": "ft2030-s2-u2-l3-q4",
+          "label": "Margin at $2.75",
+          "prompt": "Jo tries a price of $2.75. A cup still costs $1.10. What is the new contribution margin?",
+          "type": "number",
+          "terms": [
+            {
+              "term": "contribution margin",
+              "meaning": "The price minus the variable cost of one item. What each sale puts toward the fixed costs."
+            }
+          ],
+          "hint": "Price minus the cost of one cup.",
+          "unit": "$",
+          "answer": 165,
+          "tolerance": 0,
+          "why": "The margin falls when the price falls.",
+          "working": "$2.75 - $1.10 = $1.65.",
+          "miss": "Use the new price, not the old one."
+        },
+        {
+          "id": "ft2030-s2-u2-l3-q5",
+          "label": "Cups at $2.50",
+          "prompt": "At $2.50 Jo's margin is $1.40 and the fixed costs are $95.00. How many cups must Jo sell to break even?",
+          "type": "choice",
+          "hint": "Divide the fixed costs by the new margin and round up.",
+          "options": [
+            {
+              "text": "50 cups",
+              "why": "That is the break-even at the old price. A lower price leaves less on each cup, so more cups are needed."
+            },
+            {
+              "text": "67 cups",
+              "why": "That rounds down. 67 cups earn $93.80, less than $95.00."
+            },
+            {
+              "text": "68 cups",
+              "why": "$95.00 / $1.40 = 67.9, which rounds up to 68."
+            },
+            {
+              "text": "38 cups",
+              "why": "That divides by the price. Divide by the margin."
+            }
+          ],
+          "answer": 2
+        },
+        {
+          "id": "ft2030-s2-u2-l3-q6",
+          "label": "A dearer cup",
+          "prompt": "Each cup now costs $1.40 and the price stays $3.00. Fixed costs are $95.00. How many cups does Jo need to break even?",
+          "type": "choice",
+          "hint": "Find the new margin first, then divide and round up.",
+          "options": [
+            {
+              "text": "60 cups",
+              "why": "The margin is $1.60. $95.00 / $1.60 = 59.4, rounded up."
+            },
+            {
+              "text": "50 cups",
+              "why": "That is the old break-even. The dearer cup lowers the margin, so more cups are needed."
+            },
+            {
+              "text": "59 cups",
+              "why": "That rounds down, which leaves Jo short."
+            },
+            {
+              "text": "68 cups",
+              "why": "That divides by the cost of a cup. Divide by the margin."
+            }
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ft2030-s2-u2-l3-q7",
+          "label": "Short at 30",
+          "prompt": "Jo sells only 30 cups. By how much is Jo short of covering all costs?",
+          "type": "number",
+          "hint": "Find the margin earned on the cups sold, then compare it with the fixed costs.",
+          "unit": "$",
+          "answer": 3800,
+          "tolerance": 0,
+          "why": "At 30 cups the margin earned is less than the fixed costs.",
+          "working": "30 x $1.90 = $57.00. $95.00 - $57.00 = $38.00.",
+          "miss": "Compare the margin earned with the fixed costs."
+        },
+        {
+          "id": "ft2030-s2-u2-l3-q8",
+          "label": "Profit at 90",
+          "prompt": "Jo sells 90 cups. How much profit does Jo make after paying all costs?",
+          "type": "number",
+          "hint": "Margin earned on all the cups, minus the fixed costs.",
+          "unit": "$",
+          "answer": 7600,
+          "tolerance": 0,
+          "why": "Profit is the margin earned minus the fixed costs.",
+          "working": "90 x $1.90 = $171.00. $171.00 - $95.00 = $76.00.",
+          "miss": "Take the fixed costs away from the margin earned."
+        },
+        {
+          "id": "ft2030-s2-u2-l3-q9",
+          "label": "Unsold cups",
+          "prompt": "Jo makes 90 cups and sells 65. Each cup cost $1.10 to make. What did the unsold cups cost?",
+          "type": "number",
+          "terms": [
+            {
+              "term": "variable cost",
+              "meaning": "A cost that grows with each item sold."
+            }
+          ],
+          "hint": "Count the cups left over, then multiply by the cost of one.",
+          "unit": "$",
+          "answer": 2750,
+          "tolerance": 0,
+          "why": "The unsold cups are a variable cost already paid.",
+          "working": "90 - 65 = 25. 25 x $1.10 = $27.50.",
+          "miss": "Multiply only the cups left over by the cost of one cup."
+        },
+        {
+          "id": "ft2030-s2-u2-l3-q10",
+          "label": "Money needed",
+          "prompt": "At which price must Jo collect the most money from sales just to break even? Each bar is the break-even cups times the price. Tap it.",
+          "type": "point",
+          "figure": {
+            "kind": "bars",
+            "title": "Sales needed to break even",
+            "unit": "$",
+            "bars": [
+              {
+                "label": "$3.00",
+                "value": 15000
+              },
+              {
+                "label": "$2.50",
+                "value": 17000
+              },
+              {
+                "label": "$2.00",
+                "value": 21200
+              },
+              {
+                "label": "$1.50",
+                "value": 35700
+              }
+            ]
+          },
+          "hint": "Sales needed = cups needed x price. Compare the bars.",
+          "answer": 3,
+          "why": "At $1.50 Jo needs 238 cups, which is $357.00 in sales.",
+          "miss": "Compare the bars. Dropping the price raises the sales needed."
+        }
+      ]
+    }
+  ]
+}

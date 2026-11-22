@@ -1,0 +1,17 @@
+{
+  "courses": {
+    "fintech10": { "label": "FinTech 10", "modules": ["bank-basic", "rates", "jobs", "retirement", "housing", "insurance", "credit", "bills", "stress", "outfitters", "exchange", "games", "arcade", "walk", "savings", "ventures", "leaderboards", "life", "learn", "today", "feed"] },
+    "fintech2030": { "label": "FinTech 20/30", "modules": ["bank-basic", "rates", "jobs", "retirement", "housing", "insurance", "credit", "bills", "stress", "outfitters", "exchange", "games", "arcade", "walk", "savings", "ventures", "leaderboards", "life", "learn", "today", "feed"] }
+  },
+  "calendar": { "noSchool": [
+    "2026-08-03", "2026-08-28 to 2026-08-31", "2026-09-07", "2026-09-21", "2026-09-30", "2026-10-12", "2026-10-19",
+    "2026-11-11 to 2026-11-13", "2026-11-16", "2026-12-21 to 2027-01-01", "2027-01-29",
+    "2027-02-15", "2027-02-25 to 2027-02-26", "2027-03-10 to 2027-03-12", "2027-03-26", "2027-03-29 to 2027-04-02", "2027-04-05",
+    "2027-05-20 to 2027-05-21", "2027-05-24", "2027-06-21", "2027-06-29"
+  ] },
+  "options": {
+    "bank-basic": { "startCents": 50000 },
+    "bills": { "startAfter": "pay" },
+    "walk": { "presence": true }
+  }
+}
