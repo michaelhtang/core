@@ -283,7 +283,7 @@ async function world({ n = 3, config = REAL } = {}) {
   let t = T0;
   const srv = await boot({ config, clock: createClock({ now: () => t }) });
   const w = await seeded(srv, n, { transfers: false });
-  srv.app.db.prepare("INSERT OR IGNORE INTO arcade_class_off (class_id, game) SELECT id, 'wordle' FROM classes").run(); for (const t of ['today_errands', 'today_state']) srv.app.db.exec(`DELETE FROM ${t}`);   // Today picks 3 errands a day: with four arcade errands on one could miss the day, so these worlds drop FinWord and let the day be picked again
+  for (const g of ['wordle', 'quickcash']) srv.app.db.prepare("INSERT OR IGNORE INTO arcade_class_off (class_id, game) SELECT id, ? FROM classes").run(g); for (const t of ['today_errands', 'today_state']) srv.app.db.exec(`DELETE FROM ${t}`);   // Today picks 3 errands a day: with five arcade errands on some could miss the day, so these worlds drop FinWord and Quick Cash Counter and let the day be picked again
   const rows = (sql, ...a) => srv.app.db.prepare(sql).all(...a);
   return { srv, ...w, advance: (ms) => { t += ms; }, rows, cleanup: srv.cleanup };
 }
@@ -517,7 +517,7 @@ test('teacher panel: both games per class with the same fields, scoped to the te
     assert.equal((await finishAs(b, r, [])).status, 422);
     const got = (await w.teacher.get('/api/arcade/teach')).json;
     const c = got.classes[0];
-    assert.deepEqual(c.games.map((g) => g.key), ['billdash', 'diversify', 'debtsnake']);
+    assert.deepEqual(c.games.map((g) => g.key), ['billdash', 'diversify', 'debtsnake', 'quickcash']);
     const [gb, gd] = c.games;
     for (const g of [gb, gd]) assert.deepEqual(Object.keys(g).sort(), ['best', 'finished', 'key', 'players', 'recent', 'rejected', 'rejected_by', 'title']);
     assert.deepEqual([gb.title, gb.finished, gb.players, gb.rejected], ['Bill Dash', 1, 1, 0]);

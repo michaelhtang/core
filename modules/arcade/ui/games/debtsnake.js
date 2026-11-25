@@ -136,7 +136,9 @@ export function drawSnake(g, sn, geo, t, o) {
     const f = Math.abs(to[0] - from[0]) + Math.abs(to[1] - from[1]) > 1 ? 1 : t;      // a wrap, tunnel or flip jumps
     pts.push([px(geo, from[0] + (to[0] - from[0]) * f + 0.5), py(geo, from[1] + (to[1] - from[1]) * f + 0.5)]);
   }
-  const width = (i) => c * (0.82 - 0.42 * (n > 1 ? i / (n - 1) : 0)) * (i >= cells.length ? 1 - t : 1);
+  const lumps = o.swallow ?? [];                                     // a swallowed coin: a bulge that slides from the head to the tail
+  const bulge = (i) => { let k = 1; for (const s0 of lumps) { const d = i - s0; if (d > -2 && d < 2) k += 0.38 * (1 - (d * d) / 4); } return k; };
+  const width = (i) => c * (0.82 - 0.42 * (n > 1 ? i / (n - 1) : 0)) * (i >= cells.length ? 1 - t : 1) * bulge(i);
   const gap = (i) => (sn.solid ? sn.solid[i] === false : false);
   const body = o.second ? COL.gold : COL.teal, edge = o.second ? COL.goldDark : COL.tealDark, spot = o.second ? COL.tealLite : COL.gold;
   g.lineCap = 'round'; g.lineJoin = 'round';
@@ -157,9 +159,10 @@ export function drawSnake(g, sn, geo, t, o) {
   for (let i = 2; i < n - 1; i += 3) if (!gap(i)) dot(g, pts[i][0], pts[i][1], width(i) * 0.14, flashing(o, i, n) ? COL.red : spot);
   g.globalAlpha = 1;
   // the head: gold (teal for the second snake), eyes, and a mouth that opens when a coin is close
-  const [hx, hy] = pts[0], R = width(0) * 0.62, [dx, dy] = DIR[sn.dir ?? 3], pxv = -dy, pyv = dx;
+  const gulp = o.gulp ?? 0;                                           // 0 to 1: the head swells for a moment as it bites a coin
+  const [hx, hy] = pts[0], R = width(0) * 0.62 * (1 + 0.24 * gulp), [dx, dy] = DIR[o.turn ?? sn.dir ?? 3], pxv = -dy, pyv = dx;
   dot(g, hx, hy, R + 0.8, edge); dot(g, hx, hy, R, o.second ? COL.teal : COL.gold);
-  const open = o.near <= 2 ? 0.35 + 0.22 * (2 - o.near) : 0;
+  const open = gulp > 0.5 ? 0.75 * gulp : o.near <= 2 ? 0.35 + 0.22 * (2 - o.near) : 0;
   if (open) { g.fillStyle = '#2a0b12'; g.beginPath(); g.moveTo(hx, hy); g.lineTo(hx + dx * R * 1.15 + pxv * R * open * 1.5, hy + dy * R * 1.15 + pyv * R * open * 1.5); g.lineTo(hx + dx * R * 1.15 - pxv * R * open * 1.5, hy + dy * R * 1.15 - pyv * R * open * 1.5); g.closePath(); g.fill(); }
   for (const s of [-1, 1]) {
     const ex = hx + dx * R * 0.1 + pxv * R * 0.5 * s, ey = hy + dy * R * 0.1 + pyv * R * 0.5 * s;
@@ -171,6 +174,41 @@ const flashing = (o, i, n) => o.warn && i >= n - 4 && (o.tick >> 2) & 1;
 
 const money = (segments) => `$${segments * 100}`;
 
+// A coin the snake just ate: it swells and flashes white, then bursts into a gold ring and eight twinkling sparkles. Looks only:
+// the core has already counted the payment. a: milliseconds since the bite (so it is smooth at any frame rate); c: the square size.
+export const POP_MS = 560;
+const easeOut = (k) => 1 - (1 - k) ** 3;
+function star(g, x, y, s, rot, fill) {
+  g.save(); g.translate(x, y); g.rotate(rot); g.fillStyle = fill; g.beginPath();
+  for (let i = 0; i < 8; i++) { const r = i & 1 ? s * 0.3 : s, a = i * Math.PI / 4; g.lineTo(Math.cos(a) * r, Math.sin(a) * r); }
+  g.closePath(); g.fill(); g.restore();
+}
+export function drawPop(g, p, a, c) {
+  if (a < 0 || a > POP_MS) return;
+  const big = p.size ?? 1, r = c * 0.4;
+  g.save();
+  if (a < 380) {                                                    // the shock ring, then a thinner white one just behind it
+    const k = a / 380;
+    g.globalAlpha = 0.9 * (1 - k); g.strokeStyle = COL.gold; g.lineWidth = 0.4 + 1.8 * (1 - k);
+    g.beginPath(); g.arc(p.x, p.y, r + c * 2.1 * big * easeOut(k), 0, 6.2832); g.stroke();
+    if (a > 50) { const k2 = (a - 50) / 330; g.globalAlpha = 0.7 * (1 - k2); g.strokeStyle = COL.paper; g.lineWidth = 0.3 + 0.9 * (1 - k2); g.beginPath(); g.arc(p.x, p.y, r + c * 1.4 * big * easeOut(k2), 0, 6.2832); g.stroke(); }
+  }
+  if (a < 230) {                                                    // the coin itself: swells to 1.5x in 70 ms, flashes white, shrinks away
+    const sc = Math.max(0, a < 70 ? 1 + 0.5 * (a / 70) : 1.5 * (1 - (a - 70) / 160)), flash = a < 70 ? a / 70 : Math.max(0, 1 - (a - 70) / 160);
+    g.globalAlpha = 1; coinFace(g, p.x, p.y, r * sc * big, {}, 0);
+    g.globalAlpha = 0.75 * flash; dot(g, p.x, p.y, r * sc * big * 1.02, '#ffffff');
+  }
+  const k = a / POP_MS, e = easeOut(k);
+  for (let i = 0; i < 8; i++) {                                     // sparkles fly out, spin and twinkle
+    const ang = i * Math.PI / 4 + p.spin, d = c * (0.35 + (i & 1 ? 1.3 : 1.9) * big * e);
+    const tw = 0.75 + 0.25 * Math.sin(a / 35 + i * 1.7), s = c * (i & 1 ? 0.22 : 0.32) * (1 - k) * tw;
+    if (s <= 0.05) continue;
+    g.globalAlpha = Math.min(1, 1.6 * (1 - k));
+    star(g, p.x + Math.cos(ang) * d, p.y + Math.sin(ang) * d, s, a / 140 + i, i & 1 ? COL.paper : COL.gold);
+  }
+  g.restore();
+}
+
 // The whole screen for one view. x: effects and labels from play(); a fresh object is fine.
 export function draw(g, v, x = {}) {
   g.setTransform(RES, 0, 0, RES, 0, 0);
@@ -179,7 +217,9 @@ export function draw(g, v, x = {}) {
   // HUD
   g.fillStyle = COL.hud; g.fillRect(0, 0, W, HUD);
   const inDebt = v.debt > 0, warn = inDebt && v.month_moves_left <= WARN && !v.over;
-  text(g, 'DEBT', 3, 3, COL.dim); text(g, money(v.debt), 3, 9, inDebt ? COL.red : COL.tealLite, 2);
+  const bump = x.now !== undefined && x.bumpAt !== undefined ? x.now - x.bumpAt : 1e9;          // the debt number jumps and flashes white when a coin pays it down
+  const bsz = bump < 240 ? 2 + 0.35 * Math.sin(Math.PI * bump / 240) : 2;
+  text(g, 'DEBT', 3, 3, COL.dim); text(g, money(v.debt), 3, 9 - (bsz - 2) * 2, bump < 120 ? COL.paper : inDebt ? COL.red : COL.tealLite, bsz);
   text(g, 'SAVED', 64, 3, COL.dim); text(g, money(v.savings), 64, 9, v.savings ? COL.gold : COL.dim, 2);
   const sc = String(v.score);
   text(g, 'SCORE', W - 3 - 19, 3, COL.dim); text(g, sc, W - 3 - (sc.length * 8 - 2), 9, COL.gold, 2);
@@ -203,7 +243,7 @@ export function draw(g, v, x = {}) {
   }
   for (const it of v.items.filter((i) => i.kind === 'zone' || i.kind === 'marker')) drawItem(g, it, geo, tick);
   for (const it of v.items) if (it.kind !== 'zone' && it.kind !== 'marker') drawItem(g, it, geo, tick);
-  v.snakes.forEach((sn, i) => drawSnake(g, sn, geo, t, { tick, near: v.near, warn, shield: v.shield && i === 0, second: i > 0 }));
+  v.snakes.forEach((sn, i) => drawSnake(g, sn, geo, t, { tick, near: v.near, warn, shield: v.shield && i === 0, second: i > 0, gulp: x.gulp, swallow: x.swallow, turn: x.turn == null ? undefined : i > 0 ? x.turn ^ 1 : x.turn }));
   if (v.dark) {                                                     // Fine Print: 2 squares around the head, 1 around each item
     const lit = new Set(), mark = (cx0, cy0, rad) => { for (let yy = cy0 - rad; yy <= cy0 + rad; yy++) for (let xx = cx0 - rad; xx <= cx0 + rad; xx++) lit.add(`${xx},${yy}`); };
     for (const sn of v.snakes) mark(sn.cells[0][0], sn.cells[0][1], 2);
@@ -214,9 +254,15 @@ export function draw(g, v, x = {}) {
     g.fillStyle = 'rgba(3,5,9,0.93)';
     for (let yy = 0; yy < v.h; yy++) for (let xx = 0; xx < v.w; xx++) if (!lit.has(`${xx},${yy}`)) g.fillRect(px(geo, xx), py(geo, yy), c, c);
   }
+  if (x.now !== undefined) for (const p of x.pops ?? []) drawPop(g, p, x.now - p.t0, c);
   for (const p of x.parts ?? []) { g.globalAlpha = Math.max(0, p.life / 16); g.fillStyle = p.col; g.fillRect(p.x - 0.7, p.y - 0.7, 1.4, 1.4); }
   g.globalAlpha = 1;
-  for (const f of x.floats ?? []) { const w = String(f.text).length * 4 - 1; text(g, f.text, Math.max(1, Math.min(W - w - 1, f.x - w / 2)), f.y, f.col); }
+  for (const f of x.floats ?? []) {
+    const sz = f.big ? (f.age < 3 ? 2 : 1.5) : 1, w = String(f.text).length * 4 * sz - sz;     // a payment's "-$100" lands big, then settles
+    g.globalAlpha = Math.min(1, f.ttl / 8);
+    text(g, f.text, Math.max(1, Math.min(W - w - 1, f.x - w / 2)), f.y - (sz - 1) * 2.5, f.col, sz);
+    g.globalAlpha = 1;
+  }
   if (x.flash && x.flash.ttl > 0) { g.globalAlpha = Math.min(0.5, x.flash.ttl / x.flash.max * 0.5); g.fillStyle = x.flash.col; g.fillRect(0, HUD, W, AREA); g.globalAlpha = 1; }
   // footer: the mode and the best
   g.fillStyle = COL.hud; g.fillRect(0, HUD + AREA, W, FOOT);
@@ -230,15 +276,20 @@ export function draw(g, v, x = {}) {
 
 // ---------- effects from the core's events ----------
 function effects() {
-  const fx = { parts: [], floats: [], flash: null, shake: 0, label: '', labelTtl: 0, seed: 12345 };
+  const fx = { parts: [], floats: [], pops: [], gulps: [], flash: null, shake: 0, label: '', labelTtl: 0, seed: 12345, now: 0, bumpAt: undefined };
   const rnd = () => { fx.seed = (Math.imul(fx.seed, 1664525) + 1013904223) >>> 0; return fx.seed / 4294967296; };
   const burst = (x, y, col, n) => { for (let i = 0; i < n; i++) { const a = rnd() * 6.283, sp = 0.3 + rnd() * 0.9; fx.parts.push({ x, y, vx: Math.cos(a) * sp, vy: Math.sin(a) * sp - 0.3, life: 10 + (rnd() * 6 | 0), col }); } };
-  const float = (x, y, textStr, col) => fx.floats.push({ x, y, text: textStr, col, ttl: 30 });
+  const float = (x, y, textStr, col, big = false) => fx.floats.push({ x, y, text: textStr, col, ttl: 30, age: 0, big });
+  const chomp = (x, y, n, debt) => {                                // eating a coin: it bursts, the head bites, a lump slides down the body, the debt number jumps
+    fx.pops.push({ x, y, t0: fx.now, spin: rnd() * 0.8, size: n > 1 ? 1.35 : 1 });
+    fx.gulps.push(fx.now);
+    if (debt) fx.bumpAt = fx.now;
+  };
   fx.event = (e, geo) => {
     const cx = px(geo, e.x + 0.5), cy = py(geo, e.y + 0.5);
     switch (e.kind) {
-      case 'pay': burst(cx, cy, COL.gold, 12); float(cx, cy - 4, `-${money(e.n || 1)}`, COL.tealLite); break;
-      case 'save': burst(cx, cy, COL.gold, 10); float(cx, cy - 4, `+${10 * (e.n || 1)}`, COL.gold); break;
+      case 'pay': chomp(cx, cy, e.n || 1, true); burst(cx, cy, COL.gold, 14); float(cx, cy - geo.cell * 0.6 - 7, `-${money(e.n || 1)}`, COL.tealLite, true); break;
+      case 'save': chomp(cx, cy, e.n || 1, false); burst(cx, cy, COL.gold, 12); float(cx, cy - geo.cell * 0.6 - 7, `+${10 * (e.n || 1)}`, COL.gold, true); break;
       case 'interest': float(cx, cy - 2, e.debt ? `+${money(e.n || 1)}` : `+${10 * (e.n || 1)}`, e.debt ? COL.red : COL.gold); break;
       case 'debtfree': fx.flash = { col: COL.gold, ttl: 24, max: 24 }; fx.label = 'DEBT FREE'; fx.labelTtl = 50; break;
       case 'crash': fx.flash = { col: COL.red, ttl: 14, max: 14 }; fx.shake = 10; burst(cx, cy, COL.red, 14); break;
@@ -255,11 +306,19 @@ function effects() {
   fx.tick = () => {
     for (const p of fx.parts) { p.x += p.vx; p.y += p.vy; p.life--; }
     fx.parts = fx.parts.filter((p) => p.life > 0);
-    for (const f of fx.floats) { f.y -= 0.35; f.ttl--; }
+    for (const f of fx.floats) { f.y -= 0.35; f.ttl--; f.age++; }
     fx.floats = fx.floats.filter((f) => f.ttl > 0);
     if (fx.flash) fx.flash.ttl--;
     if (fx.shake > 0) fx.shake--;
     if (fx.labelTtl > 0 && --fx.labelTtl === 0) fx.label = '';
+  };
+  // Every animation frame: drop finished pops; the head's gulp (up in 90 ms, back by 260 ms) and where each swallowed lump is along the body.
+  fx.anim = (now) => {
+    fx.pops = fx.pops.filter((p) => now - p.t0 <= POP_MS);
+    fx.gulps = fx.gulps.filter((t0) => now - t0 < 1500);
+    let gulp = 0;
+    for (const t0 of fx.gulps) { const a = now - t0; gulp = Math.max(gulp, a < 90 ? a / 90 : a < 260 ? 1 - (a - 90) / 170 : 0); }
+    return { gulp, swallow: fx.gulps.map((t0) => (now - t0 - 140) / 38).filter((s) => s >= 0) };
   };
   return fx;
 }
@@ -306,7 +365,10 @@ export function play(canvas, seed, { best = 0, opts } = {}) {
   const render = (extra = {}) => {
     const shaken = fx.shake > 0;
     if (shaken) { g.save(); g.translate(((fx.shake & 1) ? 1 : -1) * 0.6 * RES, 0); }
-    draw(g, v, { best, mode: footer, step: stepTicks, frac: Math.min(acc / STEP_MS, 0.99), parts: fx.parts, floats: fx.floats, flash: fx.flash, label: fx.label, ...extra });
+    const an = fx.anim(last);
+    draw(g, v, { best, mode: footer, step: stepTicks, frac: Math.min(acc / STEP_MS, 0.99), parts: fx.parts, floats: fx.floats, flash: fx.flash, label: fx.label,
+      now: last, pops: fx.pops, bumpAt: fx.bumpAt, gulp: an.gulp, swallow: an.swallow, turn: s.queue[0],   // the head already faces an accepted turn: instant feedback that the press was taken
+      ...extra });
     if (shaken) g.restore();
   };
   const frame = (now) => {
@@ -326,6 +388,7 @@ export function play(canvas, seed, { best = 0, opts } = {}) {
       v = view(s); tick = v.tick;
       const geo = geoOf(v);
       crashed = false;
+      fx.now = last;
       for (const e of v.events ?? []) { fx.event({ ...e, debt: v.debt > 0 }, geo); if (e.kind === 'crash') crashed = true; }
       fx.tick();
     }

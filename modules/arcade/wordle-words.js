@@ -151,15 +151,41 @@ export const MAX_GUESSES = 6;
 // What the game uses: only the entries whose term and meaning are in the course's lesson file on this server, so a word from a section that is
 // not live yet stays out until its lessons ship (then the day-to-word order shifts; a game in progress keeps its stored word).
 const lessonPairs = (course) => {
-  const pairs = new Set();
-  const walk = (o) => { if (Array.isArray(o)) o.forEach(walk); else if (o && typeof o === 'object') { if (o.term && o.meaning) pairs.add(`${o.term}\u0000${o.meaning}`); Object.values(o).forEach(walk); } };
+  const pairs = new Map();                                             // "term\0meaning" -> title of the unit it is taught in (the first one found)
+  const walk = (o, unit) => {
+    if (Array.isArray(o)) o.forEach((x) => walk(x, unit));
+    else if (o && typeof o === 'object') {
+      if (Array.isArray(o.levels) && typeof o.title === 'string') unit = o.title;     // a unit: { id, title, levels }
+      if (o.term && o.meaning && !pairs.has(`${o.term}\u0000${o.meaning}`)) pairs.set(`${o.term}\u0000${o.meaning}`, unit);
+      Object.values(o).forEach((x) => walk(x, unit));
+    }
+  };
   try { walk(JSON.parse(readFileSync(new URL(`../learn/content/${course}.json`, import.meta.url), 'utf8'))); } catch { /* no lesson file: no words */ }
   return pairs;
 };
-export const WORDS = Object.fromEntries(Object.entries(ALL_WORDS).map(([course, list]) => {
-  const pairs = lessonPairs(course);
-  return [course, list.filter((e) => pairs.has(`${e.term}\u0000${e.meaning}`))];
-}));
+const PAIRS = Object.fromEntries(Object.keys(ALL_WORDS).map((c) => [c, lessonPairs(c)]));
+export const WORDS = Object.fromEntries(Object.entries(ALL_WORDS).map(([course, list]) => [course, list.filter((e) => PAIRS[course].has(`${e.term}\u0000${e.meaning}`))]));
+
+// Hints are earned by misses and built here, on the server, so a locked hint never reaches the browser. Level 1 is free (the section, blanked like the others), level 2 after 2 misses
+// (the lesson's title), level 3 after 4 (the meaning). In the two hint texts every occurrence of the answer and of each 4+ letter word of the term becomes underscores.
+export const HINT_AFTER = [0, 2, 4];
+const bases = (e) => [...new Set([e.word, ...e.term.split(/[^A-Za-z]+/).filter((w) => w.length >= 4)].map((w) => w.toLowerCase()))].sort((x, y) => y.length - x.length);
+const prefix = (a, b) => { let n = 0; while (n < a.length && a[n] === b[n]) n++; return n; };
+// A word is given away when it holds the answer or a term word, or shares a stem with one: a common prefix of at least 4 letters ("invest", "lends", "borrow").
+export const givesAway = (w, e) => { w = w.toLowerCase(); return w.length >= 4 && bases(e).some((b) => w.includes(b) || prefix(w, b) >= 4); };
+const blank = (text, e) => {
+  const words = bases(e);
+  return text.replace(new RegExp(words.join('|'), 'gi'), (m) => '_'.repeat(m.length)).replace(/[A-Za-z]{4,}/g, (w) => (givesAway(w, e) ? '_'.repeat(w.length) : w));
+};
+// A hint with fewer than 2 words left that show real letters is no help: that tier is skipped.
+const useful = (t) => t.split(/\s+/).filter((w) => /[A-Za-z]/.test(w) && !w.includes('_')).length >= 2;
+export const unitTitle = (course, e) => PAIRS[course]?.get(`${e.term}\u0000${e.meaning}`) || '';
+export const hintTexts = (course, e) => [
+  { level: 1, label: 'From the section', text: blank(e.section, e) },   // blanked too ("Investing Foundations" for INVESTING); always shown
+  ...(unitTitle(course, e) ? [{ level: 2, label: 'From the lesson', text: blank(unitTitle(course, e), e) }] : []),
+  ...(e.meaning ? [{ level: 3, label: 'What it means', text: blank(e.meaning, e) }] : []),
+].filter((h) => h.text && (h.level === 1 || useful(h.text)));
+export const hintsFor = (course, e, misses) => hintTexts(course, e).filter((h) => misses >= HINT_AFTER[h.level - 1]);
 
 const DAY0 = Date.UTC(2026, 0, 1);
 export const dayNumber = (day) => { const [y, m, d] = day.split('-').map(Number); return Math.round((Date.UTC(y, m - 1, d) - DAY0) / 864e5); };

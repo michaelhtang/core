@@ -15,7 +15,7 @@ async function world(config = SMALL) {
   const srv = await boot({ config, clock: createClock({ now: () => t }) });
   const w = await seeded(srv, 1, { transfers: false });
   const other = await addClass(srv, w.teacher, 'Block 2', 1);
-  srv.app.db.prepare("INSERT OR IGNORE INTO arcade_class_off (class_id, game) SELECT id, 'wordle' FROM classes").run(); for (const t of ['today_errands', 'today_state']) srv.app.db.exec(`DELETE FROM ${t}`);   // Today picks 3 errands a day: with four arcade errands on one could miss the day, so these worlds drop FinWord and let the day be picked again
+  for (const g of ['wordle', 'quickcash']) srv.app.db.prepare("INSERT OR IGNORE INTO arcade_class_off (class_id, game) SELECT id, ? FROM classes").run(g); for (const t of ['today_errands', 'today_state']) srv.app.db.exec(`DELETE FROM ${t}`);   // Today picks 3 errands a day: with five arcade errands on some could miss the day, so these worlds drop FinWord and Quick Cash Counter and let the day be picked again
   const nextDay = () => { t += 60_000; srv.app.world.advance({ months: 1 }); t += 60_000; };
   return { srv, ...w, other, nextDay, cleanup: srv.cleanup };
 }
@@ -41,7 +41,7 @@ test('off for one class: hidden there, cannot start, no errand from the next day
     assert.ok((await titles(a)).includes('Play a round of Diversify'));
     assert.ok((await titles(b)).includes('Play a round of Bill Dash'), 'Block 2 still gets it');
     const teach = (await w.teacher.get('/api/arcade/teach')).json.classes.find((c) => c.id === w.cls.id);
-    assert.deepEqual(teach.switches.filter((x) => !x.linked).map((x) => [x.key, x.on]), [['billdash', false], ['diversify', true], ['debtsnake', true], ['wordle', false]]);
+    assert.deepEqual(teach.switches.filter((x) => !x.linked).map((x) => [x.key, x.on]), [['billdash', false], ['diversify', true], ['debtsnake', true], ['quickcash', false], ['wordle', false], ['wordsearch', true]]);
     assert.equal((await sw(w, w.cls.id, 'billdash', true)).status, 200);
     assert.equal((await sw(w, w.cls.id, 'billdash', true)).status, 200, 'switching on twice is fine');
     assert.deepEqual(await arcadeGames(a), ['billdash', 'diversify', 'debtsnake']);
@@ -85,6 +85,6 @@ test('with the real config, the switches and both errands still load', async () 
   const w = await world(REAL);
   try {
     const teach = (await w.teacher.get('/api/arcade/teach')).json.classes[0];
-    assert.deepEqual(teach.switches.map((x) => x.key), ['billdash', 'diversify', 'debtsnake', 'wordle', 'stax', 'payday']);
+    assert.deepEqual(teach.switches.map((x) => x.key), ['billdash', 'diversify', 'debtsnake', 'quickcash', 'wordle', 'wordsearch', 'stax', 'payday']);
   } finally { await w.cleanup(); }
 });

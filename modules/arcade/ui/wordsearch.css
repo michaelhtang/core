@@ -1,0 +1,30 @@
+/* The daily word search (games/wordsearch.js; this file sits in ui/ because a test node --checks everything in ui/games). The grid fits 10 columns at 375 px; touch-action none so a drag selects instead of scrolling. */
+.arc-ws-levels { display: flex; gap: 8px; }
+.arc-ws-levels button { flex: 1; }
+.arc-ws-grid { --n: 9; display: grid; gap: 3px; width: min(100%, calc(var(--n) * 46px)); justify-self: center; touch-action: none; -webkit-user-select: none; user-select: none; }
+.arc-ws-row { display: grid; grid-template-columns: repeat(var(--n), minmax(0, 1fr)); gap: 3px; }
+button.arc-ws-cell, button.arc-ws-cell:hover:not(:disabled) {
+  aspect-ratio: 1; min-height: 0; min-width: 0; padding: 0; display: grid; place-items: center;
+  font: 700 clamp(0.95rem, 4.6vw, 1.3rem) var(--font-pixel, monospace); letter-spacing: 0; text-transform: uppercase;
+  color: var(--ink); background: #1a2546; border: 1px solid #2c3a66; border-radius: 6px; box-shadow: none; cursor: pointer; touch-action: none;
+}
+button.arc-ws-cell:focus-visible { outline: 3px solid var(--accent); outline-offset: 1px; }
+/* found words: eight colours of our own, readable with dark letters */
+.arc-ws-f0 { --ws: #7fd3a8; } .arc-ws-f1 { --ws: #8fb8ff; } .arc-ws-f2 { --ws: #f5b86a; } .arc-ws-f3 { --ws: #d79cf0; }
+.arc-ws-f4 { --ws: #6fd6dc; } .arc-ws-f5 { --ws: #f0909a; } .arc-ws-f6 { --ws: #c4d96b; } .arc-ws-f7 { --ws: #f2d27a; }
+button.arc-ws-cell[class*='arc-ws-f'], button.arc-ws-cell[class*='arc-ws-f']:hover:not(:disabled) { background: var(--ws); border-color: var(--ws); color: #0b1330; }
+button.arc-ws-cell.arc-ws-sel, button.arc-ws-cell.arc-ws-sel:hover:not(:disabled) { background: var(--accent); border-color: #fff; color: #0b1330; }
+button.arc-ws-cell.arc-ws-start { box-shadow: 0 0 0 3px #fff inset; animation: arc-ws-pulse 1.2s ease-in-out infinite alternate; }
+@keyframes arc-ws-pulse { from { box-shadow: 0 0 0 3px #fff inset; } to { box-shadow: 0 0 0 3px var(--accent) inset; } }
+.arc-ws-miss { animation: arc-ws-shake 0.3s; }
+@keyframes arc-ws-shake { 25% { transform: translateX(-4px); } 75% { transform: translateX(4px); } }
+@media (prefers-reduced-motion: reduce) { button.arc-ws-cell.arc-ws-start, .arc-ws-miss { animation: none; } }
+.arc-ws-status { margin: 0; text-align: center; }
+.arc-ws-clues { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; counter-reset: ws; }
+.arc-ws-clue { display: grid; gap: 4px; padding: 10px 12px; border: 1px solid var(--row-line); border-left: 4px solid var(--field-border); border-radius: var(--radius); }
+.arc-ws-clue p { margin: 0; }
+.arc-ws-clue.arc-ws-got { border-left-color: var(--ws); }
+.arc-ws-clue button { justify-self: start; }
+.arc-ws-word { font-weight: 800; letter-spacing: 0.08em; color: var(--accent); }
+/* a phone: the grid takes the card's side padding too, and most of the panel's, so 10 columns stay about 30 px each */
+@media (max-width: 520px) { .arc-ws-grid { gap: 2px; margin-inline: -26px; width: calc(100% + 52px); } .arc-ws-row { gap: 2px; } }

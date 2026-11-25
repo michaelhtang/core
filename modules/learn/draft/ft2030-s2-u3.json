@@ -1,0 +1,1071 @@
+{
+  "id": "ft2030-s2-u3",
+  "title": "From data to paperwork",
+  "blurb": "Which survey answers to trust, a price in whole dollars, and where the money goes.",
+  "outcome_codes": [
+    "ENT2020 2.5",
+    "ENT2020 3.1",
+    "ENT2020 3.3"
+  ],
+  "levels": [
+    {
+      "id": "ft2030-s2-u3-l1",
+      "title": "Whose answers do you trust?",
+      "kind": "lesson",
+      "learn": [
+        "Say why strangers' answers can be trusted more than friends'.",
+        "Pick keep, reprice, reposition or replace using a number."
+      ],
+      "cards": [
+        {
+          "text": "A sample is the group of people who answered your survey. A team often ends up with two. The in-class sample is people who know the team. The outside sample is people who do not. The two samples can tell different stories."
+        },
+        {
+          "text": "Sampling bias means the people who answered lean one way, so the result is not a fair picture of your real customers. Friends want to be nice, so they say yes and name a high price. Strangers have no reason to be kind."
+        },
+        {
+          "text": "Twist Stop sells cinnamon twists at $4.00. Its survey asked: would you buy one at that price? The two samples gave very different answers.",
+          "figure": {
+            "kind": "table",
+            "title": "Twist Stop survey",
+            "columns": [
+              "Sample",
+              "Answers",
+              "Would buy",
+              "Share"
+            ],
+            "rows": [
+              [
+                "In class",
+                "25",
+                "20",
+                "80%"
+              ],
+              [
+                "Outside",
+                "20",
+                "8",
+                "40%"
+              ]
+            ]
+          }
+        },
+        {
+          "text": "When the samples disagree, plan with the outside number. It is closer to what real customers will do. A gap is counted in percentage points: 80% down to 40% is a drop of 40 points. A gap is not a failure. But three outside answers can swing on one person, so get enough."
+        },
+        {
+          "text": "There are four honest options after a survey. Keep needs evidence, not just a lack of bad news.",
+          "figure": {
+            "kind": "table",
+            "title": "Four options",
+            "columns": [
+              "Option",
+              "Use it when"
+            ],
+            "rows": [
+              [
+                "Keep",
+                "The data supports the idea as written"
+              ],
+              [
+                "Reprice",
+                "Right product, wrong price"
+              ],
+              [
+                "Reposition",
+                "Right product, wrong customer or moment"
+              ],
+              [
+                "Replace",
+                "The data says no"
+              ]
+            ]
+          }
+        },
+        {
+          "text": "A pivot changes one part of the concept: the product, the customer, the benefit or how they get it. A pretzel stand at lunch finds most students bring lunch. The same pretzels after practice reach hungry students at a new moment. Same product, different business."
+        }
+      ],
+      "questions": [
+        {
+          "id": "ft2030-s2-u3-l1-q1",
+          "label": "Outside sample",
+          "prompt": "Dana's team handed its survey to 30 classmates and to 15 students it had never met. Which group is the outside sample?",
+          "type": "choice",
+          "terms": [
+            {
+              "term": "sample",
+              "meaning": "The group of people who answered your survey."
+            }
+          ],
+          "hint": "Which group does not know the team?",
+          "options": [
+            {
+              "text": "The 30 classmates",
+              "why": "The classmates know the team. They are the in-class sample."
+            },
+            {
+              "text": "The 15 students it had never met",
+              "why": "These people do not know the team, so they are the outside sample."
+            },
+            {
+              "text": "All 45 people together",
+              "why": "The outside sample is only the people outside the team's circle."
+            },
+            {
+              "text": "The members of Dana's team",
+              "why": "The team writes the survey. It is not a sample of customers."
+            }
+          ],
+          "answer": 1
+        },
+        {
+          "id": "ft2030-s2-u3-l1-q2",
+          "label": "Kind answers",
+          "prompt": "Why do answers from friends tend to be higher than answers from strangers?",
+          "type": "choice",
+          "terms": [
+            {
+              "term": "sampling bias",
+              "meaning": "When the group that answered leans one way, so the result is not a fair picture of your real customers."
+            }
+          ],
+          "hint": "Think about how you answer a friend who asks, \"Would you buy this?\"",
+          "options": [
+            {
+              "text": "Friends know the team and do not want to let it down",
+              "why": "People who know you lean toward being kind. That is sampling bias."
+            },
+            {
+              "text": "Friends always have more money",
+              "why": "Money has nothing to do with it. Friends lean kind because they know the team."
+            },
+            {
+              "text": "Friends read the question more carefully",
+              "why": "Reading carefully does not change how kind someone feels."
+            },
+            {
+              "text": "Friends are a bigger group",
+              "why": "Size is not the reason. Friends lean kind even in a small group."
+            }
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ft2030-s2-u3-l1-q3",
+          "label": "Share who buy",
+          "prompt": "Pixel Pins asked 40 classmates if they would buy a pin at the posted price. 30 said yes. What percent said yes?",
+          "type": "number",
+          "hint": "Divide the number who said yes by the number asked.",
+          "unit": "%",
+          "answer": 75,
+          "tolerance": 0,
+          "why": "A share is the count who said yes divided by everyone who answered.",
+          "working": "30 / 40 = 0.75 = 75%.",
+          "traps": [
+            {
+              "value": 10,
+              "why": "That is the count who did not say yes. Divide yes by all answers."
+            }
+          ],
+          "miss": "Divide yes answers by all answers, then write it as a percent."
+        },
+        {
+          "id": "ft2030-s2-u3-l1-q4",
+          "label": "The gap",
+          "prompt": "Chai Cart asked 50 classmates: 35 would buy. It asked 20 students it did not know: 5 would buy. By how many percentage points is the outside share lower than the in-class share?",
+          "type": "number",
+          "terms": [
+            {
+              "term": "percentage points",
+              "meaning": "The difference between two percentages, such as 80% down to 40%."
+            }
+          ],
+          "hint": "Work out both shares first, then subtract the smaller from the larger.",
+          "unit": "%",
+          "answer": 45,
+          "tolerance": 0,
+          "why": "The gap is the in-class share minus the outside share.",
+          "working": "35 / 50 = 70%. 5 / 20 = 25%. 70 - 25 = 45 points.",
+          "traps": [
+            {
+              "value": 25,
+              "why": "That is the outside share itself. The question asks for the gap between the two shares."
+            }
+          ],
+          "miss": "Find each share as a percent first. Then take the difference."
+        },
+        {
+          "id": "ft2030-s2-u3-l1-q5",
+          "label": "Which to plan with",
+          "prompt": "Chai Cart's two samples were about the same size. Which number should it plan with?",
+          "type": "choice",
+          "terms": [
+            {
+              "term": "sampling bias",
+              "meaning": "When the group that answered leans one way, so the result is not a fair picture of your real customers."
+            }
+          ],
+          "hint": "Which group has no reason to be kind to the team?",
+          "options": [
+            {
+              "text": "The in-class share, because those people know the product",
+              "why": "They know the team, which is what makes their answers kind."
+            },
+            {
+              "text": "The average of the two, because it treats both fairly",
+              "why": "An average keeps the kind answers in. The outside number is the safer one to plan with."
+            },
+            {
+              "text": "The higher share, because it gives more room",
+              "why": "The higher number is the kind one. Planning on it risks a plan with too few buyers."
+            },
+            {
+              "text": "The outside share, because strangers have no reason to be kind",
+              "why": "Outside answers are closer to what real customers will do."
+            }
+          ],
+          "answer": 3
+        },
+        {
+          "id": "ft2030-s2-u3-l1-q6",
+          "label": "Name the option",
+          "prompt": "A bike-light stand finds that students like the lights and would buy, but only at $5. It charges $9. Which option fits?",
+          "type": "choice",
+          "hint": "What is wrong with the idea: the product, the customer or the price?",
+          "options": [
+            {
+              "text": "Keep",
+              "why": "Keep needs evidence that the idea works as written. The price does not match the data."
+            },
+            {
+              "text": "Reposition",
+              "why": "The customer and moment are fine here. The price is the problem."
+            },
+            {
+              "text": "Reprice",
+              "why": "It is the right product at the wrong price."
+            },
+            {
+              "text": "Replace",
+              "why": "Students would buy, so the data does not say no."
+            }
+          ],
+          "answer": 2
+        },
+        {
+          "id": "ft2030-s2-u3-l1-q7",
+          "label": "A reposition case",
+          "prompt": "A hot-snack team sells at lunch. Its survey says most students bring lunch, but nearly everyone waiting for the late bus would buy. Which option fits?",
+          "type": "choice",
+          "hint": "Who is the customer the survey points to, and when are they there?",
+          "options": [
+            {
+              "text": "Reprice",
+              "why": "Nothing in the survey says the price is the problem."
+            },
+            {
+              "text": "Reposition",
+              "why": "The product is fine. The team aimed at the wrong customer and moment, so it moves to the bus line."
+            },
+            {
+              "text": "Replace",
+              "why": "Buyers exist, so the data does not say no."
+            },
+            {
+              "text": "Keep",
+              "why": "The data does not support selling at lunch as written."
+            }
+          ],
+          "answer": 1
+        },
+        {
+          "id": "ft2030-s2-u3-l1-q8",
+          "label": "Enough to keep",
+          "prompt": "Which is enough evidence to choose Keep?",
+          "type": "choice",
+          "hint": "Keep needs evidence from outside the team's circle.",
+          "options": [
+            {
+              "text": "Outside answers show buyers at a price above cost",
+              "why": "This is evidence from strangers, at a price that works."
+            },
+            {
+              "text": "Nobody told the team the idea was bad",
+              "why": "A lack of bad news is not evidence."
+            },
+            {
+              "text": "Most classmates said yes",
+              "why": "Classmates know the team, so their yes is kind and weak evidence."
+            },
+            {
+              "text": "The team likes the product",
+              "why": "A liking is an opinion, not data from customers."
+            }
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ft2030-s2-u3-l1-q9",
+          "label": "Biggest gap",
+          "prompt": "Every team's in-class share was 85%. The bars show each team's outside share. Tap the team whose two samples disagree the most.",
+          "type": "point",
+          "figure": {
+            "kind": "bars",
+            "title": "Outside share who would buy",
+            "unit": "%",
+            "bars": [
+              {
+                "label": "Sock Swap",
+                "value": 70
+              },
+              {
+                "label": "Tea Cart",
+                "value": 45
+              },
+              {
+                "label": "Bead Kits",
+                "value": 30
+              },
+              {
+                "label": "Note Packs",
+                "value": 60
+              }
+            ]
+          },
+          "hint": "The biggest gap sits where the outside share is furthest from the in-class share.",
+          "answer": 2,
+          "why": "The outside share is lowest for Bead Kits, so its gap from 85% is biggest.",
+          "miss": "Compare each bar to the in-class share. Look for the one furthest below it."
+        }
+      ]
+    },
+    {
+      "id": "ft2030-s2-u3-l2",
+      "title": "A price in whole dollars",
+      "kind": "lesson",
+      "learn": [
+        "Round a price up or down and see what it does to break-even.",
+        "Use survey shares to choose the price that leaves more money."
+      ],
+      "cards": [
+        {
+          "text": "Some markets take payment only in $1 tokens, so there is no change. Then every price is a whole number of dollars. A plan of $2.50 cannot be charged. The price becomes $2 or $3."
+        },
+        {
+          "text": "A payment system is a set of rules that moves money from buyers to sellers. A market with $1 tokens runs a small one: the office issues tokens, sellers accept them, and hand them back for money. A token not handed back is a liability: the office still owes that value. $400 out and $310 back leaves $90 out."
+        },
+        {
+          "text": "Rounding is a real choice, and each way has a cost. Rounding down gives a lower margin per item but more buyers. Rounding up gives a higher margin but fewer buyers. Your survey tells you which way to go.",
+          "figure": {
+            "kind": "table",
+            "title": "Rounding a price",
+            "columns": [
+              "Effect",
+              "Round down",
+              "Round up"
+            ],
+            "rows": [
+              [
+                "Margin per item",
+                "Lower",
+                "Higher"
+              ],
+              [
+                "Likely buyers",
+                "More",
+                "Fewer"
+              ],
+              [
+                "Items to break even",
+                "More",
+                "Fewer"
+              ]
+            ]
+          }
+        },
+        {
+          "text": "Sprout Cups sells seedling cups. It planned $3.50, which the market cannot take. Fixed costs are $84.00. Each cup costs $1.20. Break-even is fixed costs divided by margin, rounded up to a whole cup.",
+          "figure": {
+            "kind": "table",
+            "title": "Sprout Cups at two prices",
+            "columns": [
+              "Price",
+              "Margin",
+              "Cups to break even"
+            ],
+            "rows": [
+              [
+                "$3.00",
+                "$1.80",
+                "47"
+              ],
+              [
+                "$4.00",
+                "$2.80",
+                "30"
+              ]
+            ]
+          }
+        },
+        {
+          "text": "Sprout Cups asked 40 outside people if they would buy at each price. About 120 people pass the stand in a day. Buyers are the people who pass times the share who would buy.",
+          "figure": {
+            "kind": "table",
+            "title": "Outside survey",
+            "columns": [
+              "Price",
+              "Would buy",
+              "Share"
+            ],
+            "rows": [
+              [
+                "$3.00",
+                "28 of 40",
+                "70%"
+              ],
+              [
+                "$4.00",
+                "12 of 40",
+                "30%"
+              ]
+            ]
+          }
+        },
+        {
+          "text": "Money left = buyers x margin - fixed costs. The survey, not a hunch, settles the price. Then check the break-even is still below your buyers.",
+          "figure": {
+            "kind": "table",
+            "title": "Sprout Cups, money left",
+            "columns": [
+              "Price",
+              "Buyers",
+              "Money left"
+            ],
+            "rows": [
+              [
+                "$3.00",
+                "84",
+                "$67.20"
+              ],
+              [
+                "$4.00",
+                "36",
+                "$16.80"
+              ]
+            ]
+          }
+        }
+      ],
+      "questions": [
+        {
+          "id": "ft2030-s2-u3-l2-q1",
+          "label": "Whole dollars",
+          "prompt": "The market takes only whole-dollar payments. Dev planned to charge $4.25. Which two prices can Dev choose from?",
+          "type": "choice",
+          "hint": "Which two whole numbers sit on each side of 4.25?",
+          "options": [
+            {
+              "text": "$4.00 or $4.50",
+              "why": "A half dollar is not a whole dollar. $4.50 cannot be paid with $1 tokens."
+            },
+            {
+              "text": "$4.25 or $5.00",
+              "why": "$4.25 is the plan itself, and it is not a whole number."
+            },
+            {
+              "text": "$3 or $4",
+              "why": "$3 is not next to $4.25. The nearest whole dollars are on each side of it."
+            },
+            {
+              "text": "$4 or $5",
+              "why": "The nearest whole dollars on each side of $4.25."
+            }
+          ],
+          "answer": 3
+        },
+        {
+          "id": "ft2030-s2-u3-l2-q2",
+          "label": "New margin",
+          "prompt": "Rosa planned $5.40. Her survey says to round down to the nearest whole dollar. Each item costs $2.10. What is her margin per item at the new price?",
+          "type": "number",
+          "terms": [
+            {
+              "term": "contribution margin",
+              "meaning": "The price minus the variable cost of one item: what each sale puts toward the fixed costs."
+            }
+          ],
+          "hint": "First write the new price, then subtract the cost of one item.",
+          "unit": "$",
+          "answer": 290,
+          "tolerance": 0,
+          "why": "Margin is the new price minus the cost of one item.",
+          "working": "Round down $5.40 to $5.00. $5.00 - $2.10 = $2.90.",
+          "traps": [
+            {
+              "value": 330,
+              "why": "That uses the old price. The market cannot take it, so round first."
+            }
+          ],
+          "miss": "Round the price first, then take the cost of one item off it."
+        },
+        {
+          "id": "ft2030-s2-u3-l2-q3",
+          "label": "Break-even items",
+          "prompt": "A team charges $5.00 for an item that costs $2.10 to make. Its fixed costs are $120.00. How many items must it sell to break even?",
+          "type": "choice",
+          "terms": [
+            {
+              "term": "break-even point",
+              "meaning": "The number of items a business must sell for its sales to cover all of its costs."
+            }
+          ],
+          "hint": "Margin first, then fixed costs divided by the margin.",
+          "options": [
+            {
+              "text": "41 items",
+              "why": "You cannot sell part of an item. At this number the team is still short, so round up."
+            },
+            {
+              "text": "24 items",
+              "why": "That divides by the price. Divide by the margin, which is the price minus the cost."
+            },
+            {
+              "text": "42 items",
+              "why": "Fixed costs divided by the margin, rounded up to a whole item."
+            },
+            {
+              "text": "58 items",
+              "why": "That divides by the cost of one item. Divide by the margin."
+            }
+          ],
+          "answer": 2
+        },
+        {
+          "id": "ft2030-s2-u3-l2-q4",
+          "label": "Round up effect",
+          "prompt": "A team rounds its price up from $2.50 to $3.00. What happens to its margin per item and to the items it needs for break-even?",
+          "type": "choice",
+          "hint": "Think about what a higher price leaves from each sale.",
+          "options": [
+            {
+              "text": "Lower margin, fewer items needed",
+              "why": "A higher price does not lower the margin."
+            },
+            {
+              "text": "Higher margin, fewer items needed",
+              "why": "A higher price leaves more on each sale, so fewer sales cover the fixed costs."
+            },
+            {
+              "text": "Higher margin, more items needed",
+              "why": "A bigger margin means fewer items cover the fixed costs."
+            },
+            {
+              "text": "Lower margin, more items needed",
+              "why": "Rounding up raises the price, so the margin goes up."
+            }
+          ],
+          "answer": 1
+        },
+        {
+          "id": "ft2030-s2-u3-l2-q5",
+          "label": "Money left",
+          "prompt": "At $4.00 each, a team expects 50 buyers. Each item costs $1.30 and its fixed costs are $96.00. How much money is left after fixed costs? Money left = buyers x margin - fixed costs.",
+          "type": "number",
+          "terms": [
+            {
+              "term": "contribution margin",
+              "meaning": "The price minus the variable cost of one item: what each sale puts toward the fixed costs."
+            }
+          ],
+          "hint": "Find the margin, then multiply by the buyers, then take off the fixed costs.",
+          "unit": "$",
+          "answer": 3900,
+          "tolerance": 0,
+          "why": "The margin from all the buyers pays the fixed costs first. What remains is money left.",
+          "working": "Margin $4.00 - $1.30 = $2.70. 50 x $2.70 = $135.00. $135.00 - $96.00 = $39.00.",
+          "traps": [
+            {
+              "value": 13500,
+              "why": "That is the margin from all buyers. Subtract the fixed costs from it."
+            }
+          ],
+          "miss": "Do not forget to take off the fixed costs at the end."
+        },
+        {
+          "id": "ft2030-s2-u3-l2-q6",
+          "label": "Which way to round",
+          "prompt": "A team planned $2.50. Each item costs $1.00 and fixed costs are $60.00. About 100 people pass by. The outside survey shows the share who would buy at each price. The team picks the price that leaves more money after fixed costs. Which price?",
+          "type": "choice",
+          "figure": {
+            "kind": "table",
+            "title": "Outside survey",
+            "columns": [
+              "Price",
+              "Share who would buy"
+            ],
+            "rows": [
+              [
+                "$2.00",
+                "90%"
+              ],
+              [
+                "$3.00",
+                "60%"
+              ]
+            ]
+          },
+          "terms": [
+            {
+              "term": "contribution margin",
+              "meaning": "The price minus the variable cost of one item: what each sale puts toward the fixed costs."
+            }
+          ],
+          "hint": "Work out money left at each price with the survey shares.",
+          "options": [
+            {
+              "text": "$3, because each sale leaves more and enough still buy",
+              "why": "At $3.00, 60 buyers leave $60.00. At $2.00, 90 buyers leave $30.00."
+            },
+            {
+              "text": "$2, because more students would buy",
+              "why": "More buyers, but each sale leaves only $1.00, so less money is left."
+            },
+            {
+              "text": "$2, because it is the lower price",
+              "why": "A lower price is not the test. The test is money left after fixed costs."
+            },
+            {
+              "text": "Either one, because both sell more than break-even",
+              "why": "Both clear break-even, but they leave different amounts. The prompt asks which leaves more."
+            }
+          ],
+          "answer": 0
+        },
+        {
+          "id": "ft2030-s2-u3-l2-q7",
+          "label": "Tokens still out",
+          "prompt": "A market office issued 520 $1 tokens and sellers have handed back 455 of them. How many dollars of tokens are still out?",
+          "type": "number",
+          "terms": [
+            {
+              "term": "liability",
+              "meaning": "Something you owe, or may have to pay back."
+            }
+          ],
+          "hint": "Subtract the tokens handed back from the tokens issued.",
+          "unit": "$",
+          "answer": 6500,
+          "tolerance": 0,
+          "why": "Tokens not handed back are still a liability of the office.",
+          "working": "520 - 455 = 65 tokens, each worth $1.00, so $65.00.",
+          "traps": [
+            {
+              "value": 45500,
+              "why": "That is the amount handed back. The question asks for what is still out."
+            }
+          ],
+          "miss": "Each token is worth $1. Count the tokens that have not come back."
+        },
+        {
+          "id": "ft2030-s2-u3-l2-q8",
+          "label": "A liability",
+          "prompt": "The market office has sold $1 tokens and not all have come back. What does it mean that the unreturned tokens are a liability?",
+          "type": "choice",
+          "terms": [
+            {
+              "term": "liability",
+              "meaning": "Something you owe, or may have to pay back."
+            }
+          ],
+          "hint": "Who has a claim on the money until a token comes back?",
+          "options": [
+            {
+              "text": "The office has already earned that money",
+              "why": "It is not earned until the token comes back."
+            },
+            {
+              "text": "The tokens are worth nothing now",
+              "why": "A token still holds its value until it is handed back."
+            },
+            {
+              "text": "The sellers owe the office that money",
+              "why": "The office owes the value to the holder of the token."
+            },
+            {
+              "text": "The office still owes that value to whoever hands them in",
+              "why": "The office is holding the money and has not earned it yet."
+            }
+          ],
+          "answer": 3
+        },
+        {
+          "id": "ft2030-s2-u3-l2-q9",
+          "label": "Best price",
+          "prompt": "Each item costs $1.40. The bars show the share of 100 passers-by who would buy at each price. Tap the price that brings in the most margin in total. Fixed costs are the same at every price.",
+          "type": "point",
+          "figure": {
+            "kind": "bars",
+            "title": "Share who would buy",
+            "unit": "%",
+            "bars": [
+              {
+                "label": "$2",
+                "value": 85
+              },
+              {
+                "label": "$3",
+                "value": 55
+              },
+              {
+                "label": "$4",
+                "value": 25
+              },
+              {
+                "label": "$5",
+                "value": 10
+              }
+            ]
+          },
+          "hint": "For each bar, multiply the share by the margin at that price.",
+          "answer": 1,
+          "why": "Buyers times margin is highest at $3.",
+          "miss": "Work out buyers x margin at every price, not only the cheapest or the dearest."
+        }
+      ]
+    },
+    {
+      "id": "ft2030-s2-u3-l3",
+      "title": "Where the money goes",
+      "kind": "lesson",
+      "learn": [
+        "Name where the money goes and work out the net.",
+        "Write a plan for unsold items and a list someone can shop from."
+      ],
+      "cards": [
+        {
+          "text": "Money for a venture comes from different sources. Sales: what customers pay. Fundraising: money given for a purpose. Supplier credit: a supplier lets you take goods now and pay later. A grant: money from a society, a foundation or a government that is not paid back."
+        },
+        {
+          "text": "The plan must say where the money goes. Name the recipient. \"Charity\" is a category. \"The Elm Street Food Pantry\" is a name. Add two sentences on why this cause. Then say how the money gets there: who holds it, who checks the total and how it is paid out. Keep it short."
+        },
+        {
+          "text": "Total raised is all the money collected. Total spent is all the costs. Net funds = raised - spent. Only the net goes to the cause. A stand that raises $300.00 and spends $260.00 sends $40.00.",
+          "figure": {
+            "kind": "table",
+            "title": "A stand's funds",
+            "columns": [
+              "Line",
+              "Amount"
+            ],
+            "rows": [
+              [
+                "Total raised",
+                "$300.00"
+              ],
+              [
+                "Total spent",
+                "$260.00"
+              ],
+              [
+                "Net funds",
+                "$40.00"
+              ]
+            ]
+          }
+        },
+        {
+          "text": "Every venture touches the school. Say the impact, then the fix. \"Our line may block the hallway\" is half an answer. Add \"so we set up by the wall and keep a lane clear\". Also say how people will hear about the purpose. A poster that names the cause makes the same product a different sale."
+        },
+        {
+          "text": "Unsold items are money already spent. \"We will figure it out\" is not a plan. Real plans: sell the rest cheaper on the last day, give it away, take orders before you make, or make small batches and restock. Each one has a cost. Put it in the budget."
+        },
+        {
+          "text": "A purchase list is a shopping list someone else can buy from: exact item and size, packs, price per pack and where the price came from. You buy whole packs. Need 130 cups in packs of 50? Buy 3 packs.",
+          "figure": {
+            "kind": "table",
+            "title": "A purchase list",
+            "columns": [
+              "Item",
+              "Packs",
+              "Per pack",
+              "Line cost"
+            ],
+            "rows": [
+              [
+                "Paper cups, 250 mL, pack of 50",
+                "3",
+                "$6.00",
+                "$18.00"
+              ],
+              [
+                "Lids, pack of 100",
+                "2",
+                "$9.50",
+                "$19.00"
+              ]
+            ]
+          }
+        }
+      ],
+      "questions": [
+        {
+          "id": "ft2030-s2-u3-l3-q1",
+          "label": "Source of money",
+          "prompt": "Cedar Club takes its paper cups from a supplier now and pays for them in two weeks. Which source of money is that?",
+          "type": "choice",
+          "hint": "Who is waiting to be paid?",
+          "options": [
+            {
+              "text": "Fundraising",
+              "why": "Fundraising is money given for a purpose. Here the supplier waits for payment."
+            },
+            {
+              "text": "Sales",
+              "why": "Sales are what customers pay. This is the supplier's arrangement."
+            },
+            {
+              "text": "Supplier credit",
+              "why": "The supplier lets the club take goods now and pay later."
+            },
+            {
+              "text": "A grant",
+              "why": "A grant is money that is not paid back. The club will pay the supplier."
+            }
+          ],
+          "answer": 2
+        },
+        {
+          "id": "ft2030-s2-u3-l3-q2",
+          "label": "A named use",
+          "prompt": "Which line is the most specific use of funds?",
+          "type": "choice",
+          "hint": "Which line names a recipient and a purpose?",
+          "options": [
+            {
+              "text": "Charity work in our city",
+              "why": "That is a category. It does not name who gets the money."
+            },
+            {
+              "text": "The Elm Street Food Pantry's winter hat drive",
+              "why": "It is a named recipient with a stated purpose that someone can check."
+            },
+            {
+              "text": "Helping people who need it",
+              "why": "That is worthy but not specific. A named recipient can be checked."
+            },
+            {
+              "text": "Good causes around the school",
+              "why": "That is a category too. Name the recipient."
+            }
+          ],
+          "answer": 1
+        },
+        {
+          "id": "ft2030-s2-u3-l3-q3",
+          "label": "Net of two stands",
+          "prompt": "Two stands report their funds. What is the net funds of the two stands together?",
+          "type": "number",
+          "figure": {
+            "kind": "table",
+            "title": "Two stands",
+            "columns": [
+              "Stand",
+              "Raised",
+              "Spent"
+            ],
+            "rows": [
+              [
+                "A",
+                "$410.00",
+                "$330.00"
+              ],
+              [
+                "B",
+                "$280.00",
+                "$305.00"
+              ]
+            ]
+          },
+          "terms": [
+            {
+              "term": "net funds",
+              "meaning": "Total raised minus total spent. Only this part goes to the cause."
+            }
+          ],
+          "hint": "Find each stand's net. One of them is negative.",
+          "unit": "$",
+          "answer": 5500,
+          "tolerance": 0,
+          "why": "Stand B spent more than it raised, so it takes money away from the total.",
+          "working": "A: $410.00 - $330.00 = $80.00. B: $280.00 - $305.00 = -$25.00. $80.00 - $25.00 = $55.00.",
+          "traps": [
+            {
+              "value": 8000,
+              "why": "That is only stand A. Stand B spent more than it raised, which lowers the total."
+            },
+            {
+              "value": 69000,
+              "why": "That is the total raised. Take off the money spent."
+            }
+          ],
+          "miss": "Net is raised minus spent for each stand. Then add the two nets."
+        },
+        {
+          "id": "ft2030-s2-u3-l3-q4",
+          "label": "How funds move",
+          "prompt": "Which sentence best answers \"process for disbursing funds\"?",
+          "type": "choice",
+          "terms": [
+            {
+              "term": "disbursing funds",
+              "meaning": "Paying out the money that was raised, to the person or group it was raised for."
+            }
+          ],
+          "hint": "Look for who holds the money, who checks it and how it is paid.",
+          "options": [
+            {
+              "text": "We will make sure the money gets there.",
+              "why": "That is a promise, not a process. Say who holds it, who checks and how."
+            },
+            {
+              "text": "The office holds the money. Two people count it. The office pays the club by cheque.",
+              "why": "It says who holds the money, who checks and how it is paid."
+            },
+            {
+              "text": "The money goes to a very good cause.",
+              "why": "That is about the cause. The question asks how the money gets there."
+            }
+          ],
+          "answer": 1
+        },
+        {
+          "id": "ft2030-s2-u3-l3-q5",
+          "label": "Impact and fix",
+          "prompt": "Which line names an impact on the school and a fix?",
+          "type": "choice",
+          "hint": "Which line has both parts: the problem and what the team will do?",
+          "options": [
+            {
+              "text": "Our line may block the hallway at 3:15",
+              "why": "That is an impact with no fix."
+            },
+            {
+              "text": "We will not affect the school at all",
+              "why": "Every venture has some impact. Naming none looks like not having thought about it."
+            },
+            {
+              "text": "Our stand will be very popular",
+              "why": "That is about sales. It does not say how the school is affected."
+            },
+            {
+              "text": "Our line may block the hallway, so we set up by the wall and keep a lane clear",
+              "why": "It says what the problem is and what the team will do about it."
+            }
+          ],
+          "answer": 3
+        },
+        {
+          "id": "ft2030-s2-u3-l3-q6",
+          "label": "A real plan",
+          "prompt": "Which unsold-items answer is a real plan with a cost?",
+          "type": "choice",
+          "hint": "Which answer says what the team will do and what it costs?",
+          "options": [
+            {
+              "text": "We will figure it out when the day comes",
+              "why": "That is not a plan."
+            },
+            {
+              "text": "We hope that everything sells out on time",
+              "why": "A hope is not a plan and it has no cost in the budget."
+            },
+            {
+              "text": "Sell what is left cheaper on the last day, which lowers the margin on those items",
+              "why": "It is a clear action, and it names its cost."
+            },
+            {
+              "text": "There will not be any items left over",
+              "why": "No one can be sure of that. A plan covers what happens if there is stock left."
+            }
+          ],
+          "answer": 2
+        },
+        {
+          "id": "ft2030-s2-u3-l3-q7",
+          "label": "Last-day discount",
+          "prompt": "On the last day a stand has 40 items left. They normally sell for $4.00 and cost $1.50 each. The team sells them for $3.00 each instead. If all 40 sell, how much margin does the team make on them?",
+          "type": "number",
+          "terms": [
+            {
+              "term": "contribution margin",
+              "meaning": "The price minus the variable cost of one item: what each sale puts toward the fixed costs."
+            }
+          ],
+          "hint": "Margin is the price minus the cost of one item.",
+          "unit": "$",
+          "answer": 6000,
+          "tolerance": 0,
+          "why": "The discount price still beats the cost, so each sale leaves a smaller margin, not a loss.",
+          "working": "$3.00 - $1.50 = $1.50. 40 x $1.50 = $60.00.",
+          "traps": [
+            {
+              "value": 12000,
+              "why": "That is the money taken in. Take off the cost of each item to find the margin."
+            }
+          ],
+          "miss": "Use the discount price, not the normal price, and take off the cost of one item."
+        },
+        {
+          "id": "ft2030-s2-u3-l3-q8",
+          "label": "Cost of packs",
+          "prompt": "A team needs 340 napkins. They come in packs of 75 at $4.20 a pack. It buys whole packs only. How much does it pay?",
+          "type": "number",
+          "hint": "How many whole packs cover the napkins you need? Then multiply by the price of a pack.",
+          "unit": "$",
+          "answer": 2100,
+          "tolerance": 0,
+          "why": "You pay for whole packs, not for the portion you need.",
+          "working": "340 / 75 = 4.53, so 5 packs. 5 x $4.20 = $21.00.",
+          "traps": [
+            {
+              "value": 1904,
+              "why": "That prices only the part of a pack you need. You pay for the whole pack."
+            },
+            {
+              "value": 1680,
+              "why": "That is one pack too few to cover the napkins."
+            }
+          ],
+          "miss": "Count whole packs first. You cannot buy part of one."
+        },
+        {
+          "id": "ft2030-s2-u3-l3-q9",
+          "label": "A shopping line",
+          "prompt": "Which purchase line could someone who has never met the team buy from?",
+          "type": "choice",
+          "hint": "Could you walk into a store with this line and buy the exact thing?",
+          "options": [
+            {
+              "text": "Plates for the stand",
+              "why": "It does not give a size or a number of packs."
+            },
+            {
+              "text": "Paper plates, 23 cm, pack of 25, 4 packs",
+              "why": "It names the item, the size, the pack and how many."
+            },
+            {
+              "text": "Enough paper goods",
+              "why": "That is a guess. Nobody could buy from it."
+            },
+            {
+              "text": "Party supplies, about $20",
+              "why": "That is a budget, not a shopping list. Name the item and the pack."
+            }
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ]
+}

@@ -5,7 +5,7 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import { createClock } from '../lib/clock.js';
 import { boot, seeded } from './helpers.js';
-import { ALL_WORDS, WORDS, WORDLE_TITLE, mark, wordFor, dayNumber } from '../modules/arcade/wordle-words.js';
+import { ALL_WORDS, WORDS, WORDLE_TITLE, mark, wordFor, dayNumber, hintTexts, unitTitle, givesAway } from '../modules/arcade/wordle-words.js';
 
 const REAL = JSON.parse(fs.readFileSync(new URL('../config/vdaa.json', import.meta.url), 'utf8'));
 const T0 = Date.parse('2026-11-02T15:00:00Z');                       // a Monday, 08:00 in Edmonton
@@ -94,7 +94,7 @@ test('a game: no answer before the end, marks, the 7th guess is refused, the end
     const [a] = w.students, e = today(w);
     const first = await a.client.get('/api/arcade/wordle');
     assert.equal(first.status, 200);
-    assert.deepEqual({ ...first.json, stats: undefined }, { title: WORDLE_TITLE, day: '2026-11-02', length: e.word.length, section: e.section, max: 6, guesses: [], status: 'open', stats: undefined });
+    assert.deepEqual({ ...first.json, stats: undefined }, { title: WORDLE_TITLE, day: '2026-11-02', length: e.word.length, section: e.section, hints: [{ level: 1, label: 'From the section', text: e.section }], next_hint_in: 2, max: 6, guesses: [], status: 'open', stats: undefined });
     assert.equal(first.json.stats.played, 0);
     for (let i = 1; i <= 5; i++) {
       const r = await guess(a, wrong(e.word));
@@ -222,17 +222,17 @@ test('switch: off for one class gives 403 on both routes and removes the tile; o
   try {
     const [a] = w.students;
     const keys = async () => (await a.client.get('/api/arcade/state')).json.games.map((g) => g.key);
-    assert.deepEqual(await keys(), ['billdash', 'diversify', 'debtsnake', 'wordle']);
+    assert.deepEqual(await keys(), ['billdash', 'diversify', 'debtsnake', 'quickcash', 'wordle', 'wordsearch']);
     const tile = (await a.client.get('/api/arcade/state')).json.games.find((g) => g.key === 'wordle');
     assert.deepEqual([tile.kind, tile.title, tile.today], ['daily', WORDLE_TITLE, 'new']);
     assert.equal((await w.teacher.post('/api/arcade/switch', { class_id: w.cls.id, game: 'wordle', enabled: false })).status, 200);
-    assert.deepEqual(await keys(), ['billdash', 'diversify', 'debtsnake']);
+    assert.deepEqual(await keys(), ['billdash', 'diversify', 'debtsnake', 'quickcash', 'wordsearch']);
     assert.equal((await a.client.get('/api/arcade/wordle')).status, 403);
     assert.equal((await guess(a, 'TAXABLE')).status, 403);
     const teach = (await w.teacher.get('/api/arcade/teach')).json.classes[0];
-    assert.deepEqual(teach.switches.filter((x) => !x.linked).map((x) => [x.key, x.on]), [['billdash', true], ['diversify', true], ['debtsnake', true], ['wordle', false]]);
+    assert.deepEqual(teach.switches.filter((x) => !x.linked).map((x) => [x.key, x.on]), [['billdash', true], ['diversify', true], ['debtsnake', true], ['quickcash', true], ['wordle', false], ['wordsearch', true]]);
     assert.equal((await w.teacher.post('/api/arcade/switch', { class_id: w.cls.id, game: 'wordle', enabled: true })).status, 200);
-    assert.deepEqual(await keys(), ['billdash', 'diversify', 'debtsnake', 'wordle']);
+    assert.deepEqual(await keys(), ['billdash', 'diversify', 'debtsnake', 'quickcash', 'wordle', 'wordsearch']);
     assert.equal((await a.client.get('/api/arcade/wordle')).status, 200);
     await guess(a, 'ZZZZZZZ'.slice(0, today(w).word.length));
     assert.equal((await a.client.get('/api/arcade/state')).json.games.find((g) => g.key === 'wordle').today, 'open');
@@ -271,4 +271,47 @@ test('FinWord moves no money by itself and the ledger stays balanced', async () 
     assert.equal(JSON.stringify((await a.client.get('/api/me')).json.accounts), before);
     assert.equal(w.srv.app.ledger.audit().ok, true);
   } finally { await w.cleanup(); }
+});
+
+// ---------- hints: earned by misses, built on the server ----------
+test('hints: 1 at the start, still 1 after 1 miss, 2 after 2, 3 after 4; a 400 adds none; no unit title in a GET before 2 misses', async () => {
+  const w = await world();
+  try {
+    const [a] = w.students, e = today(w), unit = unitTitle('fintech10', e);
+    assert.ok(unit, 'the test word has a unit title');
+    const levels = (r) => r.json.hints.map((h) => h.level);
+    const g0 = await a.client.get('/api/arcade/wordle');
+    assert.deepEqual(levels(g0), [1]);
+    assert.ok(!g0.text?.includes?.(unit) && !JSON.stringify(g0.json).includes(unit), 'no unit title before 2 misses');
+    const bad = await guess(a, 'ZZ');
+    assert.equal(bad.status, 400);
+    assert.deepEqual(levels(await a.client.get('/api/arcade/wordle')), [1]);
+    assert.deepEqual(levels(await guess(a, wrong(e.word))), [1]);
+    assert.ok(!JSON.stringify((await a.client.get('/api/arcade/wordle')).json).includes(unit), 'still none after 1 miss');
+    const two = await guess(a, wrong(e.word));
+    assert.deepEqual(levels(two), [1, 2]);
+    assert.equal(two.json.hints[1].text.startsWith('') && two.json.next_hint_in, 2);
+    assert.deepEqual(levels(await guess(a, wrong(e.word))), [1, 2]);
+    const four = await guess(a, wrong(e.word));
+    assert.deepEqual(levels(four), [1, 2, 3]);
+    assert.equal(four.json.next_hint_in, null);
+    assert.deepEqual(levels(await a.client.get('/api/arcade/wordle')), [1, 2, 3]);
+    assert.ok(!JSON.stringify(four.json).toUpperCase().includes(e.word), 'the answer is in no hint');
+  } finally { await w.cleanup(); }
+});
+
+test('hints: the answer and the 4+ letter words of the term never appear in a lesson or meaning hint, for every word in both courses', () => {
+  for (const [course, list] of Object.entries(WORDS)) for (const e of list) {
+    const hs = hintTexts(course, e);
+    for (const h of hs.filter((x) => x.level > 1)) for (const w of h.text.match(/[A-Za-z]{4,}/g) ?? []) assert.ok(!givesAway(w, e), `${course} ${e.word} level ${h.level}: "${h.text}" holds "${w}"`);
+  }
+});
+
+test('hints: a stem is blanked, and a tier left with under 2 readable words is skipped (INFLATION in FinTech 10)', () => {
+  const find = (c, w) => WORDS[c].find((e) => e.word === w);
+  const inv = hintTexts('fintech10', find('fintech10', 'INVESTING'));
+  assert.ok(!inv.some((h) => h.level === 2), 'Why invest -> Why ______ has one readable word: skipped');
+  const infl = hintTexts('fintech10', find('fintech10', 'INFLATION'));
+  assert.deepEqual(infl.map((h) => h.level), [1, 3], 'the "Inflation" lesson hint is all blank: tier 2 skipped');
+  assert.ok(givesAway('invest', find('fintech10', 'INVESTING')) && givesAway('borrow', find('fintech10', 'BORROWER')) && givesAway('lend', find('fintech10', 'LENDER')));
 });

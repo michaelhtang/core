@@ -12,6 +12,7 @@ export const BASE = {
   mode: 'min', source: 'chequing', slot: 'phone', option: 'none', id: 1, job_id: 1, player_id: 1, reflection: 'I learned the till and I am ready', approve: true, term_months: 1, direction: 'in',
   balance_cents: 100000, apr_bp: 2099, policy_bp: 225, inflation_bp: 210, hisa_bp: 100, policy: 'tenant', event: 'dental', scope: 'town',   // insurance
   tenure: 'apt1', property: 'average', down_cents: 1010000, amort_years: 25, pct: 10, home_id: 1, role: 'rental',   // housing (home_id, role: 6b landlords)
+  level: 'easy', from: [0, 0], clue: 0,   // arcade word search (to is shared, so the base body is a 400)
   game: 'billdash', session: 'abc123', presence: true,   // arcade, walk: a game name and a session id the fuzz can never match, so the routes' 4xx paths run; presence: the walk's per-class switch (class_id is shared)
   level_id: 'ft10-s1-u2-l1', question_id: 'ft10-s1-u2-l1-q1', value: 0,   // learn (value is a choice index or a typed number)
   term_id: 't0', meaning_id: 'm0',                                              // learn practice word match (ids are positions in each shuffled column)

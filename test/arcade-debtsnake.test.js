@@ -18,7 +18,7 @@ async function world({ n = 2 } = {}) {
   const srv = await boot({ config: SMALL, clock: createClock({ now: () => t }) });
   const w = await seeded(srv, n, { transfers: false });
   const other = await addClass(srv, w.teacher, 'Block 2', 1);
-  srv.app.db.prepare("INSERT OR IGNORE INTO arcade_class_off (class_id, game) SELECT id, 'wordle' FROM classes").run(); for (const t of ['today_errands', 'today_state']) srv.app.db.exec(`DELETE FROM ${t}`);   // Today picks 3 errands a day: with four arcade errands on one could miss the day, so these worlds drop FinWord and let the day be picked again
+  for (const g of ['wordle', 'quickcash']) srv.app.db.prepare("INSERT OR IGNORE INTO arcade_class_off (class_id, game) SELECT id, ? FROM classes").run(g); for (const t of ['today_errands', 'today_state']) srv.app.db.exec(`DELETE FROM ${t}`);   // Today picks 3 errands a day: with five arcade errands on some could miss the day, so these worlds drop FinWord and Quick Cash Counter and let the day be picked again
   const advance = (ms) => { t += ms; };
   const nextDay = () => { t += 60_000; srv.app.world.advance({ months: 1 }); t += 60_000; };
   const rows = (sql, ...a) => srv.app.db.prepare(sql).all(...a);

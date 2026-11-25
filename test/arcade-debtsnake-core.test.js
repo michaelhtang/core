@@ -18,6 +18,8 @@ function mv(s, dir = null) {
   step(s, dir === null ? 0 : 1 << dir);
   for (let i = 1; i < s.stepTicks; i++) step(s, 0);
 }
+// A blocked move: the first one only waits (crash grace), so a real crash needs the same push twice.
+function mv2(s, dir = null) { mv(s, dir); mv(s, dir); }
 // A state with the seed's items cleared and no new coins unless a test asks. Default snake (small board): head (7,4) heading right, 12 long.
 function bare(modes = ['classic'], extra = {}) {
   const s = create(1, { modes, ...extra });
@@ -178,7 +180,7 @@ test('debt free: +200 once, then coins are savings that grow the snake and savin
 test('crash into a wall ends the round; so does your own body', () => {
   const s = bare();
   put(s, [[9, 4], [8, 4], [7, 4]], 3);
-  mv(s);
+  mv2(s);
   assert.equal(s.over, true);
   assert.ok(s.events.some((e) => e.kind === 'crash'));
   const before = s.tick;
@@ -187,7 +189,7 @@ test('crash into a wall ends the round; so does your own body', () => {
   const t = bare();
   put(t, [[3, 3], [3, 4], [4, 4], [5, 4], [5, 3], [4, 3]], 0);
   t.snakes[0].pend = 1;
-  mv(t, 3);   // right into (4,3), a body square that stays because the snake is growing
+  mv2(t, 3);   // right into (4,3), a body square that stays because the snake is growing
   assert.equal(t.over, true);
 });
 
@@ -198,7 +200,7 @@ test('the tail square that moves away this step does not count as a crash; a gro
   assert.equal(a.over, false);
   assert.deepEqual(head(a), [1, 2]);
   const b = bare(); put(b, loop(), 0); b.snakes[0].pend = 1;
-  mv(b, 2);   // growing: the tail stays, so the head hits it
+  mv2(b, 2);   // growing: the tail stays, so the head hits it
   assert.equal(b.over, true);
 });
 
@@ -254,7 +256,7 @@ test('latefees: every month a wall drops on the marked square and the next squar
   assert.equal(v.items.filter((i) => i.kind === 'marker' && i.for === 'wall').length, 1);
   put(s, [[2, 3], [1, 3], [0, 3]], 3);
   put(s, [[3, 3], [3, 4], [3, 5]], 0);
-  mv(s);
+  mv2(s);
   assert.equal(s.over, true, 'a wall block is solid');
 });
 
@@ -279,10 +281,10 @@ test('partial: segment i is solid when i % 4 is 0 or 1; the head passes segment 
   mv(s, 2);
   assert.equal(s.over, false, 'segment 3 is a gap');
   const c = bare(); put(c, body(), 0);
-  mv(c, 2);
+  mv2(c, 2);
   assert.equal(c.over, true, 'classic: the same move is a crash');
   const t = bare(['partial']); put(t, [[4, 4], [4, 5], [6, 5], [6, 6], [6, 7], [5, 4], [5, 3]], 0);   // segment 5 is (5,4), right of the head
-  mv(t, 3);
+  mv2(t, 3);
   assert.equal(t.over, true, 'segment 5 is solid');
   const u = bare(['partial']); put(u, [[4, 4], [4, 5], [3, 5], [3, 4], [3, 3], [2, 3]], 0);
   const v = view(u).snakes[0];
@@ -347,14 +349,14 @@ test('cosigner: a mirrored second snake, shared debt, either crash ends the roun
   const t = create(2, { modes: ['cosigner'] });
   t.items.length = 0; t.ncoins = 0;
   put(t, [[0, 1], [1, 1]], 2, 1);
-  mv(t);
+  mv2(t);
   assert.equal(t.over, true);
 });
 
 test('pin: locked coins are solid until a key opens the nearest one (no points)', () => {
   const s = bare(['pin']);
   s.items.push(coin(8, 4, { locked: true }));
-  mv(s);
+  mv2(s);
   assert.equal(s.over, true);
   const t = bare(['pin']);
   t.items.push({ kind: 'key', x: 8, y: 4 }, coin(5, 0, { locked: true }), coin(2, 7, { locked: true }));
@@ -373,7 +375,7 @@ test('paperwork: push the crate, deliver it to the mailbox for the payment; a bl
   s.items.push({ kind: 'mailbox', x: 0, y: 0 }, crate(8, 4));
   mv(s);
   assert.deepEqual([s.items[1].x, head(s)[0]], [9, 8]);
-  mv(s);
+  mv2(s);
   assert.equal(s.over, true, 'the wall is behind the crate');
   const t = bare(['paperwork']);
   t.items.push({ kind: 'mailbox', x: 9, y: 4 }, crate(8, 4));
@@ -381,7 +383,7 @@ test('paperwork: push the crate, deliver it to the mailbox for the payment; a bl
   assert.deepEqual([t.score, t.debt, t.items.filter((i) => i.kind === 'crate').length], [10, 9, 0]);
   const u = bare(['paperwork']);
   u.items.push({ kind: 'mailbox', x: 0, y: 0 }, crate(8, 4)); u.stones.push([9, 4]);
-  mv(u);
+  mv2(u);
   assert.equal(u.over, true);
   const v = bare(['paperwork']);
   v.items.push({ kind: 'mailbox', x: 0, y: 0 }, crate(3, 0, { age: 1 })); v.mleft = 1;
@@ -461,14 +463,14 @@ test('emergency: a held fund turns a crash into a flip once; a pickup appears ev
   const s = bare(['emergency']);
   s.shield = 1;
   put(s, [[9, 4], [8, 4], [7, 4]], 3);
-  mv(s);
+  mv2(s);
   assert.equal(s.over, false);
   assert.deepEqual([s.shield, view(s).shield], [0, 0]);
   assert.deepEqual(head(s), [7, 4]);
   assert.equal(s.snakes[0].dir, 2);
   assert.ok(s.events.some((e) => e.kind === 'shield'));
   put(s, [[0, 4], [1, 4], [2, 4]], 2);
-  mv(s);
+  mv2(s);
   assert.equal(s.over, true, 'used up');
   const t = bare(['emergency']);
   t.items.push({ kind: 'fund', x: 8, y: 4 });
@@ -544,7 +546,7 @@ test('creditcheck: the gate is open in even months, shut in odd months, flashes 
   s.month = 1;
   mv(s);
   assert.equal(s.gate.open, false);
-  mv(s);
+  mv2(s);
   assert.equal(s.over, true, 'a shut gate is a wall');
   const t = bare(['creditcheck']);
   t.month = 1; t.mleft = 3; put(t, [[6, 4], [5, 4], [4, 4]], 3);
@@ -572,15 +574,33 @@ test('tunnel: entering one hole puts the head out of its partner', () => {
 test('practice: a crash skips the move and turns right (or left when right is blocked); the round goes on', () => {
   const s = bare(['practice']);
   put(s, [[9, 4], [8, 4], [7, 4]], 3);
-  mv(s);
+  mv2(s);
   assert.equal(s.over, false);
   assert.deepEqual(head(s), [9, 4]);
   assert.equal(s.snakes[0].dir, 1);
   const t = bare(['practice']);
   put(t, [[9, 4], [8, 4], [7, 4]], 3); t.stones.push([9, 5]);
-  mv(t);
+  mv2(t);
   assert.equal(t.snakes[0].dir, 0);
   assert.equal(t.over, false);
+});
+
+test('crash grace: the first blocked move waits one move, a turn then saves the round, no turn ends it', () => {
+  const mk = () => { const s = bare(); put(s, [[9, 4], [8, 4], [7, 4]], 3); return s; };
+  const a = mk();
+  mv(a);
+  assert.equal(a.over, false);
+  assert.deepEqual(head(a), [9, 4], 'did not move');
+  assert.equal(a.stall, 1);
+  mv(a, 1);
+  assert.equal(a.over, false);
+  assert.deepEqual(head(a), [9, 5]);
+  assert.equal(a.stall, 0, 'a real move gives the grace back');
+  const b = mk();
+  mv(b); mv(b);
+  assert.equal(b.over, true);
+  const o = { modes: ['classic'] }, inputs = [[0, 2], [60, 0], [200, 1], [260, 0], [400, 4]];
+  assert.deepEqual(replay(1, inputs, o), replay(1, inputs, o));
 });
 
 // ---------- every mode alone and in a Mix ----------

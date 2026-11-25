@@ -11,7 +11,8 @@
 //   wrap (noborders), dark (fineprint), tick, prog (ticks since the last move, 0..stepTicks-1), over, prev (last mask), queue ([dir, ...], max 2)
 //   spawned (coins made so far; round-robin among etransfer, bigpurchase, paperwork), moves (moves made), mleft (moves until interest, counts 60 down to 1), month (months completed)
 //   debt (segments owed; the snake's length is debt + 2 plus pending changes), savings (segments saved, after debt), bonus (1 once the debt-free bonus paid)
-//   score (never below 0), shield (0|1 held emergency fund)
+//   score (never below 0), shield (0|1 held emergency fund), stall (0|1 crash grace used: the first blocked move only waits one move, no turn lost
+//   from the snake's direction; a second blocked move in a row crashes as usual. Cleared by any real move or crash handling)
 //   snakes: [{ cells: [[x,y], ... head first], prev: same one move ago, dir, pend }]   pend > 0 = segments still to grow (one per move), < 0 = still to drop
 //   items: [{ kind, x, y, ... }] kinds coin|crate|key|mailbox|skull|fund|arrow|tunnel. Coin and crate carry { locked, pair (0 = none), len (1 or 3), dir (0
 //          across, 1 down; only for len 3), fade (moves left, 0 = never expires), age (months) }; arrow { dir }; tunnel { pair }
@@ -158,7 +159,7 @@ export function create(seed, optsIn) {
   const s = {
     seed: sd, opts, m, w, h, stepTicks: SPEEDS[opts.speed], ncoins: opts.coins, wrap: !!m.noborders, dark: !!m.fineprint,
     tick: 0, spawned: 0, prog: 0, over: false, prev: 0, queue: [], moves: 0, mleft: C.MONTH, month: 0,
-    debt: C.START_LEN - 2, savings: 0, bonus: 0, score: 0, shield: 0,
+    debt: C.START_LEN - 2, savings: 0, bonus: 0, score: 0, shield: 0, stall: 0,
     snakes: [], items: [], walls: [], stones: [], fees: [], marker: null, gate: null, nextPair: 1, events: [],
     stats: { payments: 0, max_debt: C.START_LEN - 2, fees: 0, traps: 0 },
     r: { c: { x: hash32(`debtsnake:coin:${sd}`) }, w: { x: hash32(`debtsnake:walk:${sd}`) }, m: { x: hash32(`debtsnake:misc:${sd}`) } },
@@ -312,6 +313,7 @@ function anyCrash(s, c, d0) {
 }
 function onCrash(s, c, d0) {
   const hd = s.snakes[0].cells[0];
+  s.stall = 0;
   if (s.shield) {
     s.shield = 0;
     for (const sn of s.snakes) flipSnake(s, sn);
@@ -438,7 +440,17 @@ function doMove(s) {
   let d0 = s.snakes[0].dir;
   while (s.queue.length) { const d = s.queue.shift(); if (d !== d0 && d !== (d0 ^ 1)) { d0 = d; break; } }
   const c = ctxOf(s);
-  if (anyCrash(s, c, d0)) { onCrash(s, c, d0); return; }
+  if (anyCrash(s, c, d0)) {
+    if (!s.stall) {                                     // crash grace: wait one move period, the player may turn meanwhile
+      s.stall = 1;
+      for (const sn of s.snakes) sn.prev = sn.cells.slice();
+      ev(s, 'bump', s.snakes[0].cells[0][0], s.snakes[0].cells[0][1]);
+      return;
+    }
+    onCrash(s, c, d0);
+    return;
+  }
+  s.stall = 0;
   const heads = [], drops = [];
   for (let i = 0; i < s.snakes.length; i++) {
     const sn = s.snakes[i], d = i === 0 ? d0 : d0 ^ 1, hd = sn.cells[0];

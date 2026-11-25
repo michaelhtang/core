@@ -156,7 +156,7 @@ export function play(canvas, seed, { best = 0 } = {}) {
   const ctx = canvas.getContext('2d');
   const s = createGame(seed);
   const inputs = [];
-  let held = 0, pending = 0, lastMask = 0, acc = 0, last = 0, raf = 0, stopped = false, ready = 36;     // 36 ticks (1.2 s) of "READY" first
+  let held = 0, pending = 0, lastMask = 0, buf = 0, acc = 0, last = 0, raf = 0, stopped = false, ready = 36;     // 36 ticks (1.2 s) of "READY" first
   let finish;
   const done = new Promise((r) => { finish = r; });
   const press = (bit, down) => { if (down) { held |= bit; pending |= bit; } else held &= ~bit; };
@@ -181,7 +181,10 @@ export function play(canvas, seed, { best = 0 } = {}) {
     while (acc >= STEP_MS && n++ < 8 && !s.over) {
       acc -= STEP_MS;
       if (ready > 0) { ready--; continue; }
-      const mask = (held | pending) & 7;
+      let mask = (held | pending) & 7;
+      // a lane tap inside the move cooldown would be dropped by the core: hold it (latest wins, bit kept low) and send it on the first tick the core takes it
+      if (pending & 3) buf = pending & 3;
+      if (buf) { if (s.moveCd > 1 || (lastMask & buf)) mask &= ~buf; else { mask |= buf; buf = 0; } }   // still high from before: one low tick makes a fresh press
       pending = 0;
       if (mask !== lastMask) { inputs.push([s.tick, mask]); lastMask = mask; }
       step(s, mask);

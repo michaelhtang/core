@@ -18,8 +18,8 @@ You start as a long snake: your length is your loan. Every segment past the firs
 - **Payment** (debt phase): +10 points, the tail loses one segment on the next move (so the snake visibly shrinks).
 - **Interest**: a month is 60 moves. At the end of each month, while in debt, add `1 + floor((debt - 1) / 10)` segments to the tail (1 for debt 1-10, 2 for 11-20, ...). No division operator: use a subtract loop. The UI shows a month bar and warns 8 moves before interest.
 - **Debt free** when debt reaches 0: +200 points, once. From then on each coin is **savings**: +10 points and the snake grows by one. Each month, savings interest: +1 segment and +10 points per full 10 segments of savings (savings = length - 2).
-- **Crash** into a wall, a stone or your own body (the tail square that moves away this step does not count) ends the round.
-- Turns: mask bits 1 up, 2 down, 4 left, 8 right (`MASK_MAX` 15). The core turns on a rising edge of a bit (pressed this tick, not held last tick). Up to 2 turns are queued, so two quick presses between moves both happen (one per move). A turn straight back into the neck is ignored.
+- **Crash** into a wall, a stone or your own body (the tail square that moves away this step does not count) ends the round, but the first blocked move is forgiven: the snake waits one move period instead (you can turn during the pause), and only a second blocked move in a row crashes. Any real move gives the pause back.
+- Turns: mask bits 1 up, 2 down, 4 left, 8 right (`MASK_MAX` 15). The core turns on a rising edge of a bit (pressed this tick, not held last tick). Up to 2 turns are queued, so two quick presses between moves both happen (one per move). A turn straight back into the neck is ignored. Drawing only: the head faces the next queued turn at once, before the snake reaches the square.
 - Score never goes below 0. It is the only thing the server keeps; it never moves money.
 
 ## Modes
@@ -51,7 +51,7 @@ Any one, or a Mix of any set. Keys are stable (stored in the database). `classic
 | `tunnel` | Tunnels | Two pairs of tunnel holes. Entering one hole puts your head out of its partner. |
 | `practice` | Practice Budget | Crashes never end the round: the move is skipped and the snake turns right (or left if right is blocked). Same rules otherwise. |
 
-**Mix**: any set of the keys above except `classic`. `fineprint` combines with anything; `practice` combines with anything. If `cosigner` and `transfer` are both on, `transfer` flips both snakes. If two mode rules both place items, each mode places its own and none overlap. When two or more of `etransfer`, `bigpurchase` and `paperwork` are on, each new coin takes the next of them in that order (a pair, a 3-long coin, a crate), so all of them appear. The "?" choice in the picker is the client choosing three modes at random before `/start`: that is a choice of game, never a reward.
+**Mix**: any set of the keys above except `classic`. `fineprint` combines with anything; `practice` combines with anything. If `cosigner` and `transfer` are both on, `transfer` flips both snakes. If two mode rules both place items, each mode places its own and none overlap. When two or more of `etransfer`, `bigpurchase` and `paperwork` are on, each new coin takes the next of them in that order (a pair, a 3-long coin, a crate), so all of them appear. The Surprise me choice in the settings dialog is the client choosing three modes at random before `/start`: that is a choice of game, never a reward.
 
 ## Options and the leaderboard
 
@@ -80,7 +80,7 @@ export function view(state) -> {
   walls: [[x,y],...], stones: [[x,y],...], gate: null | { x, y0, y1, open, warn },
   dark: bool, wrap: bool, shield: 0|1,
   near: integer,       // squares from the head to the nearest edible coin (for the mouth opening when <= 2)
-  events: [{ kind: 'pay'|'save'|'interest'|'debtfree'|'crash'|'fee'|'trap'|'key'|'shield'|'flip'|'teleport'|'expire', x, y, n }]  // what happened on this tick
+  events: [{ kind: 'pay'|'save'|'interest'|'debtfree'|'crash'|'fee'|'trap'|'key'|'shield'|'bump'|'flip'|'teleport'|'expire', x, y, n }]  // what happened on this tick
 }
 ```
 
@@ -91,7 +91,7 @@ Seeded draws (`k.dice`-style hash or a small integer generator inside the core) 
 1. The mouth opens when a coin is 2 squares ahead or closer, and snaps shut on the bite.
 2. The next coin appears on the same tick: never a pause.
 3. The body glides between squares (draw at `progress / STEP` between `prev` and `cells`), with rounded corners and a tapered tail.
-4. A payment: chomp, a small coin burst, "-$100" floats up, and the last tail segment pops off.
+4. A payment: chomp (the head swells and bites, a lump slides down the body), the coin swells, flashes and bursts into a gold ring and sparkles, the DEBT number jumps, "-$100" floats up, and the last tail segment pops off.
 5. Interest: the month bar fills, the tail flashes red for the last 8 moves, then the new segments slide out of the tail with "+$100".
 6. Debt free: a short gold flash and "DEBT FREE" once.
 7. Instant restart (Space or the Play button) and a best per mode.

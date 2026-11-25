@@ -9,7 +9,9 @@ import { createThrottle } from '../../lib/throttle.js';
 import * as billdash from './ui/games/billdash-core.js';
 import * as diversify from './ui/games/diversify-core.js';
 import * as debtsnake from './ui/games/debtsnake-core.js';
-import { WORDS, WORDLE_TITLE, MAX_GUESSES, dayNumber, wordFor, mark } from './wordle-words.js';
+import * as quickcash from './ui/games/quickcash-core.js';
+import { WORDS, WORDLE_TITLE, MAX_GUESSES, dayNumber, wordFor, mark, hintsFor, hintTexts, HINT_AFTER } from './wordle-words.js';
+import { WORDSEARCH_TITLE, LEVELS, makePuzzle, findIndex, placedCells, stars } from './wordsearch.js';
 
 // event: what a verified finish emits (module.arcade.<event>); one Today errand listens to each, so a round of one game never completes the other's errand.
 const GAMES = {
@@ -27,6 +29,11 @@ const GAMES = {
     title: 'Debt Snake',
     blurb: 'You are a long snake and your length is your loan. Eat payment coins to pay it down, watch the interest, and try 21 money-rule modes.',
     core: debtsnake, event: 'played_debtsnake',
+  },
+  quickcash: {
+    title: 'Quick Cash Counter',
+    blurb: 'You run the loan counter. Six customers each need cash. Pick the borrowing offer that costs them the most before they walk away, then see what they really paid.',
+    core: quickcash, event: 'played_quickcash',
   },
 };
 const ICON = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 8h12a4 4 0 0 1 4 4v3a3 3 0 0 1-5 2l-1-1H8l-1 1a3 3 0 0 1-5-2v-3a4 4 0 0 1 4-4zM8 10v4M6 12h4M16 11h.5M18 13h.5"/></svg>';
@@ -121,6 +128,8 @@ function wordleStats(k, playerId, today) {
   return { played: rows.length, won: won.size, current_streak: current, best_streak: best, distribution: dist };
 }
 
+const nextHintIn = (course, e, misses) => { const next = hintTexts(course, e).map((h) => HINT_AFTER[h.level - 1]).find((n) => n > misses); return next === undefined ? null : next - misses; };   // misses until the next hint, null when all are shown
+
 function wordleView(k, user) {
   const day = k.clock.today(), course = courseOf(k, user);
   const today = wordFor(course, day);
@@ -128,8 +137,10 @@ function wordleView(k, user) {
   const row = wordleRow(k, user.id, day);
   const e = row ? wordleEntry(course, row.word) : today;
   const status = row?.status ?? 'open', guesses = row ? JSON.parse(row.guesses) : [];
+  const misses = guesses.filter((g) => g !== e.word).length;
   return {
     title: WORDLE_TITLE, day, length: e.word.length, section: e.section, max: MAX_GUESSES,
+    hints: hintsFor(course, e, misses), next_hint_in: nextHintIn(course, e, misses),
     guesses: guesses.map((g) => ({ guess: g, marks: mark(e.word, g) })), status, stats: wordleStats(k, user.id, day),
     ...(status === 'open' ? {} : { answer: e.word, term: e.term, meaning: e.meaning }),
   };
@@ -156,6 +167,85 @@ function wordleGuess(k, user, body) {
   const w = k.world.current();
   if (ended && w?.status === 'active') k.events.emit('played_finword', { playerId: user.id, worldId: w.id, game: WORDLE_KEY });
   return wordleView(k, user);
+}
+
+// ---- the daily word search (docs/arcade.md, "Word search"): the server builds the puzzle, keeps the placements and checks every find ----
+const WS_KEY = 'wordsearch';
+const wsRow = (k, playerId, day, level) => k.db.prepare('SELECT * FROM arcade_wordsearch WHERE player_id = ? AND day = ? AND level = ?').get(playerId, day, level);
+const wsLevel = (k, v) => { if (typeof v !== 'string' || !Object.hasOwn(LEVELS, v)) throw new k.HttpError(400, `level must be ${Object.keys(LEVELS).join(' or ')}`); return v; };
+const wsToday = (k, playerId, day) => {                                // the tile: done if any level is finished today, open if one is started
+  const s = k.db.prepare('SELECT status FROM arcade_wordsearch WHERE player_id = ? AND day = ?').all(playerId, day).map((r) => r.status);
+  return s.includes('done') ? 'done' : s.length ? 'open' : 'new';
+};
+function wsStats(k, playerId, today) {
+  const days = k.db.prepare("SELECT DISTINCT day FROM arcade_wordsearch WHERE player_id = ? AND status = 'done' ORDER BY day").all(playerId).map((r) => dayNumber(r.day));
+  const set = new Set(days);
+  let best = 0, run = 0;
+  days.forEach((n, i) => { run = i && n === days[i - 1] + 1 ? run + 1 : 1; best = Math.max(best, run); });
+  let current = 0;                                                       // days in a row with a finished puzzle, from today, or from yesterday while today is not done yet
+  for (let n = dayNumber(today) - (set.has(dayNumber(today)) ? 0 : 1); set.has(n); n--) current++;
+  return { done: k.db.prepare("SELECT COUNT(*) AS n FROM arcade_wordsearch WHERE player_id = ? AND status = 'done'").get(playerId).n, current_streak: current, best_streak: best };
+}
+// Today's puzzle for the student's course and that level: the stored one once started, else built fresh (same inputs, same puzzle).
+function wsPuzzle(k, user, level) {
+  if (isOff(k, user.class_id, WS_KEY)) throw new k.HttpError(403, `Your teacher has turned ${WORDSEARCH_TITLE} off for your class.`);
+  const day = k.clock.today(), row = wsRow(k, user.id, day, level);
+  if (row) return { day, row, puzzle: JSON.parse(row.puzzle) };
+  const puzzle = makePuzzle(courseOf(k, user), day, level);
+  if (!puzzle) throw new k.HttpError(400, `${WORDSEARCH_TITLE} is not set up for your class.`);
+  return { day, row: null, puzzle };
+}
+// What the browser sees: the letters and the clues. A word, its cells or its first letter only once found or asked for.
+function wsView(k, user, { day, row, puzzle }, level, extra = {}) {
+  const found = row ? JSON.parse(row.found) : [], hints = row ? JSON.parse(row.hints) : puzzle.words.map(() => 0);
+  const used = hints.reduce((a, b) => a + b, 0), status = row?.status ?? 'open';
+  return {
+    title: WORDSEARCH_TITLE, day, level, levels: Object.fromEntries(Object.keys(LEVELS).map((l) => [l, wsRow(k, user.id, day, l)?.status ?? 'new'])),
+    size: puzzle.size, grid: puzzle.grid, status, hints_used: used, ...(status === 'done' ? { stars: stars(used) } : {}),
+    clues: puzzle.words.map((p, i) => {
+      const got = found.includes(i);
+      return {
+        n: i, length: p.word.length, section: p.section, clue: p.clue, found: got, hints: hints[i],
+        ...(got || hints[i] >= 1 ? { word: p.word } : {}), ...(got ? { cells: placedCells(p), term: p.term, meaning: p.meaning } : hints[i] >= 2 ? { start: [p.r, p.c] } : {}),
+      };
+    }),
+    stats: wsStats(k, user.id, day), ...extra,
+  };
+}
+// Save a change to today's row (made here at the first find or hint, holding the puzzle), in one transaction.
+function wsSave(k, user, cur, level, found, hints) {
+  const done = found.length === cur.puzzle.words.length;
+  k.db.txn(() => {
+    if (!cur.row) k.db.prepare('INSERT INTO arcade_wordsearch (player_id, day, level, course, puzzle) VALUES (?, ?, ?, ?, ?)').run(user.id, cur.day, level, courseOf(k, user), JSON.stringify(cur.puzzle));
+    k.db.prepare("UPDATE arcade_wordsearch SET found = ?, hints = ?, status = ?, finished_at = ? WHERE player_id = ? AND day = ? AND level = ? AND status = 'open'")
+      .run(JSON.stringify(found), JSON.stringify(hints), done ? 'done' : 'open', done ? k.clock.now() : null, user.id, cur.day, level);
+  });
+  return { ...cur, row: wsRow(k, user.id, cur.day, level) };
+}
+const wsCell = (k, v, name) => {
+  if (!Array.isArray(v) || v.length !== 2 || !v.every((x) => Number.isInteger(x) && x >= 0 && x < 64)) throw new k.HttpError(400, `${name} must be [row, column]`);
+  return v;
+};
+function wsFind(k, user, body) {
+  const level = wsLevel(k, body?.level), from = wsCell(k, body?.from, 'from'), to = wsCell(k, body?.to, 'to');
+  let cur = wsPuzzle(k, user, level);
+  if (cur.row?.status === 'done') throw new k.HttpError(409, 'You found every word in this puzzle.');
+  const found = cur.row ? JSON.parse(cur.row.found) : [], hints = cur.row ? JSON.parse(cur.row.hints) : cur.puzzle.words.map(() => 0);
+  const i = findIndex(cur.puzzle, from, to);
+  if (i < 0 || found.includes(i)) return wsView(k, user, cur, level, { hit: null, again: i >= 0 });   // a miss costs nothing and writes nothing
+  cur = wsSave(k, user, cur, level, [...found, i], hints);
+  return wsView(k, user, cur, level, { hit: i });
+}
+function wsHint(k, user, body) {
+  const level = wsLevel(k, body?.level), n = k.input.int(body, 'clue', { min: 0, max: 63 });
+  let cur = wsPuzzle(k, user, level);
+  if (cur.row?.status === 'done') throw new k.HttpError(409, 'You found every word in this puzzle.');
+  const found = cur.row ? JSON.parse(cur.row.found) : [], hints = cur.row ? JSON.parse(cur.row.hints) : cur.puzzle.words.map(() => 0);
+  if (n >= cur.puzzle.words.length) throw new k.HttpError(400, 'No such clue');
+  if (found.includes(n) || hints[n] >= 2) return wsView(k, user, cur, level);   // nothing more to show: no hint used
+  hints[n]++;
+  cur = wsSave(k, user, cur, level, found, hints);
+  return wsView(k, user, cur, level);
 }
 
 export default defineModule({
@@ -190,13 +280,22 @@ CREATE TABLE arcade_wordle (      -- FinWord: one row per student per day, made 
   { id: '004_run_opts', sql: `
 ALTER TABLE arcade_runs ADD COLUMN opts TEXT;   -- a core with options (Debt Snake): the normalized options JSON the round was started with; the replay uses it
 ALTER TABLE arcade_runs ADD COLUMN mode TEXT;   -- that core's optionKey(opts): bests and boards are per mode (null for Bill Dash and Diversify)
-CREATE INDEX arcade_runs_mode ON arcade_runs(world_id, game, mode, status, player_id)` }],
+CREATE INDEX arcade_runs_mode ON arcade_runs(world_id, game, mode, status, player_id)` },
+  { id: '005_wordsearch', sql: `
+CREATE TABLE arcade_wordsearch (  -- the daily word search: one row per student, day and level, made at the first find or hint; it keeps the puzzle so a later list edit never changes one in progress
+  player_id INTEGER NOT NULL REFERENCES players(id), day TEXT NOT NULL, level TEXT NOT NULL, course TEXT NOT NULL,
+  puzzle TEXT NOT NULL,           -- JSON { size, grid, words: [{ word, r, c, dr, dc, clue, term, meaning, section }] }
+  found TEXT NOT NULL DEFAULT '[]', hints TEXT NOT NULL DEFAULT '[]',   -- word indexes found; hints asked per word (0, 1 = the word, 2 = its first letter)
+  status TEXT NOT NULL DEFAULT 'open' CHECK (status IN ('open','done')),
+  finished_at INTEGER,
+  PRIMARY KEY (player_id, day, level)
+)` }],
 
   services: {
-    // Today: the Bill Dash, Diversify and Debt Snake errands are offered only while that game is on for the student's class.
+    // Today: the Bill Dash, Diversify, Debt Snake, Quick Cash Counter and FinWord errands are offered only while that game is on for the student's class.
     todayFacts(k, { playerId }) {
       const off = offFor(k, k.players.get(playerId)?.class_id);
-      return { billdashOn: !off.includes('billdash'), diversifyOn: !off.includes('diversify'), debtsnakeOn: !off.includes('debtsnake'), finwordOn: !off.includes(WORDLE_KEY) };
+      return { billdashOn: !off.includes('billdash'), diversifyOn: !off.includes('diversify'), debtsnakeOn: !off.includes('debtsnake'), quickcashOn: !off.includes('quickcash'), finwordOn: !off.includes(WORDLE_KEY) };
     },
     // modules/games: the linked games this class's teacher turned off.
     offFor: (k, { classId }) => offFor(k, classId),
@@ -224,6 +323,9 @@ CREATE INDEX arcade_runs_mode ON arcade_runs(world_id, game, mode, status, playe
           }).concat(WORDS[courseOf(k, user)] && !off.includes(WORDLE_KEY) ? [{   // the daily word game: no score, no board, no season needed; the tile shows today's state
             key: WORDLE_KEY, kind: 'daily', title: WORDLE_TITLE, best: null, plays: 0, leaderboard: [], today: wordleRow(k, user.id, k.clock.today())?.status ?? 'new',
             blurb: 'One word a day from your course. Six guesses. Everyone in your course gets the same word.',
+          }] : []).concat(WORDS[courseOf(k, user)] && !off.includes(WS_KEY) ? [{   // the daily word search: no score, no board, no pay
+            key: WS_KEY, kind: 'daily', title: WORDSEARCH_TITLE, best: null, plays: 0, leaderboard: [], today: wsToday(k, user.id, k.clock.today()),
+            blurb: 'A new word search every day. The clues are meanings from your lessons: work out the word, then find it.',
           }] : []),
           leaderboard: active ? leaderboard(k, user, w.id, 'billdash') : [],   // Bill Dash's board and best again, where they were before there was a second game
           my_best: active ? bestOf(k, user.id, w.id, 'billdash').best : null,
@@ -252,6 +354,9 @@ CREATE INDEX arcade_runs_mode ON arcade_runs(world_id, game, mode, status, playe
       },
     },
     { method: 'POST', path: '/wordle/guess', access: 'student', handler: (k, { user, body }) => wordleGuess(k, user, body) },
+    { method: 'GET', path: '/wordsearch', access: 'student', handler: (k, { user, url }) => { const level = wsLevel(k, url?.searchParams.get('level') ?? 'easy'); return wsView(k, user, wsPuzzle(k, user, level), level); } },
+    { method: 'POST', path: '/wordsearch/find', access: 'student', handler: (k, { user, body }) => wsFind(k, user, body) },
+    { method: 'POST', path: '/wordsearch/hint', access: 'student', handler: (k, { user, body }) => wsHint(k, user, body) },
     {
       method: 'POST', path: '/start', access: 'student',
       handler(k, { user, body }) {
@@ -337,7 +442,7 @@ CREATE INDEX arcade_runs_mode ON arcade_runs(world_id, game, mode, status, playe
             return {
               id: c.id, name: c.name, ...(w ? slice(w.id, ids, name, null) : empty),
               // every switch for this class: the Arcade's own games, then the linked ones its course sees
-              switches: [...Object.entries(GAMES).map(([key, g]) => ({ key, title: g.title, linked: false })), { key: WORDLE_KEY, title: WORDLE_TITLE, linked: false }, ...linksFor(k, c.course_id).map((l) => ({ key: l.id, title: l.title, linked: true }))]
+              switches: [...Object.entries(GAMES).map(([key, g]) => ({ key, title: g.title, linked: false })), { key: WORDLE_KEY, title: WORDLE_TITLE, linked: false }, { key: WS_KEY, title: WORDSEARCH_TITLE, linked: false }, ...linksFor(k, c.course_id).map((l) => ({ key: l.id, title: l.title, linked: true }))]
                 .map((x) => ({ ...x, on: !off.includes(x.key) })),
               games: Object.entries(GAMES).map(([key, g]) => ({ key, title: g.title, ...(w ? slice(w.id, ids, name, key) : empty) })),
             };
@@ -354,7 +459,7 @@ CREATE INDEX arcade_runs_mode ON arcade_runs(world_id, game, mode, status, playe
         const on = k.input.bool(body, 'enabled');
         k.policy.assert(user, 'class.manage', { classId });                  // 404 for a class that is not yours
         const course = k.players.classes().find((c) => c.id === classId)?.course_id;
-        if (!Object.hasOwn(GAMES, game) && game !== WORDLE_KEY && !linksFor(k, course).some((l) => l.id === game)) throw new k.HttpError(400, 'Unknown game');
+        if (!Object.hasOwn(GAMES, game) && game !== WORDLE_KEY && game !== WS_KEY && !linksFor(k, course).some((l) => l.id === game)) throw new k.HttpError(400, 'Unknown game');
         if (on) k.db.prepare('DELETE FROM arcade_class_off WHERE class_id = ? AND game = ?').run(classId, game);
         else k.db.prepare('INSERT OR IGNORE INTO arcade_class_off (class_id, game) VALUES (?, ?)').run(classId, game);
         return { class_id: classId, game, on };

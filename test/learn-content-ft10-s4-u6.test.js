@@ -52,7 +52,7 @@ test('the game has no crypto: nothing in modules/ or docs/ (other than lesson co
     for (const e of fs.readdirSync(d, { withFileTypes: true })) {
       const p = path.join(d, e.name);
       if (e.isDirectory()) { if (!['node_modules', 'content', 'draft'].includes(e.name) || d.endsWith('docs')) walk(p); continue; }
-      if (!/\.(js|mjs|md|json|html)$/.test(e.name) || p.includes('modules/learn/') || p.endsWith(path.join('docs', 'learn.md'))) continue;   // docs/learn.md lists the lesson units by name
+      if (!/\.(js|mjs|md|json|html)$/.test(e.name) || p.includes('modules/learn/') || p.endsWith(path.join('docs', 'learn.md')) || p.endsWith(path.join('arcade', 'REVIEW-wordle.md'))) continue;   // FinWord's review quotes lesson titles verbatim   // docs/learn.md lists the lesson units by name
       if (/bitcoin|blockchain|cryptocurrenc|crypto coin|ethereum/i.test(fs.readFileSync(p, 'utf8'))) hits.push(p);
     }
   };

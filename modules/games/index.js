@@ -1,7 +1,7 @@
 // games: Mr. Tang's games that live on their own sites. STAX North, Money Month and Wolf Pack Returns (his "Tax Season") show as tiles in the Arcade grid, after our own games; TradeLab
 // (the stock market sim every course uses for investing) is a door of its own in the town menu. Links only: nothing here moves money, keeps a
 // score or stores anything about a student. Each game has its own login on its own site.
-// ui/thumbs/<id>.jpg: a 480 x 300 picture of each game (STAX North and Money Month: rendered in the lesson-art style, design/art/thumb-stax-402 and thumb-payday-401, scaled from 1280 x 800; Wolf Pack Returns: a screenshot of the start screen, 2026-11-19; TradeLab: design/art/thumb-tradelab-c.svg, his pick of three, 2026-11-19); a new game needs one.
+// ui/thumbs/<id>.jpg: a 480 x 300 picture of each game (STAX North and Money Month: rendered in the lesson-art style, design/art/thumb-stax-402 and thumb-payday-401, scaled from 1280 x 800; Wolf Pack Returns: the Wolf at a desk doing taxes, design/mascot/wolf-8302.png (FLUX Kontext from public/art/wolf.png), his pick of three, 2026-11-25; TradeLab: design/art/thumb-tradelab-c.svg, his pick of three, 2026-11-19); a new game needs one.
 // `courses` limits who sees a game (a course id from config/vdaa.json); no list means every course that has this module.
 import { defineModule } from '../../lib/modules.js';
 

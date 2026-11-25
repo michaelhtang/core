@@ -64,6 +64,8 @@
     "when": [{ "fact": "arcade.diversifyOn", "op": "==", "value": true }], "done": { "event": "module.arcade.played_diversify" }, "reward_cents": 50, "energy": 1 },
   { "id": "play-debt-snake", "title": "Play a round of Debt Snake", "module": "arcade", "building": "arcade", "priority": 6,
     "when": [{ "fact": "arcade.debtsnakeOn", "op": "==", "value": true }], "done": { "event": "module.arcade.played_debtsnake" }, "reward_cents": 50, "energy": 1 },
+  { "id": "play-quickcash", "title": "Play a round of Quick Cash Counter", "module": "arcade", "building": "arcade", "priority": 6,
+    "when": [{ "fact": "arcade.quickcashOn", "op": "==", "value": true }], "done": { "event": "module.arcade.played_quickcash" }, "reward_cents": 50, "energy": 1 },
   { "id": "play-finword", "title": "Play today's FinWord", "module": "arcade", "building": "arcade", "priority": 6,
     "when": [{ "fact": "arcade.finwordOn", "op": "==", "value": true }], "done": { "event": "module.arcade.played_finword" }, "reward_cents": 50, "energy": 1 },
   { "id": "walk-stroll", "title": "Take a stroll through town and collect 3 items", "module": "walk", "building": "walk", "priority": 5,

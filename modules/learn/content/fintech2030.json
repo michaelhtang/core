@@ -4,6 +4,7 @@
   "sections": [
     {
       "id": "ft2030-s1",
+      "unit": 3,
       "title": "The Taxpayer",
       "blurb": "How Canada taxes, what is on your tax slips, and a tax return done by hand.",
       "units": [
@@ -7610,6 +7611,7 @@
     },
     {
       "id": "ft2030-s2",
+      "unit": 1,
       "title": "The Venture",
       "blurb": "Turn an idea into a business you can test, cost and price.",
       "units": [
@@ -9659,11 +9661,1083 @@
               ]
             }
           ]
+        },
+        {
+          "id": "ft2030-s2-u3",
+          "title": "From data to paperwork",
+          "blurb": "Which survey answers to trust, a price in whole dollars, and where the money goes.",
+          "outcome_codes": [
+            "ENT2020 2.5",
+            "ENT2020 3.1",
+            "ENT2020 3.3"
+          ],
+          "levels": [
+            {
+              "id": "ft2030-s2-u3-l1",
+              "title": "Whose answers do you trust?",
+              "kind": "lesson",
+              "learn": [
+                "Say why strangers' answers can be trusted more than friends'.",
+                "Pick keep, reprice, reposition or replace using a number."
+              ],
+              "cards": [
+                {
+                  "text": "A sample is the group of people who answered your survey. A team often ends up with two. The in-class sample is people who know the team. The outside sample is people who do not. The two samples can tell different stories."
+                },
+                {
+                  "text": "Sampling bias means the people who answered lean one way, so the result is not a fair picture of your real customers. Friends want to be nice, so they say yes and name a high price. Strangers have no reason to be kind."
+                },
+                {
+                  "text": "Twist Stop sells cinnamon twists at $4.00. Its survey asked: would you buy one at that price? The two samples gave very different answers.",
+                  "figure": {
+                    "kind": "table",
+                    "title": "Twist Stop survey",
+                    "columns": [
+                      "Sample",
+                      "Answers",
+                      "Would buy",
+                      "Share"
+                    ],
+                    "rows": [
+                      [
+                        "In class",
+                        "25",
+                        "20",
+                        "80%"
+                      ],
+                      [
+                        "Outside",
+                        "20",
+                        "8",
+                        "40%"
+                      ]
+                    ]
+                  }
+                },
+                {
+                  "text": "When the samples disagree, plan with the outside number. It is closer to what real customers will do. A gap is counted in percentage points: 80% down to 40% is a drop of 40 points. A gap is not a failure. But three outside answers can swing on one person, so get enough."
+                },
+                {
+                  "text": "There are four honest options after a survey. Keep needs evidence, not just a lack of bad news.",
+                  "figure": {
+                    "kind": "table",
+                    "title": "Four options",
+                    "columns": [
+                      "Option",
+                      "Use it when"
+                    ],
+                    "rows": [
+                      [
+                        "Keep",
+                        "The data supports the idea as written"
+                      ],
+                      [
+                        "Reprice",
+                        "Right product, wrong price"
+                      ],
+                      [
+                        "Reposition",
+                        "Right product, wrong customer or moment"
+                      ],
+                      [
+                        "Replace",
+                        "The data says no"
+                      ]
+                    ]
+                  }
+                },
+                {
+                  "text": "A pivot changes one part of the concept: the product, the customer, the benefit or how they get it. A pretzel stand at lunch finds most students bring lunch. The same pretzels after practice reach hungry students at a new moment. Same product, different business."
+                }
+              ],
+              "questions": [
+                {
+                  "id": "ft2030-s2-u3-l1-q1",
+                  "label": "Outside sample",
+                  "prompt": "Dana's team handed its survey to 30 classmates and to 15 students it had never met. Which group is the outside sample?",
+                  "type": "choice",
+                  "terms": [
+                    {
+                      "term": "sample",
+                      "meaning": "The group of people who answered your survey."
+                    }
+                  ],
+                  "hint": "Which group does not know the team?",
+                  "options": [
+                    {
+                      "text": "The 30 classmates",
+                      "why": "The classmates know the team. They are the in-class sample."
+                    },
+                    {
+                      "text": "The 15 students it had never met",
+                      "why": "These people do not know the team, so they are the outside sample."
+                    },
+                    {
+                      "text": "All 45 people together",
+                      "why": "The outside sample is only the people outside the team's circle."
+                    },
+                    {
+                      "text": "The members of Dana's team",
+                      "why": "The team writes the survey. It is not a sample of customers."
+                    }
+                  ],
+                  "answer": 1
+                },
+                {
+                  "id": "ft2030-s2-u3-l1-q2",
+                  "label": "Kind answers",
+                  "prompt": "Why do answers from friends tend to be higher than answers from strangers?",
+                  "type": "choice",
+                  "terms": [
+                    {
+                      "term": "sampling bias",
+                      "meaning": "When the group that answered leans one way, so the result is not a fair picture of your real customers."
+                    }
+                  ],
+                  "hint": "Think about how you answer a friend who asks, \"Would you buy this?\"",
+                  "options": [
+                    {
+                      "text": "Friends know the team and do not want to let it down",
+                      "why": "People who know you lean toward being kind. That is sampling bias."
+                    },
+                    {
+                      "text": "Friends always have more money",
+                      "why": "Money has nothing to do with it. Friends lean kind because they know the team."
+                    },
+                    {
+                      "text": "Friends read the question more carefully",
+                      "why": "Reading carefully does not change how kind someone feels."
+                    },
+                    {
+                      "text": "Friends are a bigger group",
+                      "why": "Size is not the reason. Friends lean kind even in a small group."
+                    }
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "ft2030-s2-u3-l1-q3",
+                  "label": "Share who buy",
+                  "prompt": "Pixel Pins asked 40 classmates if they would buy a pin at the posted price. 30 said yes. What percent said yes?",
+                  "type": "number",
+                  "hint": "Divide the number who said yes by the number asked.",
+                  "unit": "%",
+                  "answer": 75,
+                  "tolerance": 0,
+                  "why": "A share is the count who said yes divided by everyone who answered.",
+                  "working": "30 / 40 = 0.75 = 75%.",
+                  "traps": [
+                    {
+                      "value": 10,
+                      "why": "That is the count who did not say yes. Divide yes by all answers."
+                    }
+                  ],
+                  "miss": "Divide yes answers by all answers, then write it as a percent."
+                },
+                {
+                  "id": "ft2030-s2-u3-l1-q4",
+                  "label": "The gap",
+                  "prompt": "Chai Cart asked 50 classmates: 35 would buy. It asked 20 students it did not know: 5 would buy. By how many percentage points is the outside share lower than the in-class share?",
+                  "type": "number",
+                  "terms": [
+                    {
+                      "term": "percentage points",
+                      "meaning": "The difference between two percentages, such as 80% down to 40%."
+                    }
+                  ],
+                  "hint": "Work out both shares first, then subtract the smaller from the larger.",
+                  "unit": "%",
+                  "answer": 45,
+                  "tolerance": 0,
+                  "why": "The gap is the in-class share minus the outside share.",
+                  "working": "35 / 50 = 70%. 5 / 20 = 25%. 70 - 25 = 45 points.",
+                  "traps": [
+                    {
+                      "value": 25,
+                      "why": "That is the outside share itself. The question asks for the gap between the two shares."
+                    }
+                  ],
+                  "miss": "Find each share as a percent first. Then take the difference."
+                },
+                {
+                  "id": "ft2030-s2-u3-l1-q5",
+                  "label": "Which to plan with",
+                  "prompt": "Chai Cart's two samples were about the same size. Which number should it plan with?",
+                  "type": "choice",
+                  "terms": [
+                    {
+                      "term": "sampling bias",
+                      "meaning": "When the group that answered leans one way, so the result is not a fair picture of your real customers."
+                    }
+                  ],
+                  "hint": "Which group has no reason to be kind to the team?",
+                  "options": [
+                    {
+                      "text": "The in-class share, because those people know the product",
+                      "why": "They know the team, which is what makes their answers kind."
+                    },
+                    {
+                      "text": "The average of the two, because it treats both fairly",
+                      "why": "An average keeps the kind answers in. The outside number is the safer one to plan with."
+                    },
+                    {
+                      "text": "The higher share, because it gives more room",
+                      "why": "The higher number is the kind one. Planning on it risks a plan with too few buyers."
+                    },
+                    {
+                      "text": "The outside share, because strangers have no reason to be kind",
+                      "why": "Outside answers are closer to what real customers will do."
+                    }
+                  ],
+                  "answer": 3
+                },
+                {
+                  "id": "ft2030-s2-u3-l1-q6",
+                  "label": "Name the option",
+                  "prompt": "A bike-light stand finds that students like the lights and would buy, but only at $5. It charges $9. Which option fits?",
+                  "type": "choice",
+                  "hint": "What is wrong with the idea: the product, the customer or the price?",
+                  "options": [
+                    {
+                      "text": "Keep",
+                      "why": "Keep needs evidence that the idea works as written. The price does not match the data."
+                    },
+                    {
+                      "text": "Reposition",
+                      "why": "The customer and moment are fine here. The price is the problem."
+                    },
+                    {
+                      "text": "Reprice",
+                      "why": "It is the right product at the wrong price."
+                    },
+                    {
+                      "text": "Replace",
+                      "why": "Students would buy, so the data does not say no."
+                    }
+                  ],
+                  "answer": 2
+                },
+                {
+                  "id": "ft2030-s2-u3-l1-q7",
+                  "label": "A reposition case",
+                  "prompt": "A hot-snack team sells at lunch. Its survey says most students bring lunch, but nearly everyone waiting for the late bus would buy. Which option fits?",
+                  "type": "choice",
+                  "hint": "Who is the customer the survey points to, and when are they there?",
+                  "options": [
+                    {
+                      "text": "Reprice",
+                      "why": "Nothing in the survey says the price is the problem."
+                    },
+                    {
+                      "text": "Reposition",
+                      "why": "The product is fine. The team aimed at the wrong customer and moment, so it moves to the bus line."
+                    },
+                    {
+                      "text": "Replace",
+                      "why": "Buyers exist, so the data does not say no."
+                    },
+                    {
+                      "text": "Keep",
+                      "why": "The data does not support selling at lunch as written."
+                    }
+                  ],
+                  "answer": 1
+                },
+                {
+                  "id": "ft2030-s2-u3-l1-q8",
+                  "label": "Enough to keep",
+                  "prompt": "Which is enough evidence to choose Keep?",
+                  "type": "choice",
+                  "hint": "Keep needs evidence from outside the team's circle.",
+                  "options": [
+                    {
+                      "text": "Outside answers show buyers at a price above cost",
+                      "why": "This is evidence from strangers, at a price that works."
+                    },
+                    {
+                      "text": "Nobody told the team the idea was bad",
+                      "why": "A lack of bad news is not evidence."
+                    },
+                    {
+                      "text": "Most classmates said yes",
+                      "why": "Classmates know the team, so their yes is kind and weak evidence."
+                    },
+                    {
+                      "text": "The team likes the product",
+                      "why": "A liking is an opinion, not data from customers."
+                    }
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "ft2030-s2-u3-l1-q9",
+                  "label": "Biggest gap",
+                  "prompt": "Every team's in-class share was 85%. The bars show each team's outside share. Tap the team whose two samples disagree the most.",
+                  "type": "point",
+                  "figure": {
+                    "kind": "bars",
+                    "title": "Outside share who would buy",
+                    "unit": "%",
+                    "bars": [
+                      {
+                        "label": "Sock Swap",
+                        "value": 70
+                      },
+                      {
+                        "label": "Tea Cart",
+                        "value": 45
+                      },
+                      {
+                        "label": "Bead Kits",
+                        "value": 30
+                      },
+                      {
+                        "label": "Note Packs",
+                        "value": 60
+                      }
+                    ]
+                  },
+                  "hint": "The biggest gap sits where the outside share is furthest from the in-class share.",
+                  "answer": 2,
+                  "why": "The outside share is lowest for Bead Kits, so its gap from 85% is biggest.",
+                  "miss": "Compare each bar to the in-class share. Look for the one furthest below it."
+                }
+              ]
+            },
+            {
+              "id": "ft2030-s2-u3-l2",
+              "title": "A price in whole dollars",
+              "kind": "lesson",
+              "learn": [
+                "Round a price up or down and see what it does to break-even.",
+                "Use survey shares to choose the price that leaves more money."
+              ],
+              "cards": [
+                {
+                  "text": "Some markets take payment only in $1 tokens, so there is no change. Then every price is a whole number of dollars. A plan of $2.50 cannot be charged. The price becomes $2 or $3."
+                },
+                {
+                  "text": "A payment system is a set of rules that moves money from buyers to sellers. A market with $1 tokens runs a small one: the office issues tokens, sellers accept them, and hand them back for money. A token not handed back is a liability: the office still owes that value. $400 out and $310 back leaves $90 out."
+                },
+                {
+                  "text": "Rounding is a real choice, and each way has a cost. Rounding down gives a lower margin per item but more buyers. Rounding up gives a higher margin but fewer buyers. Your survey tells you which way to go.",
+                  "figure": {
+                    "kind": "table",
+                    "title": "Rounding a price",
+                    "columns": [
+                      "Effect",
+                      "Round down",
+                      "Round up"
+                    ],
+                    "rows": [
+                      [
+                        "Margin per item",
+                        "Lower",
+                        "Higher"
+                      ],
+                      [
+                        "Likely buyers",
+                        "More",
+                        "Fewer"
+                      ],
+                      [
+                        "Items to break even",
+                        "More",
+                        "Fewer"
+                      ]
+                    ]
+                  }
+                },
+                {
+                  "text": "Sprout Cups sells seedling cups. It planned $3.50, which the market cannot take. Fixed costs are $84.00. Each cup costs $1.20. Break-even is fixed costs divided by margin, rounded up to a whole cup.",
+                  "figure": {
+                    "kind": "table",
+                    "title": "Sprout Cups at two prices",
+                    "columns": [
+                      "Price",
+                      "Margin",
+                      "Cups to break even"
+                    ],
+                    "rows": [
+                      [
+                        "$3.00",
+                        "$1.80",
+                        "47"
+                      ],
+                      [
+                        "$4.00",
+                        "$2.80",
+                        "30"
+                      ]
+                    ]
+                  }
+                },
+                {
+                  "text": "Sprout Cups asked 40 outside people if they would buy at each price. About 120 people pass the stand in a day. Buyers are the people who pass times the share who would buy.",
+                  "figure": {
+                    "kind": "table",
+                    "title": "Outside survey",
+                    "columns": [
+                      "Price",
+                      "Would buy",
+                      "Share"
+                    ],
+                    "rows": [
+                      [
+                        "$3.00",
+                        "28 of 40",
+                        "70%"
+                      ],
+                      [
+                        "$4.00",
+                        "12 of 40",
+                        "30%"
+                      ]
+                    ]
+                  }
+                },
+                {
+                  "text": "Money left = buyers x margin - fixed costs. The survey, not a hunch, settles the price. Then check the break-even is still below your buyers.",
+                  "figure": {
+                    "kind": "table",
+                    "title": "Sprout Cups, money left",
+                    "columns": [
+                      "Price",
+                      "Buyers",
+                      "Money left"
+                    ],
+                    "rows": [
+                      [
+                        "$3.00",
+                        "84",
+                        "$67.20"
+                      ],
+                      [
+                        "$4.00",
+                        "36",
+                        "$16.80"
+                      ]
+                    ]
+                  }
+                }
+              ],
+              "questions": [
+                {
+                  "id": "ft2030-s2-u3-l2-q1",
+                  "label": "Whole dollars",
+                  "prompt": "The market takes only whole-dollar payments. Dev planned to charge $4.25. Which two prices can Dev choose from?",
+                  "type": "choice",
+                  "hint": "Which two whole numbers sit on each side of 4.25?",
+                  "options": [
+                    {
+                      "text": "$4.00 or $4.50",
+                      "why": "A half dollar is not a whole dollar. $4.50 cannot be paid with $1 tokens."
+                    },
+                    {
+                      "text": "$4.25 or $5.00",
+                      "why": "$4.25 is the plan itself, and it is not a whole number."
+                    },
+                    {
+                      "text": "$3 or $4",
+                      "why": "$3 is not next to $4.25. The nearest whole dollars are on each side of it."
+                    },
+                    {
+                      "text": "$4 or $5",
+                      "why": "The nearest whole dollars on each side of $4.25."
+                    }
+                  ],
+                  "answer": 3
+                },
+                {
+                  "id": "ft2030-s2-u3-l2-q2",
+                  "label": "New margin",
+                  "prompt": "Rosa planned $5.40. Her survey says to round down to the nearest whole dollar. Each item costs $2.10. What is her margin per item at the new price?",
+                  "type": "number",
+                  "terms": [
+                    {
+                      "term": "contribution margin",
+                      "meaning": "The price minus the variable cost of one item: what each sale puts toward the fixed costs."
+                    }
+                  ],
+                  "hint": "First write the new price, then subtract the cost of one item.",
+                  "unit": "$",
+                  "answer": 290,
+                  "tolerance": 0,
+                  "why": "Margin is the new price minus the cost of one item.",
+                  "working": "Round down $5.40 to $5.00. $5.00 - $2.10 = $2.90.",
+                  "traps": [
+                    {
+                      "value": 330,
+                      "why": "That uses the old price. The market cannot take it, so round first."
+                    }
+                  ],
+                  "miss": "Round the price first, then take the cost of one item off it."
+                },
+                {
+                  "id": "ft2030-s2-u3-l2-q3",
+                  "label": "Break-even items",
+                  "prompt": "A team charges $5.00 for an item that costs $2.10 to make. Its fixed costs are $120.00. How many items must it sell to break even?",
+                  "type": "choice",
+                  "terms": [
+                    {
+                      "term": "break-even point",
+                      "meaning": "The number of items a business must sell for its sales to cover all of its costs."
+                    }
+                  ],
+                  "hint": "Margin first, then fixed costs divided by the margin.",
+                  "options": [
+                    {
+                      "text": "41 items",
+                      "why": "You cannot sell part of an item. At this number the team is still short, so round up."
+                    },
+                    {
+                      "text": "24 items",
+                      "why": "That divides by the price. Divide by the margin, which is the price minus the cost."
+                    },
+                    {
+                      "text": "42 items",
+                      "why": "Fixed costs divided by the margin, rounded up to a whole item."
+                    },
+                    {
+                      "text": "58 items",
+                      "why": "That divides by the cost of one item. Divide by the margin."
+                    }
+                  ],
+                  "answer": 2
+                },
+                {
+                  "id": "ft2030-s2-u3-l2-q4",
+                  "label": "Round up effect",
+                  "prompt": "A team rounds its price up from $2.50 to $3.00. What happens to its margin per item and to the items it needs for break-even?",
+                  "type": "choice",
+                  "hint": "Think about what a higher price leaves from each sale.",
+                  "options": [
+                    {
+                      "text": "Lower margin, fewer items needed",
+                      "why": "A higher price does not lower the margin."
+                    },
+                    {
+                      "text": "Higher margin, fewer items needed",
+                      "why": "A higher price leaves more on each sale, so fewer sales cover the fixed costs."
+                    },
+                    {
+                      "text": "Higher margin, more items needed",
+                      "why": "A bigger margin means fewer items cover the fixed costs."
+                    },
+                    {
+                      "text": "Lower margin, more items needed",
+                      "why": "Rounding up raises the price, so the margin goes up."
+                    }
+                  ],
+                  "answer": 1
+                },
+                {
+                  "id": "ft2030-s2-u3-l2-q5",
+                  "label": "Money left",
+                  "prompt": "At $4.00 each, a team expects 50 buyers. Each item costs $1.30 and its fixed costs are $96.00. How much money is left after fixed costs? Money left = buyers x margin - fixed costs.",
+                  "type": "number",
+                  "terms": [
+                    {
+                      "term": "contribution margin",
+                      "meaning": "The price minus the variable cost of one item: what each sale puts toward the fixed costs."
+                    }
+                  ],
+                  "hint": "Find the margin, then multiply by the buyers, then take off the fixed costs.",
+                  "unit": "$",
+                  "answer": 3900,
+                  "tolerance": 0,
+                  "why": "The margin from all the buyers pays the fixed costs first. What remains is money left.",
+                  "working": "Margin $4.00 - $1.30 = $2.70. 50 x $2.70 = $135.00. $135.00 - $96.00 = $39.00.",
+                  "traps": [
+                    {
+                      "value": 13500,
+                      "why": "That is the margin from all buyers. Subtract the fixed costs from it."
+                    }
+                  ],
+                  "miss": "Do not forget to take off the fixed costs at the end."
+                },
+                {
+                  "id": "ft2030-s2-u3-l2-q6",
+                  "label": "Which way to round",
+                  "prompt": "A team planned $2.50. Each item costs $1.00 and fixed costs are $60.00. About 100 people pass by. The outside survey shows the share who would buy at each price. The team picks the price that leaves more money after fixed costs. Which price?",
+                  "type": "choice",
+                  "figure": {
+                    "kind": "table",
+                    "title": "Outside survey",
+                    "columns": [
+                      "Price",
+                      "Share who would buy"
+                    ],
+                    "rows": [
+                      [
+                        "$2.00",
+                        "90%"
+                      ],
+                      [
+                        "$3.00",
+                        "60%"
+                      ]
+                    ]
+                  },
+                  "terms": [
+                    {
+                      "term": "contribution margin",
+                      "meaning": "The price minus the variable cost of one item: what each sale puts toward the fixed costs."
+                    }
+                  ],
+                  "hint": "Work out money left at each price with the survey shares.",
+                  "options": [
+                    {
+                      "text": "$3, because each sale leaves more and enough still buy",
+                      "why": "At $3.00, 60 buyers leave $60.00. At $2.00, 90 buyers leave $30.00."
+                    },
+                    {
+                      "text": "$2, because more students would buy",
+                      "why": "More buyers, but each sale leaves only $1.00, so less money is left."
+                    },
+                    {
+                      "text": "$2, because it is the lower price",
+                      "why": "A lower price is not the test. The test is money left after fixed costs."
+                    },
+                    {
+                      "text": "Either one, because both sell more than break-even",
+                      "why": "Both clear break-even, but they leave different amounts. The prompt asks which leaves more."
+                    }
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "ft2030-s2-u3-l2-q7",
+                  "label": "Tokens still out",
+                  "prompt": "A market office issued 520 $1 tokens and sellers have handed back 455 of them. How many dollars of tokens are still out?",
+                  "type": "number",
+                  "terms": [
+                    {
+                      "term": "liability",
+                      "meaning": "Something you owe, or may have to pay back."
+                    }
+                  ],
+                  "hint": "Subtract the tokens handed back from the tokens issued.",
+                  "unit": "$",
+                  "answer": 6500,
+                  "tolerance": 0,
+                  "why": "Tokens not handed back are still a liability of the office.",
+                  "working": "520 - 455 = 65 tokens, each worth $1.00, so $65.00.",
+                  "traps": [
+                    {
+                      "value": 45500,
+                      "why": "That is the amount handed back. The question asks for what is still out."
+                    }
+                  ],
+                  "miss": "Each token is worth $1. Count the tokens that have not come back."
+                },
+                {
+                  "id": "ft2030-s2-u3-l2-q8",
+                  "label": "A liability",
+                  "prompt": "The market office has sold $1 tokens and not all have come back. What does it mean that the unreturned tokens are a liability?",
+                  "type": "choice",
+                  "terms": [
+                    {
+                      "term": "liability",
+                      "meaning": "Something you owe, or may have to pay back."
+                    }
+                  ],
+                  "hint": "Who has a claim on the money until a token comes back?",
+                  "options": [
+                    {
+                      "text": "The office has already earned that money",
+                      "why": "It is not earned until the token comes back."
+                    },
+                    {
+                      "text": "The tokens are worth nothing now",
+                      "why": "A token still holds its value until it is handed back."
+                    },
+                    {
+                      "text": "The sellers owe the office that money",
+                      "why": "The office owes the value to the holder of the token."
+                    },
+                    {
+                      "text": "The office still owes that value to whoever hands them in",
+                      "why": "The office is holding the money and has not earned it yet."
+                    }
+                  ],
+                  "answer": 3
+                },
+                {
+                  "id": "ft2030-s2-u3-l2-q9",
+                  "label": "Best price",
+                  "prompt": "Each item costs $1.40. The bars show the share of 100 passers-by who would buy at each price. Tap the price that brings in the most margin in total. Fixed costs are the same at every price.",
+                  "type": "point",
+                  "figure": {
+                    "kind": "bars",
+                    "title": "Share who would buy",
+                    "unit": "%",
+                    "bars": [
+                      {
+                        "label": "$2",
+                        "value": 85
+                      },
+                      {
+                        "label": "$3",
+                        "value": 55
+                      },
+                      {
+                        "label": "$4",
+                        "value": 25
+                      },
+                      {
+                        "label": "$5",
+                        "value": 10
+                      }
+                    ]
+                  },
+                  "hint": "For each bar, multiply the share by the margin at that price.",
+                  "answer": 1,
+                  "why": "Buyers times margin is highest at $3.",
+                  "miss": "Work out buyers x margin at every price, not only the cheapest or the dearest."
+                }
+              ]
+            },
+            {
+              "id": "ft2030-s2-u3-l3",
+              "title": "Where the money goes",
+              "kind": "lesson",
+              "learn": [
+                "Name where the money goes and work out the net.",
+                "Write a plan for unsold items and a list someone can shop from."
+              ],
+              "cards": [
+                {
+                  "text": "Money for a venture comes from different sources. Sales: what customers pay. Fundraising: money given for a purpose. Supplier credit: a supplier lets you take goods now and pay later. A grant: money from a society, a foundation or a government that is not paid back."
+                },
+                {
+                  "text": "The plan must say where the money goes. Name the recipient. \"Charity\" is a category. \"The Elm Street Food Pantry\" is a name. Add two sentences on why this cause. Then say how the money gets there: who holds it, who checks the total and how it is paid out. Keep it short."
+                },
+                {
+                  "text": "Total raised is all the money collected. Total spent is all the costs. Net funds = raised - spent. Only the net goes to the cause. A stand that raises $300.00 and spends $260.00 sends $40.00.",
+                  "figure": {
+                    "kind": "table",
+                    "title": "A stand's funds",
+                    "columns": [
+                      "Line",
+                      "Amount"
+                    ],
+                    "rows": [
+                      [
+                        "Total raised",
+                        "$300.00"
+                      ],
+                      [
+                        "Total spent",
+                        "$260.00"
+                      ],
+                      [
+                        "Net funds",
+                        "$40.00"
+                      ]
+                    ]
+                  }
+                },
+                {
+                  "text": "Every venture touches the school. Say the impact, then the fix. \"Our line may block the hallway\" is half an answer. Add \"so we set up by the wall and keep a lane clear\". Also say how people will hear about the purpose. A poster that names the cause makes the same product a different sale."
+                },
+                {
+                  "text": "Unsold items are money already spent. \"We will figure it out\" is not a plan. Real plans: sell the rest cheaper on the last day, give it away, take orders before you make, or make small batches and restock. Each one has a cost. Put it in the budget."
+                },
+                {
+                  "text": "A purchase list is a shopping list someone else can buy from: exact item and size, packs, price per pack and where the price came from. You buy whole packs. Need 130 cups in packs of 50? Buy 3 packs.",
+                  "figure": {
+                    "kind": "table",
+                    "title": "A purchase list",
+                    "columns": [
+                      "Item",
+                      "Packs",
+                      "Per pack",
+                      "Line cost"
+                    ],
+                    "rows": [
+                      [
+                        "Paper cups, 250 mL, pack of 50",
+                        "3",
+                        "$6.00",
+                        "$18.00"
+                      ],
+                      [
+                        "Lids, pack of 100",
+                        "2",
+                        "$9.50",
+                        "$19.00"
+                      ]
+                    ]
+                  }
+                }
+              ],
+              "questions": [
+                {
+                  "id": "ft2030-s2-u3-l3-q1",
+                  "label": "Source of money",
+                  "prompt": "Cedar Club takes its paper cups from a supplier now and pays for them in two weeks. Which source of money is that?",
+                  "type": "choice",
+                  "hint": "Who is waiting to be paid?",
+                  "options": [
+                    {
+                      "text": "Fundraising",
+                      "why": "Fundraising is money given for a purpose. Here the supplier waits for payment."
+                    },
+                    {
+                      "text": "Sales",
+                      "why": "Sales are what customers pay. This is the supplier's arrangement."
+                    },
+                    {
+                      "text": "Supplier credit",
+                      "why": "The supplier lets the club take goods now and pay later."
+                    },
+                    {
+                      "text": "A grant",
+                      "why": "A grant is money that is not paid back. The club will pay the supplier."
+                    }
+                  ],
+                  "answer": 2
+                },
+                {
+                  "id": "ft2030-s2-u3-l3-q2",
+                  "label": "A named use",
+                  "prompt": "Which line is the most specific use of funds?",
+                  "type": "choice",
+                  "hint": "Which line names a recipient and a purpose?",
+                  "options": [
+                    {
+                      "text": "Charity work in our city",
+                      "why": "That is a category. It does not name who gets the money."
+                    },
+                    {
+                      "text": "The Elm Street Food Pantry's winter hat drive",
+                      "why": "It is a named recipient with a stated purpose that someone can check."
+                    },
+                    {
+                      "text": "Helping people who need it",
+                      "why": "That is worthy but not specific. A named recipient can be checked."
+                    },
+                    {
+                      "text": "Good causes around the school",
+                      "why": "That is a category too. Name the recipient."
+                    }
+                  ],
+                  "answer": 1
+                },
+                {
+                  "id": "ft2030-s2-u3-l3-q3",
+                  "label": "Net of two stands",
+                  "prompt": "Two stands report their funds. What is the net funds of the two stands together?",
+                  "type": "number",
+                  "figure": {
+                    "kind": "table",
+                    "title": "Two stands",
+                    "columns": [
+                      "Stand",
+                      "Raised",
+                      "Spent"
+                    ],
+                    "rows": [
+                      [
+                        "A",
+                        "$410.00",
+                        "$330.00"
+                      ],
+                      [
+                        "B",
+                        "$280.00",
+                        "$305.00"
+                      ]
+                    ]
+                  },
+                  "terms": [
+                    {
+                      "term": "net funds",
+                      "meaning": "Total raised minus total spent. Only this part goes to the cause."
+                    }
+                  ],
+                  "hint": "Find each stand's net. One of them is negative.",
+                  "unit": "$",
+                  "answer": 5500,
+                  "tolerance": 0,
+                  "why": "Stand B spent more than it raised, so it takes money away from the total.",
+                  "working": "A: $410.00 - $330.00 = $80.00. B: $280.00 - $305.00 = -$25.00. $80.00 - $25.00 = $55.00.",
+                  "traps": [
+                    {
+                      "value": 8000,
+                      "why": "That is only stand A. Stand B spent more than it raised, which lowers the total."
+                    },
+                    {
+                      "value": 69000,
+                      "why": "That is the total raised. Take off the money spent."
+                    }
+                  ],
+                  "miss": "Net is raised minus spent for each stand. Then add the two nets."
+                },
+                {
+                  "id": "ft2030-s2-u3-l3-q4",
+                  "label": "How funds move",
+                  "prompt": "Which sentence best answers \"process for disbursing funds\"?",
+                  "type": "choice",
+                  "terms": [
+                    {
+                      "term": "disbursing funds",
+                      "meaning": "Paying out the money that was raised, to the person or group it was raised for."
+                    }
+                  ],
+                  "hint": "Look for who holds the money, who checks it and how it is paid.",
+                  "options": [
+                    {
+                      "text": "We will make sure the money gets there.",
+                      "why": "That is a promise, not a process. Say who holds it, who checks and how."
+                    },
+                    {
+                      "text": "The office holds the money. Two people count it. The office pays the club by cheque.",
+                      "why": "It says who holds the money, who checks and how it is paid."
+                    },
+                    {
+                      "text": "The money goes to a very good cause.",
+                      "why": "That is about the cause. The question asks how the money gets there."
+                    }
+                  ],
+                  "answer": 1
+                },
+                {
+                  "id": "ft2030-s2-u3-l3-q5",
+                  "label": "Impact and fix",
+                  "prompt": "Which line names an impact on the school and a fix?",
+                  "type": "choice",
+                  "hint": "Which line has both parts: the problem and what the team will do?",
+                  "options": [
+                    {
+                      "text": "Our line may block the hallway at 3:15",
+                      "why": "That is an impact with no fix."
+                    },
+                    {
+                      "text": "We will not affect the school at all",
+                      "why": "Every venture has some impact. Naming none looks like not having thought about it."
+                    },
+                    {
+                      "text": "Our stand will be very popular",
+                      "why": "That is about sales. It does not say how the school is affected."
+                    },
+                    {
+                      "text": "Our line may block the hallway, so we set up by the wall and keep a lane clear",
+                      "why": "It says what the problem is and what the team will do about it."
+                    }
+                  ],
+                  "answer": 3
+                },
+                {
+                  "id": "ft2030-s2-u3-l3-q6",
+                  "label": "A real plan",
+                  "prompt": "Which unsold-items answer is a real plan with a cost?",
+                  "type": "choice",
+                  "hint": "Which answer says what the team will do and what it costs?",
+                  "options": [
+                    {
+                      "text": "We will figure it out when the day comes",
+                      "why": "That is not a plan."
+                    },
+                    {
+                      "text": "We hope that everything sells out on time",
+                      "why": "A hope is not a plan and it has no cost in the budget."
+                    },
+                    {
+                      "text": "Sell what is left cheaper on the last day, which lowers the margin on those items",
+                      "why": "It is a clear action, and it names its cost."
+                    },
+                    {
+                      "text": "There will not be any items left over",
+                      "why": "No one can be sure of that. A plan covers what happens if there is stock left."
+                    }
+                  ],
+                  "answer": 2
+                },
+                {
+                  "id": "ft2030-s2-u3-l3-q7",
+                  "label": "Last-day discount",
+                  "prompt": "On the last day a stand has 40 items left. They normally sell for $4.00 and cost $1.50 each. The team sells them for $3.00 each instead. If all 40 sell, how much margin does the team make on them?",
+                  "type": "number",
+                  "terms": [
+                    {
+                      "term": "contribution margin",
+                      "meaning": "The price minus the variable cost of one item: what each sale puts toward the fixed costs."
+                    }
+                  ],
+                  "hint": "Margin is the price minus the cost of one item.",
+                  "unit": "$",
+                  "answer": 6000,
+                  "tolerance": 0,
+                  "why": "The discount price still beats the cost, so each sale leaves a smaller margin, not a loss.",
+                  "working": "$3.00 - $1.50 = $1.50. 40 x $1.50 = $60.00.",
+                  "traps": [
+                    {
+                      "value": 12000,
+                      "why": "That is the money taken in. Take off the cost of each item to find the margin."
+                    }
+                  ],
+                  "miss": "Use the discount price, not the normal price, and take off the cost of one item."
+                },
+                {
+                  "id": "ft2030-s2-u3-l3-q8",
+                  "label": "Cost of packs",
+                  "prompt": "A team needs 340 napkins. They come in packs of 75 at $4.20 a pack. It buys whole packs only. How much does it pay?",
+                  "type": "number",
+                  "hint": "How many whole packs cover the napkins you need? Then multiply by the price of a pack.",
+                  "unit": "$",
+                  "answer": 2100,
+                  "tolerance": 0,
+                  "why": "You pay for whole packs, not for the portion you need.",
+                  "working": "340 / 75 = 4.53, so 5 packs. 5 x $4.20 = $21.00.",
+                  "traps": [
+                    {
+                      "value": 1904,
+                      "why": "That prices only the part of a pack you need. You pay for the whole pack."
+                    },
+                    {
+                      "value": 1680,
+                      "why": "That is one pack too few to cover the napkins."
+                    }
+                  ],
+                  "miss": "Count whole packs first. You cannot buy part of one."
+                },
+                {
+                  "id": "ft2030-s2-u3-l3-q9",
+                  "label": "A shopping line",
+                  "prompt": "Which purchase line could someone who has never met the team buy from?",
+                  "type": "choice",
+                  "hint": "Could you walk into a store with this line and buy the exact thing?",
+                  "options": [
+                    {
+                      "text": "Plates for the stand",
+                      "why": "It does not give a size or a number of packs."
+                    },
+                    {
+                      "text": "Paper plates, 23 cm, pack of 25, 4 packs",
+                      "why": "It names the item, the size, the pack and how many."
+                    },
+                    {
+                      "text": "Enough paper goods",
+                      "why": "That is a guess. Nobody could buy from it."
+                    },
+                    {
+                      "text": "Party supplies, about $20",
+                      "why": "That is a budget, not a shopping list. Name the item and the pack."
+                    }
+                  ],
+                  "answer": 1
+                }
+              ]
+            }
+          ]
         }
       ]
     },
     {
       "id": "ft2030-s3",
+      "unit": 2,
       "title": "The Investor",
       "blurb": "What to own, what it costs, and how risk, time and inflation change the result.",
       "units": [
@@ -19173,6 +20247,1205 @@
                 "building": "exchange",
                 "label": "Open the Exchange"
               }
+            }
+          ]
+        },
+        {
+          "id": "ft2030-s3-u8",
+          "title": "A plan for a lifetime",
+          "blurb": "Two goals and an emergency fund, the payment that gets you there, RRSPs and tax, and checking a number you find online.",
+          "outcome_codes": [
+            "FIN3090 3.6",
+            "FIN3090 3.7",
+            "FIN3090 3.9",
+            "FIN3090 3.11",
+            "FIN3090 4.4.1",
+            "FIN3090 4.4.2",
+            "FIN3090 4.7"
+          ],
+          "levels": [
+            {
+              "id": "ft2030-s3-u8-l1",
+              "title": "Two goals, two plans",
+              "kind": "lesson",
+              "learn": [
+                "Match a short-term goal and a long-term goal to different kinds of savings.",
+                "Work out how many months an emergency fund covers and say what it changes in a crash."
+              ],
+              "cards": [
+                {
+                  "text": "A plan starts with a goal and a date. A short-term goal is under 5 years away, such as a used car in 3 years. A long-term goal is 20 years or more away, such as retirement. One person can have both, and two different dates call for two different plans."
+                },
+                {
+                  "text": "Money for a short-term goal has little time to wait out a fall in value. It goes in a cash equivalent: a very safe place that turns into cash fast, such as a savings account. It grows slowly, but the amount you saved is still there on the day you need it."
+                },
+                {
+                  "text": "Money for a long-term goal has time. Equities can fall, but a person decades from the goal has years to wait for the repair. So the long-term plan can lean toward equities. A good plan says in advance what to do when a fall comes, instead of deciding in a panic."
+                },
+                {
+                  "text": "Before either goal comes an emergency fund: savings for a job loss, a repair or a bill nobody planned. A common target is 3 to 6 months of expenses. Months covered = fund / monthly expenses. Nia spends $2,400.00 a month and has $9,600.00 saved: 9,600 / 2,400 = 4.0 months."
+                },
+                {
+                  "text": "Why first? Say Nia’s investments are worth $120,000.00 and a crash takes 15% off. That is a paper loss of $18,000.00. If she then loses her job, her fund pays the bills, and she does not have to sell investments while prices are down. Without the fund, a loss on paper could become a real one."
+                },
+                {
+                  "text": "A plan also changes over a lifetime. As a goal gets closer there is less time to repair a fall, so a plan can lower its equities. Here is one made-up plan. Re-check your risk tolerance whenever life changes, such as a new job, a new home or a big expense.",
+                  "figure": {
+                    "kind": "table",
+                    "title": "One made-up plan by stage",
+                    "columns": [
+                      "Stage",
+                      "In equities"
+                    ],
+                    "rows": [
+                      [
+                        "Early years",
+                        "80%"
+                      ],
+                      [
+                        "Middle years",
+                        "60%"
+                      ],
+                      [
+                        "Late years",
+                        "30%"
+                      ]
+                    ]
+                  }
+                }
+              ],
+              "questions": [
+                {
+                  "id": "ft2030-s3-u8-l1-q1",
+                  "label": "Short or long",
+                  "prompt": "Mira needs money for a trip in 2 years. Her other goal is retirement, 38 years away. Which pairing is right?",
+                  "type": "choice",
+                  "hint": "Compare each date with 5 years and with 20 years.",
+                  "options": [
+                    {
+                      "text": "The trip is short-term and retirement is long-term",
+                      "why": "The trip is under 5 years away, and retirement is 20 years or more away."
+                    },
+                    {
+                      "text": "Both are long-term goals, because both need saving",
+                      "why": "A long-term goal is 20 years or more away. The trip is only 2 years away."
+                    },
+                    {
+                      "text": "The trip is long-term and retirement is short-term",
+                      "why": "That swaps them. A short-term goal is under 5 years away."
+                    }
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "ft2030-s3-u8-l1-q2",
+                  "label": "Trip money",
+                  "prompt": "Following the plan on the cards, where does the money for Mira’s trip in 2 years belong?",
+                  "type": "choice",
+                  "terms": [
+                    {
+                      "term": "cash equivalent",
+                      "meaning": "A very safe, short-term place that turns into cash fast, such as a savings account."
+                    }
+                  ],
+                  "hint": "Ask how long the money can wait if the market falls.",
+                  "options": [
+                    {
+                      "text": "In mostly equities, so it grows as much as possible",
+                      "why": "Equities can fall, and 2 years is not enough time to wait for the repair."
+                    },
+                    {
+                      "text": "In a cash equivalent such as a savings account",
+                      "why": "Money needed soon cannot wait out a fall, so it goes somewhere very safe that turns into cash fast."
+                    },
+                    {
+                      "text": "In the same long-term mix as retirement, to keep it simple",
+                      "why": "The trip is 2 years away and retirement is 38. Different dates need different plans."
+                    }
+                  ],
+                  "answer": 1
+                },
+                {
+                  "id": "ft2030-s3-u8-l1-q3",
+                  "label": "Six-month target",
+                  "prompt": "Hal spends $2,375.00 a month. How many dollars is 6 months of his expenses?",
+                  "type": "number",
+                  "terms": [
+                    {
+                      "term": "emergency fund",
+                      "meaning": "Savings kept for a job loss, a repair or a bill nobody planned."
+                    }
+                  ],
+                  "hint": "Multiply one month of expenses by the number of months.",
+                  "unit": "$",
+                  "answer": 1425000,
+                  "tolerance": 0,
+                  "why": "The target is counted in months of expenses, so multiply one month by 6.",
+                  "working": "$2,375.00 x 6 = $14,250.00.",
+                  "miss": "Take one month of expenses and multiply it by 6.",
+                  "traps": [
+                    {
+                      "value": 712500,
+                      "why": "That is 3 months. The question asks for 6."
+                    },
+                    {
+                      "value": 238100,
+                      "why": "That adds 6 dollars. Multiply by 6 instead."
+                    }
+                  ]
+                },
+                {
+                  "id": "ft2030-s3-u8-l1-q4",
+                  "label": "Months covered",
+                  "prompt": "Kit spends $2,000.00 a month and has $9,000.00 in an emergency fund. How many months does the fund cover?",
+                  "type": "choice",
+                  "terms": [
+                    {
+                      "term": "emergency fund",
+                      "meaning": "Savings kept for a job loss, a repair or a bill nobody planned."
+                    }
+                  ],
+                  "hint": "Divide the fund by one month of expenses.",
+                  "options": [
+                    {
+                      "text": "0.22 months",
+                      "why": "That divides the other way, expenses by fund. Divide the fund by the expenses."
+                    },
+                    {
+                      "text": "3 months",
+                      "why": "That is the low end of the usual target, not what this fund covers."
+                    },
+                    {
+                      "text": "4.5 months",
+                      "why": "9,000 / 2,000 = 4.5. Months covered is the fund divided by one month of expenses."
+                    }
+                  ],
+                  "answer": 2
+                },
+                {
+                  "id": "ft2030-s3-u8-l1-q5",
+                  "label": "What the fund changes",
+                  "prompt": "A crash cuts the value of Nell’s investments, and the same month her hours are cut. She has an emergency fund. What does the fund let her do?",
+                  "type": "choice",
+                  "terms": [
+                    {
+                      "term": "emergency fund",
+                      "meaning": "Savings kept for a job loss, a repair or a bill nobody planned."
+                    }
+                  ],
+                  "hint": "Think about what she would have to sell without the fund.",
+                  "options": [
+                    {
+                      "text": "Stop her investments from falling in value",
+                      "why": "The crash still happens. The fund changes what she has to do about it, not the prices."
+                    },
+                    {
+                      "text": "Pay bills from it and leave her investments alone while prices are down",
+                      "why": "Yes. She does not have to sell at the low prices, so the loss stays on paper."
+                    },
+                    {
+                      "text": "Sell her investments quickly before they fall more",
+                      "why": "That is the panic move the fund helps her avoid. It turns a paper loss into a real one."
+                    }
+                  ],
+                  "answer": 1
+                },
+                {
+                  "id": "ft2030-s3-u8-l1-q6",
+                  "label": "Paper loss",
+                  "prompt": "Gil’s investments are worth $84,000.00. A crash takes 15% off. How many dollars is the paper loss?",
+                  "type": "number",
+                  "hint": "Find 15% of the value: multiply by 0.15.",
+                  "unit": "$",
+                  "answer": 1260000,
+                  "tolerance": 0,
+                  "why": "A percent loss is that percent of the value before the fall.",
+                  "working": "$84,000.00 x 0.15 = $12,600.00.",
+                  "miss": "Multiply the value before the crash by 0.15. The result is the amount lost.",
+                  "traps": [
+                    {
+                      "value": 7140000,
+                      "why": "That is what is left after the crash, not the loss."
+                    }
+                  ]
+                },
+                {
+                  "id": "ft2030-s3-u8-l1-q7",
+                  "label": "Most months covered",
+                  "prompt": "Four friends spend a different amount each month: Eve $1,500.00, Bo $2,500.00, Max $2,000.00 and Di $1,000.00. Each bar is that friend’s emergency fund. Tap the friend whose fund covers the most months.",
+                  "type": "point",
+                  "terms": [
+                    {
+                      "term": "emergency fund",
+                      "meaning": "Savings kept for a job loss, a repair or a bill nobody planned."
+                    }
+                  ],
+                  "figure": {
+                    "kind": "bars",
+                    "title": "Emergency funds",
+                    "unit": "$",
+                    "bars": [
+                      {
+                        "label": "Bo",
+                        "value": 1000000
+                      },
+                      {
+                        "label": "Eve",
+                        "value": 900000
+                      },
+                      {
+                        "label": "Di",
+                        "value": 800000
+                      },
+                      {
+                        "label": "Max",
+                        "value": 700000
+                      }
+                    ]
+                  },
+                  "hint": "Divide each friend’s fund by that friend’s monthly expenses.",
+                  "answer": 2,
+                  "why": "Months covered is fund / expenses. Di has 8,000 / 1,000 = 8 months. Bo has the biggest fund, but also the biggest bills.",
+                  "miss": "Work out fund / expenses for each friend. The biggest bar is not always the most months."
+                },
+                {
+                  "id": "ft2030-s3-u8-l1-q8",
+                  "label": "When life changes",
+                  "prompt": "Abe’s plan worked for years. This year Abe starts a new job and takes on a large expense. What do the cards say about his risk tolerance?",
+                  "type": "choice",
+                  "terms": [
+                    {
+                      "term": "risk tolerance",
+                      "meaning": "How big a fall in value a person can live with without being forced to sell or choosing to sell in a panic."
+                    }
+                  ],
+                  "hint": "Look at the last card.",
+                  "options": [
+                    {
+                      "text": "Re-check it, because his time and needs may have changed",
+                      "why": "Risk tolerance belongs to the person and can change as life changes, so it is worth re-checking."
+                    },
+                    {
+                      "text": "Keep it, since a plan once made never needs a second look",
+                      "why": "The cards say to re-check it when life changes. A plan is not set once for good."
+                    },
+                    {
+                      "text": "Raise it, because a new job always means more risk is fine",
+                      "why": "Nothing says it goes up. It may go down. It has to be re-checked, not guessed."
+                    }
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "ft2030-s3-u8-l1-q9",
+                  "label": "Late-stage mix",
+                  "prompt": "In the made-up plan, the late years hold 30% in equities. On $90,000.00, how many dollars are not in equities?",
+                  "type": "number",
+                  "hint": "The rest of the money is 100% minus the share in equities.",
+                  "unit": "$",
+                  "answer": 6300000,
+                  "tolerance": 0,
+                  "why": "What is not in equities is the rest: 100% minus 30%, which is 70%.",
+                  "working": "100% - 30% = 70%. $90,000.00 x 0.70 = $63,000.00.",
+                  "miss": "First find the share that is not in equities, then take that share of the money.",
+                  "traps": [
+                    {
+                      "value": 2700000,
+                      "why": "That is the part in equities. The question asks for the rest."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "ft2030-s3-u8-l2",
+              "title": "The payment that gets you there",
+              "kind": "lesson",
+              "learn": [
+                "Say what a regular payment is for, whether it pays off a loan or builds a goal.",
+                "Work out a payment with the formula and see how the time you allow changes it."
+              ],
+              "cards": [
+                {
+                  "text": "A regular payment is the same amount every month, and it can do one of two jobs. It can pay off a loan: you borrow now and pay it back in equal parts. Or it can build a goal: you set aside the same amount each month until you reach a target. A spreadsheet has a payment function that finds it."
+                },
+                {
+                  "text": "The payment function needs three things: the rate for one period, the number of periods and the amount. Class example: $20,000.00 borrowed at 6% a year, paid monthly for 10 years. The monthly rate is 6% / 12 = 0.5% and there are 120 months. The payment is $222.04. Over 5 years, it jumps.",
+                  "figure": {
+                    "kind": "table",
+                    "title": "A $20,000.00 loan at 6% a year",
+                    "columns": [
+                      "Time",
+                      "Months",
+                      "Payment"
+                    ],
+                    "rows": [
+                      [
+                        "10 years",
+                        "120",
+                        "$222.04"
+                      ],
+                      [
+                        "5 years",
+                        "60",
+                        "$386.66"
+                      ]
+                    ]
+                  }
+                },
+                {
+                  "text": "Add up what is paid: $222.04 x 120 is about $26,645. The borrower got $20,000, so about $6,645 is interest, the cost of borrowing. It is the same compound growth that builds savings, now working against the borrower."
+                },
+                {
+                  "text": "By hand, a loan payment is amount x r / (1 - (1 + r)^-n). Here r is the rate for one month and n the number of months. For the class loan, r = 0.005 and n = 120: 20,000 x 0.005 / (1 - 1.005^-120) = $222.04. A negative power means 1 divided by that power."
+                },
+                {
+                  "text": "Saving toward a goal turns it around. With a deposit at the end of each month, deposit = goal x r / ((1 + r)^n - 1). In this example a savings account pays 3% a year, so r = 0.25% a month. To have $6,000.00 in 3 years (n = 36), the deposit is $159.49 a month."
+                },
+                {
+                  "text": "Time changes the payment. For the same goal at the same rate, a longer wait means a smaller deposit, and more of the goal comes from interest. Here are three waits for the same $6,000.00 goal at the same 3%. The amounts paid in are the deposit times the months.",
+                  "figure": {
+                    "kind": "table",
+                    "title": "A $6,000.00 goal at 3% a year",
+                    "columns": [
+                      "Years",
+                      "Deposit a month",
+                      "Paid in",
+                      "Interest"
+                    ],
+                    "rows": [
+                      [
+                        "2",
+                        "$242.89",
+                        "$5,829.36",
+                        "$170.64"
+                      ],
+                      [
+                        "3",
+                        "$159.49",
+                        "$5,741.64",
+                        "$258.36"
+                      ],
+                      [
+                        "5",
+                        "$92.81",
+                        "$5,568.60",
+                        "$431.40"
+                      ]
+                    ]
+                  }
+                }
+              ],
+              "questions": [
+                {
+                  "id": "ft2030-s3-u8-l2-q1",
+                  "label": "Who earns interest",
+                  "prompt": "Interest shows up in both jobs of a regular payment. Who earns it on a loan, and who earns it on a savings goal?",
+                  "type": "choice",
+                  "hint": "Look at the card on the cost of borrowing.",
+                  "options": [
+                    {
+                      "text": "On a loan the lender earns it. On savings you earn it",
+                      "why": "A borrower pays interest as the cost of borrowing. A saver is paid interest on the money in the account."
+                    },
+                    {
+                      "text": "On a loan you earn it. On savings the bank earns it",
+                      "why": "That is reversed. The borrower pays and the saver is paid."
+                    },
+                    {
+                      "text": "You earn it both times, as the person making the payments",
+                      "why": "A borrower pays interest, so it is not earned on a loan."
+                    }
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "ft2030-s3-u8-l2-q2",
+                  "label": "Monthly rate",
+                  "prompt": "A savings account pays 4.8% a year in this example, and deposits go in monthly. What monthly rate, in percent, goes into the payment formula?",
+                  "type": "number",
+                  "hint": "The formula uses the rate for one month. How many months are in a year?",
+                  "unit": "%",
+                  "answer": 0.4,
+                  "tolerance": 0,
+                  "why": "The formula works one month at a time, so the yearly rate is split over 12 months.",
+                  "working": "4.8% / 12 = 0.4% a month.",
+                  "miss": "Divide the yearly rate by the number of months in a year.",
+                  "traps": [
+                    {
+                      "value": 57.599999999999994,
+                      "why": "That multiplies. A month is a twelfth of a year, so divide."
+                    }
+                  ]
+                },
+                {
+                  "id": "ft2030-s3-u8-l2-q3",
+                  "label": "Loan payment",
+                  "prompt": "Jun borrows $12,000.00 at 6% a year, paid monthly over 5 years (60 months, monthly rate 0.5%). What is her monthly payment, to the nearest cent?",
+                  "type": "number",
+                  "terms": [
+                    {
+                      "term": "payment function",
+                      "meaning": "A spreadsheet tool that finds the regular payment from a rate for one period, a number of periods and an amount."
+                    }
+                  ],
+                  "hint": "Use amount x r / (1 - (1 + r)^-n). Work out 1.005^-60 first.",
+                  "unit": "$",
+                  "answer": 23199,
+                  "tolerance": 2,
+                  "why": "The payment covers the loan and its interest, so it is more than the loan divided by 60.",
+                  "working": "12,000 x 0.005 / (1 - 1.005^-60) = $231.99.",
+                  "miss": "Use r = 0.005 and n = 60 in the loan formula. Keep the minus sign on the power.",
+                  "traps": [
+                    {
+                      "value": 20000,
+                      "why": "That is the loan divided by 60. It leaves out the interest."
+                    }
+                  ]
+                },
+                {
+                  "id": "ft2030-s3-u8-l2-q4",
+                  "label": "Goal deposit",
+                  "prompt": "Ezra wants $9,000.00 in 4 years from an account paying 3% a year (monthly rate 0.25%, 48 months). Deposits go in at the end of each month. What monthly deposit does he need, to the nearest cent?",
+                  "type": "number",
+                  "terms": [
+                    {
+                      "term": "payment function",
+                      "meaning": "A spreadsheet tool that finds the regular payment from a rate for one period, a number of periods and an amount."
+                    }
+                  ],
+                  "hint": "Use goal x r / ((1 + r)^n - 1). Work out 1.0025^48 first.",
+                  "unit": "$",
+                  "answer": 17671,
+                  "tolerance": 2,
+                  "why": "Interest does part of the work, so the deposit is less than the goal divided by the number of months.",
+                  "working": "9,000 x 0.0025 / (1.0025^48 - 1) = $176.71.",
+                  "miss": "Use r = 0.0025 and n = 48 in the goal formula. The power gets 1 taken away, not 1 added.",
+                  "traps": [
+                    {
+                      "value": 18750,
+                      "why": "That splits the goal over 48 months and ignores interest. The deposit needed is smaller."
+                    }
+                  ]
+                },
+                {
+                  "id": "ft2030-s3-u8-l2-q5",
+                  "label": "Longer or shorter",
+                  "prompt": "Two plans reach the same goal at the same rate. Plan A takes 3 years and Plan B takes 6 years. Which has the smaller monthly deposit, and why?",
+                  "type": "choice",
+                  "hint": "Look at the table of three waits.",
+                  "options": [
+                    {
+                      "text": "Plan A, because fewer months means less to pay",
+                      "why": "Fewer months means each deposit has to be bigger to reach the same goal."
+                    },
+                    {
+                      "text": "They are the same, because the goal is the same",
+                      "why": "The goal is the same, but the deposits are not. Time changes the payment."
+                    },
+                    {
+                      "text": "Plan B, because there are more months and interest does more of the work",
+                      "why": "More months share the goal among more deposits, and interest has longer to add to it."
+                    }
+                  ],
+                  "answer": 2
+                },
+                {
+                  "id": "ft2030-s3-u8-l2-q6",
+                  "label": "Shortest she can afford",
+                  "prompt": "Each bar is the monthly deposit needed to reach $10,000.00 in an account paying 3% a year, over 2, 3, 4 or 5 years. Toni can set aside $200.00 a month. Tap the shortest plan she can afford.",
+                  "type": "point",
+                  "figure": {
+                    "kind": "bars",
+                    "title": "Monthly deposit for $10,000.00",
+                    "unit": "$",
+                    "bars": [
+                      {
+                        "label": "2 years",
+                        "value": 40481
+                      },
+                      {
+                        "label": "3 years",
+                        "value": 26581
+                      },
+                      {
+                        "label": "4 years",
+                        "value": 19634
+                      },
+                      {
+                        "label": "5 years",
+                        "value": 15469
+                      }
+                    ]
+                  },
+                  "hint": "Find the first bar that is no more than $200.00, starting from the shortest plan.",
+                  "answer": 2,
+                  "why": "The 4-year plan needs $196.34, which fits in $200.00. The shorter plan needs $265.81, which is too much.",
+                  "miss": "The shortest plans need more than $200.00 a month. Find the first bar that fits."
+                },
+                {
+                  "id": "ft2030-s3-u8-l2-q7",
+                  "label": "Cost of a loan",
+                  "prompt": "Bao’s loan is $10,000.00 at 6% a year over 3 years. The payment is $304.22 a month for 36 months. How many dollars of interest does Bao pay in all?",
+                  "type": "number",
+                  "hint": "Total paid is the payment times the months. Interest is what is above the loan.",
+                  "unit": "$",
+                  "answer": 95192,
+                  "tolerance": 0,
+                  "why": "Interest is everything paid beyond the amount borrowed.",
+                  "working": "$304.22 x 36 = $10,951.92. $10,951.92 - $10,000.00 = $951.92.",
+                  "miss": "Multiply the payment by the number of months, then take off the amount borrowed.",
+                  "traps": [
+                    {
+                      "value": 1095192,
+                      "why": "That is the total paid, which includes the $10,000.00 borrowed. Take the loan off to get the interest."
+                    }
+                  ]
+                },
+                {
+                  "id": "ft2030-s3-u8-l2-q8",
+                  "label": "A deposit too big",
+                  "prompt": "A goal deposit comes out bigger than Zed can afford each month. The rate cannot change. Which change makes the deposit smaller?",
+                  "type": "choice",
+                  "hint": "Remember what the table of three waits showed.",
+                  "options": [
+                    {
+                      "text": "Make the goal amount larger",
+                      "why": "A larger goal needs larger deposits."
+                    },
+                    {
+                      "text": "Give the goal more months",
+                      "why": "More months spread the goal over more deposits, and interest has longer to help."
+                    },
+                    {
+                      "text": "Cut the number of months",
+                      "why": "Fewer months mean bigger deposits, not smaller ones."
+                    }
+                  ],
+                  "answer": 1
+                },
+                {
+                  "id": "ft2030-s3-u8-l2-q9",
+                  "label": "Interest earned",
+                  "prompt": "Lou puts $250.00 a month into an account paying 3% a year for 36 months. The balance at the end is $9,405.14. How many dollars of that balance came from interest?",
+                  "type": "number",
+                  "hint": "Total deposits is the deposit times the months.",
+                  "unit": "$",
+                  "answer": 40514,
+                  "tolerance": 0,
+                  "why": "The balance is the deposits plus the interest, so interest is the balance minus the deposits.",
+                  "working": "$250.00 x 36 = $9,000.00. $9,405.14 - $9,000.00 = $405.14.",
+                  "miss": "Work out how much Lou put in altogether, then take that from the balance.",
+                  "traps": [
+                    {
+                      "value": 900000,
+                      "why": "That is what Lou deposited. Interest is the balance minus that."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "ft2030-s3-u8-l3",
+              "title": "Registered accounts and tax",
+              "kind": "lesson",
+              "learn": [
+                "Say what an RRSP is and work out the room it gives you.",
+                "Tell how interest, dividends and capital gains are taxed outside a registered account, and what a tax shelter does."
+              ],
+              "cards": [
+                {
+                  "text": "A registered account is an account set up under government rules, and it can hold investments. The account is the box and the investment is what is inside. A GIC is an investment. An RRSP is an account, so a GIC can sit in one. An RRSP is for saving toward retirement."
+                },
+                {
+                  "text": "Your RRSP room is how much you may put in this year and deduct. It is 18% of last year’s earned income, up to a yearly maximum the CRA posts. If last year’s earned income was $60,000.00, the room is $10,800.00 (under the maximum). In your first year of earning there is no room yet: room comes from last year’s income."
+                },
+                {
+                  "text": "The trade: money put in is a deduction, so it comes off your income before tax. Put in $5,000.00 and $48,000.00 of income is taxed as $43,000.00. The other side: money taken out is added to your income and taxed that year as income, and the room you used is not given back."
+                },
+                {
+                  "text": "So an RRSP has two sides. An advantage is a deduction now and tax put off while the money grows. A disadvantage is tax later, when it comes out. It is not always better because of the deduction. It depends on your tax rate when you put money in, compared with when you take it out."
+                },
+                {
+                  "text": "Outside a registered account, income from investments is taxed. Interest is taxed every year. A dividend, a share of a company’s profit paid to its owners, is taxed in the year you get it. A capital gain, selling for more than you paid, is taxed only when you sell. Rates are for the tax lessons.",
+                  "figure": {
+                    "kind": "table",
+                    "title": "When tax is due",
+                    "columns": [
+                      "Kind",
+                      "Outside",
+                      "In an RRSP",
+                      "In a TFSA"
+                    ],
+                    "rows": [
+                      [
+                        "Interest",
+                        "Every year",
+                        "When cashed in",
+                        "Not taxed"
+                      ],
+                      [
+                        "Dividends",
+                        "Year received",
+                        "When cashed in",
+                        "Not taxed"
+                      ],
+                      [
+                        "Capital gain",
+                        "When sold",
+                        "When cashed in",
+                        "Not taxed"
+                      ]
+                    ]
+                  }
+                },
+                {
+                  "text": "A tax shelter holds an investment so that tax is put off or removed. An RRSP shelters money until it is cashed in. A TFSA is another registered account: money comes out tax-free, and the room comes back on January 1 of the next year. The choice depends on when you need the money."
+                }
+              ],
+              "questions": [
+                {
+                  "id": "ft2030-s3-u8-l3-q1",
+                  "label": "Room from income",
+                  "prompt": "Pia’s earned income last year was $52,500.00. Her RRSP room is 18% of it, and that is less than the yearly maximum. How much room does she have?",
+                  "type": "number",
+                  "terms": [
+                    {
+                      "term": "RRSP room",
+                      "meaning": "How much you may put into an RRSP this year and deduct."
+                    }
+                  ],
+                  "hint": "Multiply last year’s earned income by 0.18.",
+                  "unit": "$",
+                  "answer": 945000,
+                  "tolerance": 0,
+                  "why": "Room is 18% of last year’s earned income, when that is under the maximum.",
+                  "working": "$52,500.00 x 0.18 = $9,450.00.",
+                  "miss": "Take 18% of last year’s earned income: multiply by 0.18.",
+                  "traps": [
+                    {
+                      "value": 525000,
+                      "why": "That is 10%. The rule is 18%."
+                    }
+                  ]
+                },
+                {
+                  "id": "ft2030-s3-u8-l3-q2",
+                  "label": "A first job",
+                  "prompt": "Ari starts his first job in March this year. He had no earned income last year. How much RRSP room does this year give him?",
+                  "type": "choice",
+                  "terms": [
+                    {
+                      "term": "RRSP room",
+                      "meaning": "How much you may put into an RRSP this year and deduct."
+                    }
+                  ],
+                  "hint": "Which year’s income is the room built from?",
+                  "options": [
+                    {
+                      "text": "None yet, because room comes from last year’s earned income",
+                      "why": "Room is worked out from last year’s income, and last year it was nothing."
+                    },
+                    {
+                      "text": "18% of what he earns this year",
+                      "why": "This year’s income builds room for later years, not for this one."
+                    },
+                    {
+                      "text": "The yearly maximum, for any new worker",
+                      "why": "The maximum is only a limit on the room. Room still has to come from earned income."
+                    }
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "ft2030-s3-u8-l3-q3",
+                  "label": "Over the maximum",
+                  "prompt": "Uma earned a lot last year, so 18% of her earned income is more than the yearly maximum. What is her room this year?",
+                  "type": "choice",
+                  "terms": [
+                    {
+                      "term": "RRSP room",
+                      "meaning": "How much you may put into an RRSP this year and deduct."
+                    }
+                  ],
+                  "hint": "Look for the words “up to a yearly maximum”.",
+                  "options": [
+                    {
+                      "text": "18% of her income, since that is the rule",
+                      "why": "The rule says up to a yearly maximum, so 18% cannot go past it."
+                    },
+                    {
+                      "text": "The yearly maximum, the smaller of the two",
+                      "why": "Room is 18% of last year’s earned income, up to the maximum. When 18% is bigger, the maximum applies."
+                    },
+                    {
+                      "text": "Nothing, because her income is too high",
+                      "why": "A high income does not remove room. It only means the maximum applies."
+                    }
+                  ],
+                  "answer": 1
+                },
+                {
+                  "id": "ft2030-s3-u8-l3-q4",
+                  "label": "Income after deduction",
+                  "prompt": "Teo’s income is $46,000.00. He puts $3,200.00 into an RRSP, within his room, and claims the deduction. What income is left to be taxed?",
+                  "type": "number",
+                  "terms": [
+                    {
+                      "term": "deduction",
+                      "meaning": "An amount you may subtract from income before tax is worked out."
+                    }
+                  ],
+                  "hint": "A deduction comes off income before tax is worked out.",
+                  "unit": "$",
+                  "answer": 4280000,
+                  "tolerance": 0,
+                  "why": "The RRSP money is a deduction, so it is subtracted from income before tax.",
+                  "working": "$46,000.00 - $3,200.00 = $42,800.00.",
+                  "miss": "Subtract the amount put in from the income.",
+                  "traps": [
+                    {
+                      "value": 4920000,
+                      "why": "That adds the deduction. A deduction is subtracted."
+                    }
+                  ]
+                },
+                {
+                  "id": "ft2030-s3-u8-l3-q5",
+                  "label": "Cashing in",
+                  "prompt": "Years later Teo takes $8,000.00 out of the RRSP in a year when his other income is $39,500.00. How much income does that year show for tax?",
+                  "type": "number",
+                  "terms": [
+                    {
+                      "term": "RRSP",
+                      "meaning": "A registered account for saving toward retirement. Money put in is a deduction, and money taken out is taxed as income."
+                    }
+                  ],
+                  "hint": "Money taken out of an RRSP is added to income that year.",
+                  "unit": "$",
+                  "answer": 4750000,
+                  "tolerance": 0,
+                  "why": "Money cashed in from an RRSP is taxed as income, so it is added to the other income.",
+                  "working": "$39,500.00 + $8,000.00 = $47,500.00.",
+                  "miss": "Money taken out of an RRSP counts as income. Add it to the other income.",
+                  "traps": [
+                    {
+                      "value": 3950000,
+                      "why": "That leaves out the money taken out. It is added to income."
+                    }
+                  ]
+                },
+                {
+                  "id": "ft2030-s3-u8-l3-q6",
+                  "label": "Gain timing",
+                  "prompt": "Wen bought a share for $400.00. It is now worth $520.00 and Wen has not sold it. Outside a registered account, when is the capital gain taxed?",
+                  "type": "choice",
+                  "terms": [
+                    {
+                      "term": "capital gain",
+                      "meaning": "The amount you sell something for, minus what you paid for it, when the price is higher."
+                    }
+                  ],
+                  "hint": "Look at the table row for a capital gain.",
+                  "options": [
+                    {
+                      "text": "Every year, like interest",
+                      "why": "Interest is taxed every year. A capital gain waits for the sale."
+                    },
+                    {
+                      "text": "Right now, because the share is worth more",
+                      "why": "A higher price alone does not trigger tax. The sale does."
+                    },
+                    {
+                      "text": "Only when Wen sells it",
+                      "why": "A capital gain is taxed when you sell. Until then it is a gain on paper."
+                    }
+                  ],
+                  "answer": 2
+                },
+                {
+                  "id": "ft2030-s3-u8-l3-q7",
+                  "label": "Which payment",
+                  "prompt": "A company pays Mara $0.40 for each share she owns, out of its profit. What is this payment called?",
+                  "type": "choice",
+                  "terms": [
+                    {
+                      "term": "dividend",
+                      "meaning": "A share of a company’s profit paid out to its owners."
+                    }
+                  ],
+                  "hint": "She owns shares, and the money comes out of profit.",
+                  "options": [
+                    {
+                      "text": "A dividend",
+                      "why": "A dividend is a share of a company’s profit paid to its owners."
+                    },
+                    {
+                      "text": "Interest",
+                      "why": "Interest is paid on money lent or saved. A share makes Mara an owner, not a lender."
+                    },
+                    {
+                      "text": "A capital gain",
+                      "why": "A capital gain comes from selling for more than she paid. Nothing was sold here."
+                    }
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "ft2030-s3-u8-l3-q8",
+                  "label": "Inside an RRSP",
+                  "prompt": "Yara holds a GIC inside her RRSP for 10 years. When is the interest it earned taxed?",
+                  "type": "choice",
+                  "terms": [
+                    {
+                      "term": "tax shelter",
+                      "meaning": "A way of holding an investment so that tax is put off or removed."
+                    }
+                  ],
+                  "hint": "An RRSP shelters money until it is cashed in.",
+                  "options": [
+                    {
+                      "text": "Every year, as the interest is earned",
+                      "why": "That is how interest is taxed outside a registered account. An RRSP puts it off."
+                    },
+                    {
+                      "text": "When she takes the money out of the RRSP, as income",
+                      "why": "The RRSP shelters it until it is cashed in, and then it is taxed as income."
+                    },
+                    {
+                      "text": "Never, because the money comes out tax-free",
+                      "why": "Tax-free withdrawals belong to a TFSA. RRSP money is taxed as income when it comes out."
+                    }
+                  ],
+                  "answer": 1
+                },
+                {
+                  "id": "ft2030-s3-u8-l3-q9",
+                  "label": "Closest to $8,000",
+                  "prompt": "Each bar is a person’s earned income last year. Everyone’s room is 18% of it, under the maximum. Tap the person whose room is closest to $8,000.00.",
+                  "type": "point",
+                  "terms": [
+                    {
+                      "term": "RRSP room",
+                      "meaning": "How much you may put into an RRSP this year and deduct."
+                    }
+                  ],
+                  "figure": {
+                    "kind": "bars",
+                    "title": "Earned income last year",
+                    "unit": "$",
+                    "bars": [
+                      {
+                        "label": "Una",
+                        "value": 3600000
+                      },
+                      {
+                        "label": "Gus",
+                        "value": 4400000
+                      },
+                      {
+                        "label": "Fay",
+                        "value": 5200000
+                      },
+                      {
+                        "label": "Hugo",
+                        "value": 6200000
+                      }
+                    ]
+                  },
+                  "hint": "Multiply each income by 0.18, then compare with $8,000.00.",
+                  "answer": 1,
+                  "why": "Gus has $44,000.00 x 0.18 = $7,920.00, the closest to $8,000.00.",
+                  "miss": "Work out 18% of each bar, then see which result is nearest $8,000.00."
+                }
+              ]
+            },
+            {
+              "id": "ft2030-s3-u8-l4",
+              "title": "Does that number smell right?",
+              "kind": "lesson",
+              "learn": [
+                "Turn a yearly return into a doubling time to check a number you found online.",
+                "Say what to do when a number looks wrong, and why a short good stretch is not a promise."
+              ],
+              "cards": [
+                {
+                  "text": "Anyone can post a number about investing, and sites copy each other. Before you use a return you found online, ask three things. Where does it come from? How old is it? Is it a yearly rate? A number with no source and no date is a claim, not yet a fact."
+                },
+                {
+                  "text": "A quick check is the sniff test. Turn the yearly return into a doubling time with the Rule of 72 (72 / rate) and see whether it looks sensible next to other sources. In this example, three sources put a savings account at 2% to 4% a year. That is a doubling time of 18 to 36 years."
+                },
+                {
+                  "text": "Here are three typed returns for that savings account. Two land outside the range of other sources. Outside the range does not mean wrong. It means look again.",
+                  "figure": {
+                    "kind": "table",
+                    "title": "Doubling time for a savings account",
+                    "columns": [
+                      "Typed return",
+                      "72 / rate",
+                      "Against 18 to 36"
+                    ],
+                    "rows": [
+                      [
+                        "0.4%",
+                        "180 years",
+                        "Outside: check"
+                      ],
+                      [
+                        "3%",
+                        "24 years",
+                        "Inside"
+                      ],
+                      [
+                        "30%",
+                        "2.4 years",
+                        "Outside: check"
+                      ]
+                    ]
+                  }
+                },
+                {
+                  "text": "When a number lands outside the range, open the source again. Did you copy the yearly rate, or a monthly rate or a total over 5 years? A page might say 0.4% per month, and 0.4 typed as a yearly rate gives 180 years. A yearly rate is about the monthly rate x 12. Fix a copying mistake."
+                },
+                {
+                  "text": "If the page still shows the number, keep it and write “checked twice” beside it. Do not change a correctly sourced number to make it fit. That swaps a real figure for a guess. The test tells you where to look again. It does not tell you what the number should be."
+                },
+                {
+                  "text": "A very short doubling time is a flag too. By the rule, under 6 years means a return above 12% a year (72 / 12 = 6). Write “past, not promised” beside it. A fund that did well for a few years shows what happened in those years, not what a 30-year plan can count on."
+                }
+              ],
+              "questions": [
+                {
+                  "id": "ft2030-s3-u8-l4-q1",
+                  "label": "Claim or fact",
+                  "prompt": "Ina finds “funds return 15% a year” on a page with no author, no date and no source. What is it, as the cards put it?",
+                  "type": "choice",
+                  "hint": "Look at the first card: source, date and yearly rate.",
+                  "options": [
+                    {
+                      "text": "A claim, not yet a fact",
+                      "why": "With no source and no date there is nothing to check it against."
+                    },
+                    {
+                      "text": "A fact, because it is on the internet",
+                      "why": "Sites copy each other, so being online proves nothing."
+                    },
+                    {
+                      "text": "A fact, because it is a number",
+                      "why": "A number can be wrong. It needs a source and a date."
+                    }
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "ft2030-s3-u8-l4-q2",
+                  "label": "Doubling time",
+                  "prompt": "A page lists a savings account at 0.5% a year. By the Rule of 72, how long until money doubles?",
+                  "type": "choice",
+                  "terms": [
+                    {
+                      "term": "Rule of 72",
+                      "meaning": "A quick estimate: years to double is about 72 divided by the yearly rate in percent."
+                    }
+                  ],
+                  "hint": "Divide 72 by the rate.",
+                  "options": [
+                    {
+                      "text": "About 14.4 years",
+                      "why": "That divides by 5 instead of by 0.5. Divide 72 by the rate as written, 0.5."
+                    },
+                    {
+                      "text": "About 36 years",
+                      "why": "That multiplies 72 by the rate. The rule divides."
+                    },
+                    {
+                      "text": "About 144 years",
+                      "why": "72 / 0.5 = 144."
+                    }
+                  ],
+                  "answer": 2
+                },
+                {
+                  "id": "ft2030-s3-u8-l4-q3",
+                  "label": "First step",
+                  "prompt": "In this example other sources put a savings account at 2% to 4%, a doubling time of 18 to 36 years. Ina’s sheet shows 144 years. What is her first step?",
+                  "type": "choice",
+                  "terms": [
+                    {
+                      "term": "sniff test",
+                      "meaning": "A quick check of whether a number looks sensible before you use it."
+                    }
+                  ],
+                  "hint": "The test says look again, not change.",
+                  "options": [
+                    {
+                      "text": "Change the rate to 3% so it fits the range",
+                      "why": "A fit-the-range change swaps a real figure for a guess."
+                    },
+                    {
+                      "text": "Open the source again and check the rate it shows",
+                      "why": "The sniff test says where to look again. The page may show a monthly rate or a total."
+                    },
+                    {
+                      "text": "Delete the row because it is wrong",
+                      "why": "Outside the range does not mean wrong. Check the source first."
+                    }
+                  ],
+                  "answer": 1
+                },
+                {
+                  "id": "ft2030-s3-u8-l4-q4",
+                  "label": "Rate from years",
+                  "prompt": "A bond fund’s row shows money doubling in 16 years. By the Rule of 72, about what yearly rate is that?",
+                  "type": "number",
+                  "terms": [
+                    {
+                      "term": "Rule of 72",
+                      "meaning": "A quick estimate: years to double is about 72 divided by the yearly rate in percent."
+                    }
+                  ],
+                  "hint": "The rule runs backwards: divide 72 by the years.",
+                  "unit": "%",
+                  "answer": 4.5,
+                  "tolerance": 0,
+                  "why": "The rate is about 72 divided by the years to double.",
+                  "working": "72 / 16 = 4.5%.",
+                  "miss": "Divide 72 by the number of years, not the other way around.",
+                  "traps": [
+                    {
+                      "value": 1152,
+                      "why": "That multiplies. The rule divides 72 by the years."
+                    }
+                  ]
+                },
+                {
+                  "id": "ft2030-s3-u8-l4-q5",
+                  "label": "Monthly to yearly",
+                  "prompt": "A page says a savings account pays 0.35% per month. Rey typed 0.35 as the yearly rate. About what yearly rate does the page show? Multiply the monthly rate by 12.",
+                  "type": "number",
+                  "hint": "There are 12 months in a year.",
+                  "unit": "%",
+                  "answer": 4.2,
+                  "tolerance": 0.05,
+                  "why": "A monthly rate is about a twelfth of the yearly rate, so the yearly rate is about 12 times it.",
+                  "working": "0.35% x 12 = 4.2%.",
+                  "miss": "The page gives one month. Multiply by the number of months in a year.",
+                  "traps": [
+                    {
+                      "value": 0.03,
+                      "why": "That divides. A year has more months than one, so the yearly rate is bigger."
+                    }
+                  ]
+                },
+                {
+                  "id": "ft2030-s3-u8-l4-q6",
+                  "label": "Keep or change",
+                  "prompt": "Eli checks the page twice. It still says 9% a year for a bond fund, outside the 3% to 5% her other sources give in this example. What do the cards say to do?",
+                  "type": "choice",
+                  "hint": "Look at the card on what to do if the page still shows the number.",
+                  "options": [
+                    {
+                      "text": "Change it to 5% so it sits in the range",
+                      "why": "Changing a sourced number to fit the range is worse than the first mistake."
+                    },
+                    {
+                      "text": "Remove the fund from her list",
+                      "why": "An unusual number is not a reason to drop the fund. It is a reason to look twice."
+                    },
+                    {
+                      "text": "Keep 9% and write “checked twice” beside it",
+                      "why": "A correctly sourced number stays. The note shows she looked again."
+                    }
+                  ],
+                  "answer": 2
+                },
+                {
+                  "id": "ft2030-s3-u8-l4-q7",
+                  "label": "Fails the test",
+                  "prompt": "In this example a savings account should double in 18 to 36 years. Each bar is a typed yearly rate. Tap the one whose doubling time falls outside that range.",
+                  "type": "point",
+                  "terms": [
+                    {
+                      "term": "sniff test",
+                      "meaning": "A quick check of whether a number looks sensible before you use it."
+                    }
+                  ],
+                  "figure": {
+                    "kind": "bars",
+                    "title": "Typed yearly rates",
+                    "unit": "%",
+                    "bars": [
+                      {
+                        "label": "Row 1",
+                        "value": 3.2
+                      },
+                      {
+                        "label": "Row 2",
+                        "value": 0.4
+                      },
+                      {
+                        "label": "Row 3",
+                        "value": 2.1
+                      },
+                      {
+                        "label": "Row 4",
+                        "value": 3.8
+                      }
+                    ]
+                  },
+                  "hint": "Divide 72 by each rate and compare with 18 to 36 years.",
+                  "answer": 1,
+                  "why": "0.4% gives 72 / 0.4 = 180 years, far outside 18 to 36. The others give 22.5, 34.29, 18.95 years, all inside.",
+                  "miss": "Work out 72 / rate for each bar. One result is far outside 18 to 36."
+                },
+                {
+                  "id": "ft2030-s3-u8-l4-q8",
+                  "label": "Short stretch",
+                  "prompt": "A page says a stock fund doubled in 4 years. Cal wants a rate for a 30-year plan. What do the cards say?",
+                  "type": "choice",
+                  "terms": [
+                    {
+                      "term": "Rule of 72",
+                      "meaning": "A quick estimate: years to double is about 72 divided by the yearly rate in percent."
+                    }
+                  ],
+                  "hint": "Turn 4 years into a yearly rate, then think about how short the stretch is.",
+                  "options": [
+                    {
+                      "text": "That is about 18% a year over a short stretch, so mark it “past, not promised”",
+                      "why": "A doubling time under 6 years is a flag. A short stretch is not what a 30-year plan can count on."
+                    },
+                    {
+                      "text": "Use it, since the newest number is the best",
+                      "why": "Recent is not the same as reliable. A short stretch is past, not promised."
+                    },
+                    {
+                      "text": "Ignore the fund, since that return cannot be true",
+                      "why": "The number may be real for that stretch. It is just not a promise."
+                    }
+                  ],
+                  "answer": 0
+                },
+                {
+                  "id": "ft2030-s3-u8-l4-q9",
+                  "label": "Past growth",
+                  "prompt": "A made-up fund grew 12% a year for the last 5 years. Multiply $5,000.00 by 1.12 five times. How much would it be after 5 years, to the nearest dollar?",
+                  "type": "number",
+                  "hint": "Multiply by 1.12 once for each year.",
+                  "unit": "$",
+                  "answer": 881200,
+                  "tolerance": 50,
+                  "why": "Each year multiplies the balance by 1.12. This shows what the money would have done, not what comes next.",
+                  "working": "$5,000 x 1.12^5 = $8,811.71, about $8,812.",
+                  "miss": "Multiply by 1.12, five times in a row.",
+                  "traps": [
+                    {
+                      "value": 800000,
+                      "why": "That adds 12% of $5,000 each year. Interest is on the growing balance, so it is more."
+                    }
+                  ]
+                }
+              ]
             }
           ]
         }

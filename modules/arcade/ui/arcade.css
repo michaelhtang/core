@@ -65,6 +65,11 @@
 .arc-tile b { font-size: 1rem; }
 .arc-back { justify-self: start; }
 /* FinWord: the board is --n tiles wide (4 to 9) and never wider than the panel, so nine letters fit a 375 px phone. */
+.arc-wl-hints { display: grid; gap: 6px; }
+.arc-wl-hint { margin: 0; padding: 6px 10px; border-left: 3px solid var(--accent); background: #121a33; border-radius: 4px; overflow-wrap: anywhere; }
+.arc-wl-new { animation: arc-wl-flash 1.6s ease-out; }
+@keyframes arc-wl-flash { from { background: #5a4710; } to { background: #121a33; } }
+@media (prefers-reduced-motion: reduce) { .arc-wl-new { animation: none; } }
 .arc-wl-board { --n: 5; display: grid; gap: 6px; justify-content: center; }
 .arc-wl-row { display: grid; grid-template-columns: repeat(var(--n), minmax(0, 1fr)); gap: 6px; width: min(100%, calc(var(--n) * 54px)); justify-self: center; }
 .arc-wl-tile { display: grid; place-items: center; aspect-ratio: 1; border: 2px solid var(--field-border); border-radius: 6px; font: 700 clamp(1rem, 6vw, 1.5rem) var(--font-pixel, monospace); color: var(--ink); text-transform: uppercase; }
@@ -112,3 +117,59 @@ button.arc-mode:focus-visible, .arc-seg button:focus-visible { outline: 2px soli
 .arc-dpad .arc-d { grid-column: 2; grid-row: 2; }
 .arc-dpad .arc-r { grid-column: 3; grid-row: 2; }
 @media (max-width: 720px), (pointer: coarse) { .arc-dpad { display: grid; } }
+/* Debt Snake's card: one "You will play" row with a Settings button, then Play. The choices live in a settings dialog. */
+.arc-setup { display: flex; align-items: center; gap: 12px; padding: 10px 12px; border: 1px solid var(--row-line); border-radius: var(--radius); background: rgba(11, 15, 23, 0.35); }
+.arc-setup-pics { display: flex; flex: none; }
+.arc-setup-pics .arc-pic { width: 44px; height: 44px; }
+.arc-setup-pics .arc-pic + .arc-pic { margin-left: -14px; box-shadow: -2px 0 0 var(--panel); }
+.arc-setup-text { display: grid; gap: 2px; min-width: 0; flex: 1 1 auto; }
+.arc-setup-text .label { margin: 0; }
+.arc-setup-text b { font-size: 1.05rem; overflow-wrap: anywhere; }
+.arc-setup-opts { color: var(--accent); }
+button.arc-gear { flex: none; min-height: 44px; padding-inline: 14px; }
+button.arc-play-btn { min-height: 56px; font-size: 1.05rem; }
+@media (max-width: 520px) {
+  .arc-setup { flex-wrap: wrap; align-items: flex-start; }
+  .arc-setup-text { flex-basis: calc(100% - 60px); }
+  button.arc-gear { flex: 1 1 100%; }
+}
+.arc-dialog { width: min(760px, calc(100vw - 24px)); max-height: calc(100dvh - 24px); padding: 0; color: var(--ink); background: var(--panel); border: 1px solid var(--glass-border); border-radius: 12px; box-shadow: 0 24px 60px rgba(0, 0, 0, 0.55); overflow: hidden; }
+.arc-dialog[open] { display: grid; grid-template-rows: auto minmax(0, 1fr) auto; animation: arc-dlg-in 160ms ease-out; }
+.arc-dialog::backdrop { background: rgba(3, 6, 15, 0.72); backdrop-filter: blur(3px); }
+@keyframes arc-dlg-in { from { opacity: 0; transform: translateY(12px) scale(0.98); } to { opacity: 1; transform: none; } }
+@media (prefers-reduced-motion: reduce) { .arc-dialog[open] { animation: none; } }
+.arc-dlg-head, .arc-dlg-foot { display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 12px 16px; }
+.arc-dlg-head { border-bottom: 1px solid var(--row-line); }
+.arc-dlg-head b { font: 700 1.15rem var(--font-display); text-transform: uppercase; letter-spacing: 0.04em; }
+.arc-dlg-foot { border-top: 1px solid var(--row-line); background: rgba(11, 15, 23, 0.35); }
+.arc-dlg-body { overflow-y: auto; overscroll-behavior: contain; padding: 14px 16px 18px; display: flex; flex-direction: column; gap: 10px; }
+.arc-dlg-body > * { flex: none; }
+.arc-dlg-body > .label { margin: 4px 0 0; }
+button.arc-x { min-height: 40px; min-width: 40px; padding: 0; font-size: 1.1rem; }
+button.arc-done { min-width: 9em; }
+.arc-extras { display: flex; flex-wrap: wrap; gap: 8px; }
+button.arc-chipbtn, button.arc-chipbtn:hover:not(:disabled) { min-height: 38px; padding: 4px 14px; font: 700 0.9rem var(--font-pixel, monospace); text-transform: none; letter-spacing: 0.02em; color: var(--ink); background: transparent; border: 1px dashed var(--field-border); border-radius: var(--radius-pill); box-shadow: none; }
+button.arc-chipbtn.arc-on { color: #0b1330; background: var(--accent); border: 1px solid var(--accent); }
+.arc-modes-tight { grid-template-columns: repeat(auto-fill, minmax(155px, 1fr)); gap: 6px; }
+.arc-modes-tight button.arc-mode, .arc-modes-tight button.arc-mode:hover:not(:disabled) { min-height: 46px; padding: 6px 8px; gap: 8px; }
+.arc-modes-tight .arc-mode-text b { font-size: 0.9rem; line-height: 1.15; }
+.arc-mode-desc { margin: 0; min-height: 2.6em; padding: 8px 12px; border-left: 4px solid var(--accent); background: rgba(245, 184, 61, 0.1); font-size: 0.92rem; }
+@media (max-width: 400px) { .arc-modes-tight { grid-template-columns: repeat(2, minmax(0, 1fr)); } .arc-dlg-body { padding-inline: 12px; } }
+
+/* Quick Cash Counter: a DOM screen. Four big offer buttons (two columns on a phone, four when wide), a wait bar and the end card's rows. */
+.arc-qc { display: grid; gap: 12px; }
+.arc-qc-who { margin: 0; font-size: 1.25rem; font-weight: 700; }
+.arc-qc-bar { width: 100%; height: 16px; accent-color: var(--accent); }
+.arc-qc-bar.arc-qc-low { accent-color: #ff5a4a; }
+.arc-qc-offers { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+@container (min-width: 660px) { .arc-qc-offers { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+.arc-qc-offer { display: grid; gap: 4px; align-content: start; justify-items: start; min-height: 120px; padding: 10px; text-align: left; font: inherit; text-transform: none; letter-spacing: normal; touch-action: manipulation; -webkit-user-select: none; user-select: none; -webkit-touch-callout: none; }
+.arc-qc-offer b { font-size: 1.05rem; }
+.arc-qc-key { font-size: 0.8rem; font-weight: 800; opacity: 0.8; }
+.arc-qc-term { font-weight: 700; }
+.arc-qc-offer.arc-picked { outline: 3px solid var(--accent); outline-offset: 2px; }
+.arc-qc-flash { margin: 0; min-height: 3em; font-size: 1.15rem; font-weight: 700; }
+.arc-qc-flash.arc-qc-top { color: #5ee08a; }
+.arc-qc-kinds { margin: 0; padding-left: 1.2em; display: grid; gap: 6px; }
+.arc-qc-rows { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+.arc-qc-rows li { display: grid; gap: 2px; padding: 8px 12px; border: 1px solid var(--row-line); border-radius: var(--radius); }

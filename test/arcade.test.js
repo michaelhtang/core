@@ -130,7 +130,7 @@ async function world({ n = 3, config = REAL } = {}) {
   let t = T0;
   const srv = await boot({ config, clock: createClock({ now: () => t }) });
   const w = await seeded(srv, n, { transfers: false });
-  srv.app.db.prepare("INSERT OR IGNORE INTO arcade_class_off (class_id, game) SELECT id, 'wordle' FROM classes").run(); for (const t of ['today_errands', 'today_state']) srv.app.db.exec(`DELETE FROM ${t}`);   // Today picks 3 errands a day: with four arcade errands on one could miss the day, so these worlds drop FinWord and let the day be picked again
+  for (const g of ['wordle', 'quickcash']) srv.app.db.prepare("INSERT OR IGNORE INTO arcade_class_off (class_id, game) SELECT id, ? FROM classes").run(g); for (const t of ['today_errands', 'today_state']) srv.app.db.exec(`DELETE FROM ${t}`);   // Today picks 3 errands a day: with five arcade errands on some could miss the day, so these worlds drop FinWord and Quick Cash Counter and let the day be picked again
   const rows = (sql, ...a) => srv.app.db.prepare(sql).all(...a);
   return { srv, ...w, advance: (ms) => { t += ms; }, rows, cleanup: srv.cleanup };
 }
@@ -375,6 +375,7 @@ test('a verified finish completes "Play a round of Bill Dash" once, for at most 
 test('every game the Arcade lists has a thumbnail served at /m/arcade/thumbs/<key>.jpg', async () => {
   const w = await world({ n: 1 });
   try {
+    w.srv.app.db.exec('DELETE FROM arcade_class_off');                       // every game on again, so every tile is checked
     const keys = (await w.students[0].client.get('/api/arcade/state')).json.games.map((g) => g.key);
     assert.ok(keys.length >= 2);
     for (const key of keys) {

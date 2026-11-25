@@ -2,8 +2,10 @@ import { h, api, fmt, guard } from '/ui.js?v=__V__';
 import * as billdash from '/m/arcade/games/billdash.js?v=__V__';
 import * as diversify from '/m/arcade/games/diversify.js?v=__V__';
 import * as debtsnake from '/m/arcade/games/debtsnake.js?v=__V__';
+import * as quickcash from '/m/arcade/games/quickcash.js?v=__V__';
 import { optionKey, parseOptions } from '/m/arcade/games/debtsnake-core.js?v=__V__';
 import { BUCKETS, EVENTS, score as diversifyScore } from '/m/arcade/games/diversify-core.js?v=__V__';
+import * as wordsearch from '/m/arcade/games/wordsearch.js?v=__V__';
 
 // The Arcade building: a card for each game, its canvas with keyboard and touch controls, and the verified result. The round is played here,
 // but the score shown at the end is the server's: it replays the recorded inputs with the seed it chose at /start (docs/arcade.md).
@@ -43,17 +45,22 @@ const UI = {
       'Crash into a wall, a stone or your own body and the round is over. A long snake is clumsy, so paying down debt gives you room to move.',
       'Get your debt to $0 and you are debt free: +200 points, once. After that each coin is savings: +10 points and the snake grows by 1.',
       'Interest then works for you. Each month you get 1 more segment and 10 points for every full $1,000 you have saved.',
-      'A round lasts 3 minutes at most. Speed is how often the snake moves (slow, normal or fast). The board is small (10 by 9), normal (15 by 13) or large (21 by 17). You can have 1, 3 or 5 coins on the board at once.',
-      'Pick a mode. Each one adds a money rule. Mix puts several together, and "?" picks three for you. Your best score and the class board are kept for each mode. Speed, board and coins do not split the boards.',
+      'A round lasts 3 minutes at most.',
+      'Tap Settings to change the game. Pick a mode: each one adds a money rule. Mix modes puts several together, and Surprise me picks three for you. Speed is how often the snake moves (slow, normal or fast). The board is small (10 by 9), normal (15 by 13) or large (21 by 17). You can have 1, 3 or 5 coins on the board at once.',
+      'Your best score and the class board are kept for each mode. Speed, board and coins do not split the boards.',
     ],
     tip: 'Tip: pay early. The shorter you are, the easier it is to turn. After a crash, press Space to play again.',
     legend: true, padClass: 'arc-dpad',
     pads: [['Up', 1, 'arc-u'], ['Left', 4, 'arc-l'], ['Down', 2, 'arc-d'], ['Right', 8, 'arc-r']],
   },
+  quickcash: {                                                       // a DOM screen, not a canvas; its Today errand pays like Debt Snake's, the score never pays (docs/quickcash.md)
+    mod: quickcash, dom: true, errand: 'Play a round of Quick Cash Counter', local: quickcash.score, steps: quickcash.steps(), tip: quickcash.tip, legendFn: quickcash.kindsLegend,
+  },
   wordle: { errand: "Play today's FinWord" },                        // a daily word game with its own view (wordle() below), not a canvas round
+  wordsearch: {},                                                    // the daily word search: its own view in games/wordsearch.js, no errand
 };
 const WORDLE_STEPS = [
-  'There is one secret word each day. The hint above the board is the part of the course it comes from.',
+  'There is one secret word each day. The hints above the board come from the course. More hints show up as you miss.',
   'Type a word with that many letters and press Enter. You get 6 guesses. Any letters work, it does not have to be a real word.',
   'Green: the right letter in the right spot. Yellow: the letter is in the word, but in another spot. Grey: the letter is not in the word.',
 ];
@@ -73,13 +80,14 @@ export async function render(el, ctx) {
 
   // The in-app games, one line each. A tile may carry its own go() (e.g. to set location.hash for a game with its own page); by default it opens
   // that game's detail view here. Title, blurb and Best come from /api/arcade/state, which already leaves out games the teacher switched off.
-  const TILES = [{ key: 'billdash' }, { key: 'diversify' }, { key: 'debtsnake' }, { key: 'wordle', go: () => wordle() }];
+  const TILES = [{ key: 'billdash' }, { key: 'diversify' }, { key: 'debtsnake' }, { key: 'quickcash' }, { key: 'wordle', go: () => wordle() },
+    { key: 'wordsearch', go: () => { msg.textContent = ''; wordsearch.play(view, { h, api, say, guard, msg, back: () => home('wordsearch') }); } }];
 
   const bestOf = (g) => (g.modes ? Object.values(g.modes).reduce((m, x) => Math.max(m, x.best ?? -1), -1) : g.best ?? -1);   // Debt Snake: its best in any mode; -1 means none
   const tile = (t) => h('button', { type: 'button', class: 'arc-tile', 'data-tile': t.key, onclick: t.go },
     h('img', { src: `/m/arcade/thumbs/${t.key}.jpg?v=__V__`, alt: '', width: '480', height: '300', loading: 'lazy' }),
     h('span', { class: 'arc-tile-text' }, h('b', {}, t.title), h('span', { class: 'small' }, t.blurb),
-      h('span', { class: 'chip' }, t.kind === 'daily' ? ({ new: 'New word today', open: 'In progress', won: 'Solved today', lost: 'Played today' })[t.today] : bestOf(t) < 0 ? 'No score yet' : `Best ${bestOf(t)}`)));
+      h('span', { class: 'chip' }, t.kind === 'daily' ? ({ new: t.key === 'wordle' ? 'New word today' : 'New puzzle today', open: 'In progress', won: 'Solved today', lost: 'Played today', done: 'Done today' })[t.today] : bestOf(t) < 0 ? 'No score yet' : `Best ${bestOf(t)}`)));
 
   // The grid: our own games first, then Mr. Tang's linked games (modules/games, when that module is on and the list loads).
   async function home(focusKey) {
@@ -112,6 +120,8 @@ export async function render(el, ctx) {
     const keys = h('div', { class: 'arc-wl-keys', 'aria-label': 'Keyboard' });
     const status = h('p', { role: 'status', class: 'arc-wl-status' });
     const after = h('div', { class: 'stack' });
+    const hintBox = h('div', { class: 'arc-wl-hints', role: 'status', 'aria-live': 'polite' });   // the hints the server has unlocked, newest flashes once
+    let loaded = false;
     const over = () => st.status !== 'open';
     const keyState = () => {                                         // best known state of each letter: hit beats near beats miss
       const rank = { miss: 1, near: 2, hit: 3 }, best = {};
@@ -135,7 +145,10 @@ export async function render(el, ctx) {
         n === 2 ? key('Back', back, 'arc-wl-wide') : null)));
       status.className = 'arc-wl-status';
       status.textContent = over() ? (st.status === 'won' ? `You got it in ${st.guesses.length} ${st.guesses.length === 1 ? 'guess' : 'guesses'}.` : 'Out of guesses.')
-        : `Guess ${st.guesses.length + 1} of ${st.max}. ${st.length} letters.`;
+        : `Guess ${st.guesses.length + 1} of ${st.max}. ${st.length} letters.${st.next_hint_in ? ` Next hint after ${st.next_hint_in} more ${st.next_hint_in === 1 ? 'miss' : 'misses'}.` : ''}`;
+      const hs = st.hints ?? [];
+      hs.slice(hintBox.children.length).forEach((x) => hintBox.append(h('p', { class: `arc-wl-hint${loaded ? ' arc-wl-new' : ''}` }, h('b', {}, `${x.label}: `), x.text)));   // only new ones are added, so a screen reader reads just those
+      loaded = true;
       after.replaceChildren(...(over() ? [endCard()] : []), stats());
     }
     const endCard = () => h('div', { class: 'arc-card' },
@@ -176,9 +189,8 @@ export async function render(el, ctx) {
     const backBtn = h('button', { type: 'button', class: 'ghost arc-back', onclick: guard(() => home('wordle')) }, 'Back to all games');
     view.replaceChildren(backBtn, h('div', { class: 'arc-card' },
       h('div', { class: 'spread' }, h('b', {}, st.title), h('span', { class: 'chip' }, st.day)),
-      st.section ? h('p', {}, h('b', {}, 'Hint: '), `this word comes from "${st.section}".`) : null,
       h('details', { class: 'arc-how', open: !st.stats.played }, h('summary', {}, 'How to play'), h('ol', { class: 'arc-steps' }, WORDLE_STEPS.map((t) => h('li', {}, t)))),
-      board, status, keys), after);
+      hintBox, board, status, keys), after);
     draw();
   }
 
@@ -205,6 +217,7 @@ export async function render(el, ctx) {
     let round;
     try { round = await api('/api/arcade/start', opts ? { game, opts } : { game }); } catch (e) { say(e.message, true); return; }
     document.activeElement?.blur?.();
+    if (ui.dom) { await playDom(game, ui, round, best); return; }
     const { play } = ui.mod;
     const { W, H, width = W, height = H } = ui.dyn ? ui.mod.size(round.opts) : ui.mod;   // Debt Snake draws at 4x so the snake can glide: attributes are the big size, the CSS size is W x H times the scale
     const canvas = h('canvas', { class: `arc-canvas${ui.dyn ? ' arc-smooth' : ''}`, width: String(width), height: String(height), role: 'img', 'aria-label': ui.alt });
@@ -240,6 +253,18 @@ export async function render(el, ctx) {
     await submit(game, round.session, inputs, ui.local(state), best, opts);
   }
 
+  // A DOM game (Quick Cash Counter): the module builds its own screen inside the view and has the same { stop, press, done } contract as a canvas round.
+  async function playDom(game, ui, round, best) {
+    const host = h('div', { class: 'arc-wrap' });
+    view.replaceChildren(host);
+    const run = ui.mod.play(host, round.seed);
+    current = run;
+    const { inputs, state, aborted } = await run.done;
+    current = null;
+    if (aborted) { view.replaceChildren(h('p', {}, 'The round stopped early, so it does not count.'), h('button', { type: 'button', onclick: guard(() => begin(game, best)) }, 'Play again'), h('button', { type: 'button', class: 'ghost', onclick: guard(() => home()) }, 'Back')); return; }
+    await submit(game, round.session, inputs, ui.local(state), best);
+  }
+
   // Send the recorded inputs. A dropped connection keeps them for a retry (the server accepts a round once).
   async function submit(game, session, inputs, local, best, opts) {
     view.replaceChildren(h('p', {}, `Round over. Checking your score with the server… (you made about ${local})`));
@@ -253,13 +278,13 @@ export async function render(el, ctx) {
     }
     if (game === 'debtsnake') { await snakeResult(res, opts, best); return; }
     let errand = null;                                                // Today's errand, if today is on and it is done
-    try { errand = (await api('/api/today/state')).errands.find((x) => x.title === UI[game].errand && x.status === 'done') ?? null; } catch { /* today is off or closed: no note */ }
+    if (UI[game].errand) try { errand = (await api('/api/today/state')).errands.find((x) => x.title === UI[game].errand && x.status === 'done') ?? null; } catch { /* today is off or closed: no note */ }
     view.replaceChildren(
       h('div', { class: 'arc-card' },
         h('p', { class: 'label' }, 'Verified by the server'),
         h('p', { class: 'arc-score' }, String(res.score)),
         res.new_best ? h('p', { class: 'ok' }, 'New personal best!') : h('p', { class: 'muted' }, `Your best: ${res.best}`),
-        game === 'diversify' ? debrief(res.stats) : h('p', { class: 'muted small' }, billdashLine(res)),
+        UI[game].mod.endCard ? UI[game].mod.endCard(res.stats) : game === 'diversify' ? debrief(res.stats) : h('p', { class: 'muted small' }, billdashLine(res)),
         errand ? h('p', { class: 'ok' }, `Today's errand is done: ${UI[game].errand}${errand.reward_cents ? ` (${fmt(errand.reward_cents)})` : ''}.`) : h('span', {})),
       h('div', {}, h('p', { class: 'label' }, 'Your class'), board(res.leaderboard)),
       h('div', { class: 'arc-actions' }, h('button', { type: 'button', onclick: guard(() => begin(game, res.best ?? best)) }, 'Play again'), h('button', { type: 'button', class: 'ghost', onclick: guard(home) }, 'Back')));
@@ -305,47 +330,87 @@ export async function render(el, ctx) {
   };
   const icon = (key) => { const c = h('canvas', { class: 'arc-pic arc-pic-smooth', width: String(debtsnake.SW * 2), height: String(debtsnake.SW * 2), 'aria-hidden': 'true' }); debtsnake.modeIcon(c.getContext('2d'), key); return c; };
 
+  // Debt Snake's card stays short: what you are about to play, a Settings button and Play. Every choice (mode, Mix, Surprise me, speed,
+  // board, coins) lives in a settings dialog the player opens. The class board below follows the mode and refreshes when the dialog closes.
   function snakeDetail(st, g) {
     const back = h('button', { type: 'button', class: 'ghost arc-back', onclick: guard(() => home(g.key)) }, 'Back to all games');
-    const plays = Object.values(g.modes ?? {}).reduce((n, m) => n + m.plays, 0);
     const bests = g.modes ?? {};
-    const grid = h('div', { class: 'arc-modes', role: 'group', 'aria-label': 'Mode' });
-    const opts = h('div', { class: 'arc-opts' });
-    const sum = h('p', { class: 'arc-pick', role: 'status' });
+    const setup = h('div', { class: 'arc-setup' });
     const boardBox = h('div', { class: 'stack' });
-    const play = h('button', { type: 'button', disabled: !st.world_active }, st.world_active ? 'Play Debt Snake' : 'The season is closed');
+    const play = h('button', { type: 'button', class: 'arc-play-btn', disabled: !st.world_active }, st.world_active ? 'Play Debt Snake' : 'The season is closed');
     let seq = 0, modeBest = null;
+    const chosen = () => (picked.modes.length ? picked.modes : ['classic']);
+    const OPT_TEXT = { speed: { slow: 'Slow', normal: 'Normal', fast: 'Fast' }, board: { small: 'Small board', normal: 'Normal board', large: 'Large board' } };
+    const optLine = () => `${OPT_TEXT.speed[picked.speed]} speed · ${OPT_TEXT.board[picked.board]} · ${picked.coins} coin${picked.coins === 1 ? '' : 's'}`;
+
+    // ---- the dialog ----
+    const grid = h('div', { class: 'arc-modes arc-modes-tight', role: 'group', 'aria-label': 'Mode' });
+    const extras = h('div', { class: 'arc-extras' });
+    const desc = h('p', { class: 'arc-mode-desc', role: 'status' });
+    const opts = h('div', { class: 'arc-opts' });
+    const done = h('button', { type: 'button', class: 'arc-done' }, 'Done');
+    const closeX = h('button', { type: 'button', class: 'ghost arc-x', 'aria-label': 'Close settings' }, '✕');
+    const reset = h('button', { type: 'button', class: 'ghost arc-reset' }, 'Reset');
+    const dlg = h('dialog', { class: 'arc-dialog', 'aria-labelledby': 'arc-dlg-title' },
+      h('div', { class: 'arc-dlg-head' }, h('b', { id: 'arc-dlg-title' }, 'Debt Snake settings'), closeX),
+      h('div', { class: 'arc-dlg-body' },
+        h('p', { class: 'label' }, 'Mode'), extras, grid, desc,
+        h('p', { class: 'label' }, 'Game'), opts),
+      h('div', { class: 'arc-dlg-foot' }, reset, done));
     const toggle = (key) => {
       picked.rolled = false;
       if (key === 'classic' || !picked.mix) picked.modes = [key];
       else picked.modes = picked.modes.includes(key) ? picked.modes.filter((k) => k !== key) : [...picked.modes, key];
       if (key === 'classic') picked.mix = false;
-      draw();
+      drawDialog();
     };
-    const roll = () => {                                              // three different modes, not classic
+    const roll = () => {                                              // three different modes, not classic (a choice of game, never a reward)
       const pool = debtsnake.MODES.map((m) => m.key).filter((k) => k !== 'classic');
       for (let i = pool.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [pool[i], pool[j]] = [pool[j], pool[i]]; }
-      picked.modes = pool.slice(0, 3); picked.mix = false; picked.rolled = true; draw();
+      picked.modes = pool.slice(0, 3); picked.mix = false; picked.rolled = true; drawDialog();
     };
-    const mixSwitch = () => { picked.mix = !picked.mix; picked.rolled = false; if (picked.mix) picked.modes = picked.modes.filter((k) => k !== 'classic'); else if (picked.modes.length > 1) picked.modes = picked.modes.slice(0, 1); if (!picked.modes.length && !picked.mix) picked.modes = ['classic']; draw(); };
+    const mixSwitch = () => { picked.mix = !picked.mix; picked.rolled = false; if (picked.mix) picked.modes = picked.modes.filter((k) => k !== 'classic'); else if (picked.modes.length > 1) picked.modes = picked.modes.slice(0, 1); if (!picked.modes.length && !picked.mix) picked.modes = ['classic']; drawDialog(); };
     const modeBtn = (m) => {
-      const on = picked.modes.includes(m.key);
-      const b = bests[m.key]?.best;
-      return h('button', { type: 'button', class: `arc-mode${on ? ' arc-on' : ''}`, 'aria-pressed': String(on), 'data-mode': m.key, onclick: () => toggle(m.key) },
-        icon(m.key), h('span', { class: 'arc-mode-text' }, h('b', {}, m.name), h('span', { class: 'small' }, m.rule)), b == null ? h('span', {}) : h('span', { class: 'chip' }, `Best ${b}`));
+      const on = picked.modes.includes(m.key), b = bests[m.key]?.best;
+      return h('button', { type: 'button', class: `arc-mode${on ? ' arc-on' : ''}`, 'aria-pressed': String(on), 'data-mode': m.key, title: m.rule, onclick: () => toggle(m.key) },
+        icon(m.key), h('span', { class: 'arc-mode-text' }, h('b', {}, m.name), b == null ? null : h('span', { class: 'small' }, `Best ${b}`)));
     };
-    function draw() {
-      grid.replaceChildren(...debtsnake.MODES.map(modeBtn),
-        h('button', { type: 'button', class: `arc-mode arc-extra${picked.mix ? ' arc-on' : ''}`, 'aria-pressed': String(picked.mix), 'data-mode': 'mix', onclick: mixSwitch },
-          h('span', { class: 'arc-glyph' }, '+'), h('span', { class: 'arc-mode-text' }, h('b', {}, 'Mix'), h('span', { class: 'small' }, picked.mix ? 'On: tap several modes to mix them. Tap Mix again to turn it off.' : 'Pick several modes and play them together.'))),
-        h('button', { type: 'button', class: `arc-mode arc-extra${picked.rolled ? ' arc-on' : ''}`, 'aria-pressed': String(picked.rolled), 'data-mode': 'random', onclick: roll },
-          h('span', { class: 'arc-glyph' }, '?'), h('span', { class: 'arc-mode-text' }, h('b', {}, 'Surprise me'), h('span', { class: 'small' }, 'Three random modes, mixed. Tap again to roll again.'))));
-      opts.replaceChildren(...OPTION_ROWS.map(([name, label, choices]) => h('fieldset', { class: 'arc-opt' }, h('legend', { class: 'label' }, label),
-        h('div', { class: 'arc-seg' }, choices.map(([val, text]) => h('button', { type: 'button', 'aria-pressed': String(picked[name] === val), class: picked[name] === val ? 'arc-on' : '', onclick: () => { picked[name] = val; draw(); } }, text))))));
+    function drawDialog() {
+      grid.replaceChildren(...debtsnake.MODES.map(modeBtn));
+      extras.replaceChildren(
+        h('button', { type: 'button', class: `arc-chipbtn${picked.mix ? ' arc-on' : ''}`, 'aria-pressed': String(picked.mix), 'data-mode': 'mix', onclick: mixSwitch }, '+ Mix modes'),
+        h('button', { type: 'button', class: `arc-chipbtn${picked.rolled ? ' arc-on' : ''}`, 'aria-pressed': String(picked.rolled), 'data-mode': 'random', onclick: roll }, '? Surprise me'));
       const empty = picked.mix && !picked.modes.length;
-      sum.textContent = empty ? 'Mix is on. Tap two or more modes to play them together.' : `Playing: ${snakeName(picked.modes.length ? picked.modes : ['classic'])}.`;
-      play.disabled = !st.world_active || empty;
-      showBoard();
+      const ms = chosen().map((k) => debtsnake.MODES.find((m) => m.key === k)).filter(Boolean);
+      desc.replaceChildren(...(empty ? [h('span', {}, 'Mix is on. Tap two or more modes to play them together.')]
+        : ms.length === 1 ? [h('b', {}, `${ms[0].name}: `), ms[0].rule]
+        : [h('b', {}, `${picked.rolled ? 'Surprise' : 'Mix'}: `), ms.map((m) => m.name).join(' + '), picked.mix ? '. Tap Mix modes again to go back to one.' : '. Tap Surprise me to roll again.']));
+      opts.replaceChildren(...OPTION_ROWS.map(([name, label, choices]) => h('fieldset', { class: 'arc-opt' }, h('legend', { class: 'label' }, label),
+        h('div', { class: 'arc-seg' }, choices.map(([val, text]) => h('button', { type: 'button', 'aria-pressed': String(picked[name] === val), class: picked[name] === val ? 'arc-on' : '', onclick: () => { picked[name] = val; drawDialog(); } }, text))))));
+      reset.disabled = picked.modes.length === 1 && picked.modes[0] === 'classic' && !picked.mix && picked.speed === 'normal' && picked.board === 'small' && picked.coins === 1;
+    }
+    const openDialog = () => { drawDialog(); dlg.showModal(); (dlg.querySelector('.arc-mode.arc-on') ?? done).focus(); };
+    reset.onclick = () => { Object.assign(picked, { modes: ['classic'], mix: false, rolled: false, speed: 'normal', board: 'small', coins: 1 }); drawDialog(); };
+    done.onclick = () => dlg.close();
+    closeX.onclick = () => dlg.close();
+    dlg.addEventListener('click', (e) => { if (e.target === dlg) dlg.close(); });   // a tap on the dimmed backdrop closes it too
+    dlg.addEventListener('close', () => {
+      if (!picked.modes.length) { picked.mix = false; picked.modes = ['classic']; }   // Mix left empty: back to the plain game
+      drawSetup(); showBoard(); settingsBtn.focus();
+    });
+    const settingsBtn = h('button', { type: 'button', class: 'ghost arc-gear', 'aria-haspopup': 'dialog', onclick: openDialog }, h('span', { 'aria-hidden': 'true' }, '⚙'), ' Settings');
+
+    // ---- the card ----
+    function drawSetup() {
+      const ms = chosen(), one = ms.length === 1, m = debtsnake.MODES.find((x) => x.key === ms[0]);
+      setup.replaceChildren(
+        h('div', { class: 'arc-setup-pics' }, ms.slice(0, 3).map(icon)),
+        h('div', { class: 'arc-setup-text' },
+          h('span', { class: 'label' }, 'You will play'),
+          h('b', {}, one ? m.name : `${ms.length} modes: ${snakeName(ms)}`),
+          one ? h('span', { class: 'small muted' }, m.rule) : null,
+          h('span', { class: 'small arc-setup-opts' }, optLine())),
+        settingsBtn);
     }
     async function showBoard() {                                      // the best and the class board for the chosen mode only
       const key = snakeKey(), mine = ++seq;
@@ -354,7 +419,7 @@ export async function render(el, ctx) {
       try { res = await api(`/api/arcade/board?game=debtsnake&mode=${encodeURIComponent(key)}`); } catch (e) { if (mine === seq) boardBox.replaceChildren(h('p', { class: 'error' }, e.message)); return; }
       if (mine !== seq || !boardBox.isConnected) return;
       modeBest = res.best;
-      boardBox.replaceChildren(h('p', { class: 'label' }, `${snakeName(picked.modes.length ? picked.modes : ['classic'])}: your class`),
+      boardBox.replaceChildren(h('p', { class: 'label' }, `${snakeName(chosen())}: your class`),
         h('p', { class: 'muted small' }, res.best == null ? 'You have not finished a round in this mode yet.' : `Your best in this mode: ${res.best} (${res.plays} round${res.plays === 1 ? '' : 's'}).`), board(res.leaderboard));
     }
     play.onclick = guard(() => begin('debtsnake', modeBest ?? 0, snakeOpts()));
@@ -362,10 +427,10 @@ export async function render(el, ctx) {
       h('div', { class: 'arc-card' },
         h('div', { class: 'spread' }, h('b', {}, g.title), h('span', { class: 'chip' }, bestOf(g) < 0 ? 'No score yet' : `Best ${bestOf(g)}`)),
         h('p', {}, g.blurb),
-        howTo(UI.debtsnake, !plays),
-        h('p', { class: 'label' }, 'Pick a mode'), grid, opts, sum, play),
-      boardBox);
-    draw();
+        setup, play,
+        howTo(UI.debtsnake, false)),
+      boardBox, dlg);
+    drawSetup(); showBoard();
     back.focus();
   }
 
